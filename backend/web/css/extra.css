@@ -1,0 +1,47 @@
+.title_h4 {
+    padding-left: 15px;
+    font-size: larger;
+    padding-top: 10px;
+}
+.sub_title_h4 {
+    padding-left: 15px;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+.title_h5 {
+    padding-left: 0px;
+    font-size: larger;
+    padding-top: 10px;
+}
+
+.error-summary ,.required {
+	color: #F3565D;
+}
+.title_h6 {
+  padding-left: 40px;
+  font-size: larger;
+  padding-top: 29px;
+}
+#menu_state  {
+  padding-left: 100px;
+}
+#menu_district {
+  padding-left: 100px;
+}
+#menu_kampung {
+  padding-left: 100px;
+}
+
+#map {
+    height: 550px;
+    width: 1000px;  
+    min-width: 310px; 
+    max-width: 1000px; 
+    margin: 0 auto; 
+}
+
+.flag {
+  width: 54px;
+  height: 27px;
+}

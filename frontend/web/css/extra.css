@@ -1,0 +1,76 @@
+.title_h4 {
+    padding-left: 15px;
+    font-size: larger;
+    padding-top: 10px;
+}
+.title_h5 {
+    padding-left: 0px;
+    font-size: larger;
+    padding-top: 10px;
+}
+
+.error-summary ,.required {
+	color: #F3565D;
+}
+.title_h6 {
+  padding-left: 40px;
+  font-size: larger;
+  padding-top: 29px;
+}
+
+.hint {
+  color: #cb5a5e;
+}
+
+.view {
+  margin-top: 1px;
+  font-size: 14px;
+}
+
+
+
+.titleview {
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+
+.utama {
+  margin-left: 200px;
+}
+
+.newpass {
+  color: #f13e64;
+  font-size: 13px;
+}
+.viewuser {
+  border-bottom: 2px solid #4db3a4;
+}
+
+.kdslog {
+    font-size: 16px;
+}
+
+#inlineradio {
+  top :7px;
+}
+
+.brkemahiran {
+  margin-bottom: 10px;
+}
+#map {
+    height: 550px;
+    width: 1000px;  
+    min-width: 310px; 
+    max-width: 1000px; 
+    margin: 0 auto; 
+}
+.last_update {
+float: right;
+margin-top:-11px;
+font-size: 11px;
+}
+
+.flag {
+  width: 54px;
+  height: 27px;
+}
