@@ -52,6 +52,12 @@ $this->title = 'Senarai Miroworker';
                                  <?php echo  Yii::$app->session->getFlash('acl'); ?>
                             </div>
                         <?php endif; ?>
+                        <?php if(Yii::$app->session->hasFlash('update')):?>
+                            <div class="alert alert-info">
+                                <button type="button" class="close" data-dismiss="alert"></button>
+                                 <?php echo  Yii::$app->session->getFlash('update'); ?>
+                            </div>
+                        <?php endif; ?>
                         <?php echo $this->render('_search', ['model' => $searchModel]); ?>
 
          
@@ -64,7 +70,7 @@ $this->title = 'Senarai Miroworker';
                                 ],
                                 'columns' => [
                                     ['class' => 'yii\grid\SerialColumn'],
-                                    //'username',
+
                                     'nama',
                                     'ic_no',
                                     'mobile_no',
@@ -74,11 +80,17 @@ $this->title = 'Senarai Miroworker';
                                     [
                                         'header' => 'Tindakan',
                                         'class' => 'yii\grid\ActionColumn',
-                                        'template'=>'{lihat}',
+                                        'template'=>'{lihat} {kemaskini}',
                                             'buttons' => [
                                                 'lihat' => function ($url, $model) {
                                                     return Html::a('<span class="btn default btn-xs red-stripe">Lihat</span>', $url,[
                                                                 'title'=> Yii::t('app','Lihat'),
+                                                    ]);
+
+                                                },
+                                                'kemaskini' => function ($url, $model) {
+                                                    return Html::a('<span class="btn default btn-xs red-stripe">Kemaskini</span>', $url,[
+                                                                'title'=> Yii::t('app','Kemaskini'),
                                                     ]);
 
                                                 },
@@ -87,6 +99,10 @@ $this->title = 'Senarai Miroworker';
                                             'urlCreator' => function ($action, $model, $key, $index) {
                                                 if ($action === 'lihat') {
                                                     $url = ['user/view','id'=>$model->id];
+                                                    return $url;
+                                                }
+                                                if ($action === 'kemaskini') {
+                                                    $url = ['user/update','id'=>$model->id];
                                                     return $url;
                                                 }
 
