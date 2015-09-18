@@ -394,8 +394,8 @@ $kampung_area = ArrayHelper::map(LookupKampung::find()->where(['cluster_id'=>$mo
                                 <div class="form-group form-md-line-input">
                                     <?= Html::activeDropDownList($model, 'state_area_id', $state_area, 
                                     [
-                                    'prompt'=>'(Sila Pilih)','id'=>'state',
-                                    'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['user/listdistrict','id'=>'']).'"+$(this).val(), function( data ) {$( "select#district" ).html( data );});',
+                                    'prompt'=>'(Sila Pilih)','id'=>'state_area',
+                                    'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['user/listdistrictarea','id'=>'']).'"+$(this).val(), function( data ) {$( "select#district_area" ).html( data );});',
 
                                     'class'=>'form-control']); ?>
                                     <label for="form_control_1"><?= Html::activeLabel($model,'state_area_id'); ?> </label>
@@ -408,8 +408,8 @@ $kampung_area = ArrayHelper::map(LookupKampung::find()->where(['cluster_id'=>$mo
                                 <div class="form-group form-md-line-input">
                                     <?= Html::activeDropDownList($model, 'district_area_id', $district_area, 
                                     [
-                                        'prompt'=>'(Sila Pilih)','id'=>'district',
-                                        'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['user/listsubbase','id'=>'']).'"+$(this).val(), function( data ) {$( "select#subbase" ).html( data );});',
+                                        'prompt'=>'(Sila Pilih)','id'=>'district_area',
+                                        'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['user/listsubbasearea','id'=>'']).'"+$(this).val(), function( data ) {$( "select#sub_base_area" ).html( data );});',
 
                                         'class'=>'form-control']); ?>
                                     <label for="form_control_1"><?= Html::activeLabel($model,'district_area_id'); ?> </label>
@@ -421,8 +421,8 @@ $kampung_area = ArrayHelper::map(LookupKampung::find()->where(['cluster_id'=>$mo
                                 <div class="form-group form-md-line-input">
                                     <?= Html::activeDropDownList($model, 'sub_base_area_id', $subbase_area, 
                                     [
-                                        'prompt'=>'(Sila Pilih)','id'=>'sub_base',
-                                        'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['user/listcluster','id'=>'']).'"+$(this).val(), function( data ) {$( "select#cluster" ).html( data );});',
+                                        'prompt'=>'(Sila Pilih)','id'=>'sub_base_area',
+                                        'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['user/listclusterarea','id'=>'']).'"+$(this).val(), function( data ) {$( "select#cluster_area" ).html( data );});',
 
                                         'class'=>'form-control']); ?>
                                     <label for="form_control_1"><?= Html::activeLabel($model,'sub_base_area_id'); ?> </label>
@@ -433,8 +433,8 @@ $kampung_area = ArrayHelper::map(LookupKampung::find()->where(['cluster_id'=>$mo
                                 <div class="form-group form-md-line-input">
                                     <?= Html::activeDropDownList($model, 'cluster_area_id', $cluster_area, 
                                     [
-                                        'prompt'=>'(Sila Pilih)','id'=>'cluster',
-                                        'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['user/listkampung','id'=>'']).'"+$(this).val(), function( data ) {$( "select#kampung" ).html( data );});',
+                                        'prompt'=>'(Sila Pilih)','id'=>'cluster_area',
+                                        'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['user/listkampungarea','id'=>'']).'"+$(this).val(), function( data ) {$( "select#kampung_area" ).html( data );});',
 
                                         'class'=>'form-control']); ?>
                                     <label for="form_control_1"><?= Html::activeLabel($model,'cluster_area_id'); ?> </label>
@@ -453,9 +453,8 @@ $kampung_area = ArrayHelper::map(LookupKampung::find()->where(['cluster_id'=>$mo
                                 <div class="form-group form-md-line-input">
                                     <?= Html::activeDropDownList($model, 'kampung_area_id', $kampung_area, 
                                     [
-                                        'prompt'=>'(Sila Pilih)','id'=>'kampung',
-                                        'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['user/listkampung','id'=>'']).'"+$(this).val(), function( data ) {$( "select#kampung" ).html( data );});',
-
+                                        'prompt'=>'(Sila Pilih)','id'=>'kampung_area',
+    
                                         'class'=>'form-control']); ?>
                                     <label for="form_control_1"><?= Html::activeLabel($model,'kampung_area_id'); ?> </label>
                                     <span class="help-block"><?= Html::error($model,'kampung_id'); ?></span>

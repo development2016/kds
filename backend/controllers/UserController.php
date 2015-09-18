@@ -156,4 +156,155 @@ class UserController extends Controller
             throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
+
+
+    public function actionListstate($id)
+    {
+        $countPosts = LookupState::find()
+        ->where(['country_id' => $id])
+        ->count();
+         
+        $posts = LookupState::find() 
+        ->where(['country_id' => $id])
+        ->all();
+         
+        if($countPosts>0){
+            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            foreach($posts as $post){
+                echo "<option value='".$post->state_id."'>".$post->state."</option>";
+            }
+        } else {
+                echo "<option>-</option>";
+        }
+     
+    }
+
+    public function actionListdistrict($id)
+    {
+        $countPosts = LookupDistrict::find()
+        ->where(['state_id' => $id])
+        ->count();
+         
+        $posts = LookupDistrict::find() 
+        ->where(['state_id' => $id])
+        ->all();
+         
+        if($countPosts>0){
+            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            foreach($posts as $post){
+                echo "<option value='".$post->district_id."'>".$post->district."</option>";
+            }
+        } else {
+                echo "<option>-</option>";
+        }
+     
+    }
+
+    public function actionListkampung($id)
+    {
+        $countPosts = LookupKampung::find()
+        ->where(['district_id' => $id])
+        ->count();
+         
+        $posts = LookupKampung::find() 
+        ->where(['district_id' => $id])
+        ->all();
+         
+        if($countPosts>0){
+            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            foreach($posts as $post){
+                echo "<option value='".$post->kampung_id."'>".$post->kampung."</option>";
+            }
+        } else {
+                echo "<option>-</option>";
+        }
+     
+    }
+
+
+
+    public function actionListdistrictarea($id)
+    {
+        $countPosts = LookupDistrict::find()
+        ->where(['state_id' => $id])
+        ->count();
+         
+        $posts = LookupDistrict::find() 
+        ->where(['state_id' => $id])
+        ->all();
+         
+        if($countPosts>0){
+            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            foreach($posts as $post){
+                echo "<option value='".$post->district_id."'>".$post->district."</option>";
+            }
+        } else {
+                echo "<option>-</option>";
+        }
+     
+    }
+
+    public function actionListsubbasearea($id)
+    {
+        $countPosts = LookupSubBase::find()
+        ->where(['district_id' => $id])
+        ->count();
+         
+        $posts = LookupSubBase::find() 
+        ->where(['district_id' => $id])
+        ->all();
+         
+        if($countPosts>0){
+            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            foreach($posts as $post){
+                echo "<option value='".$post->sub_base_id."'>".$post->sub_base."</option>";
+            }
+        } else {
+                echo "<option>-</option>";
+        }
+     
+    }
+    public function actionListclusterarea($id)
+    {
+        $countPosts = LookupCluster::find()
+        ->where(['sub_base_id' => $id])
+        ->count();
+         
+        $posts = LookupCluster::find() 
+        ->where(['sub_base_id' => $id])
+        ->all();
+         
+        if($countPosts>0){
+            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            foreach($posts as $post){
+                echo "<option value='".$post->cluster_id."'>".$post->cluster."</option>";
+            }
+        } else {
+                echo "<option>-</option>";
+        }
+     
+    }
+
+    public function actionListkampungarea($id)
+    {
+        $countPosts = LookupKampung::find()
+        ->where(['cluster_id' => $id])
+        ->count();
+         
+        $posts = LookupKampung::find() 
+        ->where(['cluster_id' => $id])
+        ->all();
+         
+        if($countPosts>0){
+            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            foreach($posts as $post){
+                echo "<option value='".$post->kampung_id."'>".$post->kampung."</option>";
+            }
+        } else {
+                echo "<option>-</option>";
+        }
+     
+    }
+
+
 }
