@@ -85,7 +85,7 @@ class People extends \yii\db\ActiveRecord
             [['image'], 'string'],
             [['enter_date', 'verified_date'], 'safe'],
             ['ic_no', 'unique'],
-            ['email','email','message'=>'Sila Masukkan Email Yang Sah'],
+            //['email','email','message'=>'Sila Masukkan Email Yang Sah'],
             ['ic_no', 'required', 'message' => 'Sila Isi No Kad Pengenalan'],
             ['name', 'required', 'message' => 'Sila Isi Nama Sukarelawan'],
             ['state_id', 'required', 'message' => 'Sila Isi Negeri '],
@@ -93,7 +93,7 @@ class People extends \yii\db\ActiveRecord
             ['sub_base_id', 'required', 'message' => 'Sila Isi Sub Base'],
             ['cluster_id', 'required', 'message' => 'Sila Isi Cluster'],
             ['kampung_id', 'required', 'message' => 'Sila Isi Kampung'],
-            //['mukim_id', 'required', 'message' => 'Sila Isi Mukim'],
+            ['mukim_id', 'required', 'message' => 'Sila Isi Mukim'],
             ['oku', 'required', 'message' => 'Sila Nyatakan Sama Ada Anda Tergolong Dalam Orang OKU Atau Tidak'],
             [['oku','tanggungan_oku'],'default','value'=>'Tidak'],
 

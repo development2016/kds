@@ -85,7 +85,7 @@ class People extends \yii\db\ActiveRecord
             ['district_id', 'required', 'message' => 'Sila Pilih Daerah'],
             ['sub_base_id', 'required', 'message' => 'Sila Pilih Sub Base'],
             ['cluster_id', 'required', 'message' => 'Sila Pilih Cluster'],
-            //['mukim_id', 'required', 'message' => 'Sila Isi Mukim'],
+            ['mukim_id', 'required', 'message' => 'Sila Isi Mukim'],
             ['kampung_id', 'required', 'message' => 'Sila Pilih Kampung'],
             ['oku', 'required', 'message' => 'Sila Nyatakan Sama Ada Anda Tergolong Dalam Orang OKU Atau Tidak'],
             [['oku','tanggungan_oku'],'default','value'=>'Tidak'],
