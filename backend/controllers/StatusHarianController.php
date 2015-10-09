@@ -105,7 +105,7 @@ class StatusHarianController extends Controller
             'options' => ['title' => 'KDS Report Summary'],
              // call mPDF methods on the fly
             'methods' => [ 
-                'SetHeader'=>'Summary KDS - '.$date, 
+                'SetHeader'=>'Summary Harian - '.$date, 
                 'SetFooter'=>['{PAGENO}'],
             ]
         ]);
