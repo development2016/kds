@@ -67,7 +67,7 @@ class ManagerTrain extends \yii\db\ActiveRecord
             'alamat' => 'Alamat',
             'poskod' => 'Poskod',
             'nama_pengurus' => 'Nama Pengurus',
-            'ic' => 'Ic',
+            'ic' => 'No Kad Pengenalan',
             'jantina' => 'Jantina',
             'no_fon' => 'No Telefon',
             'date_enter' => 'Date Enter',

@@ -152,7 +152,7 @@ class Pfn extends \yii\db\ActiveRecord
         return [
             [['cat_id', 'kampung_id', 'cluster_id', 'sub_base_id', 'district_id', 'state_id', 'enter_by','mukim_id','rating_kemudahan_asas','rating_kemudahan_ict','rating_mesra_oku','rating_bilik_latihan','rating_equip','rating_capaian','rating_keseluruhan_pfn'], 'integer'],
             [['pfn_code'], 'string', 'max' => 100],
-            [['date', 'no_kp', 'no_kp_old', 'tarikh_daftar', 'tarikh_audit', 'no_kp2', 'no_kp_old2', 'date_enter'], 'string', 'max' => 20],
+            [['date', 'no_kp', 'no_kp_old', 'tarikh_daftar', 'tarikh_audit', 'no_kp2', 'no_kp_old2', 'date_enter','status_pfn'], 'string', 'max' => 20],
             [['pfn_name', 'nama_pengurus', 'email', 'didaftarkan_oleh', 'diaudit_oleh', 'nama_pengurus2', 'email2', 'koordinate'], 'string', 'max' => 225],
             [['lokasi', 'jantina', 'mobile', 'no_tel', 'fax', 'keaktifan_bilik_mesyuarat', 'jantina2', 'mobile2', 'no_tel2', 'fax2'], 'string', 'max' => 15],
             [['alamat'], 'string', 'max' => 255],
@@ -294,6 +294,7 @@ class Pfn extends \yii\db\ActiveRecord
             'koordinate' => 'Koordinate',
             'date_enter' => 'Date Enter',
             'enter_by' => 'Enter By',
+            'status_pfn' => 'Status PFN',
             
            
         ];

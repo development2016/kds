@@ -67,8 +67,19 @@ class ManagerTrainController extends Controller
     {
         $model = new ManagerTrain();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        if ($model->load(Yii::$app->request->post())) {
+
+            $model->enter_by= Yii::$app->user->identity->id;
+            $model->date_enter=date('d/m/Y');
+            if ($model->save()) {
+                Yii::$app->getSession()->setFlash('create', 'Maklumat Manager Trained <b>('.$model->rangkaian_fasiliti_awam.')</b> Berjaya Di Daftarkan');
+                return $this->redirect(['index']);
+            } else {
+                 return $this->render('create', [
+                    'model' => $model,
+                ]);
+            }
+            
         } else {
             return $this->render('create', [
                 'model' => $model,

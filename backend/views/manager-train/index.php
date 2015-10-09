@@ -112,15 +112,15 @@ $this->title = 'Senarai Rangkaian Fasiliti Awam';
                                             ],
                                             'urlCreator' => function ($action, $model, $key, $index) {
                                                 if ($action === 'lihat') {
-                                                    $url = ['manager-train/view','id'=>$model->pfn_id];
+                                                    $url = ['manager-train/view','id'=>$model->id];
                                                     return $url;
                                                 }
                                                 if ($action === 'kemaskini') {
-                                                    $url = ['manager-train/update','id'=>$model->pfn_id];
+                                                    $url = ['manager-train/update','id'=>$model->id];
                                                     return $url;
                                                 }
                                                 if ($action === 'buang') {
-                                                    $url = ['manager-train/delete','id'=>$model->pfn_id];
+                                                    $url = ['manager-train/delete','id'=>$model->id];
                                                     return $url;
                                                 }
                                             }

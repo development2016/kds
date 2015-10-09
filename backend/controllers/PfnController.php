@@ -121,7 +121,8 @@ class PfnController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->pfn_id]);
+                Yii::$app->getSession()->setFlash('update', 'Maklumat Rangkaian Fasiliti Awam <b>('.$model->pfn_name.')</b> Berjaya Di kemaskini');
+                return $this->redirect(['index']);
         } else {
             return $this->render('update', [
                 'model' => $model,

@@ -1,21 +1,64 @@
 <?php
 
 use yii\helpers\Html;
-
-
-/* @var $this yii\web\View */
-/* @var $model common\models\ManagerTrain */
-
-$this->title = 'Create Manager Train';
-$this->params['breadcrumbs'][] = ['label' => 'Manager Trains', 'url' => ['index']];
-$this->params['breadcrumbs'][] = $this->title;
+$this->title = 'Pendaftaran';
 ?>
-<div class="manager-train-create">
+<span id="volunteerCreate" class="<?php echo Yii::$app->controller->id."/".Yii::$app->controller->action->id;?>"></span>
+  <!-- BEGIN PAGE HEAD -->
+    <div class="page-head">
+        <div class="container">
+            <!-- BEGIN PAGE TITLE -->
+            <div class="page-title">
+                <h1>Manager Trained</h1>
+            </div>
+            <!-- END PAGE TITLE -->
 
-    <h1><?= Html::encode($this->title) ?></h1>
+        </div>
+    </div>
+    <!-- END PAGE HEAD -->
+    <!-- BEGIN PAGE CONTENT -->
+    <div class="page-content">
+        <div class="container">
+            <!-- BEGIN PAGE BREADCRUMB -->
+            <ul class="page-breadcrumb breadcrumb">
+                <li>
+                   <?= Html::a('Utama', ['site/index']) ?><i class="fa fa-circle"></i>
+                </li>
+                <li>
+                    <?= Html::a('Manager Trained', ['manager-train/index']) ?><i class="fa fa-circle"></i>
+                </li>
+                <li class="active">Pendaftaran</li>
+            </ul>
+            <!-- END PAGE BREADCRUMB -->
+			<div class="row">
+				<div class="col-md-12">
+					<!-- BEGIN SAMPLE FORM PORTLET-->
+					<div class="portlet light" >
+						<div class="portlet-title">
+							<div class="caption font-green-haze">
+								<i class="icon-users font-green-haze"></i>
+								<span class="caption-subject bold uppercase"> Pendaftaran Maklumat Manager Trained </span>
+							</div>
+							<div class="actions">
+								<a class="btn btn-circle btn-icon-only btn-default fullscreen" href="javascript:;" data-original-title="" title="">
+								</a>
+							</div>
+						</div>
+						<div class="portlet-body form" >
+							
+						    <?= $this->render('_form', [
+						        'model' => $model,
+						    ]) ?>
 
-    <?= $this->render('_form', [
-        'model' => $model,
-    ]) ?>
+						</div>
+					</div>
+				</div>
+				<!-- END SAMPLE FORM PORTLET-->
+			</div>
+			<!-- END PAGE CONTENT INNER -->
+        
 
-</div>
+
+        </div>
+    </div>
+    <!-- END PAGE CONTENT -->

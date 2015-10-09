@@ -17,6 +17,7 @@ use common\models\People;
 use common\models\Volunteer;
 use common\models\Pfn;
 use common\models\IssueConduit;
+use common\models\ManagerTrain;
 use backend\models\User;
 use kartik\mpdf\Pdf;
 /**
@@ -90,6 +91,15 @@ class StatusController extends Controller
         $pfnn_johor = Pfn::find()->where(['state_id' => 22])->count();
         $pfnn_kedah = Pfn::find()->where(['state_id' => 16])->count();
         $pfnn_selangor = Pfn::find()->where(['state_id' => 13])->count();
+
+        //manager trained
+        $mngt_pahang = ManagerTrain::find()->where(['state_id' => 12])->count();
+        $mngt_perlis = ManagerTrain::find()->where(['state_id' => 14])->count();
+        $mngt_terengganu = ManagerTrain::find()->where(['state_id' => 18])->count();
+        $mngt_perak = ManagerTrain::find()->where(['state_id' => 15])->count();
+        $mngt_johor = ManagerTrain::find()->where(['state_id' => 22])->count();
+        $mngt_kedah = ManagerTrain::find()->where(['state_id' => 16])->count();
+        $mngt_selangor = ManagerTrain::find()->where(['state_id' => 13])->count();
 
         // isu
         $i_pahang = IssueConduit::find()->where(['state_id' => 12])->count();
@@ -203,6 +213,14 @@ class StatusController extends Controller
             'reject_6' => $reject_6,
 
 
+            'mngt_pahang' => $mngt_pahang,
+            'mngt_perlis' => $mngt_perlis,
+            'mngt_terengganu' => $mngt_terengganu,
+            'mngt_perak' => $mngt_perak,
+            'mngt_johor' => $mngt_johor,
+            'mngt_kedah' => $mngt_kedah,
+            'mngt_selangor' => $mngt_selangor,
+
             'ps_pahang' => $ps_pahang,
             'ps_perlis' => $ps_perlis,
             'ps_terengganu' => $ps_terengganu,
@@ -300,6 +318,15 @@ class StatusController extends Controller
         $pfnn_kedah = Pfn::find()->where(['state_id' => 16])->count();
         $pfnn_selangor = Pfn::find()->where(['state_id' => 13])->count();
 
+
+        //manager trained
+        $mngt_pahang = ManagerTrain::find()->where(['state_id' => 12])->count();
+        $mngt_perlis = ManagerTrain::find()->where(['state_id' => 14])->count();
+        $mngt_terengganu = ManagerTrain::find()->where(['state_id' => 18])->count();
+        $mngt_perak = ManagerTrain::find()->where(['state_id' => 15])->count();
+        $mngt_johor = ManagerTrain::find()->where(['state_id' => 22])->count();
+        $mngt_kedah = ManagerTrain::find()->where(['state_id' => 16])->count();
+        $mngt_selangor = ManagerTrain::find()->where(['state_id' => 13])->count();
         // isu
         $i_pahang = IssueConduit::find()->where(['state_id' => 12])->count();
         $i_perlis = IssueConduit::find()->where(['state_id' => 14])->count();
@@ -411,6 +438,13 @@ class StatusController extends Controller
             'reject_5' => $reject_5,
             'reject_6' => $reject_6,
 
+            'mngt_pahang' => $mngt_pahang,
+            'mngt_perlis' => $mngt_perlis,
+            'mngt_terengganu' => $mngt_terengganu,
+            'mngt_perak' => $mngt_perak,
+            'mngt_johor' => $mngt_johor,
+            'mngt_kedah' => $mngt_kedah,
+            'mngt_selangor' => $mngt_selangor,
 
             'ps_pahang' => $ps_pahang,
             'ps_perlis' => $ps_perlis,

@@ -83,6 +83,7 @@ $this->title = 'Senarai Rangkaian Fasiliti Awam';
                                     'subBase.sub_base',
                                     'cluster.cluster',
                                     'kampung.kampung',
+                                    'status_pfn',
                                    // 'state.state',
                                     [
                                         'header' => 'Tindakan',

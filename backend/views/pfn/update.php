@@ -1,21 +1,65 @@
 <?php
 
 use yii\helpers\Html;
-
-/* @var $this yii\web\View */
-/* @var $model common\models\Pfn */
-
-$this->title = 'Update Pfn: ' . ' ' . $model->pfn_id;
-$this->params['breadcrumbs'][] = ['label' => 'Pfns', 'url' => ['index']];
-$this->params['breadcrumbs'][] = ['label' => $model->pfn_id, 'url' => ['view', 'id' => $model->pfn_id]];
-$this->params['breadcrumbs'][] = 'Update';
+$this->title = 'Kemaskini';
 ?>
-<div class="pfn-update">
+<span id="pfnCreate" class="<?php echo Yii::$app->controller->id."/".Yii::$app->controller->action->id;?>"></span>
+  <!-- BEGIN PAGE HEAD -->
+    <div class="page-head">
+        <div class="container">
+            <!-- BEGIN PAGE TITLE -->
+            <div class="page-title">
+                <h1>Rangkaian Fasiliti Awam</h1>
+            </div>
+            <!-- END PAGE TITLE -->
 
-    <h1><?= Html::encode($this->title) ?></h1>
+        </div>
+    </div>
+    <!-- END PAGE HEAD -->
+    <!-- BEGIN PAGE CONTENT -->
+    <div class="page-content">
+        <div class="container">
+            <!-- BEGIN PAGE BREADCRUMB -->
+            <ul class="page-breadcrumb breadcrumb">
+                <li>
+                   <?= Html::a('Utama', ['site/index']) ?><i class="fa fa-circle"></i>
+                </li>
+                <li>
+                    <?= Html::a('Rangkaian Fasiliti Awam', ['pfn/index']) ?><i class="fa fa-circle"></i>
+                </li>
+                <li class="active">Kemaskini</li>
+            </ul>
+            <!-- END PAGE BREADCRUMB -->
+			<div class="row">
+				<div class="col-md-12">
+					<!-- BEGIN SAMPLE FORM PORTLET-->
+					<div class="portlet light" id="form_wizard_1">
+						<div class="portlet-title">
+							<div class="caption font-green-haze">
+								<i class="icon-feed font-green-haze"></i>
+								<span class="caption-subject bold uppercase"> Kemaskini Maklumat Rangkaian Fasiliti Awam </span>
+							</div>
+							<div class="actions">
+								<a class="btn btn-circle btn-icon-only btn-default fullscreen" href="javascript:;" data-original-title="" title="">
+								</a>
+							</div>
+						</div>
+						<div class="portlet-body form" >
+							
+						    <?= $this->render('_edit', [
+						        'model' => $model,
+   
+						    ]) ?>
 
-    <?= $this->render('_form', [
-        'model' => $model,
-    ]) ?>
+						</div>
+					</div>
+				</div>
+				<!-- END SAMPLE FORM PORTLET-->
+			</div>
+			<!-- END PAGE CONTENT INNER -->
+        
 
-</div>
+
+        </div>
+    </div>
+    <!-- END PAGE CONTENT -->
