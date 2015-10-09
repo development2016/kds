@@ -543,7 +543,7 @@ $this->title = 'Lihat';
                                                             <div class="form-group">
                                                                 <label class="control-label col-md-3">Eucation Level : </label>
                                                                 <div class="col-md-6">
-                                                                    <span class="view"><?= $value['edu_level']; ?></span>
+                                                                    <span class="view"><?= $value['education']; ?></span>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -565,7 +565,7 @@ $this->title = 'Lihat';
                                                             <div class="form-group">
                                                                 <label class="control-label col-md-3">hubungan : </label>
                                                                 <div class="col-md-6">
-                                                                    <span class="view"><?= $value['hubungan']; ?></span>
+                                                                    <span class="view"><?= $value['hub']; ?></span>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -669,7 +669,7 @@ $this->title = 'Lihat';
                                                         <div class="form-group">
                                                             <label class="control-label col-md-3">Hubungan : </label>
                                                             <div class="col-md-6">
-                                                                <span class="view"><?= $value['hubungan']; ?></span>
+                                                                <span class="view"><?= $value['hub']; ?></span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -689,7 +689,7 @@ $this->title = 'Lihat';
                                                         <div class="form-group">
                                                             <label class="control-label col-md-3">Kategori : </label>
                                                             <div class="col-md-6">
-                                                                <span class="view"><?= $value['kategori']; ?></span>
+                                                                <span class="view"><?= $value['oku']; ?></span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -709,7 +709,7 @@ $this->title = 'Lihat';
                                                         <div class="form-group">
                                                             <label class="control-label col-md-3">tahap_pendidikan : </label>
                                                             <div class="col-md-6">
-                                                                <span class="view"><?= $value['tahap_pendidikan']; ?></span>
+                                                                <span class="view"><?= $value['education']; ?></span>
                                                             </div>
                                                         </div>
                                                     </div>

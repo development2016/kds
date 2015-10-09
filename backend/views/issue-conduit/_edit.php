@@ -532,10 +532,28 @@ $kategoriOku = ArrayHelper::map(LookupKategoriOku::find()->asArray()->all(), 'id
                     </div>
                 </div>
 
+                <div class="row">
+                    <div class="portlet-body form">
+                        <div class="form-body">
 
+                            <div class="col-md-4">
+                                <div class="form-group form-md-line-input">
+                                    <?= Html::activeDropDownList($model, 'status',
+                                     [
+                                        'Telah Selesai' => 'Telah Selesai',
+                                        'Menafikan' => 'Menafikan',
+    
+                                     ], 
 
+                                     ['prompt'=>'(Sila Pilih)','id'=>'form_control_1','class'=>'form-control']); ?>
+                                    <label for="form_control_1"><?= Html::activeLabel($model,'status'); ?></label>
+                                    <span class="help-block"><?= Html::error($model,'status'); ?></span>
+                                </div>
+                            </div>
 
-
+                        </div>
+                    </div>
+                </div>
 
             </div>
 

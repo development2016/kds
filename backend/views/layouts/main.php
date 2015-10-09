@@ -118,8 +118,10 @@ AppAsset::register($this);
                                 ['label' => 'Sukarelawan', 'url' => ['volunteer/index'],'visible' => User::checkMenu('2'),'options'=>['id'=>'volunteer']],
                                 ['label' => 'Isu Konduit', 'url' => ['issue-conduit/index'],'visible' => User::checkMenu('3'),'options'=>['id'=>'issue']],
                                 ['label' => 'Public Facility Network', 'url' => ['pfn/index'],'visible' => User::checkMenu('5'),'options'=>['id'=>'pfn']],
+                                ['label' => 'Manager Train', 'url' => ['manager-train/index'],'visible' => User::checkMenu('17'),'options'=>['id'=>'mt']],
                                 ['label' => 'Mikroworker', 'url' => ['user/index'],'visible' => User::checkMenu('10'),'options'=>['id'=>'micro']],
                                 ['label' => 'Demographic', 'url' => ['demographic/index'],'visible' => User::checkMenu('6'),'options'=>['id'=>'demographic']],
+
                                 ['label' => '',
                                     'visible' => User::checkMenu('8'),
                                     'options'=>['class'=>'menu-dropdown mega-menu-dropdown mega-menu-full '],
@@ -178,6 +180,10 @@ AppAsset::register($this);
                                         ['label' => 'Count State', 'url' => ['count-state/index'],'visible' => User::checkMenu('12'),'options'=>['id'=>'count']],
                                         ['label' => 'Request', 'url' => ['request/index'],'visible' => User::checkMenu('15'),'options'=>['id'=>'request']],
                                         ['label' => 'Kawasan Perlaksanaan', 'url' => ['kawasan/index'],'visible' => User::checkMenu('11'),'options'=>['id'=>'kp']],
+                                        ['label' => 'Status KDS', 'url' => ['status/index'],'visible' => User::checkMenu('20'),'options'=>['id'=>'status']],
+                                        ['label' => 'Status KDS - Summary', 'url' => ['status/status'],'visible' => User::checkMenu('16'),'options'=>['id'=>'status']],
+                                        ['label' => 'Status Harian', 'url' => ['status-harian/index'],'visible' => User::checkMenu('19'),'options'=>['id'=>'statusharian']],
+                                        ['label' => 'Status Harian - Summary', 'url' => ['status-harian/status'],'visible' => User::checkMenu('18'),'options'=>['id'=>'statusharian']],
 
                                     ]
                                 ]

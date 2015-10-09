@@ -169,6 +169,24 @@ $years = array_combine($range, $range);
                     </div>
                 </div>
 
+                <div class="col-md-4">
+                    <div class="form-group form-md-line-input">
+                        <?= Html::activeDropDownList($model, 'status',
+                         [
+                            'Aktif' => 'Aktif',
+                            'Telah Selesai' => 'Telah Selesai',
+                            'Menafikan' => 'Menafikan',
+
+                         ], 
+
+                         ['prompt'=>'(Sila Pilih)','id'=>'form_control_1','class'=>'form-control']); ?>
+                        <label for="form_control_1"><?= Html::activeLabel($model,'status'); ?></label>
+                        <span class="help-block"><?= Html::error($model,'status'); ?></span>
+                    </div>
+                </div>
+
+
+
             </div>
         </div>
     </div>

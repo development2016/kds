@@ -120,7 +120,9 @@ $(function(){
     if($('#profilView').hasClass('people/viewp')){
        $('li#profil').addClass('active');
     }
-
+    if($('#kawasan').hasClass('kawasan/state')){
+       $('li#kp').addClass('active');
+    }
 //kemaskini : tanggungan
     $('#tanggunganCreate').click(function(){
 

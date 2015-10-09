@@ -79,13 +79,25 @@ class PeopleController extends Controller
 
         $model_wife = Wife::find()->where(['people_id'=>$id])->all();
 
-        $model_tanggungan = Tanggungan::find()->where(['people_id'=>$id])->all();
+        $connection = \Yii::$app->db;
+        $sql = $connection->createCommand("SELECT *,lookup_edu_level.edu_level AS education ,lookup_hubungan.hubungan AS hub  FROM tanggungan 
+        LEFT JOIN lookup_edu_level ON tanggungan.edu_level = lookup_edu_level.id
+        LEFT JOIN lookup_hubungan ON tanggungan.hubungan = lookup_hubungan.id WHERE tanggungan.people_id = '".$id."'");
+        $model_tanggungan = $sql->queryAll();
 
         $model_answer = new ActiveDataProvider([
             'query' => Answer::find()->where(['people_id'=>$id]),
             'pagination' => ['pageSize'=>52],
         ]);
-        $model_tanggunganoku = TanggunganOku::find()->where(['people_id'=>$id])->all();
+        $sql2 = $connection->createCommand("SELECT *,lookup_edu_level_under_17.edu_level_under_17 AS education ,
+        lookup_hubungan.hubungan AS hub,
+        lookup_kategori_oku.kategori_oku AS oku
+        FROM tanggungan_oku
+        LEFT JOIN lookup_edu_level_under_17 ON tanggungan_oku.tahap_pendidikan = lookup_edu_level_under_17.id
+        LEFT JOIN lookup_hubungan ON tanggungan_oku.hubungan = lookup_hubungan.id 
+        LEFT JOIN lookup_kategori_oku ON tanggungan_oku.kategori = lookup_kategori_oku.id
+        WHERE tanggungan_oku.people_id = '".$id."'");
+        $model_tanggunganoku = $sql2->queryAll();
 
         return $this->render('view', [
             'model' => $this->findModel($id),
@@ -105,13 +117,27 @@ class PeopleController extends Controller
 
         $model_wife = Wife::find()->where(['people_id'=>$id])->all();
 
-        $model_tanggungan = Tanggungan::find()->where(['people_id'=>$id])->all();
+        $connection = \Yii::$app->db;
+        $sql = $connection->createCommand("SELECT *,lookup_edu_level.edu_level AS education ,lookup_hubungan.hubungan AS hub  FROM tanggungan 
+        LEFT JOIN lookup_edu_level ON tanggungan.edu_level = lookup_edu_level.id
+        LEFT JOIN lookup_hubungan ON tanggungan.hubungan = lookup_hubungan.id WHERE tanggungan.people_id = '".$id."'");
+        $model_tanggungan = $sql->queryAll();
 
         $model_answer = new ActiveDataProvider([
             'query' => Answer::find()->where(['people_id'=>$id]),
             'pagination' => ['pageSize'=>52],
         ]);
-        $model_tanggunganoku = TanggunganOku::find()->where(['people_id'=>$id])->all();
+        //$model_tanggunganoku = TanggunganOku::find()->where(['people_id'=>$id])->all();
+
+        $sql2 = $connection->createCommand("SELECT *,lookup_edu_level_under_17.edu_level_under_17 AS education ,
+        lookup_hubungan.hubungan AS hub,
+        lookup_kategori_oku.kategori_oku AS oku
+        FROM tanggungan_oku
+        LEFT JOIN lookup_edu_level_under_17 ON tanggungan_oku.tahap_pendidikan = lookup_edu_level_under_17.id
+        LEFT JOIN lookup_hubungan ON tanggungan_oku.hubungan = lookup_hubungan.id 
+        LEFT JOIN lookup_kategori_oku ON tanggungan_oku.kategori = lookup_kategori_oku.id
+        WHERE tanggungan_oku.people_id = '".$id."'");
+        $model_tanggunganoku = $sql2->queryAll();
 
         return $this->render('viewp', [
             'model' => $this->findModel($id),

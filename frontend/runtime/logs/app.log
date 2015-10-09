@@ -8352,3 +8352,967 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1441683725.11
     'REQUEST_TIME' => 1441683725
 ]
+2015-09-21 10:19:52 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp\www\kds\vendor\yiisoft\yii2\web\Request.php:187
+Stack trace:
+#0 C:\wamp\www\kds\vendor\yiisoft\yii2\web\Application.php(75): yii\web\Request->resolve()
+#1 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp\www\kds\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+2015-09-21 10:19:52 [::1][-][-][info][application] $_COOKIE = [
+    'ext-stateGrid' => 'o:width=n%3A750^height=n%3A350^columns=a%3Ao%253Aid%253Ds%25253Aheader-144%5Eo%253Aid%253Ds%25253Aheader-145%5Eo%253Aid%253Ds%25253Aheader-146%5Eo%253Aid%253Ds%25253Aheader-147%5Eo%253Aid%253Ds%25253Aheader-148%5Eo%253Aid%253Ds%25253Aheader-149'
+    'ext-mainnav_west' => 'o:width=n%3A250^collapsed=b%3A0^columns=a%3Ao%253Aid%253Ds%25253Aheader-82^weight=n%3A-10'
+    'ext-mainnav_east' => 'o:collapsed=o%3A^weight=n%3A-20'
+    'ext-kitchensink-viewport' => 'o:hasTreeNav=b%3A1'
+    '_csrf' => '028ce2d84b691d040da5cbb7cc50966cbc03a1c96fdbe8d3ec148e401dc1d5a4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"JGMmM2M1lBy9oXUmFnOwKcvnv8o_JAxB\";}'
+    'PHPSESSID' => 'jok4se933e664kb2hs5nljev10'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.93 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'ext-stateGrid=o%3Awidth%3Dn%253A750%5Eheight%3Dn%253A350%5Ecolumns%3Da%253Ao%25253Aid%25253Ds%2525253Aheader-144%255Eo%25253Aid%25253Ds%2525253Aheader-145%255Eo%25253Aid%25253Ds%2525253Aheader-146%255Eo%25253Aid%25253Ds%2525253Aheader-147%255Eo%25253Aid%25253Ds%2525253Aheader-148%255Eo%25253Aid%25253Ds%2525253Aheader-149; ext-mainnav.west=o%3Awidth%3Dn%253A250%5Ecollapsed%3Db%253A0%5Ecolumns%3Da%253Ao%25253Aid%25253Ds%2525253Aheader-82%5Eweight%3Dn%253A-10; ext-mainnav.east=o%3Acollapsed%3Do%253A%5Eweight%3Dn%253A-20; ext-kitchensink-viewport=o%3AhasTreeNav%3Db%253A1; _csrf=028ce2d84b691d040da5cbb7cc50966cbc03a1c96fdbe8d3ec148e401dc1d5a4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JGMmM2M1lBy9oXUmFnOwKcvnv8o_JAxB%22%3B%7D; PHPSESSID=jok4se933e664kb2hs5nljev10'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '50875'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/site/login'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/site/login'
+    'PATH_TRANSLATED' => 'C:\\wamp\\www\\site\\login'
+    'PHP_SELF' => '/kds/frontend/web/index.php/site/login'
+    'REQUEST_TIME_FLOAT' => 1442801992.474
+    'REQUEST_TIME' => 1442801992
+]
+2015-10-01 16:50:03 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp\www\kds\vendor\yiisoft\yii2\web\Request.php:187
+Stack trace:
+#0 C:\wamp\www\kds\vendor\yiisoft\yii2\web\Application.php(75): yii\web\Request->resolve()
+#1 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp\www\kds\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+2015-10-01 16:50:03 [::1][-][-][info][application] $_COOKIE = [
+    '_identity' => '9e63af6751d5f6958273ceffa016be961449ad4d88a4f147452e384f73cfb27fa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[4,\"fbF-19Y79ws5VpimYtNntzcMOluwRD7J\",2592000]\";}'
+    'PHPSESSID' => 'uj8a1uqajnoadb0h45e60nraa6'
+    '_csrf' => 'e9636d7bb310400127a660f0828206912413764f9f0b0c3abfce8ce114d8d734a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"mUVUCzLa9_ai3MjoNXntOSzdrX3NgfLF\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/backend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_identity=9e63af6751d5f6958273ceffa016be961449ad4d88a4f147452e384f73cfb27fa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22fbF-19Y79ws5VpimYtNntzcMOluwRD7J%22%2C2592000%5D%22%3B%7D; PHPSESSID=uj8a1uqajnoadb0h45e60nraa6; _csrf=e9636d7bb310400127a660f0828206912413764f9f0b0c3abfce8ce114d8d734a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22mUVUCzLa9_ai3MjoNXntOSzdrX3NgfLF%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '59882'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/site/login'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/site/login'
+    'PATH_TRANSLATED' => 'C:\\wamp\\www\\site\\login'
+    'PHP_SELF' => '/kds/frontend/web/index.php/site/login'
+    'REQUEST_TIME_FLOAT' => 1443689403.268
+    'REQUEST_TIME' => 1443689403
+]
+2015-10-02 09:49:18 [::1][1][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: premis_perniagaan' in C:\wamp\www\kds\frontend\views\kawasan\state.php:334
+Stack trace:
+#0 C:\wamp\www\kds\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#1 C:\wamp\www\kds\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#2 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render()
+#3 C:\wamp\www\kds\frontend\controllers\KawasanController.php(293): yii\base\Controller->render()
+#4 C:\wamp\www\kds\vendor\yiisoft\yii2\base\InlineAction.php(55): frontend\controllers\KawasanController->actionState()
+#5 C:\wamp\www\kds\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\kds\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#6 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#7 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#8 C:\wamp\www\kds\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#9 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#10 C:\wamp\www\kds\frontend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2015-10-02 09:49:18 [::1][1][-][info][application] $_GET = [
+    'state_id_get' => '12'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'g4rqdupafqobd304d5t38tagk7'
+    '_csrf' => '5c2cf830e4a1ffe9b5cb9400ebe18557aede991dfb949ecbd38810172a5a5600a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"A-61LwhOBLHcgVOkWH0DStuf7Jy4-WRh\";}'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/backend/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php/kawasan/index.cypressdiversified'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=g4rqdupafqobd304d5t38tagk7; _csrf=5c2cf830e4a1ffe9b5cb9400ebe18557aede991dfb949ecbd38810172a5a5600a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22A-61LwhOBLHcgVOkWH0DStuf7Jy4-WRh%22%3B%7D; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '50537'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'state_id_get=12'
+    'REQUEST_URI' => '/kds/frontend/web/index.php/kawasan/state.cypressdiversified?state_id_get=12'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/kawasan/state.cypressdiversified'
+    'PATH_TRANSLATED' => 'C:\\wamp\\www\\kawasan\\state.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/kawasan/state.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1443750558.298
+    'REQUEST_TIME' => 1443750558
+]
+2015-10-02 11:22:36 [::1][1][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: premis_perniagaan' in C:\wamp\www\kds\frontend\views\kawasan\state.php:449
+Stack trace:
+#0 C:\wamp\www\kds\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#1 C:\wamp\www\kds\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#2 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render()
+#3 C:\wamp\www\kds\frontend\controllers\KawasanController.php(293): yii\base\Controller->render()
+#4 C:\wamp\www\kds\vendor\yiisoft\yii2\base\InlineAction.php(55): frontend\controllers\KawasanController->actionState()
+#5 C:\wamp\www\kds\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\kds\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#6 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#7 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#8 C:\wamp\www\kds\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#9 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#10 C:\wamp\www\kds\frontend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2015-10-02 11:22:36 [::1][1][-][info][application] $_GET = [
+    'state_id_get' => '15'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'g4rqdupafqobd304d5t38tagk7'
+    '_csrf' => '4860784cb1665733773c7c176d47caafa697886867ddc75643ea11562e7a5abaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"51nqQ3gfrGn4HdFlik5kwEwJM5F5WuC0\";}'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/backend/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php/kawasan/index.cypressdiversified'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=g4rqdupafqobd304d5t38tagk7; _csrf=4860784cb1665733773c7c176d47caafa697886867ddc75643ea11562e7a5abaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2251nqQ3gfrGn4HdFlik5kwEwJM5F5WuC0%22%3B%7D; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '51500'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'state_id_get=15'
+    'REQUEST_URI' => '/kds/frontend/web/index.php/kawasan/state.cypressdiversified?state_id_get=15'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/kawasan/state.cypressdiversified'
+    'PATH_TRANSLATED' => 'C:\\wamp\\www\\kawasan\\state.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/kawasan/state.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1443756156.748
+    'REQUEST_TIME' => 1443756156
+]
+2015-10-02 11:25:27 [::1][1][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: bengkel' in C:\wamp\www\kds\frontend\views\kawasan\state.php:467
+Stack trace:
+#0 C:\wamp\www\kds\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#1 C:\wamp\www\kds\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#2 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render()
+#3 C:\wamp\www\kds\frontend\controllers\KawasanController.php(293): yii\base\Controller->render()
+#4 C:\wamp\www\kds\vendor\yiisoft\yii2\base\InlineAction.php(55): frontend\controllers\KawasanController->actionState()
+#5 C:\wamp\www\kds\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\kds\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#6 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#7 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#8 C:\wamp\www\kds\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#9 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#10 C:\wamp\www\kds\frontend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2015-10-02 11:25:27 [::1][1][-][info][application] $_GET = [
+    'state_id_get' => '15'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'g4rqdupafqobd304d5t38tagk7'
+    '_csrf' => '4860784cb1665733773c7c176d47caafa697886867ddc75643ea11562e7a5abaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"51nqQ3gfrGn4HdFlik5kwEwJM5F5WuC0\";}'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/backend/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php/kawasan/index.cypressdiversified'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=g4rqdupafqobd304d5t38tagk7; _csrf=4860784cb1665733773c7c176d47caafa697886867ddc75643ea11562e7a5abaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2251nqQ3gfrGn4HdFlik5kwEwJM5F5WuC0%22%3B%7D; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '51522'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'state_id_get=15'
+    'REQUEST_URI' => '/kds/frontend/web/index.php/kawasan/state.cypressdiversified?state_id_get=15'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/kawasan/state.cypressdiversified'
+    'PATH_TRANSLATED' => 'C:\\wamp\\www\\kawasan\\state.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/kawasan/state.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1443756327.022
+    'REQUEST_TIME' => 1443756327
+]
+2015-10-02 11:26:07 [::1][1][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: dewan_orang_ramai' in C:\wamp\www\kds\frontend\views\kawasan\state.php:475
+Stack trace:
+#0 C:\wamp\www\kds\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#1 C:\wamp\www\kds\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#2 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render()
+#3 C:\wamp\www\kds\frontend\controllers\KawasanController.php(293): yii\base\Controller->render()
+#4 C:\wamp\www\kds\vendor\yiisoft\yii2\base\InlineAction.php(55): frontend\controllers\KawasanController->actionState()
+#5 C:\wamp\www\kds\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\kds\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#6 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#7 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#8 C:\wamp\www\kds\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#9 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#10 C:\wamp\www\kds\frontend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2015-10-02 11:26:07 [::1][1][-][info][application] $_GET = [
+    'state_id_get' => '15'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'g4rqdupafqobd304d5t38tagk7'
+    '_csrf' => '4860784cb1665733773c7c176d47caafa697886867ddc75643ea11562e7a5abaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"51nqQ3gfrGn4HdFlik5kwEwJM5F5WuC0\";}'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/backend/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php/kawasan/index.cypressdiversified'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=g4rqdupafqobd304d5t38tagk7; _csrf=4860784cb1665733773c7c176d47caafa697886867ddc75643ea11562e7a5abaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2251nqQ3gfrGn4HdFlik5kwEwJM5F5WuC0%22%3B%7D; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '51530'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'state_id_get=15'
+    'REQUEST_URI' => '/kds/frontend/web/index.php/kawasan/state.cypressdiversified?state_id_get=15'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/kawasan/state.cypressdiversified'
+    'PATH_TRANSLATED' => 'C:\\wamp\\www\\kawasan\\state.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/kawasan/state.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1443756367.49
+    'REQUEST_TIME' => 1443756367
+]
+2015-10-02 11:29:13 [::1][1][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: tele_center' in C:\wamp\www\kds\frontend\views\kawasan\state.php:512
+Stack trace:
+#0 C:\wamp\www\kds\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#1 C:\wamp\www\kds\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#2 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render()
+#3 C:\wamp\www\kds\frontend\controllers\KawasanController.php(293): yii\base\Controller->render()
+#4 C:\wamp\www\kds\vendor\yiisoft\yii2\base\InlineAction.php(55): frontend\controllers\KawasanController->actionState()
+#5 C:\wamp\www\kds\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\kds\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#6 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#7 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#8 C:\wamp\www\kds\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#9 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#10 C:\wamp\www\kds\frontend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2015-10-02 11:29:13 [::1][1][-][info][application] $_GET = [
+    'state_id_get' => '15'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'g4rqdupafqobd304d5t38tagk7'
+    '_csrf' => '4860784cb1665733773c7c176d47caafa697886867ddc75643ea11562e7a5abaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"51nqQ3gfrGn4HdFlik5kwEwJM5F5WuC0\";}'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/backend/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php/kawasan/index.cypressdiversified'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=g4rqdupafqobd304d5t38tagk7; _csrf=4860784cb1665733773c7c176d47caafa697886867ddc75643ea11562e7a5abaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2251nqQ3gfrGn4HdFlik5kwEwJM5F5WuC0%22%3B%7D; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '51599'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'state_id_get=15'
+    'REQUEST_URI' => '/kds/frontend/web/index.php/kawasan/state.cypressdiversified?state_id_get=15'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/kawasan/state.cypressdiversified'
+    'PATH_TRANSLATED' => 'C:\\wamp\\www\\kawasan\\state.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/kawasan/state.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1443756553.161
+    'REQUEST_TIME' => 1443756553
+]
+2015-10-02 11:29:23 [::1][1][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: sek_rendah' in C:\wamp\www\kds\frontend\views\kawasan\state.php:581
+Stack trace:
+#0 C:\wamp\www\kds\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#1 C:\wamp\www\kds\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#2 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render()
+#3 C:\wamp\www\kds\frontend\controllers\KawasanController.php(293): yii\base\Controller->render()
+#4 C:\wamp\www\kds\vendor\yiisoft\yii2\base\InlineAction.php(55): frontend\controllers\KawasanController->actionState()
+#5 C:\wamp\www\kds\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\kds\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#6 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#7 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#8 C:\wamp\www\kds\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#9 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#10 C:\wamp\www\kds\frontend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2015-10-02 11:29:23 [::1][1][-][info][application] $_GET = [
+    'state_id_get' => '15'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'g4rqdupafqobd304d5t38tagk7'
+    '_csrf' => '4860784cb1665733773c7c176d47caafa697886867ddc75643ea11562e7a5abaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"51nqQ3gfrGn4HdFlik5kwEwJM5F5WuC0\";}'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/backend/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php/kawasan/index.cypressdiversified'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=g4rqdupafqobd304d5t38tagk7; _csrf=4860784cb1665733773c7c176d47caafa697886867ddc75643ea11562e7a5abaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2251nqQ3gfrGn4HdFlik5kwEwJM5F5WuC0%22%3B%7D; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '51604'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'state_id_get=15'
+    'REQUEST_URI' => '/kds/frontend/web/index.php/kawasan/state.cypressdiversified?state_id_get=15'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/kawasan/state.cypressdiversified'
+    'PATH_TRANSLATED' => 'C:\\wamp\\www\\kawasan\\state.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/kawasan/state.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1443756563.374
+    'REQUEST_TIME' => 1443756563
+]
+2015-10-02 14:33:21 [::1][5829][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND demographic.kampung_id = 1887 GROUP BY info_demographic.kemudahan_id' at line 3' in C:\wamp\www\kds\vendor\yiisoft\yii2\db\Command.php:825
+Stack trace:
+#0 C:\wamp\www\kds\vendor\yiisoft\yii2\db\Command.php(825): PDOStatement->execute()
+#1 C:\wamp\www\kds\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\wamp\www\kds\frontend\controllers\KawasanController.php(93): yii\db\Command->queryAll()
+#3 [internal function]: frontend\controllers\KawasanController->actionState('22')
+#4 C:\wamp\www\kds\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('state', Array)
+#7 C:\wamp\www\kds\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('kawasan/state', Array)
+#8 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\wamp\www\kds\frontend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND demographic.kampung_id = 1887 GROUP BY info_demographic.kemudahan_id' at line 3
+The SQL being executed was: SELECT info_demographic.kemudahan_id,SUM(info_demographic.bilangan) AS jumlah FROM demographic 
+            RIGHT JOIN info_demographic ON demographic.demographic_id = info_demographic.demographic_id 
+            WHERE demographic.state_id = 22 AND demographic.district_id = 77 AND AND demographic.kampung_id = 1887 GROUP BY info_demographic.kemudahan_id' in C:\wamp\www\kds\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 C:\wamp\www\kds\vendor\yiisoft\yii2\db\Command.php(840): yii\db\Schema->convertException(Object(PDOException), 'SELECT info_dem...')
+#1 C:\wamp\www\kds\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\wamp\www\kds\frontend\controllers\KawasanController.php(93): yii\db\Command->queryAll()
+#3 [internal function]: frontend\controllers\KawasanController->actionState('22')
+#4 C:\wamp\www\kds\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('state', Array)
+#7 C:\wamp\www\kds\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('kawasan/state', Array)
+#8 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\wamp\www\kds\frontend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND demographic.kampung_id = 1887 GROUP BY info_demographic.kemudahan_id' at line 3
+)
+
+2015-10-02 14:33:21 [::1][5829][-][info][application] $_GET = [
+    'state_id_get' => '22'
+]
+
+$_COOKIE = [
+    '_csrf' => '4860784cb1665733773c7c176d47caafa697886867ddc75643ea11562e7a5abaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"51nqQ3gfrGn4HdFlik5kwEwJM5F5WuC0\";}'
+    'PHPSESSID' => 'gaqccap1crft4t3u5kkrhajlc1'
+    '_identity' => 'eb0916b7338918b1e7ca9205e49ad378705b00ab0830660e64e65c65fb8d08f4a:2:{i:0;s:9:\"_identity\";i:1;s:49:\"[5829,\"EBSvDk4hhwklygZ59aPniMW57VC482sD\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/frontend/web/index.php'
+    '__id' => 5829
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php/kawasan/index.cypressdiversified'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=4860784cb1665733773c7c176d47caafa697886867ddc75643ea11562e7a5abaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2251nqQ3gfrGn4HdFlik5kwEwJM5F5WuC0%22%3B%7D; PHPSESSID=gaqccap1crft4t3u5kkrhajlc1; _identity=eb0916b7338918b1e7ca9205e49ad378705b00ab0830660e64e65c65fb8d08f4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A49%3A%22%5B5829%2C%22EBSvDk4hhwklygZ59aPniMW57VC482sD%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '53735'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'state_id_get=22'
+    'REQUEST_URI' => '/kds/frontend/web/index.php/kawasan/state.cypressdiversified?state_id_get=22'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/kawasan/state.cypressdiversified'
+    'PATH_TRANSLATED' => 'C:\\wamp\\www\\kawasan\\state.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/kawasan/state.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1443767600.994
+    'REQUEST_TIME' => 1443767600
+]
+2015-10-02 14:39:52 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp\www\kds\vendor\yiisoft\yii2\web\Request.php:187
+Stack trace:
+#0 C:\wamp\www\kds\vendor\yiisoft\yii2\web\Application.php(75): yii\web\Request->resolve()
+#1 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp\www\kds\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+2015-10-02 14:39:52 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'e88f214953605c02b590667bb7defe7fbad738df5dc4906028844c8fbf705291a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"J-kEqwZ_vfcq-852ZOQ9xxh4DvBvsiiD\";}'
+    'PHPSESSID' => 'lpj0voh05kjioflkr4s0mg5a72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=e88f214953605c02b590667bb7defe7fbad738df5dc4906028844c8fbf705291a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22J-kEqwZ_vfcq-852ZOQ9xxh4DvBvsiiD%22%3B%7D; PHPSESSID=lpj0voh05kjioflkr4s0mg5a72'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '53930'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/site/login'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/site/login'
+    'PATH_TRANSLATED' => 'C:\\wamp\\www\\site\\login'
+    'PHP_SELF' => '/kds/frontend/web/index.php/site/login'
+    'REQUEST_TIME_FLOAT' => 1443767992.732
+    'REQUEST_TIME' => 1443767992
+]
+2015-10-05 10:26:38 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp\www\kds\vendor\yiisoft\yii2\web\Request.php:187
+Stack trace:
+#0 C:\wamp\www\kds\vendor\yiisoft\yii2\web\Application.php(75): yii\web\Request->resolve()
+#1 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp\www\kds\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+2015-10-05 10:26:38 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '22ae257318065f5d07e3a2d23abef172c797cfdda1d4dcdc274603b13ac6891ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vB0zzl9XFPDk2Y__C2K8E7QOJ8Z3yQJ_\";}'
+    'PHPSESSID' => 'd3lb0os65mbf72c4lv82afkci3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=22ae257318065f5d07e3a2d23abef172c797cfdda1d4dcdc274603b13ac6891ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vB0zzl9XFPDk2Y__C2K8E7QOJ8Z3yQJ_%22%3B%7D; PHPSESSID=d3lb0os65mbf72c4lv82afkci3'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '52705'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/site/login'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/site/login'
+    'PATH_TRANSLATED' => 'C:\\wamp\\www\\site\\login'
+    'PHP_SELF' => '/kds/frontend/web/index.php/site/login'
+    'REQUEST_TIME_FLOAT' => 1444011998.624
+    'REQUEST_TIME' => 1444011998
+]
+2015-10-05 10:46:06 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: common\models\Tanggungan::education' in C:\wamp\www\kds\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\wamp\www\kds\vendor\yiisoft\yii2\db\BaseActiveRecord.php(246): yii\base\Component->__get('education')
+#1 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Model.php(957): yii\db\BaseActiveRecord->__get('education')
+#2 C:\wamp\www\kds\frontend\views\people\viewp.php(556): yii\base\Model->offsetGet('education')
+#3 C:\wamp\www\kds\vendor\yiisoft\yii2\base\View.php(325): require('C:\\wamp\\www\\kds...')
+#4 C:\wamp\www\kds\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\wamp\\www\\kds...', Array)
+#5 C:\wamp\www\kds\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\wamp\\www\\kds...', Array, Object(frontend\controllers\PeopleController))
+#6 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('viewp', Array, Object(frontend\controllers\PeopleController))
+#7 C:\wamp\www\kds\frontend\controllers\PeopleController.php(131): yii\base\Controller->render('viewp', Array)
+#8 [internal function]: frontend\controllers\PeopleController->actionViewp('MTQ5NTY3')
+#9 C:\wamp\www\kds\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#10 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#11 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('viewp', Array)
+#12 C:\wamp\www\kds\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('people/viewp', Array)
+#13 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\wamp\www\kds\frontend\web\index.php(18): yii\base\Application->run()
+#15 {main}
+2015-10-05 10:46:05 [::1][-][-][info][application] $_GET = [
+    'id' => 'MTQ5NTY3'
+]
+
+$_COOKIE = [
+    '_csrf' => '37aa63bb1332597251635d4a06b28db6ec8f439f5209a0bc8faccff402ffadfba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"O3zlj_Jt2ttAPTW2H-Hh8lGa1NXErYts\";}'
+    'PHPSESSID' => 'sok48iedn90q6i8gigi6ducfd3'
+    '_identity' => 'c1a0892a9bc38a36d3c65184cf93a9e99dd32db2caf4660c04e3033bf2967698a:2:{i:0;s:9:\"_identity\";i:1;s:49:\"[5827,\"O_imLOEOxfm-f9mhQfgf6wE5dBq_8j25\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/frontend/web/index.php'
+    '__id' => 5827
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php/people/profil.cypressdiversified'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=37aa63bb1332597251635d4a06b28db6ec8f439f5209a0bc8faccff402ffadfba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22O3zlj_Jt2ttAPTW2H-Hh8lGa1NXErYts%22%3B%7D; PHPSESSID=sok48iedn90q6i8gigi6ducfd3; _identity=c1a0892a9bc38a36d3c65184cf93a9e99dd32db2caf4660c04e3033bf2967698a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A49%3A%22%5B5827%2C%22O_imLOEOxfm-f9mhQfgf6wE5dBq_8j25%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '53183'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=MTQ5NTY3'
+    'REQUEST_URI' => '/kds/frontend/web/index.php/people/viewp.cypressdiversified?id=MTQ5NTY3'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/people/viewp.cypressdiversified'
+    'PATH_TRANSLATED' => 'C:\\wamp\\www\\people\\viewp.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/people/viewp.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1444013165.847
+    'REQUEST_TIME' => 1444013165
+]
+2015-10-05 10:47:03 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: common\models\Tanggungan::education' in C:\wamp\www\kds\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\wamp\www\kds\vendor\yiisoft\yii2\db\BaseActiveRecord.php(246): yii\base\Component->__get('education')
+#1 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Model.php(957): yii\db\BaseActiveRecord->__get('education')
+#2 C:\wamp\www\kds\frontend\views\people\viewp.php(556): yii\base\Model->offsetGet('education')
+#3 C:\wamp\www\kds\vendor\yiisoft\yii2\base\View.php(325): require('C:\\wamp\\www\\kds...')
+#4 C:\wamp\www\kds\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\wamp\\www\\kds...', Array)
+#5 C:\wamp\www\kds\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\wamp\\www\\kds...', Array, Object(frontend\controllers\PeopleController))
+#6 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('viewp', Array, Object(frontend\controllers\PeopleController))
+#7 C:\wamp\www\kds\frontend\controllers\PeopleController.php(129): yii\base\Controller->render('viewp', Array)
+#8 [internal function]: frontend\controllers\PeopleController->actionViewp('MTQ5NTY3')
+#9 C:\wamp\www\kds\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#10 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#11 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('viewp', Array)
+#12 C:\wamp\www\kds\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('people/viewp', Array)
+#13 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\wamp\www\kds\frontend\web\index.php(18): yii\base\Application->run()
+#15 {main}
+2015-10-05 10:47:03 [::1][-][-][info][application] $_GET = [
+    'id' => 'MTQ5NTY3'
+]
+
+$_COOKIE = [
+    '_csrf' => '37aa63bb1332597251635d4a06b28db6ec8f439f5209a0bc8faccff402ffadfba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"O3zlj_Jt2ttAPTW2H-Hh8lGa1NXErYts\";}'
+    'PHPSESSID' => 'sok48iedn90q6i8gigi6ducfd3'
+    '_identity' => 'c1a0892a9bc38a36d3c65184cf93a9e99dd32db2caf4660c04e3033bf2967698a:2:{i:0;s:9:\"_identity\";i:1;s:49:\"[5827,\"O_imLOEOxfm-f9mhQfgf6wE5dBq_8j25\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/frontend/web/index.php'
+    '__id' => 5827
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php/people/profil.cypressdiversified'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=37aa63bb1332597251635d4a06b28db6ec8f439f5209a0bc8faccff402ffadfba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22O3zlj_Jt2ttAPTW2H-Hh8lGa1NXErYts%22%3B%7D; PHPSESSID=sok48iedn90q6i8gigi6ducfd3; _identity=c1a0892a9bc38a36d3c65184cf93a9e99dd32db2caf4660c04e3033bf2967698a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A49%3A%22%5B5827%2C%22O_imLOEOxfm-f9mhQfgf6wE5dBq_8j25%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '53192'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=MTQ5NTY3'
+    'REQUEST_URI' => '/kds/frontend/web/index.php/people/viewp.cypressdiversified?id=MTQ5NTY3'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/people/viewp.cypressdiversified'
+    'PATH_TRANSLATED' => 'C:\\wamp\\www\\people\\viewp.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/people/viewp.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1444013223.612
+    'REQUEST_TIME' => 1444013223
+]
+2015-10-06 08:54:13 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp\www\kds\vendor\yiisoft\yii2\web\Request.php:187
+Stack trace:
+#0 C:\wamp\www\kds\vendor\yiisoft\yii2\web\Application.php(75): yii\web\Request->resolve()
+#1 C:\wamp\www\kds\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp\www\kds\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+2015-10-06 08:54:13 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '5e386201b232e7ff259af22907548ec4d3a50c7bec2d4d7d585a32aca224db06a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hoJCc2HdOVPzBllvmUGvgsv0xESosuGF\";}'
+    'PHPSESSID' => 'o8dlt4vua5i0unlqugso6u67b7'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=5e386201b232e7ff259af22907548ec4d3a50c7bec2d4d7d585a32aca224db06a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hoJCc2HdOVPzBllvmUGvgsv0xESosuGF%22%3B%7D; PHPSESSID=o8dlt4vua5i0unlqugso6u67b7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49608'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/site/login'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/site/login'
+    'PATH_TRANSLATED' => 'C:\\wamp\\www\\site\\login'
+    'PHP_SELF' => '/kds/frontend/web/index.php/site/login'
+    'REQUEST_TIME_FLOAT' => 1444092853.792
+    'REQUEST_TIME' => 1444092853
+]
