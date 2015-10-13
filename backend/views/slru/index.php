@@ -1,4 +1,9 @@
 <?php
+
+use yii\helpers\Html;
+use yii\grid\GridView;
+use yii\helpers\Url;
+
 /* @var $this yii\web\View */
 $this->title = 'Komuniti Development System';
 ?>
@@ -40,6 +45,41 @@ $this->title = 'Komuniti Development System';
                         </div>
                         <div class="portlet-body">
 
+                            <table class="table table-striped table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>NO</th>
+                                        <th>MODUL</th>
+                                        <th>SUBMODUL</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Demografi</td>
+                                        <td>
+                                            <li><?= Html::a('Jantina', ['../..']) ?></li>
+                                            <li><?= Html::a('Status Umur', ['../..']) ?></li>
+                                        </td>
+                                    </tr>
+                                     <tr>
+                                        <td>2</td>
+                                        <td>Padanan Minat</td>
+                                        <td>
+                                            <li><?= Html::a('ICT', ['../..']) ?></li>
+                                            <li><?= Html::a('Kesihatan', ['../..']) ?></li>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Sukarelawan</td>
+                                        <td>
+                                            <li><?= Html::a('Jantina', ['../..']) ?></li>
+                                            <li><?= Html::a('Minat Program', ['../..']) ?></li>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
 
 
 
