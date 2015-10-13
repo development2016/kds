@@ -58,7 +58,7 @@ $this->title = 'Komuniti Development System';
                                         <td>1</td>
                                         <td>Demografi</td>
                                         <td>
-                                            <li><?= Html::a('Jantina', ['../..']) ?></li>
+                                            <li><?= Html::a('Jantina', ['slru/demografijantina']) ?></li>
                                             <li><?= Html::a('Status Umur', ['../..']) ?></li>
                                         </td>
                                     </tr>

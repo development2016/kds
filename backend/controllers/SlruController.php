@@ -19,11 +19,14 @@ class SlruController extends Controller
     public function actionIndex() 
     {
 
-        
-
-
-
         return $this->render('index');
+    }
+
+    public function actionDemografijantina()
+    {
+
+    	//build your own quoery here and render to view
+    	return $this->render('demografi_jantina');
     }
 
 
