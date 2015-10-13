@@ -198,6 +198,17 @@
                                         <td><?= $pfnn_selangor; ?></td>
                                     </tr>
                                     <tr>
+                                        <td>11</td>
+                                        <td>No. of community facilities manager trained</td>
+                                        <td><?= $mngt_pahang; ?></td>
+                                        <td><?= $mngt_kedah; ?></td>
+                                        <td><?= $mngt_perlis; ?></td>
+                                        <td><?= $mngt_terengganu; ?></td>
+                                        <td><?= $mngt_perak; ?></td>
+                                        <td><?= $mngt_johor; ?></td>
+                                        <td><?= $mngt_selangor; ?></td>
+                                    </tr>
+                                    <tr>
                                         <td>12</td>
                                         <td>No. of issues</td>
                                         <td><?= $i_pahang; ?></td>

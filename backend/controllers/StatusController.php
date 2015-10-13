@@ -75,22 +75,22 @@ class StatusController extends Controller
         $mwtt_selangor = User::find()->where(['state_area_id' => 13,'status_area' => 'Microworker Train & Task'])->count();
 
         //pfn audit
-        $pfna_pahang = Pfn::find()->where(['state_id' => 12])->count();
-        $pfna_perlis = Pfn::find()->where(['state_id' => 14])->count();
-        $pfna_terengganu = Pfn::find()->where(['state_id' => 18])->count();
-        $pfna_perak = Pfn::find()->where(['state_id' => 15])->count();
-        $pfna_johor = Pfn::find()->where(['state_id' => 22])->count();
-        $pfna_kedah = Pfn::find()->where(['state_id' => 16])->count();
-        $pfna_selangor = Pfn::find()->where(['state_id' => 13])->count();
+        $pfna_pahang = Pfn::find()->where(['state_id' => 12,'status_audit'=>'Ya'])->count();
+        $pfna_perlis = Pfn::find()->where(['state_id' => 14,'status_audit'=>'Ya'])->count();
+        $pfna_terengganu = Pfn::find()->where(['state_id' => 18,'status_audit'=>'Ya'])->count();
+        $pfna_perak = Pfn::find()->where(['state_id' => 15,'status_audit'=>'Ya'])->count();
+        $pfna_johor = Pfn::find()->where(['state_id' => 22,'status_audit'=>'Ya'])->count();
+        $pfna_kedah = Pfn::find()->where(['state_id' => 16,'status_audit'=>'Ya'])->count();
+        $pfna_selangor = Pfn::find()->where(['state_id' => 13,'status_audit'=>'Ya'])->count();
 
         //pfn network
-        $pfnn_pahang = Pfn::find()->where(['state_id' => 12])->count();
-        $pfnn_perlis = Pfn::find()->where(['state_id' => 14])->count();
-        $pfnn_terengganu = Pfn::find()->where(['state_id' => 18])->count();
-        $pfnn_perak = Pfn::find()->where(['state_id' => 15])->count();
-        $pfnn_johor = Pfn::find()->where(['state_id' => 22])->count();
-        $pfnn_kedah = Pfn::find()->where(['state_id' => 16])->count();
-        $pfnn_selangor = Pfn::find()->where(['state_id' => 13])->count();
+        $pfnn_pahang = Pfn::find()->where(['state_id' => 12,'status_audit'=>'Ya','status_rangkaian'=>'Ya'])->count();
+        $pfnn_perlis = Pfn::find()->where(['state_id' => 14,'status_audit'=>'Ya','status_rangkaian'=>'Ya'])->count();
+        $pfnn_terengganu = Pfn::find()->where(['state_id' => 18,'status_audit'=>'Ya','status_rangkaian'=>'Ya'])->count();
+        $pfnn_perak = Pfn::find()->where(['state_id' => 15,'status_audit'=>'Ya','status_rangkaian'=>'Ya'])->count();
+        $pfnn_johor = Pfn::find()->where(['state_id' => 22,'status_audit'=>'Ya','status_rangkaian'=>'Ya'])->count();
+        $pfnn_kedah = Pfn::find()->where(['state_id' => 16,'status_audit'=>'Ya','status_rangkaian'=>'Ya'])->count();
+        $pfnn_selangor = Pfn::find()->where(['state_id' => 13,'status_audit'=>'Ya','status_rangkaian'=>'Ya'])->count();
 
         //manager trained
         $mngt_pahang = ManagerTrain::find()->where(['state_id' => 12])->count();
@@ -301,22 +301,22 @@ class StatusController extends Controller
         $mwtt_selangor = User::find()->where(['state_area_id' => 13,'status_area' => 'Microworker Train & Task'])->count();
 
         //pfn audit
-        $pfna_pahang = Pfn::find()->where(['state_id' => 12])->count();
-        $pfna_perlis = Pfn::find()->where(['state_id' => 14])->count();
-        $pfna_terengganu = Pfn::find()->where(['state_id' => 18])->count();
-        $pfna_perak = Pfn::find()->where(['state_id' => 15])->count();
-        $pfna_johor = Pfn::find()->where(['state_id' => 22])->count();
-        $pfna_kedah = Pfn::find()->where(['state_id' => 16])->count();
-        $pfna_selangor = Pfn::find()->where(['state_id' => 13])->count();
+        $pfna_pahang = Pfn::find()->where(['state_id' => 12,'status_audit'=>'Ya'])->count();
+        $pfna_perlis = Pfn::find()->where(['state_id' => 14,'status_audit'=>'Ya'])->count();
+        $pfna_terengganu = Pfn::find()->where(['state_id' => 18,'status_audit'=>'Ya'])->count();
+        $pfna_perak = Pfn::find()->where(['state_id' => 15,'status_audit'=>'Ya'])->count();
+        $pfna_johor = Pfn::find()->where(['state_id' => 22,'status_audit'=>'Ya'])->count();
+        $pfna_kedah = Pfn::find()->where(['state_id' => 16,'status_audit'=>'Ya'])->count();
+        $pfna_selangor = Pfn::find()->where(['state_id' => 13,'status_audit'=>'Ya'])->count();
 
         //pfn network
-        $pfnn_pahang = Pfn::find()->where(['state_id' => 12])->count();
-        $pfnn_perlis = Pfn::find()->where(['state_id' => 14])->count();
-        $pfnn_terengganu = Pfn::find()->where(['state_id' => 18])->count();
-        $pfnn_perak = Pfn::find()->where(['state_id' => 15])->count();
-        $pfnn_johor = Pfn::find()->where(['state_id' => 22])->count();
-        $pfnn_kedah = Pfn::find()->where(['state_id' => 16])->count();
-        $pfnn_selangor = Pfn::find()->where(['state_id' => 13])->count();
+        $pfnn_pahang = Pfn::find()->where(['state_id' => 12,'status_audit'=>'Ya','status_rangkaian'=>'Ya'])->count();
+        $pfnn_perlis = Pfn::find()->where(['state_id' => 14,'status_audit'=>'Ya','status_rangkaian'=>'Ya'])->count();
+        $pfnn_terengganu = Pfn::find()->where(['state_id' => 18,'status_audit'=>'Ya','status_rangkaian'=>'Ya'])->count();
+        $pfnn_perak = Pfn::find()->where(['state_id' => 15,'status_audit'=>'Ya','status_rangkaian'=>'Ya'])->count();
+        $pfnn_johor = Pfn::find()->where(['state_id' => 22,'status_audit'=>'Ya','status_rangkaian'=>'Ya'])->count();
+        $pfnn_kedah = Pfn::find()->where(['state_id' => 16,'status_audit'=>'Ya','status_rangkaian'=>'Ya'])->count();
+        $pfnn_selangor = Pfn::find()->where(['state_id' => 13,'status_audit'=>'Ya','status_rangkaian'=>'Ya'])->count();
 
 
         //manager trained
