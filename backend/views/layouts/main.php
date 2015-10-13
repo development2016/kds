@@ -194,6 +194,8 @@ AppAsset::register($this);
                                         ['label' => 'Status KDS - Summary', 'url' => ['status/status'],'visible' => User::checkMenu('16'),'options'=>['id'=>'status']],
                                         ['label' => 'Status Harian', 'url' => ['status-harian/index'],'visible' => User::checkMenu('19'),'options'=>['id'=>'statusharian']],
                                         ['label' => 'Status Harian - Summary', 'url' => ['status-harian/status'],'visible' => User::checkMenu('18'),'options'=>['id'=>'statusharian']],
+                                        ['label' => 'Graf-SLRU', 'url' => ['slru/index'],'visible' => User::checkMenu('21'),'options'=>['id'=>'slru']],
+                                        ['label' => 'Graf-OPERATION', 'url' => ['operation/index'],'visible' => User::checkMenu('22'),'options'=>['id'=>'operation']],
 
                                     ]
                                 ]
