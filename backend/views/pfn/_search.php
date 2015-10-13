@@ -47,18 +47,30 @@ $negara = ArrayHelper::map(LookupPfnCategory::find()->asArray()->all(), 'cat_id'
                         <span class="help-block"><?= Html::error($model,'cat_id'); ?></span>
                     </div>
                 </div>
-                            <div class="col-md-3">
-                                <div class="form-group form-md-line-input">
-                                    <?= Html::activeDropDownList($model, 'status_pfn',
-                                     [
-                                        'Audit' => 'Audit',
-                                        'Rangkaian' => 'Rangkaian',
-                                     ], 
-                                     ['prompt'=>'(Sila Pilih)','id'=>'form_control_1','class'=>'form-control']); ?>
-                                    <label for="form_control_1"><?= Html::activeLabel($model,'status_pfn'); ?></label>
-                                    <span class="help-block"><?= Html::error($model,'status_pfn'); ?></span>
-                                </div>
-                            </div>
+            <div class="col-md-3">
+                <div class="form-group form-md-line-input">
+                    <?= Html::activeDropDownList($model, 'status_audit',
+                     [
+                        'Ya' => 'Ya',
+                        'Tidak' => 'Tidak',
+                     ], 
+                     ['prompt'=>'(Sila Pilih)','id'=>'form_control_1','class'=>'form-control']); ?>
+                    <label for="form_control_1"><?= Html::activeLabel($model,'status_audit'); ?></label>
+                    <span class="help-block"><?= Html::error($model,'status_audit'); ?></span>
+                </div>
+            </div>
+                                <div class="col-md-3">
+                <div class="form-group form-md-line-input">
+                    <?= Html::activeDropDownList($model, 'status_rangkaian',
+                     [
+                        'Ya' => 'Ya',
+                        'Tidak' => 'Tidak',
+                     ], 
+                     ['prompt'=>'(Sila Pilih)','id'=>'form_control_1','class'=>'form-control']); ?>
+                    <label for="form_control_1"><?= Html::activeLabel($model,'status_rangkaian'); ?></label>
+                    <span class="help-block"><?= Html::error($model,'status_rangkaian'); ?></span>
+                </div>
+            </div>
            
             </div>
         </div>

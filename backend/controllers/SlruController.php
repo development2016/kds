@@ -26,7 +26,7 @@ class SlruController extends Controller
     {
 
     	//build your own quoery here and render to view
-    	return $this->render('demografi_jantina');
+    	return $this->render('demografi_jantina',[]);
     }
 
 
