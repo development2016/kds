@@ -839,7 +839,12 @@ $citizen = array('Warganegara'=>'Warganegara','Bukan Warganegara'=>'Bukan Wargan
                          <?php echo  Yii::$app->session->getFlash('updateAnswer'); ?>
                     </div>
                 <?php endif; ?>
-
+                <?php if(Yii::$app->session->hasFlash('generateSoalan')):?>
+                    <div class="alert alert-info">
+                        <button type="button" class="close" data-dismiss="alert"></button>
+                         <?php echo  Yii::$app->session->getFlash('generateSoalan'); ?>
+                    </div>
+                <?php endif; ?>
 			    <?= GridView::widget([
 			        'dataProvider' => $model_answer,
 
@@ -883,6 +888,8 @@ $citizen = array('Warganegara'=>'Warganegara','Bukan Warganegara'=>'Bukan Wargan
                             ],
 			        ],
 			    ]); ?>
+
+                <?= Html::a('Generate Soalan', ['people/generate','id'=>$model->people_id]) ?>
 
 
 

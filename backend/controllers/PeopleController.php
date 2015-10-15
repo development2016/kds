@@ -53,6 +53,25 @@ class PeopleController extends Controller
         ]);
     }
 
+
+
+    public function actionGenerate($id){
+
+        for ($i=1; $i <=52 ; $i++) { 
+            
+            $model_answer = new Answer();
+            $d = $model_answer->question_id = $i;
+            $model_answer->answer = "Tidak";
+            $o = $model_answer->people_id = $id;
+            $r = $model_answer->save();
+
+        }
+        Yii::$app->getSession()->setFlash('generateSoalan', 'Maklumat Soalan Berjaya Di Jana');
+        return $this->redirect(['/people/update', 'id' => $model_answer->people_id,'#'=>'tab_4']);
+
+         
+        
+    }
     /**
      * Displays a single People model.
      * @param integer $id
