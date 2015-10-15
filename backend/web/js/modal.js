@@ -1,6 +1,8 @@
 $(function(){
 
 
+
+
     $('.acl').click(function(){
         $('#modal').modal('show')
         .find('#modalContent')
@@ -113,6 +115,12 @@ $(function(){
 
     });
     
+    $('.ict').click(function(){
+        $('#modal').modal('show')
+        .find('#modalContent')
+        .load($(this).attr('value'));
+
+    });
 
 
 });

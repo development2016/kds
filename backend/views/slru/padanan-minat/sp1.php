@@ -178,17 +178,14 @@ $this->title = 'Komuniti Development System';
 
                         <table class="table table-striped table-bordered">
                           <tr>
-                            <td><?= Html::a('ICT', ['slru/minat','id'=>7]) ?></td>
-                            <td><?= Html::a('Kesihatan', ['slru/sd1']) ?></td>
+                            <td><?= Html::a('ICT', FALSE, ['value'=>Url::to(['slru/ict']),'class' => 'ict','id'=>'ict']) ?></td>
+                            <td><?= Html::a('Kesihatan', ['slru/minat']) ?></td>
                             <td><?= Html::a('Pendidikan', ['slru/sd1']) ?></td>
                             <td><?= Html::a('Keusahawanan', ['slru/sd1']) ?></td>
                             <td><?= Html::a('Riadah', ['slru/sd1']) ?></td>
                           </tr>
                         </table>
 
-
-
-                        <?= $this->render('_minat') ?>
 
 
                         </div>
