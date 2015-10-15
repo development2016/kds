@@ -889,7 +889,7 @@ $citizen = array('Warganegara'=>'Warganegara','Bukan Warganegara'=>'Bukan Wargan
 			        ],
 			    ]); ?>
 
-                <?= Html::a('Generate Soalan', ['people/generate','id'=>$model->people_id]) ?>
+                <?= Html::a('Jana Soalan', ['people/generate','id'=>$model->people_id]) ?>
 
 
 
