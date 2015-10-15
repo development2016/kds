@@ -40,23 +40,34 @@ class SlruController extends Controller
 
 
         $connection = \Yii::$app->db;
-        $sql = $connection->createCommand("SELECT * FROM count_state");
+        $sql = $connection->createCommand("SELECT 
+            SUM(ict) AS ict,
+            SUM(kesihatan) AS kesihatan,
+            SUM(pendidikan) AS pendidikan,
+            SUM(keusahawanan) AS keusahawanan,
+            SUM(riadah) AS riadah
+            FROM count_state");
         $model = $sql->queryAll();
 
-        $sqlict = $connection->createCommand("SELECT ict FROM count_state");
-        $model_ict = $sqlict->queryAll();
-    	return $this->render('padanan-minat/sp1',['model'=>$model,'model_ict'=>$model_ict]);
+        $sql2 = $connection->createCommand("SELECT * FROM count_state");
+        $model2 = $sql2->queryAll();
+
+
+       return $this->render('padanan-minat/sp1',[
+            'model'=>$model,
+            'model2'=>$model2,
+        ]);
 
 
     }
 
-    public function actionIct()
+    public function actionPerbandingan()
     {
         $connection = \Yii::$app->db;
-        $sql = $connection->createCommand("SELECT * FROM count_ict");
+        $sql = $connection->createCommand("SELECT * FROM count_state");
         $model = $sql->queryAll();
 
-        return $this->renderAjax('padanan-minat/ict',[
+        return $this->renderAjax('padanan-minat/perbandingan',[
             'model'=>$model,
         ]);
 

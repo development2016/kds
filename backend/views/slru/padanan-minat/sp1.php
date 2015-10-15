@@ -43,142 +43,182 @@ $this->title = 'Komuniti Development System';
                             </div>
                         </div>
                         <div class="portlet-body">
+    
+                     <?php  
 
-                        <?php 
-
-                            
-                            foreach ($model as $key => $value) {
-                              if ($value['state_id'] == 12) {
-                                  $ict = (int)$value['ict'];
-                                  $kesihatan = (int)$value['kesihatan'];
-                                  $pendidikan = (int)$value['pendidikan'];
-                                  $keusahawanan = (int)$value['keusahawanan'];
-                                  $riadah = (int)$value['riadah'];
-
-                                  $pahang = array($ict,$kesihatan,$pendidikan,$keusahawanan,$riadah);
-                              }
-
-                              if ($value['state_id'] == 14) {
-                                  $ict = (int)$value['ict'];
-                                  $kesihatan = (int)$value['kesihatan'];
-                                  $pendidikan = (int)$value['pendidikan'];
-                                  $keusahawanan = (int)$value['keusahawanan'];
-                                  $riadah = (int)$value['riadah'];
-
-                                  $perlis = array($ict,$kesihatan,$pendidikan,$keusahawanan,$riadah);
-                              }
-                              if ($value['state_id'] == 15) {
-                                  $ict = (int)$value['ict'];
-                                  $kesihatan = (int)$value['kesihatan'];
-                                  $pendidikan = (int)$value['pendidikan'];
-                                  $keusahawanan = (int)$value['keusahawanan'];
-                                  $riadah = (int)$value['riadah'];
-
-                                  $perak = array($ict,$kesihatan,$pendidikan,$keusahawanan,$riadah);
-                              }
-                              if ($value['state_id'] == 16) {
-                                  $ict = (int)$value['ict'];
-                                  $kesihatan = (int)$value['kesihatan'];
-                                  $pendidikan = (int)$value['pendidikan'];
-                                  $keusahawanan = (int)$value['keusahawanan'];
-                                  $riadah = (int)$value['riadah'];
-
-                                  $kedah = array($ict,$kesihatan,$pendidikan,$keusahawanan,$riadah);
-                              }
-                              if ($value['state_id'] == 18) {
-                                  $ict = (int)$value['ict'];
-                                  $kesihatan = (int)$value['kesihatan'];
-                                  $pendidikan = (int)$value['pendidikan'];
-                                  $keusahawanan = (int)$value['keusahawanan'];
-                                  $riadah = (int)$value['riadah'];
-
-                                  $terengganu = array($ict,$kesihatan,$pendidikan,$keusahawanan,$riadah);
-                              }
-                              if ($value['state_id'] == 22) {
-                                  $ict = (int)$value['ict'];
-                                  $kesihatan = (int)$value['kesihatan'];
-                                  $pendidikan = (int)$value['pendidikan'];
-                                  $keusahawanan = (int)$value['keusahawanan'];
-                                  $riadah = (int)$value['riadah'];
-
-                                  $johor = array($ict,$kesihatan,$pendidikan,$keusahawanan,$riadah);
-                              }
+                      foreach ($model as $key => $value) {
+                            $ict = (int)$value['ict'];
+                            $kesihatan = (int)$value['kesihatan'];
+                            $pendidikan = (int)$value['pendidikan'];
+                            $keusahawanan = (int)$value['keusahawanan'];
+                            $riadah = (int)$value['riadah'];
+                      }
 
 
+                      echo Highcharts::widget([
 
-                            }
-                
-
-                        echo Highcharts::widget([
-                            'scripts' => [
-                                 'highcharts-more',   // enables supplementary chart types (gauge, arearange, columnrange, etc.)
-                                 'modules/exporting', // adds Exporting button/menu to chart
-                              ],
                               'options' => [
                               'chart' => [
-                                  'polar' => true,
-                                  'type' =>'line',
-                                  'height' => 900
-
-                                  
-                              ],
-                              'pane' => [
-                                  'size' => '90%',
+                                  'type' =>'pie',
+                                
                               ],
 
                               'title' => [
-                                'text' => 'Graf Padanan Minat Mengikut Negeri',
-                                 'x' => -80
+                                'text' => 'Graf Pie Minat keseluruhan',
+                                
                               ],
-                              'xAxis' => [
-                                  'categories' => ['ICT', 'Kesihatan', 'Pendidikan','Keusahawanan','Riadah'],
-                                  'tickmarkPlacement' =>'on',
-                                  'lineWidth' => 0
+                              'plotOptions' => [
+                                'pie' => [
+                                    'allowPointSelect' => true,
+                                    'cursor' => 'pointer',
+                                    'dataLabels' => [
+                                        'enabled' => true,
+                                        'format' => '<b>{point.name}</b> : {point.y} - {point.percentage:.1f}%',
+                                    ]
+                                ]
                               ],
-                              'yAxis' => [
-                                  'gridLineInterpolation' => 'polygon',
-                                 
-                              ],
-                              'legend' => [
-                                'align' => 'right',
-                                'verticalAlign' => 'top',
-                                'y'=>70,
-                                'layout' => 'vertical',
-                              ],
+
                               'series' => [
                                  [
-                                   'name' => 'Pahang', 
-                                   'data' => $pahang
+                                   'name' => 'Minat', 
+                                   'data' => [
+                                      [
+                                        'name' => 'ICT',
+                                        'y' => $ict
+                                      ],
+                                      [
+                                        'name' => 'Kesihatan',
+                                        'y' => $kesihatan
+                                      ],
+                                      [
+                                        'name' => 'Pendidikan',
+                                        'y' => $pendidikan
+                                      ],
+                                      [
+                                        'name' => 'Keusahawanan',
+                                        'y' => $keusahawanan
+                                      ],
+                                      [
+                                        'name' => 'Riadah',
+                                        'y' => $riadah
+                                      ]
+
+                                   ]
                                  ],
-                                 [
-                                   'name' => 'Perlis', 
-                                   'data' => $perlis
-                                 ],
-                                 [
-                                   'name' => 'Perak', 
-                                   'data' => $perak
-                                 ],
-                                  [
-                                   'name' => 'Kedah', 
-                                   'data' => $kedah
-                                 ],
-                                  [
-                                   'name' => 'Terengganu', 
-                                   'data' => $terengganu
-                                 ],
-                                  [
-                                   'name' => 'Johor', 
-                                   'data' => $johor
-                                 ]
+
                               ]
                            ]
                         ]); ?>
 
+                        <br>
+<?php foreach ($model2 as $key => $value2) {
+  if ($value2['state_id'] == 12 ) {
+    $pahang_q_21 = (int)$value2['ict'];
+    $pahang_q_22 = (int)$value2['kesihatan'];
+    $pahang_q_23 = (int)$value2['pendidikan'];
+    $pahang_q_24 = (int)$value2['keusahawanan'];
+    $pahang_q_25 = (int)$value2['riadah'];
 
+  }
+  if ($value2['state_id'] == 14 ) {
+    $perlis_q_21 = (int)$value2['ict'];
+    $perlis_q_22 = (int)$value2['kesihatan'];
+    $perlis_q_23 = (int)$value2['pendidikan'];
+    $perlis_q_24 = (int)$value2['keusahawanan'];
+    $perlis_q_25 = (int)$value2['riadah'];
+
+  }
+  if ($value2['state_id'] == 15 ) {
+    $perak_q_21 = (int)$value2['ict'];
+    $perak_q_22 = (int)$value2['kesihatan'];
+    $perak_q_23 = (int)$value2['pendidikan'];
+    $perak_q_24 = (int)$value2['keusahawanan'];
+    $perak_q_25 = (int)$value2['riadah'];
+
+  }
+  if ($value2['state_id'] == 16 ) {
+    $kedah_q_21 = (int)$value2['ict'];
+    $kedah_q_22 = (int)$value2['kesihatan'];
+    $kedah_q_23 = (int)$value2['pendidikan'];
+    $kedah_q_24 = (int)$value2['keusahawanan'];
+    $kedah_q_25 = (int)$value2['riadah'];
+
+  }
+  if ($value2['state_id'] == 18 ) {
+    $terengganu_q_21 = (int)$value2['ict'];
+    $terengganu_q_22 = (int)$value2['kesihatan'];
+    $terengganu_q_23 = (int)$value2['pendidikan'];
+    $terengganu_q_24 = (int)$value2['keusahawanan'];
+    $terengganu_q_25 = (int)$value2['riadah'];
+
+  }
+  if ($value2['state_id'] == 22 ) {
+    $johor_q_21 = (int)$value2['ict'];
+    $johor_q_22 = (int)$value2['kesihatan'];
+    $johor_q_23 = (int)$value2['pendidikan'];
+    $johor_q_24 = (int)$value2['keusahawanan'];
+    $johor_q_25 = (int)$value2['riadah'];
+
+  }
+
+
+
+}
+
+echo Highcharts::widget([
+   'options' => [
+
+       'chart' => [
+          'type' =>'column',
+          'renderTo' => 'ictchart2',
+          //'width' => '850'
+
+      ],
+
+      'title' => ['text' => 'Graf Minat By Group'],
+      'xAxis' => [
+         'categories' => ['Pahang','Perlis','Perak','Kedah','Terengganu','Johor']
+      ],
+      'yAxis' => [
+         'title' => ['text' => 'Jumlah']
+      ],
+      'exporting' => [
+        'enabled'=> false
+      ],
+         
+
+      'series' => [
+        [
+          'name' => 'ICT', 
+          'data' => [$pahang_q_21,$perlis_q_21,$perak_q_21,$kedah_q_21,$terengganu_q_21,$johor_q_21]
+        ],
+        [
+          'name' => 'Kesihatan',
+          'data' => [$pahang_q_22,$perlis_q_22,$perak_q_22,$kedah_q_22,$terengganu_q_22,$johor_q_22]
+        ],
+        [
+          'name' => 'Pendidikan',
+          'data' => [$pahang_q_23,$perlis_q_23,$perak_q_23,$kedah_q_23,$terengganu_q_23,$johor_q_23]
+        ],
+        [
+          'name' => 'Keusahawanan',
+          'data' => [$pahang_q_24,$perlis_q_24,$perak_q_24,$kedah_q_24,$terengganu_q_24,$johor_q_24]
+        ],
+        [
+          'name' => 'Riadah',
+          'data' => [$pahang_q_25,$perlis_q_25,$perak_q_25,$kedah_q_25,$terengganu_q_25,$johor_q_25]
+        ]
+      ]
+   ]
+]);
+
+?>
+
+<div id="ictchart2"></div>
 
                         <table class="table table-striped table-bordered">
                           <tr>
-                            <td><?= Html::a('ICT', FALSE, ['value'=>Url::to(['slru/ict']),'class' => 'ict','id'=>'ict']) ?></td>
+                            <td><?= Html::a('Perbandingan Antara Negeri', FALSE, ['value'=>Url::to(['slru/perbandingan']),'class' => 'perbandingan','id'=>'perbandingan']) ?></td>
                             <td><?= Html::a('Kesihatan', ['slru/minat']) ?></td>
                             <td><?= Html::a('Pendidikan', ['slru/sd1']) ?></td>
                             <td><?= Html::a('Keusahawanan', ['slru/sd1']) ?></td>
