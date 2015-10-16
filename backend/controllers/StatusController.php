@@ -264,6 +264,7 @@ class StatusController extends Controller
 
     public function actionStatus()
     {
+        $this->layout = 'graf';
         // kampung
         $kg_pahang = LookupKampung::find()->where(['state_id' => 12])->count();
         $kg_perlis = LookupKampung::find()->where(['state_id' => 14])->count();
