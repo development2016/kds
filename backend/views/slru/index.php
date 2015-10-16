@@ -57,16 +57,13 @@ $this->title = 'Komuniti Development System';
                                     <tr>
                                         <td>1</td>
                                         <td>Demografi</td>
-                                        <td>
-                                            <li><?= Html::a('Jantina', ['slru/sd1']) ?></li>
-                                            <li><?= Html::a('Status Umur', ['../..']) ?></li>
-                                        </td>
+      
                                     </tr>
                                      <tr>
                                         <td>2</td>
-                                        <td>Padanan Minat</td>
+                                        <td><?= Html::a('Padanan Minat', ['slru/sp1']) ?></td>
                                         <td>
-                                            <li><?= Html::a('ICT', ['slru/sp1'],['target' => '_blank']) ?></li>
+                                            <li><?= Html::a('ICT', ['../..']) ?></li>
                                             <li><?= Html::a('Kesihatan', ['../..']) ?></li>
                                         </td>
                                     </tr>
@@ -74,8 +71,16 @@ $this->title = 'Komuniti Development System';
                                         <td>3</td>
                                         <td>Sukarelawan</td>
                                         <td>
-                                            <li><?= Html::a('Jantina', ['../..']) ?></li>
-                                            <li><?= Html::a('Minat Program', ['../..']) ?></li>
+                                            <li><?= Html::a('Jantina', ['slru/ss1']) ?></li>
+               
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Microwoker</td>
+                                        <td>
+                                            <li><?= Html::a('Jantina', ['slru/sm1']) ?></li>
+     
                                         </td>
                                     </tr>
                                 </tbody>
