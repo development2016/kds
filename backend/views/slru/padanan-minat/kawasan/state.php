@@ -93,7 +93,9 @@ $this->title = 'Komuniti Development System';
                                       ],
                                       [
                                         'name' => 'Pendidikan',
-                                        'y' => $pendidikan
+                                        'y' => $pendidikan,
+                                         'sliced' => true,
+                                        'selected' => true
                                       ],
                                       [
                                         'name' => 'Keusahawanan',
@@ -116,95 +118,7 @@ $this->title = 'Komuniti Development System';
 
 	$state = $value2['state'];
 	$district[] = $value2['district'];
-  if ($value2['district_id'] == 6 ) {
 
-    $bentong21 = (int)$value2['ict'];
-    $bentong22 = (int)$value2['kesihatan'];
-    $bentong23 = (int)$value2['pendidikan'];
-    $bentong24 = (int)$value2['keusahawanan'];
-    $bentong25 = (int)$value2['riadah'];
-
-  }
-  if ($value2['district_id'] == 7 ) {
-    $temerloh21 = (int)$value2['ict'];
-    $temerloh22 = (int)$value2['kesihatan'];
-    $temerloh23 = (int)$value2['pendidikan'];
-    $temerloh24 = (int)$value2['keusahawanan'];
-    $temerloh25 = (int)$value2['riadah'];
-
-  }
-  if ($value2['district_id'] == 8 ) {
-    $rompin21 = (int)$value2['ict'];
-    $rompin22 = (int)$value2['kesihatan'];
-    $rompin23 = (int)$value2['pendidikan'];
-    $rompin24 = (int)$value2['keusahawanan'];
-    $rompin25 = (int)$value2['riadah'];
-
-  }
-  if ($value2['district_id'] == 9 ) {
-    $jerantut21 = (int)$value2['ict'];
-    $jerantut22 = (int)$value2['kesihatan'];
-    $jerantut23 = (int)$value2['pendidikan'];
-    $jerantut24 = (int)$value2['keusahawanan'];
-    $jerantut25 = (int)$value2['riadah'];
-
-  }
-  if ($value2['district_id'] == 10 ) {
-    $maran21 = (int)$value2['ict'];
-    $maran22 = (int)$value2['kesihatan'];
-    $maran23 = (int)$value2['pendidikan'];
-    $maran24 = (int)$value2['keusahawanan'];
-    $maran25 = (int)$value2['riadah'];
-
-  }
-  if ($value2['district_id'] == 11 ) {
-    $bera21 = (int)$value2['ict'];
-    $bera22 = (int)$value2['kesihatan'];
-    $bera23 = (int)$value2['pendidikan'];
-    $bera24 = (int)$value2['keusahawanan'];
-    $bera25 = (int)$value2['riadah'];
-
-  }
-  if ($value2['district_id'] == 12 ) {
-    $kuantan21 = (int)$value2['ict'];
-    $kuantan22 = (int)$value2['kesihatan'];
-    $kuantan23 = (int)$value2['pendidikan'];
-    $kuantan24 = (int)$value2['keusahawanan'];
-    $kuantan25 = (int)$value2['riadah'];
-
-  }
-  if ($value2['district_id'] == 13 ) {
-    $raub21 = (int)$value2['ict'];
-    $raub22 = (int)$value2['kesihatan'];
-    $raub23 = (int)$value2['pendidikan'];
-    $raub24 = (int)$value2['keusahawanan'];
-    $raub25 = (int)$value2['riadah'];
-
-  }
-   if ($value2['district_id'] == 14 ) {
-    $lipis21 = (int)$value2['ict'];
-    $lipis22 = (int)$value2['kesihatan'];
-    $lipis23 = (int)$value2['pendidikan'];
-    $lipis24 = (int)$value2['keusahawanan'];
-    $lipis25 = (int)$value2['riadah'];
-
-  }
-   if ($value2['district_id'] == 15 ) {
-    $pekan21 = (int)$value2['ict'];
-    $pekan22 = (int)$value2['kesihatan'];
-    $pekan23 = (int)$value2['pendidikan'];
-    $pekan24 = (int)$value2['keusahawanan'];
-    $pekan25 = (int)$value2['riadah'];
-
-  }
-   if ($value2['district_id'] == 16 ) {
-    $cameron21 = (int)$value2['ict'];
-    $cameron22 = (int)$value2['kesihatan'];
-    $cameron23 = (int)$value2['pendidikan'];
-    $cameron24 = (int)$value2['keusahawanan'];
-    $cameron25 = (int)$value2['riadah'];
-
-  }
 } 
 echo Highcharts::widget([
    'options' => [
@@ -233,23 +147,23 @@ echo Highcharts::widget([
       'series' => [
         [
           'name' => 'ICT', 
-          'data' => [$bentong21,$temerloh21,$rompin21,$jerantut21,$maran21,$bera21,$kuantan21,$raub21,$lipis21,$pekan21,$cameron21]
+          'data' => [1,2]
         ],
         [
           'name' => 'Kesihatan',
-          'data' => [$bentong22,$temerloh22,$rompin22,$jerantut22,$maran22,$bera22,$kuantan22,$raub22,$lipis22,$pekan22,$cameron22]
+          'data' => [1,2]
         ],
         [
           'name' => 'Pendidikan',
-          'data' => [$bentong23,$temerloh23,$rompin23,$jerantut23,$maran23,$bera23,$kuantan23,$raub23,$lipis23,$pekan23,$cameron23]
+          'data' => [1,2]
         ],
         [
           'name' => 'Keusahawanan',
-          'data' => [$bentong24,$temerloh24,$rompin24,$jerantut24,$maran24,$bera24,$kuantan24,$raub24,$lipis24,$pekan24,$cameron24]
+          'data' => [1,2]
         ],
         [
           'name' => 'Riadah',
-          'data' => [$bentong25,$temerloh25,$rompin25,$jerantut25,$maran25,$bera25,$kuantan25,$raub25,$lipis25,$pekan25,$cameron25]
+          'data' => [1,2]
         ]
       ]
    ]

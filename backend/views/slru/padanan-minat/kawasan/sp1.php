@@ -6,43 +6,7 @@ use miloschuman\highcharts\Highcharts;
 /* @var $this yii\web\View */
 $this->title = 'Komuniti Development System';
 ?>
-    <!-- BEGIN PAGE HEAD -->
-    <div class="page-head">
-        <div class="container">
-            <!-- BEGIN PAGE TITLE -->
-            <div class="page-title">
-                <h1>Slru</h1>
-            </div>
-            <!-- END PAGE TITLE -->
 
-        </div>
-    </div>
-    <!-- END PAGE HEAD -->
-    <!-- BEGIN PAGE CONTENT -->
-    <div class="page-content">
-        <div class="container">
-            <!-- BEGIN PAGE BREADCRUMB -->
-            <ul class="page-breadcrumb breadcrumb">
-                <li>
-                    <a href="#">Slru</a><i class="fa fa-circle"></i>
-                </li>
-                <li class="active">
-                     Padanan Minat
-                </li>
-            </ul>
-            <!-- END PAGE BREADCRUMB -->
-            <div class="row">
-                <div class="col-md-12">
-                    <!-- BEGIN SAMPLE FORM PORTLET-->
-                    <div class="portlet light">
-                        <div class="portlet-title">
-
-                            <div class="actions">
-                                <a class="btn btn-circle btn-icon-only btn-default fullscreen" href="javascript:;" data-original-title="" title="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="portlet-body">
     
                      <?php  
 
@@ -222,28 +186,3 @@ echo Highcharts::widget([
 
 <div id="ictchart2"></div>
 
-                        <table class="table table-striped table-bordered">
-                          <tr>
-                            <td><?= Html::a('Pahang', ['slru/state','id'=>12]) ?></td>
-                            <td><?= Html::a('Perlis', ['slru/state','id'=>14]) ?></td>
-                            <td><?= Html::a('Perak', ['slru/state','id'=>15]) ?></td>
-                            <td><?= Html::a('Kedah', ['slru/state','id'=>16]) ?></td>
-                            <td><?= Html::a('Terenganu', ['slru/state','id'=>18]) ?></td>
-                            <td><?= Html::a('Johor', ['slru/state','id'=>22]) ?></td>
-                          </tr>
-                        </table>
-
-
-
-                        </div>
-                    </div>
-                </div>
-                <!-- END SAMPLE FORM PORTLET-->
-            </div>
-            <!-- END PAGE CONTENT INNER -->
-        
-
-
-        </div>
-    </div>
-    <!-- END PAGE CONTENT -->

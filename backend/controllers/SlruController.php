@@ -39,7 +39,7 @@ class SlruController extends Controller
     public function actionSp1()
     {
 
-
+        $this->layout = 'graf';
         $connection = \Yii::$app->db;
         $sql = $connection->createCommand("SELECT 
             SUM(ict) AS ict,
