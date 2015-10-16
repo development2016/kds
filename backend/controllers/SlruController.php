@@ -35,7 +35,7 @@ class SlruController extends Controller
 
 
 
-    // SLRU PADANAN MINAT
+    // SLRU PADANAN MINAT KESELURUHAN
     public function actionSp1()
     {
 
@@ -61,6 +61,27 @@ class SlruController extends Controller
 
 
     }
+    public function actionSp1_1()
+    {
+
+        $this->layout = 'graf';
+        $connection = \Yii::$app->db;
+
+
+        $sql2 = $connection->createCommand("SELECT * FROM count_state");
+        $model2 = $sql2->queryAll();
+
+
+       return $this->render('padanan-minat/kawasan/sp1_1',[
+            'model2'=>$model2,
+        ]);
+
+
+    }
+
+
+
+
 
     public function actionState($id)
     {
