@@ -7,30 +7,8 @@ use miloschuman\highcharts\Highcharts;
 /* @var $this yii\web\View */
 $this->title = 'Komuniti Development System';
 ?>
-    <!-- BEGIN PAGE HEAD -->
-    <div class="page-head">
-        <div class="container">
-            <!-- BEGIN PAGE TITLE -->
-            <div class="page-title">
-                <h1>Slru</h1>
-            </div>
-            <!-- END PAGE TITLE -->
 
-        </div>
-    </div>
-    <!-- END PAGE HEAD -->
-    <!-- BEGIN PAGE CONTENT -->
-    <div class="page-content">
-        <div class="container">
-            <!-- BEGIN PAGE BREADCRUMB -->
-            <ul class="page-breadcrumb breadcrumb">
-                <li>
-                    <a href="#">Slru</a><i class="fa fa-circle"></i>
-                </li>
-                <li class="active">
-                     Mikro Worker Jantina
-                </li>
-            </ul>
+<br><br>
             <!-- END PAGE BREADCRUMB -->
             <div class="row">
                 <div class="col-md-12">
@@ -102,8 +80,3 @@ $this->title = 'Komuniti Development System';
             </div>
             <!-- END PAGE CONTENT INNER -->
         
-
-
-        </div>
-    </div>
-    <!-- END PAGE CONTENT -->

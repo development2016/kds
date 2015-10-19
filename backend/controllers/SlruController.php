@@ -117,6 +117,7 @@ class SlruController extends Controller
     public function actionSs1(){
 
         // SQL SUKARELAWAN JANTINA
+        $this->layout = 'graf';
         $jantina = "SELECT lookup_state.state,`volunteer`.state_id, lookup_state.kawasan_perlaksanaan,
             SUM(CASE WHEN jantina='Lelaki' THEN 1 ELSE 0 END) AS lelaki, 
             SUM(CASE WHEN jantina='Perempuan' THEN 1 ELSE 0 END) AS perempuan 
