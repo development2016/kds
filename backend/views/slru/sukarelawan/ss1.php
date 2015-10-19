@@ -9,10 +9,6 @@ $this->title = 'Komuniti Development System';
 ?>
 
 <br><br>
-
-
-
-
                         <?php foreach ($model as $key => $value) {
 
                            // store data in array
