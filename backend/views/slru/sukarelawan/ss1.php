@@ -9,26 +9,7 @@ $this->title = 'Komuniti Development System';
 ?>
 
 <br><br>
-            <!-- END PAGE BREADCRUMB -->
-            <div class="row">
-                <div class="col-md-12">
-                    <!-- BEGIN SAMPLE FORM PORTLET-->
-                    <div class="portlet light">
-                        <div class="portlet-title">
 
-                            <div class="actions">
-                              <?php  if (Yii::$app->request->serverName == "localhost") { ?>
-                                 <?= Html::a('Senarai Negeri',FALSE,['value'=>Url::to(['request/create','id'=>4]),'class'=>'btn btn-circle btn-default btn-sm request-form']) ?>
-                              <?php } else { ?>
-
-                              <?php }  ?>
-
-                             
-                              
-                                
-                            </div>
-                        </div>
-                        <div class="portlet-body">
 
 
 
@@ -72,11 +53,3 @@ $this->title = 'Komuniti Development System';
 
 
 
-
-                        </div>
-                    </div>
-                </div>
-                <!-- END SAMPLE FORM PORTLET-->
-            </div>
-            <!-- END PAGE CONTENT INNER -->
-        
