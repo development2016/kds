@@ -32,7 +32,8 @@ $this->title = 'Komuniti Development System';
                           ],
                            'options' => [
                               'chart' => [
-                                  'type' => 'column'
+                                  'type' => 'column',
+                                  'height' => '700',
                                   ],
                               'exporting' => [
                                 'enabled'=> false

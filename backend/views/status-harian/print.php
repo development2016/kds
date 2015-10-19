@@ -68,14 +68,14 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>DATA REJECTED</td>
+                                        <!--<td>DATA REJECTED</td>
                                         <td><?= $r_pahang; ?></td>
                                         <td><?= $r_kedah; ?></td>
                                         <td><?= $r_perlis; ?></td>
                                         <td><?= $r_terengganu; ?></td>
                                         <td><?= $r_perak; ?></td>
                                         <td><?= $r_johor; ?></td>
-                                        <td><?= $r_selangor; ?></td>
+                                        <td><?= $r_selangor; ?></td>-->
                                     </tr>
                                     <tr>
                                         <td>DATA ENTERED</td>
