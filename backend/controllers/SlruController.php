@@ -117,16 +117,23 @@ class SlruController extends Controller
     public function actionSs1(){
 
         // SQL SUKARELAWAN JANTINA
-        $jantina = "SELECT lookup_state.state,`volunteer`.state_id, lookup_state.kawasan_perlaksanaan,SUM(CASE WHEN jantina='Lelaki' THEN 1 ELSE 0 END) AS lelaki, SUM(CASE WHEN jantina='Perempuan' THEN 1 ELSE 0 END) AS perempuan FROM `volunteer`RIGHT JOIN lookup_state ON `volunteer`.state_id = lookup_state.state_id GROUP BY `volunteer`.state_id ORDER BY lookup_state.state_id ASC;";
+        $jantina = "SELECT lookup_state.state,`volunteer`.state_id, lookup_state.kawasan_perlaksanaan,
+            SUM(CASE WHEN jantina='Lelaki' THEN 1 ELSE 0 END) AS lelaki, 
+            SUM(CASE WHEN jantina='Perempuan' THEN 1 ELSE 0 END) AS perempuan 
+            FROM `volunteer` 
+            RIGHT JOIN lookup_state ON `volunteer`.state_id = lookup_state.state_id 
+            WHERE lookup_state.kawasan_perlaksanaan = 'Ya'  
+            GROUP BY `volunteer`.state_id 
+            ORDER BY lookup_state.state_id ASC";
         $connection=Yii::$app->db;
         $command=$connection->createCommand($jantina);
-        $model3 = $command->queryAll();
+        $model = $command->queryAll();
 
          $model_state = LookupState::find()
              ->where(['kawasan_perlaksanaan'=>'Ya']) 
              ->all();
 
-        return $this->render('sukarelawan/ss1',['model2'=>$model3,'model_state'=>$model_state]); 
+        return $this->render('sukarelawan/ss1',['model'=>$model,'model_state'=>$model_state]); 
         
     }
 

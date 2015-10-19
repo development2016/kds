@@ -7,7 +7,7 @@ return [
             //'username' => 'root',
             //'password' => '',
             'dsn' => 'mysql:host=192.168.0.115;dbname=kdsv5',
-           'username' => 'fuad',
+            'username' => 'fuad',
             'password' => 'fuad',
             'charset' => 'utf8',
         ],

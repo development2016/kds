@@ -39,61 +39,59 @@ $this->title = 'Komuniti Development System';
                         <div class="portlet-title">
 
                             <div class="actions">
-                                <a class="btn btn-circle btn-icon-only btn-default fullscreen" href="javascript:;" data-original-title="" title="">
-                                </a>
+                              <?php  if (Yii::$app->request->serverName == "localhost") { ?>
+                                 <?= Html::a('Senarai Negeri',FALSE,['value'=>Url::to(['request/create','id'=>4]),'class'=>'btn btn-circle btn-default btn-sm request-form']) ?>
+                              <?php } else { ?>
+
+                              <?php }  ?>
+
+                             
+                              
+                                
                             </div>
                         </div>
                         <div class="portlet-body">
 
 
 
-<?php foreach ($model2 as $key => $value) {
+                        <?php foreach ($model as $key => $value) {
 
-   // store data in array
-   $lelaki[] = (int)$value['lelaki']; // x axis must integer value
-   $perempuan[] = (int)$value['perempuan']; // x axis must integer value
-   $state[] = $value['state'];
- 
-}
-// store array data to temp variable
-$xAxis = $state; 
-$yAxisP = $perempuan;
-$yAxisL = $lelaki;
+                           // store data in array
+                           $lelaki[] = (int)$value['lelaki']; // x axis must integer value
+                           $perempuan[] = (int)$value['perempuan']; // x axis must integer value
+                           $state[] = $value['state'];
+                         
+                        }
+                        // store array data to temp variable
+                        $xAxis = $state; 
+                        $yAxisP = $perempuan;
+                        $yAxisL = $lelaki;
 
-echo Highcharts::widget([
-  'scripts' => [
-     'modules/exporting', // adds Exporting button/menu to chart
-  ],
-   'options' => [
-      'chart' => [
-          'type' => 'column'
-          ],
-        'title' => ['text' => 'Slru - Sukarelawan Jantina'],
-        'xAxis' => [
-          'categories' => $xAxis,
-        ],
-        'yAxis' => [
-          'title' => ['text' => 'Jumlah']
-        ],
-        'series' => [
-          ['name' => 'Lelaki', 'data' => $yAxisL],
-          ['name' => 'Perempuan', 'data' => $yAxisP]
-      ]
-   ]
-]); ?>
+                        echo Highcharts::widget([
+                          'scripts' => [
+                             'modules/exporting', // adds Exporting button/menu to chart
+                          ],
+                           'options' => [
+                              'chart' => [
+                                  'type' => 'column'
+                                  ],
+                              'exporting' => [
+                                'enabled'=> false
+                              ],
+                                'title' => ['text' => 'Sukarelawan Jantina'],
+                                'xAxis' => [
+                                  'categories' => $xAxis,
+                                ],
+                                'yAxis' => [
+                                  'title' => ['text' => 'Jumlah']
+                                ],
+                                'series' => [
+                                  ['name' => 'Lelaki', 'data' => $yAxisL],
+                                  ['name' => 'Perempuan', 'data' => $yAxisP]
+                              ]
+                           ]
+                        ]); ?>
 
-<br>
-<hr>
-<ul>
-<?php 
-
-
-foreach ($model_state as $key => $value) { ?>
-
-<li><?= Html::a($value['state'], ['slru/ss1']) ?></li>
-
-<?php } ?>
-</ul>
 
 
 
