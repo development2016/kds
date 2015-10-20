@@ -281,48 +281,121 @@ $this->title = 'Komuniti Development System';
 
                             </div>
 
-                            <?php
+      <?php
 
-    $premis_perniagaan = $bengkel = $premise_industri =$balairaya = $dewan_orang_ramai = $dewan_serbaguna =$tele_center = $pusat_ict = $klinik_desa = $klinik_kesihatan = $klinik_swasta = $sek_rendah = $sek_menengah = $sek_agama = $kolej_voka = $kolej = $tadika_kemas = $tadika_swasta = $perpustakaan_desa = $perpustakaan_gerak = $surau = $masjid = $ibadah_lain = $tp_kanak = $tp_gelanggang = $tp_p_bola = $homestay = 0;
 
-   /* foreach ($countDemographic as $key => $value_d) {
-        $premis_perniagaan = $value_d['premis_perniagaan'];
-        $bengkel = $value_d['bengkel'];
-        $premise_industri = $value_d['premise_industri'];
 
-        $balairaya = $value_d['balairaya'];
-        $dewan_orang_ramai = $value_d['dewan_orang_ramai'];
-        $dewan_serbaguna = $value_d['dewan_serbaguna'];
+    $surau = $masjid = $kuil = $gereja = $tokong = $balairaya = $dewan_Serbaguna = $dewan_Orang = $pusat_Jalur = $medan_Info = $pusat_ICT = $sekolah_Rendah =
+    $sekolah_Menengah = $sekolah_Agama = $sekolah_Jenis = $tadika_Kemas = $tadika_Swasta = $kedai_Runcit = $kedai_Makan = $gerai_Makanan = $gerai_Buah =
+    $bengkel_Motor = $bengkel_Kereta = $bengkel_Industri = $perpustakaan_Desa = $perpustakaan_Bergerak = $klinik_Desa = $klinik_Kesihatan = $hospital = 
+    $taman_Permainan = $gelanggang = $padang_Bola = $homestay = 0;
 
-        $tele_center = $value_d['tele_center'];
-        $pusat_ict = $value_d['pusat_ict'];
-        $klinik_desa = $value_d['klinik_desa'];
 
-        $klinik_kesihatan = $value_d['klinik_kesihatan'];
-        $klinik_swasta = $value_d['klinik_swasta'];
-        $sek_rendah = $value_d['sek_rendah'];
+   foreach ($countDemographic as $key => $value_d) {
 
-        $sek_menengah = $value_d['sek_menengah'];
-        $sek_agama = $value_d['sek_agama'];
-        $kolej_voka = $value_d['kolej_voka'];
+        if ($value_d['kemudahan_id'] == 1) {
+            $surau = $value_d['jumlah'];
+        }
+        if ($value_d['kemudahan_id'] == 2) {
+            $masjid = $value_d['jumlah'];
+        }
+        if ($value_d['kemudahan_id'] == 3) {
+            $kuil = $value_d['jumlah'];
+        }
+        if ($value_d['kemudahan_id'] == 4) {
+            $gereja = $value_d['jumlah'];
+        }
+         if ($value_d['kemudahan_id'] == 5) {
+            $tokong = $value_d['jumlah'];
+        }
+         if ($value_d['kemudahan_id'] == 6) {
+            $balairaya = $value_d['jumlah'];
+        }
+         if ($value_d['kemudahan_id'] == 7) {
+            $dewan_Serbaguna = $value_d['jumlah'];
+        }
+         if ($value_d['kemudahan_id'] == 8) {
+            $dewan_Orang = $value_d['jumlah'];
+        }
+         if ($value_d['kemudahan_id'] == 9) {
+            $pusat_Jalur  = $value_d['jumlah'];
+        }
+         if ($value_d['kemudahan_id'] == 10) {
+            $medan_Info = $value_d['jumlah'];
+        }
+         if ($value_d['kemudahan_id'] == 11) {
+            $pusat_ICT = $value_d['jumlah'];
+        }
+         if ($value_d['kemudahan_id'] == 12) {
+            $sekolah_Rendah = $value_d['jumlah'];
+        }
+        if ($value_d['kemudahan_id'] == 13) {
+            $sekolah_Menengah = $value_d['jumlah'];
+        }
+        if ($value_d['kemudahan_id'] == 14) {
+            $sekolah_Agama = $value_d['jumlah'];
+        }
+        if ($value_d['kemudahan_id'] == 15) {
+            $sekolah_Jenis = $value_d['jumlah'];
+        }
+        if ($value_d['kemudahan_id'] == 16) {
+            $tadika_Kemas = $value_d['jumlah'];
+        }
+        if ($value_d['kemudahan_id'] == 17) {
+            $tadika_Swasta = $value_d['jumlah'];
+        }
+        if ($value_d['kemudahan_id'] == 18) {
+            $kedai_Runcit = $value_d['jumlah'];
+        }
+        if ($value_d['kemudahan_id'] == 19) {
+            $kedai_Makan= $value_d['jumlah'];
+        }
+        if ($value_d['kemudahan_id'] == 20) {
+            $gerai_Makanan = $value_d['jumlah'];
+        }
+        if ($value_d['kemudahan_id'] == 21) {
+            $gerai_Buah = $value_d['jumlah'];
+        }
+        if ($value_d['kemudahan_id'] == 22) {
+            $bengkel_Motor = $value_d['jumlah'];
+        }
+        if ($value_d['kemudahan_id'] == 23) {
+            $bengkel_Kereta = $value_d['jumlah'];
+        }
+        if ($value_d['kemudahan_id'] == 24) {
+            $bengkel_Industri = $value_d['jumlah'];
+        }
+        if ($value_d['kemudahan_id'] == 25) {
+            $perpustakaan_Desa = $value_d['jumlah'];
+        }
+        if ($value_d['kemudahan_id'] == 26) {
+            $perpustakaan_Bergerak = $value_d['jumlah'];
+        }
+        if ($value_d['kemudahan_id'] == 27) {
+            $klinik_Desa = $value_d['jumlah'];
+        }
+        if ($value_d['kemudahan_id'] == 28) {
+            $klinik_Kesihatan = $value_d['jumlah'];
+        }
+        if ($value_d['kemudahan_id'] == 29) {
+            $hospital = $value_d['jumlah'];
+        }
+        if ($value_d['kemudahan_id'] == 30) {
+            $taman_Permainan = $value_d['jumlah'];
+        }
+        if ($value_d['kemudahan_id'] == 31) {
+            $gelanggang = $value_d['jumlah'];
+        }
+        if ($value_d['kemudahan_id'] == 32) {
+            $padang_Bola = $value_d['jumlah'];
+        }
+        if ($value_d['kemudahan_id'] == 33) {
+            $homestay= $value_d['jumlah'];
+        }
 
-        $kolej = $value_d['kolej'];
-        $tadika_kemas = $value_d['tadika_kemas'];
-        $tadika_swasta = $value_d['tadika_swasta'];
 
-        $perpustakaan_desa = $value_d['perpustakaan_desa'];
-        $perpustakaan_gerak = $value_d['perpustakaan_gerak'];
-        $surau = $value_d['surau'];
-
-        $masjid = $value_d['masjid'];
-        $ibadah_lain = $value_d['ibadah_lain'];
-        $tp_kanak = $value_d['tp_kanak'];
-
-        $tp_gelanggang = $value_d['tp_gelanggang'];
-        $tp_p_bola = $value_d['tp_p_bola'];
-        $homestay = $value_d['homestay'];
-    }*/
-                            ?>
+    }
+    ?>
 
                             <div class="row">
                                 <div class="col-md-12">
@@ -355,9 +428,9 @@ $this->title = 'Komuniti Development System';
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <label class="control-label col-md-9">Premis Perniagaan : </label>
+                                                            <label class="control-label col-md-9">Kedai Runcit : </label>
                                                             <div class="col-md-2">
-                                                                <span class="view"><?= $premis_perniagaan ?></span>
+                                                                <span class="view"><?= $kedai_Runcit  ?></span>
                                                             </div>
                                                         </div> 
                                                     </div>
@@ -365,7 +438,7 @@ $this->title = 'Komuniti Development System';
                                                         <div class="form-group">
                                                             <label class="control-label col-md-9">Balai Raya : </label>
                                                             <div class="col-md-2">
-                                                                <span class="view"><?= $balairaya ?></span>
+                                                                <span class="view"><?= $balairaya; ?></span>
                                                             </div>
                                                         </div> 
                                                     </div>
@@ -373,9 +446,9 @@ $this->title = 'Komuniti Development System';
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <label class="control-label col-md-9">Bengkel : </label>
+                                                            <label class="control-label col-md-9">Kedai Makan : </label>
                                                             <div class="col-md-2">
-                                                                <span class="view"><?= $bengkel ?></span>
+                                                                <span class="view"><?= $kedai_Makan  ?></span>
                                                             </div>
                                                         </div> 
                                                     </div>
@@ -383,7 +456,7 @@ $this->title = 'Komuniti Development System';
                                                         <div class="form-group">
                                                             <label class="control-label col-md-9">Dewan Orang Ramai : </label>
                                                             <div class="col-md-2">
-                                                                <span class="view"><?= $dewan_orang_ramai ?></span>
+                                                                <span class="view"><?= $dewan_Orang; ?></span>
                                                             </div>
                                                         </div> 
                                                     </div>
@@ -391,9 +464,9 @@ $this->title = 'Komuniti Development System';
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <label class="control-label col-md-9">Premis Industri : </label>
+                                                            <label class="control-label col-md-9">Gerai Makanan : </label>
                                                             <div class="col-md-2">
-                                                                <span class="view"><?= $premise_industri ?></span>
+                                                                <span class="view"><?= $gerai_Makanan  ?></span>
                                                             </div>
                                                         </div> 
                                                     </div>
@@ -401,36 +474,19 @@ $this->title = 'Komuniti Development System';
                                                         <div class="form-group">
                                                             <label class="control-label col-md-9">Dewan Serbaguna : </label>
                                                             <div class="col-md-2">
-                                                                <span class="view"><?= $dewan_serbaguna ?></span>
+                                                                <span class="view"><?= $dewan_Serbaguna ?></span>
                                                             </div>
                                                         </div> 
                                                     </div>
                                                 </div>
 
+
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <label class="control-label col-md-9"></label>
+                                                            <label class="control-label col-md-9">Gerai Buah : </label>
                                                             <div class="col-md-2">
-                                                                <span class="view"></span>
-                                                            </div>
-                                                        </div> 
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-9">Tele Centre : </label>
-                                                            <div class="col-md-2">
-                                                                <span class="view"><?= $tele_center ?></span>
-                                                            </div>
-                                                        </div> 
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-9"></label>
-                                                            <div class="col-md-2">
-                                                                <span class="view"></span>
+                                                                <span class="view"><?= $gerai_Buah  ?></span>
                                                             </div>
                                                         </div> 
                                                     </div>
@@ -438,7 +494,7 @@ $this->title = 'Komuniti Development System';
                                                         <div class="form-group">
                                                             <label class="control-label col-md-9">Pusat ICT : </label>
                                                             <div class="col-md-2">
-                                                                <span class="view"><?= $pusat_ict ?></span>
+                                                                <span class="view"><?= $pusat_ICT ?></span>
                                                             </div>
                                                         </div> 
                                                     </div>
@@ -446,9 +502,45 @@ $this->title = 'Komuniti Development System';
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <label class="control-label col-md-9"></label>
+                                                            <label class="control-label col-md-9">Bengkel Motor : </label>
                                                             <div class="col-md-2">
-                                                                <span class="view"></span>
+                                                                <span class="view"><?= $bengkel_Motor  ?></span>
+                                                            </div>
+                                                        </div> 
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label class="control-label col-md-9">Pusat Jalur Lebar : </label>
+                                                            <div class="col-md-2">
+                                                                <span class="view"><?= $pusat_Jalur ?></span>
+                                                            </div>
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label class="control-label col-md-9">Bengkel Kereta : </label>
+                                                            <div class="col-md-2">
+                                                                <span class="view"><?= $bengkel_Kereta  ?></span>
+                                                            </div>
+                                                        </div> 
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label class="control-label col-md-9">Medan Info Desa : </label>
+                                                            <div class="col-md-2">
+                                                                <span class="view"><?= $medan_Info ?></span>
+                                                            </div>
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label class="control-label col-md-9">Industri : </label>
+                                                            <div class="col-md-2">
+                                                                <span class="view"><?= $bengkel_Industri  ?></span>
                                                             </div>
                                                         </div> 
                                                     </div>
@@ -456,7 +548,7 @@ $this->title = 'Komuniti Development System';
                                                         <div class="form-group">
                                                             <label class="control-label col-md-9">Klinik Desa : </label>
                                                             <div class="col-md-2">
-                                                                <span class="view"><?= $klinik_desa ?></span>
+                                                                <span class="view"><?= $klinik_Desa  ?></span>
                                                             </div>
                                                         </div> 
                                                     </div>
@@ -474,7 +566,7 @@ $this->title = 'Komuniti Development System';
                                                         <div class="form-group">
                                                             <label class="control-label col-md-9">Klinik Kesihatan : </label>
                                                             <div class="col-md-2">
-                                                                <span class="view"><?= $klinik_kesihatan ?></span>
+                                                                <span class="view"><?= $klinik_Kesihatan  ?></span>
                                                             </div>
                                                         </div> 
                                                     </div>
@@ -490,9 +582,9 @@ $this->title = 'Komuniti Development System';
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <label class="control-label col-md-9">Klinik Swasta : </label>
+                                                            <label class="control-label col-md-9">Hospital : </label>
                                                             <div class="col-md-2">
-                                                                <span class="view"><?= $klinik_swasta ?></span>
+                                                                <span class="view"><?= $hospital  ?></span>
                                                             </div>
                                                         </div> 
                                                     </div>
@@ -518,20 +610,60 @@ $this->title = 'Komuniti Development System';
                                                     </div>
                                                 </div>
 
+
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <label class="control-label col-md-9">Sekolah Rendah : </label>
+                                                            <label class="control-label col-md-9">Tadika Kemas : </label>
                                                             <div class="col-md-2">
-                                                                <span class="view"><?= $sek_rendah ?></span>
+                                                                <span class="view"><?= $tadika_Kemas ?></span>
                                                             </div>
                                                         </div> 
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <label class="control-label col-md-9">Surau : </label>
+                                                            <label class="control-label col-md-9">Surau</label>
                                                             <div class="col-md-2">
                                                                 <span class="view"><?= $surau ?></span>
+                                                            </div>
+                                                        </div> 
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label class="control-label col-md-9">Tadika Swasta : </label>
+                                                            <div class="col-md-2">
+                                                                <span class="view"><?= $tadika_Swasta ?></span>
+                                                            </div>
+                                                        </div> 
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label class="control-label col-md-9">Masjid</label>
+                                                            <div class="col-md-2">
+                                                                <span class="view"><?= $masjid ?></span>
+                                                            </div>
+                                                        </div> 
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label class="control-label col-md-9">Sekolah Rendah : </label>
+                                                            <div class="col-md-2">
+                                                                <span class="view"><?= $sekolah_Rendah ?></span>
+                                                            </div>
+                                                        </div> 
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label class="control-label col-md-9">Kuil : </label>
+                                                            <div class="col-md-2">
+                                                                <span class="view"><?= $kuil ?></span>
                                                             </div>
                                                         </div> 
                                                     </div>
@@ -541,15 +673,15 @@ $this->title = 'Komuniti Development System';
                                                         <div class="form-group">
                                                             <label class="control-label col-md-9">Sekolah Menengah : </label>
                                                             <div class="col-md-2">
-                                                                <span class="view"><?= $sek_menengah ?></span>
+                                                                <span class="view"><?= $sekolah_Menengah ?></span>
                                                             </div>
                                                         </div> 
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <label class="control-label col-md-9">Masjid : </label>
+                                                            <label class="control-label col-md-9">Gereja : </label>
                                                             <div class="col-md-2">
-                                                                <span class="view"><?= $masjid ?></span>
+                                                                <span class="view"><?= $gereja ?></span>
                                                             </div>
                                                         </div> 
                                                     </div>
@@ -559,26 +691,25 @@ $this->title = 'Komuniti Development System';
                                                         <div class="form-group">
                                                             <label class="control-label col-md-9">Sekolah Agama : </label>
                                                             <div class="col-md-2">
-                                                                <span class="view"><?= $sek_agama ?></span>
+                                                                <span class="view"><?= $sekolah_Agama ?></span>
                                                             </div>
                                                         </div> 
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <label class="control-label col-md-9">Ibadah Lain : </label>
+                                                            <label class="control-label col-md-9">Tokong : </label>
                                                             <div class="col-md-2">
-                                                                <span class="view"><?= $ibadah_lain ?></span>
+                                                                <span class="view"><?= $tokong ?></span>
                                                             </div>
                                                         </div> 
                                                     </div>
                                                 </div>
-
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <label class="control-label col-md-9">Kolej Vokasional : </label>
+                                                            <label class="control-label col-md-9">Sekolah Jenis Kebangsaan : </label>
                                                             <div class="col-md-2">
-                                                                <span class="view"><?= $kolej_voka ?></span>
+                                                                <span class="view"><?= $sekolah_Jenis ?></span>
                                                             </div>
                                                         </div> 
                                                     </div>
@@ -591,16 +722,46 @@ $this->title = 'Komuniti Development System';
                                                         </div> 
                                                     </div>
                                                 </div>
-
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <label class="control-label col-md-9">Kolej : </label>
+                                                            <label class="control-label col-md-9">Perpustakaan Desa : </label>
                                                             <div class="col-md-2">
-                                                                <span class="view"><?= $kolej ?></span>
+                                                                <span class="view"><?= $perpustakaan_Desa ?></span>
                                                             </div>
                                                         </div> 
                                                     </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label class="control-label col-md-9"></label>
+                                                            <div class="col-md-2">
+                                                                <span class="view"></span>
+                                                            </div>
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label class="control-label col-md-9">Perpustakaan Gerak : </label>
+                                                            <div class="col-md-2">
+                                                                <span class="view"><?= $perpustakaan_Bergerak ?></span>
+                                                            </div>
+                                                        </div> 
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label class="control-label col-md-9"></label>
+                                                            <div class="col-md-2">
+                                                                <span class="view"></span>
+                                                            </div>
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                                <br>
+
+                                                <div class="row">
+
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label class="control-label col-md-9"><b>Kemudahan Rekreasi</b></label>
@@ -613,9 +774,9 @@ $this->title = 'Komuniti Development System';
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <label class="control-label col-md-9">Tadika Kemas : </label>
+                                                            <label class="control-label col-md-9">Padang Bola</label>
                                                             <div class="col-md-2">
-                                                                <span class="view"><?= $tadika_kemas ?></span>
+                                                                <span class="view"><?= $padang_Bola ?></span>
                                                             </div>
                                                         </div> 
                                                     </div>
@@ -623,58 +784,13 @@ $this->title = 'Komuniti Development System';
                                                         <div class="form-group">
                                                             <label class="control-label col-md-9">Taman Permainan Kanak - Kanak</label>
                                                             <div class="col-md-2">
-                                                                <span class="view"><?= $tp_kanak ?></span>
+                                                                <span class="view"><?= $taman_Permainan ?></span>
                                                             </div>
                                                         </div> 
                                                     </div>
                                                 </div>
 
                                                 <div class="row">
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-9">Tadika Swasta : </label>
-                                                            <div class="col-md-2">
-                                                                <span class="view"><?= $tadika_swasta ?></span>
-                                                            </div>
-                                                        </div> 
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-9">Gelanggang</label>
-                                                            <div class="col-md-2">
-                                                                <span class="view"><?= $tp_gelanggang ?></span>
-                                                            </div>
-                                                        </div> 
-                                                    </div>
-                                                </div>
-
-                                                <div class="row">
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-9">Perpustakaan Desa : </label>
-                                                            <div class="col-md-2">
-                                                                <span class="view"><?= $perpustakaan_desa ?></span>
-                                                            </div>
-                                                        </div> 
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-9">Padang Bola</label>
-                                                            <div class="col-md-2">
-                                                                <span class="view"><?= $tp_p_bola ?></span>
-                                                            </div>
-                                                        </div> 
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-9">Perpustakaan Gerak : </label>
-                                                            <div class="col-md-2">
-                                                                <span class="view"><?= $perpustakaan_gerak ?></span>
-                                                            </div>
-                                                        </div> 
-                                                    </div>
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label class="control-label col-md-9">Homestay</label>
@@ -683,7 +799,16 @@ $this->title = 'Komuniti Development System';
                                                             </div>
                                                         </div> 
                                                     </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label class="control-label col-md-9">Gelanggang</label>
+                                                            <div class="col-md-2">
+                                                                <span class="view"><?= $gelanggang ?></span>
+                                                            </div>
+                                                        </div> 
+                                                    </div>
                                                 </div>
+
 
 
 
@@ -696,12 +821,12 @@ $this->title = 'Komuniti Development System';
                             </div>
                          
                             
-						</div>
-					</div>
-				</div>
-				<!-- END SAMPLE FORM PORTLET-->
-			</div>
-			<!-- END PAGE CONTENT INNER -->
+                        </div>
+                    </div>
+                </div>
+                <!-- END SAMPLE FORM PORTLET-->
+            </div>
+            <!-- END PAGE CONTENT INNER -->
         
 
 
