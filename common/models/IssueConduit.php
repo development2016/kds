@@ -59,7 +59,7 @@ class IssueConduit extends \yii\db\ActiveRecord
     {
         return [
             [['age', 'religion', 'race', 'marital_status', 'kampung_id', 'cluster_id', 'sub_base_id', 'district_id', 'state_id', 'mukim_id', 'issue_category', 'enter_by','kategori_oku_id'], 'integer'],
-            ['no_kp', 'unique'],
+            //['no_kp', 'unique'],
             ['no_kp', 'required', 'message' => 'Sila Isi No Kad Pengenalan'],
             ['name', 'required', 'message' => 'Sila Isi Nama Pengadu'],
             ['state_id', 'required', 'message' => 'Sila Pilih Negeri '],
