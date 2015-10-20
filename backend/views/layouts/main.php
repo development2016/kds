@@ -129,6 +129,7 @@ AppAsset::register($this);
                                     ]
                                 ],
 
+
                                 ['label' => 'Mikroworker', 'url' => ['user/index'],'visible' => User::checkMenu('10'),'options'=>['id'=>'micro']],
                                 ['label' => 'Demographic', 'url' => ['demographic/index'],'visible' => User::checkMenu('6'),'options'=>['id'=>'demographic']],
 
@@ -182,24 +183,49 @@ AppAsset::register($this);
                                             ]
 
                                 ],
-
-                                ['label' => '','submenuTemplate' => "\n<ul class='dropdown-menu pull-right' role='menu'>\n{items}\n</ul>\n",
+                                ['label' => '','submenuTemplate' => "\n<ul class='dropdown-menu pull-left' role='menu'>\n{items}\n</ul>\n",
                                     'options'=>['class'=>'menu-dropdown classic-menu-dropdown'],
                                     'template' => '<a data-hover="megamenu-dropdown" data-close-others="true" data-toggle="dropdown" href="javascript:;" class="dropdown-toggle">Laporan <i class="fa fa-angle-down"></i></a>',
                                     'items' => [
+
                                         ['label' => 'Count State', 'url' => ['count-state/index'],'visible' => User::checkMenu('12'),'options'=>['id'=>'count']],
                                         ['label' => 'Request', 'url' => ['request/index'],'visible' => User::checkMenu('15'),'options'=>['id'=>'request']],
                                         ['label' => 'Kawasan Perlaksanaan', 'url' => ['kawasan/index'],'visible' => User::checkMenu('11'),'options'=>['id'=>'kp']],
-                                        ['label' => 'Status KDS', 'url' => ['status/index'],'visible' => User::checkMenu('20'),'options'=>['id'=>'status']],
-                                        ['label' => 'Status KDS - Summary', 'url' => ['status/status'],'visible' => User::checkMenu('16'),'options'=>['id'=>'status']],
-                                        ['label' => 'Status Harian', 'url' => ['status-harian/index'],'visible' => User::checkMenu('19'),'options'=>['id'=>'statusharian']],
-                                        ['label' => 'Status Harian - Summary', 'url' => ['status-harian/status'],'visible' => User::checkMenu('18'),'options'=>['id'=>'statusharian']],
-                                        ['label' => 'Graf-SLRU', 'url' => ['slru/index'],'visible' => User::checkMenu('21'),'options'=>['id'=>'slru']],
-                                        ['label' => 'Graf-OPERATION', 'url' => ['operation/index'],'visible' => User::checkMenu('22'),'options'=>['id'=>'operation']],
+                                        [
+                                            'label' => '<a href="#">Status </a>',
+                                            'submenuTemplate' => "\n<ul class='dropdown-menu'>\n{items}\n</ul>\n",
+                                            'options'=>['class'=>' dropdown-submenu'],
+                                            'items' => [
+                                            
+                                                    ['label' => 'Status KDS', 'url' => ['status/index'],'visible' => User::checkMenu('20'),'options'=>['id'=>'status']],
+                                                    ['label' => 'Status KDS - Summary', 'url' => ['status/status'],'visible' => User::checkMenu('16'),'options'=>['id'=>'status']],
+                                                    ['label' => 'Status Harian', 'url' => ['status-harian/index'],'visible' => User::checkMenu('19'),'options'=>['id'=>'statusharian']],
+                                                    ['label' => 'Status Harian - Summary', 'url' => ['status-harian/status'],'visible' => User::checkMenu('18'),'options'=>['id'=>'statusharian']],
+                                            
+
+                                            ]
+
+                                        ],
+                                        [
+                                            'label' => '<a href="#">SMART TV -GRAF </a>',
+                                            'submenuTemplate' => "\n<ul class='dropdown-menu'>\n{items}\n</ul>\n",
+                                            'options'=>['class'=>' dropdown-submenu'],
+                                            'items' => [
+                                            
+                                                ['label' => 'Graf-SLRU', 'url' => ['slru/index'],'visible' => User::checkMenu('21'),'options'=>['id'=>'slru']],
+                                                ['label' => 'Graf-OPERATION', 'url' => ['operation/index'],'visible' => User::checkMenu('22'),'options'=>['id'=>'operation']],
+
+                                            ]
+
+                                        ],
+
+
                                         ['label' => 'Summary Profil', 'url' => ['summary/index'],'visible' => User::checkMenu('23'),'options'=>['id'=>'summary']],
 
                                     ]
-                                ]
+                                ],
+
+
                             ],
                             'activateParents'=>true,
                             'encodeLabels' => false,
