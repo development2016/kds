@@ -167,6 +167,57 @@ class StatusHarianController extends Controller
         ]);
     }
 
+
+    public function actionHarian()
+    {
+
+        $this->layout = 'status';
+        $status = StatusHarian::find()->all();
+
+         // people
+        $p_pahang = People::find()->where(['state_id' => 12])->count();
+        $p_perlis = People::find()->where(['state_id' => 14])->count();
+        $p_terengganu = People::find()->where(['state_id' => 18])->count();
+        $p_perak = People::find()->where(['state_id' => 15])->count();
+        $p_johor = People::find()->where(['state_id' => 22])->count();
+        $p_kedah = People::find()->where(['state_id' => 16])->count();
+        $p_selangor = People::find()->where(['state_id' => 13])->count();
+
+        //reject
+        $reject = Status::find()->where(['id'=>7])->all();
+
+        //data sah
+        $ps_pahang = People::find()->where(['state_id' => 12,'data_status'=>'Sah'])->count();
+        $ps_perlis = People::find()->where(['state_id' => 14,'data_status'=>'Sah'])->count();
+        $ps_terengganu = People::find()->where(['state_id' => 18,'data_status'=>'Sah'])->count();
+        $ps_perak = People::find()->where(['state_id' => 15,'data_status'=>'Sah'])->count();
+        $ps_johor = People::find()->where(['state_id' => 22,'data_status'=>'Sah'])->count();
+        $ps_kedah = People::find()->where(['state_id' => 16,'data_status'=>'Sah'])->count();
+        $ps_selangor = People::find()->where(['state_id' => 13,'data_status'=>'Sah'])->count();
+
+
+        return $this->render('harian',[
+            'status'=>$status,
+            'p_pahang' => $p_pahang,
+            'p_perlis' => $p_perlis,
+            'p_terengganu' => $p_terengganu,
+            'p_perak' => $p_perak,
+            'p_johor' => $p_johor,
+            'p_kedah' => $p_kedah,
+            'p_selangor' => $p_selangor,
+
+            'reject' => $reject,
+            'ps_pahang' => $ps_pahang,
+            'ps_perlis' => $ps_perlis,
+            'ps_terengganu' => $ps_terengganu,
+            'ps_perak' => $ps_perak,
+            'ps_johor' => $ps_johor,
+            'ps_kedah' => $ps_kedah,
+            'ps_selangor' => $ps_selangor,
+        ]);
+    }
+
+
     /**
      * Lists all StatusHarian models.
      * @return mixed
