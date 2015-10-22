@@ -71,7 +71,39 @@ $this->title = 'Komuniti Development System';
                                         <td>3</td>
                                         <td>Sukarelawan</td>
                                         <td>
-                                            <li><?= Html::a('Jantina', ['slru/ss1']) ?></li>
+                                            <ul>
+                                                <li><?= Html::a('Jantina', ['slru/ss1']) ?></li>
+                                                <li>Minat Program</li>
+                                               <ul>
+                                                    <li><?= Html::a('Program Kanak-Kanak', ['slru/ss2_progkanak']) ?></li>
+                                                    <li><?= Html::a('Program Kemasyarakatan', ['slru/ss2_progkemasyarakatan']) ?></li>
+                                                    <li><?= Html::a('Program Warga Emas', ['slru/ss2_progwarga']) ?></li>
+                                                    <li><?= Html::a('Program OKU', ['slru/ss2_progoku']) ?></li>
+                                                    <li><?= Html::a('Aktiviti Rekreasi', ['slru/ss2_rekreasi']) ?></li>
+                                                    <li><?= Html::a('Program Kesihatan', ['slru/ss2_progkesihatan']) ?></li>
+                                                    <li><?= Html::a('Program Akademik', ['slru/ss2_progakademik']) ?></li>
+                                                    <li><?= Html::a('Lain - Lain', ['slru/ss2_lain']) ?></li>
+                                                    <li><?= Html::a('Semua', ['slru/ss2_prog_minat_all']) ?></li>
+                                                        <ul>
+                                                            <li><?= Html::a('Ya', ['slru/ss2_prog_minat_ya']) ?></li>
+                                                            <li><?= Html::a('Tidak', ['slru/ss2_prog_minat_tidak']) ?></li>
+                                                        </ul>
+
+                                                </ul>
+                                                <li>Sumbangan</li>
+                                                    <ul>
+                                                        <li><?= Html::a('Fasilitator', ['slru/ss3_fasilitator']) ?></li>
+                                                        <li><?= Html::a('Tenaga', ['slru/ss3_tenaga']) ?></li>
+                                                        <li><?= Html::a('Fotografi', ['slru/ss3_fotografi']) ?></li>
+                                                        <li><?= Html::a('Lain - Lain', ['slru/ss3_lain']) ?></li>
+                                                        <li><?= Html::a('Semua', ['slru/ss3_sumbangan_all']) ?></li>
+                                                            <ul>
+                                                                <li><?= Html::a('Ya', ['slru/ss3_sumbangan_ya']) ?></li>
+                                                                <li><?= Html::a('Tidak', ['slru/ss3_sumbangan_tidak']) ?></li>
+                                                            </ul>
+                                                    </ul>
+                                            </ul>
+                                            
                
                                         </td>
                                     </tr>

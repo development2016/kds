@@ -9,7 +9,7 @@ $this->title = 'Komuniti Development System';
 ?>
 
 <br><br>
-                        <?php foreach ($model as $key => $value) {
+                        <?php foreach ($model2 as $key => $value) {
 
                            // store data in array
                            $lelaki[] = (int)$value['lelaki']; // x axis must integer value

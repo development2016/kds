@@ -8,7 +8,7 @@ use miloschuman\highcharts\Highcharts;
 $this->title = 'Komuniti Development System';
 ?>
 <br><br>
-<?php foreach ($model as $key => $value) {
+<?php foreach ($model4 as $key => $value) {
 
    // store data in array
    $lelaki[] = (int)$value['lelaki']; // x axis must integer value
@@ -27,12 +27,12 @@ echo Highcharts::widget([
    ],
    'options' => [
          'chart' => [
-               'type' => 'column',
+            'type' => 'column',
                'height' => '600',
-               ],
-                                            'exporting' => [
-                                'enabled'=> false
-                              ],
+              ],
+            'exporting' => [
+                'enabled'=> false
+            ],
           'title' => ['text' => 'Slru - Sukarelawan Jantina'],
          'xAxis' => [
             'categories' => $xAxis,

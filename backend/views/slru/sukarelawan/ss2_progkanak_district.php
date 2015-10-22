@@ -7,9 +7,8 @@ use miloschuman\highcharts\Highcharts;
 /* @var $this yii\web\View */
 $this->title = 'Komuniti Development System';
 ?>
-
-
 <br><br>
+
 
 <?php foreach ($model7 as $key => $value) {
 
@@ -30,19 +29,37 @@ echo Highcharts::widget([
   ],
    'options' => [
       'chart' => [
-          'type' => 'column',
-               'height' => '600',
-               ],
-                                            'exporting' => [
-                                'enabled'=> false
-                              ],
+          'type' => 'column'
+          ],
         'title' => ['text' => 'Slru - Sukarelawan Progam Kanak-Kanak'],
         'xAxis' => [
           'categories' => $xAxis,
         ],
+
+
+
         'yAxis' => [
-          'title' => ['text' => 'Jumlah']
+          'title' => [
+
+              'text' => 'Jumlah',
+              'align' => 'high'],
+          'labels' => ['overflow' => 'justify']
         ],
+
+
+
+        'plotOptions' => [
+          'column' => [
+  
+            'dataLabels' => [
+              'enabled' => true,
+              'align' => 'center',]
+
+
+            ]
+        ],
+
+        
         'series' => [
           ['name' => 'Ya', 'data' => $yAxisL],
           ['name' => 'Tidak', 'data' => $yAxisP]
