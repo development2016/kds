@@ -211,6 +211,39 @@ echo Highcharts::widget([
 <br>
 
 <table class="table table-striped table-bordered">
+  <thead>
+    <tr>
+        <th rowspan="2">NEGERI</th>
+        <th colspan="2">KANAK - KANAK</th>
+        <th colspan="2">KEMASYARAKATAN</th>
+        <th colspan="2">WARGA EMAS</th>
+        <th colspan="2">OKU</th>
+        <th colspan="2">REKREASI</th>
+        <th colspan="2">KESIHATAN</th>
+        <th colspan="2">AKADEMIK</th>
+        <th colspan="2">LAIN - LAIN</th>
+    </tr>
+    <tr>
+        <th>Ya</th>
+        <th>Tidak</th>
+        <th>Ya</th>
+        <th>Tidak</th>
+        <th>Ya</th>
+        <th>Tidak</th>
+        <th>Ya</th>
+        <th>Tidak</th>
+        <th>Ya</th>
+        <th>Tidak</th>
+        <th>Ya</th>
+        <th>Tidak</th>
+        <th>Ya</th>
+        <th>Tidak</th>
+        <th>Ya</th>
+        <th>Tidak</th>
+    </tr>
+    
+</thead>
+<tbody>
 <?php foreach ($model10 as $key => $value) { ?>
   <tr>
     <td><?=  $value['state']; ?></td>
@@ -233,4 +266,5 @@ echo Highcharts::widget([
 
   </tr>
 <?php } ?>
+</tbody>
 </table>
