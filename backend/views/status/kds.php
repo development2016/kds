@@ -74,8 +74,8 @@ use yii\helpers\Url;
                             <table class="table table-striped table-bordered ">
                                 <thead>
                                     <tr>
-                                        <th rowspan="2">No</th>
-                                        <th rowspan="2">Item</th>
+                                        <th>No</th>
+                                        <th>Item</th>
                                         <th>PAHANG</th>
                                         <th>KEDAH</th>
                                         <th>PERLIS</th>
@@ -84,15 +84,7 @@ use yii\helpers\Url;
                                         <th>JOHOR</th>
                                         <th>SELANGOR</th>
                                     </tr>
-                                    <tr>
-                                        <th>CURRENT</th>
-                                        <th>CURRENT</th>
-                                        <th>CURRENT</th>
-                                        <th>CURRENT</th>
-                                        <th>CURRENT</th>
-                                        <th>CURRENT</th>
-                                        <th>CURRENT</th>
-                                    </tr>
+   
                                     
                                 </thead>
                                 <tbody>
