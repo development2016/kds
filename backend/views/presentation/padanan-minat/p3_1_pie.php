@@ -32,6 +32,7 @@ use miloschuman\highcharts\Highcharts;
             'cursor' => 'pointer',
             'dataLabels' => [
                 'enabled' => true,
+                'distance' => -100,
                 'style' => [
                   'fontSize' => '15px',
                   'fontWeight' => 'normal',
