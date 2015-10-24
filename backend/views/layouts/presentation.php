@@ -26,12 +26,17 @@ AppAsset::register($this);
 <?php $this->beginBody() ?>
 
 
+<style type="text/css">
+#w0 {
+height:100%;
+width:100%;
+position:absolute;
+}
+</style>
 
-
-    <div style="height:100%;width:100%;position:absolute;">
 
         <?= $content ?>
-    </div>
+   
 
 
 
