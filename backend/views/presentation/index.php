@@ -104,12 +104,12 @@ $this->title = 'Komuniti Development System';
                                         <td>OKU</td>
                                         <td>
                                             <ul>
-                                                <li><?= Html::a('Negeri', ['xx/xx'],['target'=>'_BLANK']) ?></li>
-                                                <li><?= Html::a('Jantina', ['xx/xx'],['target'=>'_BLANK']) ?></li>
-                                                <li><?= Html::a('Umur', ['xx/xx'],['target'=>'_BLANK']) ?></li>
-                                                <li><?= Html::a('Kecacatan', ['xx/xx'],['target'=>'_BLANK']) ?></li>
-                                                <li><?= Html::a('Pekerjaan', ['xx/xx'],['target'=>'_BLANK']) ?></li>
-                                                <li><?= Html::a('Perbelanjaan', ['xx/xx'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Negeri', ['presentation/p4_1'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Jantina', ['presentation/p4_2'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Umur', ['presentation/p4_3'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Kecacatan', ['presentation/p4_4'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Pekerjaan', ['presentation/p4_5'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Perbelanjaan', ['presentation/p4_6'],['target'=>'_BLANK']) ?></li>
                                             </ul>
                                         </td>
                                     </tr>

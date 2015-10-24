@@ -64,12 +64,9 @@ class PresentationController extends Controller
     {
         $this->layout = 'presentation';
         $sql2 = $connection->createCommand("SELECT dob FROM people WHERE state_id = 12 AND profession_status = 'Bekerja'");
-$model2 = $sql2->queryAll();
+        $model2 = $sql2->queryAll();
         return $this->render('sosio-ekonomi/p2_4');
     }
-
-
-
 
 
 
@@ -84,6 +81,36 @@ $model2 = $sql2->queryAll();
         $this->layout = 'presentation';
         return $this->render('padanan-minat/p3_1_bar');
     }
+
+
+    // OKU = P4
+    public function actionP4_1()
+    {
+        $this->layout = 'presentation';
+        return $this->render('oku/p4_1');
+    }
+    public function actionP4_2()
+    {
+        $this->layout = 'presentation';
+        return $this->render('oku/p4_2');   
+    }
+    public function actionP4_4()
+    {
+        $this->layout = 'presentation';
+        return $this->render('oku/p4_4');   
+    }
+    public function actionP4_5()
+    {
+        $this->layout = 'presentation';
+        return $this->render('oku/p4_5');   
+    }
+    public function actionP4_6()
+    {
+        $this->layout = 'presentation';
+        return $this->render('oku/p4_6');   
+    }
+
+
 
 
     // MICROWOKER = P5
