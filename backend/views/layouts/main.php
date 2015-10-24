@@ -214,6 +214,7 @@ AppAsset::register($this);
                                             
                                                 ['label' => 'Graf-SLRU', 'url' => ['slru/index'],'visible' => User::checkMenu('21'),'options'=>['id'=>'slru']],
                                                 ['label' => 'Graf-OPERATION', 'url' => ['operation/index'],'visible' => User::checkMenu('22'),'options'=>['id'=>'operation']],
+                                                ['label' => 'Graf-PRESENTATION', 'url' => ['presentation/index'],'visible' => User::checkMenu('24'),'options'=>['id'=>'presentation']],
 
                                             ]
 
