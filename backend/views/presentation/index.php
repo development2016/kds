@@ -118,10 +118,10 @@ $this->title = 'Komuniti Development System';
                                         <td>Mikroworker</td>
                                         <td>
                                             <ul>
-                                                <li><?= Html::a('Negeri', ['xx/xx'],['target'=>'_BLANK']) ?></li>
-                                                <li><?= Html::a('Jantina', ['xx/xx'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Negeri', ['presentation/p5_1'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Jantina', ['presentation/p5_2'],['target'=>'_BLANK']) ?></li>
                                                 <li><?= Html::a('Umur 18 Tahun', ['xx/xx'],['target'=>'_BLANK']) ?></li>
-                                                <li><?= Html::a('Profession', ['xx/xx'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Profession', ['presentation/p5_4'],['target'=>'_BLANK']) ?></li>
                                             </ul>
                                         </td>
                                     </tr>

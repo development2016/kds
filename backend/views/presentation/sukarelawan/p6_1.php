@@ -14,7 +14,7 @@ use miloschuman\highcharts\Highcharts;
           'type' => 'column'
           ],
       'title' => [
-      'text' => 'Jumlah Sukarelawan Setia Negeri',
+      'text' => 'Jumlah Sukarelawan Setiap Negeri',
         'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',

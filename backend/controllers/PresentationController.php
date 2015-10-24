@@ -86,7 +86,22 @@ $model2 = $sql2->queryAll();
     }
 
 
-
+    // MICROWOKER = P5
+    public function actionP5_1()
+    {
+        $this->layout = 'presentation';
+        return $this->render('microworker/p5_1');
+    }
+    public function actionP5_2()
+    {
+        $this->layout = 'presentation';
+        return $this->render('microworker/p5_2');
+    }
+    public function actionP5_4()
+    {
+        $this->layout = 'presentation';
+        return $this->render('microworker/p5_4');
+    }
 
 
     // SUKARELAWAN = P6
