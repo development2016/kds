@@ -32,12 +32,12 @@ use miloschuman\highcharts\Highcharts;
             'cursor' => 'pointer',
             'dataLabels' => [
                 'enabled' => true,
-                'distance' => -100,
+                'distance' => -80,
                 'style' => [
                   'fontSize' => '15px',
                   'fontWeight' => 'normal',
                 ],
-                'format' => '<b>{point.name}</b> : {point.y} - {point.percentage:.1f}%',
+                'format' => '<b>{point.name}</b> : {point.y}',
             ]
         ]
       ],

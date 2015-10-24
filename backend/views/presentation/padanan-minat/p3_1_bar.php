@@ -16,7 +16,7 @@ use miloschuman\highcharts\Highcharts;
       ],
 
       'title' => [
-      'text' => 'Graf Bar Padanan Minat Keseleruhan Mengikut Negeri',
+      'text' => 'Graf Bar Padanan Minat Bagi Setiap Negeri',
           'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',
@@ -43,7 +43,11 @@ use miloschuman\highcharts\Highcharts;
 
          ],
          'labels' => [
-         	'overflow' => 'justify'
+         	'overflow' => 'justify',
+                        'style' => [
+                'fontSize' => '15px',
+                'fontWeight' => 'normal',
+              ],
          ],
       ],
       'plotOptions' => [
