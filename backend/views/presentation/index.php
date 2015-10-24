@@ -85,8 +85,8 @@ $this->title = 'Komuniti Development System';
                                             <ul>
                                                 <li>Keseluruhan
                                                         <ul>
-                                                            <li><?= Html::a('Pie', ['xx/xx'],['target'=>'_BLANK']) ?></li>
-                                                            <li><?= Html::a('Bar', ['xx/xx'],['target'=>'_BLANK']) ?></li>
+                                                            <li><?= Html::a('Pie', ['presentation/p3_1_pie'],['target'=>'_BLANK']) ?></li>
+                                                            <li><?= Html::a('Bar', ['presentation/p3_1_bar'],['target'=>'_BLANK']) ?></li>
                                                         </ul>
                                                 </li>
                                                 <li><?= Html::a('Negeri', ['xx/xx'],['target'=>'_BLANK']) ?></li>

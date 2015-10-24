@@ -25,14 +25,14 @@ AppAsset::register($this);
 <body>
 <?php $this->beginBody() ?>
 
-<div class="wrap">
 
 
-    <div style="width:100%">
+
+    <div style="height:100%;width:100%;position:absolute;">
 
         <?= $content ?>
     </div>
-</div>
+
 
 
 

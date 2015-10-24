@@ -46,8 +46,17 @@ class PresentationController extends Controller
     	return $this->render('sosio-ekonomi/p2_2');
     }
 
-
-
+    // PADANAN MINAT = P3
+    public function actionP3_1_pie()
+    {
+        $this->layout = 'presentation';
+        return $this->render('padanan-minat/p3_1_pie');
+    }
+    public function actionP3_1_bar()
+    {
+        $this->layout = 'presentation';
+        return $this->render('padanan-minat/p3_1_bar');
+    }
 
 
     
