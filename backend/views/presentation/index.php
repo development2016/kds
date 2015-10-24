@@ -73,7 +73,7 @@ $this->title = 'Komuniti Development System';
                                             <ul>
                                                 <li><?= Html::a('Pendapatan', ['presentation/p2_1'],['target'=>'_BLANK']) ?></li>
                                                 <li><?= Html::a('Perbelanjaan', ['presentation/p2_2'],['target'=>'_BLANK']) ?></li>
-                                                <li><?= Html::a('Status Pekerjaan mengikut pendidikan', ['xx/xx'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Status Pekerjaan mengikut pendidikan (rendah,menengah,sijil,degree,master,phd)', ['xx/xx'],['target'=>'_BLANK']) ?></li>
                                                 <li><?= Html::a('Status bekerja vs umur 18 tahun', ['xx/xx'],['target'=>'_BLANK']) ?></li>
                                             </ul>
                                         </td>
@@ -89,7 +89,7 @@ $this->title = 'Komuniti Development System';
                                                             <li><?= Html::a('Bar', ['presentation/p3_1_bar'],['target'=>'_BLANK']) ?></li>
                                                         </ul>
                                                 </li>
-                                                <li><?= Html::a('Negeri', ['xx/xx'],['target'=>'_BLANK']) ?></li>
+        
                                             </ul>
                                         </td>
 
@@ -99,9 +99,12 @@ $this->title = 'Komuniti Development System';
                                         <td>OKU</td>
                                         <td>
                                             <ul>
-                                                <li><?= Html::a('Jumlah', ['xx/xx'],['target'=>'_BLANK']) ?></li>
-                                                <li><?= Html::a('Umur/Jantina', ['xx/xx'],['target'=>'_BLANK']) ?></li>
-                                                <li><?= Html::a('Kategori Kecacatan', ['xx/xx'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Negeri', ['xx/xx'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Jantina', ['xx/xx'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Umur', ['xx/xx'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Kecacatan', ['xx/xx'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Pekerjaan', ['xx/xx'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Perbelanjaan', ['xx/xx'],['target'=>'_BLANK']) ?></li>
                                             </ul>
                                         </td>
                                     </tr>
@@ -110,9 +113,10 @@ $this->title = 'Komuniti Development System';
                                         <td>Mikroworker</td>
                                         <td>
                                             <ul>
-                                                <li><?= Html::a('By Umur 18 Tahun', ['xx/xx'],['target'=>'_BLANK']) ?></li>
-                                                <li><?= Html::a('By Jantina 18', ['xx/xx'],['target'=>'_BLANK']) ?></li>
-                                                <li><?= Html::a('By Profession', ['xx/xx'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Negeri', ['xx/xx'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Jantina', ['xx/xx'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Umur 18 Tahun', ['xx/xx'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Profession', ['xx/xx'],['target'=>'_BLANK']) ?></li>
                                             </ul>
                                         </td>
                                     </tr>
@@ -121,15 +125,28 @@ $this->title = 'Komuniti Development System';
                                         <td>Sukarelawan</td>
                                         <td>
                                             <ul>
-                                                <li><?= Html::a('By umur atas 18 tahun', ['xx/xx'],['target'=>'_BLANK']) ?></li>
-                                                <li><?= Html::a('Interest Program', ['xx/xx'],['target'=>'_BLANK']) ?></li>
-                                                <li><?= Html::a('Sumbangan yang boleh dibuat', ['xx/xx'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Negeri', ['xx/xx'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Umur 18 tahun', ['xx/xx'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Minat Program', ['xx/xx'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Sumbangan', ['xx/xx'],['target'=>'_BLANK']) ?></li>
                                             </ul>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>7</td>
                                         <td>Isu</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Ibu Tunggal</td>
+                                        <td>
+                                            <ul>
+                                                <li><?= Html::a('Negeri', ['xx/xx'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Umur 18 tahun', ['xx/xx'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Profession', ['xx/xx'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Pendapatan', ['xx/xx'],['target'=>'_BLANK']) ?></li>
+                                            </ul>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>

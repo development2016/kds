@@ -17,7 +17,7 @@ use miloschuman\highcharts\Highcharts;
       ],
 
       'title' => [
-        'text' => 'Graf Pie Padanan Minat keseluruhan',
+        'text' => 'Graf Pie Padanan Minat Keseluruhan',
         'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',

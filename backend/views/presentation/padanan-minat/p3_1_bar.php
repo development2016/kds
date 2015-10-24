@@ -44,10 +44,7 @@ use miloschuman\highcharts\Highcharts;
          ],
          'labels' => [
          	'overflow' => 'justify',
-                        'style' => [
-                'fontSize' => '15px',
-                'fontWeight' => 'normal',
-              ],
+
          ],
       ],
       'plotOptions' => [
