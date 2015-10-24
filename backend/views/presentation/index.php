@@ -146,10 +146,10 @@ $this->title = 'Komuniti Development System';
                                         <td>Ibu Tunggal</td>
                                         <td>
                                             <ul>
-                                                <li><?= Html::a('Negeri', ['xx/xx'],['target'=>'_BLANK']) ?></li>
-                                                <li><?= Html::a('Umur 18 tahun', ['xx/xx'],['target'=>'_BLANK']) ?></li>
-                                                <li><?= Html::a('Profession', ['xx/xx'],['target'=>'_BLANK']) ?></li>
-                                                <li><?= Html::a('Pendapatan', ['xx/xx'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Negeri', ['presentation/p8_1'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Umur 18 tahun', ['presentation/p8_2'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Profession', ['presentation/p8_3'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Pendapatan', ['presentation/p8_4'],['target'=>'_BLANK']) ?></li>
                                             </ul>
                                         </td>
                                     </tr>

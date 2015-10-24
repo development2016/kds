@@ -120,4 +120,22 @@ $model2 = $sql2->queryAll();
         $this->layout = 'presentation';
         return $this->render('sukarelawan/p6_4');
     }
+
+
+    // IBU TUNGGAL = P8
+    public function actionP8_1()
+    {
+        $this->layout = 'presentation';
+        return $this->render('ibu-tunggal/p8_1');
+    }
+    public function actionP8_3()
+    {
+        $this->layout = 'presentation';
+        return $this->render('ibu-tunggal/p8_3');
+    }
+    public function actionP8_4()
+    {
+        $this->layout = 'presentation';
+        return $this->render('ibu-tunggal/p8_4');
+    }
 }
