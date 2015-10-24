@@ -18,6 +18,12 @@ use miloschuman\highcharts\Highcharts;
 
       'title' => [
         'text' => 'Graf Pie Padanan Minat keseluruhan',
+        'style' => [
+          'fontSize' => '25px',
+          'fontWeight' => 'normal',
+        ],
+
+
         
       ],
       'plotOptions' => [
@@ -26,6 +32,10 @@ use miloschuman\highcharts\Highcharts;
             'cursor' => 'pointer',
             'dataLabels' => [
                 'enabled' => true,
+                'style' => [
+                  'fontSize' => '15px',
+                  'fontWeight' => 'normal',
+                ],
                 'format' => '<b>{point.name}</b> : {point.y} - {point.percentage:.1f}%',
             ]
         ]

@@ -15,13 +15,31 @@ use miloschuman\highcharts\Highcharts;
           'type' =>'column',
       ],
 
-      'title' => ['text' => 'Graf Bar Padanan Minat Keseleruhan Mengikut Negeri'],
+      'title' => [
+      'text' => 'Graf Bar Padanan Minat Keseleruhan Mengikut Negeri',
+          'style' => [
+          'fontSize' => '25px',
+          'fontWeight' => 'normal',
+        ],
+
+      ],
       'xAxis' => [
-         'categories' => ['Pahang','Perlis','Perak','Kedah','Terengganu','Johor']
+         'categories' => ['Pahang','Perlis','Perak','Kedah','Terengganu','Johor'],
+         'labels' => [
+              'style' => [
+                'fontSize' => '15px',
+                'fontWeight' => 'normal',
+              ],
+         ]
+        
       ],
       'yAxis' => [
          'title' => [
          	'text' => 'Jumlah',
+              'style' => [
+                'fontSize' => '15px',
+                'fontWeight' => 'normal',
+              ],
 
          ],
          'labels' => [
@@ -34,7 +52,11 @@ use miloschuman\highcharts\Highcharts;
             'dataLabels' => [
               'enabled' => true,
               'rotation' => -90,
-              'y' => -20,
+              'y' => -30,
+              'style' => [
+                'fontSize' => '15px',
+                'fontWeight' => 'normal',
+              ],
               'align' => 'center',]
 
 
