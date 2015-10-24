@@ -71,11 +71,11 @@ use miloschuman\highcharts\Highcharts;
       'series' => [
         [
           'name' => 'Bekerja', 
-          'data' => [1,1,0,0,0,0]
+          'data' => [1132,466,696,13,913,124]
         ],
         [
           'name' => 'Tidak Bekerja',
-          'data' => [1,0,0,0,1,0]
+          'data' => [1629,915,2426,48,1100,390]
         ],
 
       ]

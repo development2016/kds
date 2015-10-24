@@ -52,7 +52,7 @@ use miloschuman\highcharts\Highcharts;
       ],
       'series' => [
          [
-         	'name' => 'Pendapatan Ibu Tunggal', 'data' => [2, 0, 1,0,0,0,0,0,0,0,0,0]
+         	'name' => 'Pendapatan Ibu Tunggal', 'data' => [4960, 1927, 893,505,162,43,23,22,4,3,4,2]
          ],
 
       ]
