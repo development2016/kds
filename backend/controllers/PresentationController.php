@@ -122,6 +122,20 @@ $model2 = $sql2->queryAll();
     }
 
 
+    // ISU = P7
+    public function actionP7_1_pie()
+    {
+        $this->layout = 'presentation';
+        return $this->render('isu/p7_1_pie');
+    }
+    public function actionP7_1_bar()
+    {
+        $this->layout = 'presentation';
+        return $this->render('isu/p7_1_bar');
+    }
+
+
+
     // IBU TUNGGAL = P8
     public function actionP8_1()
     {

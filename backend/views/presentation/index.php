@@ -140,6 +140,17 @@ $this->title = 'Komuniti Development System';
                                     <tr>
                                         <td>7</td>
                                         <td>Isu</td>
+                                        <td>
+                                            <ul>
+                                                <li>Keseluruhan
+                                                        <ul>
+                                                            <li><?= Html::a('Pie', ['presentation/p7_1_pie'],['target'=>'_BLANK']) ?></li>
+                                                            <li><?= Html::a('Bar', ['presentation/p7_1_bar'],['target'=>'_BLANK']) ?></li>
+                                                        </ul>
+                                                </li>
+        
+                                            </ul>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>8</td>
