@@ -86,5 +86,23 @@ $model2 = $sql2->queryAll();
     }
 
 
-    
+
+
+
+    // SUKARELAWAN = P6
+    public function actionP6_1()
+    {
+        $this->layout = 'presentation';
+        return $this->render('sukarelawan/p6_1');
+    }
+    public function actionP6_3()
+    {
+        $this->layout = 'presentation';
+        return $this->render('sukarelawan/p6_3');
+    }
+    public function actionP6_4()
+    {
+        $this->layout = 'presentation';
+        return $this->render('sukarelawan/p6_4');
+    }
 }
