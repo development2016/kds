@@ -53,6 +53,7 @@ use miloschuman\highcharts\Highcharts;
       'series' => [
          [
          	'name' => 'Perbelanjaan', 'data' => [49991, 33532, 22602,10278,4002,1216,798,658,115,122,53,105]
+          
          ],
 
       ]

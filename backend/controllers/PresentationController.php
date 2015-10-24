@@ -32,6 +32,11 @@ class PresentationController extends Controller
     	$this->layout = 'presentation';
     	return $this->render('demografi/p1_2');
     }
+    public function actionP1_3()
+    {
+        $this->layout = 'presentation';
+        return $this->render('demografi/p1_3');
+    }
 
 
     // SOSIO EKONOMI = P2
@@ -45,6 +50,28 @@ class PresentationController extends Controller
     	$this->layout = 'presentation';
     	return $this->render('sosio-ekonomi/p2_2');
     }
+    public function actionP2_3_pie()
+    {
+        $this->layout = 'presentation';
+        return $this->render('sosio-ekonomi/p2_3_pie');
+    }
+    public function actionP2_3_bar()
+    {
+        $this->layout = 'presentation';
+        return $this->render('sosio-ekonomi/p2_3_bar');
+    }
+    public function actionP2_4()
+    {
+        $this->layout = 'presentation';
+        $sql2 = $connection->createCommand("SELECT dob FROM people WHERE state_id = 12 AND profession_status = 'Bekerja'");
+$model2 = $sql2->queryAll();
+        return $this->render('sosio-ekonomi/p2_4');
+    }
+
+
+
+
+
 
     // PADANAN MINAT = P3
     public function actionP3_1_pie()
