@@ -1,5 +1,5 @@
 <script type="text/javascript">
-window.setTimeout(function(){ document.location.reload(true); }, 10000);
+window.setTimeout(function(){ document.location.reload(true); }, 180000);
 </script>
 <?php
 use yii\helpers\Html;
