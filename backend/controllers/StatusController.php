@@ -122,6 +122,7 @@ class StatusController extends Controller
         //reject
         $reject = Status::find()->where(['id'=>7])->all();
 
+
         //data sah
         $ps_pahang = People::find()->where(['state_id' => 12,'data_status'=>'Sah'])->count();
         $ps_perlis = People::find()->where(['state_id' => 14,'data_status'=>'Sah'])->count();
@@ -138,6 +139,7 @@ class StatusController extends Controller
         $reject_4 = Status::find()->where(['id'=>4])->all();
         $reject_5 = Status::find()->where(['id'=>5])->all();
         $reject_6 = Status::find()->where(['id'=>6])->all();
+        $reject_8 = Status::find()->where(['id'=>8])->all();
 
         $content = $this->renderPartial('print',[
             'kg_pahang' => $kg_pahang,
@@ -211,6 +213,7 @@ class StatusController extends Controller
             'reject_4' => $reject_4,
             'reject_5' => $reject_5,
             'reject_6' => $reject_6,
+            'reject_8' => $reject_8,
 
 
             'mngt_pahang' => $mngt_pahang,
@@ -563,6 +566,7 @@ class StatusController extends Controller
         $reject_4 = Status::find()->where(['id'=>4])->all();
         $reject_5 = Status::find()->where(['id'=>5])->all();
         $reject_6 = Status::find()->where(['id'=>6])->all();
+        $reject_8 = Status::find()->where(['id'=>8])->all();
 
         return $this->render('kds',[
             'kg_pahang' => $kg_pahang,
@@ -636,6 +640,7 @@ class StatusController extends Controller
             'reject_4' => $reject_4,
             'reject_5' => $reject_5,
             'reject_6' => $reject_6,
+            'reject_8' => $reject_8,
 
             'mngt_pahang' => $mngt_pahang,
             'mngt_perlis' => $mngt_perlis,

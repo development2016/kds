@@ -67,7 +67,15 @@ use yii\helpers\Url;
                                $r6_johor = $value_6['johor'];
                                $r6_selangor = $value_6['selangor'];
                             }
-
+                            foreach ($reject_8 as $key => $value_8) {
+                               $r8_pahang = $value_8['pahang'];
+                               $r8_kedah = $value_8['kedah'];
+                               $r8_perlis = $value_8['perlis'];
+                               $r8_terengganu = $value_8['terengganu'];
+                               $r8_perak = $value_8['perak'];
+                               $r8_johor = $value_8['johor'];
+                               $r8_selangor = $value_8['selangor'];
+                            }
 
                             ?>
                             STATUS KDS AS : <?php echo date('d/m/Y'); ?> 
@@ -277,7 +285,17 @@ use yii\helpers\Url;
                                         <td><?= $r6_johor; ?></td>
                                         <td><?= $r6_selangor; ?></td>
                                     </tr>
-
+                                    <tr>
+                                        <td>18</td>
+                                        <td>Pre-Profile</td>
+                                        <td><?= $r8_pahang; ?></td>
+                                        <td><?= $r8_kedah; ?></td>
+                                        <td><?= $r8_perlis; ?></td>
+                                        <td><?= $r8_terengganu; ?></td>
+                                        <td><?= $r8_perak; ?></td>
+                                        <td><?= $r8_johor; ?></td>
+                                        <td><?= $r8_selangor; ?></td>
+                                    </tr>
                                 </tbody>
 
                             </table>
