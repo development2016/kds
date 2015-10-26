@@ -14,7 +14,7 @@ use miloschuman\highcharts\Highcharts;
           'type' => 'column'
           ],
       'title' => [
-      'text' => 'Jumlah Isu Setiap Negeri',
+      'text' => 'Graf Bar Jumlah keseluruhan Isu Bagi Setiap Negeri',
         'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',

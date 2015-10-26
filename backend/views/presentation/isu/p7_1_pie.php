@@ -17,14 +17,11 @@ use miloschuman\highcharts\Highcharts;
       ],
 
       'title' => [
-        'text' => 'Graf Pie Isu Keseluruhan',
+        'text' => 'Carta Pie Jumlah Keseluruhan Isu Mengikut Kategori',
         'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',
         ],
-
-
-        
       ],
       'plotOptions' => [
         'pie' => [
@@ -37,8 +34,10 @@ use miloschuman\highcharts\Highcharts;
                   'fontSize' => '15px',
                   'fontWeight' => 'normal',
                 ],
-                'format' => '<b>{point.name}</b> : {point.y}',
-            ]
+                'format' => '{point.y}',
+            ],
+            'showInLegend' => true,
+     
         ]
       ],
       'credits' => [

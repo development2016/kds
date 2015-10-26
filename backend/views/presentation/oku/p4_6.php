@@ -23,7 +23,7 @@ use miloschuman\highcharts\Highcharts;
 
       ],
       'xAxis' => [
-         'categories' => ['Pahang','Perlis','Perak','Kedah','Terengganu','Johor'],
+         'categories' => ['Perlis','Perak','Terengganu','Johor'],
          'labels' => [
               'style' => [
                 'fontSize' => '15px',
@@ -69,28 +69,28 @@ use miloschuman\highcharts\Highcharts;
       'series' => [
         [
           'name' => 'Kurang RM 400', 
-          'data' => [0,101,138,0,157,17]
+          'data' => [101,138,157,17]
         ],
         [
           'name' => 'RM 401 - RM 800', 
-          'data' => [0,42,25,0,45,6]
+          'data' => [42,25,45,6]
         ],
         [
           'name' => 'RM 801 - RM 1200', 
-          'data' => [0,7,14,0,17,5]
+          'data' => [7,14,17,5]
         ],
         [
           'name' => 'RM 1201 - RM 1600', 
-          'data' => [0,4,2,0,7,1]
+          'data' => [4,2,7,1]
         ],
 
          [
           'name' => 'RM 1601 - RM 2000', 
-          'data' => [0,1,1,0,1,0]
+          'data' => [1,1,1,0]
         ],
          [
           'name' => 'RM 2001 - RM 2400', 
-          'data' => [0,0,0,0,1,1]
+          'data' => [0,0,1,1]
         ],
          
 
