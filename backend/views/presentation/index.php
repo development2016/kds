@@ -109,7 +109,7 @@ $this->title = 'Komuniti Development System';
                                                 <li><?= Html::a('Umur', ['presentation/p4_3'],['target'=>'_BLANK']) ?></li>
                                                 <li><?= Html::a('Kecacatan', ['presentation/p4_4'],['target'=>'_BLANK']) ?></li>
                                                 <li><?= Html::a('Pekerjaan', ['presentation/p4_5'],['target'=>'_BLANK']) ?></li>
-                                                <li><?= Html::a('Perbelanjaan', ['presentation/p4_6'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Pendapatan', ['presentation/p4_6'],['target'=>'_BLANK']) ?></li>
                                             </ul>
                                         </td>
                                     </tr>

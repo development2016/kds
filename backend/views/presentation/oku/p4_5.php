@@ -17,7 +17,7 @@ use miloschuman\highcharts\Highcharts;
       ],
 
       'title' => [
-        'text' => 'Graf Pie OKU Mengikut Kategori',
+        'text' => 'Graf Pie Status OKU Bekerja dan OKU Tidak Bekerja Mengikut Kategori',
         'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',
@@ -37,7 +37,7 @@ use miloschuman\highcharts\Highcharts;
                   'fontSize' => '15px',
                   'fontWeight' => 'normal',
                 ],
-                'format' => '<b>{point.name}</b> : {point.y}',
+                'format' => '<b>{point.name}</b> : {point.y} - {point.percentage:.1f}%',
             ]
         ]
       ],
@@ -50,31 +50,15 @@ use miloschuman\highcharts\Highcharts;
            'name' => 'OKU', 
            'data' => [
               [
-                'name' => 'Kerja Sendiri',
-                'y' => 7
+                'name' => 'Bekerja',
+                'y' => 217
               ],
               [
-                'name' => 'Kerja',
-                'y' => 4
+                'name' => 'Tidak Bekerja',
+                'y' => 392
               ],
-              [
-                'name' => 'Pelajar',
-                'y' => 2,
-                'sliced' => true,
-                'selected' => true
-              ],
-              [
-                'name' => 'Suri Rumah',
-                'y' => 47
-              ],
-              [
-                'name' => 'Penganggur',
-                'y' => 1
-              ],
-              [
-                'name' => 'Pesara',
-                'y' => 16
-              ]
+             
+             
 
            ]
          ],

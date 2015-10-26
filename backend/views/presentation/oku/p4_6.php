@@ -15,7 +15,7 @@ use miloschuman\highcharts\Highcharts;
       ],
 
       'title' => [
-      'text' => 'Graf Bar Perbelanjaan OKU Mengikut Negeri',
+      'text' => 'Graf Bar Pendapatan OKU Mengikut Negeri',
           'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',
@@ -69,29 +69,25 @@ use miloschuman\highcharts\Highcharts;
       'series' => [
         [
           'name' => 'Kurang RM 400', 
-          'data' => [101,138,157,17]
+          'data' => [110,128,148,16]
         ],
         [
           'name' => 'RM 401 - RM 800', 
-          'data' => [42,25,45,6]
+          'data' => [31,33,45,4]
         ],
         [
           'name' => 'RM 801 - RM 1200', 
-          'data' => [7,14,17,5]
+          'data' => [13,14,29,9]
         ],
         [
           'name' => 'RM 1201 - RM 1600', 
-          'data' => [4,2,7,1]
+          'data' => [1,4,3,0]
         ],
-
-         [
+        [
           'name' => 'RM 1601 - RM 2000', 
-          'data' => [1,1,1,0]
+          'data' => [2,1,1,1]
         ],
-         [
-          'name' => 'RM 2001 - RM 2400', 
-          'data' => [0,0,1,1]
-        ],
+        
          
 
         

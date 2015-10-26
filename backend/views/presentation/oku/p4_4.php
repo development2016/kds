@@ -17,7 +17,7 @@ use miloschuman\highcharts\Highcharts;
       ],
 
       'title' => [
-        'text' => 'Graf Pie OKU Mengikut Kategori',
+        'text' => 'Graf Pie Kecacatan OKU Mengikut Kategori',
         'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',
@@ -32,12 +32,12 @@ use miloschuman\highcharts\Highcharts;
             'cursor' => 'pointer',
             'dataLabels' => [
                 'enabled' => true,
-                'distance' => -60,
+                'distance' => -80,
                 'style' => [
                   'fontSize' => '15px',
                   'fontWeight' => 'normal',
                 ],
-                'format' => '<b>{point.name}</b> : {point.y}',
+                'format' => '<b>{point.name}</b> : {point.y} - {point.percentage:.1f}%',
             ]
         ]
       ],
@@ -49,17 +49,15 @@ use miloschuman\highcharts\Highcharts;
          [
            'name' => 'OKU', 
            'data' => [
-
+              [
+                'name' => 'Pendengaran',
+                'y' => 31
+              ],
               [
                 'name' => 'Penglihatan',
                 'y' => 77
               ],
-              [
-                'name' => 'Fizikal',
-                'y' => 261,
-                'sliced' => true,
-                'selected' => true
-              ],
+
               [
                 'name' => 'Pembelajaran',
                 'y' => 93
@@ -69,8 +67,8 @@ use miloschuman\highcharts\Highcharts;
                 'y' => 15
               ],
                             [
-                'name' => 'Pendengaran',
-                'y' => 31
+                'name' => 'Lain - Lain',
+                'y' => 17
               ],
               [
                 'name' => 'Mental',
@@ -79,7 +77,14 @@ use miloschuman\highcharts\Highcharts;
               [
                 'name' => 'Pelbagai',
                 'y' => 51
-              ]
+              ],
+                            [
+                'name' => 'Fizikal',
+                'y' => 261,
+                'sliced' => true,
+                'selected' => true
+              ],
+
 
            ]
          ],
