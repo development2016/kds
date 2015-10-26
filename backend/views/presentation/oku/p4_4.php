@@ -32,7 +32,7 @@ use miloschuman\highcharts\Highcharts;
             'cursor' => 'pointer',
             'dataLabels' => [
                 'enabled' => true,
-                'distance' => -90,
+                'distance' => -60,
                 'style' => [
                   'fontSize' => '15px',
                   'fontWeight' => 'normal',
@@ -49,34 +49,35 @@ use miloschuman\highcharts\Highcharts;
          [
            'name' => 'OKU', 
            'data' => [
+
               [
-                'name' => 'Kurang Upaya Pendengaran',
-                'y' => 31
-              ],
-              [
-                'name' => 'Kurang Upaya Penglihatan',
+                'name' => 'Penglihatan',
                 'y' => 77
               ],
               [
-                'name' => 'Kurang Upaya Fizikal',
+                'name' => 'Fizikal',
                 'y' => 261,
                 'sliced' => true,
                 'selected' => true
               ],
               [
-                'name' => 'Masalah Pembelajaran',
+                'name' => 'Pembelajaran',
                 'y' => 93
               ],
               [
-                'name' => 'Kurang Upaya Pertuturan',
+                'name' => 'Pertuturan',
                 'y' => 15
               ],
+                            [
+                'name' => 'Pendengaran',
+                'y' => 31
+              ],
               [
-                'name' => 'Kurang Upaya Mental',
+                'name' => 'Mental',
                 'y' => 64
               ],
               [
-                'name' => 'Kurang Upaya Pelbagai',
+                'name' => 'Pelbagai',
                 'y' => 51
               ]
 

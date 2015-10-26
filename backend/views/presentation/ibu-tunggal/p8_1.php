@@ -56,7 +56,7 @@ use miloschuman\highcharts\Highcharts;
       'series' => [
          [
          	'name' => 'Ibu Tunggal', 
-          'data' => [3125, 1452, 3161,61,2010,514]
+          'data' => [3609, 1716, 3347,76,2492,582]
          ],
 
       ]

@@ -23,7 +23,7 @@ use miloschuman\highcharts\Highcharts;
 
       ],
       'xAxis' => [
-         'categories' => ['Pahang','Perlis','Perak','Kedah','Terengganu','Johor'],
+         'categories' => ['Perlis','Perak','Terengganu','Johor'],
          'labels' => [
               'style' => [
                 'fontSize' => '15px',
@@ -69,7 +69,7 @@ use miloschuman\highcharts\Highcharts;
       'series' => [
         [
           'name' => 'OKU', 
-          'data' => [1,166,181,0,232,30]
+          'data' => [166,181,232,30]
         ],
         
         
