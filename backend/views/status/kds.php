@@ -132,6 +132,39 @@ use yii\helpers\Url;
                                     </tr>
                                     <tr>
                                         <td>4</td>
+                                        <td>Pre-Profile</td>
+                                        <td><?= $r8_pahang; ?></td>
+                                        <td><?= $r8_kedah; ?></td>
+                                        <td><?= $r8_perlis; ?></td>
+                                        <td><?= $r8_terengganu; ?></td>
+                                        <td><?= $r8_perak; ?></td>
+                                        <td><?= $r8_johor; ?></td>
+                                        <td><?= $r8_selangor; ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>No. of B40 profiled</td>
+                                        <td><?= $r3_pahang; ?></td>
+                                        <td><?= $r3_kedah; ?></td>
+                                        <td><?= $r3_perlis; ?></td>
+                                        <td><?= $r3_terengganu; ?></td>
+                                        <td><?= $r3_perak; ?></td>
+                                        <td><?= $r3_johor; ?></td>
+                                        <td><?= $r3_selangor; ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>No. of B40 channeled to specific programs</td>
+                                        <td><?= $p_pahang; ?></td>
+                                        <td><?= $p_kedah; ?></td>
+                                        <td><?= $p_perlis; ?></td>
+                                        <td><?= $p_terengganu; ?></td>
+                                        <td><?= $p_perak; ?></td>
+                                        <td><?= $p_johor; ?></td>
+                                        <td><?= $p_selangor; ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
                                         <td>No. of volunteers recruited and trained</td>
                                         <td><?= $v_pahang; ?></td>
                                         <td><?= $v_kedah; ?></td>
@@ -143,7 +176,7 @@ use yii\helpers\Url;
 
                                     </tr>
                                     <tr>
-                                        <td>5</td>
+                                        <td>8</td>
                                         <td>No. of B40 microworkers trained for microsourcing</td>
                                         <td><?= $mwt_pahang; ?></td>
                                         <td><?= $mwt_kedah; ?></td>
@@ -154,7 +187,7 @@ use yii\helpers\Url;
                                         <td><?= $mwt_selangor; ?></td>
                                     </tr>
                                     <tr>
-                                        <td>6</td>
+                                        <td>9</td>
                                         <td>No. of B40 contracted as freelance for microsourcing tasks</td>
                                         <td><?= $mwtt_pahang; ?></td>
                                         <td><?= $mwtt_kedah; ?></td>
@@ -165,7 +198,7 @@ use yii\helpers\Url;
                                         <td><?= $mwtt_selangor; ?></td>
                                     </tr>
                                     <tr>
-                                        <td>7</td>
+                                        <td>10</td>
                                         <td>No. of total task (data collection + data entry)</td>
                                         <td><?php $tot = ($p_pahang / 25 ) * 2; echo round($tot); ?></td>
                                         <td><?php $tot = ($p_kedah / 25 ) * 2; echo round($tot);?></td>
@@ -175,19 +208,9 @@ use yii\helpers\Url;
                                         <td><?php $tot = ($p_johor / 25 ) * 2; echo round($tot);?></td>
                                         <td><?php $tot = ($p_selangor / 25 ) * 2; echo round($tot);?></td>
                                     </tr>
+
                                     <tr>
-                                        <td>8</td>
-                                        <td>No. of total payments data collection + data entry (RM)</td>
-                                        <td><?php $tot1 = $p_pahang * 2; echo round($tot1); ?></td>
-                                        <td><?php $tot1 = $p_kedah * 2; echo round($tot1);?></td>
-                                        <td><?php $tot1 = $p_perlis * 2; echo round($tot1);?></td>
-                                        <td><?php $tot1 = $p_terengganu * 2; echo round($tot1);?></td>
-                                        <td><?php $tot1 = $p_perak * 2; echo round($tot1);?></td>
-                                        <td><?php $tot1 = $p_johor * 2; echo round($tot1);?></td>
-                                        <td><?php $tot1 = $p_selangor * 2; echo round($tot1);?></td>
-                                    </tr>
-                                    <tr>
-                                        <td>9</td>
+                                        <td>11</td>
                                         <td>No. of community facilities audit</td>
                                         <td><?= $pfna_pahang; ?></td>
                                         <td><?= $pfna_kedah; ?></td>
@@ -198,7 +221,7 @@ use yii\helpers\Url;
                                         <td><?= $pfna_selangor; ?></td>
                                     </tr>
                                     <tr>
-                                        <td>10</td>
+                                        <td>12</td>
                                         <td>No. of community facilities networked</td>
                                         <td><?= $pfnn_pahang; ?></td>
                                         <td><?= $pfnn_kedah; ?></td>
@@ -209,7 +232,7 @@ use yii\helpers\Url;
                                         <td><?= $pfnn_selangor; ?></td>
                                     </tr>
                                     <tr>
-                                        <td>11</td>
+                                        <td>13</td>
                                         <td>No. of community facilities manager trained</td>
                                         <td><?= $mngt_pahang; ?></td>
                                         <td><?= $mngt_kedah; ?></td>
@@ -220,40 +243,7 @@ use yii\helpers\Url;
                                         <td><?= $mngt_selangor; ?></td>
                                     </tr>
                                     <tr>
-                                        <td>12</td>
-                                        <td>No. of issues</td>
-                                        <td><?= $i_pahang; ?></td>
-                                        <td><?= $i_kedah; ?></td>
-                                        <td><?= $i_perlis; ?></td>
-                                        <td><?= $i_terengganu; ?></td>
-                                        <td><?= $i_perak; ?></td>
-                                        <td><?= $i_johor; ?></td>
-                                        <td><?= $i_selangor; ?></td>
-                                    </tr>
-                                    <tr>
-                                        <td>13</td>
-                                        <td>No. of B40 channeled to specific programs</td>
-                                        <td><?= $p_pahang; ?></td>
-                                        <td><?= $p_kedah; ?></td>
-                                        <td><?= $p_perlis; ?></td>
-                                        <td><?= $p_terengganu; ?></td>
-                                        <td><?= $p_perak; ?></td>
-                                        <td><?= $p_johor; ?></td>
-                                        <td><?= $p_selangor; ?></td>
-                                    </tr>
-                                    <tr>
                                         <td>14</td>
-                                        <td>No. of B40 profiled</td>
-                                        <td><?= $r3_pahang; ?></td>
-                                        <td><?= $r3_kedah; ?></td>
-                                        <td><?= $r3_perlis; ?></td>
-                                        <td><?= $r3_terengganu; ?></td>
-                                        <td><?= $r3_perak; ?></td>
-                                        <td><?= $r3_johor; ?></td>
-                                        <td><?= $r3_selangor; ?></td>
-                                    </tr>
-                                    <tr>
-                                        <td>15</td>
                                         <td>No. of B40 societal well-being enabled</td>
                                         <td><?= $r4_pahang; ?></td>
                                         <td><?= $r4_kedah; ?></td>
@@ -262,6 +252,17 @@ use yii\helpers\Url;
                                         <td><?= $r4_perak; ?></td>
                                         <td><?= $r4_johor; ?></td>
                                         <td><?= $r4_selangor; ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td>15</td>
+                                        <td>No. of issues</td>
+                                        <td><?= $i_pahang; ?></td>
+                                        <td><?= $i_kedah; ?></td>
+                                        <td><?= $i_perlis; ?></td>
+                                        <td><?= $i_terengganu; ?></td>
+                                        <td><?= $i_perak; ?></td>
+                                        <td><?= $i_johor; ?></td>
+                                        <td><?= $i_selangor; ?></td>
                                     </tr>
                                     <tr>
                                         <td>16</td>
@@ -285,17 +286,7 @@ use yii\helpers\Url;
                                         <td><?= $r6_johor; ?></td>
                                         <td><?= $r6_selangor; ?></td>
                                     </tr>
-                                    <tr>
-                                        <td>18</td>
-                                        <td>Pre-Profile</td>
-                                        <td><?= $r8_pahang; ?></td>
-                                        <td><?= $r8_kedah; ?></td>
-                                        <td><?= $r8_perlis; ?></td>
-                                        <td><?= $r8_terengganu; ?></td>
-                                        <td><?= $r8_perak; ?></td>
-                                        <td><?= $r8_johor; ?></td>
-                                        <td><?= $r8_selangor; ?></td>
-                                    </tr>
+
                                 </tbody>
 
                             </table>
