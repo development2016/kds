@@ -145,7 +145,7 @@ $this->title = 'Komuniti Development System';
                                             <ul>
                                                 <li><?= Html::a('Negeri', ['presentation/p5_1'],['target'=>'_BLANK']) ?></li>
                                                 <li><?= Html::a('Jantina', ['presentation/p5_2'],['target'=>'_BLANK']) ?></li>
-                                                <li><?= Html::a('Umur 18 Tahun', ['xx/xx'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Umur 18 Tahun', ['presentation/p5_3'],['target'=>'_BLANK']) ?></li>
                                                 <li><?= Html::a('Profession', ['presentation/p5_4'],['target'=>'_BLANK']) ?></li>
                                             </ul>
                                         </td>
@@ -156,7 +156,7 @@ $this->title = 'Komuniti Development System';
                                         <td>
                                             <ul>
                                                 <li><?= Html::a('Negeri', ['presentation/p6_1'],['target'=>'_BLANK']) ?></li>
-                                                <li><?= Html::a('Umur 18 tahun', ['xx/xx'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Umur 18 tahun', ['presentation/p6_2'],['target'=>'_BLANK']) ?></li>
                                                 <li><?= Html::a('Minat Program', ['presentation/p6_3'],['target'=>'_BLANK']) ?></li>
                                                 <li><?= Html::a('Sumbangan', ['presentation/p6_4'],['target'=>'_BLANK']) ?></li>
                                             </ul>

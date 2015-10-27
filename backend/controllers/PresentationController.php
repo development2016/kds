@@ -63,10 +63,7 @@ class PresentationController extends Controller
     public function actionP2_4()
     {
         $this->layout = 'presentation';
-        $connection = \Yii::$app->db;
-        $sql = $connection->createCommand("SELECT 2015 - YEAR(DATE_FORMAT(STR_TO_DATE(dob, '%d/%m/%Y'), '%Y-%m-%d')) AS age,YEAR(DATE_FORMAT(STR_TO_DATE(dob, '%d/%m/%Y'), '%Y-%m-%d')) AS year_only  FROM people WHERE state_id = 12 AND profession_status = 'Bekerja'");
-        $model = $sql->queryAll();
-        return $this->render('sosio-ekonomi/p2_4',['model'=>$model]);
+        return $this->render('sosio-ekonomi/p2_4');
     }
 
 
@@ -156,6 +153,11 @@ class PresentationController extends Controller
         $this->layout = 'presentation';
         return $this->render('microworker/p5_2');
     }
+    public function actionP5_3()
+    {
+        $this->layout = 'presentation';
+        return $this->render('microworker/p5_3');
+    }
     public function actionP5_4()
     {
         $this->layout = 'presentation';
@@ -168,6 +170,11 @@ class PresentationController extends Controller
     {
         $this->layout = 'presentation';
         return $this->render('sukarelawan/p6_1');
+    }
+        public function actionP6_2()
+    {
+        $this->layout = 'presentation';
+        return $this->render('sukarelawan/p6_2');
     }
     public function actionP6_3()
     {
@@ -200,6 +207,11 @@ class PresentationController extends Controller
     {
         $this->layout = 'presentation';
         return $this->render('ibu-tunggal/p8_1');
+    }
+    public function actionP8_2()
+    {
+        $this->layout = 'presentation';
+        return $this->render('ibu-tunggal/p8_2');
     }
     public function actionP8_3()
     {

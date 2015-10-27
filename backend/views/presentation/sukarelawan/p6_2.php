@@ -14,7 +14,7 @@ use miloschuman\highcharts\Highcharts;
           'type' => 'column'
           ],
       'title' => [
-      'text' => 'Umur 18 ke atas yang bekerja',
+      'text' => 'Sukarelawan 18 ke atas yang bekerja',
         'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',
@@ -55,7 +55,7 @@ use miloschuman\highcharts\Highcharts;
       ],
       'series' => [
          [
-         	'name' => 'Profession', 'data' => [4321, 12557, 12193,10300,10568,11200,9659,6997,4190,2259,889,245,49,10]
+         	'name' => 'Profession', 'data' => [575, 727, 696,551,621,673,507,444,117,36,9,2,2,0]
           
          ],
 

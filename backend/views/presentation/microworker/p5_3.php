@@ -14,7 +14,7 @@ use miloschuman\highcharts\Highcharts;
           'type' => 'column'
           ],
       'title' => [
-      'text' => 'Umur 18 ke atas yang bekerja',
+      'text' => 'Mickroworker Umur 18 ke atas yang bekerja',
         'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',
@@ -55,7 +55,7 @@ use miloschuman\highcharts\Highcharts;
       ],
       'series' => [
          [
-         	'name' => 'Profession', 'data' => [4321, 12557, 12193,10300,10568,11200,9659,6997,4190,2259,889,245,49,10]
+         	'name' => 'Profession', 'data' => [669, 838, 816,700,794,934,698,600,116,42,11,0,1,0]
           
          ],
 
