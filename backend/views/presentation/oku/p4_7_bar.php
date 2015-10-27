@@ -15,7 +15,7 @@ use miloschuman\highcharts\Highcharts;
       ],
 
       'title' => [
-      'text' => 'Graf Bar Jantina OKU Mengikut Negeri',
+      'text' => 'Graf Bar Minat Keseusahawanan OKU Mengikut Negeri',
           'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',
@@ -68,13 +68,22 @@ use miloschuman\highcharts\Highcharts;
 
       'series' => [
         [
-          'name' => 'Lelaki', 
-          'data' => [106,117,147,16]
+          'name' => 'Bengkel usahawan', 
+          'data' => [33,26,41,7]
         ],
         [
-          'name' => 'Perempuan',
-          'data' => [60,64,84,14]
+          'name' => 'Kursus IKS', 
+          'data' => [19,18,27,4]
         ],
+        [
+          'name' => 'Amanah Ikhtiar Malaysia', 
+          'data' => [17,16,21,3]
+        ],
+       
+        
+         
+
+        
         
       ]
    ]

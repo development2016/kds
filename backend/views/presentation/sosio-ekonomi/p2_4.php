@@ -1,11 +1,10 @@
 
 
-<?php foreach ($model as $key => $value) {
-$date = $value['dob'];
+<?php 
 
-  $year =  date('Y', strtotime($date));
-  $current = 2015;
-  $new =  $current - $year;
+foreach ($model as $key => $value) {
+echo $age = $value['age'];
+
 
 
 } ?>

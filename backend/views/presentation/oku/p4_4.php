@@ -17,7 +17,7 @@ use miloschuman\highcharts\Highcharts;
       ],
 
       'title' => [
-        'text' => 'Graf Pie Kecacatan OKU Mengikut Kategori',
+        'text' => 'Graf Pie Kecacatan OKU Tanggungan Mengikut Kategori',
         'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',

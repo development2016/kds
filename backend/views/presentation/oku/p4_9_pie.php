@@ -17,14 +17,11 @@ use miloschuman\highcharts\Highcharts;
       ],
 
       'title' => [
-        'text' => 'Graf Pie Status Pekerjaan OKU Mengikut Kategori',
+        'text' => 'Carta Pie Jumlah Minat Kerja Sampingan OKU Mengikut Kategori',
         'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',
         ],
-
-
-        
       ],
       'plotOptions' => [
         'pie' => [
@@ -37,8 +34,10 @@ use miloschuman\highcharts\Highcharts;
                   'fontSize' => '15px',
                   'fontWeight' => 'normal',
                 ],
-                'format' => '<b>{point.name}</b> : {point.percentage:.1f}%',
-            ]
+                'format' => '{point.percentage:.1f}%',
+            ],
+            'showInLegend' => true,
+     
         ]
       ],
       'credits' => [
@@ -49,36 +48,37 @@ use miloschuman\highcharts\Highcharts;
          [
            'name' => 'OKU', 
            'data' => [
-              
               [
-                'name' => 'Bekerja Sendiri',
-                'y' => 109
-              ],
-              [
-                'name' => 'Kerajaan',
-                'y' => 10
+                'name' => 'Mengumpul data',
+                'y' => 38
               ],
               [
-                'name' => 'Niaga',
-                'y' => 19
+                'name' => 'Memasukkan data',
+                'y' => 32
               ],
               [
-                'name' => 'Swasta',
-                'y' => 57
+                'name' => 'Mengesahkan data',
+                'y' => 24
+
               ],
               [
-                'name' => 'Lain - Lain',
-                'y' => 15
+                'name' => 'Mengedarkan brosur',
+                'y' => 48
               ],
-             [
-                'name' => 'Tidak Bekerja',
-                'y' => 398
+              [
+                'name' => 'Mendapatkan isu',
+                'y' => 36
               ],
-              
-              
-             
-             
-             
+              [
+                'name' => 'Menggantung banner',
+                'y' => 56
+              ],
+              [
+                'name' => 'Fasilitator',
+                'y' => 19,
+                'sliced' => true,
+                'selected' => true
+              ]
 
            ]
          ],

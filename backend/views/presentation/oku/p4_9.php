@@ -15,7 +15,7 @@ use miloschuman\highcharts\Highcharts;
       ],
 
       'title' => [
-      'text' => 'Graf Bar Jantina OKU Mengikut Negeri',
+      'text' => 'Graf Bar Minat Kerja Sampingan OKU Mengikut Negeri',
           'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',
@@ -68,13 +68,39 @@ use miloschuman\highcharts\Highcharts;
 
       'series' => [
         [
-          'name' => 'Lelaki', 
-          'data' => [106,117,147,16]
+          'name' => 'Mengumpul data', 
+          'data' => [11,9,14,4]
         ],
         [
-          'name' => 'Perempuan',
-          'data' => [60,64,84,14]
+          'name' => 'Memasukkan data', 
+          'data' => [9,7,12,12]
         ],
+        [
+          'name' => 'Mengesahkan data', 
+          'data' => [7,7,6,4]
+        ],
+        [
+          'name' => 'Mengedarkan brosur', 
+          'data' => [18,16,11,3]
+        ],
+        [
+          'name' => 'Mendapatkan isu', 
+          'data' => [10,11,9,6]
+        ],
+
+
+        [
+          'name' => 'Menggantung banner', 
+          'data' => [16,14,23,3]
+        ],
+        [
+          'name' => 'Fasilitator', 
+          'data' => [8,6,3,2]
+        ],
+        
+         
+
+        
         
       ]
    ]

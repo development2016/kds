@@ -63,9 +63,10 @@ class PresentationController extends Controller
     public function actionP2_4()
     {
         $this->layout = 'presentation';
-        $sql2 = $connection->createCommand("SELECT dob FROM people WHERE state_id = 12 AND profession_status = 'Bekerja'");
-        $model2 = $sql2->queryAll();
-        return $this->render('sosio-ekonomi/p2_4');
+        $connection = \Yii::$app->db;
+        $sql = $connection->createCommand("SELECT 2015 - YEAR(DATE_FORMAT(STR_TO_DATE(dob, '%d/%m/%Y'), '%Y-%m-%d')) AS age,YEAR(DATE_FORMAT(STR_TO_DATE(dob, '%d/%m/%Y'), '%Y-%m-%d')) AS year_only  FROM people WHERE state_id = 12 AND profession_status = 'Bekerja'");
+        $model = $sql->queryAll();
+        return $this->render('sosio-ekonomi/p2_4',['model'=>$model]);
     }
 
 
@@ -108,6 +109,37 @@ class PresentationController extends Controller
     {
         $this->layout = 'presentation';
         return $this->render('oku/p4_6');   
+    }
+    public function actionP4_7()
+    {
+        $this->layout = 'presentation';
+        return $this->render('oku/p4_7');   
+    }
+    public function actionP4_7_bar()
+    {
+        $this->layout = 'presentation';
+        return $this->render('oku/p4_7_bar');   
+    }
+     public function actionP4_8()
+    {
+        $this->layout = 'presentation';
+        return $this->render('oku/p4_8');   
+    }
+     public function actionP4_8_pie()
+    {
+        $this->layout = 'presentation';
+        return $this->render('oku/p4_8_pie');   
+    }
+
+     public function actionP4_9()
+    {
+        $this->layout = 'presentation';
+        return $this->render('oku/p4_9');   
+    }
+     public function actionP4_9_pie()
+    {
+        $this->layout = 'presentation';
+        return $this->render('oku/p4_9_pie');   
     }
 
 

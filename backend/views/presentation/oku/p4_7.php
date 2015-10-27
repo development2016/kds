@@ -17,7 +17,7 @@ use miloschuman\highcharts\Highcharts;
       ],
 
       'title' => [
-        'text' => 'Graf Pie Status Pekerjaan OKU Mengikut Kategori',
+        'text' => 'Graf Pie Status OKU Minat Keusahawanan Mengikut Kategori',
         'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',
@@ -51,29 +51,18 @@ use miloschuman\highcharts\Highcharts;
            'data' => [
               
               [
-                'name' => 'Bekerja Sendiri',
-                'y' => 109
+                'name' => 'Bengkel Usahawan',
+                'y' => 104
               ],
               [
-                'name' => 'Kerajaan',
-                'y' => 10
+                'name' => 'Kursus IKS',
+                'y' => 67
               ],
               [
-                'name' => 'Niaga',
-                'y' => 19
+                'name' => 'Amanah Ikhtiar Malaysia',
+                'y' => 56
               ],
-              [
-                'name' => 'Swasta',
-                'y' => 57
-              ],
-              [
-                'name' => 'Lain - Lain',
-                'y' => 15
-              ],
-             [
-                'name' => 'Tidak Bekerja',
-                'y' => 398
-              ],
+              
               
               
              

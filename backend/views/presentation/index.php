@@ -108,8 +108,33 @@ $this->title = 'Komuniti Development System';
                                                 <li><?= Html::a('Jantina', ['presentation/p4_2'],['target'=>'_BLANK']) ?></li>
                                                 <li><?= Html::a('Umur', ['presentation/p4_3'],['target'=>'_BLANK']) ?></li>
                                                 <li><?= Html::a('Kecacatan', ['presentation/p4_4'],['target'=>'_BLANK']) ?></li>
-                                                <li><?= Html::a('Pekerjaan', ['presentation/p4_5'],['target'=>'_BLANK']) ?></li>
-                                                <li><?= Html::a('Pendapatan', ['presentation/p4_6'],['target'=>'_BLANK']) ?></li>
+                                                <li>Pekerjaan & Pendapatan
+                                                        <ul>
+                                                            <li><?= Html::a('Pekerjaan', ['presentation/p4_5'],['target'=>'_BLANK']) ?></li>
+                                                            <li><?= Html::a('Pendapatan', ['presentation/p4_6'],['target'=>'_BLANK']) ?></li>
+
+                                                        </ul>
+                                                </li>
+                                                <li>Minat Keusahawan
+                                                        <ul>
+                                                            <li><?= Html::a('Pie', ['presentation/p4_7'],['target'=>'_BLANK']) ?></li>
+                                                            <li><?= Html::a('Bar', ['presentation/p4_7_bar'],['target'=>'_BLANK']) ?></li>
+
+                                                        </ul>
+                                                </li>
+                                                <li>Minat Sukarelawan
+                                                        <ul>
+                                                            <li><?= Html::a('Bar', ['presentation/p4_8'],['target'=>'_BLANK']) ?></li>
+                                                            <li><?= Html::a('Pie', ['presentation/p4_8_pie'],['target'=>'_BLANK']) ?></li>
+                                                        </ul>
+
+                                                </li>
+                                                <li>Minat Kerja Sampingan
+                                                        <ul>
+                                                            <li><?= Html::a('Bar', ['presentation/p4_9'],['target'=>'_BLANK']) ?></li>
+                                                            <li><?= Html::a('Pie', ['presentation/p4_9_pie'],['target'=>'_BLANK']) ?></li>
+                                                        </ul>
+                                                </li>
                                             </ul>
                                         </td>
                                     </tr>

@@ -17,14 +17,11 @@ use miloschuman\highcharts\Highcharts;
       ],
 
       'title' => [
-        'text' => 'Graf Pie Status Pekerjaan OKU Mengikut Kategori',
+        'text' => 'Carta Pie Jumlah Minat Keseluruhan Sukarelawan OKU Mengikut Kategori',
         'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',
         ],
-
-
-        
       ],
       'plotOptions' => [
         'pie' => [
@@ -37,8 +34,10 @@ use miloschuman\highcharts\Highcharts;
                   'fontSize' => '15px',
                   'fontWeight' => 'normal',
                 ],
-                'format' => '<b>{point.name}</b> : {point.percentage:.1f}%',
-            ]
+                'format' => '{point.percentage:.1f}%',
+            ],
+            'showInLegend' => true,
+     
         ]
       ],
       'credits' => [
@@ -49,36 +48,41 @@ use miloschuman\highcharts\Highcharts;
          [
            'name' => 'OKU', 
            'data' => [
-              
               [
-                'name' => 'Bekerja Sendiri',
-                'y' => 109
-              ],
-              [
-                'name' => 'Kerajaan',
-                'y' => 10
+                'name' => 'Membersih kawasan masjid',
+                'y' => 151
               ],
               [
-                'name' => 'Niaga',
-                'y' => 19
+                'name' => 'Membersih kawasan kubur',
+                'y' => 133
               ],
               [
-                'name' => 'Swasta',
-                'y' => 57
+                'name' => 'Kenduri',
+                'y' => 211
+
               ],
               [
-                'name' => 'Lain - Lain',
-                'y' => 15
+                'name' => 'Membersih kawasan kampung',
+                'y' => 151
               ],
-             [
-                'name' => 'Tidak Bekerja',
-                'y' => 398
+              [
+                'name' => 'Membaiki rumah',
+                'y' => 37
               ],
-              
-              
-             
-             
-             
+              [
+                'name' => 'Membantu membersihkan kawasan',
+                'y' => 93
+              ],
+              [
+                'name' => 'Membawa warga emas ke klinik',
+                'y' => 39
+              ],
+              [
+                'name' => 'Mengajar kanak-kanak sekolah',
+                'y' => 38,
+                'sliced' => true,
+                'selected' => true
+              ]
 
            ]
          ],
