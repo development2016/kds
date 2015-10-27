@@ -6,7 +6,11 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\helpers\Url;
 
-?>
+?><style type="text/css">
+.title {
+    margin-left: 700px;
+}
+</style>
 
 
 
@@ -78,7 +82,7 @@ use yii\helpers\Url;
                             }
 
                             ?>
-                            STATUS KDS AS : <?php echo date('d/m/Y'); ?> 
+                            STATUS KDS AS : <?php echo date('d/m/Y'); ?> <span class="title">Summary KPI</span>
                             <table class="table table-striped table-bordered ">
                                 <thead>
                                     <tr>

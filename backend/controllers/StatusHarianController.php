@@ -172,7 +172,7 @@ class StatusHarianController extends Controller
     {
 
         $this->layout = 'status';
-        $status = StatusHarian::find()->all();
+        $status = StatusHarian::find()->where('id != :id',['id'=>18])->all();
 
          // people
         $p_pahang = People::find()->where(['state_id' => 12])->count();
