@@ -12,8 +12,7 @@ use common\models\LookupMukim;
 
 $state = ArrayHelper::map(LookupState::find()->where(['kawasan_perlaksanaan'=>'Ya'])->asArray()->all(), 'state_id', 'state');
 $district = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->state_id])->asArray()->all(), 'district_id', 'district');
-$mukim = ArrayHelper::map(LookupMukim::find()->where(['district_id'=>$model->district_id])->asArray()->all(), 'mukim_id', 'mukim');
-$subbase = ArrayHelper::map(LookupSubBase::find()->where(['mukim_id'=>$model->mukim_id])->asArray()->all(),'sub_base_id','sub_base');
+$subbase = ArrayHelper::map(LookupSubBase::find()->where(['district_id'=>$model->district_id])->asArray()->all(),'sub_base_id','sub_base');
 $cluster = ArrayHelper::map(LookupCluster::find()->where(['sub_base_id'=>$model->sub_base_id])->asArray()->all(),'cluster_id','cluster');
 $kampung = ArrayHelper::map(LookupKampung::find()->where(['cluster_id'=>$model->cluster_id])->asArray()->all(),'kampung_id','kampung');
 
@@ -186,26 +185,11 @@ $kampung = ArrayHelper::map(LookupKampung::find()->where(['cluster_id'=>$model->
                                                                         <?= Html::activeDropDownList($model, 'district_id', $district, 
                                                                         [
                                                                             'prompt'=>'','id'=>'district',
-                                                                            'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['volunteer/listmukim','id'=>'']).'"+$(this).val(), function( data ) {$( "select#mukim" ).html( data );});',
+                                                                            'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['volunteer/listsubbase','id'=>'']).'"+$(this).val(), function( data ) {$( "select#subbase" ).html( data );});',
                            
                                                                             'class'=>'form-control']); ?>
                                                                         <label for="form_control_1"><?= Html::activeLabel($model,'district_id'); ?> <span class="required">*</span></label>
                                                                         <span class="help-block"><?= Html::error($model,'district_id'); ?></span>
-                                                                       
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="col-md-4">
-                                                                    <div class="form-group form-md-line-input">
-                                                                        
-                                                                        <?= Html::activeDropDownList($model, 'mukim_id', $mukim, 
-                                                                        [
-                                                                            'prompt'=>'','id'=>'mukim',
-                                                                            'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['volunteer/listsubbase','id'=>'']).'"+$(this).val(), function( data ) {$( "select#subbase" ).html( data );});',
-                           
-                                                                            'class'=>'form-control']); ?>
-                                                                        <label for="form_control_1"><?= Html::activeLabel($model,'mukim_id'); ?> <span class="required">*</span></label>
-                                                                        <span class="help-block"><?= Html::error($model,'mukim_id'); ?></span>
                                                                        
                                                                     </div>
                                                                 </div>

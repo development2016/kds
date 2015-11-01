@@ -177,7 +177,7 @@
                                     </tr>
                                     <tr>
                                         <td>9</td>
-                                        <td>No. of community facilities audit</td>
+                                        <td>No. of community facilities audited</td>
                                         <td><?= $pfna_pahang; ?></td>
                                         <td><?= $pfna_kedah; ?></td>
                                         <td><?= $pfna_perlis; ?></td>

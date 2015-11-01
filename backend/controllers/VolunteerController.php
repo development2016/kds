@@ -184,36 +184,16 @@ class VolunteerController extends Controller
     }
 
 
-    public function actionListmukim($id)
-    {
-        $countPosts = LookupMukim::find()
-        ->where(['district_id' => $id])
-        ->count();
-         
-        $posts = LookupMukim::find() 
-        ->where(['district_id' => $id])
-        ->all();
-         
-        if($countPosts>0){
-            echo "<option value='Sila Pilih'>Sila Pilih</option>";
-            foreach($posts as $post){
-                echo "<option value='".$post->mukim_id."'>".$post->mukim."</option>";
-            }
-        } else {
-                echo "<option>-</option>";
-        }
-     
-    }
 
 
     public function actionListsubbase($id)
     {
         $countPosts = LookupSubBase::find()
-        ->where(['mukim_id' => $id])
+        ->where(['district_id' => $id])
         ->count();
          
         $posts = LookupSubBase::find() 
-        ->where(['mukim_id' => $id])
+        ->where(['district_id' => $id])
         ->all();
          
         if($countPosts>0){
@@ -292,37 +272,15 @@ class VolunteerController extends Controller
      
     }
 
-    public function actionListmukimsearch($id)
-    {
-        $countPosts = LookupMukim::find()
-        ->where(['district_id' => $id])
-        ->count();
-         
-        $posts = LookupMukim::find() 
-        ->where(['district_id' => $id])
-        ->all();
-         
-        if($countPosts>0){
-            echo "<option value=''>Sila Pilih</option>";
-            foreach($posts as $post){
-                echo "<option value='".$post->mukim_id."'>".$post->mukim."</option>";
-            }
-        } else {
-                echo "<option>-</option>";
-        }
-     
-    }
-
-
 
     public function actionListkampungsearch($id)
     {
         $countPosts = LookupKampung::find()
-        ->where(['mukim_id' => $id])
+        ->where(['district_id' => $id])
         ->count();
          
         $posts = LookupKampung::find() 
-        ->where(['mukim_id' => $id])
+        ->where(['district_id' => $id])
         ->all();
          
         if($countPosts>0){

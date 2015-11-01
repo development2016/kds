@@ -62,7 +62,7 @@ $this->title = 'Komuniti Development System';
                                                 <li><?= Html::a('Jantina', ['presentation/p1_1'],['target'=>'_BLANK']) ?></li>
                                                 <li><?= Html::a('Status Perkahwinan', ['presentation/p1_2'],['target'=>'_BLANK']) ?></li>
                                                 <li><?= Html::a('Pendidikan (rendah,menengah,sijil,degree,master,phd) - Tanggungan', ['presentation/p1_3'],['target'=>'_BLANK']) ?></li>
-                                                <li><?= Html::a('umur 18 tahun', ['xx/xx'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('umur 18 tahun', ['presentation/p1_4'],['target'=>'_BLANK']) ?></li>
                                             </ul>
                                         </td>
                                     </tr>
@@ -73,6 +73,7 @@ $this->title = 'Komuniti Development System';
                                             <ul>
                                                 <li><?= Html::a('Pendapatan', ['presentation/p2_1'],['target'=>'_BLANK']) ?></li>
                                                 <li><?= Html::a('Perbelanjaan', ['presentation/p2_2'],['target'=>'_BLANK']) ?></li>
+
                                                 <li>Keseluruhan Status Pekerjaan
                                                         <ul>
                                                             <li><?= Html::a('Pie', ['presentation/p2_3_pie'],['target'=>'_BLANK']) ?></li>
@@ -80,6 +81,9 @@ $this->title = 'Komuniti Development System';
                                                         </ul>
                                                 </li>
                                                 <li><?= Html::a('Status bekerja vs umur 18 tahun', ['presentation/p2_4'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Pendapatan vs Perbelanjaan', ['presentation/p2_5'],['target'=>'_BLANK']) ?>
+
+                                                </li>
                                             </ul>
                                         </td>
                                     </tr>

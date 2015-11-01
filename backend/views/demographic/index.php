@@ -76,7 +76,7 @@ $this->title = 'Senarai Maklumat Demographic';
                                     'nama_ketua_kampung',
                                     'state.state',
                                     'district.district',
-                                    'mukim.mukim',
+                    
                                     'subBase.sub_base',
                                     'cluster.cluster',
                                     'kampung.kampung',

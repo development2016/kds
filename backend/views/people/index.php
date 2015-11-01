@@ -81,7 +81,7 @@ $this->title = 'Senarai Maklumat Profil';
                                     //'ic_no_old',
                                     'state.state',
                                     'district.district',
-                                    'mukims.mukim',
+                         
                                     'subBase.sub_base',
                                     'cluster.cluster',
                                     'kampung.kampung',

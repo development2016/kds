@@ -37,7 +37,11 @@ class PresentationController extends Controller
         $this->layout = 'presentation';
         return $this->render('demografi/p1_3');
     }
-
+    public function actionP1_4()
+    {
+        $this->layout = 'presentation';
+        return $this->render('demografi/p1_4');
+    }
 
     // SOSIO EKONOMI = P2
     public function actionP2_1()
@@ -65,7 +69,11 @@ class PresentationController extends Controller
         $this->layout = 'presentation';
         return $this->render('sosio-ekonomi/p2_4');
     }
-
+    public function actionP2_5()
+    {
+        $this->layout = 'presentation';
+        return $this->render('sosio-ekonomi/p2_5');
+    }
 
 
     // PADANAN MINAT = P3

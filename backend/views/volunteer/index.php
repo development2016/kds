@@ -78,7 +78,7 @@ $this->title = 'Senarai Maklumat Sukarelawan';
                                     'tel_hp',
                                     'state.state',
                                     'district.district',
-                                    'mukim.mukim',
+          
                                     //'subBase.sub_base',
                                     //'cluster.cluster',
                                     'kampung.kampung',

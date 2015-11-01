@@ -80,7 +80,7 @@ $this->title = 'Senarai Rangkaian Fasiliti Awam';
                                     'category.cat_name',
                                     'state.state',
                                     'district.district',
-                                    'mukim.mukim',
+       
                                     'subBase.sub_base',
                                     'cluster.cluster',
                                     'kampung.kampung',

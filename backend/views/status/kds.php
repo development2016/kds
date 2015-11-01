@@ -82,7 +82,7 @@ use yii\helpers\Url;
                             }
 
                             ?>
-                            STATUS KDS AS : <?php echo date('d/m/Y'); ?> <span class="title">Summary KPI</span>
+                            STATUS KDS AS : <?php echo date('d/m/Y'); ?> <span class="title">KPI Summary </span>
                             <table class="table table-striped table-bordered ">
                                 <thead>
                                     <tr>
@@ -215,7 +215,7 @@ use yii\helpers\Url;
 
                                     <tr>
                                         <td>11</td>
-                                        <td>No. of community facilities audit</td>
+                                        <td>No. of community facilities audited</td>
                                         <td><?= $pfna_pahang; ?></td>
                                         <td><?= $pfna_kedah; ?></td>
                                         <td><?= $pfna_perlis; ?></td>

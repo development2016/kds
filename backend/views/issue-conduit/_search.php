@@ -14,8 +14,7 @@ use common\models\LookupKategoriIsu;
 /* @var $form yii\widgets\ActiveForm */
 $state = ArrayHelper::map(LookupState::find()->where(['kawasan_perlaksanaan'=>'Ya'])->asArray()->all(), 'state_id', 'state');
 $district = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->state_id])->asArray()->all(), 'district_id', 'district');
-$mukim = ArrayHelper::map(LookupMukim::find()->where(['district_id'=>$model->district_id])->asArray()->all(), 'mukim_id', 'mukim');
-$kampung = ArrayHelper::map(LookupKampung::find()->where(['mukim_id'=>$model->mukim_id])->asArray()->all(),'kampung_id','kampung');
+$kampung = ArrayHelper::map(LookupKampung::find()->where(['district_id'=>$model->district_id])->asArray()->all(),'kampung_id','kampung');
 
 $kategori_isu = ArrayHelper::map(LookupKategoriIsu::find()->asArray()->all(), 'kategori_id', 'kategori_isu');
 
@@ -107,7 +106,7 @@ $years = array_combine($range, $range);
                         <?= Html::activeDropDownList($model, 'district_id', $district, 
                         [
                             'prompt'=>'','id'=>'district',
-                            'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['issue-conduit/listmukimsearch','id'=>'']).'"+$(this).val(), function( data ) {$( "select#mukim" ).html( data );});',
+                            'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['issue-conduit/listkampungsearch','id'=>'']).'"+$(this).val(), function( data ) {$( "select#kampung" ).html( data );});',
 
                             'class'=>'form-control']); ?>
                         <label for="form_control_1"><?= Html::activeLabel($model,'district_id'); ?> </label>
@@ -115,22 +114,6 @@ $years = array_combine($range, $range);
                        
                     </div>
                 </div>
-
-                <div class="col-md-4">
-                    <div class="form-group form-md-line-input">
-                        
-                        <?= Html::activeDropDownList($model, 'mukim_id', $mukim, 
-                        [
-                            'prompt'=>'','id'=>'mukim',
-                            'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['issue-conduit/listkampungsearch','id'=>'']).'"+$(this).val(), function( data ) {$( "select#kampung" ).html( data );});',
-
-                            'class'=>'form-control']); ?>
-                        <label for="form_control_1"><?= Html::activeLabel($model,'mukim_id'); ?> </label>
-                        <span class="help-block"><?= Html::error($model,'mukim_id'); ?></span>
-                       
-                    </div>
-                </div>
-
 
 
             </div>

@@ -10,7 +10,7 @@ use yii\helpers\Url;
     margin-left: 500px;
 }
 </style>
-STATUS HARIAN AS : <?php echo date('d/m/Y'); ?> <span class="title">Summary KPI</span>
+DAILY REPORT : <?php echo date('d/m/Y'); ?> <span class="title">KPI Summary</span>
 <table class="table table-striped table-bordered">
     <thead>
         <tr>

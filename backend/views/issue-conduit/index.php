@@ -83,7 +83,6 @@ $this->title = 'Senarai Isu Konduit';
                                 'no_kp',
                                 'state.state',
                                 'district.district',
-                                'mukim.mukim',
                                 'kampung.kampung',
                                 'status',
                                 'kategoriisu.kategori_isu',
