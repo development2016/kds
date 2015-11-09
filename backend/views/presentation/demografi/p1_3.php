@@ -15,7 +15,7 @@ use miloschuman\highcharts\Highcharts;
       ],
 
       'title' => [
-      'text' => 'Graf Bar Tanggungan Taraf Pendidikan Mengikut Negeri',
+      'text' => 'Graf Bar Status Pendidikan Komuniti Mengikut Negeri',
           'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',

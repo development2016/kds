@@ -17,7 +17,7 @@ use miloschuman\highcharts\Highcharts;
       ],
 
       'title' => [
-        'text' => 'Carta Pai Peratusan OKU Yang Berminat Dengan Kerja Kesukarelawan (Keseluruhan)',
+        'text' => 'Carta Pai Peratusan Ibu Tunggal Minat Menyertai Kerja - Kerja Kesukarelawanan (Keseluruhan)',
         'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',
@@ -50,36 +50,36 @@ use miloschuman\highcharts\Highcharts;
            'data' => [
               [
                 'name' => 'Membersih kawasan masjid',
-                'y' => 151
+                'y' => 4662
               ],
               [
                 'name' => 'Membersih kawasan kubur',
-                'y' => 133
+                'y' => 3761
               ],
               [
                 'name' => 'Kenduri',
-                'y' => 211
+                'y' => 8202
 
               ],
               [
                 'name' => 'Membersih kawasan kampung',
-                'y' => 151
+                'y' => 4756
               ],
               [
                 'name' => 'Membaiki rumah',
-                'y' => 37
+                'y' => 1145
               ],
               [
                 'name' => 'Membantu membersihkan kawasan',
-                'y' => 93
+                'y' => 2844
               ],
               [
                 'name' => 'Membawa warga emas ke klinik',
-                'y' => 39
-              ],
+                'y' => 1405
+              ],     
               [
                 'name' => 'Mengajar kanak-kanak sekolah',
-                'y' => 38,
+                'y' => 1167,
                 'sliced' => true,
                 'selected' => true
               ]

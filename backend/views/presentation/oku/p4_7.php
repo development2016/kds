@@ -17,7 +17,7 @@ use miloschuman\highcharts\Highcharts;
       ],
 
       'title' => [
-        'text' => 'Graf Pie Status OKU Minat Keusahawanan Mengikut Kategori',
+        'text' => 'Carta Pai Peratusan OKU Minat Dalam Bidang Keusahawanan (Keseluruhan)',
         'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',

@@ -37,11 +37,7 @@ class PresentationController extends Controller
         $this->layout = 'presentation';
         return $this->render('demografi/p1_3');
     }
-    public function actionP1_4()
-    {
-        $this->layout = 'presentation';
-        return $this->render('demografi/p1_4');
-    }
+
 
     // SOSIO EKONOMI = P2
     public function actionP2_1()
@@ -99,6 +95,11 @@ class PresentationController extends Controller
     {
         $this->layout = 'presentation';
         return $this->render('oku/p4_2');   
+    }
+    public function actionP4_3()
+    {
+        $this->layout = 'presentation';
+        return $this->render('oku/p4_3');   
     }
     public function actionP4_4()
     {
@@ -231,4 +232,99 @@ class PresentationController extends Controller
         $this->layout = 'presentation';
         return $this->render('ibu-tunggal/p8_4');
     }
+    public function actionP8_5()
+    {
+        $this->layout = 'presentation';
+        return $this->render('ibu-tunggal/p8_5');
+    }
+    public function actionP8_5_bar()
+    {
+        $this->layout = 'presentation';
+        return $this->render('ibu-tunggal/p8_5_bar');
+    }
+    public function actionP8_6_pie()
+    {
+        $this->layout = 'presentation';
+        return $this->render('ibu-tunggal/p8_6_pie');
+    }
+    public function actionP8_6_bar()
+    {
+        $this->layout = 'presentation';
+        return $this->render('ibu-tunggal/p8_6_bar');
+    }
+    public function actionP8_7_pie()
+    {
+        $this->layout = 'presentation';
+        return $this->render('ibu-tunggal/p8_7_pie');
+    }
+    public function actionP8_7_bar()
+    {
+        $this->layout = 'presentation';
+        return $this->render('ibu-tunggal/p8_7_bar');
+    }
+    public function actionP8_8()
+    {
+        $this->layout = 'presentation';
+        return $this->render('ibu-tunggal/p8_8');
+    }
+
+
+
+
+
+    // WANITA = P9
+    public function actionP9_1()
+    {
+        $this->layout = 'presentation';
+        return $this->render('wanita/p9_1');
+    }
+    public function actionP9_2()
+    {
+        $this->layout = 'presentation';
+        return $this->render('wanita/p9_2');
+    }
+    public function actionP9_3()
+    {
+        $this->layout = 'presentation';
+        return $this->render('wanita/p9_3');
+    }
+    public function actionP9_4()
+    {
+        $this->layout = 'presentation';
+        return $this->render('wanita/p9_4');
+    }
+    public function actionP9_5()
+    {
+        $this->layout = 'presentation';
+        return $this->render('wanita/p9_5');
+    }
+    public function actionP9_5_bar()
+    {
+        $this->layout = 'presentation';
+        return $this->render('wanita/p9_5_bar');
+    }
+    public function actionP9_6_pie()
+    {
+        $this->layout = 'presentation';
+        return $this->render('wanita/p9_6_pie');
+    }
+    public function actionP9_6_bar()
+    {
+        $this->layout = 'presentation';
+        return $this->render('wanita/p9_6_bar');
+    }
+    public function actionP9_7_pie()
+    {
+        $this->layout = 'presentation';
+        return $this->render('wanita/p9_7_pie');
+    }
+    public function actionP9_7_bar()
+    {
+        $this->layout = 'presentation';
+        return $this->render('wanita/p9_7_bar');
+    }
+    
+    
+
+
 }

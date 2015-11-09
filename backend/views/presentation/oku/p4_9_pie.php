@@ -17,7 +17,7 @@ use miloschuman\highcharts\Highcharts;
       ],
 
       'title' => [
-        'text' => 'Carta Pie Jumlah Minat Kerja Sampingan OKU Mengikut Kategori',
+        'text' => 'Carta Pai Peratusan OKU Mengikut Minat Kerja Sampingan (Keseluruhan)',
         'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',

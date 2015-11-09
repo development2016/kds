@@ -61,8 +61,8 @@ $this->title = 'Komuniti Development System';
                                             <ul>
                                                 <li><?= Html::a('Jantina', ['presentation/p1_1'],['target'=>'_BLANK']) ?></li>
                                                 <li><?= Html::a('Status Perkahwinan', ['presentation/p1_2'],['target'=>'_BLANK']) ?></li>
-                                                <li><?= Html::a('Pendidikan (rendah,menengah,sijil,degree,master,phd) - Tanggungan', ['presentation/p1_3'],['target'=>'_BLANK']) ?></li>
-                                                <li><?= Html::a('umur 18 tahun', ['presentation/p1_4'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Pendidikan - Tanggungan', ['presentation/p1_3'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Umur 18 tahun', ['presentation/p1_4'],['target'=>'_BLANK']) ?></li>
                                             </ul>
                                         </td>
                                     </tr>
@@ -73,7 +73,6 @@ $this->title = 'Komuniti Development System';
                                             <ul>
                                                 <li><?= Html::a('Pendapatan', ['presentation/p2_1'],['target'=>'_BLANK']) ?></li>
                                                 <li><?= Html::a('Perbelanjaan', ['presentation/p2_2'],['target'=>'_BLANK']) ?></li>
-
                                                 <li>Keseluruhan Status Pekerjaan
                                                         <ul>
                                                             <li><?= Html::a('Pie', ['presentation/p2_3_pie'],['target'=>'_BLANK']) ?></li>
@@ -81,9 +80,7 @@ $this->title = 'Komuniti Development System';
                                                         </ul>
                                                 </li>
                                                 <li><?= Html::a('Status bekerja vs umur 18 tahun', ['presentation/p2_4'],['target'=>'_BLANK']) ?></li>
-                                                <li><?= Html::a('Pendapatan vs Perbelanjaan', ['presentation/p2_5'],['target'=>'_BLANK']) ?>
-
-                                                </li>
+                                                <li><?= Html::a('Pendapatan vs Perbelanjaan', ['presentation/p2_5'],['target'=>'_BLANK']) ?></li>
                                             </ul>
                                         </td>
                                     </tr>
@@ -108,37 +105,36 @@ $this->title = 'Komuniti Development System';
                                         <td>OKU</td>
                                         <td>
                                             <ul>
-                                                <li><?= Html::a('Negeri', ['presentation/p4_1'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Jumah OKU Setiap Negeri', ['presentation/p4_1'],['target'=>'_BLANK']) ?></li>
                                                 <li><?= Html::a('Jantina', ['presentation/p4_2'],['target'=>'_BLANK']) ?></li>
-                                                <li><?= Html::a('Umur', ['presentation/p4_3'],['target'=>'_BLANK']) ?></li>
-                                                <li><?= Html::a('Kecacatan', ['presentation/p4_4'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Umur vs Status Pekerjaan', ['presentation/p4_3'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Kategori', ['presentation/p4_4'],['target'=>'_BLANK']) ?></li>  
                                                 <li>Pekerjaan & Pendapatan
                                                         <ul>
                                                             <li><?= Html::a('Pekerjaan', ['presentation/p4_5'],['target'=>'_BLANK']) ?></li>
                                                             <li><?= Html::a('Pendapatan', ['presentation/p4_6'],['target'=>'_BLANK']) ?></li>
-
                                                         </ul>
-                                                </li>
-                                                <li>Minat Keusahawan
-                                                        <ul>
-                                                            <li><?= Html::a('Pie', ['presentation/p4_7'],['target'=>'_BLANK']) ?></li>
-                                                            <li><?= Html::a('Bar', ['presentation/p4_7_bar'],['target'=>'_BLANK']) ?></li>
-
-                                                        </ul>
-                                                </li>
-                                                <li>Minat Sukarelawan
-                                                        <ul>
-                                                            <li><?= Html::a('Bar', ['presentation/p4_8'],['target'=>'_BLANK']) ?></li>
-                                                            <li><?= Html::a('Pie', ['presentation/p4_8_pie'],['target'=>'_BLANK']) ?></li>
-                                                        </ul>
-
                                                 </li>
                                                 <li>Minat Kerja Sampingan
-                                                        <ul>
+                                                        <ul>    
+                                                            <li><?= Html::a('Pai', ['presentation/p4_9_pie'],['target'=>'_BLANK']) ?></li>
                                                             <li><?= Html::a('Bar', ['presentation/p4_9'],['target'=>'_BLANK']) ?></li>
-                                                            <li><?= Html::a('Pie', ['presentation/p4_9_pie'],['target'=>'_BLANK']) ?></li>
                                                         </ul>
                                                 </li>
+                                                <li>Minat Keusahawanan
+                                                        <ul>
+                                                            <li><?= Html::a('Pai', ['presentation/p4_7'],['target'=>'_BLANK']) ?></li>
+                                                            <li><?= Html::a('Bar', ['presentation/p4_7_bar'],['target'=>'_BLANK']) ?></li>
+                                                        </ul>
+                                                </li>
+                                                <li>Minat Kerja Kesukarelawanan
+                                                        <ul>                 
+                                                            <li><?= Html::a('Pai', ['presentation/p4_8_pie'],['target'=>'_BLANK']) ?></li>
+                                                            <li><?= Html::a('Bar', ['presentation/p4_8'],['target'=>'_BLANK']) ?></li>
+                                                        </ul>
+
+                                                </li>
+                                                
                                             </ul>
                                         </td>
                                     </tr>
@@ -187,11 +183,63 @@ $this->title = 'Komuniti Development System';
                                         <td>
                                             <ul>
                                                 <li><?= Html::a('Negeri', ['presentation/p8_1'],['target'=>'_BLANK']) ?></li>
-                                                <li><?= Html::a('Umur 18 tahun', ['presentation/p8_2'],['target'=>'_BLANK']) ?></li>
-                                                <li><?= Html::a('Profession', ['presentation/p8_3'],['target'=>'_BLANK']) ?></li>
                                                 <li><?= Html::a('Pendapatan', ['presentation/p8_4'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Profesion Pekerjaan', ['presentation/p8_8'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Umur vs Status Pekerjaan', ['presentation/p8_2'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Status Pekerjaan', ['presentation/p8_3'],['target'=>'_BLANK']) ?></li>
+                                                <li>Minat(ICT,Kesihatan,Pendidikan,Keusahawanan dan Riadah
+                                                        <ul>
+                                                            <li><?= Html::a('Pai', ['presentation/p8_5'],['target'=>'_BLANK']) ?></li>
+                                                            <li><?= Html::a('Bar', ['presentation/p8_5_bar'],['target'=>'_BLANK']) ?></li>
+                                                        </ul>
+                                                </li>
+                                                <li>Minat Kerja Sampingan
+                                                        <ul>
+                                                            <li><?= Html::a('Pai', ['presentation/p8_6_pie'],['target'=>'_BLANK']) ?></li>
+                                                            <li><?= Html::a('Bar', ['presentation/p8_6_bar'],['target'=>'_BLANK']) ?></li>
+                                                        </ul>
+                                                </li>
+                                                <li>Minat Kerja Sukarelawan
+                                                        <ul>
+                                                            <li><?= Html::a('Pai', ['presentation/p8_7_pie'],['target'=>'_BLANK']) ?></li>
+                                                            <li><?= Html::a('Bar', ['presentation/p8_7_bar'],['target'=>'_BLANK']) ?></li>
+                                                        </ul>
+                                                </li>
                                             </ul>
                                         </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>9</td>
+                                        <td>Wanita</td>
+                                        <td>
+                                            <ul>
+                                                <li><?= Html::a('Negeri', ['presentation/p9_1'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Pendapatan', ['presentation/p9_4'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Profesion Pekerjaan', ['presentation/p9_3'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Status Pekerjaan vs Umur', ['presentation/p9_2'],['target'=>'_BLANK']) ?></li>
+                                                <li>Minat(ICT,Kesihatan,Pendidikan,Keusahawanan dan Riadah
+                                                        <ul>
+                                                            <li><?= Html::a('Pai', ['presentation/p9_5'],['target'=>'_BLANK']) ?></li>
+                                                            <li><?= Html::a('Bar', ['presentation/p9_5_bar'],['target'=>'_BLANK']) ?></li>
+                                                        </ul>
+                                                </li>
+                                                <li>Minat Kerja Sampingan
+                                                        <ul>
+                                                            <li><?= Html::a('Pai', ['presentation/p9_6_pie'],['target'=>'_BLANK']) ?></li>
+                                                            <li><?= Html::a('Bar', ['presentation/p9_6_bar'],['target'=>'_BLANK']) ?></li>
+                                                        </ul>
+                                                </li>
+                                                <li>Minat Kerja Sukarelawan
+                                                        <ul>
+                                                            <li><?= Html::a('Pai', ['presentation/p9_7_pie'],['target'=>'_BLANK']) ?></li>
+                                                            <li><?= Html::a('Bar', ['presentation/p9_7_bar'],['target'=>'_BLANK']) ?></li>
+                                                        </ul>
+                                                </li>
+        
+                                            </ul>
+                                        </td>
+
                                     </tr>
                                 </tbody>
                             </table>

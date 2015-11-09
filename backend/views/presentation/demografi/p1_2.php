@@ -15,7 +15,7 @@ use miloschuman\highcharts\Highcharts;
       ],
 
       'title' => [
-      'text' => 'Graf Bar Status Perkahwinan Mengikut Negeri',
+      'text' => 'Graf Bar Status Perkahwinan Komuniti Mengikut Negeri',
           'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',

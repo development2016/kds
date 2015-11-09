@@ -15,7 +15,7 @@ use miloschuman\highcharts\Highcharts;
       ],
 
       'title' => [
-      'text' => 'Graf Bar Minat Kerja Sampingan OKU Mengikut Negeri',
+      'text' => 'Graf Bar Jumlah OKU Mengikut Minat Kerja Sampingan Bagi Setiap Negeri',
           'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',

@@ -16,7 +16,7 @@ use miloschuman\highcharts\Highcharts;
       ],
 
       'title' => [
-      'text' => 'Graf Bar Ibu Tunggal (Bekerja /Tidak Bekerja) Bagi Setiap Negeri',
+      'text' => 'Graf Bar Status Pekerjaan Ibu Tunggal (Bekerja/Tidak Bekerja) Bagi Setiap Negeri',
           'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',

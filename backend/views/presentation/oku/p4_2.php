@@ -15,7 +15,7 @@ use miloschuman\highcharts\Highcharts;
       ],
 
       'title' => [
-      'text' => 'Graf Bar Jantina OKU Mengikut Negeri',
+      'text' => 'Graf Bar Jumlah OKU Mengikut Jantina Bagi Setiap Negeri',
           'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',

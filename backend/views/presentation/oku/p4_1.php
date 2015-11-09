@@ -15,7 +15,7 @@ use miloschuman\highcharts\Highcharts;
       ],
 
       'title' => [
-      'text' => 'Graf Bar OKU Mengikut Negeri',
+      'text' => 'Graf Bar Jumlah OKU Yang Didaftarkan Mengikut Negeri',
           'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',

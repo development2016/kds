@@ -17,7 +17,7 @@ use miloschuman\highcharts\Highcharts;
       ],
 
       'title' => [
-        'text' => 'Carta Pai Peratusan OKU Yang Berminat Dengan Kerja Kesukarelawan (Keseluruhan)',
+        'text' => 'Carta Pai Peratusan Wanita Berminat Menyertai Kerja Sampingan (Keseluruhan)',
         'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',
@@ -46,40 +46,36 @@ use miloschuman\highcharts\Highcharts;
 
       'series' => [
          [
-           'name' => 'OKU', 
+           'name' => 'Wanita', 
            'data' => [
               [
-                'name' => 'Membersih kawasan masjid',
-                'y' => 151
+                'name' => 'Mengumpul data',
+                'y' => 10163
               ],
               [
-                'name' => 'Membersih kawasan kubur',
-                'y' => 133
+                'name' => 'Memasukkan data',
+                'y' => 8921
               ],
               [
-                'name' => 'Kenduri',
-                'y' => 211
+                'name' => 'Mengesahkan data',
+                'y' => 6312
 
               ],
               [
-                'name' => 'Membersih kawasan kampung',
-                'y' => 151
+                'name' => 'Mengedarkan brosur',
+                'y' => 8255
               ],
               [
-                'name' => 'Membaiki rumah',
-                'y' => 37
+                'name' => 'Mendapatkan isu',
+                'y' => 7985
               ],
               [
-                'name' => 'Membantu membersihkan kawasan',
-                'y' => 93
+                'name' => 'Menggantung banner',
+                'y' => 5708
               ],
               [
-                'name' => 'Membawa warga emas ke klinik',
-                'y' => 39
-              ],
-              [
-                'name' => 'Mengajar kanak-kanak sekolah',
-                'y' => 38,
+                'name' => 'Fasilitator',
+                'y' => 5543,
                 'sliced' => true,
                 'selected' => true
               ]

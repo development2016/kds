@@ -11,7 +11,7 @@ use miloschuman\highcharts\Highcharts;
 <?php echo Highcharts::widget([
    'options' => [
       'title' => [
-      'text' => 'Graf Line Status Pendapatan OKU Yang Didaftarkan (Keseluruhan)',
+      'text' => 'Graf Line Status Pendapatan Golongan Wanita (Keseluruhan)',
         'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',
@@ -52,7 +52,7 @@ use miloschuman\highcharts\Highcharts;
       ],
       'series' => [
          [
-          'name' => 'OKU', 'data' => [405,115,66,8,5]
+         	'name' => 'Pendapatan Wanita', 'data' => [48721,9237,6791,3368,1824,725,525,477,98,76,36,75]
          ],
 
       ]

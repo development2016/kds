@@ -15,7 +15,7 @@ use miloschuman\highcharts\Highcharts;
       ],
 
       'title' => [
-      'text' => 'Graf Bar Jumlah OKU Yang Berminat Dengan Kerja Kesukarelawanan Bagi Setiap Negeri',
+      'text' => 'Graf Bar Jumlah Ibu Tunggal Mengikut Padanan Minat Bagi Setiap Negeri',
           'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',
@@ -23,7 +23,7 @@ use miloschuman\highcharts\Highcharts;
 
       ],
       'xAxis' => [
-         'categories' => ['Perlis','Perak','Terengganu','Johor'],
+         'categories' => ['Pahang','Perlis','Perak','Kedah','Terengganu','Johor'],
          'labels' => [
               'style' => [
                 'fontSize' => '15px',
@@ -68,39 +68,26 @@ use miloschuman\highcharts\Highcharts;
 
       'series' => [
         [
-          'name' => 'Membersih kawasan masjid', 
-          'data' => [36,46,20,9]
-        ],
-        [
-          'name' => 'Membersih kawasan kubur', 
-          'data' => [29,42,53,9]
-        ],
-        [
-          'name' => 'Kenduri', 
-          'data' => [69,59,68,15]
-        ],
-        [
-          'name' => 'Membersih kawasan kampung', 
-          'data' => [42,46,55,8]
-        ],
-        [
-          'name' => 'Membaiki rumah', 
-          'data' => [7,10,15,5]
-        ],
-
-
-        [
-          'name' => 'Membantu membersihkan kawasan', 
-          'data' => [27,28,30,8]
-        ],
-        [
-          'name' => 'Membawa warga emas ke klinik', 
-          'data' => [10,16,9,4]
-        ],
-        [
-          'name' => 'Mengajar kanak-kanak sekolah', 
-          'data' => [9,13,11,5]
-        ],
+                'name' => 'ICT',
+                'data' => [1254,452,817,20,865,180]
+              ],
+              [
+                'name' => 'Kesihatan',
+                'data' => [2821,1268,1884,63,1707,380]
+              ],
+              [
+                'name' => 'Pendidikan',
+                'data' => [2675,1249,2357,54,1874,447]
+              ],
+              [
+                'name' => 'Keusahawanan',
+                'data' => [1993,732,1358,42,1367,308]
+              ],
+               [
+                'name' => 'Riadah',
+                'data' => [1808,701,867,27,1257,230]
+              ],
+       
         
          
 

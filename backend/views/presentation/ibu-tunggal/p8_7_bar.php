@@ -15,7 +15,7 @@ use miloschuman\highcharts\Highcharts;
       ],
 
       'title' => [
-      'text' => 'Graf Bar Jumlah OKU Yang Berminat Dengan Kerja Kesukarelawanan Bagi Setiap Negeri',
+      'text' => 'Graf Bar Jumlah Ibu Tunggal Minat Menyertai Kerja - Kerja Kesukarelawanan Bagi Setiap Negeri',
           'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',
@@ -23,7 +23,7 @@ use miloschuman\highcharts\Highcharts;
 
       ],
       'xAxis' => [
-         'categories' => ['Perlis','Perak','Terengganu','Johor'],
+         'categories' => ['Pahang','Perlis','Perak','Kedah','Terengganu','Johor'],
          'labels' => [
               'style' => [
                 'fontSize' => '15px',
@@ -68,39 +68,39 @@ use miloschuman\highcharts\Highcharts;
 
       'series' => [
         [
-          'name' => 'Membersih kawasan masjid', 
-          'data' => [36,46,20,9]
-        ],
-        [
-          'name' => 'Membersih kawasan kubur', 
-          'data' => [29,42,53,9]
-        ],
-        [
-          'name' => 'Kenduri', 
-          'data' => [69,59,68,15]
-        ],
-        [
-          'name' => 'Membersih kawasan kampung', 
-          'data' => [42,46,55,8]
-        ],
-        [
-          'name' => 'Membaiki rumah', 
-          'data' => [7,10,15,5]
-        ],
+                'name' => 'Membersih kawasan masjid',
+                'data' => [1550,509,1153,34,1229,186]
+              ],
+              [
+                'name' => 'Membersih kawasan kubur',
+                'data' => [1276,397,979,32,960,116]
+              ],
+              [
+                'name' => 'Kenduri',
+                'data' => [2757,1344,1949,74,1675,399]
 
-
-        [
-          'name' => 'Membantu membersihkan kawasan', 
-          'data' => [27,28,30,8]
-        ],
-        [
-          'name' => 'Membawa warga emas ke klinik', 
-          'data' => [10,16,9,4]
-        ],
-        [
-          'name' => 'Mengajar kanak-kanak sekolah', 
-          'data' => [9,13,11,5]
-        ],
+              ],
+              [
+                'name' => 'Membersih kawasan kampung',
+                'data' => [1429,661,1334,30,1134,167]
+              ],
+              [
+                'name' => 'Membaiki rumah',
+                'data' => [369,108,337,5,298,28]
+              ],
+              [
+                'name' => 'Membantu membersihkan kawasan',
+                'data' => [1036,318,624,10,750,106]
+              ],
+               [
+                'name' => 'Membawa warga emas ke klinik',
+                'data' => [508,127,418,7,316,29]
+              ],
+              [
+                'name' => 'Mengajar kanak-kanak sekolah',
+                'data' => [411,103,351,5,268,29]
+              ],
+       
         
          
 

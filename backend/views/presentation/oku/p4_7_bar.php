@@ -15,7 +15,7 @@ use miloschuman\highcharts\Highcharts;
       ],
 
       'title' => [
-      'text' => 'Graf Bar Minat Keseusahawanan OKU Mengikut Negeri',
+      'text' => 'Graf Bar Jumlah OKU Berminat Dalam Bidang Keusahawanan Bagi Setiap Negeri',
           'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',

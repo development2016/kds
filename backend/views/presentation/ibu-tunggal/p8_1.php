@@ -14,7 +14,7 @@ use miloschuman\highcharts\Highcharts;
           'type' => 'column'
           ],
       'title' => [
-      'text' => 'Jumlah Ibu Tunggal Setiap Negeri',
+      'text' => 'Graf Bar Jumlah Ibu Tunggal Bagi Setiap Negeri',
         'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',

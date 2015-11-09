@@ -15,7 +15,7 @@ use miloschuman\highcharts\Highcharts;
       ],
 
       'title' => [
-      'text' => 'Graf Bar Jumlah OKU Yang Berminat Dengan Kerja Kesukarelawanan Bagi Setiap Negeri',
+      'text' => 'Graf Bar Jumlah Wanita Minat Menyertai Kerja - Kerja Kesukarelawanan Bagi Setiap Negeri',
           'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',
@@ -23,7 +23,7 @@ use miloschuman\highcharts\Highcharts;
 
       ],
       'xAxis' => [
-         'categories' => ['Perlis','Perak','Terengganu','Johor'],
+         'categories' => ['Pahang','Perlis','Perak','Kedah','Terengganu','Johor'],
          'labels' => [
               'style' => [
                 'fontSize' => '15px',
@@ -68,39 +68,35 @@ use miloschuman\highcharts\Highcharts;
 
       'series' => [
         [
-          'name' => 'Membersih kawasan masjid', 
-          'data' => [36,46,20,9]
-        ],
-        [
-          'name' => 'Membersih kawasan kubur', 
-          'data' => [29,42,53,9]
-        ],
-        [
-          'name' => 'Kenduri', 
-          'data' => [69,59,68,15]
-        ],
-        [
-          'name' => 'Membersih kawasan kampung', 
-          'data' => [42,46,55,8]
-        ],
-        [
-          'name' => 'Membaiki rumah', 
-          'data' => [7,10,15,5]
-        ],
+                'name' => 'Mengumpul data',
+                'data' => [3912,2092,1774,54,2046,285]
+              ],
+              [
+                'name' => 'Memasukkan data',
+                'data' => [3401,1553,1673,57,1985,252]
+              ],
+              [
+                'name' => 'Mengesahkan data',
+                'data' => [2533,1114,1378,27,1132,128]
 
-
-        [
-          'name' => 'Membantu membersihkan kawasan', 
-          'data' => [27,28,30,8]
-        ],
-        [
-          'name' => 'Membawa warga emas ke klinik', 
-          'data' => [10,16,9,4]
-        ],
-        [
-          'name' => 'Mengajar kanak-kanak sekolah', 
-          'data' => [9,13,11,5]
-        ],
+              ],
+              [
+                'name' => 'Mengedarkan brosur',
+                'data' => [3358,1228,1964,33,1493,179]
+              ],
+              [
+                'name' => 'Mendapatkan isu',
+                'data' => [2722,1539,1550,114,1741,319]
+              ],
+              [
+                'name' => 'Menggantung banner',
+                'data' => [2221,1081,1199,30,1012,165]
+              ],
+               [
+                'name' => 'Fasilitator',
+                'data' => [2288,1143,1030,30,845,207]
+              ],
+       
         
          
 

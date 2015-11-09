@@ -15,7 +15,7 @@ use miloschuman\highcharts\Highcharts;
       ],
 
       'title' => [
-      'text' => 'Graf Bar Status Jantina Mengikut Negeri',
+      'text' => 'Graf Bar Status Jantina Komuniti Mengikut Negeri',
           'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',

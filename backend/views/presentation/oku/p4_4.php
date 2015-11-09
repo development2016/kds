@@ -17,7 +17,7 @@ use miloschuman\highcharts\Highcharts;
       ],
 
       'title' => [
-        'text' => 'Graf Pie Kecacatan OKU Tanggungan Mengikut Kategori',
+        'text' => 'Carta Pai Jumlah Dan Peratusan OKU Mengikut Kategori (Keseluruhan)',
         'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',

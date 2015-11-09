@@ -17,7 +17,7 @@ use miloschuman\highcharts\Highcharts;
       ],
 
       'title' => [
-        'text' => 'Graf Pie Status Pekerjaan OKU Mengikut Kategori',
+        'text' => 'Carta Pai Status Pekerjaan OKU Yang Didaftarkan (Keseluruhan)',
         'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',

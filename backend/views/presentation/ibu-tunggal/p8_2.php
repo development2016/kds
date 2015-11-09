@@ -14,7 +14,7 @@ use miloschuman\highcharts\Highcharts;
           'type' => 'column'
           ],
       'title' => [
-      'text' => 'Ibu Umur 18 ke atas yang bekerja',
+      'text' => 'Graf Bar Status Pekerjaan Ibu Tunggal (Bekerja/Tidak Bekerja) Mengikut Julat Umur (Keseluruhan)',
         'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',
@@ -55,7 +55,11 @@ use miloschuman\highcharts\Highcharts;
       ],
       'series' => [
          [
-         	'name' => 'Profession', 'data' => [33, 107, 213,414,659,1059,1648,2074,2242,2147,1635,644,191,25]
+         	'name' => 'Bekerja', 'data' => [34, 202,390,566,746,950,1038,919,718,470,243,82,19,5]
+          
+         ],
+         [
+          'name' => 'Tidak Bekerja', 'data' => [25, 57, 80, 129, 212, 395, 781, 1251, 1535, 1632, 1337, 526,167 , 21]
           
          ],
 

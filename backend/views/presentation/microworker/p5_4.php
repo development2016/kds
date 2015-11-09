@@ -9,54 +9,82 @@ use miloschuman\highcharts\Highcharts;
 
 
 <?php echo Highcharts::widget([
-   'options' => [
-            'chart' => [
-          'type' => 'column'
-          ],
+
+      'options' => [
+      'chart' => [
+          'type' =>'pie',
+        
+      ],
+
       'title' => [
-      'text' => 'Profession',
+        'text' => 'Carta Pie Profession Mengikut Kategori',
         'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',
         ],
-
-      ],
-      'xAxis' => [
-         'categories' => ['Kerja Sendiri','Kerja','Pelajar','Suri Rumah','Penganggur','Pesara'],
-                  'labels' => [
-              'style' => [
-                'fontSize' => '15px',
-                'fontWeight' => 'normal',
-              ],
-         ]
       ],
       'plotOptions' => [
-          'column' => [
-  
+        'pie' => [
+            'allowPointSelect' => true,
+            'cursor' => 'pointer',
             'dataLabels' => [
-              'enabled' => true,
-              'style' => [
-                'fontSize' => '15px',
-                'fontWeight' => 'normal',
-              ],
-              ]
-
-
-            ]
-        ],
-      'yAxis' => [
-         'title' => [
-         'text' => 'Jumlah',
-            'style' => [
-                'fontSize' => '15px',
-                'fontWeight' => 'normal',
+                'enabled' => true,
+                'distance' => -80,
+                'style' => [
+                  'fontSize' => '15px',
+                  'fontWeight' => 'normal',
+                ],
+                'format' => '{point.percentage:.1f}%',
             ],
-         ]
+            'showInLegend' => true,
+     
+        ]
       ],
+      'credits' => [
+        'enabled' => false,
+      ],
+
       'series' => [
          [
-         	'name' => 'Profession', 'data' => [191, 0, 234,959,6,296]
-          
+           'name' => 'Profession', 
+           'data' => [
+              [
+                'name' => 'Tidak Bekerja',
+                'y' => 950
+              ],
+              [
+                'name' => 'Suri Rumah',
+                'y' => 826
+              ],
+              [
+                'name' => 'Sendiri',
+                'y' => 825
+
+              ],
+              [
+                'name' => 'Sektor Pertanian',
+                'y' => 249
+              ],
+              [
+                'name' => 'Pesara',
+                'y' => 234
+              ],
+              [
+                'name' => 'Pelajar',
+                'y' => 195
+              ],
+              [
+                'name' => 'Kerajaan',
+                'y' => 178
+              ],     
+              [
+                'name' => 'Swasta',
+                'y' => 1264,
+                'sliced' => true,
+                'selected' => true
+              ]
+
+           ]
          ],
 
       ]
