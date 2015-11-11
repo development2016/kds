@@ -17,7 +17,7 @@ use miloschuman\highcharts\Highcharts;
       ],
 
       'title' => [
-        'text' => 'Carta Pie Jumlah Keseluruhan Isu Mengikut Kategori',
+        'text' => 'Carta Pai Jumlah Isu Mengikut Kategori (Keseluruhan)',
         'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',

@@ -10,11 +10,8 @@ use miloschuman\highcharts\Highcharts;
 
 <?php echo Highcharts::widget([
    'options' => [
-          'chart' => [
-          'type' =>'column',
-      ],
       'title' => [
-      'text' => 'Graf Bar Perbelanjaan Dan Pendapatan Komuniti Mengikut Umur',
+      'text' => 'Graf Line Jumlah Pendapatan & Perbelanjaan Komuniti Mengikut Umur (Keseluruhan)',
         'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',
@@ -31,17 +28,15 @@ use miloschuman\highcharts\Highcharts;
          ]
       ],
       'plotOptions' => [
-          'column' => [
+          'line' => [
   
             'dataLabels' => [
               'enabled' => true,
-              'rotation' => -90,
-              'y' => -30,
               'style' => [
                 'fontSize' => '15px',
                 'fontWeight' => 'normal',
               ],
-              'align' => 'center',]
+              ]
 
 
             ]
@@ -57,13 +52,12 @@ use miloschuman\highcharts\Highcharts;
       ],
       'series' => [
          [
-         	'name' => 'Perbelanjaan', 'data' => [9224, 15560, 14863,12808,13235,14494,13645,11958,8162,5321,2812,1039,244,48]
-          
+          'name' => 'Perbelanjaan', 'data' =>  [9224, 15560, 14863,12808,13235,14494,13645,11958,8162,5321,2812,1039,244,48]
          ],
          [
-          'name' => 'Pendapatan', 'data' => [9505, 16387, 15569,13393,13882,15219,14313,12458,8538,5514,2905,1057,255,50]
-          
-         ],
+          'name' => 'Pendapatan', 'data' =>  [9505, 16387, 15569,13393,13882,15219,14313,12458,8538,5514,2905,1057,255,50]
+          ],
+
       ]
    ]
 ]); ?>

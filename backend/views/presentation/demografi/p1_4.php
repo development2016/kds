@@ -14,7 +14,7 @@ use miloschuman\highcharts\Highcharts;
           'type' => 'column'
           ],
       'title' => [
-      'text' => ' Graf Bar Maklumat Komuniti 18 Tahun Ke Atas',
+      'text' => 'Graf Bar Status Umur Komuniti (Keseluruhan)',
         'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',
@@ -30,20 +30,26 @@ use miloschuman\highcharts\Highcharts;
               ],
          ]
       ],
-      'plotOptions' => [
+      
+     'plotOptions' => [
           'column' => [
   
             'dataLabels' => [
               'enabled' => true,
+              'rotation' => -90,
+              'y' => -30,
               'style' => [
                 'fontSize' => '15px',
                 'fontWeight' => 'normal',
               ],
-              ]
+              'align' => 'center',]
 
 
             ]
         ],
+      'credits' => [
+        'enabled' => false,
+      ],
       'yAxis' => [
          'title' => [
          'text' => 'Jumlah',
@@ -55,9 +61,10 @@ use miloschuman\highcharts\Highcharts;
       ],
       'series' => [
          [
-         	'name' => 'Profession', 'data' => [12886, 19114, 17459,15156,15848,17303,16317,14058,9689,6374,3502,1283,324,58]
+          'name' => 'Jumlah', 'data' => [12932,19154,17505,15202,15888,17360,16354,14095,9713,6400,3513,1285,326,58]
           
          ],
+        
 
       ]
    ]

@@ -17,7 +17,7 @@ use miloschuman\highcharts\Highcharts;
       ],
 
       'title' => [
-        'text' => 'Graf Pie Sosio Ekonomi Keseluruhan  : Bekerja / Tidak',
+        'text' => 'Graf Pai Status Pekerjaan (Bekerja/Tidak Bekerja) Komuniti (Keseluruhan)',
         'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',

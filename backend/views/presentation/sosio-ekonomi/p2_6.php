@@ -10,11 +10,11 @@ use miloschuman\highcharts\Highcharts;
 
 <?php echo Highcharts::widget([
    'options' => [
-         'chart' => [
+            'chart' => [
           'type' => 'column'
           ],
       'title' => [
-      'text' => 'Graf Bar Jumlah Sukarelawan Bagi Setiap Negeri',
+      'text' => 'Graf Bar Status Pekerjaan Komuniti (Bekerja/Tidak Bekerja) Mengikut Pendidikan (Keseluruhan)',
         'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',
@@ -22,7 +22,7 @@ use miloschuman\highcharts\Highcharts;
 
       ],
       'xAxis' => [
-         'categories' => ['Pahang','Selangor','Perlis','Perak','Kedah','Terengganu','Johor'],
+         'categories' => ['Rendah','Menengah','Sijil','Diploma','Ijazah','Master/PHD'],
                   'labels' => [
               'style' => [
                 'fontSize' => '15px',
@@ -60,8 +60,12 @@ use miloschuman\highcharts\Highcharts;
       ],
       'series' => [
          [
-         	'name' => 'Sukarelawan', 
-          'data' => [1121, 32, 1117,1003,86,1200,238]
+          'name' => 'Bekerja', 'data' => [10495,24662,546,3586,2005,251]
+          
+         ],
+         [
+          'name' => 'Tidak Bekerja', 'data' => [4319,14326,419,2496,1767,260]
+          
          ],
 
       ]

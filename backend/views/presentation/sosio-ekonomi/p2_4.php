@@ -14,7 +14,7 @@ use miloschuman\highcharts\Highcharts;
           'type' => 'column'
           ],
       'title' => [
-      'text' => 'Umur 18 ke atas yang bekerja',
+      'text' => 'Graf Bar Status Pekerjaan Komuniti (Bekerja/Tidak Bekerja) Mengikut Umur (Keseluruhan)',
         'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',
@@ -30,20 +30,25 @@ use miloschuman\highcharts\Highcharts;
               ],
          ]
       ],
-      'plotOptions' => [
+     'plotOptions' => [
           'column' => [
   
             'dataLabels' => [
               'enabled' => true,
+              'rotation' => -90,
+              'y' => -30,
               'style' => [
                 'fontSize' => '15px',
                 'fontWeight' => 'normal',
               ],
-              ]
+              'align' => 'center',]
 
 
             ]
         ],
+      'credits' => [
+        'enabled' => false,
+      ],
       'yAxis' => [
          'title' => [
          'text' => 'Jumlah',
@@ -55,7 +60,11 @@ use miloschuman\highcharts\Highcharts;
       ],
       'series' => [
          [
-         	'name' => 'Profession', 'data' => [4321, 12557, 12193,10300,10568,11200,9659,6997,4190,2259,889,245,49,10]
+          'name' => 'Bekerja', 'data' => [4393,12635,12273,10383,10657,11329,9764,7070,4239,2294,899,249,49,10]
+          
+         ],
+         [
+          'name' => 'Tidak Bekerja', 'data' => [8539,6519,5232,4819,5231,6031,6590,7025,5474,4106,2614,1036,277,48]
           
          ],
 
