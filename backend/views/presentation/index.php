@@ -79,8 +79,9 @@ $this->title = 'Komuniti Development System';
                                                             <li><?= Html::a('Bar', ['presentation/p2_3_bar'],['target'=>'_BLANK']) ?></li>
                                                         </ul>
                                                 </li>
-                                                <li><?= Html::a('Status bekerja vs umur 18 tahun', ['presentation/p2_4'],['target'=>'_BLANK']) ?></li>
-                                                <li><?= Html::a('Pendapatan vs Perbelanjaan', ['presentation/p2_5'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Status Pekerjaan Dengan Umur', ['presentation/p2_4'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Status Pekerjaan Dengan Pendidikan', ['presentation/p2_6'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Jumlah Perbelanjaan & Pendapatan (Umur)', ['presentation/p2_5'],['target'=>'_BLANK']) ?></li>  
                                             </ul>
                                         </td>
                                     </tr>
@@ -143,10 +144,11 @@ $this->title = 'Komuniti Development System';
                                         <td>Mikroworker</td>
                                         <td>
                                             <ul>
-                                                <li><?= Html::a('Negeri', ['presentation/p5_1'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Jumlah Microworker Setiap Negeri', ['presentation/p5_1'],['target'=>'_BLANK']) ?></li>
                                                 <li><?= Html::a('Jantina', ['presentation/p5_2'],['target'=>'_BLANK']) ?></li>
-                                                <li><?= Html::a('Umur 18 Tahun', ['presentation/p5_3'],['target'=>'_BLANK']) ?></li>
-                                                <li><?= Html::a('Profession', ['presentation/p5_4'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Profesion Pekerjaan', ['presentation/p5_4'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Umur vs Status Pekerjaan', ['presentation/p5_3'],['target'=>'_BLANK']) ?></li>
+                                                
                                             </ul>
                                         </td>
                                     </tr>
@@ -155,8 +157,8 @@ $this->title = 'Komuniti Development System';
                                         <td>Sukarelawan</td>
                                         <td>
                                             <ul>
-                                                <li><?= Html::a('Negeri', ['presentation/p6_1'],['target'=>'_BLANK']) ?></li>
-                                                <li><?= Html::a('Umur 18 tahun', ['presentation/p6_2'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Jumlah Sukarelawan Mengikut Negeri', ['presentation/p6_1'],['target'=>'_BLANK']) ?></li>
+                                                <li><?= Html::a('Status Pekerjaan vs Umur', ['presentation/p6_2'],['target'=>'_BLANK']) ?></li>
                                                 <li><?= Html::a('Minat Program', ['presentation/p6_3'],['target'=>'_BLANK']) ?></li>
                                                 <li><?= Html::a('Sumbangan', ['presentation/p6_4'],['target'=>'_BLANK']) ?></li>
                                             </ul>
@@ -169,8 +171,8 @@ $this->title = 'Komuniti Development System';
                                             <ul>
                                                 <li>Keseluruhan
                                                         <ul>
-                                                            <li><?= Html::a('Pie', ['presentation/p7_1_pie'],['target'=>'_BLANK']) ?></li>
                                                             <li><?= Html::a('Bar', ['presentation/p7_1_bar'],['target'=>'_BLANK']) ?></li>
+                                                            <li><?= Html::a('Pai', ['presentation/p7_1_pie'],['target'=>'_BLANK']) ?></li> 
                                                         </ul>
                                                 </li>
         

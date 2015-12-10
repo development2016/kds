@@ -16,7 +16,7 @@ use miloschuman\highcharts\Highcharts;
       'chart' => [
           'type' => 'column'
           ],
-        'title' => ['text' => 'Sukarelawan Minat Progam',
+        'title' => ['text' => 'Graf Bar Jumlah Sukarelawan Mengikut Minat Program Yang Ingin Disertai Bagi Setiap Negeri',
         'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',

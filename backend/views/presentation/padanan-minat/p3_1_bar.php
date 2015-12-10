@@ -16,7 +16,7 @@ use miloschuman\highcharts\Highcharts;
       ],
 
       'title' => [
-      'text' => 'Graf Bar Padanan Minat Bagi Setiap Negeri',
+      'text' => 'Graf Bar Padanan Minat Komuniti Bagi Setiap Negeri',
           'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',

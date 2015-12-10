@@ -16,7 +16,7 @@ use miloschuman\highcharts\Highcharts;
       ],
 
       'title' => [
-      'text' => 'Graf Bar Sosio Ekonomi (Bekerja /Tidak Bekerja) Bagi Setiap Negeri',
+      'text' => 'Graf Bar Status Pekerjaan Komuniti (Bekerja/Tidak Bekerja) Mengikut Negeri',
           'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',

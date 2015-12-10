@@ -16,7 +16,7 @@ use miloschuman\highcharts\Highcharts;
       'chart' => [
           'type' => 'column'
           ],
-        'title' => ['text' => 'Sukarelawan Sumbangan',
+        'title' => ['text' => 'Graf Bar Jumlah Sukarelawan Mengikut Kategori Sumbangan Yang Ingin Diberikan Bagi Setiap Negeri ',
         'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',

@@ -11,7 +11,7 @@ use miloschuman\highcharts\Highcharts;
 <?php echo Highcharts::widget([
    'options' => [
       'title' => [
-      'text' => 'Pendapatan',
+      'text' => 'Graf Line Status Pendapatan Komuniti (Keseluruhan)',
         'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',

@@ -29,7 +29,11 @@ echo Highcharts::widget([
           'type' => 'column'
           ],
       'title' => [
+<<<<<<< HEAD
       'text' => 'Graf Bar Jumlah Sukarelawan Bagi Setiap Negeri',
+=======
+      'text' => 'Graf Bar Jumlah Isu Bagi Setiap Negeri',
+>>>>>>> c1683da31eae6458fa0a0f78c3a749d651f72e13
         'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',

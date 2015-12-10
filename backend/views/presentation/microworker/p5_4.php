@@ -17,7 +17,7 @@ use miloschuman\highcharts\Highcharts;
       ],
 
       'title' => [
-        'text' => 'Carta Pie Profession Mengikut Kategori',
+        'text' => 'Carta Pai Peratusan Microworker Mengikut Profesion Pekerjaan (Keseluruhan)',
         'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',

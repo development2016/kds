@@ -15,7 +15,7 @@ use miloschuman\highcharts\Highcharts;
       ],
 
       'title' => [
-      'text' => 'Graf Bar Status Jantina Microworker Mengikut Negeri',
+      'text' => 'Graf Bar Jumlah Microworker Mengikut Jantina Bagi Setiap Negeri',
           'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',
