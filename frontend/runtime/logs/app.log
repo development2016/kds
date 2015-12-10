@@ -9846,3 +9846,2862 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1446389296.09
     'REQUEST_TIME' => 1446389296
 ]
+2015-11-17 10:41:01 [192.168.0.132][-][-][error][yii\base\ErrorException:4096] exception 'yii\base\ErrorException' with message 'Argument 1 passed to yii\web\User::login() must implement interface yii\web\IdentityInterface, null given, called in /var/www/html/kds/common/models/LoginForm.php on line 100 and defined' in /var/www/html/kds/vendor/yiisoft/yii2/web/User.php:233
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/web/User.php(233): yii\base\ErrorHandler->handleError(4096, 'Argument 1 pass...', '/var/www/html/k...', 233, Array)
+#1 /var/www/html/kds/common/models/LoginForm.php(100): yii\web\User->login(NULL, 2592000)
+#2 /var/www/html/kds/frontend/controllers/SiteController.php(82): common\models\LoginForm->login()
+#3 [internal function]: frontend\controllers\SiteController->actionLogin()
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('login', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/login', Array)
+#8 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2015-11-17 10:41:00 [192.168.0.132][-][-][info][application] $_POST = [
+    '_csrf' => 'Z1lab2NHUFI1KzEfAHM9GgMjNy01A2UjCW84CA8yFxEKEzslNzcGBg=='
+    'LoginForm' => [
+        'username' => 'AZNA'
+        'password' => 'AZNA'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ds4ccug6fufpdiepq56ifcoeh1'
+    '_csrf' => '8455e6a132dec1bd4de32d579943b9abfe1d05c9bf8ffdc4e071fe0619eddb4ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Rrkpc4mHdzmBVD5qn6bgluGCmJaJTpVT\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'errorLoginUsername' => -1
+    ]
+    '__returnUrl' => '/kds/frontend/web/index.php'
+    'errorLoginUsername' => 'Harap Maaf ! Anda Masih Belum Berdaftar. Sila Klik <a href=\"/kds/frontend/web/index.php/user/create.cypressdiversified\" target=\"_blank\">Pendaftaran</a>'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '138'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://192.168.0.100'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://192.168.0.100/kds/frontend/web/index.php/site/login.cypressdiversified'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=ds4ccug6fufpdiepq56ifcoeh1; _csrf=8455e6a132dec1bd4de32d579943b9abfe1d05c9bf8ffdc4e071fe0619eddb4ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Rrkpc4mHdzmBVD5qn6bgluGCmJaJTpVT%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.132'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '54777'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/site/login.cypressdiversified'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/site/login.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/site/login.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/site/login.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1447756860.934
+    'REQUEST_TIME' => 1447756860
+]
+2015-11-17 10:41:17 [192.168.0.132][-][-][error][yii\base\ErrorException:4096] exception 'yii\base\ErrorException' with message 'Argument 1 passed to yii\web\User::login() must implement interface yii\web\IdentityInterface, null given, called in /var/www/html/kds/common/models/LoginForm.php on line 100 and defined' in /var/www/html/kds/vendor/yiisoft/yii2/web/User.php:233
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/web/User.php(233): yii\base\ErrorHandler->handleError(4096, 'Argument 1 pass...', '/var/www/html/k...', 233, Array)
+#1 /var/www/html/kds/common/models/LoginForm.php(100): yii\web\User->login(NULL, 2592000)
+#2 /var/www/html/kds/frontend/controllers/SiteController.php(82): common\models\LoginForm->login()
+#3 [internal function]: frontend\controllers\SiteController->actionLogin()
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('login', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/login', Array)
+#8 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2015-11-17 10:41:17 [192.168.0.132][-][-][info][application] $_POST = [
+    '_csrf' => 'TExGTVpxN2MePi09OUVaKyg2Kw8MNQISInokKjYEcCAhBicHDgFhNw=='
+    'LoginForm' => [
+        'username' => 'AZNA'
+        'password' => 'AZNA'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ds4ccug6fufpdiepq56ifcoeh1'
+    '_csrf' => '8455e6a132dec1bd4de32d579943b9abfe1d05c9bf8ffdc4e071fe0619eddb4ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Rrkpc4mHdzmBVD5qn6bgluGCmJaJTpVT\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'errorLoginUsername' => -1
+    ]
+    '__returnUrl' => '/kds/frontend/web/index.php'
+    'errorLoginUsername' => 'Harap Maaf ! Anda Masih Belum Berdaftar. Sila Klik <a href=\"/kds/frontend/web/index.php/user/create.cypressdiversified\" target=\"_blank\">Pendaftaran</a>'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '138'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://192.168.0.100'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://192.168.0.100/kds/frontend/web/index.php/site/login.cypressdiversified'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=ds4ccug6fufpdiepq56ifcoeh1; _csrf=8455e6a132dec1bd4de32d579943b9abfe1d05c9bf8ffdc4e071fe0619eddb4ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Rrkpc4mHdzmBVD5qn6bgluGCmJaJTpVT%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.132'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '54782'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/site/login.cypressdiversified'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/site/login.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/site/login.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/site/login.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1447756877.676
+    'REQUEST_TIME' => 1447756877
+]
+2015-11-24 02:53:22 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/frontend/controllers/KawasanController.php:30
+Stack trace:
+#0 /var/www/html/kds/frontend/controllers/KawasanController.php(30): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 30, Array)
+#1 [internal function]: frontend\controllers\KawasanController->actionIndex()
+#2 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('kawasan/index', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-11-24 02:53:22 [192.168.0.101][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49620'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'HEAD'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/kawasan/index.cypressdiversified'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/kawasan/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/kawasan/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/kawasan/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448333602.397
+    'REQUEST_TIME' => 1448333602
+]
+2015-11-24 02:53:22 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/frontend/controllers/KawasanController.php:30
+Stack trace:
+#0 /var/www/html/kds/frontend/controllers/KawasanController.php(30): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 30, Array)
+#1 [internal function]: frontend\controllers\KawasanController->actionIndex()
+#2 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('kawasan/index', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-11-24 02:53:22 [192.168.0.101][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49621'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/kawasan/index.cypressdiversified'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/kawasan/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/kawasan/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/kawasan/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448333602.415
+    'REQUEST_TIME' => 1448333602
+]
+2015-11-24 02:53:28 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/frontend/controllers/KawasanController.php:64
+Stack trace:
+#0 /var/www/html/kds/frontend/controllers/KawasanController.php(64): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 64, Array)
+#1 [internal function]: frontend\controllers\KawasanController->actionState('22')
+#2 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('state', Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('kawasan/state', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-11-24 02:53:28 [192.168.0.101][-][-][info][application] $_GET = [
+    'state_id_get' => '22'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49624'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'HEAD'
+    'QUERY_STRING' => 'state_id_get=22'
+    'REQUEST_URI' => '/kds/frontend/web/index.php/kawasan/state.cypressdiversified?state_id_get=22'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/kawasan/state.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/kawasan/state.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/kawasan/state.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448333608.048
+    'REQUEST_TIME' => 1448333608
+]
+2015-11-24 02:53:28 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/frontend/controllers/KawasanController.php:64
+Stack trace:
+#0 /var/www/html/kds/frontend/controllers/KawasanController.php(64): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 64, Array)
+#1 [internal function]: frontend\controllers\KawasanController->actionState('22')
+#2 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('state', Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('kawasan/state', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-11-24 02:53:28 [192.168.0.101][-][-][info][application] $_GET = [
+    'state_id_get' => '22'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49625'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'state_id_get=22'
+    'REQUEST_URI' => '/kds/frontend/web/index.php/kawasan/state.cypressdiversified?state_id_get=22'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/kawasan/state.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/kawasan/state.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/kawasan/state.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448333608.067
+    'REQUEST_TIME' => 1448333608
+]
+2015-11-24 02:53:34 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/common/models/PeopleSearch.php:46
+Stack trace:
+#0 /var/www/html/kds/common/models/PeopleSearch.php(46): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 46, Array)
+#1 /var/www/html/kds/frontend/controllers/PeopleController.php(49): common\models\PeopleSearch->search(Array)
+#2 [internal function]: frontend\controllers\PeopleController->actionProfil()
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('profil', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('people/profil', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 02:53:34 [192.168.0.101][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49631'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'HEAD'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/people/profil.cypressdiversified'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/people/profil.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/people/profil.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/people/profil.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448333614.286
+    'REQUEST_TIME' => 1448333614
+]
+2015-11-24 02:53:34 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/common/models/PeopleSearch.php:46
+Stack trace:
+#0 /var/www/html/kds/common/models/PeopleSearch.php(46): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 46, Array)
+#1 /var/www/html/kds/frontend/controllers/PeopleController.php(49): common\models\PeopleSearch->search(Array)
+#2 [internal function]: frontend\controllers\PeopleController->actionProfil()
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('profil', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('people/profil', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 02:53:34 [192.168.0.101][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49632'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/people/profil.cypressdiversified'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/people/profil.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/people/profil.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/people/profil.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448333614.302
+    'REQUEST_TIME' => 1448333614
+]
+2015-11-24 02:53:54 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/common/models/PeopleSearch.php:46
+Stack trace:
+#0 /var/www/html/kds/common/models/PeopleSearch.php(46): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 46, Array)
+#1 /var/www/html/kds/frontend/controllers/PeopleController.php(49): common\models\PeopleSearch->search(Array)
+#2 [internal function]: frontend\controllers\PeopleController->actionProfil()
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('profil', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('people/profil', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 02:53:54 [192.168.0.101][-][-][info][application] $_GET = [
+    'PeopleSearch' => [
+        'name' => ''
+        'ic_no' => '550221015409'
+        'district_id' => ''
+        'kampung_id' => ''
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49647'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'HEAD'
+    'QUERY_STRING' => 'PeopleSearch%5Bname%5D=&PeopleSearch%5Bic_no%5D=550221015409&PeopleSearch%5Bdistrict_id%5D=&PeopleSearch%5Bkampung_id%5D='
+    'REQUEST_URI' => '/kds/frontend/web/index.php/people/profil.cypressdiversified?PeopleSearch%5Bname%5D=&PeopleSearch%5Bic_no%5D=550221015409&PeopleSearch%5Bdistrict_id%5D=&PeopleSearch%5Bkampung_id%5D='
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/people/profil.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/people/profil.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/people/profil.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448333634.697
+    'REQUEST_TIME' => 1448333634
+]
+2015-11-24 02:53:54 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/common/models/PeopleSearch.php:46
+Stack trace:
+#0 /var/www/html/kds/common/models/PeopleSearch.php(46): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 46, Array)
+#1 /var/www/html/kds/frontend/controllers/PeopleController.php(49): common\models\PeopleSearch->search(Array)
+#2 [internal function]: frontend\controllers\PeopleController->actionProfil()
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('profil', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('people/profil', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 02:53:54 [192.168.0.101][-][-][info][application] $_GET = [
+    'PeopleSearch' => [
+        'name' => ''
+        'ic_no' => '550221015409'
+        'district_id' => ''
+        'kampung_id' => ''
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49648'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'PeopleSearch%5Bname%5D=&PeopleSearch%5Bic_no%5D=550221015409&PeopleSearch%5Bdistrict_id%5D=&PeopleSearch%5Bkampung_id%5D='
+    'REQUEST_URI' => '/kds/frontend/web/index.php/people/profil.cypressdiversified?PeopleSearch%5Bname%5D=&PeopleSearch%5Bic_no%5D=550221015409&PeopleSearch%5Bdistrict_id%5D=&PeopleSearch%5Bkampung_id%5D='
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/people/profil.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/people/profil.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/people/profil.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448333634.714
+    'REQUEST_TIME' => 1448333634
+]
+2015-11-24 02:54:04 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/frontend/controllers/KawasanController.php:30
+Stack trace:
+#0 /var/www/html/kds/frontend/controllers/KawasanController.php(30): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 30, Array)
+#1 [internal function]: frontend\controllers\KawasanController->actionIndex()
+#2 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('kawasan/index', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-11-24 02:54:04 [192.168.0.101][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49650'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'HEAD'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/kawasan/index.cypressdiversified'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/kawasan/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/kawasan/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/kawasan/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448333644.209
+    'REQUEST_TIME' => 1448333644
+]
+2015-11-24 02:54:04 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/frontend/controllers/KawasanController.php:30
+Stack trace:
+#0 /var/www/html/kds/frontend/controllers/KawasanController.php(30): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 30, Array)
+#1 [internal function]: frontend\controllers\KawasanController->actionIndex()
+#2 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('kawasan/index', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-11-24 02:54:04 [192.168.0.101][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49651'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/kawasan/index.cypressdiversified'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/kawasan/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/kawasan/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/kawasan/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448333644.224
+    'REQUEST_TIME' => 1448333644
+]
+2015-11-24 02:54:07 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/common/models/VolunteerSearch.php:45
+Stack trace:
+#0 /var/www/html/kds/common/models/VolunteerSearch.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 45, Array)
+#1 /var/www/html/kds/frontend/controllers/VolunteerController.php(44): common\models\VolunteerSearch->search(Array)
+#2 [internal function]: frontend\controllers\VolunteerController->actionIndex()
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('volunteer/index', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 02:54:07 [192.168.0.101][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49660'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'HEAD'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/volunteer/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/volunteer/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448333647.681
+    'REQUEST_TIME' => 1448333647
+]
+2015-11-24 02:54:07 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/common/models/VolunteerSearch.php:45
+Stack trace:
+#0 /var/www/html/kds/common/models/VolunteerSearch.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 45, Array)
+#1 /var/www/html/kds/frontend/controllers/VolunteerController.php(44): common\models\VolunteerSearch->search(Array)
+#2 [internal function]: frontend\controllers\VolunteerController->actionIndex()
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('volunteer/index', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 02:54:07 [192.168.0.101][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49661'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/volunteer/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/volunteer/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448333647.696
+    'REQUEST_TIME' => 1448333647
+]
+2015-11-24 02:54:18 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/common/models/VolunteerSearch.php:45
+Stack trace:
+#0 /var/www/html/kds/common/models/VolunteerSearch.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 45, Array)
+#1 /var/www/html/kds/frontend/controllers/VolunteerController.php(44): common\models\VolunteerSearch->search(Array)
+#2 [internal function]: frontend\controllers\VolunteerController->actionIndex()
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('volunteer/index', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 02:54:18 [192.168.0.101][-][-][info][application] $_GET = [
+    'VolunteerSearch' => [
+        'nama' => ''
+        'no_kp' => '550221015409'
+        'district_id' => ''
+        'kampung_id' => ''
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49667'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'HEAD'
+    'QUERY_STRING' => 'VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'REQUEST_URI' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified?VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/volunteer/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/volunteer/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448333658.107
+    'REQUEST_TIME' => 1448333658
+]
+2015-11-24 02:54:18 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/common/models/VolunteerSearch.php:45
+Stack trace:
+#0 /var/www/html/kds/common/models/VolunteerSearch.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 45, Array)
+#1 /var/www/html/kds/frontend/controllers/VolunteerController.php(44): common\models\VolunteerSearch->search(Array)
+#2 [internal function]: frontend\controllers\VolunteerController->actionIndex()
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('volunteer/index', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 02:54:18 [192.168.0.101][-][-][info][application] $_GET = [
+    'VolunteerSearch' => [
+        'nama' => ''
+        'no_kp' => '550221015409'
+        'district_id' => ''
+        'kampung_id' => ''
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49668'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'REQUEST_URI' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified?VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/volunteer/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/volunteer/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448333658.121
+    'REQUEST_TIME' => 1448333658
+]
+2015-11-24 02:57:51 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/frontend/views/volunteer/view.php:181
+Stack trace:
+#0 /var/www/html/kds/frontend/views/volunteer/view.php(181): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 181, Array)
+#1 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/k...')
+#2 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/k...', Array)
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/k...', Array, Object(frontend\controllers\VolunteerController))
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('view', Array, Object(frontend\controllers\VolunteerController))
+#5 /var/www/html/kds/frontend/controllers/VolunteerController.php(63): yii\base\Controller->render('view', Array)
+#6 [internal function]: frontend\controllers\VolunteerController->actionView('NDQ3Mg==')
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#10 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('volunteer/view', Array)
+#11 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+2015-11-24 02:57:51 [192.168.0.101][-][-][info][application] $_GET = [
+    'id' => 'NDQ3Mg=='
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'j9jvujpk5tvgdf2385ue9rduq2'
+    '_identity' => '652cd789e822a4f7e30011b7fa192b7b5ea942bb90a30a378d826e307ac254c7a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+    '_csrf' => '0f24eb5d5244ecb10477da3195d4bcf3eda1722f7969f1c571fc24e2cf3c150ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nSXn9TmLpu9s6EWOo-Hy18FNGaGTbQp5\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_REFERER' => 'http://192.168.0.100/kds/frontend/web/index.php/volunteer/index.cypressdiversified?VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'de,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=j9jvujpk5tvgdf2385ue9rduq2; _identity=652cd789e822a4f7e30011b7fa192b7b5ea942bb90a30a378d826e307ac254c7a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D; _csrf=0f24eb5d5244ecb10477da3195d4bcf3eda1722f7969f1c571fc24e2cf3c150ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nSXn9TmLpu9s6EWOo-Hy18FNGaGTbQp5%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49678'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=NDQ3Mg%3D%3D'
+    'REQUEST_URI' => '/kds/frontend/web/index.php/volunteer/view.cypressdiversified?id=NDQ3Mg%3D%3D'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/volunteer/view.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/volunteer/view.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/volunteer/view.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448333871.925
+    'REQUEST_TIME' => 1448333871
+]
+2015-11-24 02:57:52 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/frontend/views/volunteer/view.php:181
+Stack trace:
+#0 /var/www/html/kds/frontend/views/volunteer/view.php(181): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 181, Array)
+#1 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/k...')
+#2 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/k...', Array)
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/k...', Array, Object(frontend\controllers\VolunteerController))
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('view', Array, Object(frontend\controllers\VolunteerController))
+#5 /var/www/html/kds/frontend/controllers/VolunteerController.php(63): yii\base\Controller->render('view', Array)
+#6 [internal function]: frontend\controllers\VolunteerController->actionView('NDQ3Mg==')
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#10 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('volunteer/view', Array)
+#11 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+2015-11-24 02:57:52 [192.168.0.101][-][-][info][application] $_GET = [
+    'id' => 'NDQ3Mg=='
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49683'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'HEAD'
+    'QUERY_STRING' => 'id=NDQ3Mg%3D%3D'
+    'REQUEST_URI' => '/kds/frontend/web/index.php/volunteer/view.cypressdiversified?id=NDQ3Mg%3D%3D'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/volunteer/view.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/volunteer/view.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/volunteer/view.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448333872.897
+    'REQUEST_TIME' => 1448333872
+]
+2015-11-24 02:57:52 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/frontend/views/volunteer/view.php:181
+Stack trace:
+#0 /var/www/html/kds/frontend/views/volunteer/view.php(181): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 181, Array)
+#1 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/k...')
+#2 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/k...', Array)
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/k...', Array, Object(frontend\controllers\VolunteerController))
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('view', Array, Object(frontend\controllers\VolunteerController))
+#5 /var/www/html/kds/frontend/controllers/VolunteerController.php(63): yii\base\Controller->render('view', Array)
+#6 [internal function]: frontend\controllers\VolunteerController->actionView('NDQ3Mg==')
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#10 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('volunteer/view', Array)
+#11 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+2015-11-24 02:57:52 [192.168.0.101][-][-][info][application] $_GET = [
+    'id' => 'NDQ3Mg=='
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'joai9k8d7bngut0otfbud5ip23'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'PHPSESSID=joai9k8d7bngut0otfbud5ip23'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49684'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=NDQ3Mg%3D%3D'
+    'REQUEST_URI' => '/kds/frontend/web/index.php/volunteer/view.cypressdiversified?id=NDQ3Mg%3D%3D'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/volunteer/view.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/volunteer/view.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/volunteer/view.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448333872.937
+    'REQUEST_TIME' => 1448333872
+]
+2015-11-24 02:57:55 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/common/models/VolunteerSearch.php:45
+Stack trace:
+#0 /var/www/html/kds/common/models/VolunteerSearch.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 45, Array)
+#1 /var/www/html/kds/frontend/controllers/VolunteerController.php(44): common\models\VolunteerSearch->search(Array)
+#2 [internal function]: frontend\controllers\VolunteerController->actionIndex()
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('volunteer/index', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 02:57:55 [192.168.0.101][-][-][info][application] $_GET = [
+    'VolunteerSearch' => [
+        'nama' => ''
+        'no_kp' => '550221015409'
+        'district_id' => ''
+        'kampung_id' => ''
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49706'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'HEAD'
+    'QUERY_STRING' => 'VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'REQUEST_URI' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified?VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/volunteer/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/volunteer/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448333875.491
+    'REQUEST_TIME' => 1448333875
+]
+2015-11-24 02:57:55 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/common/models/VolunteerSearch.php:45
+Stack trace:
+#0 /var/www/html/kds/common/models/VolunteerSearch.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 45, Array)
+#1 /var/www/html/kds/frontend/controllers/VolunteerController.php(44): common\models\VolunteerSearch->search(Array)
+#2 [internal function]: frontend\controllers\VolunteerController->actionIndex()
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('volunteer/index', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 02:57:55 [192.168.0.101][-][-][info][application] $_GET = [
+    'VolunteerSearch' => [
+        'nama' => ''
+        'no_kp' => '550221015409'
+        'district_id' => ''
+        'kampung_id' => ''
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49707'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'REQUEST_URI' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified?VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/volunteer/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/volunteer/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448333875.507
+    'REQUEST_TIME' => 1448333875
+]
+2015-11-24 02:57:59 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/frontend/views/volunteer/view.php:181
+Stack trace:
+#0 /var/www/html/kds/frontend/views/volunteer/view.php(181): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 181, Array)
+#1 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/k...')
+#2 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/k...', Array)
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/k...', Array, Object(frontend\controllers\VolunteerController))
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('view', Array, Object(frontend\controllers\VolunteerController))
+#5 /var/www/html/kds/frontend/controllers/VolunteerController.php(63): yii\base\Controller->render('view', Array)
+#6 [internal function]: frontend\controllers\VolunteerController->actionView('NDQ3Mg==')
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#10 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('volunteer/view', Array)
+#11 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+2015-11-24 02:57:59 [192.168.0.101][-][-][info][application] $_GET = [
+    'id' => 'NDQ3Mg=='
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'j9jvujpk5tvgdf2385ue9rduq2'
+    '_identity' => '652cd789e822a4f7e30011b7fa192b7b5ea942bb90a30a378d826e307ac254c7a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+    '_csrf' => '0f24eb5d5244ecb10477da3195d4bcf3eda1722f7969f1c571fc24e2cf3c150ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nSXn9TmLpu9s6EWOo-Hy18FNGaGTbQp5\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_REFERER' => 'http://192.168.0.100/kds/frontend/web/index.php/volunteer/index.cypressdiversified?VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'de,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=j9jvujpk5tvgdf2385ue9rduq2; _identity=652cd789e822a4f7e30011b7fa192b7b5ea942bb90a30a378d826e307ac254c7a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D; _csrf=0f24eb5d5244ecb10477da3195d4bcf3eda1722f7969f1c571fc24e2cf3c150ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nSXn9TmLpu9s6EWOo-Hy18FNGaGTbQp5%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49685'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=NDQ3Mg%3D%3D'
+    'REQUEST_URI' => '/kds/frontend/web/index.php/volunteer/view.cypressdiversified?id=NDQ3Mg%3D%3D'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/volunteer/view.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/volunteer/view.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/volunteer/view.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448333879.233
+    'REQUEST_TIME' => 1448333879
+]
+2015-11-24 02:58:00 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/frontend/views/volunteer/view.php:181
+Stack trace:
+#0 /var/www/html/kds/frontend/views/volunteer/view.php(181): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 181, Array)
+#1 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/k...')
+#2 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/k...', Array)
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/k...', Array, Object(frontend\controllers\VolunteerController))
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('view', Array, Object(frontend\controllers\VolunteerController))
+#5 /var/www/html/kds/frontend/controllers/VolunteerController.php(63): yii\base\Controller->render('view', Array)
+#6 [internal function]: frontend\controllers\VolunteerController->actionView('NDQ3Mg==')
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#10 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('volunteer/view', Array)
+#11 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+2015-11-24 02:58:00 [192.168.0.101][-][-][info][application] $_GET = [
+    'id' => 'NDQ3Mg=='
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49710'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'HEAD'
+    'QUERY_STRING' => 'id=NDQ3Mg%3D%3D'
+    'REQUEST_URI' => '/kds/frontend/web/index.php/volunteer/view.cypressdiversified?id=NDQ3Mg%3D%3D'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/volunteer/view.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/volunteer/view.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/volunteer/view.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448333880.568
+    'REQUEST_TIME' => 1448333880
+]
+2015-11-24 02:58:00 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/frontend/views/volunteer/view.php:181
+Stack trace:
+#0 /var/www/html/kds/frontend/views/volunteer/view.php(181): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 181, Array)
+#1 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/k...')
+#2 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/k...', Array)
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/k...', Array, Object(frontend\controllers\VolunteerController))
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('view', Array, Object(frontend\controllers\VolunteerController))
+#5 /var/www/html/kds/frontend/controllers/VolunteerController.php(63): yii\base\Controller->render('view', Array)
+#6 [internal function]: frontend\controllers\VolunteerController->actionView('NDQ3Mg==')
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#10 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('volunteer/view', Array)
+#11 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+2015-11-24 02:58:00 [192.168.0.101][-][-][info][application] $_GET = [
+    'id' => 'NDQ3Mg=='
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'lvf4oht49810t41bdldfhjlg74'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'PHPSESSID=lvf4oht49810t41bdldfhjlg74'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49712'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=NDQ3Mg%3D%3D'
+    'REQUEST_URI' => '/kds/frontend/web/index.php/volunteer/view.cypressdiversified?id=NDQ3Mg%3D%3D'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/volunteer/view.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/volunteer/view.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/volunteer/view.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448333880.613
+    'REQUEST_TIME' => 1448333880
+]
+2015-11-24 02:58:02 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/common/models/VolunteerSearch.php:45
+Stack trace:
+#0 /var/www/html/kds/common/models/VolunteerSearch.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 45, Array)
+#1 /var/www/html/kds/frontend/controllers/VolunteerController.php(44): common\models\VolunteerSearch->search(Array)
+#2 [internal function]: frontend\controllers\VolunteerController->actionIndex()
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('volunteer/index', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 02:58:02 [192.168.0.101][-][-][info][application] $_GET = [
+    'VolunteerSearch' => [
+        'nama' => ''
+        'no_kp' => '550221015409'
+        'district_id' => ''
+        'kampung_id' => ''
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49714'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'HEAD'
+    'QUERY_STRING' => 'VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'REQUEST_URI' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified?VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/volunteer/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/volunteer/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448333882.434
+    'REQUEST_TIME' => 1448333882
+]
+2015-11-24 02:58:02 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/common/models/VolunteerSearch.php:45
+Stack trace:
+#0 /var/www/html/kds/common/models/VolunteerSearch.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 45, Array)
+#1 /var/www/html/kds/frontend/controllers/VolunteerController.php(44): common\models\VolunteerSearch->search(Array)
+#2 [internal function]: frontend\controllers\VolunteerController->actionIndex()
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('volunteer/index', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 02:58:02 [192.168.0.101][-][-][info][application] $_GET = [
+    'VolunteerSearch' => [
+        'nama' => ''
+        'no_kp' => '550221015409'
+        'district_id' => ''
+        'kampung_id' => ''
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49715'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'REQUEST_URI' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified?VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/volunteer/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/volunteer/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448333882.448
+    'REQUEST_TIME' => 1448333882
+]
+2015-11-24 02:58:10 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/common/models/VolunteerSearch.php:45
+Stack trace:
+#0 /var/www/html/kds/common/models/VolunteerSearch.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 45, Array)
+#1 /var/www/html/kds/frontend/controllers/VolunteerController.php(44): common\models\VolunteerSearch->search(Array)
+#2 [internal function]: frontend\controllers\VolunteerController->actionIndex()
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('volunteer/index', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 02:58:10 [192.168.0.101][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49728'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'HEAD'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/volunteer/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/volunteer/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448333890.851
+    'REQUEST_TIME' => 1448333890
+]
+2015-11-24 02:58:10 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/common/models/VolunteerSearch.php:45
+Stack trace:
+#0 /var/www/html/kds/common/models/VolunteerSearch.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 45, Array)
+#1 /var/www/html/kds/frontend/controllers/VolunteerController.php(44): common\models\VolunteerSearch->search(Array)
+#2 [internal function]: frontend\controllers\VolunteerController->actionIndex()
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('volunteer/index', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 02:58:10 [192.168.0.101][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49729'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/volunteer/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/volunteer/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448333890.865
+    'REQUEST_TIME' => 1448333890
+]
+2015-11-24 02:58:17 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/common/models/VolunteerSearch.php:45
+Stack trace:
+#0 /var/www/html/kds/common/models/VolunteerSearch.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 45, Array)
+#1 /var/www/html/kds/frontend/controllers/VolunteerController.php(44): common\models\VolunteerSearch->search(Array)
+#2 [internal function]: frontend\controllers\VolunteerController->actionIndex()
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('volunteer/index', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 02:58:17 [192.168.0.101][-][-][info][application] $_GET = [
+    'VolunteerSearch' => [
+        'nama' => ''
+        'no_kp' => '550221015409'
+        'district_id' => ''
+        'kampung_id' => ''
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49736'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'HEAD'
+    'QUERY_STRING' => 'VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'REQUEST_URI' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified?VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/volunteer/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/volunteer/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448333897.536
+    'REQUEST_TIME' => 1448333897
+]
+2015-11-24 02:58:17 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/common/models/VolunteerSearch.php:45
+Stack trace:
+#0 /var/www/html/kds/common/models/VolunteerSearch.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 45, Array)
+#1 /var/www/html/kds/frontend/controllers/VolunteerController.php(44): common\models\VolunteerSearch->search(Array)
+#2 [internal function]: frontend\controllers\VolunteerController->actionIndex()
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('volunteer/index', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 02:58:17 [192.168.0.101][-][-][info][application] $_GET = [
+    'VolunteerSearch' => [
+        'nama' => ''
+        'no_kp' => '550221015409'
+        'district_id' => ''
+        'kampung_id' => ''
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49737'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'REQUEST_URI' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified?VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/volunteer/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/volunteer/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448333897.551
+    'REQUEST_TIME' => 1448333897
+]
+2015-11-24 02:58:23 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/frontend/views/volunteer/view.php:181
+Stack trace:
+#0 /var/www/html/kds/frontend/views/volunteer/view.php(181): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 181, Array)
+#1 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/k...')
+#2 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/k...', Array)
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/k...', Array, Object(frontend\controllers\VolunteerController))
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('view', Array, Object(frontend\controllers\VolunteerController))
+#5 /var/www/html/kds/frontend/controllers/VolunteerController.php(63): yii\base\Controller->render('view', Array)
+#6 [internal function]: frontend\controllers\VolunteerController->actionView('NDQ3Mg==')
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#10 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('volunteer/view', Array)
+#11 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+2015-11-24 02:58:23 [192.168.0.101][-][-][info][application] $_GET = [
+    'id' => 'NDQ3Mg=='
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'j9jvujpk5tvgdf2385ue9rduq2'
+    '_identity' => '652cd789e822a4f7e30011b7fa192b7b5ea942bb90a30a378d826e307ac254c7a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+    '_csrf' => '0f24eb5d5244ecb10477da3195d4bcf3eda1722f7969f1c571fc24e2cf3c150ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nSXn9TmLpu9s6EWOo-Hy18FNGaGTbQp5\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_REFERER' => 'http://192.168.0.100/kds/frontend/web/index.php/volunteer/index.cypressdiversified?VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'de,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=j9jvujpk5tvgdf2385ue9rduq2; _identity=652cd789e822a4f7e30011b7fa192b7b5ea942bb90a30a378d826e307ac254c7a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D; _csrf=0f24eb5d5244ecb10477da3195d4bcf3eda1722f7969f1c571fc24e2cf3c150ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nSXn9TmLpu9s6EWOo-Hy18FNGaGTbQp5%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49743'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=NDQ3Mg%3D%3D'
+    'REQUEST_URI' => '/kds/frontend/web/index.php/volunteer/view.cypressdiversified?id=NDQ3Mg%3D%3D'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/volunteer/view.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/volunteer/view.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/volunteer/view.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448333903.878
+    'REQUEST_TIME' => 1448333903
+]
+2015-11-24 02:58:24 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/frontend/views/volunteer/view.php:181
+Stack trace:
+#0 /var/www/html/kds/frontend/views/volunteer/view.php(181): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 181, Array)
+#1 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/k...')
+#2 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/k...', Array)
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/k...', Array, Object(frontend\controllers\VolunteerController))
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('view', Array, Object(frontend\controllers\VolunteerController))
+#5 /var/www/html/kds/frontend/controllers/VolunteerController.php(63): yii\base\Controller->render('view', Array)
+#6 [internal function]: frontend\controllers\VolunteerController->actionView('NDQ3Mg==')
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#10 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('volunteer/view', Array)
+#11 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+2015-11-24 02:58:24 [192.168.0.101][-][-][info][application] $_GET = [
+    'id' => 'NDQ3Mg=='
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49744'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'HEAD'
+    'QUERY_STRING' => 'id=NDQ3Mg%3D%3D'
+    'REQUEST_URI' => '/kds/frontend/web/index.php/volunteer/view.cypressdiversified?id=NDQ3Mg%3D%3D'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/volunteer/view.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/volunteer/view.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/volunteer/view.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448333904.912
+    'REQUEST_TIME' => 1448333904
+]
+2015-11-24 02:58:24 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/frontend/views/volunteer/view.php:181
+Stack trace:
+#0 /var/www/html/kds/frontend/views/volunteer/view.php(181): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 181, Array)
+#1 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/k...')
+#2 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/k...', Array)
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/k...', Array, Object(frontend\controllers\VolunteerController))
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('view', Array, Object(frontend\controllers\VolunteerController))
+#5 /var/www/html/kds/frontend/controllers/VolunteerController.php(63): yii\base\Controller->render('view', Array)
+#6 [internal function]: frontend\controllers\VolunteerController->actionView('NDQ3Mg==')
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#10 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('volunteer/view', Array)
+#11 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+2015-11-24 02:58:24 [192.168.0.101][-][-][info][application] $_GET = [
+    'id' => 'NDQ3Mg=='
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '1tjsi9et7f1uvancrunmt29j71'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'PHPSESSID=1tjsi9et7f1uvancrunmt29j71'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49745'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=NDQ3Mg%3D%3D'
+    'REQUEST_URI' => '/kds/frontend/web/index.php/volunteer/view.cypressdiversified?id=NDQ3Mg%3D%3D'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/volunteer/view.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/volunteer/view.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/volunteer/view.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448333904.958
+    'REQUEST_TIME' => 1448333904
+]
+2015-11-24 02:58:27 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/common/models/VolunteerSearch.php:45
+Stack trace:
+#0 /var/www/html/kds/common/models/VolunteerSearch.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 45, Array)
+#1 /var/www/html/kds/frontend/controllers/VolunteerController.php(44): common\models\VolunteerSearch->search(Array)
+#2 [internal function]: frontend\controllers\VolunteerController->actionIndex()
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('volunteer/index', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 02:58:27 [192.168.0.101][-][-][info][application] $_GET = [
+    'VolunteerSearch' => [
+        'nama' => ''
+        'no_kp' => '550221015409'
+        'district_id' => ''
+        'kampung_id' => ''
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49753'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'HEAD'
+    'QUERY_STRING' => 'VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'REQUEST_URI' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified?VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/volunteer/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/volunteer/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448333907.582
+    'REQUEST_TIME' => 1448333907
+]
+2015-11-24 02:58:27 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/common/models/VolunteerSearch.php:45
+Stack trace:
+#0 /var/www/html/kds/common/models/VolunteerSearch.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 45, Array)
+#1 /var/www/html/kds/frontend/controllers/VolunteerController.php(44): common\models\VolunteerSearch->search(Array)
+#2 [internal function]: frontend\controllers\VolunteerController->actionIndex()
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('volunteer/index', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 02:58:27 [192.168.0.101][-][-][info][application] $_GET = [
+    'VolunteerSearch' => [
+        'nama' => ''
+        'no_kp' => '550221015409'
+        'district_id' => ''
+        'kampung_id' => ''
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49754'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'REQUEST_URI' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified?VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/volunteer/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/volunteer/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448333907.599
+    'REQUEST_TIME' => 1448333907
+]
+2015-11-24 03:20:38 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/common/models/VolunteerSearch.php:45
+Stack trace:
+#0 /var/www/html/kds/common/models/VolunteerSearch.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 45, Array)
+#1 /var/www/html/kds/frontend/controllers/VolunteerController.php(44): common\models\VolunteerSearch->search(Array)
+#2 [internal function]: frontend\controllers\VolunteerController->actionIndex()
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('volunteer/index', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 03:20:38 [192.168.0.101][-][-][info][application] $_GET = [
+    'VolunteerSearch' => [
+        'nama' => ''
+        'no_kp' => '550221015409'
+        'district_id' => ''
+        'kampung_id' => ''
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49938'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'HEAD'
+    'QUERY_STRING' => 'VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'REQUEST_URI' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified?VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/volunteer/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/volunteer/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448335238.866
+    'REQUEST_TIME' => 1448335238
+]
+2015-11-24 03:20:38 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/common/models/VolunteerSearch.php:45
+Stack trace:
+#0 /var/www/html/kds/common/models/VolunteerSearch.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 45, Array)
+#1 /var/www/html/kds/frontend/controllers/VolunteerController.php(44): common\models\VolunteerSearch->search(Array)
+#2 [internal function]: frontend\controllers\VolunteerController->actionIndex()
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('volunteer/index', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 03:20:38 [192.168.0.101][-][-][info][application] $_GET = [
+    'VolunteerSearch' => [
+        'nama' => ''
+        'no_kp' => '550221015409'
+        'district_id' => ''
+        'kampung_id' => ''
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49939'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'REQUEST_URI' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified?VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/volunteer/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/volunteer/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448335238.88
+    'REQUEST_TIME' => 1448335238
+]
+2015-11-24 03:49:20 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/common/models/VolunteerSearch.php:45
+Stack trace:
+#0 /var/www/html/kds/common/models/VolunteerSearch.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 45, Array)
+#1 /var/www/html/kds/frontend/controllers/VolunteerController.php(44): common\models\VolunteerSearch->search(Array)
+#2 [internal function]: frontend\controllers\VolunteerController->actionIndex()
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('volunteer/index', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 03:49:20 [192.168.0.101][-][-][info][application] $_GET = [
+    'VolunteerSearch' => [
+        'nama' => ''
+        'no_kp' => '550221015409'
+        'district_id' => ''
+        'kampung_id' => ''
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '50584'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'HEAD'
+    'QUERY_STRING' => 'VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'REQUEST_URI' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified?VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/volunteer/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/volunteer/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448336960.6
+    'REQUEST_TIME' => 1448336960
+]
+2015-11-24 03:49:20 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/common/models/VolunteerSearch.php:45
+Stack trace:
+#0 /var/www/html/kds/common/models/VolunteerSearch.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 45, Array)
+#1 /var/www/html/kds/frontend/controllers/VolunteerController.php(44): common\models\VolunteerSearch->search(Array)
+#2 [internal function]: frontend\controllers\VolunteerController->actionIndex()
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('volunteer/index', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 03:49:20 [192.168.0.101][-][-][info][application] $_GET = [
+    'VolunteerSearch' => [
+        'nama' => ''
+        'no_kp' => '550221015409'
+        'district_id' => ''
+        'kampung_id' => ''
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '50585'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'REQUEST_URI' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified?VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/volunteer/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/volunteer/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448336960.615
+    'REQUEST_TIME' => 1448336960
+]
+2015-11-24 03:50:04 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/common/models/VolunteerSearch.php:45
+Stack trace:
+#0 /var/www/html/kds/common/models/VolunteerSearch.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 45, Array)
+#1 /var/www/html/kds/frontend/controllers/VolunteerController.php(44): common\models\VolunteerSearch->search(Array)
+#2 [internal function]: frontend\controllers\VolunteerController->actionIndex()
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('volunteer/index', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 03:50:04 [192.168.0.101][-][-][info][application] $_GET = [
+    'VolunteerSearch' => [
+        'nama' => ''
+        'no_kp' => '550221015409'
+        'district_id' => ''
+        'kampung_id' => ''
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '50606'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'HEAD'
+    'QUERY_STRING' => 'VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'REQUEST_URI' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified?VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/volunteer/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/volunteer/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448337004.213
+    'REQUEST_TIME' => 1448337004
+]
+2015-11-24 03:50:04 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/common/models/VolunteerSearch.php:45
+Stack trace:
+#0 /var/www/html/kds/common/models/VolunteerSearch.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 45, Array)
+#1 /var/www/html/kds/frontend/controllers/VolunteerController.php(44): common\models\VolunteerSearch->search(Array)
+#2 [internal function]: frontend\controllers\VolunteerController->actionIndex()
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('volunteer/index', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 03:50:04 [192.168.0.101][-][-][info][application] $_GET = [
+    'VolunteerSearch' => [
+        'nama' => ''
+        'no_kp' => '550221015409'
+        'district_id' => ''
+        'kampung_id' => ''
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '50607'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'REQUEST_URI' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified?VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/volunteer/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/volunteer/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448337004.23
+    'REQUEST_TIME' => 1448337004
+]
+2015-11-24 04:12:26 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/common/models/VolunteerSearch.php:45
+Stack trace:
+#0 /var/www/html/kds/common/models/VolunteerSearch.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 45, Array)
+#1 /var/www/html/kds/frontend/controllers/VolunteerController.php(44): common\models\VolunteerSearch->search(Array)
+#2 [internal function]: frontend\controllers\VolunteerController->actionIndex()
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('volunteer/index', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 04:12:26 [192.168.0.101][-][-][info][application] $_GET = [
+    'VolunteerSearch' => [
+        'nama' => ''
+        'no_kp' => '550221015409'
+        'district_id' => ''
+        'kampung_id' => ''
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '50873'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'HEAD'
+    'QUERY_STRING' => 'VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'REQUEST_URI' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified?VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/volunteer/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/volunteer/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448338346.438
+    'REQUEST_TIME' => 1448338346
+]
+2015-11-24 04:12:26 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/common/models/VolunteerSearch.php:45
+Stack trace:
+#0 /var/www/html/kds/common/models/VolunteerSearch.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 45, Array)
+#1 /var/www/html/kds/frontend/controllers/VolunteerController.php(44): common\models\VolunteerSearch->search(Array)
+#2 [internal function]: frontend\controllers\VolunteerController->actionIndex()
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('volunteer/index', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 04:12:26 [192.168.0.101][-][-][info][application] $_GET = [
+    'VolunteerSearch' => [
+        'nama' => ''
+        'no_kp' => '550221015409'
+        'district_id' => ''
+        'kampung_id' => ''
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '50874'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'REQUEST_URI' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified?VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/volunteer/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/volunteer/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448338346.452
+    'REQUEST_TIME' => 1448338346
+]
+2015-11-24 04:33:23 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/common/models/VolunteerSearch.php:45
+Stack trace:
+#0 /var/www/html/kds/common/models/VolunteerSearch.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 45, Array)
+#1 /var/www/html/kds/frontend/controllers/VolunteerController.php(44): common\models\VolunteerSearch->search(Array)
+#2 [internal function]: frontend\controllers\VolunteerController->actionIndex()
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('volunteer/index', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 04:33:23 [192.168.0.101][-][-][info][application] $_GET = [
+    'VolunteerSearch' => [
+        'nama' => ''
+        'no_kp' => '550221015409'
+        'district_id' => ''
+        'kampung_id' => ''
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '50967'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'HEAD'
+    'QUERY_STRING' => 'VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'REQUEST_URI' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified?VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/volunteer/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/volunteer/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448339603.716
+    'REQUEST_TIME' => 1448339603
+]
+2015-11-24 04:33:23 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/common/models/VolunteerSearch.php:45
+Stack trace:
+#0 /var/www/html/kds/common/models/VolunteerSearch.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 45, Array)
+#1 /var/www/html/kds/frontend/controllers/VolunteerController.php(44): common\models\VolunteerSearch->search(Array)
+#2 [internal function]: frontend\controllers\VolunteerController->actionIndex()
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('volunteer/index', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 04:33:23 [192.168.0.101][-][-][info][application] $_GET = [
+    'VolunteerSearch' => [
+        'nama' => ''
+        'no_kp' => '550221015409'
+        'district_id' => ''
+        'kampung_id' => ''
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '50968'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'REQUEST_URI' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified?VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/volunteer/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/volunteer/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448339603.753
+    'REQUEST_TIME' => 1448339603
+]
+2015-11-24 04:40:00 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/common/models/VolunteerSearch.php:45
+Stack trace:
+#0 /var/www/html/kds/common/models/VolunteerSearch.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 45, Array)
+#1 /var/www/html/kds/frontend/controllers/VolunteerController.php(44): common\models\VolunteerSearch->search(Array)
+#2 [internal function]: frontend\controllers\VolunteerController->actionIndex()
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('volunteer/index', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 04:40:00 [192.168.0.101][-][-][info][application] $_GET = [
+    'VolunteerSearch' => [
+        'nama' => ''
+        'no_kp' => '550221015409'
+        'district_id' => ''
+        'kampung_id' => ''
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '51140'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'HEAD'
+    'QUERY_STRING' => 'VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'REQUEST_URI' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified?VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/volunteer/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/volunteer/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448340000.045
+    'REQUEST_TIME' => 1448340000
+]
+2015-11-24 04:40:00 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/common/models/VolunteerSearch.php:45
+Stack trace:
+#0 /var/www/html/kds/common/models/VolunteerSearch.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 45, Array)
+#1 /var/www/html/kds/frontend/controllers/VolunteerController.php(44): common\models\VolunteerSearch->search(Array)
+#2 [internal function]: frontend\controllers\VolunteerController->actionIndex()
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('volunteer/index', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 04:40:00 [192.168.0.101][-][-][info][application] $_GET = [
+    'VolunteerSearch' => [
+        'nama' => ''
+        'no_kp' => '550221015409'
+        'district_id' => ''
+        'kampung_id' => ''
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '51141'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'REQUEST_URI' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified?VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/volunteer/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/volunteer/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448340000.062
+    'REQUEST_TIME' => 1448340000
+]
+2015-11-24 04:43:22 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/common/models/VolunteerSearch.php:45
+Stack trace:
+#0 /var/www/html/kds/common/models/VolunteerSearch.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 45, Array)
+#1 /var/www/html/kds/frontend/controllers/VolunteerController.php(44): common\models\VolunteerSearch->search(Array)
+#2 [internal function]: frontend\controllers\VolunteerController->actionIndex()
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('volunteer/index', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 04:43:22 [192.168.0.101][-][-][info][application] $_GET = [
+    'VolunteerSearch' => [
+        'nama' => ''
+        'no_kp' => '550221015409'
+        'district_id' => ''
+        'kampung_id' => ''
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '51173'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'HEAD'
+    'QUERY_STRING' => 'VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'REQUEST_URI' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified?VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/volunteer/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/volunteer/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448340202.163
+    'REQUEST_TIME' => 1448340202
+]
+2015-11-24 04:43:22 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/common/models/VolunteerSearch.php:45
+Stack trace:
+#0 /var/www/html/kds/common/models/VolunteerSearch.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 45, Array)
+#1 /var/www/html/kds/frontend/controllers/VolunteerController.php(44): common\models\VolunteerSearch->search(Array)
+#2 [internal function]: frontend\controllers\VolunteerController->actionIndex()
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('volunteer/index', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 04:43:22 [192.168.0.101][-][-][info][application] $_GET = [
+    'VolunteerSearch' => [
+        'nama' => ''
+        'no_kp' => '550221015409'
+        'district_id' => ''
+        'kampung_id' => ''
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '51174'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'REQUEST_URI' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified?VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/volunteer/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/volunteer/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448340202.185
+    'REQUEST_TIME' => 1448340202
+]
+2015-11-24 04:46:22 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/common/models/VolunteerSearch.php:45
+Stack trace:
+#0 /var/www/html/kds/common/models/VolunteerSearch.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 45, Array)
+#1 /var/www/html/kds/frontend/controllers/VolunteerController.php(44): common\models\VolunteerSearch->search(Array)
+#2 [internal function]: frontend\controllers\VolunteerController->actionIndex()
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('volunteer/index', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 04:46:22 [192.168.0.101][-][-][info][application] $_GET = [
+    'VolunteerSearch' => [
+        'nama' => ''
+        'no_kp' => '550221015409'
+        'district_id' => ''
+        'kampung_id' => ''
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '51205'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'HEAD'
+    'QUERY_STRING' => 'VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'REQUEST_URI' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified?VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/volunteer/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/volunteer/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448340382.531
+    'REQUEST_TIME' => 1448340382
+]
+2015-11-24 04:46:22 [192.168.0.101][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/common/models/VolunteerSearch.php:45
+Stack trace:
+#0 /var/www/html/kds/common/models/VolunteerSearch.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 45, Array)
+#1 /var/www/html/kds/frontend/controllers/VolunteerController.php(44): common\models\VolunteerSearch->search(Array)
+#2 [internal function]: frontend\controllers\VolunteerController->actionIndex()
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('volunteer/index', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-11-24 04:46:22 [192.168.0.101][-][-][info][application] $_GET = [
+    'VolunteerSearch' => [
+        'nama' => ''
+        'no_kp' => '550221015409'
+        'district_id' => ''
+        'kampung_id' => ''
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '192.168.0.100'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0 (Chrome)'
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.100 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => '192.168.0.100'
+    'SERVER_ADDR' => '192.168.0.100'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.0.101'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '51206'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'REQUEST_URI' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified?VolunteerSearch%5Bnama%5D=&VolunteerSearch%5Bno_kp%5D=550221015409&VolunteerSearch%5Bdistrict_id%5D=&VolunteerSearch%5Bkampung_id%5D='
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/volunteer/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/var/www/html/volunteer/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/volunteer/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1448340382.574
+    'REQUEST_TIME' => 1448340382
+]
