@@ -7,8 +7,22 @@ use miloschuman\highcharts\Highcharts;
 
 ?>
 
+<br><br>
+<?php foreach ($model2 as $key => $value) {
 
-<?php echo Highcharts::widget([
+                           // store data in array
+                          $sukarelawan[] = (int)$value['sukarelawan']; // x axis must integer value
+                          $state[] = $value['state'];
+                         
+                        }
+                        // store array data to temp variable
+                        $xAxis = $state; 
+                        $yAxisA = $sukarelawan;
+                  
+
+
+
+echo Highcharts::widget([
    'options' => [
          'chart' => [
           'type' => 'column'
@@ -22,7 +36,7 @@ use miloschuman\highcharts\Highcharts;
 
       ],
       'xAxis' => [
-         'categories' => ['Pahang','Selangor','Perlis','Perak','Kedah','Terengganu','Johor'],
+         'categories' => $xAxis,
                   'labels' => [
               'style' => [
                 'fontSize' => '15px',
@@ -58,11 +72,9 @@ use miloschuman\highcharts\Highcharts;
             ],
          ]
       ],
-      'series' => [
-         [
-         	'name' => 'Sukarelawan', 
-          'data' => [1121, 32, 1117,1003,86,1200,238]
-         ],
+       'series' => [
+        
+        ['name' => 'sukarelawan', 'data' => $yAxisA]
 
       ]
    ]
