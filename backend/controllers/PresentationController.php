@@ -7,7 +7,7 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\data\ActiveDataProvider;
 use yii\filters\VerbFilter;
-
+use common\models\LookupState;
 /**
  * VolunteerController implements the CRUD actions for Volunteer model.
  */
@@ -177,8 +177,20 @@ class PresentationController extends Controller
     // SUKARELAWAN = P6
     public function actionP6_1()
     {
+       
         $this->layout = 'presentation';
-        return $this->render('sukarelawan/p6_1');
+        $sukarelawan = "SELECT SUM(volunteer.state_id in (12,13,14,15,16,18,22) ) AS sukarelawan, lookup_state.state,`volunteer`.state_id, lookup_state.kawasan_perlaksanaan FROM `volunteer`RIGHT JOIN lookup_state ON `volunteer`.state_id = lookup_state.state_id WHERE kawasan_perlaksanaan = 'Ya' GROUP BY `volunteer`.state_id ORDER BY lookup_state.state_id ASC;";
+        $connection=Yii::$app->db;
+        $command=$connection->createCommand($sukarelawan);
+        $model2 = $command->queryAll();
+
+        $model_state = LookupState::find()
+            ->where(['kawasan_perlaksanaan'=>'Ya']) 
+            ->all();
+
+        return $this->render('sukarelawan/p6_1',['model2'=>$model2,'model_state'=>$model_state]); 
+
+
     }
         public function actionP6_2()
     {
@@ -205,8 +217,19 @@ class PresentationController extends Controller
     }
     public function actionP7_1_bar()
     {
-        $this->layout = 'presentation';
-        return $this->render('isu/p7_1_bar');
+
+         $this->layout = 'presentation';
+         
+         $isu = "SELECT lookup_state.state,`issue_conduit`.state_id, lookup_state.kawasan_perlaksanaan, SUM(issue_conduit.state_id in (12,13,14,15,16,18,22) ) AS isu FROM `issue_conduit` RIGHT JOIN lookup_state ON `issue_conduit`.state_id = lookup_state.state_id WHERE kawasan_perlaksanaan = 'Ya' GROUP BY `issue_conduit`.state_id ORDER BY lookup_state.state_id ASC;";
+        $connection=Yii::$app->db;
+        $command=$connection->createCommand($isu);
+        $model3 = $command->queryAll();
+
+        $model_state = LookupState::find()
+            ->where(['kawasan_perlaksanaan'=>'Ya']) 
+            ->all();
+
+        return $this->render('isu/p7_1_bar',['model3'=>$model3,'model_state'=>$model_state]);
     }
 
 

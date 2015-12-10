@@ -8,13 +8,28 @@ use miloschuman\highcharts\Highcharts;
 ?>
 
 
-<?php echo Highcharts::widget([
+<br><br>
+<?php foreach ($model3 as $key => $value) {
+
+                           // store data in array
+                          $isu[] = (int)$value['isu']; // x axis must integer value
+                          $state[] = $value['state'];
+                         
+                        }
+                        // store array data to temp variable
+                        $xAxis = $state; 
+                        $yAxisA = $isu;
+                  
+
+
+
+echo Highcharts::widget([
    'options' => [
          'chart' => [
           'type' => 'column'
           ],
       'title' => [
-      'text' => 'Graf Bar Jumlah keseluruhan Isu Bagi Setiap Negeri',
+      'text' => 'Graf Bar Jumlah Sukarelawan Bagi Setiap Negeri',
         'style' => [
           'fontSize' => '25px',
           'fontWeight' => 'normal',
@@ -22,7 +37,7 @@ use miloschuman\highcharts\Highcharts;
 
       ],
       'xAxis' => [
-         'categories' => ['Pahang','Perlis','Perak','Kedah','Terengganu','Johor'],
+         'categories' => $xAxis,
                   'labels' => [
               'style' => [
                 'fontSize' => '15px',
@@ -35,15 +50,20 @@ use miloschuman\highcharts\Highcharts;
   
             'dataLabels' => [
               'enabled' => true,
+              'rotation' => -90,
+              'y' => -30,
               'style' => [
                 'fontSize' => '15px',
                 'fontWeight' => 'normal',
               ],
-              ]
+              'align' => 'center',]
 
 
             ]
         ],
+      'credits' => [
+        'enabled' => false,
+      ],
       'yAxis' => [
          'title' => [
          'text' => 'Jumlah',
@@ -53,11 +73,9 @@ use miloschuman\highcharts\Highcharts;
             ],
          ]
       ],
-      'series' => [
-         [
-         	'name' => 'Isu', 
-          'data' => [925, 740, 220,290,234,5]
-         ],
+       'series' => [
+        
+        ['name' => 'isu', 'data' => $yAxisA]
 
       ]
    ]
