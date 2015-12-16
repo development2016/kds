@@ -6,6 +6,7 @@ return [
             //'dsn' => 'mysql:host=localhost;dbname=kdsv5',
             //'username' => 'root',
             //'password' => '',
+            // develop by m.fuad
             'dsn' => 'mysql:host=192.168.0.20;dbname=kdsv5',
             'username' => 'pokok',
             'password' => 'pokok',
