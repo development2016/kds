@@ -13049,3 +13049,82 @@ $_SERVER = [
     'argv' => []
     'argc' => 0
 ]
+2015-12-17 14:46:37 [::1][1][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: common\models\People::real_name' in /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/BaseActiveRecord.php(246): yii\base\Component->__get('real_name')
+#1 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(202): yii\db\BaseActiveRecord->__get('real_name')
+#2 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/grid/DataColumn.php(193): yii\helpers\BaseArrayHelper::getValue(Object(common\models\People), 'real_name')
+#3 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/grid/DataColumn.php(204): yii\grid\DataColumn->getDataCellValue(Object(common\models\People), 155917, 0)
+#4 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/grid/Column.php(108): yii\grid\DataColumn->renderDataCellContent(Object(common\models\People), 155917, 0)
+#5 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/grid/GridView.php(498): yii\grid\Column->renderDataCell(Object(common\models\People), 155917, 0)
+#6 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/grid/GridView.php(467): yii\grid\GridView->renderTableRow(Object(common\models\People), 155917, 0)
+#7 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/grid/GridView.php(338): yii\grid\GridView->renderTableBody()
+#8 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/widgets/BaseListView.php(151): yii\grid\GridView->renderItems()
+#9 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/grid/GridView.php(307): yii\widgets\BaseListView->renderSection('{items}')
+#10 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/widgets/BaseListView.php(126): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/widgets/BaseListView.php(129): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/grid/GridView.php(282): yii\widgets\BaseListView->run()
+#14 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Widget.php(97): yii\grid\GridView->run()
+#15 /Applications/MAMP/htdocs/kds/frontend/views/people/profil.php(107): yii\base\Widget::widget(Array)
+#16 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/View.php(325): require('/Applications/M...')
+#17 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#18 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\PeopleController))
+#19 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('profil', Array, Object(frontend\controllers\PeopleController))
+#20 /Applications/MAMP/htdocs/kds/frontend/controllers/PeopleController.php(56): yii\base\Controller->render('profil', Array)
+#21 [internal function]: frontend\controllers\PeopleController->actionProfil()
+#22 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#23 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#24 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('profil', Array)
+#25 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('people/profil', Array)
+#26 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#28 {main}
+2015-12-17 14:46:36 [::1][1][-][info][application] $_COOKIE = [
+    'SQLiteManager_currentLangue' => '2'
+    '_csrf' => '396af59671cc1b135cec9e79d58e12e8857f7bee50a30e10dc697ba5a19c90b9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rFf7ivkoDTEuM6RH39eDVp0NbHTxyDTT\";}'
+    'PHPSESSID' => 'cb9af5ef0ede9924c7c1b93b8124087e'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kdswm/frontend/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'SQLiteManager_currentLangue=2; _csrf=396af59671cc1b135cec9e79d58e12e8857f7bee50a30e10dc697ba5a19c90b9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rFf7ivkoDTEuM6RH39eDVp0NbHTxyDTT%22%3B%7D; PHPSESSID=cb9af5ef0ede9924c7c1b93b8124087e; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49978'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/people/profil.cypressdiversified'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/people/profil.cypressdiversified'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/people/profil.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/people/profil.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1450334796.81
+    'REQUEST_TIME' => 1450334796
+    'argv' => []
+    'argc' => 0
+]

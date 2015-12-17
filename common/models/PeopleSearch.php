@@ -67,15 +67,15 @@ class PeopleSearch extends People
         else if ($role_id == 1) {
             $query = People::find()->where(['state_id'=>$state_id,'district_id'=>$district_id,'kampung_id'=>$kampung_id]);
         } else {
-            //$query = People::find();
-            $sql_test = $connection->createCommand("SELECT p.no_kp,p.real_name
+            $query = People::find();
+           /* $sql_test = $connection->createCommand("SELECT p.no_kp,p.real_name
                     FROM (SELECT ic_no AS no_kp, name AS real_name
-                          FROM people
+                          FROM people WHERE state_id = 12
                           UNION 
                     SELECT 15to28.ICNO,15to28.NAME
                           FROM 15to28 ) AS p
                      ");
-            $query = $sql_test->queryAll();
+            $query = $sql_test->queryAll(); */
         }
 
 
@@ -92,7 +92,7 @@ class PeopleSearch extends People
             return $dataProvider;
         }
 
-       /* $query->andFilterWhere([
+       $query->andFilterWhere([
             'people_id' => $this->people_id,
             'race' => $this->race,
             'religion' => $this->religion,
@@ -140,7 +140,7 @@ class PeopleSearch extends People
             ->andFilterWhere(['like', 'mukim', $this->mukim])
             ->andFilterWhere(['like', 'tarikh_soal_selidik', $this->tarikh_soal_selidik])
             ->andFilterWhere(['like', 'nota', $this->nota])
-            ->andFilterWhere(['like', 'ruang_cadangan', $this->ruang_cadangan]); */
+            ->andFilterWhere(['like', 'ruang_cadangan', $this->ruang_cadangan]); 
 
         return $dataProvider;
     }

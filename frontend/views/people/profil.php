@@ -76,13 +76,13 @@ $this->title = 'Senarai Maklumat Profil';
                                 ],
                                 'columns' => [
                                     ['class' => 'yii\grid\SerialColumn'],
-                                    'real_name',
-                                    'no_kp',
-                                    //'state.state',
-                                    //'district.district',
-                                    //'mukims.mukim',
-                                    //'kampung.kampung',
-                                    /*[
+                                    'name',
+                                    'ic_no',
+                                    'state.state',
+                                    'district.district',
+                                    'mukims.mukim',
+                                    'kampung.kampung',
+                                    [
                                         'header' => 'Tindakan',
                                         'class' => 'yii\grid\ActionColumn',
                                         'template'=>'{lihat}   {kemaskini}   {buang}',
@@ -102,7 +102,7 @@ $this->title = 'Senarai Maklumat Profil';
                                                 }
    
                                             }
-                                        ],*/
+                                        ],
                                 ],
                             ]); ?>
 
