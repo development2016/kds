@@ -48,6 +48,8 @@ class PeopleController extends Controller
         $searchModel = new \common\models\PeopleSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
+       // print_r($dataProvider);
+
         return $this->render('profil', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,

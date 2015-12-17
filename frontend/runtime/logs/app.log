@@ -12705,3 +12705,347 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1448340382.574
     'REQUEST_TIME' => 1448340382
 ]
+2015-12-16 11:42:24 [::1][1][46f8417b166b798e4808f55c523acf09][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function formName() on null' in /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/helpers/BaseHtml.php:1975
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-12-16 11:42:23 [::1][1][46f8417b166b798e4808f55c523acf09][info][application] $_GET = [
+    'state_id_get' => '13'
+]
+
+$_COOKIE = [
+    '_csrf' => '616353f15d6e016dacfacf774fd75692dca575c240f83c17b5932e59f7006e85a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DZQrLqRVLSXLFqgcUUt4E4eyGMzFyTLG\";}'
+    'PHPSESSID' => '46f8417b166b798e4808f55c523acf09'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php/kawasan/index.cypressdiversified'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=616353f15d6e016dacfacf774fd75692dca575c240f83c17b5932e59f7006e85a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22DZQrLqRVLSXLFqgcUUt4E4eyGMzFyTLG%22%3B%7D; PHPSESSID=46f8417b166b798e4808f55c523acf09; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '55064'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'state_id_get=13'
+    'REQUEST_URI' => '/kds/frontend/web/index.php/kawasan/state.cypressdiversified?state_id_get=13'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/kawasan/state.cypressdiversified'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/kawasan/state.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/kawasan/state.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1450237343.81
+    'REQUEST_TIME' => 1450237343
+    'argv' => [
+        0 => 'state_id_get=13'
+    ]
+    'argc' => 1
+]
+2015-12-16 11:46:49 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ';', expecting ']'' in /Applications/MAMP/htdocs/kds/frontend/controllers/KawasanController.php:51
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-12-16 11:46:49 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '616353f15d6e016dacfacf774fd75692dca575c240f83c17b5932e59f7006e85a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DZQrLqRVLSXLFqgcUUt4E4eyGMzFyTLG\";}'
+    'PHPSESSID' => '46f8417b166b798e4808f55c523acf09'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php/kawasan/state.cypressdiversified?state_id_get=22'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=616353f15d6e016dacfacf774fd75692dca575c240f83c17b5932e59f7006e85a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22DZQrLqRVLSXLFqgcUUt4E4eyGMzFyTLG%22%3B%7D; PHPSESSID=46f8417b166b798e4808f55c523acf09; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '55208'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/kawasan/index.cypressdiversified'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/kawasan/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/kawasan/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/kawasan/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1450237608.95
+    'REQUEST_TIME' => 1450237608
+    'argv' => []
+    'argc' => 0
+]
+2015-12-16 11:48:32 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ';', expecting ']'' in /Applications/MAMP/htdocs/kds/frontend/controllers/KawasanController.php:51
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-12-16 11:48:32 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '616353f15d6e016dacfacf774fd75692dca575c240f83c17b5932e59f7006e85a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DZQrLqRVLSXLFqgcUUt4E4eyGMzFyTLG\";}'
+    'PHPSESSID' => '46f8417b166b798e4808f55c523acf09'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php/kawasan/state.cypressdiversified?state_id_get=22'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=616353f15d6e016dacfacf774fd75692dca575c240f83c17b5932e59f7006e85a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22DZQrLqRVLSXLFqgcUUt4E4eyGMzFyTLG%22%3B%7D; PHPSESSID=46f8417b166b798e4808f55c523acf09; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '55280'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/kawasan/index.cypressdiversified'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/kawasan/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/kawasan/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/kawasan/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1450237712.81
+    'REQUEST_TIME' => 1450237712
+    'argv' => []
+    'argc' => 0
+]
+2015-12-16 12:46:00 [::1][1][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Request.php:187
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php(75): yii\web\Request->resolve()
+#1 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+2015-12-16 12:46:00 [::1][1][-][info][application] $_COOKIE = [
+    '_csrf' => '227a880180c9d5fceb52e3c325e8fe751d01e993554c3830cd3b46418bf90fb0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8lRKuvGJtllmd1koAUyo_Osnjh8DCi0J\";}'
+    'PHPSESSID' => '383f0ec586b3b2a45cc047bf7a523299'
+    '_identity' => '652cd789e822a4f7e30011b7fa192b7b5ea942bb90a30a378d826e307ac254c7a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/backend/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=227a880180c9d5fceb52e3c325e8fe751d01e993554c3830cd3b46418bf90fb0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228lRKuvGJtllmd1koAUyo_Osnjh8DCi0J%22%3B%7D; PHPSESSID=383f0ec586b3b2a45cc047bf7a523299; _identity=652cd789e822a4f7e30011b7fa192b7b5ea942bb90a30a378d826e307ac254c7a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '57982'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/site/index'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/site/index'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/site/index'
+    'PHP_SELF' => '/kds/frontend/web/index.php/site/index'
+    'REQUEST_TIME_FLOAT' => 1450241160.47
+    'REQUEST_TIME' => 1450241160
+    'argv' => []
+    'argc' => 0
+]
+2015-12-17 14:30:19 [::1][1][cb9af5ef0ede9924c7c1b93b8124087e][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function andFilterWhere() on array' in /Applications/MAMP/htdocs/kds/common/models/PeopleSearch.php:95
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-12-17 14:28:11 [::1][1][cb9af5ef0ede9924c7c1b93b8124087e][info][application] $_COOKIE = [
+    'SQLiteManager_currentLangue' => '2'
+    '_csrf' => '396af59671cc1b135cec9e79d58e12e8857f7bee50a30e10dc697ba5a19c90b9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rFf7ivkoDTEuM6RH39eDVp0NbHTxyDTT\";}'
+    'PHPSESSID' => 'cb9af5ef0ede9924c7c1b93b8124087e'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kdswm/frontend/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'SQLiteManager_currentLangue=2; _csrf=396af59671cc1b135cec9e79d58e12e8857f7bee50a30e10dc697ba5a19c90b9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rFf7ivkoDTEuM6RH39eDVp0NbHTxyDTT%22%3B%7D; PHPSESSID=cb9af5ef0ede9924c7c1b93b8124087e; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49609'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/people/profil.cypressdiversified'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/people/profil.cypressdiversified'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/people/profil.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/people/profil.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1450333691.88
+    'REQUEST_TIME' => 1450333691
+    'argv' => []
+    'argc' => 0
+]
+2015-12-17 14:33:09 [::1][1][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2013 Lost connection to MySQL server during query' in /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Command.php:825
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Command.php(825): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /Applications/MAMP/htdocs/kds/common/models/PeopleSearch.php(78): yii\db\Command->queryAll()
+#3 /Applications/MAMP/htdocs/kds/frontend/controllers/PeopleController.php(49): common\models\PeopleSearch->search(Array)
+#4 [internal function]: frontend\controllers\PeopleController->actionProfil()
+#5 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#6 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('profil', Array)
+#8 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('people/profil', Array)
+#9 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000]: General error: 2013 Lost connection to MySQL server during query
+The SQL being executed was: SELECT p.no_kp,p.real_name
+                    FROM (SELECT ic_no AS no_kp, name AS real_name
+                          FROM people
+                          UNION 
+                    SELECT 15to28.ICNO,15to28.NAME
+                          FROM 15to28 ) AS p
+                     ' in /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Schema.php:595
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Command.php(840): yii\db\Schema->convertException(Object(PDOException), 'SELECT p.no_kp,...')
+#1 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /Applications/MAMP/htdocs/kds/common/models/PeopleSearch.php(78): yii\db\Command->queryAll()
+#3 /Applications/MAMP/htdocs/kds/frontend/controllers/PeopleController.php(49): common\models\PeopleSearch->search(Array)
+#4 [internal function]: frontend\controllers\PeopleController->actionProfil()
+#5 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#6 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('profil', Array)
+#8 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('people/profil', Array)
+#9 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 2013
+    [2] => Lost connection to MySQL server during query
+)
+
+2015-12-17 14:30:51 [::1][1][-][info][application] $_COOKIE = [
+    'SQLiteManager_currentLangue' => '2'
+    '_csrf' => '396af59671cc1b135cec9e79d58e12e8857f7bee50a30e10dc697ba5a19c90b9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rFf7ivkoDTEuM6RH39eDVp0NbHTxyDTT\";}'
+    'PHPSESSID' => 'cb9af5ef0ede9924c7c1b93b8124087e'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kdswm/frontend/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'SQLiteManager_currentLangue=2; _csrf=396af59671cc1b135cec9e79d58e12e8857f7bee50a30e10dc697ba5a19c90b9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rFf7ivkoDTEuM6RH39eDVp0NbHTxyDTT%22%3B%7D; PHPSESSID=cb9af5ef0ede9924c7c1b93b8124087e; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49619'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/people/profil.cypressdiversified'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/people/profil.cypressdiversified'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/people/profil.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/people/profil.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1450333851.46
+    'REQUEST_TIME' => 1450333851
+    'argv' => []
+    'argc' => 0
+]
