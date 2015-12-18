@@ -134,27 +134,29 @@ class KawasanController extends Controller
 
         } else {
 
-        $model = LookupState::find()->where(['state_id'=>$state_id_get])->one();
-        $count_district = LookupDistrict::find()->where(['state_id' => $state_id_get])->count();
-        $count_sub_base = LookupSubBase::find()->where(['state_id' => $state_id_get])->count();
-        $count_cluster = LookupCluster::find()->where(['state_id' => $state_id_get])->count();
-        $count_kampung = LookupKampung::find()->where(['state_id' => $state_id_get])->count();
+            $model = LookupState::find()->where(['state_id'=>$state_id_get])->one();
+            $count_district = LookupDistrict::find()->where(['state_id' => $state_id_get])->count();
+            $count_sub_base = LookupSubBase::find()->where(['state_id' => $state_id_get])->count();
+            $count_cluster = LookupCluster::find()->where(['state_id' => $state_id_get])->count();
+            $count_kampung = LookupKampung::find()->where(['state_id' => $state_id_get])->count();
 
-        $count_profil = People::find()->where(['state_id' => $state_id_get])->count();
-        $count_sukarelawan = Volunteer::find()->where(['state_id' => $state_id_get])->count();
-        $count_microworker = User::find()->where(['state_area_id' => $state_id_get])->count();
+            //$count_profil = People::find()->where(['state_id' => $state_id_get])->count();
+            $count_profil = People::find()->where('state_id = :state_id AND flag != :flag',['state_id' => $state_id_get,'flag'=>0])->count();
+            $count_profil_verified = People::find()->where(['state_id' => $state_id_get,'data_status'=>'Sah'])->count();
+            $count_sukarelawan = Volunteer::find()->where(['state_id' => $state_id_get])->count();
+            $count_microworker = User::find()->where(['state_area_id' => $state_id_get])->count();
 
-        $model_count = CountState::find()->where(['state_id'=>$state_id_get])->one();
+            $model_count = CountState::find()->where(['state_id'=>$state_id_get])->one();
 
-        $issue = $connection->createCommand('SELECT lookup_kategori_isu.kategori_isu,COUNT(issue_conduit.issue_id) AS isu FROM issue_conduit 
-        RIGHT JOIN lookup_kategori_isu ON issue_conduit.issue_category = lookup_kategori_isu.kategori_id 
-        WHERE issue_conduit.state_id = '.$state_id_get.' GROUP BY issue_conduit.issue_category');
-        $countIssue = $issue->queryAll();
+            $issue = $connection->createCommand('SELECT lookup_kategori_isu.kategori_isu,COUNT(issue_conduit.issue_id) AS isu FROM issue_conduit 
+            RIGHT JOIN lookup_kategori_isu ON issue_conduit.issue_category = lookup_kategori_isu.kategori_id 
+            WHERE issue_conduit.state_id = '.$state_id_get.' GROUP BY issue_conduit.issue_category');
+            $countIssue = $issue->queryAll();
 
-        $demographic = $connection->createCommand('SELECT info_demographic.kemudahan_id,SUM(info_demographic.bilangan) AS jumlah FROM demographic 
-        RIGHT JOIN info_demographic ON demographic.demographic_id = info_demographic.demographic_id 
-        WHERE demographic.state_id = '.$state_id_get.' GROUP BY info_demographic.kemudahan_id');
-        $countDemographic = $demographic->queryAll();
+            $demographic = $connection->createCommand('SELECT info_demographic.kemudahan_id,SUM(info_demographic.bilangan) AS jumlah FROM demographic 
+            RIGHT JOIN info_demographic ON demographic.demographic_id = info_demographic.demographic_id 
+            WHERE demographic.state_id = '.$state_id_get.' GROUP BY info_demographic.kemudahan_id');
+            $countDemographic = $demographic->queryAll();
 
 
         }
@@ -210,6 +212,7 @@ class KawasanController extends Controller
                         'model_count' => $model_count,
                         'countIssue' => $countIssue,
                         'countDemographic' => $countDemographic,
+                        'count_profil_verified' => $count_profil_verified,
                     ]);
                 }
 
