@@ -67,7 +67,8 @@ class PeopleSearch extends People
         else if ($role_id == 1) {
             $query = People::find()->where(['state_id'=>$state_id,'district_id'=>$district_id,'kampung_id'=>$kampung_id]);
         } else {
-            $query = People::find();
+            //$query = People::find();
+            $query = People::find()->where('flag != :flag',['flag'=>0]);
            /* $sql_test = $connection->createCommand("SELECT p.no_kp,p.real_name
                     FROM (SELECT ic_no AS no_kp, name AS real_name
                           FROM people WHERE state_id = 12
