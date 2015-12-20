@@ -47,7 +47,7 @@ class KawasanController extends Controller
         }
          else {
             $dataProvider = new ActiveDataProvider([
-                'query' => LookupState::find()->where(['kawasan_perlaksanaan'=>'Ya']),
+                'query' => LookupState::find()->where('state_id != :state_id AND kawasan_perlaksanaan = :kawasan_perlaksanaan',['state_id'=>13,'kawasan_perlaksanaan'=>'Ya'])
             ]);
         }
 

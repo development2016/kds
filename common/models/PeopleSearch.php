@@ -59,13 +59,13 @@ class PeopleSearch extends People
     
         if ($role_id == 4) {
 
-            $query = People::find()->where(['state_id'=>$state_id]);
+            $query = People::find()->where('flag != :flag AND state_id = :state_id',['flag'=>0,'state_id'=>$state_id]);
         }
         else if ($role_id == 3) {
-            $query = People::find()->where(['state_id'=>$state_id,'district_id'=>$district_id]);
+            $query = People::find()->where('flag != :flag AND state_id = :state_id AND district_id = :district_id',['flag'=>0,'state_id'=>$state_id,'district_id'=>$district_id]);
         }
         else if ($role_id == 1) {
-            $query = People::find()->where(['state_id'=>$state_id,'district_id'=>$district_id,'kampung_id'=>$kampung_id]);
+            $query = People::find()->where('flag != :flag AND state_id = :state_id AND district_id = :district_id AND kampung_id = :kampung_id',['flag'=>0,'state_id'=>$state_id,'district_id'=>$district_id,'kampung_id'=>$kampung_id]);
         } else {
             //$query = People::find();
             $query = People::find()->where('flag != :flag',['flag'=>0]);
@@ -82,7 +82,7 @@ class PeopleSearch extends People
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
-            'sort'=> ['defaultOrder' => ['people_id' => 'DESC']]
+            'sort'=> ['defaultOrder' => ['people_id' => 'ASC']]
         ]);
 
         $this->load($params);
