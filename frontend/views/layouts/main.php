@@ -411,7 +411,7 @@ $count = $connection->createCommand('SELECT * FROM count_map');
 $countState = $count->queryAll();
 
 
-$total = $connection->createCommand('SELECT COUNT(people_id) AS total_data FROM people WHERE flag != 0');
+$total = $connection->createCommand('SELECT COUNT(people_id) AS total_data FROM people ');
 $countTotal = $total->queryAll();
 
 $total = 0;

@@ -129,7 +129,7 @@ class People extends \yii\db\ActiveRecord
             'sub_base_id' => 'Sub Base',
             'cluster_id' => 'Cluster',
             'kampung_id' => 'Kampung',
-                        'mukim_id' => 'Mukim',
+            'mukim_id' => 'Mukim',
             'birth_place' => 'Tempat Lahir',
             'religion' => 'Agama',
             'citizen' => 'Warganegara',

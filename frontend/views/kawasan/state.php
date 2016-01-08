@@ -160,7 +160,7 @@ $this->title = 'Komuniti Development System';
                                                         <div class="form-group">
                                                             <label class="control-label col-md-9">Jumlah Profil Komuniti : </label>
                                                             <div class="col-md-2">
-                                                                <span class="view"><b><?= $count_profil ?></b></span>
+                                                                <span class="view"><b><?= $count_profil + $count_profil_verified ?></b></span>
                                                             </div>
                                                         </div> 
                                                     </div>

@@ -86,7 +86,7 @@ class PeopleSearch extends People
             ->andFilterWhere(['like', 'sub_base_id', $this->sub_base_id])
             ->andFilterWhere(['like', 'cluster_id', $this->cluster_id])
             ->andFilterWhere(['like', 'kampung_id', $this->kampung_id])
-                        ->andFilterWhere(['like', 'mukim_id', $this->mukim_id])
+            ->andFilterWhere(['like', 'mukim_id', $this->mukim_id])
             ->andFilterWhere(['like', 'birth_place', $this->birth_place])
             ->andFilterWhere(['like', 'citizen', $this->citizen])
             ->andFilterWhere(['like', 'profession_status', $this->profession_status])

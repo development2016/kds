@@ -48,19 +48,19 @@ class RequestController extends Controller
                     
                 } else if ($menu_id == 2) {
 
-                    return $this->redirect(['/volunteer/view', 'id' => $model->request_id]);
+                    return $this->redirect(['/volunteer/view', 'id' => base64_encode($model->request_id)]);
 
                 } else if ($menu_id == 3) {
 
-                    return $this->redirect(['/issue-conduit/view', 'id' => $model->request_id]);
+                    return $this->redirect(['/issue-conduit/view', 'id' => base64_encode($model->request_id)]);
 
                 } else if ($menu_id == 5) {
 
-                    return $this->redirect(['/pfn/view', 'id' => $model->request_id]);
+                    return $this->redirect(['/pfn/view', 'id' => base64_encode($model->request_id)]);
 
                 } else if ($menu_id == 6) {
 
-                    return $this->redirect(['/demographic/view', 'id' => $model->request_id]);
+                    return $this->redirect(['/demographic/view', 'id' => base64_encode($model->request_id)]);
                 }
                 
             }

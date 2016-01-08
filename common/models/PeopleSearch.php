@@ -42,7 +42,7 @@ class PeopleSearch extends People
     public function search($params)
     {
 
-        $menu_id = 4; // for menu sukarelawan
+        $menu_id = 4; // for menu profil
         $role_id = Yii::$app->user->identity->role;
         $user_id =  Yii::$app->user->identity->id;
 
@@ -58,17 +58,20 @@ class PeopleSearch extends People
         }
     
         if ($role_id == 4) {
-
-            $query = People::find()->where('flag != :flag AND state_id = :state_id',['flag'=>0,'state_id'=>$state_id]);
+            $query = People::find()->where(['state_id'=>$state_id]);
+            //$query = People::find()->where('flag != :flag AND state_id = :state_id',['flag'=>0,'state_id'=>$state_id]);
         }
         else if ($role_id == 3) {
-            $query = People::find()->where('flag != :flag AND state_id = :state_id AND district_id = :district_id',['flag'=>0,'state_id'=>$state_id,'district_id'=>$district_id]);
+            $query = People::find()->where(['state_id'=>$state_id,'district_id'=>$district_id]);
+            //$query = People::find()->where('flag != :flag AND state_id = :state_id AND district_id = :district_id',['flag'=>0,'state_id'=>$state_id,'district_id'=>$district_id]);
         }
         else if ($role_id == 1) {
-            $query = People::find()->where('flag != :flag AND state_id = :state_id AND district_id = :district_id AND kampung_id = :kampung_id',['flag'=>0,'state_id'=>$state_id,'district_id'=>$district_id,'kampung_id'=>$kampung_id]);
+            $query = People::find()->where(['state_id'=>$state_id,'district_id'=>$district_id,'kampung_id'=>$kampung_id]);
+            ///$query = People::find()->where('flag != :flag AND state_id = :state_id AND district_id = :district_id AND kampung_id = :kampung_id',['flag'=>0,'state_id'=>$state_id,'district_id'=>$district_id,'kampung_id'=>$kampung_id]);
+
         } else {
-            //$query = People::find();
-            $query = People::find()->where('flag != :flag',['flag'=>0]);
+            $query = People::find();
+           // $query = People::find()->where('flag != :flag',['flag'=>0]);
            /* $sql_test = $connection->createCommand("SELECT p.no_kp,p.real_name
                     FROM (SELECT ic_no AS no_kp, name AS real_name
                           FROM people WHERE state_id = 12
@@ -82,7 +85,7 @@ class PeopleSearch extends People
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
-            'sort'=> ['defaultOrder' => ['people_id' => 'ASC']]
+            'sort'=> ['defaultOrder' => ['people_id' => 'DESC']]
         ]);
 
         $this->load($params);

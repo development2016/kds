@@ -333,25 +333,25 @@ $connection = \Yii::$app->db;
 $date = date('Y-m-d');
 $day_before = date( 'Y-m-d', strtotime( $date . ' -1 day' ) );
 
-$total = $connection->createCommand('SELECT COUNT(people_id) AS total_data FROM people WHERE flag != 0');
+$total = $connection->createCommand('SELECT COUNT(people_id) AS total_data FROM people ');
 $countTotal = $total->queryAll();
 
-$state = $connection->createCommand('SELECT COUNT(people_id) AS total,state_id FROM people WHERE flag != 0 GROUP BY state_id');
+$state = $connection->createCommand('SELECT COUNT(people_id) AS total,state_id FROM people GROUP BY state_id');
 $countState = $state->queryAll();
 
-$stateSah = $connection->createCommand('SELECT state_id, COUNT(people_id) AS total_sah FROM people  WHERE data_status = "Sah" AND flag != 0 GROUP BY state_id');
+$stateSah = $connection->createCommand('SELECT state_id, COUNT(people_id) AS total_sah FROM people  WHERE data_status = "Sah"  GROUP BY state_id');
 $countStateSah = $stateSah->queryAll();
 
-$stateToday = $connection->createCommand('SELECT state_id, COUNT(people_id) AS total_today FROM people  WHERE  enter_date = "'.$date.'" AND flag != 0 GROUP BY state_id');
+$stateToday = $connection->createCommand('SELECT state_id, COUNT(people_id) AS total_today FROM people  WHERE  enter_date = "'.$date.'"  GROUP BY state_id');
 $countStateToday = $stateToday->queryAll();
 
-$stateSahToday = $connection->createCommand('SELECT state_id, COUNT(people_id) AS total_today_sah FROM people  WHERE verified_date = "'.$date.'" AND data_status = "Sah" AND flag != 0 GROUP BY state_id');
+$stateSahToday = $connection->createCommand('SELECT state_id, COUNT(people_id) AS total_today_sah FROM people  WHERE verified_date = "'.$date.'" AND data_status = "Sah"  GROUP BY state_id');
 $countStateSahToday = $stateSahToday->queryAll();
 
-$stateSemalam = $connection->createCommand('SELECT enter_date,state_id, COUNT(people_id) AS total_semalam FROM people  WHERE enter_date = "'.$day_before.'" AND flag != 0 GROUP BY state_id');
+$stateSemalam = $connection->createCommand('SELECT enter_date,state_id, COUNT(people_id) AS total_semalam FROM people  WHERE enter_date = "'.$day_before.'"  GROUP BY state_id');
 $countStateSemalam = $stateSemalam->queryAll();
 
-$stateSahSemalam = $connection->createCommand('SELECT verified_date,state_id, COUNT(people_id) AS total_semalam_sah FROM people  WHERE verified_date = "'.$day_before.'" AND flag != 0 AND data_status = "Sah" GROUP BY state_id');
+$stateSahSemalam = $connection->createCommand('SELECT verified_date,state_id, COUNT(people_id) AS total_semalam_sah FROM people  WHERE verified_date = "'.$day_before.'"  AND data_status = "Sah" GROUP BY state_id');
 $countStateSahSemalam = $stateSahSemalam->queryAll();
 
 

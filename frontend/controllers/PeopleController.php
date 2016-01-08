@@ -46,6 +46,7 @@ class PeopleController extends Controller
     public function actionProfil()
     {
         $searchModel = new \common\models\PeopleSearch();
+
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
        // print_r($dataProvider);
@@ -456,6 +457,28 @@ class PeopleController extends Controller
             echo "<option value='Sila Pilih'>Sila Pilih</option>";
             foreach($posts as $post){
                 echo "<option value='".$post->kampung_id."'>".$post->kampung."</option>";
+            }
+        } else {
+                echo "<option>-</option>";
+        }
+     
+    }
+
+
+    public function actionGetdistrict($id)
+    {
+        $countPosts = LookupDistrict::find()
+        ->where(['state_id' => $id])
+        ->count();
+         
+        $posts = LookupDistrict::find() 
+        ->where(['state_id' => $id])
+        ->all();
+         
+        if($countPosts>0){
+            echo "<option value=''>Sila Pilih</option>";
+            foreach($posts as $post){
+                echo "<option value='".$post->district_id."'>".$post->district."</option>";
             }
         } else {
                 echo "<option>-</option>";

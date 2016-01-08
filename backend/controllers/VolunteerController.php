@@ -251,7 +251,7 @@ class VolunteerController extends Controller
 
 // search
 
-        public function actionListdistrictsearch($id)
+    public function actionListdistrictsearch($id)
     {
         $countPosts = LookupDistrict::find()
         ->where(['state_id' => $id])

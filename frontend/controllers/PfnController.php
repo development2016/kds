@@ -81,7 +81,28 @@ class PfnController extends Controller
         }
     }
     
-    public function actionListkampung($id)
+    public function actionGetdistrict($id)
+    {
+        $countPosts = LookupDistrict::find()
+        ->where(['state_id' => $id])
+        ->count();
+         
+        $posts = LookupDistrict::find() 
+        ->where(['state_id' => $id])
+        ->all();
+         
+        if($countPosts>0){
+            echo "<option value=''>Sila Pilih</option>";
+            foreach($posts as $post){
+                echo "<option value='".$post->district_id."'>".$post->district."</option>";
+            }
+        } else {
+                echo "<option>-</option>";
+        }
+     
+    }
+
+    public function actionGetkampung($id)
     {
         $countPosts = LookupKampung::find()
         ->where(['district_id' => $id])

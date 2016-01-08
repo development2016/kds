@@ -5,6 +5,7 @@ use yii\widgets\ActiveForm;
 use yii\helpers\ArrayHelper;
 use common\models\LookupKampung;
 use common\models\LookupDistrict;
+use common\models\LookupState;
 
 $role_id = Yii::$app->user->identity->role;
 $user_id =  Yii::$app->user->identity->id;
@@ -27,9 +28,11 @@ if ($role_id == 4) {
     $kampung = ArrayHelper::map(LookupKampung::find()->where(['district_id'=>$district_id])->asArray()->all(), 'kampung_id', 'kampung');
 
 } else {
-    $district = ArrayHelper::map(LookupDistrict::find()->joinWith('statejoin')->orderBy('lookup_state.state_id, lookup_district.state_id')->all(),'district_id','district','statejoin.state');
+    $state = ArrayHelper::map(LookupState::find()->where(['kawasan_perlaksanaan'=>'Ya'])->asArray()->all(), 'state_id', 'state');
+    $district = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->state_id])->asArray()->all(), 'district_id', 'district');
     $kampung = ArrayHelper::map(LookupKampung::find()->where(['district_id'=>$model->district_id])->asArray()->all(),'kampung_id','kampung');
-}
+
+} 
 
 
 ?>
@@ -66,7 +69,7 @@ if ($role_id == 4) {
                        <?= Html::activeDropDownList($model, 'district_id', $district, 
                         [
                             'prompt'=>'','id'=>'district',
-                            'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['volunteer/getkampung','id'=>'']).'"+$(this).val(), function( data ) {$( "select#kampung" ).html( data );});',
+                            'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['people/getkampung','id'=>'']).'"+$(this).val(), function( data ) {$( "select#kampung" ).html( data );});',
                             'class'=>'form-control select2me',
 
                         ]); ?>
@@ -100,34 +103,57 @@ if ($role_id == 4) {
                             <span class="help-block"><?= Html::error($model,'kampung_id'); ?></span>
                         </div>
                     </div>
+
                 <?php } else { ?>
 
-                    <div class="col-md-4">
-                        <div class="form-group form-md-line-input">
-                           <?= Html::activeDropDownList($model, 'district_id', $district, 
-                            [
-                                'prompt'=>'','id'=>'district',
-                                'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['volunteer/getkampung','id'=>'']).'"+$(this).val(), function( data ) {$( "select#kampung" ).html( data );});',
-                                'class'=>'form-control select2me',
+                <div class="col-md-4">
+                    <div class="form-group form-md-line-input">
+                       
+                        <?= Html::activeDropDownList($model, 'state_id', $state, 
+                        [
+                        'prompt'=>'(Sila Pilih)','id'=>'state',
+                        'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['people/getdistrict','id'=>'']).'"+$(this).val(), function( data ) {$( "select#district" ).html( data );});',
 
-                            ]); ?>
-                            <label for="form_control_1"><?= Html::activeLabel($model,'district_id'); ?></label>
-                            <span class="help-block"><?= Html::error($model,'district_id'); ?></span>
-                        </div>
+                        'class'=>'form-control']); ?>
+                        <label for="form_control_1"><?= Html::activeLabel($model,'state_id'); ?> </label>
+                        <span class="help-block"><?= Html::error($model,'state_id'); ?></span>
+                        
                     </div>
-                        <div class="col-md-4">
-                            <div class="form-group form-md-line-input">
-                                <?= Html::activeDropDownList($model, 'kampung_id', $kampung, 
-                                [
-                                    'prompt'=>'','id'=>'kampung',
-                                    'class'=>'form-control select2me',
+                </div>
 
-                                ]); ?>
-                                <label for="form_control_1"><?= Html::activeLabel($model,'kampung_id'); ?></label>
-                                <span class="help-block"><?= Html::error($model,'kampung_id'); ?></span>
-                            </div>
-                        </div>
+                <div class="col-md-4">
+                    <div class="form-group form-md-line-input">
+                        
+                        <?= Html::activeDropDownList($model, 'district_id', $district, 
+                        [
+                            'prompt'=>'','id'=>'district',
+                            'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['people/getkampung','id'=>'']).'"+$(this).val(), function( data ) {$( "select#kampung" ).html( data );});',
+
+                            'class'=>'form-control']); ?>
+                        <label for="form_control_1"><?= Html::activeLabel($model,'district_id'); ?> </label>
+                        <span class="help-block"><?= Html::error($model,'district_id'); ?></span>
+                       
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="form-group form-md-line-input">
+                        
+                        <?= Html::activeDropDownList($model, 'kampung_id', $kampung, 
+                        [
+                            'prompt'=>'','id'=>'kampung',
+                            'class'=>'form-control select2me',
+
+                        ]); ?>
+                        <label for="form_control_1"><?= Html::activeLabel($model,'kampung_id'); ?> </label>
+                        <span class="help-block"><?= Html::error($model,'kampung_id'); ?></span>
+                        
+                    </div>
+                </div>
+
+
                 <?php } ?>
+
 
 
 
