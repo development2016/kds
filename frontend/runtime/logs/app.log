@@ -14209,3 +14209,444 @@ $_SERVER = [
     ]
     'argc' => 1
 ]
+2016-01-11 12:21:27 [::1][7349][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Request.php:187
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php(75): yii\web\Request->resolve()
+#1 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+2016-01-11 12:21:27 [::1][7349][-][info][application] $_COOKIE = [
+    '_csrf' => 'c29b90869034c4dd36a9a7225833f658191c0ebff243a18561c18920f66abcaea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"3aSdatVmodPOTP-a0cZr93EVtzTJpeOe\";}'
+    'PHPSESSID' => '1ada84c1f67b40151d67549bb2e88ec8'
+    '_identity' => '5e09e09f2876e17a83f9cfdd7b6ca85ead1cf7c21f6385627f02721964908333a:2:{i:0;s:9:\"_identity\";i:1;s:49:\"[7349,\"bLuBDfv28W_Pal--6uJfiRFcXz32wpPc\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/frontend/web/'
+    '__id' => 7349
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c29b90869034c4dd36a9a7225833f658191c0ebff243a18561c18920f66abcaea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%223aSdatVmodPOTP-a0cZr93EVtzTJpeOe%22%3B%7D; PHPSESSID=1ada84c1f67b40151d67549bb2e88ec8; _identity=5e09e09f2876e17a83f9cfdd7b6ca85ead1cf7c21f6385627f02721964908333a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A49%3A%22%5B7349%2C%22bLuBDfv28W_Pal--6uJfiRFcXz32wpPc%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '50921'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/gii'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/gii'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/gii'
+    'PHP_SELF' => '/kds/frontend/web/index.php/gii'
+    'REQUEST_TIME_FLOAT' => 1452486087.69
+    'REQUEST_TIME' => 1452486087
+    'argv' => []
+    'argc' => 0
+]
+2016-01-11 12:21:32 [::1][7349][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Request.php:187
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php(75): yii\web\Request->resolve()
+#1 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+2016-01-11 12:21:32 [::1][7349][-][info][application] $_COOKIE = [
+    '_csrf' => 'c29b90869034c4dd36a9a7225833f658191c0ebff243a18561c18920f66abcaea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"3aSdatVmodPOTP-a0cZr93EVtzTJpeOe\";}'
+    'PHPSESSID' => '1ada84c1f67b40151d67549bb2e88ec8'
+    '_identity' => '5e09e09f2876e17a83f9cfdd7b6ca85ead1cf7c21f6385627f02721964908333a:2:{i:0;s:9:\"_identity\";i:1;s:49:\"[7349,\"bLuBDfv28W_Pal--6uJfiRFcXz32wpPc\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/frontend/web/'
+    '__id' => 7349
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c29b90869034c4dd36a9a7225833f658191c0ebff243a18561c18920f66abcaea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%223aSdatVmodPOTP-a0cZr93EVtzTJpeOe%22%3B%7D; PHPSESSID=1ada84c1f67b40151d67549bb2e88ec8; _identity=5e09e09f2876e17a83f9cfdd7b6ca85ead1cf7c21f6385627f02721964908333a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A49%3A%22%5B7349%2C%22bLuBDfv28W_Pal--6uJfiRFcXz32wpPc%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '50921'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/gii'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/gii'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/gii'
+    'PHP_SELF' => '/kds/frontend/web/index.php/gii'
+    'REQUEST_TIME_FLOAT' => 1452486092.4
+    'REQUEST_TIME' => 1452486092
+    'argv' => []
+    'argc' => 0
+]
+2016-01-11 12:21:56 [::1][7349][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Request.php:187
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php(75): yii\web\Request->resolve()
+#1 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+2016-01-11 12:21:56 [::1][7349][-][info][application] $_COOKIE = [
+    '_csrf' => 'c29b90869034c4dd36a9a7225833f658191c0ebff243a18561c18920f66abcaea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"3aSdatVmodPOTP-a0cZr93EVtzTJpeOe\";}'
+    'PHPSESSID' => '1ada84c1f67b40151d67549bb2e88ec8'
+    '_identity' => '5e09e09f2876e17a83f9cfdd7b6ca85ead1cf7c21f6385627f02721964908333a:2:{i:0;s:9:\"_identity\";i:1;s:49:\"[7349,\"bLuBDfv28W_Pal--6uJfiRFcXz32wpPc\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/frontend/web/'
+    '__id' => 7349
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c29b90869034c4dd36a9a7225833f658191c0ebff243a18561c18920f66abcaea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%223aSdatVmodPOTP-a0cZr93EVtzTJpeOe%22%3B%7D; PHPSESSID=1ada84c1f67b40151d67549bb2e88ec8; _identity=5e09e09f2876e17a83f9cfdd7b6ca85ead1cf7c21f6385627f02721964908333a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A49%3A%22%5B7349%2C%22bLuBDfv28W_Pal--6uJfiRFcXz32wpPc%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '50931'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/gii'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/gii'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/gii'
+    'PHP_SELF' => '/kds/frontend/web/index.php/gii'
+    'REQUEST_TIME_FLOAT' => 1452486116.89
+    'REQUEST_TIME' => 1452486116
+    'argv' => []
+    'argc' => 0
+]
+2016-01-11 12:22:02 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Request.php:187
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php(75): yii\web\Request->resolve()
+#1 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+2016-01-11 12:22:02 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'c29b90869034c4dd36a9a7225833f658191c0ebff243a18561c18920f66abcaea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"3aSdatVmodPOTP-a0cZr93EVtzTJpeOe\";}'
+    'PHPSESSID' => '8d7155f581787d91a1a1982b2932572c'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/frontend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c29b90869034c4dd36a9a7225833f658191c0ebff243a18561c18920f66abcaea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%223aSdatVmodPOTP-a0cZr93EVtzTJpeOe%22%3B%7D; PHPSESSID=8d7155f581787d91a1a1982b2932572c'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '50931'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/site/gii'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/site/gii'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/site/gii'
+    'PHP_SELF' => '/kds/frontend/web/index.php/site/gii'
+    'REQUEST_TIME_FLOAT' => 1452486122.87
+    'REQUEST_TIME' => 1452486122
+    'argv' => []
+    'argc' => 0
+]
+2016-01-11 12:22:38 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Request.php:187
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php(75): yii\web\Request->resolve()
+#1 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+2016-01-11 12:22:38 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '8d7155f581787d91a1a1982b2932572c'
+    '_csrf' => '85ea87df405bd9157edf1d2a96091b71bf5cabe1af344eb5be4b5fc342f6ee87a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"jpaPpozfsaTscKtza36W8kTrXJmBh0kl\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/backend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=8d7155f581787d91a1a1982b2932572c; _csrf=85ea87df405bd9157edf1d2a96091b71bf5cabe1af344eb5be4b5fc342f6ee87a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22jpaPpozfsaTscKtza36W8kTrXJmBh0kl%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '50956'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/gii/model'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/gii/model'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/gii/model'
+    'PHP_SELF' => '/kds/frontend/web/index.php/gii/model'
+    'REQUEST_TIME_FLOAT' => 1452486158.07
+    'REQUEST_TIME' => 1452486158
+    'argv' => []
+    'argc' => 0
+]
+2016-01-11 12:24:36 [::1][1][7bd8f907cb99a99f9ed1cc3474cd5607][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'frontend\controllers\PeopleTopup' not found' in /Applications/MAMP/htdocs/kds/frontend/controllers/KawasanController.php:144
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-01-11 12:24:36 [::1][1][7bd8f907cb99a99f9ed1cc3474cd5607][info][application] $_GET = [
+    'state_id_get' => '12'
+]
+
+$_COOKIE = [
+    '_csrf' => '9502a5b6afb169468ad96d50680414542a6b8c568cde483e901c30ce99d29fe3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"SHsn1N4mIDkbY1CaWTtqQR46P8pjuuZ3\";}'
+    'PHPSESSID' => '7bd8f907cb99a99f9ed1cc3474cd5607'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/frontend/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php/kawasan/index.cypressdiversified'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=9502a5b6afb169468ad96d50680414542a6b8c568cde483e901c30ce99d29fe3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22SHsn1N4mIDkbY1CaWTtqQR46P8pjuuZ3%22%3B%7D; PHPSESSID=7bd8f907cb99a99f9ed1cc3474cd5607; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '50978'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'state_id_get=12'
+    'REQUEST_URI' => '/kds/frontend/web/index.php/kawasan/state.cypressdiversified?state_id_get=12'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/kawasan/state.cypressdiversified'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/kawasan/state.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/kawasan/state.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1452486276.72
+    'REQUEST_TIME' => 1452486276
+    'argv' => [
+        0 => 'state_id_get=12'
+    ]
+    'argc' => 1
+]
+2016-01-11 14:12:29 [::1][1][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: state_id' in /Applications/MAMP/htdocs/kds/frontend/views/layouts/main.php:426
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/frontend/views/layouts/main.php(426): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/Applications/M...', 426, Array)
+#1 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/View.php(325): require('/Applications/M...')
+#2 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#3 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Controller.php(386): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\SiteController))
+#4 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Controller.php(372): yii\base\Controller->renderContent('    <!-- BEGIN ...')
+#5 /Applications/MAMP/htdocs/kds/frontend/controllers/SiteController.php(72): yii\base\Controller->render('index')
+#6 [internal function]: frontend\controllers\SiteController->actionIndex()
+#7 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#10 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/index', Array)
+#11 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+2016-01-11 14:12:28 [::1][1][-][info][application] $_COOKIE = [
+    '_csrf' => '9502a5b6afb169468ad96d50680414542a6b8c568cde483e901c30ce99d29fe3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"SHsn1N4mIDkbY1CaWTtqQR46P8pjuuZ3\";}'
+    'PHPSESSID' => '7bd8f907cb99a99f9ed1cc3474cd5607'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/frontend/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php/kawasan/state.cypressdiversified?state_id_get=22'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=9502a5b6afb169468ad96d50680414542a6b8c568cde483e901c30ce99d29fe3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22SHsn1N4mIDkbY1CaWTtqQR46P8pjuuZ3%22%3B%7D; PHPSESSID=7bd8f907cb99a99f9ed1cc3474cd5607; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '51908'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/site/index.cypressdiversified'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/site/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/site/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/site/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1452492748.89
+    'REQUEST_TIME' => 1452492748
+    'argv' => []
+    'argc' => 0
+]
+2016-01-11 14:12:49 [::1][1][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: count_state' in /Applications/MAMP/htdocs/kds/frontend/views/layouts/main.php:427
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/frontend/views/layouts/main.php(427): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/Applications/M...', 427, Array)
+#1 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/View.php(325): require('/Applications/M...')
+#2 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#3 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Controller.php(386): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\SiteController))
+#4 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Controller.php(372): yii\base\Controller->renderContent('    <!-- BEGIN ...')
+#5 /Applications/MAMP/htdocs/kds/frontend/controllers/SiteController.php(72): yii\base\Controller->render('index')
+#6 [internal function]: frontend\controllers\SiteController->actionIndex()
+#7 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#10 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/index', Array)
+#11 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+2016-01-11 14:12:48 [::1][1][-][info][application] $_COOKIE = [
+    '_csrf' => '9502a5b6afb169468ad96d50680414542a6b8c568cde483e901c30ce99d29fe3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"SHsn1N4mIDkbY1CaWTtqQR46P8pjuuZ3\";}'
+    'PHPSESSID' => '7bd8f907cb99a99f9ed1cc3474cd5607'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/frontend/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php/kawasan/state.cypressdiversified?state_id_get=22'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=9502a5b6afb169468ad96d50680414542a6b8c568cde483e901c30ce99d29fe3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22SHsn1N4mIDkbY1CaWTtqQR46P8pjuuZ3%22%3B%7D; PHPSESSID=7bd8f907cb99a99f9ed1cc3474cd5607; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '51910'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/site/index.cypressdiversified'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/site/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/site/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/site/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1452492768.84
+    'REQUEST_TIME' => 1452492768
+    'argv' => []
+    'argc' => 0
+]

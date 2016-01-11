@@ -155,28 +155,79 @@ $this->title = 'Komuniti Development System';
                                             <?php } ?>
 
                                                 <br>
-                                                <div class="row">
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-9">Jumlah Profil Komuniti : </label>
-                                                            <div class="col-md-2">
-                                                                <span class="view"><b><?= $count_profil + $count_profil_verified ?></b></span>
-                                                            </div>
-                                                        </div> 
-                                                    </div>
 
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-9">Jumlah Profil Komuniti (Sah) : </label>
-                                                            <div class="col-md-2">
-                                                                <span class="view"><b><?= $count_profil_verified ?></b></span>
-                                                            </div>
-                                                        </div> 
-                                                    </div>
+                                                <?php if ($model->state_id == 14) { ?>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label class="control-label col-md-9">Jumlah Profil Komuniti : </label>
+                                                                <div class="col-md-2">
+                                                                    <span class="view"><b><?= $count_profil + $count_profil_vtp + $count_profil_verified ?></b></span>
+                                                                </div>
+                                                            </div> 
+                                                        </div>
 
-                                                </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label class="control-label col-md-9">Jumlah Profil Komuniti (Sah) : </label>
+                                                                <div class="col-md-2">
+                                                                    <span class="view"><b><?= $count_profil_verified + $count_profil_vtp ?></b></span>
+                                                                </div>
+                                                            </div> 
+                                                        </div>
+
+                                                    </div>
+                                                    
+                                                <?php } elseif ($model->state_id == 18) { ?>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label class="control-label col-md-9">Jumlah Profil Komuniti : </label>
+                                                                <div class="col-md-2">
+                                                                    <span class="view"><b><?= $count_profil + $count_profil_vtp + $count_profil_verified ?></b></span>
+                                                                </div>
+                                                            </div> 
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label class="control-label col-md-9">Jumlah Profil Komuniti (Sah) : </label>
+                                                                <div class="col-md-2">
+                                                                    <span class="view"><b><?= $count_profil_verified + $count_profil_vtp ?></b></span>
+                                                                </div>
+                                                            </div> 
+                                                        </div>
+
+                                                    </div>
+                                                <?php } else { ?>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label class="control-label col-md-9">Jumlah Profil Komuniti : </label>
+                                                                <div class="col-md-2">
+                                                                    <span class="view"><b><?= $count_profil + $count_profil_verified ?></b></span>
+                                                                </div>
+                                                            </div> 
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label class="control-label col-md-9">Jumlah Profil Komuniti (Sah) : </label>
+                                                                <div class="col-md-2">
+                                                                    <span class="view"><b><?= $count_profil_verified ?></b></span>
+                                                                </div>
+                                                            </div> 
+                                                        </div>
+
+                                                    </div>
+                                                <?php } ?>
+
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="form-group">

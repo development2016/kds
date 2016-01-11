@@ -407,7 +407,7 @@ jQuery(document).ready(function() {
 $default = 0;
 
 $connection = \Yii::$app->db;
-$count = $connection->createCommand('SELECT * FROM count_map');
+$count = $connection->createCommand('SELECT COUNT(people_id) AS count_state,state_id FROM people GROUP BY state_id');
 $countState = $count->queryAll();
 
 

@@ -16,6 +16,7 @@ use frontend\models\CountState;
 use frontend\models\CountDistrict;
 use frontend\models\CountKampung;
 use common\models\People;
+use common\models\PeopleTopup;
 use common\models\Volunteer;
 use frontend\models\User;
 /**
@@ -140,8 +141,9 @@ class KawasanController extends Controller
             $count_cluster = LookupCluster::find()->where(['state_id' => $state_id_get])->count();
             $count_kampung = LookupKampung::find()->where(['state_id' => $state_id_get])->count();
 
-            //$count_profil = People::find()->where(['state_id' => $state_id_get])->count();
-            $count_profil = People::find()->where('state_id = :state_id AND flag != :flag',['state_id' => $state_id_get,'flag'=>0])->count();
+            //$count_profil = PeopleTopup::find()->where(['state_id' => $state_id_get])->count();
+            $count_profil = PeopleTopup::find()->where('state_id = :state_id AND flag != :flag',['state_id' => $state_id_get,'flag'=>0])->count();
+            $count_profil_vtp = PeopleTopup::find()->where('state_id = :state_id AND flag = :flag AND data_status = :data_status',['state_id' => $state_id_get,'flag'=>2,'data_status' => "Sah"])->count();
             $count_profil_verified = People::find()->where(['state_id' => $state_id_get,'data_status'=>'Sah'])->count();
             $count_sukarelawan = Volunteer::find()->where(['state_id' => $state_id_get])->count();
             $count_microworker = User::find()->where(['state_area_id' => $state_id_get])->count();
@@ -213,6 +215,7 @@ class KawasanController extends Controller
                         'countIssue' => $countIssue,
                         'countDemographic' => $countDemographic,
                         'count_profil_verified' => $count_profil_verified,
+                        'count_profil_vtp' =>$count_profil_vtp,
                     ]);
                 }
 
