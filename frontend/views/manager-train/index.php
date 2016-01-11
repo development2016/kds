@@ -7,14 +7,14 @@ use yii\helpers\Url;
 /* @var $searchModel common\models\PeopleSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Senarai Public Facility Network';
+$this->title = 'Senarai Manager Trained';
 ?>
     <!-- BEGIN PAGE HEAD -->
     <div class="page-head">
         <div class="container">
             <!-- BEGIN PAGE TITLE -->
             <div class="page-title">
-                <h1> Public Facility Network</h1>
+                <h1> Manager Trained</h1>
             </div>
             <!-- END PAGE TITLE -->
 
@@ -30,7 +30,7 @@ $this->title = 'Senarai Public Facility Network';
                     <?= Html::a('Utama', ['site/index']) ?><i class="fa fa-circle"></i>
                 </li>
                 <li class="active">
-                     Public Facility Network
+                     Manager Trained
                 </li>
             </ul>
             <!-- END PAGE BREADCRUMB -->
@@ -41,7 +41,7 @@ $this->title = 'Senarai Public Facility Network';
                         <div class="portlet-title">
                             <div class="caption font-green-haze">
                                 <i class="icon-user font-green-haze"></i>
-                                <span class="caption-subject bold uppercase"> Senarai Maklumat Public Facility Network</span>
+                                <span class="caption-subject bold uppercase"> Senarai Maklumat Manager Trained </span>
                             </div>
                             <div class="actions">
 
@@ -53,20 +53,15 @@ $this->title = 'Senarai Public Facility Network';
                         <?php  echo $this->render('_search', ['model' => $searchModel]); ?>
 
                         <?= GridView::widget([
-                                'dataProvider' => $dataProvider,
-
-                                'pager' => [
-                                    'firstPageLabel' => 'First',
-                                    'lastPageLabel' => 'Last',
-                                ],
-                                'columns' => [
-                                    ['class' => 'yii\grid\SerialColumn'],
-                                    'pfn_name',
+                            'dataProvider' => $dataProvider,
+                            //'filterModel' => $searchModel,
+                            'columns' => [
+                                ['class' => 'yii\grid\SerialColumn'],
+                                'rangkaian_fasiliti_awam',
                                     'category.cat_name',
                                     'state.state',
                                     'district.district',
                                     'kampung.kampung',
-                                   // 'state.state',
                                     [
                                         'header' => 'Tindakan',
                                         'class' => 'yii\grid\ActionColumn',
@@ -82,14 +77,14 @@ $this->title = 'Senarai Public Facility Network';
                                             ],
                                             'urlCreator' => function ($action, $model, $key, $index) {
                                                 if ($action === 'lihat') {
-                                                    $url = ['pfn/view','id'=>base64_encode($model->pfn_id)];
+                                                    $url = ['manager-train/view','id'=>base64_encode($model->id)];
                                                     return $url;
                                                 }
 
                                             }
                                         ],
-                                ],
-                            ]); ?>
+                            ],
+                        ]); ?>
 
                         </div>
                     </div>

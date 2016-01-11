@@ -294,9 +294,17 @@ $varMohon = "user/mohon";
                                 ['label' => 'Kemasukan Data', 'url' => ['people/index'],'visible' => User::checkMenu('1'),'options'=>['id'=>'people']],
                                 ['label' => 'Sukarelawan', 'url' => ['volunteer/index'],'visible' => User::checkMenu('2'),'options'=>['id'=>'volunteer']],
                                 ['label' => 'Isu Konduit', 'url' => ['issue-conduit/index'],'visible' => User::checkMenu('3'),'options'=>['id'=>'issue']],
-                                ['label' => 'Public Facility Network', 'url' => ['pfn/index'],'visible' => User::checkMenu('5'),'options'=>['id'=>'pfn']],
                                 ['label' => 'Demographic', 'url' => ['demographic/index'],'visible' => User::checkMenu('6'),'options'=>['id'=>'demographic']],
                                 ['label' => 'Laporan', 'url' => ['laporan/index'],'visible' => User::checkMenu('13'),'options'=>['id'=>'laporan']],
+                                ['label' => '','submenuTemplate' => "\n<ul class='dropdown-menu pull-right' role='menu'>\n{items}\n</ul>\n",
+                                    'options'=>['class'=>'menu-dropdown classic-menu-dropdown'],
+                                    'template' => '<a data-hover="megamenu-dropdown" data-close-others="true" data-toggle="dropdown" href="javascript:;" class="dropdown-toggle">Facility <i class="fa fa-angle-down"></i></a>',
+                                    'items' => [
+                                        ['label' => 'Public Facility Network', 'url' => ['pfn/index'],'visible' => User::checkMenu('5'),'options'=>['id'=>'pfn']],
+                                        ['label' => 'Manager Trained', 'url' => ['manager-train/index'],'visible' => User::checkMenu('17'),'options'=>['id'=>'mt']],
+
+                                    ]
+                                ],
                                 ['label' => '',
                                     'options'=>['class'=>'menu-dropdown classic-menu-dropdown'],
                                     'template' => '<a data-hover="megamenu-dropdown" data-close-others="true" data-toggle="dropdown" href="javascript:;" class="dropdown-toggle">Aktiviti <i class="fa fa-angle-down"></i></a>',
@@ -304,8 +312,15 @@ $varMohon = "user/mohon";
                                         ['label' => 'Organisasi', 'url' => ['organization/index'],'visible' => User::checkMenu('7'),'options'=>['id'=>'organization']],
                                         ['label' => 'Program', 'url' => ['program/index'],'visible' => User::checkMenu('8'),'options'=>['id'=>'program']],
                                     ]
+                                ],
+                                ['label' => '',
+                                    'options'=>['class'=>'menu-dropdown classic-menu-dropdown'],
+                                    'template' => '<a data-hover="megamenu-dropdown" data-close-others="true" data-toggle="dropdown" href="javascript:;" class="dropdown-toggle">Status <i class="fa fa-angle-down"></i></a>',
+                                    'items' => [
+                                        ['label' => 'Status KDS - Summary', 'url' => ['status/status'],'visible' => User::checkMenu('16'),'options'=>['id'=>'status']],
+                                        ['label' => 'Status Harian - Summary', 'url' => ['status-harian/status'],'visible' => User::checkMenu('18'),'options'=>['id'=>'statusharian']],
+                                    ]
                                 ]
-                            
                             ],
                             'activateParents'=>true,
                             'encodeLabels' => false,

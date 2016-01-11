@@ -51,7 +51,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         </div>
                         <div class="portlet-body">
                             
-    <?php  echo $this->render('_search', ['model' => $searchModel]); ?>
+ 
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,

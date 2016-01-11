@@ -14650,3 +14650,1053 @@ $_SERVER = [
     'argv' => []
     'argc' => 0
 ]
+2016-01-11 14:50:25 [::1][56][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "manager-train/index".' in /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('manager-train/i...', Array)
+#1 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-01-11 14:50:25 [::1][56][-][info][application] $_COOKIE = [
+    '_csrf' => '9502a5b6afb169468ad96d50680414542a6b8c568cde483e901c30ce99d29fe3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"SHsn1N4mIDkbY1CaWTtqQR46P8pjuuZ3\";}'
+    'PHPSESSID' => 'c5f57153933baf544a3aec76fc24823c'
+    '_identity' => '599c20c0f00141c7e2937a7d061fcc66c4e00ce2cf6cd268c3e1c5501495cc57a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[56,\"Cw5LG2sYiapjPFwl4ucLkhoOIfjDkiEr\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/frontend/web/index.php/site/index.cypressdiversified'
+    '__id' => 56
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php/pfn/index.cypressdiversified'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=9502a5b6afb169468ad96d50680414542a6b8c568cde483e901c30ce99d29fe3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22SHsn1N4mIDkbY1CaWTtqQR46P8pjuuZ3%22%3B%7D; PHPSESSID=c5f57153933baf544a3aec76fc24823c; _identity=599c20c0f00141c7e2937a7d061fcc66c4e00ce2cf6cd268c3e1c5501495cc57a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B56%2C%22Cw5LG2sYiapjPFwl4ucLkhoOIfjDkiEr%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '52218'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/manager-train/index.cypressdiversified'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/manager-train/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/manager-train/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/manager-train/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1452495025.35
+    'REQUEST_TIME' => 1452495025
+    'argv' => []
+    'argc' => 0
+]
+2016-01-11 14:54:16 [::1][56][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "manager-train/index".' in /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('manager-train/i...', Array)
+#1 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-01-11 14:54:16 [::1][56][-][info][application] $_COOKIE = [
+    '_csrf' => '9502a5b6afb169468ad96d50680414542a6b8c568cde483e901c30ce99d29fe3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"SHsn1N4mIDkbY1CaWTtqQR46P8pjuuZ3\";}'
+    'PHPSESSID' => 'c5f57153933baf544a3aec76fc24823c'
+    '_identity' => '599c20c0f00141c7e2937a7d061fcc66c4e00ce2cf6cd268c3e1c5501495cc57a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[56,\"Cw5LG2sYiapjPFwl4ucLkhoOIfjDkiEr\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/frontend/web/index.php/site/index.cypressdiversified'
+    '__id' => 56
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php/pfn/index.cypressdiversified'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=9502a5b6afb169468ad96d50680414542a6b8c568cde483e901c30ce99d29fe3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22SHsn1N4mIDkbY1CaWTtqQR46P8pjuuZ3%22%3B%7D; PHPSESSID=c5f57153933baf544a3aec76fc24823c; _identity=599c20c0f00141c7e2937a7d061fcc66c4e00ce2cf6cd268c3e1c5501495cc57a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B56%2C%22Cw5LG2sYiapjPFwl4ucLkhoOIfjDkiEr%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '52295'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/manager-train/index.cypressdiversified'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/manager-train/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/manager-train/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/manager-train/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1452495256.68
+    'REQUEST_TIME' => 1452495256
+    'argv' => []
+    'argc' => 0
+]
+2016-01-11 14:54:38 [::1][56][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "manager-train/index".' in /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('manager-train/i...', Array)
+#1 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-01-11 14:54:38 [::1][56][-][info][application] $_COOKIE = [
+    '_csrf' => '9502a5b6afb169468ad96d50680414542a6b8c568cde483e901c30ce99d29fe3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"SHsn1N4mIDkbY1CaWTtqQR46P8pjuuZ3\";}'
+    'PHPSESSID' => 'c5f57153933baf544a3aec76fc24823c'
+    '_identity' => '599c20c0f00141c7e2937a7d061fcc66c4e00ce2cf6cd268c3e1c5501495cc57a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[56,\"Cw5LG2sYiapjPFwl4ucLkhoOIfjDkiEr\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/frontend/web/index.php/site/index.cypressdiversified'
+    '__id' => 56
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php/pfn/index.cypressdiversified'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=9502a5b6afb169468ad96d50680414542a6b8c568cde483e901c30ce99d29fe3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22SHsn1N4mIDkbY1CaWTtqQR46P8pjuuZ3%22%3B%7D; PHPSESSID=c5f57153933baf544a3aec76fc24823c; _identity=599c20c0f00141c7e2937a7d061fcc66c4e00ce2cf6cd268c3e1c5501495cc57a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B56%2C%22Cw5LG2sYiapjPFwl4ucLkhoOIfjDkiEr%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '52297'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/manager-train/index.cypressdiversified'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/manager-train/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/manager-train/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/manager-train/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1452495278.39
+    'REQUEST_TIME' => 1452495278
+    'argv' => []
+    'argc' => 0
+]
+2016-01-11 14:55:25 [::1][56][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\UserSearch::img' in /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/BaseActiveRecord.php(246): yii\base\Component->__get('img')
+#1 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/validators/Validator.php(237): yii\db\BaseActiveRecord->__get('img')
+#2 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Model.php(351): yii\validators\Validator->validateAttributes(Object(frontend\models\UserSearch), Array)
+#3 /Applications/MAMP/htdocs/kds/frontend/models/UserSearch.php(52): yii\base\Model->validate()
+#4 /Applications/MAMP/htdocs/kds/frontend/controllers/UserController.php(71): frontend\models\UserSearch->search(Array)
+#5 [internal function]: frontend\controllers\UserController->actionIndex()
+#6 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#9 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/index', Array)
+#10 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+2016-01-11 14:55:25 [::1][56][-][info][application] $_COOKIE = [
+    '_csrf' => '9502a5b6afb169468ad96d50680414542a6b8c568cde483e901c30ce99d29fe3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"SHsn1N4mIDkbY1CaWTtqQR46P8pjuuZ3\";}'
+    'PHPSESSID' => 'c5f57153933baf544a3aec76fc24823c'
+    '_identity' => '599c20c0f00141c7e2937a7d061fcc66c4e00ce2cf6cd268c3e1c5501495cc57a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[56,\"Cw5LG2sYiapjPFwl4ucLkhoOIfjDkiEr\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/frontend/web/index.php/site/index.cypressdiversified'
+    '__id' => 56
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=9502a5b6afb169468ad96d50680414542a6b8c568cde483e901c30ce99d29fe3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22SHsn1N4mIDkbY1CaWTtqQR46P8pjuuZ3%22%3B%7D; PHPSESSID=c5f57153933baf544a3aec76fc24823c; _identity=599c20c0f00141c7e2937a7d061fcc66c4e00ce2cf6cd268c3e1c5501495cc57a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B56%2C%22Cw5LG2sYiapjPFwl4ucLkhoOIfjDkiEr%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '52312'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/user/index.cypressdiversified'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/user/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/user/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/user/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1452495325.29
+    'REQUEST_TIME' => 1452495325
+    'argv' => []
+    'argc' => 0
+]
+2016-01-11 17:06:15 [::1][7349][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Request.php:187
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php(75): yii\web\Request->resolve()
+#1 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+2016-01-11 17:06:15 [::1][7349][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '0922c441f592d05403e7aaed221a4ff1'
+    '_identity' => '5e09e09f2876e17a83f9cfdd7b6ca85ead1cf7c21f6385627f02721964908333a:2:{i:0;s:9:\"_identity\";i:1;s:49:\"[7349,\"bLuBDfv28W_Pal--6uJfiRFcXz32wpPc\",2592000]\";}'
+    '_csrf' => 'afcfe4f4df6637afb987dc6d03c41f545f55579202b6536f8b88bd6b3b1fb79fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"WTf95VhXEP7nj1fH4xAyGls0BE-iK9Vq\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/frontend/web/index.php'
+    '__id' => 7349
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=0922c441f592d05403e7aaed221a4ff1; _identity=5e09e09f2876e17a83f9cfdd7b6ca85ead1cf7c21f6385627f02721964908333a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A49%3A%22%5B7349%2C%22bLuBDfv28W_Pal--6uJfiRFcXz32wpPc%22%2C2592000%5D%22%3B%7D; _csrf=afcfe4f4df6637afb987dc6d03c41f545f55579202b6536f8b88bd6b3b1fb79fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22WTf95VhXEP7nj1fH4xAyGls0BE-iK9Vq%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '53126'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/gii'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/gii'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/gii'
+    'PHP_SELF' => '/kds/frontend/web/index.php/gii'
+    'REQUEST_TIME_FLOAT' => 1452503175.1
+    'REQUEST_TIME' => 1452503175
+    'argv' => []
+    'argc' => 0
+]
+2016-01-11 17:06:15 [::1][7349][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Request.php:187
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php(75): yii\web\Request->resolve()
+#1 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+2016-01-11 17:06:15 [::1][7349][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '0922c441f592d05403e7aaed221a4ff1'
+    '_identity' => '5e09e09f2876e17a83f9cfdd7b6ca85ead1cf7c21f6385627f02721964908333a:2:{i:0;s:9:\"_identity\";i:1;s:49:\"[7349,\"bLuBDfv28W_Pal--6uJfiRFcXz32wpPc\",2592000]\";}'
+    '_csrf' => 'afcfe4f4df6637afb987dc6d03c41f545f55579202b6536f8b88bd6b3b1fb79fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"WTf95VhXEP7nj1fH4xAyGls0BE-iK9Vq\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/frontend/web/index.php'
+    '__id' => 7349
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=0922c441f592d05403e7aaed221a4ff1; _identity=5e09e09f2876e17a83f9cfdd7b6ca85ead1cf7c21f6385627f02721964908333a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A49%3A%22%5B7349%2C%22bLuBDfv28W_Pal--6uJfiRFcXz32wpPc%22%2C2592000%5D%22%3B%7D; _csrf=afcfe4f4df6637afb987dc6d03c41f545f55579202b6536f8b88bd6b3b1fb79fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22WTf95VhXEP7nj1fH4xAyGls0BE-iK9Vq%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '53131'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/gii'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/gii'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/gii'
+    'PHP_SELF' => '/kds/frontend/web/index.php/gii'
+    'REQUEST_TIME_FLOAT' => 1452503175.12
+    'REQUEST_TIME' => 1452503175
+    'argv' => []
+    'argc' => 0
+]
+2016-01-11 17:11:24 [::1][7349][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Request.php:187
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php(75): yii\web\Request->resolve()
+#1 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+2016-01-11 17:11:24 [::1][7349][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '0922c441f592d05403e7aaed221a4ff1'
+    '_identity' => '5e09e09f2876e17a83f9cfdd7b6ca85ead1cf7c21f6385627f02721964908333a:2:{i:0;s:9:\"_identity\";i:1;s:49:\"[7349,\"bLuBDfv28W_Pal--6uJfiRFcXz32wpPc\",2592000]\";}'
+    '_csrf' => 'b511ca9369fad013ab25c7a1cec9a7485194765fc70ce08f8c79e201de743adfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FeH4iZEjC2VbWUo56TYakz3wrWOm3Eeq\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/frontend/web/index.php'
+    '__id' => 7349
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=0922c441f592d05403e7aaed221a4ff1; _identity=5e09e09f2876e17a83f9cfdd7b6ca85ead1cf7c21f6385627f02721964908333a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A49%3A%22%5B7349%2C%22bLuBDfv28W_Pal--6uJfiRFcXz32wpPc%22%2C2592000%5D%22%3B%7D; _csrf=b511ca9369fad013ab25c7a1cec9a7485194765fc70ce08f8c79e201de743adfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FeH4iZEjC2VbWUo56TYakz3wrWOm3Eeq%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '53148'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/gii/crud'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/gii/crud'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/gii/crud'
+    'PHP_SELF' => '/kds/frontend/web/index.php/gii/crud'
+    'REQUEST_TIME_FLOAT' => 1452503484.6
+    'REQUEST_TIME' => 1452503484
+    'argv' => []
+    'argc' => 0
+]
+2016-01-11 17:30:15 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: common\models\ManagerTrain::pfn_id' in /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/BaseActiveRecord.php(246): yii\base\Component->__get('pfn_id')
+#1 /Applications/MAMP/htdocs/kds/frontend/views/manager-train/index.php(80): yii\db\BaseActiveRecord->__get('pfn_id')
+#2 [internal function]: yii\base\View->{closure}('lihat', Object(common\models\ManagerTrain), 1, 0)
+#3 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/grid/ActionColumn.php(157): call_user_func(Object(Closure), 'lihat', Object(common\models\ManagerTrain), 1, 0)
+#4 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/grid/ActionColumn.php(174): yii\grid\ActionColumn->createUrl('lihat', Object(common\models\ManagerTrain), 1, 0)
+#5 [internal function]: yii\grid\ActionColumn->yii\grid\{closure}(Array)
+#6 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/grid/ActionColumn.php(180): preg_replace_callback('/\\{([\\w\\-\\/]+)\\...', Object(Closure), '{lihat}')
+#7 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/grid/Column.php(108): yii\grid\ActionColumn->renderDataCellContent(Object(common\models\ManagerTrain), 1, 0)
+#8 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/grid/GridView.php(498): yii\grid\Column->renderDataCell(Object(common\models\ManagerTrain), 1, 0)
+#9 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/grid/GridView.php(467): yii\grid\GridView->renderTableRow(Object(common\models\ManagerTrain), 1, 0)
+#10 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/grid/GridView.php(338): yii\grid\GridView->renderTableBody()
+#11 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/widgets/BaseListView.php(151): yii\grid\GridView->renderItems()
+#12 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/grid/GridView.php(307): yii\widgets\BaseListView->renderSection('{items}')
+#13 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/widgets/BaseListView.php(126): yii\grid\GridView->renderSection('{items}')
+#14 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#15 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/widgets/BaseListView.php(129): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#16 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/grid/GridView.php(282): yii\widgets\BaseListView->run()
+#17 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Widget.php(97): yii\grid\GridView->run()
+#18 /Applications/MAMP/htdocs/kds/frontend/views/manager-train/index.php(87): yii\base\Widget::widget(Array)
+#19 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/View.php(325): require('/Applications/M...')
+#20 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#21 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\ManagerTrainController))
+#22 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('index', Array, Object(frontend\controllers\ManagerTrainController))
+#23 /Applications/MAMP/htdocs/kds/frontend/controllers/ManagerTrainController.php(41): yii\base\Controller->render('index', Array)
+#24 [internal function]: frontend\controllers\ManagerTrainController->actionIndex()
+#25 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#26 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#27 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#28 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('manager-train/i...', Array)
+#29 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#30 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#31 {main}
+2016-01-11 17:30:15 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '0922c441f592d05403e7aaed221a4ff1'
+    '_csrf' => 'c6f1cf9e45c1db8ea2c73251a9a7673e8dee3c678268c9558bcbb552a19c2dbca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"r9VdEk-tgEDc_kcbynSvNcfgoxL-pA0H\";}'
+    '_identity' => '5e09e09f2876e17a83f9cfdd7b6ca85ead1cf7c21f6385627f02721964908333a:2:{i:0;s:9:\"_identity\";i:1;s:49:\"[7349,\"bLuBDfv28W_Pal--6uJfiRFcXz32wpPc\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php/pfn/index.cypressdiversified'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=0922c441f592d05403e7aaed221a4ff1; _csrf=c6f1cf9e45c1db8ea2c73251a9a7673e8dee3c678268c9558bcbb552a19c2dbca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22r9VdEk-tgEDc_kcbynSvNcfgoxL-pA0H%22%3B%7D; _identity=5e09e09f2876e17a83f9cfdd7b6ca85ead1cf7c21f6385627f02721964908333a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A49%3A%22%5B7349%2C%22bLuBDfv28W_Pal--6uJfiRFcXz32wpPc%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '53424'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/manager-train/index.cypressdiversified'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/manager-train/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/manager-train/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/manager-train/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1452504615.41
+    'REQUEST_TIME' => 1452504615
+    'argv' => []
+    'argc' => 0
+]
+2016-01-11 17:30:36 [::1][7349][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'The requested page does not exist.' in /Applications/MAMP/htdocs/kds/frontend/controllers/ManagerTrainController.php:118
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/frontend/controllers/ManagerTrainController.php(52): frontend\controllers\ManagerTrainController->findModel('MQ==')
+#1 [internal function]: frontend\controllers\ManagerTrainController->actionView('MQ==')
+#2 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#5 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('manager-train/v...', Array)
+#6 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2016-01-11 17:30:36 [::1][7349][-][info][application] $_GET = [
+    'id' => 'MQ=='
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '0922c441f592d05403e7aaed221a4ff1'
+    '_csrf' => 'c6f1cf9e45c1db8ea2c73251a9a7673e8dee3c678268c9558bcbb552a19c2dbca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"r9VdEk-tgEDc_kcbynSvNcfgoxL-pA0H\";}'
+    '_identity' => '5e09e09f2876e17a83f9cfdd7b6ca85ead1cf7c21f6385627f02721964908333a:2:{i:0;s:9:\"_identity\";i:1;s:49:\"[7349,\"bLuBDfv28W_Pal--6uJfiRFcXz32wpPc\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/frontend/web/index.php'
+    '__id' => 7349
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php/manager-train/index.cypressdiversified'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=0922c441f592d05403e7aaed221a4ff1; _csrf=c6f1cf9e45c1db8ea2c73251a9a7673e8dee3c678268c9558bcbb552a19c2dbca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22r9VdEk-tgEDc_kcbynSvNcfgoxL-pA0H%22%3B%7D; _identity=5e09e09f2876e17a83f9cfdd7b6ca85ead1cf7c21f6385627f02721964908333a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A49%3A%22%5B7349%2C%22bLuBDfv28W_Pal--6uJfiRFcXz32wpPc%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '53436'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=MQ%3D%3D'
+    'REQUEST_URI' => '/kds/frontend/web/index.php/manager-train/view.cypressdiversified?id=MQ%3D%3D'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/manager-train/view.cypressdiversified'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/manager-train/view.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/manager-train/view.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1452504636.65
+    'REQUEST_TIME' => 1452504636
+    'argv' => [
+        0 => 'id=MQ%3D%3D'
+    ]
+    'argc' => 1
+]
+2016-01-11 17:34:27 [::1][7349][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'The requested page does not exist.' in /Applications/MAMP/htdocs/kds/frontend/controllers/ManagerTrainController.php:74
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/frontend/controllers/ManagerTrainController.php(56): frontend\controllers\ManagerTrainController->findModel('Ng==')
+#1 [internal function]: frontend\controllers\ManagerTrainController->actionView('Ng==')
+#2 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#5 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('manager-train/v...', Array)
+#6 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2016-01-11 17:34:27 [::1][7349][-][info][application] $_GET = [
+    'id' => 'Ng=='
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '0922c441f592d05403e7aaed221a4ff1'
+    '_csrf' => 'c6f1cf9e45c1db8ea2c73251a9a7673e8dee3c678268c9558bcbb552a19c2dbca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"r9VdEk-tgEDc_kcbynSvNcfgoxL-pA0H\";}'
+    '_identity' => '5e09e09f2876e17a83f9cfdd7b6ca85ead1cf7c21f6385627f02721964908333a:2:{i:0;s:9:\"_identity\";i:1;s:49:\"[7349,\"bLuBDfv28W_Pal--6uJfiRFcXz32wpPc\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/frontend/web/index.php'
+    '__id' => 7349
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php/manager-train/index.cypressdiversified?ManagerTrainSearch%5Brangkaian_fasiliti_awam%5D=&ManagerTrainSearch%5Bcat_id%5D=15&ManagerTrainSearch%5Bstate_id%5D=&ManagerTrainSearch%5Bdistrict_id%5D=&ManagerTrainSearch%5Bkampung_id%5D='
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=0922c441f592d05403e7aaed221a4ff1; _csrf=c6f1cf9e45c1db8ea2c73251a9a7673e8dee3c678268c9558bcbb552a19c2dbca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22r9VdEk-tgEDc_kcbynSvNcfgoxL-pA0H%22%3B%7D; _identity=5e09e09f2876e17a83f9cfdd7b6ca85ead1cf7c21f6385627f02721964908333a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A49%3A%22%5B7349%2C%22bLuBDfv28W_Pal--6uJfiRFcXz32wpPc%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '53449'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=Ng%3D%3D'
+    'REQUEST_URI' => '/kds/frontend/web/index.php/manager-train/view.cypressdiversified?id=Ng%3D%3D'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/manager-train/view.cypressdiversified'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/manager-train/view.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/manager-train/view.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1452504867.94
+    'REQUEST_TIME' => 1452504867
+    'argv' => [
+        0 => 'id=Ng%3D%3D'
+    ]
+    'argc' => 1
+]
+2016-01-11 18:15:40 [::1][7349][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\UserSearch::img' in /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/BaseActiveRecord.php(246): yii\base\Component->__get('img')
+#1 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/validators/Validator.php(237): yii\db\BaseActiveRecord->__get('img')
+#2 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Model.php(351): yii\validators\Validator->validateAttributes(Object(frontend\models\UserSearch), Array)
+#3 /Applications/MAMP/htdocs/kds/frontend/models/UserSearch.php(52): yii\base\Model->validate()
+#4 /Applications/MAMP/htdocs/kds/frontend/controllers/UserController.php(71): frontend\models\UserSearch->search(Array)
+#5 [internal function]: frontend\controllers\UserController->actionIndex()
+#6 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#9 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/index', Array)
+#10 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+2016-01-11 18:15:40 [::1][7349][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '0922c441f592d05403e7aaed221a4ff1'
+    '_csrf' => 'c6f1cf9e45c1db8ea2c73251a9a7673e8dee3c678268c9558bcbb552a19c2dbca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"r9VdEk-tgEDc_kcbynSvNcfgoxL-pA0H\";}'
+    '_identity' => '5e09e09f2876e17a83f9cfdd7b6ca85ead1cf7c21f6385627f02721964908333a:2:{i:0;s:9:\"_identity\";i:1;s:49:\"[7349,\"bLuBDfv28W_Pal--6uJfiRFcXz32wpPc\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/frontend/web/index.php'
+    '__id' => 7349
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=0922c441f592d05403e7aaed221a4ff1; _csrf=c6f1cf9e45c1db8ea2c73251a9a7673e8dee3c678268c9558bcbb552a19c2dbca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22r9VdEk-tgEDc_kcbynSvNcfgoxL-pA0H%22%3B%7D; _identity=5e09e09f2876e17a83f9cfdd7b6ca85ead1cf7c21f6385627f02721964908333a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A49%3A%22%5B7349%2C%22bLuBDfv28W_Pal--6uJfiRFcXz32wpPc%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '53642'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/user/index.cypressdiversified'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/user/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/user/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/user/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1452507340.64
+    'REQUEST_TIME' => 1452507340
+    'argv' => []
+    'argc' => 0
+]
+2016-01-11 18:15:56 [::1][7349][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\UserSearch::img' in /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/BaseActiveRecord.php(246): yii\base\Component->__get('img')
+#1 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/validators/Validator.php(237): yii\db\BaseActiveRecord->__get('img')
+#2 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Model.php(351): yii\validators\Validator->validateAttributes(Object(frontend\models\UserSearch), Array)
+#3 /Applications/MAMP/htdocs/kds/frontend/models/UserSearch.php(52): yii\base\Model->validate()
+#4 /Applications/MAMP/htdocs/kds/frontend/controllers/UserController.php(71): frontend\models\UserSearch->search(Array)
+#5 [internal function]: frontend\controllers\UserController->actionIndex()
+#6 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#9 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/index', Array)
+#10 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+2016-01-11 18:15:56 [::1][7349][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '0922c441f592d05403e7aaed221a4ff1'
+    '_csrf' => 'c6f1cf9e45c1db8ea2c73251a9a7673e8dee3c678268c9558bcbb552a19c2dbca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"r9VdEk-tgEDc_kcbynSvNcfgoxL-pA0H\";}'
+    '_identity' => '5e09e09f2876e17a83f9cfdd7b6ca85ead1cf7c21f6385627f02721964908333a:2:{i:0;s:9:\"_identity\";i:1;s:49:\"[7349,\"bLuBDfv28W_Pal--6uJfiRFcXz32wpPc\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/frontend/web/index.php'
+    '__id' => 7349
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=0922c441f592d05403e7aaed221a4ff1; _csrf=c6f1cf9e45c1db8ea2c73251a9a7673e8dee3c678268c9558bcbb552a19c2dbca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22r9VdEk-tgEDc_kcbynSvNcfgoxL-pA0H%22%3B%7D; _identity=5e09e09f2876e17a83f9cfdd7b6ca85ead1cf7c21f6385627f02721964908333a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A49%3A%22%5B7349%2C%22bLuBDfv28W_Pal--6uJfiRFcXz32wpPc%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '53644'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/user/index.cypressdiversified'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/user/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/user/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/user/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1452507356.72
+    'REQUEST_TIME' => 1452507356
+    'argv' => []
+    'argc' => 0
+]
+2016-01-11 18:16:42 [::1][7349][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\UserSearch::kampung' in /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/BaseActiveRecord.php(246): yii\base\Component->__get('kampung')
+#1 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/validators/Validator.php(237): yii\db\BaseActiveRecord->__get('kampung')
+#2 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Model.php(351): yii\validators\Validator->validateAttributes(Object(frontend\models\UserSearch), Array)
+#3 /Applications/MAMP/htdocs/kds/frontend/models/UserSearch.php(52): yii\base\Model->validate()
+#4 /Applications/MAMP/htdocs/kds/frontend/controllers/UserController.php(71): frontend\models\UserSearch->search(Array)
+#5 [internal function]: frontend\controllers\UserController->actionIndex()
+#6 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#9 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/index', Array)
+#10 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+2016-01-11 18:16:42 [::1][7349][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '0922c441f592d05403e7aaed221a4ff1'
+    '_csrf' => 'c6f1cf9e45c1db8ea2c73251a9a7673e8dee3c678268c9558bcbb552a19c2dbca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"r9VdEk-tgEDc_kcbynSvNcfgoxL-pA0H\";}'
+    '_identity' => '5e09e09f2876e17a83f9cfdd7b6ca85ead1cf7c21f6385627f02721964908333a:2:{i:0;s:9:\"_identity\";i:1;s:49:\"[7349,\"bLuBDfv28W_Pal--6uJfiRFcXz32wpPc\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/frontend/web/index.php'
+    '__id' => 7349
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=0922c441f592d05403e7aaed221a4ff1; _csrf=c6f1cf9e45c1db8ea2c73251a9a7673e8dee3c678268c9558bcbb552a19c2dbca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22r9VdEk-tgEDc_kcbynSvNcfgoxL-pA0H%22%3B%7D; _identity=5e09e09f2876e17a83f9cfdd7b6ca85ead1cf7c21f6385627f02721964908333a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A49%3A%22%5B7349%2C%22bLuBDfv28W_Pal--6uJfiRFcXz32wpPc%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '53650'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/user/index.cypressdiversified'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/user/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/user/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/user/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1452507402.7
+    'REQUEST_TIME' => 1452507402
+    'argv' => []
+    'argc' => 0
+]
+2016-01-11 18:20:17 [::1][7349][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\UserSearch::password_reset_token' in /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/BaseActiveRecord.php(246): yii\base\Component->__get('password_reset_...')
+#1 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/validators/Validator.php(237): yii\db\BaseActiveRecord->__get('password_reset_...')
+#2 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Model.php(351): yii\validators\Validator->validateAttributes(Object(frontend\models\UserSearch), Array)
+#3 /Applications/MAMP/htdocs/kds/frontend/models/UserSearch.php(52): yii\base\Model->validate()
+#4 /Applications/MAMP/htdocs/kds/frontend/controllers/UserController.php(71): frontend\models\UserSearch->search(Array)
+#5 [internal function]: frontend\controllers\UserController->actionIndex()
+#6 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#9 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/index', Array)
+#10 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+2016-01-11 18:20:17 [::1][7349][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '0922c441f592d05403e7aaed221a4ff1'
+    '_csrf' => 'c6f1cf9e45c1db8ea2c73251a9a7673e8dee3c678268c9558bcbb552a19c2dbca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"r9VdEk-tgEDc_kcbynSvNcfgoxL-pA0H\";}'
+    '_identity' => '5e09e09f2876e17a83f9cfdd7b6ca85ead1cf7c21f6385627f02721964908333a:2:{i:0;s:9:\"_identity\";i:1;s:49:\"[7349,\"bLuBDfv28W_Pal--6uJfiRFcXz32wpPc\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/frontend/web/index.php'
+    '__id' => 7349
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=0922c441f592d05403e7aaed221a4ff1; _csrf=c6f1cf9e45c1db8ea2c73251a9a7673e8dee3c678268c9558bcbb552a19c2dbca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22r9VdEk-tgEDc_kcbynSvNcfgoxL-pA0H%22%3B%7D; _identity=5e09e09f2876e17a83f9cfdd7b6ca85ead1cf7c21f6385627f02721964908333a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A49%3A%22%5B7349%2C%22bLuBDfv28W_Pal--6uJfiRFcXz32wpPc%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '53673'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/user/index.cypressdiversified'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/user/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/user/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/user/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1452507617.54
+    'REQUEST_TIME' => 1452507617
+    'argv' => []
+    'argc' => 0
+]
+2016-01-11 18:20:46 [::1][7349][0922c441f592d05403e7aaed221a4ff1][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /Applications/MAMP/htdocs/kds/frontend/models/UserSearch.php:103
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-01-11 18:20:46 [::1][7349][0922c441f592d05403e7aaed221a4ff1][info][application] $_COOKIE = [
+    'PHPSESSID' => '0922c441f592d05403e7aaed221a4ff1'
+    '_csrf' => 'c6f1cf9e45c1db8ea2c73251a9a7673e8dee3c678268c9558bcbb552a19c2dbca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"r9VdEk-tgEDc_kcbynSvNcfgoxL-pA0H\";}'
+    '_identity' => '5e09e09f2876e17a83f9cfdd7b6ca85ead1cf7c21f6385627f02721964908333a:2:{i:0;s:9:\"_identity\";i:1;s:49:\"[7349,\"bLuBDfv28W_Pal--6uJfiRFcXz32wpPc\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/frontend/web/index.php'
+    '__id' => 7349
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=0922c441f592d05403e7aaed221a4ff1; _csrf=c6f1cf9e45c1db8ea2c73251a9a7673e8dee3c678268c9558bcbb552a19c2dbca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22r9VdEk-tgEDc_kcbynSvNcfgoxL-pA0H%22%3B%7D; _identity=5e09e09f2876e17a83f9cfdd7b6ca85ead1cf7c21f6385627f02721964908333a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A49%3A%22%5B7349%2C%22bLuBDfv28W_Pal--6uJfiRFcXz32wpPc%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '53675'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/user/index.cypressdiversified'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/user/index.cypressdiversified'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/user/index.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/user/index.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1452507646.5
+    'REQUEST_TIME' => 1452507646
+    'argv' => []
+    'argc' => 0
+]
+2016-01-11 18:27:10 [::1][7349][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdsv5.lookup_country' doesn't exist' in /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Command.php:825
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Command.php(825): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Query.php(206): yii\db\Command->queryAll()
+#3 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/ActiveQuery.php(130): yii\db\Query->all(NULL)
+#4 /Applications/MAMP/htdocs/kds/frontend/views/user/view.php(32): yii\db\ActiveQuery->all()
+#5 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/View.php(325): require('/Applications/M...')
+#6 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#7 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\UserController))
+#8 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('view', Array, Object(frontend\controllers\UserController))
+#9 /Applications/MAMP/htdocs/kds/frontend/controllers/UserController.php(112): yii\base\Controller->render('view', Array)
+#10 [internal function]: frontend\controllers\UserController->actionView('1')
+#11 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#12 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#13 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#14 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/view', Array)
+#15 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#17 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdsv5.lookup_country' doesn't exist
+The SQL being executed was: SELECT * FROM `lookup_country`' in /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Schema.php:595
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Command.php(840): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Query.php(206): yii\db\Command->queryAll()
+#3 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/ActiveQuery.php(130): yii\db\Query->all(NULL)
+#4 /Applications/MAMP/htdocs/kds/frontend/views/user/view.php(32): yii\db\ActiveQuery->all()
+#5 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/View.php(325): require('/Applications/M...')
+#6 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#7 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\UserController))
+#8 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('view', Array, Object(frontend\controllers\UserController))
+#9 /Applications/MAMP/htdocs/kds/frontend/controllers/UserController.php(112): yii\base\Controller->render('view', Array)
+#10 [internal function]: frontend\controllers\UserController->actionView('1')
+#11 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#12 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#13 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#14 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/view', Array)
+#15 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#17 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'kdsv5.lookup_country' doesn't exist
+)
+
+2016-01-11 18:27:09 [::1][7349][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '0922c441f592d05403e7aaed221a4ff1'
+    '_csrf' => 'c6f1cf9e45c1db8ea2c73251a9a7673e8dee3c678268c9558bcbb552a19c2dbca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"r9VdEk-tgEDc_kcbynSvNcfgoxL-pA0H\";}'
+    '_identity' => '5e09e09f2876e17a83f9cfdd7b6ca85ead1cf7c21f6385627f02721964908333a:2:{i:0;s:9:\"_identity\";i:1;s:49:\"[7349,\"bLuBDfv28W_Pal--6uJfiRFcXz32wpPc\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/frontend/web/index.php'
+    '__id' => 7349
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php/user/index.cypressdiversified'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=0922c441f592d05403e7aaed221a4ff1; _csrf=c6f1cf9e45c1db8ea2c73251a9a7673e8dee3c678268c9558bcbb552a19c2dbca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22r9VdEk-tgEDc_kcbynSvNcfgoxL-pA0H%22%3B%7D; _identity=5e09e09f2876e17a83f9cfdd7b6ca85ead1cf7c21f6385627f02721964908333a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A49%3A%22%5B7349%2C%22bLuBDfv28W_Pal--6uJfiRFcXz32wpPc%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '53802'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/user/1.cypressdiversified'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/user/1.cypressdiversified'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/user/1.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/user/1.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1452508029.46
+    'REQUEST_TIME' => 1452508029
+    'argv' => []
+    'argc' => 0
+]
+2016-01-11 18:36:45 [::1][-][-][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'frontend\controllers\StatusController' in file: /Applications/MAMP/htdocs/kds/frontend/controllers/StatusController.php. Namespace missing?' in /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('frontend\\contro...')
+#1 [internal function]: spl_autoload_call('frontend\\contro...')
+#2 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Module.php(563): class_exists('frontend\\contro...')
+#3 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Module.php(521): yii\base\Module->createControllerByID('status')
+#4 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Module.php(449): yii\base\Module->createController('status/status')
+#5 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('status/status', Array)
+#6 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2016-01-11 18:36:45 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '05900665dd25753429e9f345898f2ec1'
+    '_identity' => '652cd789e822a4f7e30011b7fa192b7b5ea942bb90a30a378d826e307ac254c7a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+    '_csrf' => '5c90663f697c96f3b4ebd17b25aa09ab32360e069039d8bdd856e5cab00f5a86a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"g39SvO6VUq43edt65qNxsUD8ClMuvbWR\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php/program/index.cypressdiversified'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=05900665dd25753429e9f345898f2ec1; _identity=652cd789e822a4f7e30011b7fa192b7b5ea942bb90a30a378d826e307ac254c7a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D; _csrf=5c90663f697c96f3b4ebd17b25aa09ab32360e069039d8bdd856e5cab00f5a86a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22g39SvO6VUq43edt65qNxsUD8ClMuvbWR%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '53944'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/status/status.cypressdiversified'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/status/status.cypressdiversified'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/status/status.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/status/status.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1452508605.88
+    'REQUEST_TIME' => 1452508605
+    'argv' => []
+    'argc' => 0
+]
