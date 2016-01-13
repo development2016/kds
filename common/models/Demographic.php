@@ -43,15 +43,10 @@ class Demographic extends \yii\db\ActiveRecord
             ['nama_ketua_kampung', 'required', 'message' => 'Sila Isi Nama Ketua Kampung'],
             ['state_id', 'required', 'message' => 'Sila Pilih Negeri '],
             ['district_id', 'required', 'message' => 'Sila Pilih Daerah'],
-            //['mukim_id', 'required', 'message' => 'Sila Pilih Mukim'],
             ['sub_base_id', 'required', 'message' => 'Sila Pilih Sub Base'],
             ['cluster_id', 'required', 'message' => 'Sila Pilih Cluster'],
             ['kampung_id', 'required', 'message' => 'Sila Pilih Kampung'],
-            //['jenis_kampung_id', 'required', 'message' => 'Sila Pilih Jenis Kampung'],
-            //['corak_penempatan_id', 'required', 'message' => 'Sila Pilih Corak Penempatan'],
-            //['jenis_perumahan_id', 'required', 'message' => 'Sila Pilih Jenis Perumahan'],
-            //['bilangan_rumah', 'required', 'message' => 'Sila Pilih Bilangan Rumah'],
-
+            [['bilangan_rumah', 'jenis_kampung_id', 'corak_penempatan_id', 'jenis_perumahan_id'], 'integer'],
             [['nama_ketua_kampung', 'aktiviti_penduduk_kampung', 'koordinate'], 'string', 'max' => 225],
             [['no_tel'], 'string', 'max' => 45]
         ];
