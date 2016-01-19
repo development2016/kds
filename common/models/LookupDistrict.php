@@ -31,7 +31,7 @@ class LookupDistrict extends \yii\db\ActiveRecord
     {
         return [
             [['district'], 'string', 'max' => 225],
-            [['district_code', 'state_id'], 'string', 'max' => 45]
+            [['district_code', 'state_id','bahagian_id'], 'string', 'max' => 45]
         ];
     }
 
@@ -44,6 +44,7 @@ class LookupDistrict extends \yii\db\ActiveRecord
             'district_id' => 'District ID',
             'district' => 'Daerah',
             'district_code' => 'District Code',
+            'bahagian_id' => 'Bahagian',
             'state_id' => 'Negeri',
         ];
     }
@@ -56,5 +57,9 @@ class LookupDistrict extends \yii\db\ActiveRecord
     public function getState()
     {
         return $this->hasOne(LookupState::className(), ['state_id' => 'state_id']);
+    }
+    public function getBahagians()
+    {
+        return $this->hasOne(LookupBahagian::className(), ['bahagian_id' => 'bahagian_id']);
     }
 }

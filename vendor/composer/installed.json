@@ -994,7 +994,7 @@
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/kartik-v/yii2-mpdf/zipball/f65fe859e01374545276d40428d6ff75e4985050",
+            "url": "https://api.github.com/repos/kartik-v/yii2-mpdf/zipball/873a4f10ba961bbf3c63c9ede82a13d407f00acf",
             "reference": "f65fe859e01374545276d40428d6ff75e4985050",
             "shasum": ""
         },
@@ -1039,18 +1039,18 @@
         "source": {
             "type": "git",
             "url": "https://github.com/miloschuman/yii2-highcharts.git",
-            "reference": "b251a9e3491f5f18721cc36d36c310047408dfad"
+            "reference": "a62c1259ff97bc5ada0960ed50b9ddc00c9745b1"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/miloschuman/yii2-highcharts/zipball/b251a9e3491f5f18721cc36d36c310047408dfad",
-            "reference": "b251a9e3491f5f18721cc36d36c310047408dfad",
+            "url": "https://api.github.com/repos/miloschuman/yii2-highcharts/zipball/a62c1259ff97bc5ada0960ed50b9ddc00c9745b1",
+            "reference": "a62c1259ff97bc5ada0960ed50b9ddc00c9745b1",
             "shasum": ""
         },
         "require": {
             "yiisoft/yii2": "*"
         },
-        "time": "2015-10-12 20:08:30",
+        "time": "2016-01-13 16:39:49",
         "type": "yii2-extension",
         "installation-source": "dist",
         "autoload": {

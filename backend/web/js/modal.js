@@ -1,8 +1,6 @@
 $(function(){
 
 
-
-
     $('.acl').click(function(){
         $('#modal').modal('show')
         .find('#modalContent')
@@ -121,6 +119,19 @@ $(function(){
         .load($(this).attr('value'));
 
     });
+
+
+    $('#state_district').change(function(){
+        if ($(this).val() == 21) {
+            $(".bahagian_district").show(500);
+        } else {
+            $(".bahagian_district").hide(500);
+        };
+    });
+
+
+
+
 
 
 });

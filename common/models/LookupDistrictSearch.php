@@ -19,7 +19,7 @@ class LookupDistrictSearch extends LookupDistrict
     {
         return [
             [['district_id'], 'integer'],
-            [['district', 'district_code', 'state_id'], 'safe'],
+            [['district', 'district_code', 'state_id','bahagian_id'], 'safe'],
         ];
     }
 
@@ -62,6 +62,7 @@ class LookupDistrictSearch extends LookupDistrict
 
         $query->andFilterWhere(['like', 'district', $this->district])
             ->andFilterWhere(['like', 'district_code', $this->district_code])
+            ->andFilterWhere(['like', 'bahagian_id', $this->bahagian_id])
             ->andFilterWhere(['like', 'state_id', $this->state_id]);
 
         return $dataProvider;

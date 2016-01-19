@@ -9,6 +9,7 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use backend\models\CountDistrict;
+use common\models\LookupBahagian;
 /**
  * LookupDistrictController implements the CRUD actions for LookupDistrict model.
  */
@@ -138,20 +139,21 @@ class LookupDistrictController extends Controller
             throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
- public function actionListdistrict($id)
+
+    public function actionListbahagian($id)
     {
-        $countPosts = LookupDistrict::find()
+        $countPosts = LookupBahagian::find()
         ->where(['state_id' => $id])
         ->count();
          
-        $posts = LookupDistrict::find() 
+        $posts = LookupBahagian::find() 
         ->where(['state_id' => $id])
         ->all();
          
         if($countPosts>0){
             echo "<option value='Sila Pilih'>Sila Pilih</option>";
             foreach($posts as $post){
-                echo "<option value='".$post->district_id."'>".$post->district."</option>";
+                echo "<option value='".$post->bahagian_id."'>".$post->bahagian."</option>";
             }
         } else {
                 echo "<option>-</option>";

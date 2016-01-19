@@ -15700,3 +15700,292 @@ $_SERVER = [
     'argv' => []
     'argc' => 0
 ]
+2016-01-18 10:48:53 [::1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Division by zero' in /Applications/MAMP/htdocs/kds/frontend/views/status/status.php:384
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/frontend/views/status/status.php(384): yii\base\ErrorHandler->handleError(2, 'Division by zer...', '/Applications/M...', 384, Array)
+#1 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/View.php(325): require('/Applications/M...')
+#2 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#3 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\StatusController))
+#4 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('status', Array, Object(frontend\controllers\StatusController))
+#5 /Applications/MAMP/htdocs/kds/frontend/controllers/StatusController.php(460): yii\base\Controller->render('status', Array)
+#6 [internal function]: frontend\controllers\StatusController->actionStatus()
+#7 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('status', Array)
+#10 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('status/status', Array)
+#11 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+2016-01-18 10:43:02 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '43c9a4b6232e49a66a56f3c3c0715a41337e9991966464f5b575abd138d616a2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Urt9xThW6vf8FmdO-mEkdr6tGDSk0UKP\";}'
+    'PHPSESSID' => 'c3d1358c45df721118e604b6992ffb35'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php/kawasan/index.cypressdiversified'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6'
+    'HTTP_COOKIE' => '_csrf=43c9a4b6232e49a66a56f3c3c0715a41337e9991966464f5b575abd138d616a2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Urt9xThW6vf8FmdO-mEkdr6tGDSk0UKP%22%3B%7D; PHPSESSID=c3d1358c45df721118e604b6992ffb35; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '51979'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/status/status.cypressdiversified'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/status/status.cypressdiversified'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/status/status.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/status/status.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1453084982.83
+    'REQUEST_TIME' => 1453084982
+    'argv' => []
+    'argc' => 0
+]
+2016-01-18 11:02:37 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdsv6.people_oku' doesn't exist' in /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Command.php:825
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Command.php(825): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Command.php(363): yii\db\Command->queryInternal('fetch', NULL)
+#2 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Query.php(243): yii\db\Command->queryOne()
+#3 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/ActiveQuery.php(285): yii\db\Query->one(NULL)
+#4 /Applications/MAMP/htdocs/kds/frontend/controllers/PeopleController.php(119): yii\db\ActiveQuery->one()
+#5 [internal function]: frontend\controllers\PeopleController->actionViewp('MTE5ODMyOTg=')
+#6 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('viewp', Array)
+#9 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('people/viewp', Array)
+#10 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdsv6.people_oku' doesn't exist
+The SQL being executed was: SELECT * FROM `people_oku` WHERE `people_id`='11983298'' in /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Schema.php:595
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Command.php(840): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Command.php(363): yii\db\Command->queryInternal('fetch', NULL)
+#2 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Query.php(243): yii\db\Command->queryOne()
+#3 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/ActiveQuery.php(285): yii\db\Query->one(NULL)
+#4 /Applications/MAMP/htdocs/kds/frontend/controllers/PeopleController.php(119): yii\db\ActiveQuery->one()
+#5 [internal function]: frontend\controllers\PeopleController->actionViewp('MTE5ODMyOTg=')
+#6 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('viewp', Array)
+#9 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('people/viewp', Array)
+#10 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'kdsv6.people_oku' doesn't exist
+)
+
+2016-01-18 11:02:37 [::1][-][-][info][application] $_GET = [
+    'id' => 'MTE5ODMyOTg='
+]
+
+$_COOKIE = [
+    '_csrf' => '4d044cb0eeb9b92b3168185077bc8a37f6370c12579d9fbcfdd872fd3b23afb6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lTfLzvKUqVhNR2xfCAmjk6XLMw4e84r6\";}'
+    'PHPSESSID' => '69c40fd894c59e075772c63cc85c04d1'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php/people/profil.cypressdiversified'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6'
+    'HTTP_COOKIE' => '_csrf=4d044cb0eeb9b92b3168185077bc8a37f6370c12579d9fbcfdd872fd3b23afb6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lTfLzvKUqVhNR2xfCAmjk6XLMw4e84r6%22%3B%7D; PHPSESSID=69c40fd894c59e075772c63cc85c04d1; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '52388'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=MTE5ODMyOTg%3D'
+    'REQUEST_URI' => '/kds/frontend/web/index.php/people/viewp.cypressdiversified?id=MTE5ODMyOTg%3D'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/people/viewp.cypressdiversified'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/people/viewp.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/people/viewp.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1453086157.65
+    'REQUEST_TIME' => 1453086157
+    'argv' => [
+        0 => 'id=MTE5ODMyOTg%3D'
+    ]
+    'argc' => 1
+]
+2016-01-18 11:11:32 [::1][1][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdsv6.people_topup' doesn't exist' in /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Command.php:825
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Command.php(825): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Command.php(375): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /Applications/MAMP/htdocs/kds/frontend/controllers/KawasanController.php(145): yii\db\Query->count()
+#5 [internal function]: frontend\controllers\KawasanController->actionState('22')
+#6 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('state', Array)
+#9 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('kawasan/state', Array)
+#10 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdsv6.people_topup' doesn't exist
+The SQL being executed was: SELECT COUNT(*) FROM `people_topup` WHERE '22' = :'22' AND 0 != :0' in /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Schema.php:595
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Command.php(840): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Command.php(375): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Query.php(389): yii\db\Command->queryScalar()
+#3 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Query.php(296): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /Applications/MAMP/htdocs/kds/frontend/controllers/KawasanController.php(145): yii\db\Query->count()
+#5 [internal function]: frontend\controllers\KawasanController->actionState('22')
+#6 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('state', Array)
+#9 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('kawasan/state', Array)
+#10 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'kdsv6.people_topup' doesn't exist
+)
+
+2016-01-18 11:11:32 [::1][1][-][info][application] $_GET = [
+    'state_id_get' => '22'
+]
+
+$_COOKIE = [
+    '_csrf' => '4d044cb0eeb9b92b3168185077bc8a37f6370c12579d9fbcfdd872fd3b23afb6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lTfLzvKUqVhNR2xfCAmjk6XLMw4e84r6\";}'
+    'PHPSESSID' => '1a01412a1c865a2c8851287eaf767cb4'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/frontend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php/kawasan/index.cypressdiversified'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6'
+    'HTTP_COOKIE' => '_csrf=4d044cb0eeb9b92b3168185077bc8a37f6370c12579d9fbcfdd872fd3b23afb6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lTfLzvKUqVhNR2xfCAmjk6XLMw4e84r6%22%3B%7D; PHPSESSID=1a01412a1c865a2c8851287eaf767cb4; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '52744'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'state_id_get=22'
+    'REQUEST_URI' => '/kds/frontend/web/index.php/kawasan/state.cypressdiversified?state_id_get=22'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/kawasan/state.cypressdiversified'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/kawasan/state.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/kawasan/state.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1453086692.38
+    'REQUEST_TIME' => 1453086692
+    'argv' => [
+        0 => 'state_id_get=22'
+    ]
+    'argc' => 1
+]
+2016-01-18 15:54:48 [::1][1][1a01412a1c865a2c8851287eaf767cb4][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'var' (T_VAR)' in /Applications/MAMP/htdocs/kds/frontend/views/site/index.php:40
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-01-18 15:54:48 [::1][1][1a01412a1c865a2c8851287eaf767cb4][info][application] $_COOKIE = [
+    'PHPSESSID' => '1a01412a1c865a2c8851287eaf767cb4'
+    'SQLiteManager_currentLangue' => '2'
+    '_csrf' => '80ad8ec40023c073175d8bb5c68643cf04232bf2908e3b19625f271b197d1f0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bFSvKSWpIZpur6HzfoicePTFdto93wVa\";}'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/frontend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=1a01412a1c865a2c8851287eaf767cb4; SQLiteManager_currentLangue=2; _csrf=80ad8ec40023c073175d8bb5c68643cf04232bf2908e3b19625f271b197d1f0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bFSvKSWpIZpur6HzfoicePTFdto93wVa%22%3B%7D; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '60485'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/'
+    'PHP_SELF' => '/kds/frontend/web/index.php/'
+    'REQUEST_TIME_FLOAT' => 1453103688.19
+    'REQUEST_TIME' => 1453103688
+    'argv' => []
+    'argc' => 0
+]

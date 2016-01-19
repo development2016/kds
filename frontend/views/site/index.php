@@ -36,7 +36,6 @@ $this->title = 'Komuniti Development System';
 						</div>
 						<div class="portlet-body">
 
-                            <div id="map"></div>
                          
                             
 						</div>

@@ -75,6 +75,7 @@ $this->title = 'Senarai District';
                                     ['class' => 'yii\grid\SerialColumn'],
                                     'district',
                                     'district_code',
+                                    'bahagians.bahagian',
                                     'state.state',
                                     
                                       [

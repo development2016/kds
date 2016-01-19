@@ -42,8 +42,6 @@ $this->title = 'Komuniti Development System';
 
 
 
-                                <br>
-                                <div id="map"></div>
 
 
                         </div>
