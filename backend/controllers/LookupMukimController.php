@@ -168,7 +168,26 @@ class LookupMukimController extends Controller
         }
      
     }
-
+    public function actionListmukimbahagian($id)
+    {
+        $countPosts = LookupMukim::find()
+        ->where(['district_id' => $id])
+        ->count();
+         
+        $posts = LookupMukim::find() 
+        ->where(['district_id' => $id])
+        ->all();
+         
+        if($countPosts>0){
+            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            foreach($posts as $post){
+                echo "<option value='".$post->mukim_id."'>".$post->mukim."</option>";
+            }
+        } else {
+                echo "<option>-</option>";
+        }
+     
+    }
     public function actionListdistrictbahagian($id)
     {
         $countPosts = LookupDistrict::find()

@@ -134,10 +134,12 @@ $(function(){
         if ($(this).val() == 21) {
             $(".bahagian_mukim").show(500);
             $(".daerah_mukim").hide(500);
+            //$(".mukim_subbase").hide(500);
             $("select#district").prop('disabled', true);
             $("select#district_bahagian").prop('disabled', false); 
         } else {
             $(".daerah_mukim").show(500);
+            //$(".mukim_subbase").show(500);
             $(".bahagian_mukim").hide(500);
             $("select#district").prop('disabled', false);
             $("select#district_bahagian").prop('disabled', true); 

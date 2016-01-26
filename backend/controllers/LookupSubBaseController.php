@@ -69,6 +69,9 @@ class LookupSubBaseController extends Controller
 
         if ($model->load(Yii::$app->request->post()) ) {
 
+            //print_r($_POST);
+            //exit();
+
             if ($model->save()) {
                 $last_id = Yii::$app->db->getLastInsertID();
                 
