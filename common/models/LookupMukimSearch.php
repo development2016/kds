@@ -18,7 +18,7 @@ class LookupMukimSearch extends LookupMukim
     public function rules()
     {
         return [
-            [['mukim_id', 'district_id', 'state_id'], 'integer'],
+            [['mukim_id', 'district_id', 'state_id','bahagian_id'], 'integer'],
             [['mukim'], 'safe'],
         ];
     }
@@ -45,6 +45,7 @@ class LookupMukimSearch extends LookupMukim
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
+            'sort'=> ['defaultOrder' => ['mukim_id' => 'DESC']]
         ]);
 
         $this->load($params);
@@ -58,6 +59,7 @@ class LookupMukimSearch extends LookupMukim
         $query->andFilterWhere([
             'mukim_id' => $this->mukim_id,
             'district_id' => $this->district_id,
+            'bahagian_id' => $this->bahagian_id,
             'state_id' => $this->state_id,
         ]);
 

@@ -28,7 +28,7 @@ class LookupMukim extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['district_id', 'state_id'], 'integer'],
+            [['district_id', 'state_id','bahagian_id'], 'integer'],
             [['mukim'], 'string', 'max' => 225]
         ];
     }
@@ -42,10 +42,12 @@ class LookupMukim extends \yii\db\ActiveRecord
             'mukim_id' => 'Mukim ID',
             'mukim' => 'Mukim',
             'district_id' => 'Daerah',
+            'bahagian_id' => 'Bahagian',
             'state_id' => 'Negeri',
         ];
     }
-        public function getState()
+
+    public function getState()
     {
         return $this->hasOne(LookupState::className(), ['state_id' => 'state_id']);
     }
@@ -53,5 +55,10 @@ class LookupMukim extends \yii\db\ActiveRecord
     public function getDistrict()
     {
         return $this->hasOne(LookupDistrict::className(), ['district_id' => 'district_id']);
+    }
+    
+    public function getBahagians()
+    {
+        return $this->hasOne(LookupBahagian::className(), ['bahagian_id' => 'bahagian_id']);
     }
 }

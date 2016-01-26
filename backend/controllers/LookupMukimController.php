@@ -10,6 +10,7 @@ use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use common\models\LookupDistrict;
 use backend\models\CountMukim;
+use common\models\LookupBahagian;
 /**
  * LookupMukimController implements the CRUD actions for LookupMukim model.
  */
@@ -66,11 +67,14 @@ class LookupMukimController extends Controller
 
         if ($model->load(Yii::$app->request->post()) ) {
 
+
+
             if ($model->save()) {
                 $last_id = Yii::$app->db->getLastInsertID();
                 
                 $model_count->state_id =  $_POST['LookupMukim']['state_id'];
                 $model_count->district_id =  $_POST['LookupMukim']['district_id'];
+                //$model_count->bahagian_id =  $_POST['LookupMukim']['bahagian_id'];
                 $model_count->mukim_id = $last_id;
                 $model_count->save();
             }
@@ -144,6 +148,51 @@ class LookupMukimController extends Controller
 
 
 
+    public function actionListbahagian($id)
+    {
+        $countPosts = LookupBahagian::find()
+        ->where(['state_id' => $id])
+        ->count();
+         
+        $posts = LookupBahagian::find() 
+        ->where(['state_id' => $id])
+        ->all();
+         
+        if($countPosts>0){
+            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            foreach($posts as $post){
+                echo "<option value='".$post->bahagian_id."'>".$post->bahagian."</option>";
+            }
+        } else {
+                echo "<option>-</option>";
+        }
+     
+    }
+
+    public function actionListdistrictbahagian($id)
+    {
+        $countPosts = LookupDistrict::find()
+        ->where(['bahagian_id' => $id])
+        ->count();
+         
+        $posts = LookupDistrict::find() 
+        ->where(['bahagian_id' => $id])
+        ->all();
+         
+        if($countPosts>0){
+            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            foreach($posts as $post){
+                echo "<option value='".$post->district_id."'>".$post->district."</option>";
+            }
+        } else {
+                echo "<option>-</option>";
+        }
+     
+    } 
+
+
+
+
     public function actionListdistrict($id)
     {
         $countPosts = LookupDistrict::find()
@@ -163,7 +212,7 @@ class LookupMukimController extends Controller
                 echo "<option>-</option>";
         }
      
-    }
+    } 
 
     public function actionListdistrictsearch($id)
     {

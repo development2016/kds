@@ -120,7 +120,7 @@ $(function(){
 
     });
 
-
+    // daerah
     $('#state_district').change(function(){
         if ($(this).val() == 21) {
             $(".bahagian_district").show(500);
@@ -129,6 +129,20 @@ $(function(){
         };
     });
 
+    //mukim
+    $('#state_mukim').change(function(){
+        if ($(this).val() == 21) {
+            $(".bahagian_mukim").show(500);
+            $(".daerah_mukim").hide(500);
+            $("select#district").prop('disabled', true);
+            $("select#district_bahagian").prop('disabled', false); 
+        } else {
+            $(".daerah_mukim").show(500);
+            $(".bahagian_mukim").hide(500);
+            $("select#district").prop('disabled', false);
+            $("select#district_bahagian").prop('disabled', true); 
+        };
+    });
 
 
 

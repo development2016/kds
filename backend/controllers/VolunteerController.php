@@ -15,6 +15,7 @@ use common\models\LookupSubBase;
 use common\models\LookupCluster;
 use common\models\LookupKampung;
 use common\models\LookupMukim;
+use yii\helpers\Json;
 /**
  * VolunteerController implements the CRUD actions for Volunteer model.
  */
@@ -292,6 +293,21 @@ class VolunteerController extends Controller
                 echo "<option>-</option>";
         }
      
+    }
+
+    public function actionJson($id)
+    {
+ 
+        $connection = \Yii::$app->db;
+        $model = $connection->createCommand('SELECT * FROM volunteer 
+        RIGHT JOIN lookup_state ON volunteer.state_id = lookup_state.state_id
+        RIGHT JOIN lookup_district ON volunteer.district_id = lookup_district.district_id
+        RIGHT JOIN lookup_kampung ON volunteer.kampung_id = lookup_kampung.kampung_id where volunteer.no_kp ="'.$id.'"'); //edit kampung_id
+        $users = $model->queryAll();
+        //$this->setHeader(200);
+         
+        echo json_encode($users);
+
     }
     
 }

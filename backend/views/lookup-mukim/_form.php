@@ -9,6 +9,10 @@ use common\models\LookupDistrict;
 
 //$negara = ArrayHelper::map(LookupCountry::find()->asArray()->all(), 'country_id', 'country');
 $state = ArrayHelper::map(LookupState::find()->where(['kawasan_perlaksanaan'=>'Ya'])->asArray()->all(), 'state_id', 'state');
+$bahagian = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->state_id])->asArray()->all(), 'bahagian_id', 'bahagian');
+$district = ArrayHelper::map(LookupDistrict::find()->where(['bahagian_id'=>$model->bahagian_id])->asArray()->all(), 'district_id', 'district');
+
+
 $district = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->state_id])->asArray()->all(), 'district_id', 'district');
 
 
@@ -26,31 +30,70 @@ $district = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->
                 <div class="form-body">
 
                     
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="form-group form-md-line-input">
                             <?= Html::activeDropDownList($model, 'state_id', $state, 
                             [
-                            'prompt'=>'(Sila Pilih)','id'=>'state',
-                            'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['lookup-mukim/listdistrict','id'=>'']).'"+$(this).val(), function( data ) {$( "select#district" ).html( data );});',
+                            'prompt'=>'(Sila Pilih)','id'=>'state_mukim',
+                            'onchange'=>
+                                'JS: var id = (this.value);
+                                if (id == 21) {
+                                    $.post( "'.Yii::$app->urlManager->createUrl(['lookup-mukim/listbahagian','id'=>'']).'"+$(this).val(), function( data ) {$( "select#bahagian " ).html( data );});
+                                } else {
+                                    $.post( "'.Yii::$app->urlManager->createUrl(['lookup-mukim/listdistrict','id'=>'']).'"+$(this).val(), function( data ) {$( "select#district " ).html( data );});
+                                };',
 
                             'class'=>'form-control']); ?>
                             <label for="form_control_1"><?= Html::activeLabel($model,'state'); ?> <span class="required">*</span></label>
                             <span class="help-block"><?= Html::error($model,'state_id'); ?></span>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="form-group form-md-line-input">
-                            <?= Html::activeDropDownList($model, 'district_id', $district, 
-                            [
-                                'prompt'=>'','id'=>'district',
-                                'class'=>'form-control',
 
-                            ]); ?>
-                            <label for="form_control_1"><?= Html::activeLabel($model,'district_id'); ?></label>
-                            <span class="help-block"><?= Html::error($model,'district_id'); ?></span>
+                    <div style="display:none;" class="bahagian_mukim">
+                        <div class="col-md-3">
+                            <div class="form-group form-md-line-input">
+                                <?= Html::activeDropDownList($model, 'bahagian_id', $bahagian, 
+                                [
+                                'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['lookup-mukim/listdistrictbahagian','id'=>'']).'"+$(this).val(), function( data ) {$( "select#district_bahagian" ).html( data );});',
+                                    'prompt'=>'','id'=>'bahagian',   
+                                    'class'=>'form-control']); ?>
+                                <label for="form_control_1"><?= Html::activeLabel($model,'bahagian_id'); ?> </label>
+                                <span class="help-block"><?= Html::error($model,'bahagian_id'); ?></span>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-3">
+                            <div class="form-group form-md-line-input">
+                                <?= Html::activeDropDownList($model, 'district_id', $district, 
+                                [
+                                    'prompt'=>'','id'=>'district_bahagian',
+                                    'class'=>'form-control',
+
+                                ]); ?>
+                                <label for="form_control_1"><?= Html::activeLabel($model,'district_id'); ?></label>
+                                <span class="help-block"><?= Html::error($model,'district_id'); ?></span>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+
+                    <div style="display:none;" class="daerah_mukim">
+                        <div class="col-md-3">
+                            <div class="form-group form-md-line-input">
+                                <?= Html::activeDropDownList($model, 'district_id', $district, 
+                                [
+                                    'prompt'=>'','id'=>'district',
+                                    'class'=>'form-control',
+
+                                ]); ?>
+                                <label for="form_control_1"><?= Html::activeLabel($model,'district_id'); ?></label>
+                                <span class="help-block"><?= Html::error($model,'district_id'); ?></span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-3">
                         <div class="form-group form-md-line-input">
                             <?= Html::activeTextInput($model,'mukim',['class'=>'form-control']); ?>
                             <label for="form_control_1"><?= Html::activeLabel($model,'mukim'); ?></label>

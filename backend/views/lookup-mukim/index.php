@@ -75,6 +75,7 @@ $this->title = 'Senarai Mukim';
                                     ['class' => 'yii\grid\SerialColumn'],
                                     'mukim',
                                     'district.district',
+                                    'bahagians.bahagian',
                                     'state.state',
                                     
                                       [

@@ -21,6 +21,7 @@ use common\models\Question;
 use common\models\Answer;
 use common\models\TanggunganOku;
 use common\models\LookupMukim;
+use yii\helpers\Json;
 /**
  * PeopleController implements the CRUD actions for People model.
  */
@@ -422,4 +423,17 @@ class PeopleController extends Controller
      
     }
     
+    public function actionJson($id)
+    {
+ 
+        $connection = \Yii::$app->db;
+        $model = $connection->createCommand('SELECT * FROM people RIGHT JOIN lookup_state ON people.state_id = lookup_state.state_id
+        RIGHT JOIN lookup_district ON people.district_id = lookup_district.district_id
+        RIGHT JOIN lookup_kampung ON people.kampung_id = lookup_kampung.kampung_id where people.ic_no ="'.$id.'"'); //edit kampung_id
+        $users = $model->queryAll();
+        //$this->setHeader(200);
+         
+        echo json_encode($users);
+
+    }
 }

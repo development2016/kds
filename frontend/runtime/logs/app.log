@@ -15989,3 +15989,364 @@ $_SERVER = [
     'argv' => []
     'argc' => 0
 ]
+2016-01-21 17:03:03 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdsv6.user' doesn't exist' in /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Command.php:825
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Command.php(825): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Command.php(363): yii\db\Command->queryInternal('fetch', NULL)
+#2 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Query.php(243): yii\db\Command->queryOne()
+#3 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/ActiveQuery.php(285): yii\db\Query->one(NULL)
+#4 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/BaseActiveRecord.php(101): yii\db\ActiveQuery->one()
+#5 /Applications/MAMP/htdocs/kds/common/models/User.php(77): yii\db\BaseActiveRecord::findOne(Array)
+#6 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/User.php(614): common\models\User::findIdentity(1)
+#7 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/User.php(176): yii\web\User->renewAuthStatus()
+#8 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Component.php(130): yii\web\User->getIdentity()
+#9 /Applications/MAMP/htdocs/kds/common/models/PeopleSearch.php(46): yii\base\Component->__get('identity')
+#10 /Applications/MAMP/htdocs/kds/frontend/controllers/PeopleController.php(50): common\models\PeopleSearch->search(Array)
+#11 [internal function]: frontend\controllers\PeopleController->actionProfil()
+#12 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#13 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('profil', Array)
+#15 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('people/profil', Array)
+#16 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#18 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdsv6.user' doesn't exist
+The SQL being executed was: SELECT * FROM `user` WHERE (`id`=1) AND (`status`=10)' in /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Schema.php:595
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Command.php(840): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Command.php(363): yii\db\Command->queryInternal('fetch', NULL)
+#2 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Query.php(243): yii\db\Command->queryOne()
+#3 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/ActiveQuery.php(285): yii\db\Query->one(NULL)
+#4 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/BaseActiveRecord.php(101): yii\db\ActiveQuery->one()
+#5 /Applications/MAMP/htdocs/kds/common/models/User.php(77): yii\db\BaseActiveRecord::findOne(Array)
+#6 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/User.php(614): common\models\User::findIdentity(1)
+#7 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/User.php(176): yii\web\User->renewAuthStatus()
+#8 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Component.php(130): yii\web\User->getIdentity()
+#9 /Applications/MAMP/htdocs/kds/common/models/PeopleSearch.php(46): yii\base\Component->__get('identity')
+#10 /Applications/MAMP/htdocs/kds/frontend/controllers/PeopleController.php(50): common\models\PeopleSearch->search(Array)
+#11 [internal function]: frontend\controllers\PeopleController->actionProfil()
+#12 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#13 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('profil', Array)
+#15 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('people/profil', Array)
+#16 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#18 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'kdsv6.user' doesn't exist
+)
+
+2016-01-21 17:03:03 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '9725b810b42e5cd284cfba13b5fbe48c'
+    '_identity' => '226b667c9f48f3130e8e4e33be4e6687fa9cc551cf2cfe0b2ad8aa5cd3eab567a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"asDQrHRUeUxwR8AmFyKh7RqjA3GSmyLv\",2592000]\";}'
+    '_csrf' => 'a8854da827b3544060de0b64169a812560ec774411b1adc30596afaf46f7b0c1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"l8VPWd10w71LM835i9OR5VRzvq8umi8k\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=9725b810b42e5cd284cfba13b5fbe48c; _identity=226b667c9f48f3130e8e4e33be4e6687fa9cc551cf2cfe0b2ad8aa5cd3eab567a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22asDQrHRUeUxwR8AmFyKh7RqjA3GSmyLv%22%2C2592000%5D%22%3B%7D; _csrf=a8854da827b3544060de0b64169a812560ec774411b1adc30596afaf46f7b0c1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22l8VPWd10w71LM835i9OR5VRzvq8umi8k%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '59320'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/people/profil.cypressdiversified'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/people/profil.cypressdiversified'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/people/profil.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/people/profil.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1453366983.18
+    'REQUEST_TIME' => 1453366983
+    'argv' => []
+    'argc' => 0
+]
+2016-01-21 17:03:09 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdsv6.user' doesn't exist' in /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Command.php:825
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Command.php(825): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Command.php(363): yii\db\Command->queryInternal('fetch', NULL)
+#2 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Query.php(243): yii\db\Command->queryOne()
+#3 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/ActiveQuery.php(285): yii\db\Query->one(NULL)
+#4 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/BaseActiveRecord.php(101): yii\db\ActiveQuery->one()
+#5 /Applications/MAMP/htdocs/kds/common/models/User.php(77): yii\db\BaseActiveRecord::findOne(Array)
+#6 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/User.php(614): common\models\User::findIdentity(1)
+#7 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/User.php(176): yii\web\User->renewAuthStatus()
+#8 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/User.php(346): yii\web\User->getIdentity()
+#9 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/filters/AccessRule.php(149): yii\web\User->getIsGuest()
+#10 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/filters/AccessRule.php(104): yii\filters\AccessRule->matchRole(Object(yii\web\User))
+#11 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/filters/AccessControl.php(118): yii\filters\AccessRule->allows(Object(yii\base\InlineAction), Object(yii\web\User), Object(yii\web\Request))
+#12 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#13 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#14 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#15 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#16 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#17 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#18 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#19 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#20 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdsv6.user' doesn't exist
+The SQL being executed was: SELECT * FROM `user` WHERE (`id`=1) AND (`status`=10)' in /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Schema.php:595
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Command.php(840): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Command.php(363): yii\db\Command->queryInternal('fetch', NULL)
+#2 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Query.php(243): yii\db\Command->queryOne()
+#3 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/ActiveQuery.php(285): yii\db\Query->one(NULL)
+#4 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/BaseActiveRecord.php(101): yii\db\ActiveQuery->one()
+#5 /Applications/MAMP/htdocs/kds/common/models/User.php(77): yii\db\BaseActiveRecord::findOne(Array)
+#6 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/User.php(614): common\models\User::findIdentity(1)
+#7 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/User.php(176): yii\web\User->renewAuthStatus()
+#8 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/User.php(346): yii\web\User->getIdentity()
+#9 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/filters/AccessRule.php(149): yii\web\User->getIsGuest()
+#10 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/filters/AccessRule.php(104): yii\filters\AccessRule->matchRole(Object(yii\web\User))
+#11 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/filters/AccessControl.php(118): yii\filters\AccessRule->allows(Object(yii\base\InlineAction), Object(yii\web\User), Object(yii\web\Request))
+#12 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#13 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#14 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#15 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#16 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#17 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#18 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#19 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#20 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#22 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'kdsv6.user' doesn't exist
+)
+
+2016-01-21 17:03:09 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '9725b810b42e5cd284cfba13b5fbe48c'
+    '_identity' => '226b667c9f48f3130e8e4e33be4e6687fa9cc551cf2cfe0b2ad8aa5cd3eab567a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"asDQrHRUeUxwR8AmFyKh7RqjA3GSmyLv\",2592000]\";}'
+    '_csrf' => 'a8854da827b3544060de0b64169a812560ec774411b1adc30596afaf46f7b0c1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"l8VPWd10w71LM835i9OR5VRzvq8umi8k\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=9725b810b42e5cd284cfba13b5fbe48c; _identity=226b667c9f48f3130e8e4e33be4e6687fa9cc551cf2cfe0b2ad8aa5cd3eab567a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22asDQrHRUeUxwR8AmFyKh7RqjA3GSmyLv%22%2C2592000%5D%22%3B%7D; _csrf=a8854da827b3544060de0b64169a812560ec774411b1adc30596afaf46f7b0c1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22l8VPWd10w71LM835i9OR5VRzvq8umi8k%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '59323'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/'
+    'PHP_SELF' => '/kds/frontend/web/index.php/'
+    'REQUEST_TIME_FLOAT' => 1453366989.06
+    'REQUEST_TIME' => 1453366989
+    'argv' => []
+    'argc' => 0
+]
+2016-01-21 17:03:12 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdsv6.user' doesn't exist' in /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Command.php:825
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Command.php(825): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Command.php(363): yii\db\Command->queryInternal('fetch', NULL)
+#2 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Query.php(243): yii\db\Command->queryOne()
+#3 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/ActiveQuery.php(285): yii\db\Query->one(NULL)
+#4 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/BaseActiveRecord.php(101): yii\db\ActiveQuery->one()
+#5 /Applications/MAMP/htdocs/kds/common/models/User.php(77): yii\db\BaseActiveRecord::findOne(Array)
+#6 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/User.php(614): common\models\User::findIdentity(1)
+#7 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/User.php(176): yii\web\User->renewAuthStatus()
+#8 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/User.php(346): yii\web\User->getIdentity()
+#9 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/filters/AccessRule.php(149): yii\web\User->getIsGuest()
+#10 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/filters/AccessRule.php(104): yii\filters\AccessRule->matchRole(Object(yii\web\User))
+#11 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/filters/AccessControl.php(118): yii\filters\AccessRule->allows(Object(yii\base\InlineAction), Object(yii\web\User), Object(yii\web\Request))
+#12 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#13 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#14 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#15 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#16 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#17 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#18 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#19 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#20 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdsv6.user' doesn't exist
+The SQL being executed was: SELECT * FROM `user` WHERE (`id`=1) AND (`status`=10)' in /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Schema.php:595
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Command.php(840): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Command.php(363): yii\db\Command->queryInternal('fetch', NULL)
+#2 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/Query.php(243): yii\db\Command->queryOne()
+#3 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/ActiveQuery.php(285): yii\db\Query->one(NULL)
+#4 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/db/BaseActiveRecord.php(101): yii\db\ActiveQuery->one()
+#5 /Applications/MAMP/htdocs/kds/common/models/User.php(77): yii\db\BaseActiveRecord::findOne(Array)
+#6 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/User.php(614): common\models\User::findIdentity(1)
+#7 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/User.php(176): yii\web\User->renewAuthStatus()
+#8 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/User.php(346): yii\web\User->getIdentity()
+#9 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/filters/AccessRule.php(149): yii\web\User->getIsGuest()
+#10 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/filters/AccessRule.php(104): yii\filters\AccessRule->matchRole(Object(yii\web\User))
+#11 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/filters/AccessControl.php(118): yii\filters\AccessRule->allows(Object(yii\base\InlineAction), Object(yii\web\User), Object(yii\web\Request))
+#12 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#13 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#14 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#15 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#16 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#17 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#18 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#19 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#20 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#22 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'kdsv6.user' doesn't exist
+)
+
+2016-01-21 17:03:12 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '9725b810b42e5cd284cfba13b5fbe48c'
+    '_identity' => '226b667c9f48f3130e8e4e33be4e6687fa9cc551cf2cfe0b2ad8aa5cd3eab567a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"asDQrHRUeUxwR8AmFyKh7RqjA3GSmyLv\",2592000]\";}'
+    '_csrf' => 'a8854da827b3544060de0b64169a812560ec774411b1adc30596afaf46f7b0c1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"l8VPWd10w71LM835i9OR5VRzvq8umi8k\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=9725b810b42e5cd284cfba13b5fbe48c; _identity=226b667c9f48f3130e8e4e33be4e6687fa9cc551cf2cfe0b2ad8aa5cd3eab567a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22asDQrHRUeUxwR8AmFyKh7RqjA3GSmyLv%22%2C2592000%5D%22%3B%7D; _csrf=a8854da827b3544060de0b64169a812560ec774411b1adc30596afaf46f7b0c1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22l8VPWd10w71LM835i9OR5VRzvq8umi8k%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '59324'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/'
+    'PHP_SELF' => '/kds/frontend/web/index.php/'
+    'REQUEST_TIME_FLOAT' => 1453366992.76
+    'REQUEST_TIME' => 1453366992
+    'argv' => []
+    'argc' => 0
+]
+2016-01-26 09:16:29 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Request.php:187
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php(75): yii\web\Request->resolve()
+#1 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+2016-01-26 09:16:29 [::1][-][-][info][application] $_COOKIE = [
+    '_identity' => '66e1d12a3f9f8afa49d33ecae8c19d1da34d0ef099aba9356df8ed59445bb6fea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"YAVeBa0rYh8BYO07YY7LfHqz8p4b20hG\",2592000]\";}'
+    '_csrf' => 'a3af4c8204dfc7daf1e9cbebe3369b093260fa025a727dc10cc036e102bc2a8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"9fqbXi79vAZPP5x8VJAidKK_RNYBXx8b\";}'
+    'PHPSESSID' => '4839a4e3215390f4ac3b35703988980a'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/backend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6'
+    'HTTP_COOKIE' => '_identity=66e1d12a3f9f8afa49d33ecae8c19d1da34d0ef099aba9356df8ed59445bb6fea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22YAVeBa0rYh8BYO07YY7LfHqz8p4b20hG%22%2C2592000%5D%22%3B%7D; _csrf=a3af4c8204dfc7daf1e9cbebe3369b093260fa025a727dc10cc036e102bc2a8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%229fqbXi79vAZPP5x8VJAidKK_RNYBXx8b%22%3B%7D; PHPSESSID=4839a4e3215390f4ac3b35703988980a'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49750'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/site/login'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/site/login'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/site/login'
+    'PHP_SELF' => '/kds/frontend/web/index.php/site/login'
+    'REQUEST_TIME_FLOAT' => 1453770989.14
+    'REQUEST_TIME' => 1453770989
+    'argv' => []
+    'argc' => 0
+]
