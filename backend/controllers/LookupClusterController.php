@@ -13,6 +13,7 @@ use common\models\LookupDistrict;
 use common\models\LookupSubBase;
 use common\models\LookupCluster;
 use common\models\LookupMukim;
+use common\models\LookupBahagian;
 use backend\models\CountCluster;
 
 /**
@@ -77,7 +78,7 @@ class LookupClusterController extends Controller
                 
                 $model_count->state_id =  $_POST['LookupCluster']['state_id'];
                 $model_count->district_id =  $_POST['LookupCluster']['district_id'];
-                $model_count->mukim_id = $_POST['LookupCluster']['mukim_id'];
+                //$model_count->mukim_id = $_POST['LookupCluster']['mukim_id'];
                 $model_count->sub_base_id = $_POST['LookupCluster']['sub_base_id'];
                 $model_count->cluster_id = $last_id;
                 $model_count->save();
@@ -171,7 +172,46 @@ class LookupClusterController extends Controller
         }
      
     }
-
+    public function actionListdistrictbahagian($id)
+    {
+        $countPosts = LookupDistrict::find()
+        ->where(['bahagian_id' => $id])
+        ->count();
+         
+        $posts = LookupDistrict::find() 
+        ->where(['bahagian_id' => $id])
+        ->all();
+         
+        if($countPosts>0){
+            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            foreach($posts as $post){
+                echo "<option value='".$post->district_id."'>".$post->district."</option>";
+            }
+        } else {
+                echo "<option>-</option>";
+        }
+     
+    }
+    public function actionListbahagian($id)
+    {
+        $countPosts = LookupBahagian::find()
+        ->where(['state_id' => $id])
+        ->count();
+         
+        $posts = LookupBahagian::find() 
+        ->where(['state_id' => $id])
+        ->all();
+         
+        if($countPosts>0){
+            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            foreach($posts as $post){
+                echo "<option value='".$post->bahagian_id."'>".$post->bahagian."</option>";
+            }
+        } else {
+                echo "<option>-</option>";
+        }
+     
+    }
     public function actionListmukim($id)
     {
         $countPosts = LookupMukim::find()
@@ -212,7 +252,26 @@ class LookupClusterController extends Controller
         }
      
     }
-
+    public function actionListsubbaseother($id)
+    {
+        $countPosts = LookupSubBase::find()
+        ->where(['district_id' => $id])
+        ->count();
+         
+        $posts = LookupSubBase::find() 
+        ->where(['district_id' => $id])
+        ->all();
+         
+        if($countPosts>0){
+            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            foreach($posts as $post){
+                echo "<option value='".$post->sub_base_id."'>".$post->sub_base."</option>";
+            }
+        } else {
+                echo "<option>-</option>";
+        }
+     
+    }
 
      public function actionListdistrictsearch($id)
     {

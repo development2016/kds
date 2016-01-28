@@ -14,6 +14,7 @@ use common\models\LookupCluster;
 use common\models\LookupKampung;
 use common\models\LookupMukim;
 use backend\models\CountKampung;
+use common\models\LookupBahagian;
 /**
  * LookupKampungController implements the CRUD actions for LookupKampung model.
  */
@@ -76,7 +77,7 @@ class LookupKampungController extends Controller
                 
                 $model_count->state_id =  $_POST['LookupKampung']['state_id'];
                 $model_count->district_id =  $_POST['LookupKampung']['district_id'];
-                $model_count->mukim_id = $_POST['LookupKampung']['mukim_id'];
+                //$model_count->mukim_id = $_POST['LookupKampung']['mukim_id'];
                 $model_count->sub_base_id = $_POST['LookupKampung']['sub_base_id'];
                 $model_count->cluster_id = $_POST['LookupKampung']['cluster_id'];
                 $model_count->kampung_id = $last_id;
@@ -109,7 +110,7 @@ class LookupKampungController extends Controller
 
                 $model_count->state_id =  $_POST['LookupKampung']['state_id'];
                 $model_count->district_id =  $_POST['LookupKampung']['district_id'];
-                $model_count->mukim_id = $_POST['LookupKampung']['mukim_id'];
+                //$model_count->mukim_id = $_POST['LookupKampung']['mukim_id'];
                 $model_count->sub_base_id = $_POST['LookupKampung']['sub_base_id'];
                 $model_count->cluster_id = $_POST['LookupKampung']['cluster_id'];
                 $model_count->save();
@@ -153,9 +154,7 @@ class LookupKampungController extends Controller
         }
     }
 
-
-
-     public function actionListdistrict($id)
+    public function actionListdistrict($id)
     {
         $countPosts = LookupDistrict::find()
         ->where(['state_id' => $id])
@@ -216,7 +215,26 @@ class LookupKampungController extends Controller
         }
      
     }
-
+    public function actionListsubbaseother($id)
+    {
+        $countPosts = LookupSubBase::find()
+        ->where(['district_id' => $id])
+        ->count();
+         
+        $posts = LookupSubBase::find() 
+        ->where(['district_id' => $id])
+        ->all();
+         
+        if($countPosts>0){
+            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            foreach($posts as $post){
+                echo "<option value='".$post->sub_base_id."'>".$post->sub_base."</option>";
+            }
+        } else {
+                echo "<option>-</option>";
+        }
+     
+    }
     public function actionListcluster($id)
     {
         $countPosts = LookupCluster::find()
@@ -237,8 +255,47 @@ class LookupKampungController extends Controller
         }
      
     }
-
-
+    // create kampung dropdown list section
+    public function actionListbahagian($id)
+    {
+        $countPosts = LookupBahagian::find()
+        ->where(['state_id' => $id])
+        ->count();
+         
+        $posts = LookupBahagian::find() 
+        ->where(['state_id' => $id])
+        ->all();
+         
+        if($countPosts>0){
+            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            foreach($posts as $post){
+                echo "<option value='".$post->bahagian_id."'>".$post->bahagian."</option>";
+            }
+        } else {
+                echo "<option>-</option>";
+        }
+     
+    }
+    public function actionListdistrictbahagian($id)
+    {
+        $countPosts = LookupDistrict::find()
+        ->where(['bahagian_id' => $id])
+        ->count();
+         
+        $posts = LookupDistrict::find() 
+        ->where(['bahagian_id' => $id])
+        ->all();
+         
+        if($countPosts>0){
+            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            foreach($posts as $post){
+                echo "<option value='".$post->district_id."'>".$post->district."</option>";
+            }
+        } else {
+                echo "<option>-</option>";
+        }
+     
+    }
      public function actionListdistrictsearch($id)
     {
         $countPosts = LookupDistrict::find()

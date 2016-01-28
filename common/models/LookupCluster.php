@@ -31,7 +31,7 @@ class LookupCluster extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['sub_base_id', 'district_id', 'state_id','mukim_id'], 'integer'],
+            [['sub_base_id', 'district_id', 'state_id','mukim_id','bahagian_id'], 'integer'],
             [['cluster'], 'string', 'max' => 225],
             [['cluster_code'], 'string', 'max' => 45]
         ];
@@ -50,6 +50,8 @@ class LookupCluster extends \yii\db\ActiveRecord
             'sub_base_id' => 'Sub Base',
             'district_id' => 'Daerah',
             'state_id' => 'Negeri',
+            'bahagian_id'=>'Bahagian Id',
+            'district' => 'Daerah',
         ];
     }
 

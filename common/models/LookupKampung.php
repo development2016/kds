@@ -32,7 +32,7 @@ class LookupKampung extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['cluster_id', 'sub_base_id', 'district_id', 'state_id', 'kampcom_id','mukim_id'], 'integer'],
+            [['cluster_id', 'sub_base_id', 'district_id', 'state_id', 'kampcom_id','mukim_id','bahagian_id'], 'integer'],
             [['kampung'], 'string', 'max' => 225]
         ];
     }
@@ -51,6 +51,7 @@ class LookupKampung extends \yii\db\ActiveRecord
             'district_id' => 'Daerah',
             'state_id' => 'Negeri',
             'kampcom_id' => 'Kampcom',
+            'bahagian_id' =>'Bahagian'
         ];
     }
 

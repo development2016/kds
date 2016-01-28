@@ -28,7 +28,7 @@ class LookupMukim extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['district_id', 'state_id','bahagian_id'], 'integer'],
+            [['district_id', 'state_id','bahagian_id','mukim_id'], 'integer'],
             [['mukim'], 'string', 'max' => 225]
         ];
     }

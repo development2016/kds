@@ -30,7 +30,7 @@ class LookupSubBase extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['district_id', 'state_id','mukim_id'], 'integer'],
+            [['district_id', 'state_id','mukim_id','bahagian_id'], 'integer'],
             [['sub_base'], 'string', 'max' => 225],
             [['sub_base_code'], 'string', 'max' => 45]
         ];
@@ -48,6 +48,7 @@ class LookupSubBase extends \yii\db\ActiveRecord
             'mukim_id' => 'Mukim',
             'district_id' => 'Daerah',
             'state_id' => 'Negeri',
+            'bahagian_id'=>'bahagian_id',
         ];
     }
 
