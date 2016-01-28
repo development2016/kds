@@ -37,7 +37,7 @@ $this->title = 'Komuniti Development System';
 						<div class="portlet-body">
 
                          
-                            
+                            if user role = 5 show table else show map
 						</div>
 					</div>
 				</div>

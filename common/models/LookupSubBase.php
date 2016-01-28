@@ -48,7 +48,7 @@ class LookupSubBase extends \yii\db\ActiveRecord
             'mukim_id' => 'Mukim',
             'district_id' => 'Daerah',
             'state_id' => 'Negeri',
-            'bahagian_id'=>'bahagian_id',
+            'bahagian_id'=>'Bahagian',
         ];
     }
 

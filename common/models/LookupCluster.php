@@ -50,7 +50,7 @@ class LookupCluster extends \yii\db\ActiveRecord
             'sub_base_id' => 'Sub Base',
             'district_id' => 'Daerah',
             'state_id' => 'Negeri',
-            'bahagian_id'=>'Bahagian Id',
+            'bahagian_id'=>'Bahagian',
             'district' => 'Daerah',
         ];
     }
