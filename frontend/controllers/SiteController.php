@@ -68,8 +68,30 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        
-        return $this->render('index');
+        $id = Yii::$app->user->identity->id;
+        $role = Yii::$app->user->identity->role;
+        $connection = \Yii::$app->db;
+        $total = 0;
+        $sql = $connection->createCommand("SELECT count(p.data_status) AS jumlah,s.state from people p right join lookup_state s on s.state_id  = p.state_id  WHERE p.enter_by = '".$id."' AND p.data_status = 'Sah' group by s.state");
+        $data = $sql->queryAll(); // data yang telah di sahkan
+
+        $sql1 = $connection->createCommand("SELECT count(p.people_id) AS jumlah_dimasukkan,s.state from people p right join lookup_state s on s.state_id  = p.state_id  WHERE p.enter_by = '".$id."' group by s.state");
+        $data1 = $sql1->queryAll(); //data yang di key in
+
+        $sql2 = $connection->createCommand("SELECT d.state_id,s.state,d.total_by_state,d.total_sah_by_state,d.total_today,d.total_sah_today,d.total_yesterday,d.total_sah_yesterday from daily_count d right join lookup_state s on s.state_id = d.state_id where s.kawasan_perlaksanaan = 'Ya'");
+        $data2 = $sql2->queryAll(); // retrieve from table daily_count(event count)
+
+        foreach ($data2 as $key => $value) {
+            $total += $value['total_by_state'];
+        }
+
+        return $this->render('index',[
+            'role'=>$role,
+            'data'=>$data,
+            'data1'=>$data1,
+            'data2'=>$data2,
+            'total'=>$total,
+            ]);
     }
 
     public function actionLogin()

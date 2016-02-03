@@ -1,0 +1,122 @@
+BEGIN
+SET @pahang = (SELECT COUNT(people_id) FROM people WHERE state_id = 12);
+SET @pahang_sah  = (SELECT COUNT(people_id) FROM people  WHERE data_status = "Sah" AND state_id = 12);
+SET @data_phg_today  = (SELECT COUNT(people_id) FROM people  WHERE  enter_date = CURDATE() AND state_id = 12);
+SET @data_sah_phg_today  = (SELECT COUNT(people_id) FROM people  WHERE verified_date =CURDATE() AND data_status = "Sah" AND state_id = 12);
+SET @data_smlm_phg = (SELECT COUNT(people_id) FROM people  WHERE enter_date = CURDATE() - 1 AND state_id = 12);
+SET @data_sah_smlm_phg = (SELECT COUNT(people_id) FROM people  WHERE verified_date = CURDATE() - 1 AND data_status = "Sah" AND state_id = 12);
+    UPDATE daily_count 
+											SET total_by_state = @pahang,
+															total_sah_by_state = @pahang_sah,
+															total_today = @data_phg_today,
+															total_sah_today = @data_sah_phg_today,
+															total_yesterday  = @data_smlm_phg,
+															total_sah_yesterday  = @data_sah_smlm_phg
+											WHERE state_id = 12;
+    
+SET @selangor = (SELECT COUNT(people_id) FROM people WHERE state_id = 13);
+SET @selangor_sah  = (SELECT COUNT(people_id) FROM people  WHERE data_status = "Sah" AND state_id = 13);
+SET @data_selangor_today  = (SELECT COUNT(people_id) FROM people  WHERE  enter_date = CURDATE() AND state_id = 13);
+SET @data_sah_selangor_today  = (SELECT COUNT(people_id) FROM people  WHERE verified_date =CURDATE() AND data_status = "Sah" AND state_id = 13);
+SET @data_smlm_slgr = (SELECT COUNT(people_id) FROM people  WHERE enter_date = CURDATE() - 1 AND state_id = 13);
+SET @data_sah_smlm_slgr= (SELECT COUNT(people_id) FROM people  WHERE verified_date = CURDATE() - 1 AND data_status = "Sah" AND state_id = 13);
+		UPDATE daily_count 
+						SET total_by_state = @selangor,
+										total_sah_by_state = @selangor_sah,
+										total_today = @data_selangor_today,
+										total_sah_today = @data_sah_selangor_today,
+										total_yesterday  = @data_smlm_slgr,
+										total_sah_yesterday  = @data_sah_smlm_slgr
+						WHERE state_id = 13;
+    
+SET @perlis = (SELECT COUNT(people_id) FROM people WHERE state_id = 14);
+SET @perlis_sah  = (SELECT COUNT(people_id) FROM people  WHERE data_status = "Sah" AND state_id = 14);
+SET @data_perlis_today  = (SELECT COUNT(people_id) FROM people  WHERE  enter_date = CURDATE() AND state_id = 14);
+SET @data_sah_perlis_today  = (SELECT COUNT(people_id) FROM people  WHERE verified_date =CURDATE() AND data_status = "Sah" AND state_id =  14);
+SET @data_smlm_perlis= (SELECT COUNT(people_id) FROM people  WHERE enter_date = CURDATE() - 1 AND state_id = 14);
+SET @data_sah_smlm_perlis = (SELECT COUNT(people_id) FROM people  WHERE verified_date = CURDATE() - 1 AND data_status = "Sah" AND state_id = 14);
+    UPDATE daily_count 
+						SET total_by_state = @perlis,
+										total_sah_by_state = @perlis_sah,
+										total_today = @data_perlis_today,
+										total_sah_today = @data_sah_perlis_today,
+										total_yesterday  = @data_smlm_perlis,
+										total_sah_yesterday  = @data_sah_smlm_perlis
+						WHERE state_id = 14;
+
+SET @perak = (SELECT COUNT(people_id) FROM people WHERE state_id = 15);
+SET @perak_sah  = (SELECT COUNT(people_id) FROM people  WHERE data_status = "Sah" AND state_id = 15);
+SET @data_perak_today  = (SELECT COUNT(people_id) FROM people  WHERE  enter_date = CURDATE() AND state_id = 15);
+SET @data_sah_perak_today  = (SELECT COUNT(people_id) FROM people  WHERE verified_date =CURDATE() AND data_status = "Sah" AND state_id = 15);
+SET @data_smlm_perak = (SELECT COUNT(people_id) FROM people  WHERE enter_date = CURDATE() - 1 AND state_id = 15);
+SET @data_sah_smlm_perak = (SELECT COUNT(people_id) FROM people  WHERE verified_date = CURDATE() - 1 AND data_status = "Sah" AND state_id = 15);
+   UPDATE daily_count 
+						SET total_by_state = @perak,
+										total_sah_by_state = @perak_sah,
+										total_today = @data_perak_today,
+										total_sah_today = @data_sah_perak_today,
+										total_yesterday  = @data_smlm_perak,
+										total_sah_yesterday  = @data_sah_smlm_perak
+						WHERE state_id = 15;
+
+SET @kedah = (SELECT COUNT(people_id) FROM people WHERE state_id = 16);
+SET @kedah_sah  = (SELECT COUNT(people_id) FROM people  WHERE data_status = "Sah" AND state_id = 16);
+SET @data_kedah_today  = (SELECT COUNT(people_id) FROM people  WHERE  enter_date = CURDATE() AND state_id = 16);
+SET @data_sah_kedah_today  = (SELECT COUNT(people_id) FROM people  WHERE verified_date =CURDATE() AND data_status = "Sah" AND state_id =16);
+SET @data_smlm_kedah = (SELECT COUNT(people_id) FROM people  WHERE enter_date = CURDATE() - 1 AND state_id = 16);
+SET @data_sah_smlm_kedah = (SELECT COUNT(people_id) FROM people  WHERE verified_date = CURDATE() - 1 AND data_status = "Sah" AND state_id = 16);
+    UPDATE daily_count 
+						SET total_by_state = @kedah,
+										total_sah_by_state = @kedah_sah,
+										total_today = @data_kedah_today,
+										total_sah_today = @data_sah_kedah_today,
+										total_yesterday  = @data_smlm_kedah,
+										total_sah_yesterday  = @data_sah_smlm_kedah
+						WHERE state_id = 16;
+
+SET @terengganu = (SELECT COUNT(people_id) FROM people WHERE state_id = 18);
+SET @terengganu_sah  = (SELECT COUNT(people_id) FROM people  WHERE data_status = "Sah" AND state_id = 18);
+SET @data_terengganu_today  = (SELECT COUNT(people_id) FROM people  WHERE  enter_date = CURDATE() AND state_id = 18);
+SET @data_sah_terengganu_today  = (SELECT COUNT(people_id) FROM people  WHERE verified_date =CURDATE() AND data_status = "Sah" AND state_id = 18);
+SET @data_trgganu_smlm = (SELECT COUNT(people_id) FROM people  WHERE enter_date = CURDATE() - 1 AND state_id = 18);
+SET @data_sah_smlm_trgganu = (SELECT COUNT(people_id) FROM people  WHERE verified_date = CURDATE() - 1 AND data_status = "Sah" AND state_id = 18);
+    UPDATE daily_count
+						SET total_by_state = @terengganu,
+										total_sah_by_state = @terengganu_sah,
+										total_today = @data_terengganu_today,
+										total_sah_today = @data_sah_terengganu_today,
+										total_yesterday  = @data_trgganu_smlm,
+										total_sah_yesterday  = @data_sah_smlm_trgganu
+						WHERE state_id = 18;
+
+SET @sarawak = (SELECT COUNT(people_id) FROM people WHERE state_id = 21);
+SET @sarawak_sah  = (SELECT COUNT(people_id) FROM people  WHERE data_status = "Sah" AND state_id = 21);
+SET @data_sarawak_today  = (SELECT COUNT(people_id) FROM people  WHERE  enter_date = CURDATE() AND state_id = 21);
+SET @data_sah_sarawak_today  = (SELECT COUNT(people_id) FROM people  WHERE verified_date =CURDATE() AND data_status = "Sah" AND state_id = 21);
+SET @data_smlm_srwk = (SELECT COUNT(people_id) FROM people  WHERE enter_date = CURDATE() - 1 AND state_id = 21);
+SET @data_sah_smlm_srwk = (SELECT COUNT(people_id) FROM people  WHERE verified_date = CURDATE() - 1 AND data_status = "Sah" AND state_id = 21);
+    UPDATE daily_count
+						SET total_by_state = @sarawak,
+										total_sah_by_state = @sarawak_sah,
+										total_today = @data_sarawak_today,
+										total_sah_today = @data_sah_sarawak_today,
+										total_yesterday  = @data_smlm_srwk,
+										total_sah_yesterday  = @data_sah_smlm_srwk
+						WHERE state_id = 21;
+
+SET @johor = (SELECT COUNT(people_id) FROM people WHERE state_id = 22);
+SET @johor_sah  = (SELECT COUNT(people_id) FROM people  WHERE data_status = "Sah" AND state_id = 22);
+SET @data_johor_today  = (SELECT COUNT(people_id) FROM people  WHERE  enter_date = CURDATE() AND state_id = 22);
+SET @data_sah_johor_today  = (SELECT COUNT(people_id) FROM people  WHERE verified_date =CURDATE() AND data_status = "Sah" AND state_id = 22);
+SET @data_smlm_johor = (SELECT COUNT(people_id) FROM people  WHERE enter_date = CURDATE() - 1 AND state_id = 22);
+SET @data_sah_smlm_johor = (SELECT COUNT(people_id) FROM people  WHERE verified_date = CURDATE() - 1 AND data_status = "Sah" AND state_id = 22);
+    UPDATE daily_count
+		SET total_by_state = @johor,
+						total_sah_by_state = @johor_sah,
+						total_today = @data_johor_today,
+						total_sah_today = @data_sah_johor_today,
+						total_yesterday  = @data_smlm_johor,
+						total_sah_yesterday  = @data_sah_smlm_johor
+		WHERE state_id = 22;
+
+	END

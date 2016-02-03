@@ -1,5 +1,7 @@
 <?php
 /* @var $this yii\web\View */
+use miloschuman\highcharts\Highmaps;
+use yii\web\JsExpression;
 $this->title = 'Komuniti Development System';
 ?>
     <!-- BEGIN PAGE HEAD -->
@@ -39,11 +41,44 @@ $this->title = 'Komuniti Development System';
                             </div>
                         </div>
                         <div class="portlet-body">
-
-
-
-
-
+                            <?php  if($role == 6){ ?>
+                            <div class="row">
+                                    <div class="portlet white-cascade box">
+                                        <div class="portlet-body">
+                                            <div class="portlet-title">
+                                                <div class="caption font-green-haze">
+                                                    <h4 class="caption-subject bold uppercase">Jumlah Data Semasa : <?php echo $total;?></h4>
+                                                </div><br>
+                                            </div>
+                                            
+                                            <table class='table table-bordered table-hover' width='100%'>
+                                                <tr>
+                                                    <th>Negeri</th>
+                                                    <th>Jumlah Data</th>
+                                                    <th>Data Yang Disahkan</th>
+                                                    <th>Data Hari Ini</th>
+                                                    <th>Data Sah Hari Ini</th>
+                                                    <th>Data Semalam</th>
+                                                    <th>Data Sah Semalam</th>
+                                                </tr>
+                                            <?php                                                    
+                                                foreach ($data as $key => $value) {
+                                            ?>
+                                                <tr>
+                                                    <td><?php echo $value['state'];?></td>
+                                                    <td><?php echo $value['total_by_state'];?></td>
+                                                    <td><?php echo $value['total_sah_by_state'];?></td>
+                                                    <td><?php echo $value['total_today'];?></td>
+                                                    <td><?php echo $value['total_sah_today'];?></td>
+                                                    <td><?php echo $value['total_yesterday'];?></td>
+                                                    <td><?php echo $value['total_sah_yesterday'];?></td>
+                                                </tr>
+                                            <?php }?>
+                                            </table>
+                                        </div>
+                                    </div>
+                            </div>
+                            <?php }?>
                         </div>
                     </div>
                 </div>
