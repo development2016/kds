@@ -242,7 +242,7 @@ $this->title = 'Komuniti Development System';
                                             </div>
 
 
-                                                <span class="last_update">Last Update : <?= $model_count->last_update ?></span>
+                                                
 
                                         </div>
                                     </div>

@@ -19563,3 +19563,54 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1454469504.491
     'REQUEST_TIME' => 1454469504
 ]
+2016-02-03 15:22:12 [::1][1][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Request.php:187
+Stack trace:
+#0 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/web/Application.php(75): yii\web\Request->resolve()
+#1 /Applications/MAMP/htdocs/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/kds/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+2016-02-03 15:22:12 [::1][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'bf864b549c3d1e3496c48fd11abb047f'
+    '_identity' => 'f206f829b825f4cb1fe0269749c4a5b74c229493eb5affb9a0906350d7d68e28a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+    '_csrf' => '5ebf0be04dff66889ca52b72d903ec2a09a31c79b87add535a422cf1736ccfc3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"V1umAzi_oaa0hUZEV0pjOq0vydLm3Z7t\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.97 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6,id;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=bf864b549c3d1e3496c48fd11abb047f; _identity=f206f829b825f4cb1fe0269749c4a5b74c229493eb5affb9a0906350d7d68e28a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D; _csrf=5ebf0be04dff66889ca52b72d903ec2a09a31c79b87add535a422cf1736ccfc3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22V1umAzi_oaa0hUZEV0pjOq0vydLm3Z7t%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '63489'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/lookup-sub-base/index'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/lookup-sub-base/index'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/lookup-sub-base/index'
+    'PHP_SELF' => '/kds/frontend/web/index.php/lookup-sub-base/index'
+    'REQUEST_TIME_FLOAT' => 1454484132.17
+    'REQUEST_TIME' => 1454484132
+    'argv' => []
+    'argc' => 0
+]
