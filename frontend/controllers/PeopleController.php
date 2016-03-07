@@ -21,6 +21,9 @@ use common\models\Question;
 use common\models\Answer;
 use common\models\TanggunganOku;
 use common\models\LookupMukim;
+
+use frontend\models\AnswerTemp;
+use frontend\models\QuestionTemp;
 /**
  * PeopleController implements the CRUD actions for People model.
  */
@@ -167,8 +170,12 @@ class PeopleController extends Controller
         $model_answer = new Answer();
         $model_tanggunganoku = new TanggunganOku();
 
+        $model_question_temp = QuestionTemp::find()->all();
+        $model_answer_temp = new AnswerTemp();
 
-        if ($model->load(Yii::$app->request->post()) && $model_oku->load(Yii::$app->request->post()) && $model_wife->load(Yii::$app->request->post()) && $model_tanggungan->load(Yii::$app->request->post()) && $model_answer->load(Yii::$app->request->post()) && $model_tanggunganoku->load(Yii::$app->request->post())) {
+
+        if ($model->load(Yii::$app->request->post()) && $model_oku->load(Yii::$app->request->post()) && $model_wife->load(Yii::$app->request->post()) && $model_tanggungan->load(Yii::$app->request->post()) && $model_answer->load(Yii::$app->request->post()) && $model_tanggunganoku->load(Yii::$app->request->post()) && $model_answer_temp->load(Yii::$app->request->post())) {
+
 
             $model->name=strtoupper($_POST['People']['name']);
             $model->data_status="Separa Sah";
@@ -211,14 +218,26 @@ class PeopleController extends Controller
                     
                 }     
 
-                $answr = count($_POST['Answer']['answer']);
-                for ($i=1; $i <= $answr; $i++) { 
-                    $model_answer =new Answer;
-                    $model_answer->answer = $_POST['Answer']['answer'][$i];
-                    $model_answer->question_id = $i;//$_POST['Answer']['question_id'][$i];
-                    $model_answer->people_id = $last_id;
-                    $model_answer->save();
-                }        
+                if ($model->state_id == 21) {
+                    $answr_temp = count($_POST['AnswerTemp']['jawapan']);
+                    for ($i=1; $i <= $answr_temp; $i++) { 
+                        $model_answer_temp =new AnswerTemp;
+                        $model_answer_temp->jawapan = $_POST['AnswerTemp']['jawapan'][$i];
+                        $model_answer_temp->question_temp_id = $i;//$_POST['Answer']['question_id'][$i];
+                        $model_answer_temp->people_id = $last_id;
+                        $model_answer_temp->save();
+                    } 
+                } else {
+                    $answr = count($_POST['Answer']['answer']);
+                    for ($i=1; $i <= $answr; $i++) { 
+                        $model_answer =new Answer;
+                        $model_answer->answer = $_POST['Answer']['answer'][$i];
+                        $model_answer->question_id = $i;//$_POST['Answer']['question_id'][$i];
+                        $model_answer->people_id = $last_id;
+                        $model_answer->save();
+                    }   
+                }
+      
 
                 if ($model->tanggungan_oku == "Tidak") {
 
@@ -266,6 +285,8 @@ class PeopleController extends Controller
                     'model_question' => $model_question,
                     'model_answer' => $model_answer,
                     'model_tanggunganoku' => $model_tanggunganoku,
+                    'model_question_temp' => $model_question_temp,
+                    'model_answer_temp' => $model_answer_temp,
                 ]);
             }        
             
@@ -278,6 +299,8 @@ class PeopleController extends Controller
                 'model_question' => $model_question,
                 'model_answer' => $model_answer,
                 'model_tanggunganoku' => $model_tanggunganoku,
+                'model_question_temp' => $model_question_temp,
+                'model_answer_temp' => $model_answer_temp,
             ]);
         }
     }
@@ -302,6 +325,14 @@ class PeopleController extends Controller
             'query' => Answer::find()->where(['people_id'=>$id]),
             'pagination' => ['pageSize'=>52],
         ]);
+
+        $model_answer_temp = new ActiveDataProvider([
+            'query' => AnswerTemp::find()->where(['people_id'=>$id]),
+            'pagination' => ['pageSize'=>52],
+        ]);
+
+
+
         $model_tanggunganoku = TanggunganOku::find()->where(['people_id'=>$id])->all();
 
         if ($model->load(Yii::$app->request->post())  && $model_oku->load(Yii::$app->request->post()) ) {
@@ -318,6 +349,7 @@ class PeopleController extends Controller
                 'model_tanggungan' => $model_tanggungan,
                 'model_answer' => $model_answer,
                 'model_tanggunganoku' => $model_tanggunganoku,
+                'model_answer_temp' => $model_answer_temp,
             ]);
         }
     }

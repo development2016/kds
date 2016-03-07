@@ -408,6 +408,34 @@ $(function(){
 
 
 
+    $('#state').change(function(){
 
+        if ($(this).val() == 21) {
+            $('.not_sarawak').hide();
+            $('.show_sarawak').show();
+        } else {
+            $('.not_sarawak').show();
+            $('.show_sarawak').hide();
+        };
+
+    }); 
+
+    $("#radio13").click(function(){
+
+        $('.sukarelawan_temp').hide(1000);
+    });
+    $("#radio14").click(function(){
+
+        $('.sukarelawan_temp').hide(1000);
+    });
+
+    $("#radio15").click(function(){
+
+        $('.sukarelawan_temp').show(1000);
+    });
+    $("#radio16").click(function(){
+
+        $('.sukarelawan_temp').show(1000);
+    });
 
 });

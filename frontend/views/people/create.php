@@ -57,6 +57,8 @@ $this->title = 'Pendaftaran';
                                 'model_question' => $model_question,
                                 'model_answer' => $model_answer,
                                 'model_tanggunganoku' => $model_tanggunganoku,
+                                'model_question_temp' => $model_question_temp,
+                                'model_answer_temp' => $model_answer_temp,
 						    ]) ?>
 
 						</div>

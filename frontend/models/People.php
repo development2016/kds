@@ -88,11 +88,11 @@ class People extends \yii\db\ActiveRecord
             //['email','email','message'=>'Sila Masukkan Email Yang Sah'],
             ['ic_no', 'required', 'message' => 'Sila Isi No Kad Pengenalan'],
             ['name', 'required', 'message' => 'Sila Isi Nama Sukarelawan'],
-            ['state_id', 'required', 'message' => 'Sila Isi Negeri '],
+            /*['state_id', 'required', 'message' => 'Sila Isi Negeri '],
             ['district_id', 'required', 'message' => 'Sila Isi Daerah'],
             ['sub_base_id', 'required', 'message' => 'Sila Isi Sub Base'],
             ['cluster_id', 'required', 'message' => 'Sila Isi Cluster'],
-            ['kampung_id', 'required', 'message' => 'Sila Isi Kampung'],
+            ['kampung_id', 'required', 'message' => 'Sila Isi Kampung'],*/
             //['mukim_id', 'required', 'message' => 'Sila Isi Mukim'],
             ['oku', 'required', 'message' => 'Sila Nyatakan Sama Ada Anda Tergolong Dalam Orang OKU Atau Tidak'],
             [['oku','tanggungan_oku'],'default','value'=>'Tidak'],

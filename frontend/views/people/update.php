@@ -55,6 +55,8 @@ $this->title = 'Kemaskini';
                                 'model_tanggungan' => $model_tanggungan,
                                 'model_answer' => $model_answer,
                                 'model_tanggunganoku' => $model_tanggunganoku,
+                                'model_answer_temp' => $model_answer_temp,
+
 
 						    ]) ?>
 

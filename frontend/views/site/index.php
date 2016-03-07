@@ -98,52 +98,52 @@ $this->title = 'Komuniti Development System';
 $pulau_pinang = $perlis = $johor = $selangor = $kuala_lumpur = $putrajaya = $perak = $kedah = $kelantan = $melaka = $negeri_sembilan = $pahang = $terengganu = $sabah = $sarawak = $labuan = 0;
 foreach ($data2 as $key => $value) {
     if ($value['state_id'] == 12) {
-        $pahang = $value['total_by_state'];
+       $pahang = (int)$value['total_by_state'];
     }
     if ($value['state_id'] == 13) {
-        $selangor = $value['total_by_state'];
+        $selangor = (int)$value['total_by_state'];
     }
     if ($value['state_id'] == 14) {
-        $perlis = $value['total_by_state'];
+        $perlis = (int)$value['total_by_state'];
     }
     if ($value['state_id'] == 15) {
-        $perak = $value['total_by_state'];
+        $perak = (int)$value['total_by_state'];
     }
     if ($value['state_id'] == 16) {
-        $kedah = $value['total_by_state'];
+        $kedah = (int)$value['total_by_state'];
     }
     if ($value['state_id'] == 17) {
-        $kelantan = $value['total_by_state'];
+        $kelantan = (int)$value['total_by_state'];
     }
     if ($value['state_id'] == 18) {
-        $terengganu = $value['total_by_state'];
+        $terengganu = (int)$value['total_by_state'];
     }
     if ($value['state_id'] == 19) {
-        $melaka = $value['total_by_state'];
+        $melaka = (int)$value['total_by_state'];
     }
     if ($value['state_id'] == 20) {
-        $sabah = $value['total_by_state'];
+        $sabah = (int)$value['total_by_state'];
     }
     if ($value['state_id'] == 21) {
-        $sarawak = $value['total_by_state'];
+        $sarawak = (int)$value['total_by_state'];
     }
     if ($value['state_id'] == 22) {
-        $johor = $value['total_by_state'];
+        $johor = (int)$value['total_by_state'];
     }
     if ($value['state_id'] == 23) {
-        $pulau_pinang = $value['total_by_state'];
+        $pulau_pinang = (int)$value['total_by_state'];
     }
     if ($value['state_id'] == 24) {
-        $negeri_sembilan = $value['total_by_state'];
+        $negeri_sembilan = (int)$value['total_by_state'];
     }
     if ($value['state_id'] == 25) {
-        $labuan = $value['total_by_state'];
+        $labuan = (int)$value['total_by_state'];
     }
     if ($value['state_id'] == 26) {
-        $kuala_lumpur = $value['total_by_state'];
+        $kuala_lumpur = (int)$value['total_by_state'];
     }
     if ($value['state_id'] == 27) {
-        $putrajaya = $value['total_by_state'];
+        $putrajaya = (int)$value['total_by_state'];
     }
 }
                                 echo Highmaps::widget([

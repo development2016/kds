@@ -820,49 +820,77 @@ $citizen = array('Warganegara'=>'Warganegara','Bukan Warganegara'=>'Bukan Wargan
                     </div>
                 <?php endif; ?>
 
-			    <?= GridView::widget([
-			        'dataProvider' => $model_answer,
+                <?php if ($model->state_id == 21) { ?>
+                <?= GridView::widget([
+                    'dataProvider' => $model_answer_temp,
 
-			        'columns' => [
-			            ['class' => 'yii\grid\SerialColumn'],
-			            [
-			             'attribute' => 'Soalan',
-			             'value' => 'question.soalan'
-			            ],
-			            'answer',
-			           
+                    'columns' => [
+                        ['class' => 'yii\grid\SerialColumn'],
+                        [
+                         'attribute' => 'Soalan',
+                         'value' => 'question_temp_id'
+                        ],
+                        'jawapan',
+                       
                         [
                             'header' => 'Tindakan',
                             'class' => 'yii\grid\ActionColumn',
                             'template'=>'{lihat}   {kemaskini}',
                                 'buttons' => [
-                                    'kemaskini' => function ($url, $model_answer) {
+                                    'kemaskini' => function ($url, $model_answer_temp) {
                                         return Html::a('<span class="btn default btn-xs red-stripe">Edit</span>', 
-                                                $url,['value'=>Url::to(['/answer/update','id'=>$model_answer->id_answer]),'title'=> Yii::t('app','Kemaskini'),'class'=>'answerUpdate']);
+                                                $url,['value'=>Url::to(['/answer-temp/update','id'=>$model_answer_temp->id]),'title'=> Yii::t('app','Kemaskini'),'class'=>'answerUpdate']);
 
                                     },
 
-                                    /*'buang' => function ($url, $model_wife) {
-                                        return Html::a('<span class="btn default btn-xs red-stripe">Buang</span>', $url, [
-                                                    'title' => Yii::t('app', 'Buang'),
-                                        ]);
-
-                                    },*/
-
                                 ],
-                                'urlCreator' => function ($action, $model_answer, $key, $index) {
-									if ($action === 'kemaskini') {
+                                'urlCreator' => function ($action, $model_answer_temp, $key, $index) {
+                                    if ($action === 'kemaskini') {
                                         $url = FALSE;
                                         return $url;
                                     }
-                                    /*if ($action === 'buang') {
-                                        $url = ['/wife/delete','id'=>$model_wife->wife_id];
-                                        return $url;
-                                    }*/
+
                                 }
                             ],
-			        ],
-			    ]); ?>
+                    ],
+                ]); ?>
+                <?php } else { ?>
+                    <?= GridView::widget([
+                        'dataProvider' => $model_answer,
+
+                        'columns' => [
+                            ['class' => 'yii\grid\SerialColumn'],
+                            [
+                             'attribute' => 'Soalan',
+                             'value' => 'question.soalan'
+                            ],
+                            'answer',
+                           
+                            [
+                                'header' => 'Tindakan',
+                                'class' => 'yii\grid\ActionColumn',
+                                'template'=>'{lihat}   {kemaskini}',
+                                    'buttons' => [
+                                        'kemaskini' => function ($url, $model_answer) {
+                                            return Html::a('<span class="btn default btn-xs red-stripe">Edit</span>', 
+                                                    $url,['value'=>Url::to(['/answer/update','id'=>$model_answer->id_answer]),'title'=> Yii::t('app','Kemaskini'),'class'=>'answerUpdate']);
+
+                                        },
+
+                                    ],
+                                    'urlCreator' => function ($action, $model_answer, $key, $index) {
+                                        if ($action === 'kemaskini') {
+                                            $url = FALSE;
+                                            return $url;
+                                        }
+
+                                    }
+                                ],
+                        ],
+                    ]); ?>
+                <?php } ?>
+
+
 
 
 

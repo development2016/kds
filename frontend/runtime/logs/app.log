@@ -19614,3 +19614,1987 @@ $_SERVER = [
     'argv' => []
     'argc' => 0
 ]
+2016-03-03 02:59:38 [::1][1][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/web/Request.php:187
+Stack trace:
+#0 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/web/Application.php(75): yii\web\Request->resolve()
+#1 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Library/WebServer/Documents/kds/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+2016-03-03 02:59:38 [::1][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'vtl6mu20pb3d6pms84ojg9h6v2'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+    '_csrf' => 'fb455abb5480790c16d81a705d41cee955856da460fc41ad630e34ad8ff4821ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Oh-0QcM0oRzOeOLMqvOGf9A5Vdaq_vu4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/frontend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6,id;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=vtl6mu20pb3d6pms84ojg9h6v2; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D; _csrf=fb455abb5480790c16d81a705d41cee955856da460fc41ad630e34ad8ff4821ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Oh-0QcM0oRzOeOLMqvOGf9A5Vdaq_vu4%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '57434'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/people/index'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/people/index'
+    'PATH_TRANSLATED' => '/Library/WebServer/Documents/people/index'
+    'PHP_SELF' => '/kds/frontend/web/index.php/people/index'
+    'REQUEST_TIME_FLOAT' => 1456973978.479
+    'REQUEST_TIME' => 1456973978
+]
+2016-03-03 06:07:39 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: model_question_temp' in /Library/WebServer/Documents/kds/frontend/views/people/_form.php:814
+Stack trace:
+#0 /Library/WebServer/Documents/kds/frontend/views/people/_form.php(814): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/Library/WebSer...', 814, Array)
+#1 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(325): require('/Library/WebSer...')
+#2 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Library/WebSer...', Array)
+#3 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Library/WebSer...', Array, NULL)
+#4 /Library/WebServer/Documents/kds/frontend/views/people/create.php(60): yii\base\View->render('_form', Array)
+#5 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(325): require('/Library/WebSer...')
+#6 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Library/WebSer...', Array)
+#7 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Library/WebSer...', Array, Object(frontend\controllers\PeopleController))
+#8 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('create', Array, Object(frontend\controllers\PeopleController))
+#9 /Library/WebServer/Documents/kds/frontend/controllers/PeopleController.php(291): yii\base\Controller->render('create', Array)
+#10 [internal function]: frontend\controllers\PeopleController->actionCreate()
+#11 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#12 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#13 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('create', Array)
+#14 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('people/create', Array)
+#15 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /Library/WebServer/Documents/kds/frontend/web/index.php(18): yii\base\Application->run()
+#17 {main}
+2016-03-03 06:07:39 [::1][-][-][info][application] $_GET = [
+    'r' => 'people/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vtl6mu20pb3d6pms84ojg9h6v2'
+    '_csrf' => '9b051d2d5a9ca42ee8122442338398b55a8e975205eb9903bf84bbf876192aefa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lz8aJU1dEUYCDZJPZaHeDpN_VunVBruY\";}'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=people%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6,id;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=vtl6mu20pb3d6pms84ojg9h6v2; _csrf=9b051d2d5a9ca42ee8122442338398b55a8e975205eb9903bf84bbf876192aefa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lz8aJU1dEUYCDZJPZaHeDpN_VunVBruY%22%3B%7D; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '59164'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=people%2Fcreate'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=people%2Fcreate'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1456985259.394
+    'REQUEST_TIME' => 1456985259
+]
+2016-03-03 06:39:30 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: soalan_1_temp' in /Library/WebServer/Documents/kds/frontend/views/people/_form.php:849
+Stack trace:
+#0 /Library/WebServer/Documents/kds/frontend/views/people/_form.php(849): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/Library/WebSer...', 849, Array)
+#1 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(325): require('/Library/WebSer...')
+#2 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Library/WebSer...', Array)
+#3 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Library/WebSer...', Array, NULL)
+#4 /Library/WebServer/Documents/kds/frontend/views/people/create.php(62): yii\base\View->render('_form', Array)
+#5 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(325): require('/Library/WebSer...')
+#6 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Library/WebSer...', Array)
+#7 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Library/WebSer...', Array, Object(frontend\controllers\PeopleController))
+#8 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('create', Array, Object(frontend\controllers\PeopleController))
+#9 /Library/WebServer/Documents/kds/frontend/controllers/PeopleController.php(300): yii\base\Controller->render('create', Array)
+#10 [internal function]: frontend\controllers\PeopleController->actionCreate()
+#11 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#12 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#13 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('create', Array)
+#14 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('people/create', Array)
+#15 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /Library/WebServer/Documents/kds/frontend/web/index.php(18): yii\base\Application->run()
+#17 {main}
+2016-03-03 06:39:30 [::1][-][-][info][application] $_GET = [
+    'r' => 'people/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vtl6mu20pb3d6pms84ojg9h6v2'
+    '_csrf' => '9b051d2d5a9ca42ee8122442338398b55a8e975205eb9903bf84bbf876192aefa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lz8aJU1dEUYCDZJPZaHeDpN_VunVBruY\";}'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=people%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6,id;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=vtl6mu20pb3d6pms84ojg9h6v2; _csrf=9b051d2d5a9ca42ee8122442338398b55a8e975205eb9903bf84bbf876192aefa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lz8aJU1dEUYCDZJPZaHeDpN_VunVBruY%22%3B%7D; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '65376'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=people%2Fcreate'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=people%2Fcreate'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1456987170.335
+    'REQUEST_TIME' => 1456987170
+]
+2016-03-03 06:40:01 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: soalan_1_temp' in /Library/WebServer/Documents/kds/frontend/views/people/_form.php:849
+Stack trace:
+#0 /Library/WebServer/Documents/kds/frontend/views/people/_form.php(849): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/Library/WebSer...', 849, Array)
+#1 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(325): require('/Library/WebSer...')
+#2 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Library/WebSer...', Array)
+#3 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Library/WebSer...', Array, NULL)
+#4 /Library/WebServer/Documents/kds/frontend/views/people/create.php(62): yii\base\View->render('_form', Array)
+#5 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(325): require('/Library/WebSer...')
+#6 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Library/WebSer...', Array)
+#7 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Library/WebSer...', Array, Object(frontend\controllers\PeopleController))
+#8 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('create', Array, Object(frontend\controllers\PeopleController))
+#9 /Library/WebServer/Documents/kds/frontend/controllers/PeopleController.php(300): yii\base\Controller->render('create', Array)
+#10 [internal function]: frontend\controllers\PeopleController->actionCreate()
+#11 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#12 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#13 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('create', Array)
+#14 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('people/create', Array)
+#15 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /Library/WebServer/Documents/kds/frontend/web/index.php(18): yii\base\Application->run()
+#17 {main}
+2016-03-03 06:40:01 [::1][-][-][info][application] $_GET = [
+    'r' => 'people/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vtl6mu20pb3d6pms84ojg9h6v2'
+    '_csrf' => '9b051d2d5a9ca42ee8122442338398b55a8e975205eb9903bf84bbf876192aefa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lz8aJU1dEUYCDZJPZaHeDpN_VunVBruY\";}'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=people%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6,id;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=vtl6mu20pb3d6pms84ojg9h6v2; _csrf=9b051d2d5a9ca42ee8122442338398b55a8e975205eb9903bf84bbf876192aefa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lz8aJU1dEUYCDZJPZaHeDpN_VunVBruY%22%3B%7D; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49378'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=people%2Fcreate'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=people%2Fcreate'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1456987201.233
+    'REQUEST_TIME' => 1456987201
+]
+2016-03-03 06:40:59 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: common\models\Question::id' in /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/db/BaseActiveRecord.php(246): yii\base\Component->__get('id')
+#1 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Model.php(957): yii\db\BaseActiveRecord->__get('id')
+#2 /Library/WebServer/Documents/kds/frontend/views/people/_form.php(816): yii\base\Model->offsetGet('id')
+#3 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(325): require('/Library/WebSer...')
+#4 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Library/WebSer...', Array)
+#5 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Library/WebSer...', Array, NULL)
+#6 /Library/WebServer/Documents/kds/frontend/views/people/create.php(62): yii\base\View->render('_form', Array)
+#7 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(325): require('/Library/WebSer...')
+#8 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Library/WebSer...', Array)
+#9 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Library/WebSer...', Array, Object(frontend\controllers\PeopleController))
+#10 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('create', Array, Object(frontend\controllers\PeopleController))
+#11 /Library/WebServer/Documents/kds/frontend/controllers/PeopleController.php(300): yii\base\Controller->render('create', Array)
+#12 [internal function]: frontend\controllers\PeopleController->actionCreate()
+#13 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#14 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#15 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('create', Array)
+#16 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('people/create', Array)
+#17 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 /Library/WebServer/Documents/kds/frontend/web/index.php(18): yii\base\Application->run()
+#19 {main}
+2016-03-03 06:40:59 [::1][-][-][info][application] $_GET = [
+    'r' => 'people/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vtl6mu20pb3d6pms84ojg9h6v2'
+    '_csrf' => '9b051d2d5a9ca42ee8122442338398b55a8e975205eb9903bf84bbf876192aefa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lz8aJU1dEUYCDZJPZaHeDpN_VunVBruY\";}'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=people%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6,id;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=vtl6mu20pb3d6pms84ojg9h6v2; _csrf=9b051d2d5a9ca42ee8122442338398b55a8e975205eb9903bf84bbf876192aefa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lz8aJU1dEUYCDZJPZaHeDpN_VunVBruY%22%3B%7D; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '50060'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=people%2Fcreate'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=people%2Fcreate'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1456987259.534
+    'REQUEST_TIME' => 1456987259
+]
+2016-03-03 06:42:23 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: soalan_1_temp' in /Library/WebServer/Documents/kds/frontend/views/people/_form.php:849
+Stack trace:
+#0 /Library/WebServer/Documents/kds/frontend/views/people/_form.php(849): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/Library/WebSer...', 849, Array)
+#1 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(325): require('/Library/WebSer...')
+#2 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Library/WebSer...', Array)
+#3 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Library/WebSer...', Array, NULL)
+#4 /Library/WebServer/Documents/kds/frontend/views/people/create.php(62): yii\base\View->render('_form', Array)
+#5 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(325): require('/Library/WebSer...')
+#6 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Library/WebSer...', Array)
+#7 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Library/WebSer...', Array, Object(frontend\controllers\PeopleController))
+#8 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('create', Array, Object(frontend\controllers\PeopleController))
+#9 /Library/WebServer/Documents/kds/frontend/controllers/PeopleController.php(300): yii\base\Controller->render('create', Array)
+#10 [internal function]: frontend\controllers\PeopleController->actionCreate()
+#11 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#12 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#13 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('create', Array)
+#14 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('people/create', Array)
+#15 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /Library/WebServer/Documents/kds/frontend/web/index.php(18): yii\base\Application->run()
+#17 {main}
+2016-03-03 06:42:22 [::1][-][-][info][application] $_GET = [
+    'r' => 'people/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vtl6mu20pb3d6pms84ojg9h6v2'
+    '_csrf' => '9b051d2d5a9ca42ee8122442338398b55a8e975205eb9903bf84bbf876192aefa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lz8aJU1dEUYCDZJPZaHeDpN_VunVBruY\";}'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=people%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6,id;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=vtl6mu20pb3d6pms84ojg9h6v2; _csrf=9b051d2d5a9ca42ee8122442338398b55a8e975205eb9903bf84bbf876192aefa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lz8aJU1dEUYCDZJPZaHeDpN_VunVBruY%22%3B%7D; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '51037'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=people%2Fcreate'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=people%2Fcreate'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1456987342.93
+    'REQUEST_TIME' => 1456987342
+]
+2016-03-03 06:42:38 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: soalan_1_temp' in /Library/WebServer/Documents/kds/frontend/views/people/_form.php:795
+Stack trace:
+#0 /Library/WebServer/Documents/kds/frontend/views/people/_form.php(795): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/Library/WebSer...', 795, Array)
+#1 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(325): require('/Library/WebSer...')
+#2 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Library/WebSer...', Array)
+#3 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Library/WebSer...', Array, NULL)
+#4 /Library/WebServer/Documents/kds/frontend/views/people/create.php(62): yii\base\View->render('_form', Array)
+#5 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(325): require('/Library/WebSer...')
+#6 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Library/WebSer...', Array)
+#7 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Library/WebSer...', Array, Object(frontend\controllers\PeopleController))
+#8 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('create', Array, Object(frontend\controllers\PeopleController))
+#9 /Library/WebServer/Documents/kds/frontend/controllers/PeopleController.php(300): yii\base\Controller->render('create', Array)
+#10 [internal function]: frontend\controllers\PeopleController->actionCreate()
+#11 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#12 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#13 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('create', Array)
+#14 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('people/create', Array)
+#15 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /Library/WebServer/Documents/kds/frontend/web/index.php(18): yii\base\Application->run()
+#17 {main}
+2016-03-03 06:42:38 [::1][-][-][info][application] $_GET = [
+    'r' => 'people/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vtl6mu20pb3d6pms84ojg9h6v2'
+    '_csrf' => '9b051d2d5a9ca42ee8122442338398b55a8e975205eb9903bf84bbf876192aefa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lz8aJU1dEUYCDZJPZaHeDpN_VunVBruY\";}'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=people%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6,id;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=vtl6mu20pb3d6pms84ojg9h6v2; _csrf=9b051d2d5a9ca42ee8122442338398b55a8e975205eb9903bf84bbf876192aefa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lz8aJU1dEUYCDZJPZaHeDpN_VunVBruY%22%3B%7D; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '51219'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=people%2Fcreate'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=people%2Fcreate'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1456987358.364
+    'REQUEST_TIME' => 1456987358
+]
+2016-03-03 06:42:39 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: soalan_1_temp' in /Library/WebServer/Documents/kds/frontend/views/people/_form.php:795
+Stack trace:
+#0 /Library/WebServer/Documents/kds/frontend/views/people/_form.php(795): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/Library/WebSer...', 795, Array)
+#1 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(325): require('/Library/WebSer...')
+#2 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Library/WebSer...', Array)
+#3 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Library/WebSer...', Array, NULL)
+#4 /Library/WebServer/Documents/kds/frontend/views/people/create.php(62): yii\base\View->render('_form', Array)
+#5 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(325): require('/Library/WebSer...')
+#6 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Library/WebSer...', Array)
+#7 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Library/WebSer...', Array, Object(frontend\controllers\PeopleController))
+#8 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('create', Array, Object(frontend\controllers\PeopleController))
+#9 /Library/WebServer/Documents/kds/frontend/controllers/PeopleController.php(300): yii\base\Controller->render('create', Array)
+#10 [internal function]: frontend\controllers\PeopleController->actionCreate()
+#11 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#12 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#13 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('create', Array)
+#14 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('people/create', Array)
+#15 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /Library/WebServer/Documents/kds/frontend/web/index.php(18): yii\base\Application->run()
+#17 {main}
+2016-03-03 06:42:39 [::1][-][-][info][application] $_GET = [
+    'r' => 'people/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vtl6mu20pb3d6pms84ojg9h6v2'
+    '_csrf' => '9b051d2d5a9ca42ee8122442338398b55a8e975205eb9903bf84bbf876192aefa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lz8aJU1dEUYCDZJPZaHeDpN_VunVBruY\";}'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=people%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6,id;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=vtl6mu20pb3d6pms84ojg9h6v2; _csrf=9b051d2d5a9ca42ee8122442338398b55a8e975205eb9903bf84bbf876192aefa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lz8aJU1dEUYCDZJPZaHeDpN_VunVBruY%22%3B%7D; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '51233'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=people%2Fcreate'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=people%2Fcreate'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1456987359.364
+    'REQUEST_TIME' => 1456987359
+]
+2016-03-03 06:44:41 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: soalan_1_temp' in /Library/WebServer/Documents/kds/frontend/views/people/_form.php:855
+Stack trace:
+#0 /Library/WebServer/Documents/kds/frontend/views/people/_form.php(855): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/Library/WebSer...', 855, Array)
+#1 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(325): require('/Library/WebSer...')
+#2 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Library/WebSer...', Array)
+#3 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Library/WebSer...', Array, NULL)
+#4 /Library/WebServer/Documents/kds/frontend/views/people/create.php(62): yii\base\View->render('_form', Array)
+#5 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(325): require('/Library/WebSer...')
+#6 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Library/WebSer...', Array)
+#7 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Library/WebSer...', Array, Object(frontend\controllers\PeopleController))
+#8 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('create', Array, Object(frontend\controllers\PeopleController))
+#9 /Library/WebServer/Documents/kds/frontend/controllers/PeopleController.php(300): yii\base\Controller->render('create', Array)
+#10 [internal function]: frontend\controllers\PeopleController->actionCreate()
+#11 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#12 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#13 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('create', Array)
+#14 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('people/create', Array)
+#15 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /Library/WebServer/Documents/kds/frontend/web/index.php(18): yii\base\Application->run()
+#17 {main}
+2016-03-03 06:44:40 [::1][-][-][info][application] $_GET = [
+    'r' => 'people/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vtl6mu20pb3d6pms84ojg9h6v2'
+    '_csrf' => '9b051d2d5a9ca42ee8122442338398b55a8e975205eb9903bf84bbf876192aefa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lz8aJU1dEUYCDZJPZaHeDpN_VunVBruY\";}'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=people%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6,id;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=vtl6mu20pb3d6pms84ojg9h6v2; _csrf=9b051d2d5a9ca42ee8122442338398b55a8e975205eb9903bf84bbf876192aefa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lz8aJU1dEUYCDZJPZaHeDpN_VunVBruY%22%3B%7D; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '52665'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=people%2Fcreate'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=people%2Fcreate'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1456987480.96
+    'REQUEST_TIME' => 1456987480
+]
+2016-03-03 07:19:26 [::1][1][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: jawapan' in /Library/WebServer/Documents/kds/frontend/controllers/PeopleController.php:225
+Stack trace:
+#0 /Library/WebServer/Documents/kds/frontend/controllers/PeopleController.php(225): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/Library/WebSer...', 225, Array)
+#1 [internal function]: frontend\controllers\PeopleController->actionCreate()
+#2 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('create', Array)
+#5 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('people/create', Array)
+#6 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /Library/WebServer/Documents/kds/frontend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2016-03-03 07:19:25 [::1][1][-][info][application] $_GET = [
+    'r' => 'people/create'
+]
+
+$_POST = [
+    '_csrf' => 'eDZyckxpWEEUTEoTBjxpJT1jKzEIMxIRIlc6FwgZFh4uQxwkDhstGA=='
+    'People' => [
+        'tarikh_soal_selidik' => ''
+        'name' => 'xx'
+        'name_nick' => ''
+        'ic_no' => '123'
+        'ic_no_old' => ''
+        'dob' => ''
+        'birth_place' => ''
+        'address' => ''
+        'postcode' => ''
+        'citizen' => ''
+        'state_id' => '21'
+        'district_id' => '121'
+        'sub_base_id' => '-'
+        'cluster_id' => ''
+        'kampung_id' => ''
+        'gender' => ''
+        'religion' => ''
+        'race' => ''
+        'marital_status' => ''
+        'no_of_children' => '0'
+        'mobile_no' => ''
+        'home_no' => ''
+        'email' => ''
+        'oku' => 'Tidak'
+        'profession_status' => ''
+        'profession' => ''
+        'job_position' => ''
+        'job_else' => ''
+        'income' => ''
+        'spending' => ''
+        'nota' => ''
+        'ruang_cadangan' => ''
+        'tanggungan_oku' => 'Tidak'
+    ]
+    'PeopleOku' => [
+        'no_pendaftaran' => ''
+        'kategori_oku' => ''
+        'nota' => ''
+    ]
+    'Wife' => [
+        'wife_name' => [
+            0 => ''
+        ]
+        'wife_ic' => [
+            0 => ''
+        ]
+        'wife_work' => [
+            0 => ''
+        ]
+        'wife_oku' => [
+            0 => ''
+        ]
+    ]
+    'Tanggungan' => [
+        'nama_tanggungan' => [
+            0 => ''
+        ]
+        'no_ic_tanggungan' => [
+            0 => ''
+        ]
+        'tarikh_lahir' => [
+            0 => ''
+        ]
+        'edu_level' => [
+            0 => ''
+        ]
+        'tanggungan_kerja' => [
+            0 => ''
+        ]
+        'hubungan' => [
+            0 => ''
+        ]
+        'tanggungan_oku' => [
+            0 => ''
+        ]
+        'note' => [
+            0 => ''
+        ]
+    ]
+    'AnswerTemp' => [
+        'jawapan' => [
+            1 => '3'
+        ]
+        'question_temp_id' => '2'
+    ]
+    'Answer' => [
+        'answer' => [
+            1 => 'Tidak'
+            2 => 'Tidak'
+            3 => 'Tidak'
+            4 => 'Tidak'
+            5 => 'Tidak'
+            6 => 'Tidak'
+            7 => 'Tidak'
+            8 => 'Tidak'
+            9 => 'Tidak'
+            10 => 'Tidak'
+            11 => 'Tidak'
+            12 => 'Tidak'
+            13 => 'Tidak'
+            14 => 'Tidak'
+            15 => 'Tidak'
+            16 => 'Tidak'
+            17 => 'Tidak'
+            18 => 'Tidak'
+            19 => 'Tidak'
+            20 => 'Tidak'
+            21 => 'Tidak'
+            22 => 'Tidak'
+            23 => 'Tidak'
+            24 => 'Tidak'
+            25 => 'Tidak'
+            26 => 'Tidak'
+            27 => 'Tidak'
+            28 => 'Tidak'
+            29 => 'Tidak'
+            30 => 'Tidak'
+            31 => 'Tidak'
+            32 => 'Tidak'
+            33 => 'Tidak'
+            34 => 'Tidak'
+            35 => 'Tidak'
+            36 => 'Tidak'
+            37 => 'Tidak'
+            38 => 'Tidak'
+            39 => 'Tidak'
+            40 => 'Tidak'
+            41 => 'Tidak'
+            42 => 'Tidak'
+            43 => 'Tidak'
+            44 => 'Tidak'
+            45 => 'Tidak'
+            46 => 'Tidak'
+            47 => 'Tidak'
+            48 => 'Tidak'
+            49 => 'Tidak'
+            50 => 'Tidak'
+            51 => 'Tidak'
+            52 => 'Tidak'
+        ]
+        'question_id' => '52'
+    ]
+    'TanggunganOku' => [
+        'nama' => [
+            0 => ''
+        ]
+        'umur' => [
+            0 => ''
+        ]
+        'hubungan' => [
+            0 => ''
+        ]
+        'no_pendaftaran' => [
+            0 => ''
+        ]
+        'kategori' => [
+            0 => ''
+        ]
+        'tahap_pendidikan' => [
+            0 => ''
+        ]
+        'nama_sekolah' => [
+            0 => ''
+        ]
+        'nota' => [
+            0 => ''
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vtl6mu20pb3d6pms84ojg9h6v2'
+    '_csrf' => '9b051d2d5a9ca42ee8122442338398b55a8e975205eb9903bf84bbf876192aefa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lz8aJU1dEUYCDZJPZaHeDpN_VunVBruY\";}'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/frontend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '4808'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=people%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6,id;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=vtl6mu20pb3d6pms84ojg9h6v2; _csrf=9b051d2d5a9ca42ee8122442338398b55a8e975205eb9903bf84bbf876192aefa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lz8aJU1dEUYCDZJPZaHeDpN_VunVBruY%22%3B%7D; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '61156'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=people%2Fcreate'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=people%2Fcreate'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1456989565.514
+    'REQUEST_TIME' => 1456989565
+]
+2016-03-03 07:54:13 [::1][1][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 2' in /Library/WebServer/Documents/kds/frontend/controllers/PeopleController.php:225
+Stack trace:
+#0 /Library/WebServer/Documents/kds/frontend/controllers/PeopleController.php(225): yii\base\ErrorHandler->handleError(8, 'Undefined offse...', '/Library/WebSer...', 225, Array)
+#1 [internal function]: frontend\controllers\PeopleController->actionCreate()
+#2 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('create', Array)
+#5 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('people/create', Array)
+#6 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /Library/WebServer/Documents/kds/frontend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2016-03-03 07:54:12 [::1][1][-][info][application] $_GET = [
+    'r' => 'people/create'
+]
+
+$_POST = [
+    '_csrf' => 'M2lkRkFzWWdfE1wnCyZoA3Y8PQUFKRM3aQgsIwUDFzhlHAoQAwEsPg=='
+    'People' => [
+        'tarikh_soal_selidik' => ''
+        'name' => 'NM'
+        'name_nick' => ''
+        'ic_no' => '657'
+        'ic_no_old' => ''
+        'dob' => ''
+        'birth_place' => ''
+        'address' => ''
+        'postcode' => ''
+        'citizen' => ''
+        'state_id' => '21'
+        'district_id' => 'Sila Pilih'
+        'sub_base_id' => ''
+        'cluster_id' => ''
+        'kampung_id' => ''
+        'gender' => ''
+        'religion' => ''
+        'race' => ''
+        'marital_status' => ''
+        'no_of_children' => '0'
+        'mobile_no' => ''
+        'home_no' => ''
+        'email' => ''
+        'oku' => 'Tidak'
+        'profession_status' => ''
+        'profession' => ''
+        'job_position' => ''
+        'job_else' => ''
+        'income' => ''
+        'spending' => ''
+        'nota' => ''
+        'ruang_cadangan' => ''
+        'tanggungan_oku' => 'Tidak'
+    ]
+    'PeopleOku' => [
+        'no_pendaftaran' => ''
+        'kategori_oku' => ''
+        'nota' => ''
+    ]
+    'Wife' => [
+        'wife_name' => [
+            0 => ''
+        ]
+        'wife_ic' => [
+            0 => ''
+        ]
+        'wife_work' => [
+            0 => ''
+        ]
+        'wife_oku' => [
+            0 => ''
+        ]
+    ]
+    'Tanggungan' => [
+        'nama_tanggungan' => [
+            0 => ''
+        ]
+        'no_ic_tanggungan' => [
+            0 => ''
+        ]
+        'tarikh_lahir' => [
+            0 => ''
+        ]
+        'edu_level' => [
+            0 => ''
+        ]
+        'tanggungan_kerja' => [
+            0 => ''
+        ]
+        'hubungan' => [
+            0 => ''
+        ]
+        'tanggungan_oku' => [
+            0 => ''
+        ]
+        'note' => [
+            0 => ''
+        ]
+    ]
+    'AnswerTemp' => [
+        'jawapan' => [
+            1 => '2'
+            8 => '3'
+        ]
+        'question_temp_id' => '8'
+    ]
+    'Answer' => [
+        'answer' => [
+            1 => 'Tidak'
+            2 => 'Tidak'
+            3 => 'Tidak'
+            4 => 'Tidak'
+            5 => 'Tidak'
+            6 => 'Tidak'
+            7 => 'Tidak'
+            8 => 'Tidak'
+            9 => 'Tidak'
+            10 => 'Tidak'
+            11 => 'Tidak'
+            12 => 'Tidak'
+            13 => 'Tidak'
+            14 => 'Tidak'
+            15 => 'Tidak'
+            16 => 'Tidak'
+            17 => 'Tidak'
+            18 => 'Tidak'
+            19 => 'Tidak'
+            20 => 'Tidak'
+            21 => 'Tidak'
+            22 => 'Tidak'
+            23 => 'Tidak'
+            24 => 'Tidak'
+            25 => 'Tidak'
+            26 => 'Tidak'
+            27 => 'Tidak'
+            28 => 'Tidak'
+            29 => 'Tidak'
+            30 => 'Tidak'
+            31 => 'Tidak'
+            32 => 'Tidak'
+            33 => 'Tidak'
+            34 => 'Tidak'
+            35 => 'Tidak'
+            36 => 'Tidak'
+            37 => 'Tidak'
+            38 => 'Tidak'
+            39 => 'Tidak'
+            40 => 'Tidak'
+            41 => 'Tidak'
+            42 => 'Tidak'
+            43 => 'Tidak'
+            44 => 'Tidak'
+            45 => 'Tidak'
+            46 => 'Tidak'
+            47 => 'Tidak'
+            48 => 'Tidak'
+            49 => 'Tidak'
+            50 => 'Tidak'
+            51 => 'Tidak'
+            52 => 'Tidak'
+        ]
+        'question_id' => '52'
+    ]
+    'TanggunganOku' => [
+        'nama' => [
+            0 => ''
+        ]
+        'umur' => [
+            0 => ''
+        ]
+        'hubungan' => [
+            0 => ''
+        ]
+        'no_pendaftaran' => [
+            0 => ''
+        ]
+        'kategori' => [
+            0 => ''
+        ]
+        'tahap_pendidikan' => [
+            0 => ''
+        ]
+        'nama_sekolah' => [
+            0 => ''
+        ]
+        'nota' => [
+            0 => ''
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vtl6mu20pb3d6pms84ojg9h6v2'
+    '_csrf' => '9b051d2d5a9ca42ee8122442338398b55a8e975205eb9903bf84bbf876192aefa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lz8aJU1dEUYCDZJPZaHeDpN_VunVBruY\";}'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/frontend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '5057'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=people%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6,id;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=vtl6mu20pb3d6pms84ojg9h6v2; _csrf=9b051d2d5a9ca42ee8122442338398b55a8e975205eb9903bf84bbf876192aefa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lz8aJU1dEUYCDZJPZaHeDpN_VunVBruY%22%3B%7D; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '53092'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=people%2Fcreate'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=people%2Fcreate'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1456991652.146
+    'REQUEST_TIME' => 1456991652
+]
+2016-03-03 08:06:46 [::1][1][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: jawapan' in /Library/WebServer/Documents/kds/frontend/controllers/PeopleController.php:222
+Stack trace:
+#0 /Library/WebServer/Documents/kds/frontend/controllers/PeopleController.php(222): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/Library/WebSer...', 222, Array)
+#1 [internal function]: frontend\controllers\PeopleController->actionCreate()
+#2 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('create', Array)
+#5 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('people/create', Array)
+#6 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /Library/WebServer/Documents/kds/frontend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2016-03-03 08:06:45 [::1][1][-][info][application] $_GET = [
+    'r' => 'people/create'
+]
+
+$_POST = [
+    '_csrf' => 'T0lXdXNRWWYjM28UOQRoAgocDjY3CxM2FSgfEDchFzkZPDkjMSMsPw=='
+    'People' => [
+        'tarikh_soal_selidik' => ''
+        'name' => 'cvx'
+        'name_nick' => ''
+        'ic_no' => 'xcv4534'
+        'ic_no_old' => ''
+        'dob' => ''
+        'birth_place' => ''
+        'address' => ''
+        'postcode' => ''
+        'citizen' => ''
+        'state_id' => '21'
+        'district_id' => 'Sila Pilih'
+        'sub_base_id' => ''
+        'cluster_id' => ''
+        'kampung_id' => ''
+        'gender' => ''
+        'religion' => ''
+        'race' => ''
+        'marital_status' => ''
+        'no_of_children' => '0'
+        'mobile_no' => ''
+        'home_no' => ''
+        'email' => ''
+        'oku' => 'Tidak'
+        'profession_status' => ''
+        'profession' => ''
+        'job_position' => ''
+        'job_else' => ''
+        'income' => ''
+        'spending' => ''
+        'nota' => ''
+        'ruang_cadangan' => ''
+        'tanggungan_oku' => 'Tidak'
+    ]
+    'PeopleOku' => [
+        'no_pendaftaran' => ''
+        'kategori_oku' => ''
+        'nota' => ''
+    ]
+    'Wife' => [
+        'wife_name' => [
+            0 => ''
+        ]
+        'wife_ic' => [
+            0 => ''
+        ]
+        'wife_work' => [
+            0 => ''
+        ]
+        'wife_oku' => [
+            0 => ''
+        ]
+    ]
+    'Tanggungan' => [
+        'nama_tanggungan' => [
+            0 => ''
+        ]
+        'no_ic_tanggungan' => [
+            0 => ''
+        ]
+        'tarikh_lahir' => [
+            0 => ''
+        ]
+        'edu_level' => [
+            0 => ''
+        ]
+        'tanggungan_kerja' => [
+            0 => ''
+        ]
+        'hubungan' => [
+            0 => ''
+        ]
+        'tanggungan_oku' => [
+            0 => ''
+        ]
+        'note' => [
+            0 => ''
+        ]
+    ]
+    'AnswerTemp' => [
+        'question_temp_id' => '8'
+    ]
+    'Answer' => [
+        'answer' => [
+            1 => 'Tidak'
+            2 => 'Tidak'
+            3 => 'Tidak'
+            4 => 'Tidak'
+            5 => 'Tidak'
+            6 => 'Tidak'
+            7 => 'Tidak'
+            8 => 'Tidak'
+            9 => 'Tidak'
+            10 => 'Tidak'
+            11 => 'Tidak'
+            12 => 'Tidak'
+            13 => 'Tidak'
+            14 => 'Tidak'
+            15 => 'Tidak'
+            16 => 'Tidak'
+            17 => 'Tidak'
+            18 => 'Tidak'
+            19 => 'Tidak'
+            20 => 'Tidak'
+            21 => 'Tidak'
+            22 => 'Tidak'
+            23 => 'Tidak'
+            24 => 'Tidak'
+            25 => 'Tidak'
+            26 => 'Tidak'
+            27 => 'Tidak'
+            28 => 'Tidak'
+            29 => 'Tidak'
+            30 => 'Tidak'
+            31 => 'Tidak'
+            32 => 'Tidak'
+            33 => 'Tidak'
+            34 => 'Tidak'
+            35 => 'Tidak'
+            36 => 'Tidak'
+            37 => 'Tidak'
+            38 => 'Tidak'
+            39 => 'Tidak'
+            40 => 'Tidak'
+            41 => 'Tidak'
+            42 => 'Tidak'
+            43 => 'Tidak'
+            44 => 'Tidak'
+            45 => 'Tidak'
+            46 => 'Tidak'
+            47 => 'Tidak'
+            48 => 'Tidak'
+            49 => 'Tidak'
+            50 => 'Tidak'
+            51 => 'Tidak'
+            52 => 'Tidak'
+        ]
+        'question_id' => '52'
+    ]
+    'TanggunganOku' => [
+        'nama' => [
+            0 => ''
+        ]
+        'umur' => [
+            0 => ''
+        ]
+        'hubungan' => [
+            0 => ''
+        ]
+        'no_pendaftaran' => [
+            0 => ''
+        ]
+        'kategori' => [
+            0 => ''
+        ]
+        'tahap_pendidikan' => [
+            0 => ''
+        ]
+        'nama_sekolah' => [
+            0 => ''
+        ]
+        'nota' => [
+            0 => ''
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vtl6mu20pb3d6pms84ojg9h6v2'
+    '_csrf' => '9b051d2d5a9ca42ee8122442338398b55a8e975205eb9903bf84bbf876192aefa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lz8aJU1dEUYCDZJPZaHeDpN_VunVBruY\";}'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/frontend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '4996'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=people%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6,id;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=vtl6mu20pb3d6pms84ojg9h6v2; _csrf=9b051d2d5a9ca42ee8122442338398b55a8e975205eb9903bf84bbf876192aefa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lz8aJU1dEUYCDZJPZaHeDpN_VunVBruY%22%3B%7D; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '61954'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=people%2Fcreate'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=people%2Fcreate'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1456992405.49
+    'REQUEST_TIME' => 1456992405
+]
+2016-03-03 09:05:19 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\AnswerTemp::answerTemp' in /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/db/BaseActiveRecord.php(246): yii\base\Component->__get('answerTemp')
+#1 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/helpers/BaseHtml.php(1930): yii\db\BaseActiveRecord->__get('answerTemp')
+#2 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/helpers/BaseHtml.php(1597): yii\helpers\BaseHtml::getAttributeValue(Object(frontend\models\AnswerTemp), 'answerTemp[9]')
+#3 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/helpers/BaseHtml.php(1443): yii\helpers\BaseHtml::activeListInput('dropDownList', Object(frontend\models\AnswerTemp), 'answerTemp[9]', Array, Array)
+#4 /Library/WebServer/Documents/kds/frontend/views/people/_form.php(1358): yii\helpers\BaseHtml::activeDropDownList(Object(frontend\models\AnswerTemp), 'answerTemp[9]', Array, Array)
+#5 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(325): require('/Library/WebSer...')
+#6 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Library/WebSer...', Array)
+#7 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Library/WebSer...', Array, NULL)
+#8 /Library/WebServer/Documents/kds/frontend/views/people/create.php(62): yii\base\View->render('_form', Array)
+#9 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(325): require('/Library/WebSer...')
+#10 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Library/WebSer...', Array)
+#11 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Library/WebSer...', Array, Object(frontend\controllers\PeopleController))
+#12 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('create', Array, Object(frontend\controllers\PeopleController))
+#13 /Library/WebServer/Documents/kds/frontend/controllers/PeopleController.php(304): yii\base\Controller->render('create', Array)
+#14 [internal function]: frontend\controllers\PeopleController->actionCreate()
+#15 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#16 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#17 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('create', Array)
+#18 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('people/create', Array)
+#19 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /Library/WebServer/Documents/kds/frontend/web/index.php(18): yii\base\Application->run()
+#21 {main}
+2016-03-03 09:05:19 [::1][-][-][info][application] $_GET = [
+    'r' => 'people/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vtl6mu20pb3d6pms84ojg9h6v2'
+    '_csrf' => '9b051d2d5a9ca42ee8122442338398b55a8e975205eb9903bf84bbf876192aefa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lz8aJU1dEUYCDZJPZaHeDpN_VunVBruY\";}'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=people%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6,id;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=vtl6mu20pb3d6pms84ojg9h6v2; _csrf=9b051d2d5a9ca42ee8122442338398b55a8e975205eb9903bf84bbf876192aefa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lz8aJU1dEUYCDZJPZaHeDpN_VunVBruY%22%3B%7D; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '54364'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=people%2Fcreate'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=people%2Fcreate'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1456995919.423
+    'REQUEST_TIME' => 1456995919
+]
+2016-03-03 09:50:02 [::1][1][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/web/Request.php:187
+Stack trace:
+#0 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/web/Application.php(75): yii\web\Request->resolve()
+#1 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Library/WebServer/Documents/kds/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+2016-03-03 09:50:02 [::1][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'vtl6mu20pb3d6pms84ojg9h6v2'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+    '_csrf' => '6a652b614a19b7dbc833af7ec8bd7793c85c6650884e840c4661b592e996e863a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"cfUa-HrWG8w1fqmMIuoSGAOXbFeMFd1w\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/frontend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6,id;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=vtl6mu20pb3d6pms84ojg9h6v2; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D; _csrf=6a652b614a19b7dbc833af7ec8bd7793c85c6650884e840c4661b592e996e863a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22cfUa-HrWG8w1fqmMIuoSGAOXbFeMFd1w%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '53561'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/site/index'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/site/index'
+    'PATH_TRANSLATED' => '/Library/WebServer/Documents/site/index'
+    'PHP_SELF' => '/kds/frontend/web/index.php/site/index'
+    'REQUEST_TIME_FLOAT' => 1456998602.233
+    'REQUEST_TIME' => 1456998602
+]
+2016-03-04 01:16:02 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/web/Request.php:187
+Stack trace:
+#0 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/web/Application.php(75): yii\web\Request->resolve()
+#1 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Library/WebServer/Documents/kds/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+2016-03-04 01:16:02 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '3b478601d5f9c9883cd6a5ddca852684387c87f928ac3124aa5a810b4639e7bea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ImDBcgMAwUK-G_ikV6FeVrbm8QsPZmaM\";}'
+    'PHPSESSID' => 'eu3ho5a1fpgvrtbrmq6euqh5l7'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6,id;q=0.4'
+    'HTTP_COOKIE' => '_csrf=3b478601d5f9c9883cd6a5ddca852684387c87f928ac3124aa5a810b4639e7bea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ImDBcgMAwUK-G_ikV6FeVrbm8QsPZmaM%22%3B%7D; PHPSESSID=eu3ho5a1fpgvrtbrmq6euqh5l7'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '52773'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/site/login'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/site/login'
+    'PATH_TRANSLATED' => '/Library/WebServer/Documents/site/login'
+    'PHP_SELF' => '/kds/frontend/web/index.php/site/login'
+    'REQUEST_TIME_FLOAT' => 1457054162.845
+    'REQUEST_TIME' => 1457054162
+]
+2016-03-04 01:16:56 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /Library/WebServer/Documents/kds/frontend/views/people/view.php:205
+Stack trace:
+#0 /Library/WebServer/Documents/kds/frontend/views/people/view.php(205): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/Library/WebSer...', 205, Array)
+#1 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(325): require('/Library/WebSer...')
+#2 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Library/WebSer...', Array)
+#3 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Library/WebSer...', Array, Object(frontend\controllers\PeopleController))
+#4 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('view', Array, Object(frontend\controllers\PeopleController))
+#5 /Library/WebServer/Documents/kds/frontend/controllers/PeopleController.php(115): yii\base\Controller->render('view', Array)
+#6 [internal function]: frontend\controllers\PeopleController->actionView('MTY2MTI5')
+#7 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#10 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('people/view', Array)
+#11 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Library/WebServer/Documents/kds/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+2016-03-04 01:16:55 [::1][-][-][info][application] $_GET = [
+    'id' => 'MTY2MTI5'
+]
+
+$_COOKIE = [
+    '_csrf' => '6248dda4ef474a6f7b70e55d9a28303d856a084272bdc312e27189c4abb6c28ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lfp7Vx5M4uR8dy77HjSAaRskMv4hTRMx\";}'
+    'PHPSESSID' => 'fggmo6cr9m1u2rq28s4oa59gs7'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php/people/index.cypressdiversified'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6,id;q=0.4'
+    'HTTP_COOKIE' => '_csrf=6248dda4ef474a6f7b70e55d9a28303d856a084272bdc312e27189c4abb6c28ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lfp7Vx5M4uR8dy77HjSAaRskMv4hTRMx%22%3B%7D; PHPSESSID=fggmo6cr9m1u2rq28s4oa59gs7; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '53348'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=MTY2MTI5'
+    'REQUEST_URI' => '/kds/frontend/web/index.php/people/view.cypressdiversified?id=MTY2MTI5'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/people/view.cypressdiversified'
+    'PATH_TRANSLATED' => '/Library/WebServer/Documents/people/view.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/people/view.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1457054215.507
+    'REQUEST_TIME' => 1457054215
+]
+2016-03-04 01:47:15 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: model_answer_temp' in /Library/WebServer/Documents/kds/frontend/views/people/_edit.php:825
+Stack trace:
+#0 /Library/WebServer/Documents/kds/frontend/views/people/_edit.php(825): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/Library/WebSer...', 825, Array)
+#1 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(325): require('/Library/WebSer...')
+#2 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Library/WebSer...', Array)
+#3 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Library/WebSer...', Array, NULL)
+#4 /Library/WebServer/Documents/kds/frontend/views/people/update.php(59): yii\base\View->render('_edit', Array)
+#5 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(325): require('/Library/WebSer...')
+#6 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Library/WebSer...', Array)
+#7 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Library/WebSer...', Array, Object(frontend\controllers\PeopleController))
+#8 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('update', Array, Object(frontend\controllers\PeopleController))
+#9 /Library/WebServer/Documents/kds/frontend/controllers/PeopleController.php(353): yii\base\Controller->render('update', Array)
+#10 [internal function]: frontend\controllers\PeopleController->actionUpdate('MTY2MTE4')
+#11 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#12 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#13 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('update', Array)
+#14 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('people/update', Array)
+#15 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /Library/WebServer/Documents/kds/frontend/web/index.php(18): yii\base\Application->run()
+#17 {main}
+2016-03-04 01:47:14 [::1][-][-][info][application] $_GET = [
+    'id' => 'MTY2MTE4'
+]
+
+$_COOKIE = [
+    '_csrf' => '6248dda4ef474a6f7b70e55d9a28303d856a084272bdc312e27189c4abb6c28ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lfp7Vx5M4uR8dy77HjSAaRskMv4hTRMx\";}'
+    'PHPSESSID' => 'fggmo6cr9m1u2rq28s4oa59gs7'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/frontend/web/index.php/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php/people/index.cypressdiversified'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6,id;q=0.4'
+    'HTTP_COOKIE' => '_csrf=6248dda4ef474a6f7b70e55d9a28303d856a084272bdc312e27189c4abb6c28ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lfp7Vx5M4uR8dy77HjSAaRskMv4hTRMx%22%3B%7D; PHPSESSID=fggmo6cr9m1u2rq28s4oa59gs7; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '58457'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=MTY2MTE4'
+    'REQUEST_URI' => '/kds/frontend/web/index.php/people/update.cypressdiversified?id=MTY2MTE4'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/people/update.cypressdiversified'
+    'PATH_TRANSLATED' => '/Library/WebServer/Documents/people/update.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/people/update.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1457056034.847
+    'REQUEST_TIME' => 1457056034
+]
+2016-03-04 01:49:12 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'The requested page does not exist.' in /Library/WebServer/Documents/kds/frontend/controllers/AnswerController.php:119
+Stack trace:
+#0 /Library/WebServer/Documents/kds/frontend/controllers/AnswerController.php(82): frontend\controllers\AnswerController->findModel('79')
+#1 [internal function]: frontend\controllers\AnswerController->actionUpdate('79')
+#2 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('update', Array)
+#5 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('answer/update', Array)
+#6 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /Library/WebServer/Documents/kds/frontend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2016-03-04 01:49:12 [::1][-][-][info][application] $_GET = [
+    'id' => '79'
+]
+
+$_COOKIE = [
+    '_csrf' => '6248dda4ef474a6f7b70e55d9a28303d856a084272bdc312e27189c4abb6c28ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lfp7Vx5M4uR8dy77HjSAaRskMv4hTRMx\";}'
+    'PHPSESSID' => 'fggmo6cr9m1u2rq28s4oa59gs7'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'djlhNjFpTk4aXxEBZxF7A0JMMw5VEHl5PlMyd1A7PSU7T1VeZTsDNg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php/people/update.cypressdiversified?id=MTY2MTMw'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6,id;q=0.4'
+    'HTTP_COOKIE' => '_csrf=6248dda4ef474a6f7b70e55d9a28303d856a084272bdc312e27189c4abb6c28ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lfp7Vx5M4uR8dy77HjSAaRskMv4hTRMx%22%3B%7D; PHPSESSID=fggmo6cr9m1u2rq28s4oa59gs7; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '59866'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php/answer/update/79.cypressdiversified'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PATH_INFO' => '/answer/update/79.cypressdiversified'
+    'PATH_TRANSLATED' => '/Library/WebServer/Documents/answer/update/79.cypressdiversified'
+    'PHP_SELF' => '/kds/frontend/web/index.php/answer/update/79.cypressdiversified'
+    'REQUEST_TIME_FLOAT' => 1457056152.556
+    'REQUEST_TIME' => 1457056152
+]
+2016-03-07 09:37:00 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /Library/WebServer/Documents/kds/frontend/models/PeopleSearch.php:45
+Stack trace:
+#0 /Library/WebServer/Documents/kds/frontend/models/PeopleSearch.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/Library/WebSer...', 45, Array)
+#1 /Library/WebServer/Documents/kds/frontend/controllers/PeopleController.php(66): frontend\models\PeopleSearch->search(Array)
+#2 [internal function]: frontend\controllers\PeopleController->actionIndex()
+#3 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#6 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('people/index', Array)
+#7 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Library/WebServer/Documents/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-03-07 09:37:00 [::1][-][-][info][application] $_GET = [
+    'r' => 'people/index'
+]
+
+$_COOKIE = [
+    '_identity' => '9ae264dd1f92b5e67b0e10bb9c1e0413b229268c468cb52edb92edbaa52fea92a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6,id;q=0.4'
+    'HTTP_COOKIE' => '_identity=9ae264dd1f92b5e67b0e10bb9c1e0413b229268c468cb52edb92edbaa52fea92a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '60678'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=people%2Findex'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=people%2Findex'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1457314620.155
+    'REQUEST_TIME' => 1457314620
+]
+2016-03-07 09:37:07 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /Library/WebServer/Documents/kds/frontend/models/PeopleSearch.php:45
+Stack trace:
+#0 /Library/WebServer/Documents/kds/frontend/models/PeopleSearch.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/Library/WebSer...', 45, Array)
+#1 /Library/WebServer/Documents/kds/frontend/controllers/PeopleController.php(66): frontend\models\PeopleSearch->search(Array)
+#2 [internal function]: frontend\controllers\PeopleController->actionIndex()
+#3 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#6 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('people/index', Array)
+#7 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Library/WebServer/Documents/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-03-07 09:37:07 [::1][-][-][info][application] $_GET = [
+    'r' => 'people/index'
+]
+
+$_COOKIE = [
+    '_identity' => '9ae264dd1f92b5e67b0e10bb9c1e0413b229268c468cb52edb92edbaa52fea92a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6,id;q=0.4'
+    'HTTP_COOKIE' => '_identity=9ae264dd1f92b5e67b0e10bb9c1e0413b229268c468cb52edb92edbaa52fea92a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '60679'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=people%2Findex'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=people%2Findex'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1457314627.899
+    'REQUEST_TIME' => 1457314627
+]
+2016-03-07 09:38:14 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /Library/WebServer/Documents/kds/frontend/models/PeopleSearch.php:45
+Stack trace:
+#0 /Library/WebServer/Documents/kds/frontend/models/PeopleSearch.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/Library/WebSer...', 45, Array)
+#1 /Library/WebServer/Documents/kds/frontend/controllers/PeopleController.php(66): frontend\models\PeopleSearch->search(Array)
+#2 [internal function]: frontend\controllers\PeopleController->actionIndex()
+#3 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#6 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('people/index', Array)
+#7 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Library/WebServer/Documents/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-03-07 09:38:14 [::1][-][-][info][application] $_GET = [
+    'r' => 'people/index'
+]
+
+$_COOKIE = [
+    '_identity' => '9ae264dd1f92b5e67b0e10bb9c1e0413b229268c468cb52edb92edbaa52fea92a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6,id;q=0.4'
+    'HTTP_COOKIE' => '_identity=9ae264dd1f92b5e67b0e10bb9c1e0413b229268c468cb52edb92edbaa52fea92a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '61552'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=people%2Findex'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=people%2Findex'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1457314694.156
+    'REQUEST_TIME' => 1457314694
+]
+2016-03-07 09:38:14 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /Library/WebServer/Documents/kds/frontend/models/PeopleSearch.php:45
+Stack trace:
+#0 /Library/WebServer/Documents/kds/frontend/models/PeopleSearch.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/Library/WebSer...', 45, Array)
+#1 /Library/WebServer/Documents/kds/frontend/controllers/PeopleController.php(66): frontend\models\PeopleSearch->search(Array)
+#2 [internal function]: frontend\controllers\PeopleController->actionIndex()
+#3 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#6 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('people/index', Array)
+#7 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Library/WebServer/Documents/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-03-07 09:38:14 [::1][-][-][info][application] $_GET = [
+    'r' => 'people/index'
+]
+
+$_COOKIE = [
+    '_identity' => '9ae264dd1f92b5e67b0e10bb9c1e0413b229268c468cb52edb92edbaa52fea92a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6,id;q=0.4'
+    'HTTP_COOKIE' => '_identity=9ae264dd1f92b5e67b0e10bb9c1e0413b229268c468cb52edb92edbaa52fea92a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '61553'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=people%2Findex'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=people%2Findex'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1457314694.944
+    'REQUEST_TIME' => 1457314694
+]
+2016-03-07 09:38:43 [::1][1][g6lu0kga5siva475o8e35rcc51][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: Unable to load dynamic library '/usr/lib/php/extensions/no-debug-non-zts-20121212/gd.so' - dlopen(/usr/lib/php/extensions/no-debug-non-zts-20121212/gd.so, 9): image not found' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-03-07 09:38:42 [::1][1][g6lu0kga5siva475o8e35rcc51][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf' => 'QUhHNG56Li0kASFSB0NkYChwf1BDMH1IcgwtTFglYnIGGnV6Nj96AA=='
+    'LoginForm' => [
+        'username' => 'admin'
+        'password' => 'admin'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ua23dg1hto63i4gapefd1b2155'
+    '_csrf' => '6751ef358c323e3a2d82654e78065818c66c4a99afc022631aa34362578f9c56a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eIffi9JMi88d-JSe3Djx6_L_GR2NXET-\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/frontend/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '140'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6,id;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=ua23dg1hto63i4gapefd1b2155; _csrf=6751ef358c323e3a2d82654e78065818c66c4a99afc022631aa34362578f9c56a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eIffi9JMi88d-JSe3Djx6_L_GR2NXET-%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '61785'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1457314722.359
+    'REQUEST_TIME' => 1457314722
+]
+2016-03-07 09:38:44 [::1][1][g6lu0kga5siva475o8e35rcc51][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: Unable to load dynamic library '/usr/lib/php/extensions/no-debug-non-zts-20121212/gd.so' - dlopen(/usr/lib/php/extensions/no-debug-non-zts-20121212/gd.so, 9): image not found' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-03-07 09:38:43 [::1][1][g6lu0kga5siva475o8e35rcc51][info][application] $_COOKIE = [
+    '_csrf' => '6751ef358c323e3a2d82654e78065818c66c4a99afc022631aa34362578f9c56a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eIffi9JMi88d-JSe3Djx6_L_GR2NXET-\";}'
+    'PHPSESSID' => 'g6lu0kga5siva475o8e35rcc51'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/frontend/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6,id;q=0.4'
+    'HTTP_COOKIE' => '_csrf=6751ef358c323e3a2d82654e78065818c66c4a99afc022631aa34362578f9c56a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eIffi9JMi88d-JSe3Djx6_L_GR2NXET-%22%3B%7D; PHPSESSID=g6lu0kga5siva475o8e35rcc51; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '61849'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1457314723.334
+    'REQUEST_TIME' => 1457314723
+]

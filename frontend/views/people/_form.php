@@ -809,14 +809,809 @@ $umur = array('1 Tahun'=>'1 Tahun','2 Tahun'=>'2 Tahun','3 Tahun'=>'3 Tahun','4 
                             if ($value['question_id'] == 51) {$soalan_51 = $value['soalan'];}
                             if ($value['question_id'] == 52) {$soalan_52 = $value['soalan'];}
 
-                        } ?>
+                        }
+
+       
+
+                        foreach ($model_question_temp as $key => $value_temp) {
+
+                            if ($value_temp['id'] == 1) {$soalan_1_temp = $value_temp['soalan_temp'];}
+                            if ($value_temp['id'] == 2) {$soalan_2_temp = $value_temp['soalan_temp'];}
+                            if ($value_temp['id'] == 3) {$soalan_3_temp = $value_temp['soalan_temp'];}
+                            if ($value_temp['id'] == 4) {$soalan_4_temp = $value_temp['soalan_temp'];}
+                            if ($value_temp['id'] == 5) {$soalan_5_temp = $value_temp['soalan_temp'];}
+                            if ($value_temp['id'] == 6) {$soalan_6_temp = $value_temp['soalan_temp'];}
+                            if ($value_temp['id'] == 7) {$soalan_7_temp = $value_temp['soalan_temp'];}
+                            if ($value_temp['id'] == 8) {$soalan_8_temp = $value_temp['soalan_temp'];}
+                            if ($value_temp['id'] == 9) {$soalan_9_temp = $value_temp['soalan_temp'];}
+                            if ($value_temp['id'] == 10) {$soalan_10_temp = $value_temp['soalan_temp'];}
+                            if ($value_temp['id'] == 11) {$soalan_11_temp = $value_temp['soalan_temp'];}
+                            if ($value_temp['id'] == 12) {$soalan_12_temp = $value_temp['soalan_temp'];}
+                            if ($value_temp['id'] == 13) {$soalan_13_temp = $value_temp['soalan_temp'];}
+                            if ($value_temp['id'] == 14) {$soalan_14_temp = $value_temp['soalan_temp'];}
+                            if ($value_temp['id'] == 15) {$soalan_15_temp = $value_temp['soalan_temp'];}
+                            if ($value_temp['id'] == 16) {$soalan_16_temp = $value_temp['soalan_temp'];}
+                            if ($value_temp['id'] == 17) {$soalan_17_temp = $value_temp['soalan_temp'];}
+                            if ($value_temp['id'] == 18) {$soalan_18_temp = $value_temp['soalan_temp'];}
+                        } 
+
+                        ?>
 
                         <div class="caption font-green-haze">
                             <span class="caption-subject bold uppercase"> Maklumat Tambahan</span>
                         </div>
                         <br>
 
+                    <div class="show_sarawak" style="display:none;">
+
+                        <div class="row">
+                            <div class="portlet-body form">
+                                <div class="form-body">
+                                    <div class="col-md-6">
+                                        <p class="title_h5"><?php echo $soalan_1_temp; ?></p>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="md-radio-inline">
+                                            <div class="md-radio">
+                                               
+                                                <input type="radio" id="radio13" name="AnswerTemp[jawapan][1]" class="md-radiobtn" value="1" >
+                                                
+                                                <label for="radio13">
+                                                <span></span>
+                                                <span class="check"></span>
+                                                <span class="box"></span>
+                                                1 </label>
+                                            </div>
+                                            <div class="md-radio">
+                                                
+                                                <input type="radio" id="radio14" name="AnswerTemp[jawapan][1]" class="md-radiobtn" value="2" >
+
+                                                <label for="radio14">
+                                                <span></span>
+                                                <span class="check"></span>
+                                                <span class="box"></span>
+                                                2 </label>
+                                            </div>
+                                            <div class="md-radio">
+                                                
+                                                <input type="radio" id="radio15" name="AnswerTemp[jawapan][1]" class="md-radiobtn" value="3" >
+
+                                                <label for="radio15">
+                                                <span></span>
+                                                <span class="check"></span>
+                                                <span class="box"></span>
+                                                3 </label>
+                                            </div>
+                                            <div class="md-radio">
+                                                
+                                                <input type="radio" id="radio16" name="AnswerTemp[jawapan][1]" class="md-radiobtn" value="4" >
+
+                                                <label for="radio16">
+                                                <span></span>
+                                                <span class="check"></span>
+                                                <span class="box"></span>
+                                                4 </label>
+                                            </div>
+                                            <input type="radio" name="AnswerTemp[jawapan][1]" class="md-radiobtn" value="Tidak Menjawab" checked="checked" style="display:none">
+                                        </div>
+                                       <?= Html::activeHiddenInput($model_answer_temp, 'question_temp_id', ['value' => 1]) ?>
+                                        
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sukarelawan_temp" style="display:none;">
+
+                           <div class="row">
+                                <div class="portlet-body form">
+                                    <div class="form-body">
+                                        <div class="col-md-6">
+                                            <p class="title_h7"><?php echo $soalan_2_temp; ?></p>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="md-radio-inline">
+                                                <div class="md-radio">
+                                                   
+                                                    <input type="radio" id="radio44" name="AnswerTemp[jawapan][2]" class="md-radiobtn" value="1" >
+                                                    
+                                                    <label for="radio44">
+                                                    <span></span>
+                                                    <span class="check"></span>
+                                                    <span class="box"></span>
+                                                    1 </label>
+                                                </div>
+                                                <div class="md-radio">
+                                                    
+                                                    <input type="radio" id="radio17" name="AnswerTemp[jawapan][2]" class="md-radiobtn" value="2" >
+
+                                                    <label for="radio17">
+                                                    <span></span>
+                                                    <span class="check"></span>
+                                                    <span class="box"></span>
+                                                    2 </label>
+                                                </div>
+                                                <div class="md-radio">
+                                                    
+                                                    <input type="radio" id="radio18" name="AnswerTemp[jawapan][2]" class="md-radiobtn" value="3" >
+
+                                                    <label for="radio18">
+                                                    <span></span>
+                                                    <span class="check"></span>
+                                                    <span class="box"></span>
+                                                    3 </label>
+                                                </div>
+                                                <div class="md-radio">
+                                                    
+                                                    <input type="radio" id="radio19" name="AnswerTemp[jawapan][2]" class="md-radiobtn" value="4" >
+
+                                                    <label for="radio19">
+                                                    <span></span>
+                                                    <span class="check"></span>
+                                                    <span class="box"></span>
+                                                    4 </label>
+                                                </div>
+                                                <input type="radio" name="AnswerTemp[jawapan][2]" class="md-radiobtn" value="Tidak Menjawab" checked="checked" style="display:none">
+                                            </div>
+                                           <?= Html::activeHiddenInput($model_answer_temp, 'question_temp_id', ['value' => 2]) ?>
+                                            
+                                        </div>
+
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                           <div class="row">
+                                <div class="portlet-body form">
+                                    <div class="form-body">
+                                        <div class="col-md-6">
+                                            <p class="title_h7"><?php echo $soalan_3_temp; ?></p>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="md-radio-inline">
+                                                <div class="md-radio">
+                                                   
+                                                    <input type="radio" id="radio20" name="AnswerTemp[jawapan][3]" class="md-radiobtn" value="1" >
+                                                    
+                                                    <label for="radio20">
+                                                    <span></span>
+                                                    <span class="check"></span>
+                                                    <span class="box"></span>
+                                                    1 </label>
+                                                </div>
+                                                <div class="md-radio">
+                                                    
+                                                    <input type="radio" id="radio21" name="AnswerTemp[jawapan][3]" class="md-radiobtn" value="2" >
+
+                                                    <label for="radio21">
+                                                    <span></span>
+                                                    <span class="check"></span>
+                                                    <span class="box"></span>
+                                                    2 </label>
+                                                </div>
+                                                <div class="md-radio">
+                                                    
+                                                    <input type="radio" id="radio22" name="AnswerTemp[jawapan][3]" class="md-radiobtn" value="3" >
+
+                                                    <label for="radio22">
+                                                    <span></span>
+                                                    <span class="check"></span>
+                                                    <span class="box"></span>
+                                                    3 </label>
+                                                </div>
+                                                <div class="md-radio">
+                                                    
+                                                    <input type="radio" id="radio23" name="AnswerTemp[jawapan][3]" class="md-radiobtn" value="4" >
+
+                                                    <label for="radio23">
+                                                    <span></span>
+                                                    <span class="check"></span>
+                                                    <span class="box"></span>
+                                                    4 </label>
+                                                </div>
+                                                <input type="radio" name="AnswerTemp[jawapan][3]" class="md-radiobtn" value="Tidak Menjawab" checked="checked" style="display:none">
+                                            </div>
+                                           <?= Html::activeHiddenInput($model_answer_temp, 'question_temp_id', ['value' => 3]) ?>
+                                            
+                                        </div>
+
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                           <div class="row">
+                                <div class="portlet-body form">
+                                    <div class="form-body">
+                                        <div class="col-md-6">
+                                            <p class="title_h7"><?php echo $soalan_4_temp; ?></p>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="md-radio-inline">
+                                                <div class="md-radio">
+                                                   
+                                                    <input type="radio" id="radio24" name="AnswerTemp[jawapan][4]" class="md-radiobtn" value="1" >
+                                                    
+                                                    <label for="radio24">
+                                                    <span></span>
+                                                    <span class="check"></span>
+                                                    <span class="box"></span>
+                                                    1 </label>
+                                                </div>
+                                                <div class="md-radio">
+                                                    
+                                                    <input type="radio" id="radio25" name="AnswerTemp[jawapan][4]" class="md-radiobtn" value="2" >
+
+                                                    <label for="radio25">
+                                                    <span></span>
+                                                    <span class="check"></span>
+                                                    <span class="box"></span>
+                                                    2 </label>
+                                                </div>
+                                                <div class="md-radio">
+                                                    
+                                                    <input type="radio" id="radio26" name="AnswerTemp[jawapan][4]" class="md-radiobtn" value="3" >
+
+                                                    <label for="radio26">
+                                                    <span></span>
+                                                    <span class="check"></span>
+                                                    <span class="box"></span>
+                                                    3 </label>
+                                                </div>
+                                                <div class="md-radio">
+                                                    
+                                                    <input type="radio" id="radio27" name="AnswerTemp[jawapan][4]" class="md-radiobtn" value="4" >
+
+                                                    <label for="radio27">
+                                                    <span></span>
+                                                    <span class="check"></span>
+                                                    <span class="box"></span>
+                                                    4 </label>
+                                                </div>
+                                                <input type="radio" name="AnswerTemp[jawapan][4]" class="md-radiobtn" value="Tidak Menjawab" checked="checked" style="display:none">
+                                            </div>
+                                           <?= Html::activeHiddenInput($model_answer_temp, 'question_temp_id', ['value' => 4]) ?>
+                                            
+                                        </div>
+
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                           <div class="row">
+                                <div class="portlet-body form">
+                                    <div class="form-body">
+                                        <div class="col-md-6">
+                                            <p class="title_h7"><?php echo $soalan_5_temp; ?></p>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="md-radio-inline">
+                                                <div class="md-radio">
+                                                   
+                                                    <input type="radio" id="radio28" name="AnswerTemp[jawapan][5]" class="md-radiobtn" value="1" >
+                                                    
+                                                    <label for="radio28">
+                                                    <span></span>
+                                                    <span class="check"></span>
+                                                    <span class="box"></span>
+                                                    1 </label>
+                                                </div>
+                                                <div class="md-radio">
+                                                    
+                                                    <input type="radio" id="radio29" name="AnswerTemp[jawapan][5]" class="md-radiobtn" value="2" >
+
+                                                    <label for="radio29">
+                                                    <span></span>
+                                                    <span class="check"></span>
+                                                    <span class="box"></span>
+                                                    2 </label>
+                                                </div>
+                                                <div class="md-radio">
+                                                    
+                                                    <input type="radio" id="radio30" name="AnswerTemp[jawapan][5]" class="md-radiobtn" value="3" >
+
+                                                    <label for="radio30">
+                                                    <span></span>
+                                                    <span class="check"></span>
+                                                    <span class="box"></span>
+                                                    3 </label>
+                                                </div>
+                                                <div class="md-radio">
+                                                    
+                                                    <input type="radio" id="radio31" name="AnswerTemp[jawapan][5]" class="md-radiobtn" value="4" >
+
+                                                    <label for="radio31">
+                                                    <span></span>
+                                                    <span class="check"></span>
+                                                    <span class="box"></span>
+                                                    4 </label>
+                                                </div>
+                                                <input type="radio" name="AnswerTemp[jawapan][5]" class="md-radiobtn" value="Tidak Menjawab" checked="checked" style="display:none">
+                                            </div>
+                                           <?= Html::activeHiddenInput($model_answer_temp, 'question_temp_id', ['value' => 5]) ?>
+                                            
+                                        </div>
+
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                           <div class="row">
+                                <div class="portlet-body form">
+                                    <div class="form-body">
+                                        <div class="col-md-6">
+                                            <p class="title_h7"><?php echo $soalan_6_temp; ?></p>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="md-radio-inline">
+                                                <div class="md-radio">
+                                                   
+                                                    <input type="radio" id="radio32" name="AnswerTemp[jawapan][6]" class="md-radiobtn" value="1" >
+                                                    
+                                                    <label for="radio32">
+                                                    <span></span>
+                                                    <span class="check"></span>
+                                                    <span class="box"></span>
+                                                    1 </label>
+                                                </div>
+                                                <div class="md-radio">
+                                                    
+                                                    <input type="radio" id="radio33" name="AnswerTemp[jawapan][6]" class="md-radiobtn" value="2" >
+
+                                                    <label for="radio33">
+                                                    <span></span>
+                                                    <span class="check"></span>
+                                                    <span class="box"></span>
+                                                    2 </label>
+                                                </div>
+                                                <div class="md-radio">
+                                                    
+                                                    <input type="radio" id="radio34" name="AnswerTemp[jawapan][6]" class="md-radiobtn" value="3" >
+
+                                                    <label for="radio34">
+                                                    <span></span>
+                                                    <span class="check"></span>
+                                                    <span class="box"></span>
+                                                    3 </label>
+                                                </div>
+                                                <div class="md-radio">
+                                                    
+                                                    <input type="radio" id="radio35" name="AnswerTemp[jawapan][6]" class="md-radiobtn" value="4" >
+
+                                                    <label for="radio35">
+                                                    <span></span>
+                                                    <span class="check"></span>
+                                                    <span class="box"></span>
+                                                    4 </label>
+                                                </div>
+                                                <input type="radio" name="AnswerTemp[jawapan][6]" class="md-radiobtn" value="Tidak Menjawab" checked="checked" style="display:none">
+                                            </div>
+                                           <?= Html::activeHiddenInput($model_answer_temp, 'question_temp_id', ['value' => 6]) ?>
+                                            
+                                        </div>
+
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                           <div class="row">
+                                <div class="portlet-body form">
+                                    <div class="form-body">
+                                        <div class="col-md-6">
+                                            <p class="title_h7"><?php echo $soalan_7_temp; ?></p>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="md-radio-inline">
+                                                <div class="md-radio">
+                                                   
+                                                    <input type="radio" id="radio36" name="AnswerTemp[jawapan][7]" class="md-radiobtn" value="1" >
+                                                    
+                                                    <label for="radio36">
+                                                    <span></span>
+                                                    <span class="check"></span>
+                                                    <span class="box"></span>
+                                                    1 </label>
+                                                </div>
+                                                <div class="md-radio">
+                                                    
+                                                    <input type="radio" id="radio37" name="AnswerTemp[jawapan][7]" class="md-radiobtn" value="2" >
+
+                                                    <label for="radio37">
+                                                    <span></span>
+                                                    <span class="check"></span>
+                                                    <span class="box"></span>
+                                                    2 </label>
+                                                </div>
+                                                <div class="md-radio">
+                                                    
+                                                    <input type="radio" id="radio38" name="AnswerTemp[jawapan][7]" class="md-radiobtn" value="3" >
+
+                                                    <label for="radio38">
+                                                    <span></span>
+                                                    <span class="check"></span>
+                                                    <span class="box"></span>
+                                                    3 </label>
+                                                </div>
+                                                <div class="md-radio">
+                                                    
+                                                    <input type="radio" id="radio39" name="AnswerTemp[jawapan][7]" class="md-radiobtn" value="4" >
+
+                                                    <label for="radio39">
+                                                    <span></span>
+                                                    <span class="check"></span>
+                                                    <span class="box"></span>
+                                                    4 </label>
+                                                </div>
+                                                <input type="radio" name="AnswerTemp[jawapan][7]" class="md-radiobtn" value="Tidak Menjawab" checked="checked" style="display:none">
+                                            </div>
+                                           <?= Html::activeHiddenInput($model_answer_temp, 'question_temp_id', ['value' => 7]) ?>
+                                            
+                                        </div>
+
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+
+
+                        <div class="row">
+                            <div class="portlet-body form">
+                                <div class="form-body">
+                                    <div class="col-md-6">
+                                        <p class="title_h5"><?php echo $soalan_8_temp; ?></p>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="md-radio-inline">
+                                            <div class="md-radio">
+                                               
+                                                <input type="radio" id="radio40" name="AnswerTemp[jawapan][8]" class="md-radiobtn" value="1" >
+                                                
+                                                <label for="radio40">
+                                                <span></span>
+                                                <span class="check"></span>
+                                                <span class="box"></span>
+                                                1 </label>
+                                            </div>
+                                            <div class="md-radio">
+                                                
+                                                <input type="radio" id="radio41" name="AnswerTemp[jawapan][8]" class="md-radiobtn" value="2" >
+
+                                                <label for="radio41">
+                                                <span></span>
+                                                <span class="check"></span>
+                                                <span class="box"></span>
+                                                2 </label>
+                                            </div>
+                                            <div class="md-radio">
+                                                
+                                                <input type="radio" id="radio42" name="AnswerTemp[jawapan][8]" class="md-radiobtn" value="3" >
+
+                                                <label for="radio42">
+                                                <span></span>
+                                                <span class="check"></span>
+                                                <span class="box"></span>
+                                                3 </label>
+                                            </div>
+                                            <div class="md-radio">
+                                                
+                                                <input type="radio" id="radio43" name="AnswerTemp[jawapan][8]" class="md-radiobtn" value="4" >
+
+                                                <label for="radio43">
+                                                <span></span>
+                                                <span class="check"></span>
+                                                <span class="box"></span>
+                                                4 </label>
+                                            </div>
+                                            <input type="radio" name="AnswerTemp[jawapan][8]" class="md-radiobtn" value="Tidak Menjawab" checked="checked" style="display:none">
+                                        </div>
+                                       <?= Html::activeHiddenInput($model_answer_temp, 'question_temp_id', ['value' => 8]) ?>
+                                        
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
                        <div class="row">
+                            <div class="portlet-body form">
+                                <div class="form-body">
+                                    <div class="soalan" >
+                                        <div class="col-md-6">
+                                            <p class="title_h8"><?php echo $soalan_9_temp; ?></p>
+                                        </div>
+                                        <div class="col-md-2" >
+                                            <div class="form-group form-md-line-input">
+                                                <?= Html::activeDropDownList($model_answer_temp, 'jawapan[9]',
+                                                 [
+                                                    'Tidak Menjawab' => '--Sila Pilih--',
+                                                    'Sangat Tidak Sokong' => 'Sangat Tidak Sokong',
+                                                    'Tidak Sokong' => 'Tidak Sokong',
+                                                    'Sokong' => 'Sokong',
+                                                    'Sangat Sokong' => 'Sangat Sokong',
+                                                 ], 
+                                                 [FALSE,'id'=>'form_control_1','class'=>'form-control']); ?>
+                                                <?= Html::activeHiddenInput($model_answer_temp, 'question_temp_id', ['value' => 9]) ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                       <div class="row">
+                            <div class="portlet-body form">
+                                <div class="form-body">
+                                    <div class="soalan" >
+                                        <div class="col-md-6">
+                                            <p class="title_h8"><?php echo $soalan_10_temp; ?></p>
+                                        </div>
+                                        <div class="col-md-2" >
+                                            <div class="form-group form-md-line-input">
+                                                <?= Html::activeDropDownList($model_answer_temp, 'jawapan[10]',
+                                                 [
+                                                    'Tidak Menjawab' => '--Sila Pilih--',
+                                                    'Sangat Tidak Berkesan' => 'Sangat Tidak Berkesan',
+                                                    'Tidak Berkesan' => 'Tidak Berkesan',
+                                                    'Berkesan' => 'Berkesan',
+                                                    'Sangat Berkesan' => 'Sangat Berkesan',
+                                                 ], 
+                                                 [FALSE,'id'=>'form_control_1','class'=>'form-control']); ?>
+                                                <?= Html::activeHiddenInput($model_answer_temp, 'question_temp_id', ['value' => 10]) ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                       <div class="row">
+                            <div class="portlet-body form">
+                                <div class="form-body">
+                                    <div class="soalan" >
+                                        <div class="col-md-6">
+                                            <p class="title_h8"><?php echo $soalan_11_temp; ?></p>
+                                        </div>
+                                        <div class="col-md-2" >
+                                            <div class="form-group form-md-line-input">
+                                                <?= Html::activeDropDownList($model_answer_temp, 'jawapan[11]',
+                                                 [
+                                                    'Tidak Menjawab' => '--Sila Pilih--',
+                                                    'Sangat Tidak Suka' => 'Sangat Tidak Suka',
+                                                    'Tidak Suka' => 'Tidak Suka',
+                                                    'Suka' => 'Suka',
+                                                    'Sangat Suka' => 'Sangat Suka',
+                                                 ], 
+                                                 [FALSE,'id'=>'form_control_1','class'=>'form-control']); ?>
+                                                <?= Html::activeHiddenInput($model_answer_temp, 'question_temp_id', ['value' => 11]) ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                       <div class="row">
+                            <div class="portlet-body form">
+                                <div class="form-body">
+                                    <div class="soalan" >
+                                        <div class="col-md-6">
+                                            <p class="title_h8"><?php echo $soalan_12_temp; ?></p>
+                                        </div>
+                                        <div class="col-md-2" >
+                                            <div class="form-group form-md-line-input">
+                                                <?= Html::activeDropDownList($model_answer_temp, 'jawapan[12]',
+                                                 [
+                                                    'Tidak Menjawab' => '--Sila Pilih--',
+                                                    'Sangat Tidak Setuju' => 'Sangat Tidak Setuju',
+                                                    'Tidak Setuju' => 'Tidak Setuju',
+                                                    'Setuju' => 'Setuju',
+                                                    'Sangat Setuju' => 'Sangat Setuju',
+                                                 ], 
+                                                 [FALSE,'id'=>'form_control_1','class'=>'form-control']); ?>
+                                                <?= Html::activeHiddenInput($model_answer_temp, 'question_temp_id', ['value' => 12]) ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="portlet-body form">
+                                <div class="form-body">
+                                    <div class="soalan" >
+                                        <div class="col-md-6">
+                                            <p class="title_h8"><?php echo $soalan_13_temp; ?></p>
+                                        </div>
+                                        <div class="col-md-2" >
+                                            <div class="form-group form-md-line-input">
+                                                <?= Html::activeDropDownList($model_answer_temp, 'jawapan[13]',
+                                                 [
+                                                    'Tidak Menjawab' => '--Sila Pilih--',
+                                                    'Sangat Tidak Setuju' => 'Sangat Tidak Setuju',
+                                                    'Tidak Setuju' => 'Tidak Setuju',
+                                                    'Setuju' => 'Setuju',
+                                                    'Sangat Setuju' => 'Sangat Setuju',
+                                                 ], 
+                                                 [FALSE,'id'=>'form_control_1','class'=>'form-control']); ?>
+                                                <?= Html::activeHiddenInput($model_answer_temp, 'question_temp_id', ['value' => 13]) ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="portlet-body form">
+                                <div class="form-body">
+                                    <div class="soalan" >
+                                        <div class="col-md-6">
+                                            <p class="title_h8"><?php echo $soalan_14_temp; ?></p>
+                                        </div>
+                                        <div class="col-md-2" >
+                                            <div class="form-group form-md-line-input">
+                                                <?= Html::activeDropDownList($model_answer_temp, 'jawapan[14]',
+                                                 [
+                                                    'Tidak Menjawab' => '--Sila Pilih--',
+                                                    'Sangat Tidak Berminat' => 'Sangat Tidak Berminat',
+                                                    'Tidak Berminat' => 'Tidak Berminat',
+                                                    'Berminat' => 'Berminat',
+                                                    'Sangat Berminat' => 'Sangat Berminat',
+                                                 ], 
+                                                 [FALSE,'id'=>'form_control_1','class'=>'form-control']); ?>
+                                                <?= Html::activeHiddenInput($model_answer_temp, 'question_temp_id', ['value' => 14]) ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="portlet-body form">
+                                <div class="form-body">
+                                    <div class="soalan" >
+                                        <div class="col-md-6">
+                                            <p class="title_h8"><?php echo $soalan_15_temp; ?></p>
+                                        </div>
+                                        <div class="col-md-2" >
+                                            <div class="form-group form-md-line-input">
+                                                <?= Html::activeDropDownList($model_answer_temp, 'jawapan[15]',
+                                                 [
+                                                    'Tidak Menjawab' => '--Sila Pilih--',
+                                                    'Sangat Tidak Penting' => 'Sangat Tidak Penting',
+                                                    'Tidak Penting' => 'Tidak Penting',
+                                                    'Penting' => 'Penting',
+                                                    'Sangat Penting' => 'Sangat Penting',
+                                                 ], 
+                                                 [FALSE,'id'=>'form_control_1','class'=>'form-control']); ?>
+                                                <?= Html::activeHiddenInput($model_answer_temp, 'question_temp_id', ['value' => 15]) ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="portlet-body form">
+                                <div class="form-body">
+                                    <div class="soalan" >
+                                        <div class="col-md-6">
+                                            <p class="title_h8"><?php echo $soalan_16_temp; ?></p>
+                                        </div>
+                                        <div class="col-md-2" >
+                                            <div class="form-group form-md-line-input">
+                                                <?= Html::activeDropDownList($model_answer_temp, 'jawapan[16]',
+                                                 [
+                                                    'Tidak Menjawab' => '--Sila Pilih--',
+                                                    'Sangat Tidak Penting' => 'Sangat Tidak Penting',
+                                                    'Tidak Penting' => 'Tidak Penting',
+                                                    'Penting' => 'Penting',
+                                                    'Sangat Penting' => 'Sangat Penting',
+                                                 ], 
+                                                 [FALSE,'id'=>'form_control_1','class'=>'form-control']); ?>
+                                                <?= Html::activeHiddenInput($model_answer_temp, 'question_temp_id', ['value' => 16]) ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="portlet-body form">
+                                <div class="form-body">
+                                    <div class="soalan" >
+                                        <div class="col-md-6">
+                                            <p class="title_h8"><?php echo $soalan_17_temp; ?></p>
+                                        </div>
+                                        <div class="col-md-2" >
+                                            <div class="form-group form-md-line-input">
+                                                <?= Html::activeDropDownList($model_answer_temp, 'jawapan[17]',
+                                                 [
+                                                    'Tidak Menjawab' => '--Sila Pilih--',
+                                                    'Sangat Tidak Sokong' => 'Sangat Tidak Sokong',
+                                                    'Tidak Sokong' => 'Tidak Sokong',
+                                                    'Sokong' => 'Sokong',
+                                                    'Sangat Sokong' => 'Sangat Sokong',
+                                                 ], 
+                                                 [FALSE,'id'=>'form_control_1','class'=>'form-control']); ?>
+                                                <?= Html::activeHiddenInput($model_answer_temp, 'question_temp_id', ['value' => 17]) ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="portlet-body form">
+                                <div class="form-body">
+                                    <div class="soalan" >
+                                        <div class="col-md-6">
+                                            <p class="title_h8"><?php echo $soalan_18_temp; ?></p>
+                                        </div>
+                                        <div class="col-md-2" >
+                                            <div class="form-group form-md-line-input">
+                                                <?= Html::activeDropDownList($model_answer_temp, 'jawapan[18]',
+                                                 [
+                                                    'Tidak Menjawab' => '--Sila Pilih--',
+                                                    'Sangat Tidak Setuju' => 'Sangat Tidak Setuju',
+                                                    'Tidak Setuju' => 'Tidak Setuju',
+                                                    'Setuju' => 'Setuju',
+                                                    'Sangat Setuju' => 'Sangat Setuju',
+                                                 ], 
+                                                 [FALSE,'id'=>'form_control_1','class'=>'form-control']); ?>
+                                                <?= Html::activeHiddenInput($model_answer_temp, 'question_temp_id', ['value' => 18]) ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
+                    </div>
+
+
+
+                    <div class="not_sarawak">
+                        <div class="row">
                             <div class="portlet-body form">
                                 <div class="form-body">
                                     <div class="col-md-6">
@@ -1748,6 +2543,7 @@ $umur = array('1 Tahun'=>'1 Tahun','2 Tahun'=>'2 Tahun','3 Tahun'=>'3 Tahun','4 
                                 </div>
                             </div>
                         </div>
+                    
                         <div class="row">
                             <div class="portlet-body form">
                                 <div class="form-body">
@@ -1763,6 +2559,7 @@ $umur = array('1 Tahun'=>'1 Tahun','2 Tahun'=>'2 Tahun','3 Tahun'=>'3 Tahun','4 
                                 </div>
                             </div>
                         </div>
+                    </div>
 
                  
                     </div>

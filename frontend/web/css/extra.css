@@ -17,7 +17,16 @@
   font-size: larger;
   padding-top: 29px;
 }
+.title_h7 {
+  padding-left: 40px;
+  font-size: larger;
+  padding-top: 10px;
+}
+.title_h8 {
 
+  font-size: larger;
+  padding-top: 29px;
+}
 .hint {
   color: #cb5a5e;
 }
