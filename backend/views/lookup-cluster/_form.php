@@ -68,24 +68,14 @@ $bahagian = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->
                         <div class="form-group form-md-line-input">
                             <?= Html::activeDropDownList($model, 'district_id', $district, 
                                 [
-                                'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['lookup-cluster/listmukim','id'=>'']).'"+$(this).val(), function( data ) {$( "select#mukim_bahagian" ).html( data );});',
+                                'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['lookup-cluster/listsubbase','id'=>'']).'"+$(this).val(), function( data ) {$( "select#subbase_bahagian" ).html( data );});',
                                     'prompt'=>'','id'=>'district_bahagian',   
                                     'class'=>'form-control']); ?>
                                 <label for="form_control_1"><?= Html::activeLabel($model,'district_id'); ?> </label>
                                 <span class="help-block"><?= Html::error($model,'district_id'); ?></span>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="form-group form-md-line-input">
-                            <?= Html::activeDropDownList($model, 'mukim_id', $mukim, 
-                                [
-                                'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['lookup-cluster/listsubbase','id'=>'']).'"+$(this).val(), function( data ) {$( "select#subbase_bahagian" ).html( data );});',
-                                    'prompt'=>'','id'=>'mukim_bahagian',   
-                                    'class'=>'form-control']); ?>
-                                <label for="form_control_1"><?= Html::activeLabel($model,'mukim_id'); ?> </label>
-                                <span class="help-block"><?= Html::error($model,'mukim_id'); ?></span>
-                        </div>
-                    </div>
+                    
                     <div class="col-md-4">
                         <div class="form-group form-md-line-input">
                             <?= Html::activeDropDownList($model, 'sub_base_id', $subbase, 
@@ -114,7 +104,7 @@ $bahagian = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->
                         <div class="form-group form-md-line-input">
                             <?= Html::activeDropDownList($model, 'mukim_id', $mukim, 
                                 [
-                                'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['lookup-cluster/listsubbase','id'=>'']).'"+$(this).val(), function( data ) {$( "select#subbase_johor" ).html( data );});',
+                                'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['lookup-cluster/listsubbasesearch','id'=>'']).'"+$(this).val(), function( data ) {$( "select#subbase_johor" ).html( data );});',
                                     'prompt'=>'','id'=>'mukim_johor',   
                                     'class'=>'form-control']); ?>
                                 <label for="form_control_1"><?= Html::activeLabel($model,'mukim_id'); ?> </label>

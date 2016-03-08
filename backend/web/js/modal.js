@@ -119,6 +119,94 @@ $(function(){
         .load($(this).attr('value'));
 
     });
+    //people edit
+    $(('#state').val() == 22){
+        alert("ss");
+    }
+$('#s').change(function(){
+
+       /* if ($(this).val() == 21) {
+            $('.not_sarawak').hide();
+            $('.show_sarawak').show();
+        } else {
+            $('.not_sarawak').show();
+            $('.show_sarawak').hide();
+        };*/
+        if ($(this).val() == 21) {
+            $('.not_sarawak').hide();
+            $('.show_sarawak').show();
+            $(".johor").hide(500);
+            $(".lainState").hide(500);
+            $(".bahagian_mukim").show(500);
+
+            $("select#district").prop('disabled', true);
+            $("select#subbase_other").prop('disabled', true);
+            $("select#johordistrict").prop('disabled', true);
+            $("select#cluster_other").prop('disabled', true);
+            $("select#kampung_other").prop('disabled', true);
+            $("select#mukim_johor").prop('disabled', true);
+            $("select#subbasejohor").prop('disabled', true);
+            $("select#clusterjohor").prop('disabled', true);
+            $("select#kampungjohor").prop('disabled', true);
+
+            $("select#district_bahagian").prop('disabled', false);
+            $("select#subbasesarawak").prop('disabled', false);
+            $("select#clustersarawak").prop('disabled', false);
+            $("select#bahagian").prop('disabled', false);
+            $("select#kampungsarawak").prop('disabled', false);
+            
+
+        } else if($(this).val() == 22) {
+            $('.not_sarawak').show();
+            $('.show_sarawak').hide();
+            $(".bahagian_mukim").hide(500);
+            $(".lainState").hide(500);
+            $(".johor").show(500);
+
+            $("select#district_bahagian").prop('disabled', true);
+            $("select#subbasesarawak").prop('disabled', true);
+            $("select#clustersarawak").prop('disabled', true);
+            $("select#bahagian").prop('disabled', true);
+            $("select#kampungsarawak").prop('disabled', true);
+            $("select#district").prop('disabled', true);
+            $("select#subbase_other").prop('disabled', true);
+            $("select#cluster_other").prop('disabled', true);
+            $("select#kampung_other").prop('disabled', true);
+            
+
+            $("select#johordistrict").prop('disabled', false);
+            $("select#mukim_johor").prop('disabled', false);
+            $("select#subbasejohor").prop('disabled', false);
+            $("select#clusterjohor").prop('disabled', false);
+            $("select#kampungjohor").prop('disabled', false);
+        }
+        else{
+            $(".lainState").show(500);
+            $('.not_sarawak').show();
+            $('.show_sarawak').hide();
+            $(".johor").hide(500);
+            $(".bahagian_mukim").hide(500);
+
+            $("select#johordistrict").prop('disabled', true);
+            $("select#mukim_johor").prop('disabled', true);
+            $("select#subbasejohor").prop('disabled', true);
+            $("select#clusterjohor").prop('disabled', true);
+            $("select#kampungjohor").prop('disabled', true);
+            $("select#district_bahagian").prop('disabled', true);
+            $("select#subbasesarawak").prop('disabled', true);
+            $("select#clustersarawak").prop('disabled', true);
+            $("select#bahagian").prop('disabled', true);
+            $("select#kampungsarawak").prop('disabled', true);
+
+            $("select#district").prop('disabled', false);
+            $("select#subbase_other").prop('disabled', false);
+            $("select#cluster_other").prop('disabled', false);
+            $("select#kampung_other").prop('disabled', false);
+
+
+        }
+
+    });
 
     // daerah
     $('#state_district').change(function(){

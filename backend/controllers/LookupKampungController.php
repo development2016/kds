@@ -198,11 +198,11 @@ class LookupKampungController extends Controller
     public function actionListsubbase($id)
     {
         $countPosts = LookupSubBase::find()
-        ->where(['mukim_id' => $id])
+        ->where(['district_id' => $id])
         ->count();
          
         $posts = LookupSubBase::find() 
-        ->where(['mukim_id' => $id])
+        ->where(['district_id' => $id])
         ->all();
          
         if($countPosts>0){
