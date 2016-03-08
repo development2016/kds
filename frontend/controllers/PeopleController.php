@@ -21,7 +21,7 @@ use common\models\Question;
 use common\models\Answer;
 use common\models\TanggunganOku;
 use common\models\LookupMukim;
-
+use common\models\LookupBahagian;
 use frontend\models\AnswerTemp;
 use frontend\models\QuestionTemp;
 /**
@@ -185,8 +185,8 @@ class PeopleController extends Controller
             if ($model->save()) {
 
                 $last_id = Yii::$app->db->getLastInsertID();
-				
-				$model_oku->people_id = $last_id;
+                
+                $model_oku->people_id = $last_id;
                 $model_oku->save();
 
                 $wife = count($_POST['Wife']['wife_name']);
@@ -538,5 +538,85 @@ class PeopleController extends Controller
         }
      
     }
-    
+    //code by shahril_muse .. for drilldown .. ** please shake your head before transcoding.
+    public function actionListmukimbahagian($id)
+    {
+        $countPosts = LookupMukim::find()
+        ->where(['district_id' => $id])
+        ->count();
+         
+        $posts = LookupMukim::find() 
+        ->where(['district_id' => $id])
+        ->all();
+         
+        if($countPosts>0){
+            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            foreach($posts as $post){
+                echo "<option value='".$post->mukim_id."'>".$post->mukim."</option>";
+            }
+        } else {
+                echo "<option>-</option>";
+        }
+     
+    }
+    public function actionListjohorsubbase($id)
+    {
+        $countPosts = LookupSubBase::find()
+        ->where(['mukim_id' => $id])
+        ->count();
+         
+        $posts = LookupSubBase::find() 
+        ->where(['mukim_id' => $id])
+        ->all();
+         
+        if($countPosts>0){
+            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            foreach($posts as $post){
+                echo "<option value='".$post->sub_base_id."'>".$post->sub_base."</option>";
+            }
+        } else {
+                echo "<option>-</option>";
+        }
+     
+    }
+    public function actionListbahagian($id)
+    {
+        $countPosts = LookupBahagian::find()
+        ->where(['state_id' => $id])
+        ->count();
+         
+        $posts = LookupBahagian::find() 
+        ->where(['state_id' => $id])
+        ->all();
+         
+        if($countPosts>0){
+            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            foreach($posts as $post){
+                echo "<option value='".$post->bahagian_id."'>".$post->bahagian."</option>";
+            }
+        } else {
+                echo "<option>-</option>";
+        }
+     
+    }
+    public function actionListdistrictbahagian($id)
+    {
+        $countPosts = LookupDistrict::find()
+        ->where(['bahagian_id' => $id])
+        ->count();
+         
+        $posts = LookupDistrict::find() 
+        ->where(['bahagian_id' => $id])
+        ->all();
+         
+        if($countPosts>0){
+            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            foreach($posts as $post){
+                echo "<option value='".$post->district_id."'>".$post->district."</option>";
+            }
+        } else {
+                echo "<option>-</option>";
+        }
+     
+    }
 }

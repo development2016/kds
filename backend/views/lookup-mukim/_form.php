@@ -37,9 +37,7 @@ $district = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->
                             'prompt'=>'(Sila Pilih)','id'=>'state_mukim',
                             'onchange'=>
                                 'JS: var id = (this.value);
-                                if (id == 21) {
-                                    $.post( "'.Yii::$app->urlManager->createUrl(['lookup-mukim/listbahagian','id'=>'']).'"+$(this).val(), function( data ) {$( "select#bahagian " ).html( data );});
-                                } else {
+                                if (id == 22) {
                                     $.post( "'.Yii::$app->urlManager->createUrl(['lookup-mukim/listdistrict','id'=>'']).'"+$(this).val(), function( data ) {$( "select#district " ).html( data );});
                                 };',
 
@@ -49,35 +47,7 @@ $district = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->
                         </div>
                     </div>
 
-                    <div style="display:none;" class="bahagian_mukim">
-                        <div class="col-md-3">
-                            <div class="form-group form-md-line-input">
-                                <?= Html::activeDropDownList($model, 'bahagian_id', $bahagian, 
-                                [
-                                'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['lookup-mukim/listdistrictbahagian','id'=>'']).'"+$(this).val(), function( data ) {$( "select#district_bahagian" ).html( data );});',
-                                    'prompt'=>'','id'=>'bahagian',   
-                                    'class'=>'form-control']); ?>
-                                <label for="form_control_1"><?= Html::activeLabel($model,'bahagian_id'); ?> </label>
-                                <span class="help-block"><?= Html::error($model,'bahagian_id'); ?></span>
-                            </div>
-                        </div>
-
-
-                        <div class="col-md-3">
-                            <div class="form-group form-md-line-input">
-                                <?= Html::activeDropDownList($model, 'district_id', $district, 
-                                [
-                                    'prompt'=>'','id'=>'district_bahagian',
-                                    'class'=>'form-control',
-
-                                ]); ?>
-                                <label for="form_control_1"><?= Html::activeLabel($model,'district_id'); ?></label>
-                                <span class="help-block"><?= Html::error($model,'district_id'); ?></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div style="display:none;" class="daerah_mukim">
+                    <div style="display:none;" class="mukim"> <!-- Johor Section -->
                         <div class="col-md-3">
                             <div class="form-group form-md-line-input">
                                 <?= Html::activeDropDownList($model, 'district_id', $district, 
@@ -90,22 +60,29 @@ $district = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->
                                 <span class="help-block"><?= Html::error($model,'district_id'); ?></span>
                             </div>
                         </div>
+                        <div class="col-md-3">
+                            <div class="form-group form-md-line-input">
+                                <?= Html::activeTextInput($model,'mukim',['class'=>'form-control']); ?>
+                                <label for="form_control_1"><?= Html::activeLabel($model,'mukim'); ?></label>
+                                <span class="help-block"><?= Html::error($model,'mukim'); ?></span>
+                            </div>
                     </div>
+                    </div> <!-- End Sarawak Section -->
 
-
-                    <div class="col-md-3">
-                        <div class="form-group form-md-line-input">
-                            <?= Html::activeTextInput($model,'mukim',['class'=>'form-control']); ?>
-                            <label for="form_control_1"><?= Html::activeLabel($model,'mukim'); ?></label>
-                            <span class="help-block"><?= Html::error($model,'mukim'); ?></span>
+                    <div style="display:none;" class="others">
+                        <div class="col-md-8">
+                            <div class="alert alert-danger">
+                                Maklumat Mukim Hanya Perlu Di Isi Bagi Negeri Johor Sahaja.
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-	<div class="form-actions">
+    <div style="display:none;" class="sendMukim">
+        <div class="form-actions">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>                  
+    </div>
     </div>
 
 		<?php ActiveForm::end(); ?>

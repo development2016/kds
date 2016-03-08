@@ -81,7 +81,7 @@ class People extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['race', 'religion', 'marital_status', 'no_of_children', 'income', 'spending', 'enter_by', 'verified_by'], 'integer'],
+            [['race', 'religion', 'marital_status', 'no_of_children', 'income', 'spending', 'enter_by', 'verified_by','mukim_id'], 'integer'],
             [['image'], 'string'],
             [['enter_date', 'verified_date'], 'safe'],
             ['ic_no', 'unique'],
@@ -98,7 +98,7 @@ class People extends \yii\db\ActiveRecord
             [['oku','tanggungan_oku'],'default','value'=>'Tidak'],
 
             [['name', 'address', 'name_nick', 'current_address', 'mukim'], 'string', 'max' => 225],
-            [['ic_no', 'postcode', 'dob', 'gender', 'ic_no_old', 'state_id', 'district_id', 'sub_base_id', 'cluster_id', 'kampung_id','mukim_id', 'birth_place', 'citizen', 'profession_status', 'profession', 'job_position', 'job_else', 'mobile_no', 'home_no', 'email', 'penghulu', 'local_champion', 'volunteer', 'micro_worker', 'data_status', 'flag', 'tarikh_soal_selidik','oku','tanggungan_oku'], 'string', 'max' => 45],
+            [['ic_no', 'postcode', 'dob', 'gender', 'ic_no_old', 'state_id', 'district_id', 'sub_base_id', 'cluster_id', 'kampung_id','bahagian_id', 'birth_place', 'citizen', 'profession_status', 'profession', 'job_position', 'job_else', 'mobile_no', 'home_no', 'email', 'penghulu', 'local_champion', 'volunteer', 'micro_worker', 'data_status', 'flag', 'tarikh_soal_selidik','oku','tanggungan_oku'], 'string', 'max' => 45],
             [['nota', 'ruang_cadangan'], 'string', 'max' => 1000]
         ];
     }
@@ -157,6 +157,7 @@ class People extends \yii\db\ActiveRecord
             'ruang_cadangan' => 'Ruang Cadangan Minat',
             'oku' => 'OKU',
             'tanggungan_oku' => 'tanggungan_oku',
+            'bahagian_id' =>'Bahagian',
         ];
     }
 

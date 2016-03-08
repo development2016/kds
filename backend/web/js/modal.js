@@ -131,6 +131,23 @@ $(function(){
 
     //mukim
     $('#state_mukim').change(function(){
+        if ($(this).val() == 22) {
+            $(".mukim").show(500);
+            $(".others").hide(500);
+            $(".sendMukim").show(500);
+            //$(".mukim_subbase").hide(500);
+            $("select#district").prop('disabled', false);            
+        }
+         else {
+            $(".others").show(500);
+            $(".mukim").hide(500);
+            $(".sendMukim").hide(500);
+
+        };
+    });
+
+    //subbase
+    $('#lookup_subbase').change(function(){
         if ($(this).val() == 21) {
             $(".bahagian_mukim").show(500);
             $(".daerah_mukim").hide(500);
@@ -168,7 +185,6 @@ $(function(){
             $("select#mukim_johor").prop('disabled', true);
         };
     });
-
 //CLUSTER
     $('#state_cluster').change(function(){
         if ($(this).val() == 21) {

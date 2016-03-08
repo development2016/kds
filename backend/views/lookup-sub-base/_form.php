@@ -30,7 +30,7 @@ $district = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->
                     <div class="form-group form-md-line-input">
                         <?= Html::activeDropDownList($model, 'state_id', $state, 
                             [
-                            'prompt'=>'(Sila Pilih)','id'=>'state_mukim',
+                            'prompt'=>'(Sila Pilih)','id'=>'lookup_subbase',
                             'onchange'=>
                                 'JS: var id = (this.value);
                                 if (id == 21) {
@@ -63,23 +63,11 @@ $district = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->
                         <div class="form-group form-md-line-input">
                                 <?= Html::activeDropDownList($model, 'district_id', $district, 
                                 [
-                                'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['lookup-sub-base/listmukimbahagian','id'=>'']).'"+$(this).val(), function( data ) {$( "select#mukim_bahagian" ).html( data );});',
+                                
                                     'prompt'=>'','id'=>'district_bahagian',   
                                     'class'=>'form-control']); ?>
                             <label for="form_control_1"><?= Html::activeLabel($model,'district_id'); ?> </label>
                                 <span class="help-block"><?= Html::error($model,'district_id'); ?></span>
-                        </div>
-                    </div>
-                    <div class="col-md-3"> <!-- Mukim -->
-                        <div class="form-group form-md-line-input">
-                            <?= Html::activeDropDownList($model, 'mukim_id', $mukim, 
-                                [
-                                    'prompt'=>'','id'=>'mukim_bahagian',
-                                    'class'=>'form-control',
-
-                                ]); ?>
-                            <label for="form_control_1"><?= Html::activeLabel($model,'mukim_id'); ?></label>
-                                <span class="help-block"><?= Html::error($model,'mukim_id'); ?></span>
                         </div>
                     </div>
                 </div> <!-- END SARAWAK SECTION --> 
