@@ -27,6 +27,8 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'johor')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'selangor')->textInput(['maxlength' => true]) ?>
+	
+	<?= $form->field($model, 'sarawak')->textInput(['maxlength' => true]) ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

@@ -71,6 +71,7 @@ $this->title = 'Senarai Status Harian';
                                         'perak',
                                         'johor',
                                         'selangor',
+										'sarawak',
 
                                     [
                                         'header' => 'Tindakan',

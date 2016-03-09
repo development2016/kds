@@ -10,8 +10,10 @@
                                         <th>PERAK</th>
                                         <th>JOHOR</th>
                                         <th>SELANGOR</th>
+                                        <th>SARAWAK</th>
                                     </tr>
                                     <tr>
+                                        <th>CURRENT</th>
                                         <th>CURRENT</th>
                                         <th>CURRENT</th>
                                         <th>CURRENT</th>
@@ -34,6 +36,7 @@
                                         <td><?php echo $value['perak']; ?></td>
                                         <td><?php echo $value['johor']; ?></td>
                                         <td><?php echo $value['selangor']; ?></td>
+                                        <td><?php echo $value['sarawak']; ?></td>
                                     </tr>
                                     <?php } ?>
 
@@ -48,11 +51,12 @@
                                $r_perak = $value['perak'];
                                $r_johor = $value['johor'];
                                $r_selangor = $value['selangor'];
+                               $r_sarawak = $value['sarawak'];
 
                             } ?>
                             <?php 
 
-                            $percentage_pahang = $percentage_kedah = $percentage_perlis = $percentage_terengganu = $percentage_perak = $percentage_johor = $percentage_selangor = 0; ?>
+                            $percentage_pahang = $percentage_kedah = $percentage_perlis = $percentage_terengganu = $percentage_perak = $percentage_johor = $percentage_selangor = $percentage_sarawak = 0; ?>
                             <table class="table table-striped table-bordered">
                                 <thead>
                                     <tr>
@@ -64,6 +68,7 @@
                                         <th>Perak</th>
                                         <th>Johor</th>
                                         <th>Selangor</th>
+                                        <th>Sarawak</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -86,6 +91,7 @@
                                         <td><?= $p_perak; ?></td>
                                         <td><?= $p_johor; ?></td>
                                         <td><?= $p_selangor; ?></td>
+                                        <td><?= $p_sarawak; ?></td>
                                     </tr>
                                     <tr>
                                         <td>DATA VERIFIED</td>
@@ -96,6 +102,7 @@
                                         <td><?= $ps_perak; ?></td>
                                         <td><?= $ps_johor; ?></td>
                                         <td><?= $ps_selangor; ?></td>
+                                        <td><?= $ps_sarawak; ?></td>
                                     </tr>
                                     <tr>
                                         <td>BALANCE TO VERIFY</td>
@@ -106,6 +113,7 @@
                                         <td><?= $baki_perak = $p_perak - $ps_perak ?></td>
                                         <td><?= $baki_johor = $p_johor - $ps_johor ?></td>
                                         <td><?= $baki_selangor = $p_selangor - $ps_selangor ?></td>
+                                        <td><?= $baki_sarawak = $p_sarawak - $ps_sarawak ?></td>
                                     </tr>
                                     <tr>
                                         <td>% TO VERIFY</td>

@@ -50,6 +50,7 @@ class StatusHarianController extends Controller
         $p_johor = People::find()->where(['state_id' => 22])->count();
         $p_kedah = People::find()->where(['state_id' => 16])->count();
         $p_selangor = People::find()->where(['state_id' => 13])->count();
+		$p_sarawak = People::find()->where(['state_id' => 21])->count();
 
         //reject
         $reject = Status::find()->where(['id'=>7])->all();
@@ -62,6 +63,7 @@ class StatusHarianController extends Controller
         $ps_johor = People::find()->where(['state_id' => 22,'data_status'=>'Sah'])->count();
         $ps_kedah = People::find()->where(['state_id' => 16,'data_status'=>'Sah'])->count();
         $ps_selangor = People::find()->where(['state_id' => 13,'data_status'=>'Sah'])->count();
+		$ps_sarawak = People::find()->where(['state_id' => 21,'data_status'=>'Sah'])->count();
 
 
         $content = $this->renderPartial('print',[
@@ -73,6 +75,7 @@ class StatusHarianController extends Controller
             'p_johor' => $p_johor,
             'p_kedah' => $p_kedah,
             'p_selangor' => $p_selangor,
+			'p_sarawak' => $p_sarawak,
 
             'reject' => $reject,
             'ps_pahang' => $ps_pahang,
@@ -82,6 +85,7 @@ class StatusHarianController extends Controller
             'ps_johor' => $ps_johor,
             'ps_kedah' => $ps_kedah,
             'ps_selangor' => $ps_selangor,
+			'ps_sarawak' => $ps_sarawak,
         ]);
 
         $date = date('d/m/Y');
@@ -132,6 +136,7 @@ class StatusHarianController extends Controller
         $p_johor = People::find()->where(['state_id' => 22])->count();
         $p_kedah = People::find()->where(['state_id' => 16])->count();
         $p_selangor = People::find()->where(['state_id' => 13])->count();
+		$p_sarawak = People::find()->where(['state_id' => 21])->count();
 
         //reject
         $reject = Status::find()->where(['id'=>7])->all();
@@ -144,6 +149,7 @@ class StatusHarianController extends Controller
         $ps_johor = People::find()->where(['state_id' => 22,'data_status'=>'Sah'])->count();
         $ps_kedah = People::find()->where(['state_id' => 16,'data_status'=>'Sah'])->count();
         $ps_selangor = People::find()->where(['state_id' => 13,'data_status'=>'Sah'])->count();
+		$ps_sarawak = People::find()->where(['state_id' => 21,'data_status'=>'Sah'])->count();
 
 
         return $this->render('status',[
@@ -155,6 +161,7 @@ class StatusHarianController extends Controller
             'p_johor' => $p_johor,
             'p_kedah' => $p_kedah,
             'p_selangor' => $p_selangor,
+			'p_sarawak' => $p_sarawak,
 
             'reject' => $reject,
             'ps_pahang' => $ps_pahang,
@@ -164,6 +171,7 @@ class StatusHarianController extends Controller
             'ps_johor' => $ps_johor,
             'ps_kedah' => $ps_kedah,
             'ps_selangor' => $ps_selangor,
+			'ps_sarawak' => $ps_sarawak,
         ]);
     }
 
@@ -182,6 +190,7 @@ class StatusHarianController extends Controller
         $p_johor = People::find()->where(['state_id' => 22])->count();
         $p_kedah = People::find()->where(['state_id' => 16])->count();
         $p_selangor = People::find()->where(['state_id' => 13])->count();
+		$p_sarawak = People::find()->where(['state_id' => 21])->count();
 
         //reject
         $reject = Status::find()->where(['id'=>7])->all();
@@ -194,6 +203,7 @@ class StatusHarianController extends Controller
         $ps_johor = People::find()->where(['state_id' => 22,'data_status'=>'Sah'])->count();
         $ps_kedah = People::find()->where(['state_id' => 16,'data_status'=>'Sah'])->count();
         $ps_selangor = People::find()->where(['state_id' => 13,'data_status'=>'Sah'])->count();
+		$ps_sarawak = People::find()->where(['state_id' => 21,'data_status'=>'Sah'])->count();
 
 
         return $this->render('harian',[
@@ -205,6 +215,7 @@ class StatusHarianController extends Controller
             'p_johor' => $p_johor,
             'p_kedah' => $p_kedah,
             'p_selangor' => $p_selangor,
+			'p_sarawak' => $p_sarawak,
 
             'reject' => $reject,
             'ps_pahang' => $ps_pahang,
@@ -214,6 +225,7 @@ class StatusHarianController extends Controller
             'ps_johor' => $ps_johor,
             'ps_kedah' => $ps_kedah,
             'ps_selangor' => $ps_selangor,
+			'ps_sarawak' => $ps_sarawak,
         ]);
     }
 

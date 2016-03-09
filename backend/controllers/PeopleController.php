@@ -22,6 +22,8 @@ use common\models\Answer;
 use common\models\TanggunganOku;
 use common\models\LookupMukim;
 use yii\helpers\Json;
+use backend\models\AnswerTemp;
+use backend\models\QuestionTemp;
 /**
  * PeopleController implements the CRUD actions for People model.
  */
@@ -73,6 +75,24 @@ class PeopleController extends Controller
          
         
     }
+
+           public function actionGeneratet($id){
+
+        for ($i=1; $i <=18 ; $i++) { 
+            
+            $model_answer = new AnswerTemp();
+            $d = $model_answer->question_temp_id = $i;
+            $model_answer->jawapan = "";
+            $o = $model_answer->people_id = $id;
+            $r = $model_answer->save();
+
+        }
+        Yii::$app->getSession()->setFlash('generateSoalanTemp', 'Maklumat Soalan Berjaya Di Jana');
+        return $this->redirect(['/people/update', 'id' => $model_answer->people_id,'#'=>'tab_4']);
+
+         
+        
+    } 
     /**
      * Displays a single People model.
      * @param integer $id
@@ -246,6 +266,11 @@ class PeopleController extends Controller
             'query' => Answer::find()->where(['people_id'=>$id]),
             'pagination' => ['pageSize'=>52],
         ]);
+
+                        $model_answer_temp = new ActiveDataProvider([
+            'query' => AnswerTemp::find()->where(['people_id'=>$id]),
+            'pagination' => ['pageSize'=>52],
+        ]);
         $model_tanggunganoku = TanggunganOku::find()->where(['people_id'=>$id])->all();
 
         if ($model->load(Yii::$app->request->post())  && $model_oku->load(Yii::$app->request->post()) ) {
@@ -278,6 +303,7 @@ class PeopleController extends Controller
                 'model_tanggungan' => $model_tanggungan,
                 'model_answer' => $model_answer,
                 'model_tanggunganoku' => $model_tanggunganoku,
+                'model_answer_temp' => $model_answer_temp,
             ]);
         }
     }

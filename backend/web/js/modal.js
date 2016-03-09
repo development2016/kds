@@ -120,9 +120,7 @@ $(function(){
 
     });
     //people edit
-    $(('#state').val() == 22){
-        alert("ss");
-    }
+
 $('#s').change(function(){
 
        /* if ($(this).val() == 21) {

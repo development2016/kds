@@ -62,16 +62,12 @@ class LookupDistrictController extends Controller
     public function actionCreate()
     {
         $model = new LookupDistrict();
-        $model_count = new CountDistrict();
+
 
         if ($model->load(Yii::$app->request->post()) ) {
 
             if ($model->save()) {
-                $last_id = Yii::$app->db->getLastInsertID();
 
-                $model_count->state_id =  $_POST['LookupDistrict']['state_id'];
-                $model_count->district_id = $last_id;
-                $model_count->save();
             }
             Yii::$app->getSession()->setFlash('berjaya', 'Maklumat Daerah <b>('.$model->district.')</b> Berjaya Di Simpan');
             return $this->redirect(['index']);
@@ -91,15 +87,10 @@ class LookupDistrictController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
-        $model_count = CountDistrict::find()->where(['district_id'=>$id])->one();
 
-        if ($model->load(Yii::$app->request->post()) ) {
+        if ($model->load(Yii::$app->request->post() && $model->save()) ) {
 
-            if ($model->save()) {
 
-                $model_count->state_id =  $_POST['LookupDistrict']['state_id'];
-                $model_count->save();
-            }
             Yii::$app->getSession()->setFlash('berjaya', 'Maklumat Daerah <b>('.$model->district.')</b> Berjaya Di Kemaskini');
             return $this->redirect(['index']);
 

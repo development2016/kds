@@ -41,6 +41,7 @@ $this->title = 'Komuniti Development System';
                                         <th>PERAK</th>
                                         <th>JOHOR</th>
                                         <th>SELANGOR</th>
+										<th>SARAWAK</th>
                                     </tr>
                                     <tr>
                                         <th>CURRENT</th>
@@ -50,6 +51,7 @@ $this->title = 'Komuniti Development System';
                                         <th>CURRENT</th>
                                         <th>CURRENT</th>
                                         <th>CURRENT</th>
+										<th>CURRENT</th>
                                     </tr>
                                     
                                 </thead>
@@ -65,6 +67,7 @@ $this->title = 'Komuniti Development System';
                                         <td><?php echo $value['perak']; ?></td>
                                         <td><?php echo $value['johor']; ?></td>
                                         <td><?php echo $value['selangor']; ?></td>
+										<td><?php echo $value['sarawak']; ?></td>
                                     </tr>
                                     <?php } ?>
 
@@ -79,6 +82,7 @@ $this->title = 'Komuniti Development System';
                                $r_perak = $value['perak'];
                                $r_johor = $value['johor'];
                                $r_selangor = $value['selangor'];
+							   $r_selangor = $value['sarawak'];
 
                             } ?>
                             <?php 
@@ -95,6 +99,7 @@ $this->title = 'Komuniti Development System';
                                         <th>Perak</th>
                                         <th>Johor</th>
                                         <th>Selangor</th>
+										<th>Sarawak</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -117,6 +122,7 @@ $this->title = 'Komuniti Development System';
                                         <td><?= $p_perak; ?></td>
                                         <td><?= $p_johor; ?></td>
                                         <td><?= $p_selangor; ?></td>
+										<td><?= $p_sarawak; ?></td>
                                     </tr>
                                     <tr>
                                         <td>DATA VERIFIED</td>
@@ -127,6 +133,7 @@ $this->title = 'Komuniti Development System';
                                         <td><?= $ps_perak; ?></td>
                                         <td><?= $ps_johor; ?></td>
                                         <td><?= $ps_selangor; ?></td>
+										<td><?= $ps_sarawak; ?></td>
                                     </tr>
                                     <tr>
                                         <td>BALANCE TO VERIFY</td>
@@ -137,6 +144,7 @@ $this->title = 'Komuniti Development System';
                                         <td><?= $baki_perak = $p_perak - $ps_perak ?></td>
                                         <td><?= $baki_johor = $p_johor - $ps_johor ?></td>
                                         <td><?= $baki_selangor = $p_selangor - $ps_selangor ?></td>
+										<td><?= $baki_sarawak = $p_sarawak - $ps_sarawak ?></td>
                                     </tr>
                                     <tr>
                                         <td>% TO VERIFY</td>
@@ -147,6 +155,7 @@ $this->title = 'Komuniti Development System';
                                         <td><?php $percentage_perak = ($baki_perak / $p_perak) * 100; echo round($percentage_perak)."%"; ?></td>
                                         <td><?php $percentage_johor = ($baki_johor / $p_johor) * 100; echo round($percentage_johor)."%"; ?></td>
                                         <td><?php echo "-" ;// $percentage_selangor = ($baki_selangor / $p_selangor) * 100 ?></td>
+										<td><?php //$percentage_sarawak = ($baki_sarawak / $p_sarawak) * 100; echo round($percentage_sarawak)."%"; ?></td>
                                     </tr>
                                 </tbody>
                             </table>

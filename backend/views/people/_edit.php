@@ -896,12 +896,18 @@ $citizen = array('Warganegara'=>'Warganegara','Bukan Warganegara'=>'Bukan Wargan
 
                 <?php } ?>
 			</div>
-			<div class="tab-pane" id="tab_4">
+            <div class="tab-pane" id="tab_4">
 
                 <?php if(Yii::$app->session->hasFlash('updateAnswer')):?>
                     <div class="alert alert-info">
                         <button type="button" class="close" data-dismiss="alert"></button>
                          <?php echo  Yii::$app->session->getFlash('updateAnswer'); ?>
+                    </div>
+                <?php endif; ?>
+                                <?php if(Yii::$app->session->hasFlash('updateAnswerTemp')):?>
+                    <div class="alert alert-info">
+                        <button type="button" class="close" data-dismiss="alert"></button>
+                         <?php echo  Yii::$app->session->getFlash('updateAnswerTemp'); ?>
                     </div>
                 <?php endif; ?>
                 <?php if(Yii::$app->session->hasFlash('generateSoalan')):?>
@@ -910,17 +916,59 @@ $citizen = array('Warganegara'=>'Warganegara','Bukan Warganegara'=>'Bukan Wargan
                          <?php echo  Yii::$app->session->getFlash('generateSoalan'); ?>
                     </div>
                 <?php endif; ?>
-			    <?= GridView::widget([
-			        'dataProvider' => $model_answer,
+                <?php if(Yii::$app->session->hasFlash('generateSoalanTemp')):?>
+                    <div class="alert alert-info">
+                        <button type="button" class="close" data-dismiss="alert"></button>
+                         <?php echo  Yii::$app->session->getFlash('generateSoalanTemp'); ?>
+                    </div>
+                <?php endif; ?>
+                <?php if ($model->state_id == 21) { ?>
+                <?= GridView::widget([
+                    'dataProvider' => $model_answer_temp,
 
-			        'columns' => [
-			            ['class' => 'yii\grid\SerialColumn'],
-			            [
-			             'attribute' => 'Soalan',
-			             'value' => 'question.soalan'
-			            ],
-			            'answer',
-			           
+                    'columns' => [
+                        ['class' => 'yii\grid\SerialColumn'],
+                        [
+                         'attribute' => 'Soalan',
+                         'value' => 'question.soalan_temp'
+                        ],
+                        'jawapan',
+                       
+                        [
+                            'header' => 'Tindakan',
+                            'class' => 'yii\grid\ActionColumn',
+                            'template'=>'{lihat}   {kemaskini}',
+                                'buttons' => [
+                                    'kemaskini' => function ($url, $model_answer_temp) {
+                                        return Html::a('<span class="btn default btn-xs red-stripe">Edit</span>', 
+                                                $url,['value'=>Url::to(['/answer-temp/update','id'=>$model_answer_temp->id]),'title'=> Yii::t('app','Kemaskini'),'class'=>'answerUpdate']);
+
+                                    },
+
+                                ],
+                                'urlCreator' => function ($action, $model_answer_temp, $key, $index) {
+                                    if ($action === 'kemaskini') {
+                                        $url = FALSE;
+                                        return $url;
+                                    }
+
+                                }
+                            ],
+                    ],
+                ]); ?>
+                <?= Html::a('Jana Soalan', ['people/generatet','id'=>$model->people_id]) ?>
+                <?php } else { ?>
+                                <?= GridView::widget([
+                    'dataProvider' => $model_answer,
+
+                    'columns' => [
+                        ['class' => 'yii\grid\SerialColumn'],
+                        [
+                         'attribute' => 'Soalan',
+                         'value' => 'question.soalan'
+                        ],
+                        'answer',
+                       
                         [
                             'header' => 'Tindakan',
                             'class' => 'yii\grid\ActionColumn',
@@ -932,33 +980,25 @@ $citizen = array('Warganegara'=>'Warganegara','Bukan Warganegara'=>'Bukan Wargan
 
                                     },
 
-                                    /*'buang' => function ($url, $model_wife) {
-                                        return Html::a('<span class="btn default btn-xs red-stripe">Buang</span>', $url, [
-                                                    'title' => Yii::t('app', 'Buang'),
-                                        ]);
-
-                                    },*/
-
                                 ],
                                 'urlCreator' => function ($action, $model_answer, $key, $index) {
-									if ($action === 'kemaskini') {
+                                    if ($action === 'kemaskini') {
                                         $url = FALSE;
                                         return $url;
                                     }
-                                    /*if ($action === 'buang') {
-                                        $url = ['/wife/delete','id'=>$model_wife->wife_id];
-                                        return $url;
-                                    }*/
+
                                 }
                             ],
-			        ],
-			    ]); ?>
+                    ],
+                ]); ?>
 
                 <?= Html::a('Jana Soalan', ['people/generate','id'=>$model->people_id]) ?>
 
+                <?php }?>
 
 
-			</div>
+
+            </div>
             <div class="tab-pane" id="tab_5">
                 <?php if(Yii::$app->session->hasFlash('createTanggunganOku')):?>
                     <div class="alert alert-info">
