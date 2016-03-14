@@ -336,6 +336,17 @@ class PeopleController extends Controller
         $model_tanggunganoku = TanggunganOku::find()->where(['people_id'=>$id])->all();
 
         if ($model->load(Yii::$app->request->post())  && $model_oku->load(Yii::$app->request->post()) ) {
+            $negeri = $_POST['People']['state_id'];
+            if($negeri == 21){
+                $model->mukim_id = ""; //selain negeri sarawak .. mukim_id will be null
+            }
+            else if($negeri == 22){
+                $model->bahagian_id = ""; //selain negeri johor .. bahagian_id will be null
+            }
+            else{
+                $model->bahagian_id = "";
+                $model->mukim_id = "";
+            }
             if ($model->save() && $model_oku->save()) {
                  Yii::$app->getSession()->setFlash('updatePeople', 'Maklumat Responden <b>('.$model->name.')</b> Berjaya Di Kemaskini');
             return $this->redirect(['/people/update', 'id' => base64_encode($model->people_id),'#'=>'tab_1']);

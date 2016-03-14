@@ -24,7 +24,7 @@ use common\models\LookupBahagian;
 //$negara = ArrayHelper::map(LookupCountry::find()->asArray()->all(), 'country_id', 'country');
 $state = ArrayHelper::map(LookupState::find()->where(['kawasan_perlaksanaan'=>'Ya'])->asArray()->all(), 'state_id', 'state');
 $district = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->state_id])->asArray()->all(), 'district_id', 'district');
-$district_sarawak = ArrayHelper::map(LookupDistrict::find()->where(['bahagian_id'=>$model->bahagian_id])->asArray()->all(), 'district_id', 'district');
+//$district_sarawak = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->state_id])->asArray()->all(), 'district_id', 'district');
 
 $subbase = ArrayHelper::map(LookupSubBase::find()->where(['district_id'=>$model->district_id])->asArray()->all(),'sub_base_id','sub_base');
 $cluster = ArrayHelper::map(LookupCluster::find()->where(['sub_base_id'=>$model->sub_base_id])->asArray()->all(),'cluster_id','cluster');
@@ -340,7 +340,7 @@ $umur = array('1 Tahun'=>'1 Tahun','2 Tahun'=>'2 Tahun','3 Tahun'=>'3 Tahun','4 
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="form-group form-md-line-input">
-                                                    <?= Html::activeDropDownList($model, 'district_id', $district_sarawak, 
+                                                    <?= Html::activeDropDownList($model, 'district_id', $district, 
                                                         [
                                                         'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['people/listsubbase','id'=>'']).'"+$(this).val(), function( data ) {$( "select#subbasesarawak" ).html( data );});',
                                                             'prompt'=>'','id'=>'district_bahagian',   

@@ -22606,3 +22606,639 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1457512256.524
     'REQUEST_TIME' => 1457512256
 ]
+2016-03-10 17:19:29 [::1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/web/Controller.php:110
+Stack trace:
+#0 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('listjohorsubbas...', Array)
+#2 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('people/listjoho...', Array)
+#3 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /Library/WebServer/Documents/kds/frontend/web/index.php(18): yii\base\Application->run()
+#5 {main}
+2016-03-10 17:19:29 [::1][-][-][info][application] $_GET = [
+    'r' => 'people/listjohorsubbase'
+    'id' => '84'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '1bo74sb5lp8a2bpumjour970c0'
+    '_csrf' => '7d816ef389b26bd4702ace622fd00543351ef303d9c7abdb43f5a1e6a9c89cb1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"tWDsKZxLQTBAQw5CWRBz0Kj99-GPWv7F\";}'
+    '_identity' => '9ae264dd1f92b5e67b0e10bb9c1e0413b229268c468cb52edb92edbaa52fea92a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'SnZ2ZXNtNS4YMkcgIxcYHQgQBjwHGH16LxQaFhVaBEcITztUHRRFaQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=people%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6,id;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=1bo74sb5lp8a2bpumjour970c0; _csrf=7d816ef389b26bd4702ace622fd00543351ef303d9c7abdb43f5a1e6a9c89cb1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22tWDsKZxLQTBAQw5CWRBz0Kj99-GPWv7F%22%3B%7D; _identity=9ae264dd1f92b5e67b0e10bb9c1e0413b229268c468cb52edb92edbaa52fea92a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '65381'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=people%2Flistjohorsubbase&id=84'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=people%2Flistjohorsubbase&id=84'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1457601569.082
+    'REQUEST_TIME' => 1457601569
+]
+2016-03-10 17:19:45 [::1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/web/Controller.php:110
+Stack trace:
+#0 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('listmukimbahagi...', Array)
+#2 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('people/listmuki...', Array)
+#3 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /Library/WebServer/Documents/kds/frontend/web/index.php(18): yii\base\Application->run()
+#5 {main}
+2016-03-10 17:19:45 [::1][-][-][info][application] $_GET = [
+    'r' => 'people/listmukimbahagian'
+    'id' => '77'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '1bo74sb5lp8a2bpumjour970c0'
+    '_csrf' => '7d816ef389b26bd4702ace622fd00543351ef303d9c7abdb43f5a1e6a9c89cb1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"tWDsKZxLQTBAQw5CWRBz0Kj99-GPWv7F\";}'
+    '_identity' => '9ae264dd1f92b5e67b0e10bb9c1e0413b229268c468cb52edb92edbaa52fea92a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'SnZ2ZXNtNS4YMkcgIxcYHQgQBjwHGH16LxQaFhVaBEcITztUHRRFaQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=people%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6,id;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=1bo74sb5lp8a2bpumjour970c0; _csrf=7d816ef389b26bd4702ace622fd00543351ef303d9c7abdb43f5a1e6a9c89cb1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22tWDsKZxLQTBAQw5CWRBz0Kj99-GPWv7F%22%3B%7D; _identity=9ae264dd1f92b5e67b0e10bb9c1e0413b229268c468cb52edb92edbaa52fea92a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '49195'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=people%2Flistmukimbahagian&id=77'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=people%2Flistmukimbahagian&id=77'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1457601585.293
+    'REQUEST_TIME' => 1457601585
+]
+2016-03-10 17:22:56 [::1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/web/Controller.php:110
+Stack trace:
+#0 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('listmukimbahagi...', Array)
+#2 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('people/listmuki...', Array)
+#3 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /Library/WebServer/Documents/kds/frontend/web/index.php(18): yii\base\Application->run()
+#5 {main}
+2016-03-10 17:22:56 [::1][-][-][info][application] $_GET = [
+    'r' => 'people/listmukimbahagian'
+    'id' => '73'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '1bo74sb5lp8a2bpumjour970c0'
+    '_csrf' => '94bddca1dadd03a2260c6385b068a44b8780c8c520b31c04eac54e1e89d4f259a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"CQW4B_4umqjk_q4GWr-iM3OaUv3nktxL\";}'
+    '_identity' => '9ae264dd1f92b5e67b0e10bb9c1e0413b229268c468cb52edb92edbaa52fea92a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'VldhZWVrZ05uZlgNMT0BeDADBS8OWS4kGDA2FlcuF30aNSIPDjw2Jg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=people%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6,id;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=1bo74sb5lp8a2bpumjour970c0; _csrf=94bddca1dadd03a2260c6385b068a44b8780c8c520b31c04eac54e1e89d4f259a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22CQW4B_4umqjk_q4GWr-iM3OaUv3nktxL%22%3B%7D; _identity=9ae264dd1f92b5e67b0e10bb9c1e0413b229268c468cb52edb92edbaa52fea92a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '51491'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=people%2Flistmukimbahagian&id=73'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=people%2Flistmukimbahagian&id=73'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1457601776.636
+    'REQUEST_TIME' => 1457601776
+]
+2016-03-10 17:22:58 [::1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/web/Controller.php:110
+Stack trace:
+#0 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('listmukimbahagi...', Array)
+#2 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('people/listmuki...', Array)
+#3 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /Library/WebServer/Documents/kds/frontend/web/index.php(18): yii\base\Application->run()
+#5 {main}
+2016-03-10 17:22:58 [::1][-][-][info][application] $_GET = [
+    'r' => 'people/listmukimbahagian'
+    'id' => '74'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '1bo74sb5lp8a2bpumjour970c0'
+    '_csrf' => '94bddca1dadd03a2260c6385b068a44b8780c8c520b31c04eac54e1e89d4f259a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"CQW4B_4umqjk_q4GWr-iM3OaUv3nktxL\";}'
+    '_identity' => '9ae264dd1f92b5e67b0e10bb9c1e0413b229268c468cb52edb92edbaa52fea92a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'VldhZWVrZ05uZlgNMT0BeDADBS8OWS4kGDA2FlcuF30aNSIPDjw2Jg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=people%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6,id;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=1bo74sb5lp8a2bpumjour970c0; _csrf=94bddca1dadd03a2260c6385b068a44b8780c8c520b31c04eac54e1e89d4f259a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22CQW4B_4umqjk_q4GWr-iM3OaUv3nktxL%22%3B%7D; _identity=9ae264dd1f92b5e67b0e10bb9c1e0413b229268c468cb52edb92edbaa52fea92a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '51504'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=people%2Flistmukimbahagian&id=74'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=people%2Flistmukimbahagian&id=74'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1457601778.188
+    'REQUEST_TIME' => 1457601778
+]
+2016-03-14 08:00:15 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /Library/WebServer/Documents/kds/frontend/models/PeopleSearch.php:45
+Stack trace:
+#0 /Library/WebServer/Documents/kds/frontend/models/PeopleSearch.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/Library/WebSer...', 45, Array)
+#1 /Library/WebServer/Documents/kds/frontend/controllers/PeopleController.php(66): frontend\models\PeopleSearch->search(Array)
+#2 [internal function]: frontend\controllers\PeopleController->actionIndex()
+#3 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#6 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('people/index', Array)
+#7 /Library/WebServer/Documents/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Library/WebServer/Documents/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-03-14 08:00:14 [::1][-][-][info][application] $_GET = [
+    'r' => 'people/index'
+]
+
+$_COOKIE = [
+    '_identity' => '9ae264dd1f92b5e67b0e10bb9c1e0413b229268c468cb52edb92edbaa52fea92a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6,id;q=0.4'
+    'HTTP_COOKIE' => '_identity=9ae264dd1f92b5e67b0e10bb9c1e0413b229268c468cb52edb92edbaa52fea92a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '50963'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=people%2Findex'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=people%2Findex'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1457913614.868
+    'REQUEST_TIME' => 1457913614
+]
+2016-03-14 08:00:33 [::1][-][8vsc96v1dtfolj6teo3rk33ps4][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: Unable to load dynamic library '/usr/lib/php/extensions/no-debug-non-zts-20121212/gd.so' - dlopen(/usr/lib/php/extensions/no-debug-non-zts-20121212/gd.so, 9): image not found' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-03-14 08:00:32 [::1][-][8vsc96v1dtfolj6teo3rk33ps4][info][application] $_COOKIE = [
+    '_identity' => '9ae264dd1f92b5e67b0e10bb9c1e0413b229268c468cb52edb92edbaa52fea92a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/frontend/web/index.php?'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6,id;q=0.4'
+    'HTTP_COOKIE' => '_identity=9ae264dd1f92b5e67b0e10bb9c1e0413b229268c468cb52edb92edbaa52fea92a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '51180'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kds/frontend/web/index.php?'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1457913632.982
+    'REQUEST_TIME' => 1457913632
+]
+2016-03-14 08:00:52 [::1][-][-][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: Unable to load dynamic library '/usr/lib/php/extensions/no-debug-non-zts-20121212/gd.so' - dlopen(/usr/lib/php/extensions/no-debug-non-zts-20121212/gd.so, 9): image not found' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-03-14 08:00:52 [::1][-][-][info][application] $_GET = [
+    'r' => 'people/listbahagian'
+    'id' => '21'
+]
+
+$_COOKIE = [
+    '_csrf' => '41bd038b35705c8781e029aaa7a67be43f778047cf9ab91885a9847397978d8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"88lVlUywGkA4KgE9NJdIrYj3QY1V5vtg\";}'
+    'PHPSESSID' => 'hc7nodaqb6doooku3i47dfu144'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'NHdyb3NUSEwMTx45HwExO3McM1s4Mw11ej0WJgENIn9lLkM5RiI8Kw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=people%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6,id;q=0.4'
+    'HTTP_COOKIE' => '_csrf=41bd038b35705c8781e029aaa7a67be43f778047cf9ab91885a9847397978d8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2288lVlUywGkA4KgE9NJdIrYj3QY1V5vtg%22%3B%7D; PHPSESSID=hc7nodaqb6doooku3i47dfu144; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '51344'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=people%2Flistbahagian&id=21'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=people%2Flistbahagian&id=21'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1457913652.692
+    'REQUEST_TIME' => 1457913652
+]
+2016-03-14 08:01:00 [::1][-][-][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: Unable to load dynamic library '/usr/lib/php/extensions/no-debug-non-zts-20121212/gd.so' - dlopen(/usr/lib/php/extensions/no-debug-non-zts-20121212/gd.so, 9): image not found' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-03-14 08:01:00 [::1][-][-][info][application] $_GET = [
+    'r' => 'people/listdistrict'
+    'id' => '22'
+]
+
+$_COOKIE = [
+    '_csrf' => '41bd038b35705c8781e029aaa7a67be43f778047cf9ab91885a9847397978d8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"88lVlUywGkA4KgE9NJdIrYj3QY1V5vtg\";}'
+    'PHPSESSID' => 'hc7nodaqb6doooku3i47dfu144'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'NHdyb3NUSEwMTx45HwExO3McM1s4Mw11ej0WJgENIn9lLkM5RiI8Kw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=people%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6,id;q=0.4'
+    'HTTP_COOKIE' => '_csrf=41bd038b35705c8781e029aaa7a67be43f778047cf9ab91885a9847397978d8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2288lVlUywGkA4KgE9NJdIrYj3QY1V5vtg%22%3B%7D; PHPSESSID=hc7nodaqb6doooku3i47dfu144; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '51519'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=people%2Flistdistrict&id=22'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=people%2Flistdistrict&id=22'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1457913660.503
+    'REQUEST_TIME' => 1457913660
+]
+2016-03-14 08:01:08 [::1][-][-][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: Unable to load dynamic library '/usr/lib/php/extensions/no-debug-non-zts-20121212/gd.so' - dlopen(/usr/lib/php/extensions/no-debug-non-zts-20121212/gd.so, 9): image not found' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-03-14 08:01:08 [::1][-][-][info][application] $_GET = [
+    'r' => 'people/listdistrict'
+    'id' => '13'
+]
+
+$_COOKIE = [
+    '_csrf' => '41bd038b35705c8781e029aaa7a67be43f778047cf9ab91885a9847397978d8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"88lVlUywGkA4KgE9NJdIrYj3QY1V5vtg\";}'
+    'PHPSESSID' => 'hc7nodaqb6doooku3i47dfu144'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'NHdyb3NUSEwMTx45HwExO3McM1s4Mw11ej0WJgENIn9lLkM5RiI8Kw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=people%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6,id;q=0.4'
+    'HTTP_COOKIE' => '_csrf=41bd038b35705c8781e029aaa7a67be43f778047cf9ab91885a9847397978d8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2288lVlUywGkA4KgE9NJdIrYj3QY1V5vtg%22%3B%7D; PHPSESSID=hc7nodaqb6doooku3i47dfu144; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '51617'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=people%2Flistdistrict&id=13'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=people%2Flistdistrict&id=13'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1457913668.778
+    'REQUEST_TIME' => 1457913668
+]
+2016-03-14 08:01:36 [::1][-][-][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: Unable to load dynamic library '/usr/lib/php/extensions/no-debug-non-zts-20121212/gd.so' - dlopen(/usr/lib/php/extensions/no-debug-non-zts-20121212/gd.so, 9): image not found' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-03-14 08:01:36 [::1][-][-][info][application] $_GET = [
+    'r' => 'people/listdistrict'
+    'id' => '18'
+]
+
+$_COOKIE = [
+    '_csrf' => '41bd038b35705c8781e029aaa7a67be43f778047cf9ab91885a9847397978d8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"88lVlUywGkA4KgE9NJdIrYj3QY1V5vtg\";}'
+    'PHPSESSID' => 'hc7nodaqb6doooku3i47dfu144'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'NHdyb3NUSEwMTx45HwExO3McM1s4Mw11ej0WJgENIn9lLkM5RiI8Kw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=people%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6,id;q=0.4'
+    'HTTP_COOKIE' => '_csrf=41bd038b35705c8781e029aaa7a67be43f778047cf9ab91885a9847397978d8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2288lVlUywGkA4KgE9NJdIrYj3QY1V5vtg%22%3B%7D; PHPSESSID=hc7nodaqb6doooku3i47dfu144; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '51947'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=people%2Flistdistrict&id=18'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=people%2Flistdistrict&id=18'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1457913696.532
+    'REQUEST_TIME' => 1457913696
+]
+2016-03-14 08:01:38 [::1][-][-][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: Unable to load dynamic library '/usr/lib/php/extensions/no-debug-non-zts-20121212/gd.so' - dlopen(/usr/lib/php/extensions/no-debug-non-zts-20121212/gd.so, 9): image not found' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-03-14 08:01:38 [::1][-][-][info][application] $_GET = [
+    'r' => 'people/listbahagian'
+    'id' => '21'
+]
+
+$_COOKIE = [
+    '_csrf' => '41bd038b35705c8781e029aaa7a67be43f778047cf9ab91885a9847397978d8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"88lVlUywGkA4KgE9NJdIrYj3QY1V5vtg\";}'
+    'PHPSESSID' => 'hc7nodaqb6doooku3i47dfu144'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'NHdyb3NUSEwMTx45HwExO3McM1s4Mw11ej0WJgENIn9lLkM5RiI8Kw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=people%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6,id;q=0.4'
+    'HTTP_COOKIE' => '_csrf=41bd038b35705c8781e029aaa7a67be43f778047cf9ab91885a9847397978d8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2288lVlUywGkA4KgE9NJdIrYj3QY1V5vtg%22%3B%7D; PHPSESSID=hc7nodaqb6doooku3i47dfu144; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '51961'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=people%2Flistbahagian&id=21'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=people%2Flistbahagian&id=21'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1457913698.197
+    'REQUEST_TIME' => 1457913698
+]
+2016-03-14 08:02:13 [::1][1][hc7nodaqb6doooku3i47dfu144][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: Unable to load dynamic library '/usr/lib/php/extensions/no-debug-non-zts-20121212/gd.so' - dlopen(/usr/lib/php/extensions/no-debug-non-zts-20121212/gd.so, 9): image not found' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-03-14 08:02:12 [::1][1][hc7nodaqb6doooku3i47dfu144][info][application] $_GET = [
+    'r' => 'people/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '41bd038b35705c8781e029aaa7a67be43f778047cf9ab91885a9847397978d8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"88lVlUywGkA4KgE9NJdIrYj3QY1V5vtg\";}'
+    'PHPSESSID' => 'hc7nodaqb6doooku3i47dfu144'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/frontend/web/index.php?'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6,id;q=0.4'
+    'HTTP_COOKIE' => '_csrf=41bd038b35705c8781e029aaa7a67be43f778047cf9ab91885a9847397978d8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2288lVlUywGkA4KgE9NJdIrYj3QY1V5vtg%22%3B%7D; PHPSESSID=hc7nodaqb6doooku3i47dfu144; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Library/WebServer/Documents'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Library/WebServer/Documents/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '52354'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=people%2Findex'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=people%2Findex'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1457913732.972
+    'REQUEST_TIME' => 1457913732
+]

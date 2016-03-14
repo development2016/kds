@@ -17,13 +17,14 @@ use common\models\LookupDistrict;
 use common\models\LookupSubBase;
 use common\models\LookupCluster;
 use common\models\LookupKampung;
+use common\models\LookupBahagian;
 use common\models\Question;
 use common\models\Answer;
+use backend\models\AnswerTemp;
+
 use common\models\TanggunganOku;
 use common\models\LookupMukim;
 use yii\helpers\Json;
-use backend\models\AnswerTemp;
-use backend\models\QuestionTemp;
 /**
  * PeopleController implements the CRUD actions for People model.
  */
@@ -75,8 +76,8 @@ class PeopleController extends Controller
          
         
     }
-
-           public function actionGeneratet($id){
+    
+       public function actionGeneratet($id){
 
         for ($i=1; $i <=18 ; $i++) { 
             
@@ -266,11 +267,13 @@ class PeopleController extends Controller
             'query' => Answer::find()->where(['people_id'=>$id]),
             'pagination' => ['pageSize'=>52],
         ]);
-
-                        $model_answer_temp = new ActiveDataProvider([
+        $model_answer_temp = new ActiveDataProvider([
             'query' => AnswerTemp::find()->where(['people_id'=>$id]),
-            'pagination' => ['pageSize'=>52],
+            'pagination' => ['pageSize'=>18],
         ]);
+
+
+
         $model_tanggunganoku = TanggunganOku::find()->where(['people_id'=>$id])->all();
 
         if ($model->load(Yii::$app->request->post())  && $model_oku->load(Yii::$app->request->post()) ) {
@@ -287,6 +290,17 @@ class PeopleController extends Controller
                         return $this->redirect(['/people/update', 'id' => $model->people_id,'#'=>'tab_1']);
                     }
             } else {
+                $negeri = $_POST['People']['state_id'];
+                if($negeri == 21){
+                    $model->mukim_id = ""; //selain negeri sarawak .. mukim_id will be null
+                }
+                else if($negeri == 22){
+                    $model->bahagian_id = ""; //selain negeri johor .. bahagian_id will be null
+                }
+                else{
+                    $model->bahagian_id = "";
+                    $model->mukim_id = "";
+                }
                 if ($model->save() && $model_oku->save()) {
                     Yii::$app->getSession()->setFlash('updatePeople', 'Maklumat Responden <b>('.$model->name.')</b> Berjaya Di Kemaskini');
                     return $this->redirect(['/people/update', 'id' => $model->people_id,'#'=>'tab_1']);
@@ -461,5 +475,86 @@ class PeopleController extends Controller
          
         echo json_encode($users);
 
+    }
+    //code by shahril_muse .. for drilldown .. ** please shake your head before transcoding.
+    public function actionListmukim($id)
+    {
+        $countPosts = LookupMukim::find()
+        ->where(['district_id' => $id])
+        ->count();
+         
+        $posts = LookupMukim::find() 
+        ->where(['district_id' => $id])
+        ->all();
+         
+        if($countPosts>0){
+            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            foreach($posts as $post){
+                echo "<option value='".$post->mukim_id."'>".$post->mukim."</option>";
+            }
+        } else {
+                echo "<option>-</option>";
+        }
+     
+    }
+    public function actionListjohorsubbase($id)
+    {
+        $countPosts = LookupSubBase::find()
+        ->where(['mukim_id' => $id])
+        ->count();
+         
+        $posts = LookupSubBase::find() 
+        ->where(['mukim_id' => $id])
+        ->all();
+         
+        if($countPosts>0){
+            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            foreach($posts as $post){
+                echo "<option value='".$post->sub_base_id."'>".$post->sub_base."</option>";
+            }
+        } else {
+                echo "<option>-</option>";
+        }
+     
+    }
+    public function actionListdistrictbahagian($id)
+    {
+        $countPosts = LookupDistrict::find()
+        ->where(['bahagian_id' => $id])
+        ->count();
+         
+        $posts = LookupDistrict::find() 
+        ->where(['bahagian_id' => $id])
+        ->all();
+         
+        if($countPosts>0){
+            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            foreach($posts as $post){
+                echo "<option value='".$post->district_id."'>".$post->district."</option>";
+            }
+        } else {
+                echo "<option>-</option>";
+        }
+     
+    }
+    public function actionListbahagian($id)
+    {
+        $countPosts = LookupBahagian::find()
+        ->where(['state_id' => $id])
+        ->count();
+         
+        $posts = LookupBahagian::find() 
+        ->where(['state_id' => $id])
+        ->all();
+         
+        if($countPosts>0){
+            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            foreach($posts as $post){
+                echo "<option value='".$post->bahagian_id."'>".$post->bahagian."</option>";
+            }
+        } else {
+                echo "<option>-</option>";
+        }
+     
     }
 }

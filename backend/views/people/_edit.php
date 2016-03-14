@@ -255,7 +255,7 @@ $citizen = array('Warganegara'=>'Warganegara','Bukan Warganegara'=>'Bukan Wargan
                                                 <div class="form-group form-md-line-input">
                                                     <?= Html::activeDropDownList($model, 'district_id', $district, 
                                                     [
-                                                        'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['people/listmukimbahagian','id'=>'']).'"+$(this).val(), function( data ) {$( "select#mukim_johor" ).html( data );});',
+                                                        'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['people/listmukim','id'=>'']).'"+$(this).val(), function( data ) {$( "select#mukim_johor" ).html( data );});',
                                                         'prompt'=>'','id'=>'johordistrict',
        
                                                         'class'=>'form-control']); ?>
@@ -311,69 +311,113 @@ $citizen = array('Warganegara'=>'Warganegara','Bukan Warganegara'=>'Bukan Wargan
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
-                                            <div class="form-group form-md-line-input">
-                                                <?= Html::activeDropDownList($model, 'district_id', $district, 
-                                                [
-                                                    'prompt'=>'','id'=>'district',
-                                                    'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['people/listsubbase','id'=>'']).'"+$(this).val(), function( data ) {$( "select#subbase" ).html( data );});',
-   
-                                                    'class'=>'form-control']); ?>
-                                                <label for="form_control_1"><?= Html::activeLabel($model,'district_id'); ?> <span class="required">*</span></label>
-                                                <span class="help-block"><?= Html::error($model,'district_id'); ?></span>
+                                        <div style="display:none;" class="bahagian_sarawak"> <!-- SARAWAK SECTION -->
+                                            <div class="col-md-4">
+                                                <div class="form-group form-md-line-input">
+                                                    <?= Html::activeDropDownList($model, 'bahagian_id', $bahagian, 
+                                                        [
+                                                        'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['people/listdistrictbahagian','id'=>'']).'"+$(this).val(), function( data ) {$( "select#district_bahagian" ).html( data );});',
+                                                            'prompt'=>'','id'=>'bahagian',   
+                                                            'class'=>'form-control']); ?>
+                                                        <label for="form_control_1"><?= Html::activeLabel($model,'bahagian_id'); ?> </label>
+                                                        <span class="help-block"><?= Html::error($model,'bahagian_id'); ?></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group form-md-line-input">
+                                                    <?= Html::activeDropDownList($model, 'district_id', $district, 
+                                                        [
+                                                        'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['people/listsubbase','id'=>'']).'"+$(this).val(), function( data ) {$( "select#subbasesarawak" ).html( data );});',
+                                                            'prompt'=>'','id'=>'district_bahagian',   
+                                                            'class'=>'form-control']); ?>
+                                                        <label for="form_control_1"><?= Html::activeLabel($model,'district_id'); ?> </label>
+                                                        <span class="help-block"><?= Html::error($model,'district_id'); ?></span>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="col-md-4">
+                                                <div class="form-group form-md-line-input">
+                                                    <?= Html::activeDropDownList($model, 'sub_base_id', $subbase, 
+                                                        [
+                                                        'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['people/listcluster','id'=>'']).'"+$(this).val(), function( data ) {$( "select#clustersarawak" ).html( data );});',
+                                                            'prompt'=>'','id'=>'subbasesarawak',   
+                                                            'class'=>'form-control']); ?>
+                                                        <label for="form_control_1"><?= Html::activeLabel($model,'sub_base_id'); ?> </label>
+                                                        <span class="help-block"><?= Html::error($model,'sub_base_id'); ?></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group form-md-line-input">
+                                                    <?= Html::activeDropDownList($model, 'cluster_id', $cluster, 
+                                                        [
+                                                        'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['people/listkampung','id'=>'']).'"+$(this).val(), function( data ) {$( "select#kampungsarawak" ).html( data );});',
+                                                            'prompt'=>'','id'=>'clustersarawak',   
+                                                            'class'=>'form-control']); ?>
+                                                        <label for="form_control_1"><?= Html::activeLabel($model,'cluster_id'); ?> </label>
+                                                        <span class="help-block"><?= Html::error($model,'cluster_id'); ?></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group form-md-line-input">
+                                                    <?= Html::activeDropDownList($model, 'kampung_id', $kampung, 
+                                                    [
+                                                        'prompt'=>'','id'=>'kampungsarawak',
+                                                        'class'=>'form-control',
+
+                                                    ]); ?>
+                                                    <label for="form_control_1"><?= Html::activeLabel($model,'kampung_id'); ?> <span class="required">*</span></label>
+                                                    <span class="help-block"><?= Html::error($model,'kampung_id'); ?></span>
+                                                </div>
                                             </div>
                                         </div>
-
-
-                                    </div>
-                                </div>
-                            </div>
-
-                          <div class="row">
-                                <div class="portlet-body form">
-                                    <div class="form-body">
-
-                                        <div class="col-md-4">
-                                            <div class="form-group form-md-line-input">
-                                                <?= Html::activeDropDownList($model, 'sub_base_id', $subbase, 
-                                                [
-                                                    'prompt'=>'','id'=>'subbase',
-                                                    'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['people/listcluster','id'=>'']).'"+$(this).val(), function( data ) {$( "select#cluster" ).html( data );});',
-                                                    'class'=>'form-control',
-
-                                                ]); ?>
-                                                <label for="form_control_1"><?= Html::activeLabel($model,'sub_base_id'); ?> <span class="required">*</span></label>
-                                                <span class="help-block"><?= Html::error($model,'sub_base_id'); ?></span>
+                                        <div style="display:none;" class="lainState"> <!-- Other State SECTION -->
+                                            <div class="col-md-4">
+                                                <div class="form-group form-md-line-input">
+                                                    <?= Html::activeDropDownList($model, 'district_id', $district, 
+                                                        [
+                                                            'prompt'=>'','id'=>'district',
+                                                            'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['people/listsubbase','id'=>'']).'"+$(this).val(), function( data ) {$( "select#subbase_other" ).html( data );});',
+                                                            'class'=>'form-control']); ?>
+                                                            <label for="form_control_1"><?= Html::activeLabel($model,'district_id'); ?> <span class="required">*</span></label>
+                                                            <span class="help-block"><?= Html::error($model,'district_id'); ?></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group form-md-line-input">
+                                                    <?= Html::activeDropDownList($model, 'sub_base_id', $subbase, 
+                                                        [
+                                                            'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['people/listcluster','id'=>'']).'"+$(this).val(), function( data ) {$( "select#cluster_other" ).html( data );});',
+                                                            'prompt'=>'','id'=>'subbase_other',
+                                                            'class'=>'form-control',
+                                                        ]); ?>
+                                                    <label for="form_control_1"><?= Html::activeLabel($model,'sub_base_id'); ?> <span class="required">*</span></label>
+                                                    <span class="help-block"><?= Html::error($model,'sub_base_id'); ?></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group form-md-line-input">
+                                                    <?= Html::activeDropDownList($model, 'cluster_id', $cluster, 
+                                                        [
+                                                            'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['people/listkampung','id'=>'']).'"+$(this).val(), function( data ) {$( "select#kampung_other" ).html( data );});',
+                                                            'prompt'=>'','id'=>'cluster_other',
+                                                            'class'=>'form-control',
+                                                        ]); ?>
+                                                    <label for="form_control_1"><?= Html::activeLabel($model,'cluster_id'); ?> <span class="required">*</span></label>
+                                                    <span class="help-block"><?= Html::error($model,'cluster_id'); ?></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group form-md-line-input">
+                                                    <?= Html::activeDropDownList($model, 'kampung_id', $kampung, 
+                                                        [
+                                                            'prompt'=>'','id'=>'kampung_other',
+                                                            'class'=>'form-control',
+                                                        ]); ?>
+                                                    <label for="form_control_1"><?= Html::activeLabel($model,'kampung_id'); ?> <span class="required">*</span></label>
+                                                    <span class="help-block"><?= Html::error($model,'kampung_id'); ?></span>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
-                                            <div class="form-group form-md-line-input">
-                                               <?= Html::activeDropDownList($model, 'cluster_id', $cluster, 
-                                                [
-                                                    'prompt'=>'','id'=>'cluster',
-                                                    'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['people/listkampung','id'=>'']).'"+$(this).val(), function( data ) {$( "select#kampung" ).html( data );});',
-                                                    'class'=>'form-control',
-
-                                                ]); ?>
-                                                <label for="form_control_1"><?= Html::activeLabel($model,'cluster_id'); ?> <span class="required">*</span></label>
-                                                <span class="help-block"><?= Html::error($model,'cluster_id'); ?></span>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-4">
-                                            <div class="form-group form-md-line-input">
-                                                <?= Html::activeDropDownList($model, 'kampung_id', $kampung, 
-                                                [
-                                                    'prompt'=>'','id'=>'kampung',
-                                                    'class'=>'form-control',
-
-                                                ]); ?>
-                                                <label for="form_control_1"><?= Html::activeLabel($model,'kampung_id'); ?> <span class="required">*</span></label>
-                                                <span class="help-block"><?= Html::error($model,'kampung_id'); ?></span>
-                                            </div>
-                                        </div>
-
-                                        
                                     </div>
                                 </div>
                             </div>
@@ -896,7 +940,7 @@ $citizen = array('Warganegara'=>'Warganegara','Bukan Warganegara'=>'Bukan Wargan
 
                 <?php } ?>
 			</div>
-            <div class="tab-pane" id="tab_4">
+			<div class="tab-pane" id="tab_4">
 
                 <?php if(Yii::$app->session->hasFlash('updateAnswer')):?>
                     <div class="alert alert-info">
@@ -998,7 +1042,7 @@ $citizen = array('Warganegara'=>'Warganegara','Bukan Warganegara'=>'Bukan Wargan
 
 
 
-            </div>
+			</div>
             <div class="tab-pane" id="tab_5">
                 <?php if(Yii::$app->session->hasFlash('createTanggunganOku')):?>
                     <div class="alert alert-info">
