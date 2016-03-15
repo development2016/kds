@@ -11,7 +11,6 @@ use yii\filters\VerbFilter;
 use common\models\LookupDistrict;
 use common\models\LookupSubBase;
 use common\models\LookupMukim;
-use backend\models\CountSubBase;
 use common\models\LookupBahagian;
 /**
  * LookupSubBaseController implements the CRUD actions for LookupSubBase model.
@@ -65,18 +64,9 @@ class LookupSubBaseController extends Controller
     public function actionCreate()
     {
         $model = new LookupSubBase();
-        $model_count = new CountSubBase();
 
-        if ($model->load(Yii::$app->request->post()) ) {
-            if ($model->save()) {
-                $last_id = Yii::$app->db->getLastInsertID();
-                
-                $model_count->state_id =  $_POST['LookupSubBase']['state_id'];
-                $model_count->district_id =  $_POST['LookupSubBase']['district_id'];
-              //  $model_count->mukim_id = $_POST['LookupSubBase']['mukim_id'];
-                $model_count->sub_base_id = $last_id;
-                $model_count->save();
-            }
+        if ($model->load(Yii::$app->request->post()) && $model->save() ) {
+
             Yii::$app->getSession()->setFlash('berjaya', 'Maklumat Sub Base <b>('.$model->sub_base.')</b> Berjaya Di Simpan');
             return $this->redirect(['index']);
         } else {
@@ -96,20 +86,23 @@ class LookupSubBaseController extends Controller
     {
         $model = $this->findModel($id);
 
-        $model_count = CountSubBase::find()->where(['sub_base_id'=>$id])->one();
-
         if ($model->load(Yii::$app->request->post()) ) {
-            
-            if ($model->save()) {
-
-                $model_count->state_id =  $_POST['LookupSubBase']['state_id'];
-                $model_count->district_id =  $_POST['LookupSubBase']['district_id'];
-                $model_count->mukim_id = $_POST['LookupSubBase']['mukim_id'];
-                
-                $model_count->save();
+            $negeri = $_POST['LookupSubBase']['state_id'];
+            if($negeri == 21){
+                $model->mukim_id = ""; //selain negeri sarawak .. mukim_id will be null
             }
-            Yii::$app->getSession()->setFlash('berjaya', 'Maklumat Sub Base <b>('.$model->sub_base.')</b> Berjaya Di Kemaskini');
-            return $this->redirect(['index']);
+            else if($negeri == 22){
+                $model->bahagian_id = ""; //selain negeri johor .. bahagian_id will be null
+            }
+            else{
+                $model->bahagian_id = "";
+                $model->mukim_id = "";
+            }
+            if ($model->save()) {
+                
+                Yii::$app->getSession()->setFlash('berjaya', 'Maklumat Sub Base <b>('.$model->sub_base.')</b> Berjaya Di Kemaskini');
+                return $this->redirect(['index']);
+            }
         } else {
             return $this->render('update', [
                 'model' => $model,

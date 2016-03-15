@@ -8,7 +8,6 @@ use common\models\LookupDistrictSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-use backend\models\CountDistrict;
 use common\models\LookupBahagian;
 /**
  * LookupDistrictController implements the CRUD actions for LookupDistrict model.
@@ -61,16 +60,13 @@ class LookupDistrictController extends Controller
      */
     public function actionCreate()
     {
-        $model = new LookupDistrict();
+        $model = new LookupDistrict(); 
 
+        if ($model->load(Yii::$app->request->post()) && $model->save() ) {
 
-        if ($model->load(Yii::$app->request->post()) ) {
-
-            if ($model->save()) {
-
-            }
             Yii::$app->getSession()->setFlash('berjaya', 'Maklumat Daerah <b>('.$model->district.')</b> Berjaya Di Simpan');
             return $this->redirect(['index']);
+            
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -88,12 +84,16 @@ class LookupDistrictController extends Controller
     {
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post() && $model->save()) ) {
-
-
-            Yii::$app->getSession()->setFlash('berjaya', 'Maklumat Daerah <b>('.$model->district.')</b> Berjaya Di Kemaskini');
-            return $this->redirect(['index']);
-
+        if ($model->load(Yii::$app->request->post()) ) {
+            $negeri = $_POST['LookupDistrict']['state_id'];
+            if($negeri != 21){
+                $model->bahagian_id = ""; //selain negeri sarawak .. bahagian_id will be null
+            }
+            if ($model->save()) {
+                Yii::$app->getSession()->setFlash('berjaya', 'Maklumat Daerah <b>('.$model->district.')</b> Berjaya Di Kemaskini');
+                return $this->redirect(['index']);
+            }
+            
         } else {
             return $this->render('update', [
                 'model' => $model,
@@ -110,7 +110,6 @@ class LookupDistrictController extends Controller
     public function actionDelete($id)
     {
         $this->findModel($id)->delete();
-        CountDistrict::deleteAll(['district_id'=>$id]);
 
         return $this->redirect(['index']);
     }

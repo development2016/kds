@@ -13,7 +13,7 @@ use common\models\LookupMukim;
 
 $state = ArrayHelper::map(LookupState::find()->where(['kawasan_perlaksanaan'=>'Ya'])->asArray()->all(), 'state_id', 'state');
 $district = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->state_id])->asArray()->all(), 'district_id', 'district');
-$district = ArrayHelper::map(LookupDistrict::find()->where(['bahagian_id'=>$model->bahagian_id])->asArray()->all(), 'district_id', 'district');
+//$district = ArrayHelper::map(LookupDistrict::find()->where(['bahagian_id'=>$model->bahagian_id])->asArray()->all(), 'district_id', 'district');
 
 $mukim = ArrayHelper::map(LookupMukim::find()->where(['district_id'=>$model->district_id])->asArray()->all(),'mukim_id','mukim');
 $subbase = ArrayHelper::map(LookupSubBase::find()->where(['mukim_id'=>$model->mukim_id])->asArray()->all(),'sub_base_id','sub_base');
@@ -53,7 +53,7 @@ $bahagian = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->
                                 <span class="help-block"><?= Html::error($model,'state_id'); ?></span>
                     </div>
                 </div>
-                <div style="display:none;" class="bahagian_mukim"> <!-- SARAWAK SECTION -->
+                <div style="display:none;" class="bahagian_sarawak"> <!-- SARAWAK SECTION -->
                     <div class="col-md-4">
                         <div class="form-group form-md-line-input">
                             <?= Html::activeDropDownList($model, 'bahagian_id', $bahagian, 
@@ -69,7 +69,7 @@ $bahagian = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->
                         <div class="form-group form-md-line-input">
                             <?= Html::activeDropDownList($model, 'district_id', $district, 
                                 [
-                                'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['lookup-kampung/listsubbase','id'=>'']).'"+$(this).val(), function( data ) {$( "select#subbase_bahagian" ).html( data );});',
+                                'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['lookup-kampung/listsubbase','id'=>'']).'"+$(this).val(), function( data ) {$( "select#subbasesarawak" ).html( data );});',
                                     'prompt'=>'','id'=>'district_bahagian',   
                                     'class'=>'form-control']); ?>
                                 <label for="form_control_1"><?= Html::activeLabel($model,'district_id'); ?> </label>
@@ -80,8 +80,8 @@ $bahagian = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->
                         <div class="form-group form-md-line-input">
                             <?= Html::activeDropDownList($model, 'sub_base_id', $subbase, 
                                 [
-                                'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['lookup-kampung/listcluster','id'=>'']).'"+$(this).val(), function( data ) {$( "select#cluster_bahagian" ).html( data );});',
-                                    'prompt'=>'','id'=>'subbase_bahagian',
+                                'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['lookup-kampung/listcluster','id'=>'']).'"+$(this).val(), function( data ) {$( "select#clustersarawak" ).html( data );});',
+                                    'prompt'=>'','id'=>'subbasesarawak',
                                     'class'=>'form-control',
                                 ]); ?>
                             <label for="form_control_1"><?= Html::activeLabel($model,'sub_base_id'); ?> <span class="required">*</span></label>
@@ -92,7 +92,7 @@ $bahagian = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->
                         <div class="form-group form-md-line-input">
                             <?= Html::activeDropDownList($model, 'cluster_id', $cluster, 
                                 [
-                                    'prompt'=>'','id'=>'cluster_bahagian',
+                                    'prompt'=>'','id'=>'clustersarawak',
                                     'class'=>'form-control',
                                 ]); ?>
                             <label for="form_control_1"><?= Html::activeLabel($model,'cluster_id'); ?> <span class="required">*</span></label>

@@ -7,7 +7,7 @@ use yii\helpers\Url;
 /* @var $searchModel common\models\PeopleSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Senarai State';
+$this->title = 'Senarai Bahagian';
 ?>
     <!-- BEGIN PAGE HEAD -->
     <div class="page-head">
@@ -60,7 +60,12 @@ $this->title = 'Senarai State';
                         <p>
                         <?= Html::a('Create Lookup Bahagian', ['create'], ['class' => 'btn btn-success']) ?>
                         </p>
-                        
+                        <?php if(Yii::$app->session->hasFlash('berjaya')):?>
+                            <div class="alert alert-info">
+                                <button type="button" class="close" data-dismiss="alert"></button>
+                                 <?php echo  Yii::$app->session->getFlash('berjaya'); ?>
+                            </div>
+                        <?php endif; ?>
                         <?= GridView::widget([
                                 'dataProvider' => $dataProvider,
 
@@ -99,15 +104,15 @@ $this->title = 'Senarai State';
                                             ],
                                             'urlCreator' => function ($action, $model, $key, $index) {
                                                 if ($action === 'lihat') {
-                                                    $url = ['lookup-state/view','id'=>$model->state_id];
+                                                    $url = ['lookup-bahagian/view','id'=>$model->bahagian_id];
                                                     return $url;
                                                 }
                                                 if ($action === 'kemaskini') {
-                                                    $url = ['lookup-state/update','id'=>$model->state_id];
+                                                    $url = ['lookup-bahagian/update','id'=>$model->bahagian_id];
                                                     return $url;
                                                 }
                                                 if ($action === 'buang') {
-                                                    $url = ['lookup-state/delete','id'=>$model->state_id];
+                                                    $url = ['lookup-bahagian/delete','id'=>$model->bahagian_id];
                                                     return $url;
                                                 }
                                             }

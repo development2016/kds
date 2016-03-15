@@ -26,7 +26,7 @@ $district = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->
     <div class="row">
         <div class="portlet-body form">
             <div class="form-body">
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="form-group form-md-line-input">
                         <?= Html::activeDropDownList($model, 'state_id', $state, 
                             [
@@ -48,7 +48,7 @@ $district = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->
                     </div>
                 </div>
                 <div style="display:none;" class="bahagian_mukim"> <!-- SARAWAK SECTION -->
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="form-group form-md-line-input">
                                 <?= Html::activeDropDownList($model, 'bahagian_id', $bahagian, 
                                 [
@@ -59,7 +59,7 @@ $district = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->
                                 <span class="help-block"><?= Html::error($model,'bahagian_id'); ?></span>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="form-group form-md-line-input">
                                 <?= Html::activeDropDownList($model, 'district_id', $district, 
                                 [
@@ -72,7 +72,7 @@ $district = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->
                     </div>
                 </div> <!-- END SARAWAK SECTION --> 
                 <div style="display:none;" class="johor"> <!-- Johor SECTION -->
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="form-group form-md-line-input">
                                 <?= Html::activeDropDownList($model, 'district_id', $district, 
                                 [
@@ -83,7 +83,7 @@ $district = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->
                                 <span class="help-block"><?= Html::error($model,'district_id'); ?></span>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="form-group form-md-line-input">
                             <?= Html::activeDropDownList($model, 'mukim_id', $mukim, 
                                 [
@@ -97,7 +97,7 @@ $district = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->
                     </div>
                 </div><!-- END Johor SECTION --> 
                 <div style="display:none;" class="daerah_mukim"><!-- OTHERS STATE -->
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="form-group form-md-line-input">
                                 <?= Html::activeDropDownList($model, 'district_id', $district, 
                                 [
@@ -108,7 +108,7 @@ $district = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->
                         </div>
                     </div>
                 </div><!-- END OTHER STATE-->
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="form-group form-md-line-input">
                         <?= Html::activeTextInput($model,'sub_base',['class'=>'form-control']); ?>
                             <label for="form_control_1"><?= Html::activeLabel($model,'sub_base'); ?></label>

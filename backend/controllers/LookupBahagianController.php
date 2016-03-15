@@ -19,9 +19,9 @@ class LookupBahagianController extends Controller
         return [
             'verbs' => [
                 'class' => VerbFilter::className(),
-                'actions' => [
+                /*'actions' => [
                     'delete' => ['post'],
-                ],
+                ],*/
             ],
         ];
     }
@@ -62,8 +62,9 @@ class LookupBahagianController extends Controller
     {
         $model = new LookupBahagian();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->bahagian_id]);
+        if ($model->load(Yii::$app->request->post()) && $model->save() ) {
+            Yii::$app->getSession()->setFlash('berjaya', 'Maklumat Bahagian <b>('.$model->bahagian.')</b> Berjaya Di Simpan');
+            return $this->redirect(['index']);
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -82,7 +83,8 @@ class LookupBahagianController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->bahagian_id]);
+            Yii::$app->getSession()->setFlash('berjaya', 'Maklumat Bahagian <b>('.$model->bahagian.')</b> Berjaya Di Kemaskini');
+            return $this->redirect(['index']);
         } else {
             return $this->render('update', [
                 'model' => $model,
@@ -99,6 +101,7 @@ class LookupBahagianController extends Controller
     public function actionDelete($id)
     {
         $this->findModel($id)->delete();
+        Yii::$app->getSession()->setFlash('berjaya', 'Maklumat Bahagian Berjaya Di Padam');
 
         return $this->redirect(['index']);
     }

@@ -10,11 +10,11 @@ use common\models\LookupMukim;
 //$negara = ArrayHelper::map(LookupCountry::find()->asArray()->all(), 'country_id', 'country');
 $state = ArrayHelper::map(LookupState::find()->where(['kawasan_perlaksanaan'=>'Ya'])->asArray()->all(), 'state_id', 'state');
 $district = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->state_id])->asArray()->all(), 'district_id', 'district');
-$district = ArrayHelper::map(LookupDistrict::find()->where(['bahagian_id'=>$model->bahagian_id])->asArray()->all(), 'district_id', 'district');
+//$district = ArrayHelper::map(LookupDistrict::find()->where(['bahagian_id'=>$model->bahagian_id])->asArray()->all(), 'district_id', 'district');
 
 $mukim = ArrayHelper::map(LookupMukim::find()->where(['district_id'=>$model->district_id])->asArray()->all(),'mukim_id','mukim');
 $subbase = ArrayHelper::map(LookupSubBase::find()->where(['district_id'=>$model->district_id])->asArray()->all(),'sub_base_id','sub_base');
-$subbase = ArrayHelper::map(LookupSubBase::find()->where(['mukim_id'=>$model->mukim_id])->asArray()->all(),'sub_base_id','sub_base');
+//$subbase = ArrayHelper::map(LookupSubBase::find()->where(['mukim_id'=>$model->mukim_id])->asArray()->all(),'sub_base_id','sub_base');
 
 $bahagian = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->state_id])->asArray()->all(), 'bahagian_id', 'bahagian');
 
@@ -52,7 +52,7 @@ $bahagian = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->
                                 <span class="help-block"><?= Html::error($model,'state_id'); ?></span>
                     </div>
                 </div>
-                <div style="display:none;" class="bahagian_mukim"> <!-- SARAWAK SECTION -->
+                <div style="display:none;" class="bahagian_sarawak_cluster"> <!-- SARAWAK SECTION -->
                     <div class="col-md-4">
                         <div class="form-group form-md-line-input">
                             <?= Html::activeDropDownList($model, 'bahagian_id', $bahagian, 
@@ -88,7 +88,7 @@ $bahagian = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->
                         </div>
                     </div>
                 </div> <!-- END SARAWAK SECTION -->
-                <div style="display:none;" class="johor"> <!-- Johor SECTION -->
+                <div style="display:none;" class="johorcluster"> <!-- Johor SECTION -->
                     <div class="col-md-4">
                         <div class="form-group form-md-line-input">
                                 <?= Html::activeDropDownList($model, 'district_id', $district, 
@@ -123,7 +123,7 @@ $bahagian = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->
                         </div>
                     </div>
                 </div> <!-- END JOHOR SECTION -->
-                <div style="display:none;" class="lainState"> <!-- Others State SECTION -->
+                <div style="display:none;" class="lainState_cluster"> <!-- Others State SECTION -->
                     <div class="col-md-4">
                         <div class="form-group form-md-line-input">
                             <?= Html::activeDropDownList($model, 'district_id', $district, 

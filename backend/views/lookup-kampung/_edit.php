@@ -10,17 +10,18 @@ use common\models\LookupSubBase;
 use common\models\LookupCluster;
 use common\models\LookupKampung;
 use common\models\LookupMukim;
+use common\models\LookupBahagian;
 
 $state = ArrayHelper::map(LookupState::find()->where(['kawasan_perlaksanaan'=>'Ya'])->asArray()->all(), 'state_id', 'state');
 $district = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->state_id])->asArray()->all(), 'district_id', 'district');
-$district = ArrayHelper::map(LookupDistrict::find()->where(['bahagian_id'=>$model->bahagian_id])->asArray()->all(), 'district_id', 'district');
+//$district = ArrayHelper::map(LookupDistrict::find()->where(['bahagian_id'=>$model->bahagian_id])->asArray()->all(), 'district_id', 'district');
 
 $mukim = ArrayHelper::map(LookupMukim::find()->where(['district_id'=>$model->district_id])->asArray()->all(),'mukim_id','mukim');
 $subbase = ArrayHelper::map(LookupSubBase::find()->where(['mukim_id'=>$model->mukim_id])->asArray()->all(),'sub_base_id','sub_base');
-$subbase = ArrayHelper::map(LookupSubBase::find()->where(['district_id'=>$model->district_id])->asArray()->all(),'sub_base_id','sub_base');
+$subbase1 = ArrayHelper::map(LookupSubBase::find()->where(['district_id'=>$model->district_id])->asArray()->all(),'sub_base_id','sub_base');
 
 $cluster = ArrayHelper::map(LookupCluster::find()->where(['sub_base_id'=>$model->sub_base_id])->asArray()->all(),'cluster_id','cluster');
-$bahagian = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->state_id])->asArray()->all(), 'bahagian_id', 'bahagian');
+$bahagian = ArrayHelper::map(LookupBahagian::find()->where(['state_id'=>$model->state_id])->asArray()->all(), 'bahagian_id', 'bahagian');
 
 /* @var $this yii\web\View */
 /* @var $model common\models\LookupAgama */
@@ -53,7 +54,7 @@ $bahagian = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->
                                 <span class="help-block"><?= Html::error($model,'state_id'); ?></span>
                     </div>
                 </div>
-                <div style="display:none;" class="bahagian_mukim"> <!-- SARAWAK SECTION -->
+                <div style="display:none;" class="bahagian_sarawak"> <!-- SARAWAK SECTION -->
                     <div class="col-md-4">
                         <div class="form-group form-md-line-input">
                             <?= Html::activeDropDownList($model, 'bahagian_id', $bahagian, 
@@ -69,7 +70,7 @@ $bahagian = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->
                         <div class="form-group form-md-line-input">
                             <?= Html::activeDropDownList($model, 'district_id', $district, 
                                 [
-                                'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['lookup-kampung/listmukim','id'=>'']).'"+$(this).val(), function( data ) {$( "select#mukim_bahagian" ).html( data );});',
+                                'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['lookup-kampung/listsubbase','id'=>'']).'"+$(this).val(), function( data ) {$( "select#subbasesarawak" ).html( data );});',
                                     'prompt'=>'','id'=>'district_bahagian',   
                                     'class'=>'form-control']); ?>
                                 <label for="form_control_1"><?= Html::activeLabel($model,'district_id'); ?> </label>
@@ -78,21 +79,10 @@ $bahagian = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->
                     </div>
                     <div class="col-md-4">
                         <div class="form-group form-md-line-input">
-                            <?= Html::activeDropDownList($model, 'mukim_id', $mukim, 
+                            <?= Html::activeDropDownList($model, 'sub_base_id', $subbase1, 
                                 [
-                                'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['lookup-kampung/listsubbase','id'=>'']).'"+$(this).val(), function( data ) {$( "select#subbase_bahagian" ).html( data );});',
-                                    'prompt'=>'','id'=>'mukim_bahagian',   
-                                    'class'=>'form-control']); ?>
-                                <label for="form_control_1"><?= Html::activeLabel($model,'mukim_id'); ?> </label>
-                                <span class="help-block"><?= Html::error($model,'mukim_id'); ?></span>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group form-md-line-input">
-                            <?= Html::activeDropDownList($model, 'sub_base_id', $subbase, 
-                                [
-                                'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['lookup-kampung/listcluster','id'=>'']).'"+$(this).val(), function( data ) {$( "select#cluster_bahagian" ).html( data );});',
-                                    'prompt'=>'','id'=>'subbase_bahagian',
+                                'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['lookup-kampung/listcluster','id'=>'']).'"+$(this).val(), function( data ) {$( "select#clustersarawak" ).html( data );});',
+                                    'prompt'=>'','id'=>'subbasesarawak',
                                     'class'=>'form-control',
                                 ]); ?>
                             <label for="form_control_1"><?= Html::activeLabel($model,'sub_base_id'); ?> <span class="required">*</span></label>
@@ -103,7 +93,7 @@ $bahagian = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->
                         <div class="form-group form-md-line-input">
                             <?= Html::activeDropDownList($model, 'cluster_id', $cluster, 
                                 [
-                                    'prompt'=>'','id'=>'cluster_bahagian',
+                                    'prompt'=>'','id'=>'clustersarawak',
                                     'class'=>'form-control',
                                 ]); ?>
                             <label for="form_control_1"><?= Html::activeLabel($model,'cluster_id'); ?> <span class="required">*</span></label>
@@ -127,7 +117,7 @@ $bahagian = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->
                         <div class="form-group form-md-line-input">
                             <?= Html::activeDropDownList($model, 'mukim_id', $mukim, 
                                 [
-                                'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['lookup-kampung/listsubbase','id'=>'']).'"+$(this).val(), function( data ) {$( "select#subbase_johor" ).html( data );});',
+                                'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['lookup-kampung/listsubbasesearch','id'=>'']).'"+$(this).val(), function( data ) {$( "select#subbasejohor" ).html( data );});',
                                     'prompt'=>'','id'=>'mukim_johor',   
                                     'class'=>'form-control']); ?>
                                 <label for="form_control_1"><?= Html::activeLabel($model,'mukim_id'); ?> </label>
@@ -138,8 +128,8 @@ $bahagian = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->
                         <div class="form-group form-md-line-input">
                             <?= Html::activeDropDownList($model, 'sub_base_id', $subbase, 
                                 [
-                                'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['lookup-kampung/listcluster','id'=>'']).'"+$(this).val(), function( data ) {$( "select#cluster_johor" ).html( data );});',
-                                    'prompt'=>'','id'=>'subbase_johor',
+                                'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['lookup-kampung/listcluster','id'=>'']).'"+$(this).val(), function( data ) {$( "select#clusterjohor" ).html( data );});',
+                                    'prompt'=>'','id'=>'subbasejohor',
                                     'class'=>'form-control',
                                 ]); ?>
                             <label for="form_control_1"><?= Html::activeLabel($model,'sub_base_id'); ?> <span class="required">*</span></label>
@@ -150,7 +140,7 @@ $bahagian = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->
                         <div class="form-group form-md-line-input">
                             <?= Html::activeDropDownList($model, 'cluster_id', $cluster, 
                                 [
-                                    'prompt'=>'','id'=>'cluster_johor',
+                                    'prompt'=>'','id'=>'clusterjohor',
                                     'class'=>'form-control',
                                 ]); ?>
                             <label for="form_control_1"><?= Html::activeLabel($model,'cluster_id'); ?> <span class="required">*</span></label>
@@ -172,7 +162,7 @@ $bahagian = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->
                     </div>
                     <div class="col-md-4">
                         <div class="form-group form-md-line-input">
-                            <?= Html::activeDropDownList($model, 'sub_base_id', $subbase, 
+                            <?= Html::activeDropDownList($model, 'sub_base_id', $subbase1, 
                                 [
                                     'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['lookup-kampung/listcluster','id'=>'']).'"+$(this).val(), function( data ) {$( "select#cluster_other" ).html( data );});',
                                     'prompt'=>'','id'=>'subbase_other',

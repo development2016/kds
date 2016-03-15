@@ -282,9 +282,13 @@ else if($('#state').val() > 22 || $('#state').val() < 21 ){
             $("select#bahagian").prop('disabled', true);
         };
     });
-
+/* lookup district update */
+if ($('#state_district').val() == 21) {
+    $(".bahagian_district").show(500);
+}
+/* end lookup district update */
     //mukim
-    $('#state_mukim').change(function(){
+    /*$('#state_mukim').change(function(){
         if ($(this).val() == 22) {
             $(".mukim").show(500);
             $(".others").hide(500);
@@ -298,7 +302,7 @@ else if($('#state').val() > 22 || $('#state').val() < 21 ){
             $(".sendMukim").hide(500);
 
         };
-    });
+    });*/
 
     //subbase
     $('#lookup_subbase').change(function(){
@@ -339,6 +343,44 @@ else if($('#state').val() > 22 || $('#state').val() < 21 ){
             $("select#mukim_johor").prop('disabled', true);
         };
     });
+/*  lookup_subbase update  */
+if ($('#lookup_subbase').val() == 22) {
+    $(".johor").show(500);
+    $(".bahagian_mukim").hide(500);
+    $(".daerah_mukim").hide(500);
+    $("select#district").prop('disabled', true);
+    $("select#district_bahagian").prop('disabled', true);
+    $("select#bahagian").prop('disabled', true);
+    $("select#mukim_bahagian").prop('disabled', true);
+    $("select#johordistrict").prop('disabled', false);
+    $("select#mukim_johor").prop('disabled', false);
+}
+else if($('#lookup_subbase').val() == 21){
+    $(".bahagian_mukim").show(500);
+    $(".daerah_mukim").hide(500);
+    $(".johor").hide(500);
+    //$(".mukim_subbase").hide(500);
+    $("select#district").prop('disabled', true);
+    $("select#johordistrict").prop('disabled', true);
+    $("select#mukim_johor").prop('disabled', true);
+    $("select#district_bahagian").prop('disabled', false);
+    $("select#mukim_bahagian").prop('disabled', false);
+    $("select#bahagian").prop('disabled', false);
+}
+else if($('#lookup_subbase').val() > 22 || $('#lookup_subbase').val() < 21 ){
+    $(".daerah_mukim").show(500);
+            //$(".mukim_subbase").show(500);
+    $(".bahagian_mukim").hide(500);
+    $(".johor").hide(500);
+    $("select#district").prop('disabled', false);
+    $("select#bahagian").prop('disabled', true);
+    $("select#district_bahagian").prop('disabled', true);
+    $("select#mukim_bahagian").prop('disabled', true);
+    $("select#johordistrict").prop('disabled', true);
+    $("select#mukim_johor").prop('disabled', true);
+
+}
+/* end lookup-update*/
 //CLUSTER
     $('#state_cluster').change(function(){
         if ($(this).val() == 21) {
@@ -386,6 +428,53 @@ else if($('#state').val() > 22 || $('#state').val() < 21 ){
             $("select#bahagian").prop('disabled', true);
         };
     });
+/* lookup cluster update  */
+if ($('#state_cluster').val() == 22) {
+    $(".johorcluster").show(500);
+    $(".bahagian_sarawak_cluster").hide(500);
+    $(".lainState_cluster").hide(500);
+    $("select#district").prop('disabled', true);
+    $("select#bahagian").prop('disabled', true);
+    $("select#subbase_other").prop('disabled', true);
+    $("select#district_bahagian").prop('disabled', true);
+    $("select#mukim_bahagian").prop('disabled', true);
+    $("select#subbase_bahagian").prop('disabled', true);
+    $("select#johordistrict").prop('disabled', false); //enable
+    $("select#mukim_johor").prop('disabled', false); //enable
+    $("select#subbase_johor").prop('disabled', false);   //enable
+}
+else if($('#state_cluster').val() == 21){
+    $(".bahagian_sarawak_cluster").show(500);
+    $(".lainState_cluster").hide(500);
+    $(".johorcluster").hide(500);
+    //$(".mukim_subbase").hide(500);
+    $("select#district").prop('disabled', true);
+    $("select#subbase_other").prop('disabled', true);
+    $("select#johordistrict").prop('disabled', true);
+    $("select#mukim_johor").prop('disabled', true);
+    $("select#subbase_johor").prop('disabled', true);
+    $("select#district_bahagian").prop('disabled', false);
+    $("select#mukim_bahagian").prop('disabled', false);
+    $("select#subbase_bahagian").prop('disabled', false);
+    $("select#bahagian").prop('disabled', false);
+}
+else if($('#state_cluster').val() > 22 || $('#state_cluster').val() < 21 ){
+    $(".lainState_cluster").show(500);
+    //$(".mukim_subbase").show(500);
+    $(".bahagian_sarawak_cluster").hide(500);
+    $(".johorcluster").hide(500);
+    $("select#district").prop('disabled', false);
+    $("select#subbase_other").prop('disabled', false);
+    $("select#district_bahagian").prop('disabled', true);
+    $("select#mukim_bahagian").prop('disabled', true);
+    $("select#subbase_bahagian").prop('disabled', true);
+    $("select#johordistrict").prop('disabled', true);
+    $("select#mukim_johor").prop('disabled', true);
+    $("select#subbase_johor").prop('disabled', true);
+    $("select#bahagian").prop('disabled', true);
+
+}
+/* end lookup-update*/
 //kampung
     $('#state_kg').change(function(){
         if ($(this).val() == 21) {

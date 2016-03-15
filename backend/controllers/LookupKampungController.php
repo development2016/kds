@@ -13,7 +13,6 @@ use common\models\LookupSubBase;
 use common\models\LookupCluster;
 use common\models\LookupKampung;
 use common\models\LookupMukim;
-use backend\models\CountKampung;
 use common\models\LookupBahagian;
 /**
  * LookupKampungController implements the CRUD actions for LookupKampung model.
@@ -68,23 +67,10 @@ class LookupKampungController extends Controller
     {
         $model = new LookupKampung();
 
-        $model_count = new CountKampung();
-
-        if ($model->load(Yii::$app->request->post()) ) {
-
-            if ($model->save()) {
-                $last_id = Yii::$app->db->getLastInsertID();
-                
-                $model_count->state_id =  $_POST['LookupKampung']['state_id'];
-                $model_count->district_id =  $_POST['LookupKampung']['district_id'];
-                //$model_count->mukim_id = $_POST['LookupKampung']['mukim_id'];
-                $model_count->sub_base_id = $_POST['LookupKampung']['sub_base_id'];
-                $model_count->cluster_id = $_POST['LookupKampung']['cluster_id'];
-                $model_count->kampung_id = $last_id;
-                $model_count->save();
-            }
+        if ($model->load(Yii::$app->request->post()) && $model->save() ) {
             Yii::$app->getSession()->setFlash('berjaya', 'Maklumat Kampung <b>('.$model->kampung.')</b> Berjaya Di Simpan');
             return $this->redirect(['index']);
+            
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -102,21 +88,25 @@ class LookupKampungController extends Controller
     {
         $model = $this->findModel($id);
 
-        $model_count = CountKampung::find()->where(['kampung_id'=>$id])->one();
-
         if ($model->load(Yii::$app->request->post()) ) {
-
-            if ($model->save()) {
-
-                $model_count->state_id =  $_POST['LookupKampung']['state_id'];
-                $model_count->district_id =  $_POST['LookupKampung']['district_id'];
-                //$model_count->mukim_id = $_POST['LookupKampung']['mukim_id'];
-                $model_count->sub_base_id = $_POST['LookupKampung']['sub_base_id'];
-                $model_count->cluster_id = $_POST['LookupKampung']['cluster_id'];
-                $model_count->save();
+            $negeri = $_POST['LookupKampung']['state_id'];
+            //var_dump($negeri);
+            //exit();
+            if($negeri == 21){
+                $model->mukim_id = ""; //selain negeri sarawak .. mukim_id will be null
             }
-            Yii::$app->getSession()->setFlash('berjaya', 'Maklumat Kampung <b>('.$model->kampung.')</b> Berjaya Di Kemaskini');
-            return $this->redirect(['index']);
+            else if($negeri == 22){
+                $model->bahagian_id = ""; //selain negeri johor .. bahagian_id will be null
+            }
+            else{
+                $model->bahagian_id = "";
+                $model->mukim_id = "";
+            }
+            if ($model->save()) {
+                Yii::$app->getSession()->setFlash('berjaya', 'Maklumat Kampung <b>('.$model->kampung.')</b> Berjaya Di Kemaskini');
+                return $this->redirect(['index']);
+            }
+            
         } else {
             return $this->render('update', [
                 'model' => $model,
@@ -133,7 +123,6 @@ class LookupKampungController extends Controller
     public function actionDelete($id)
     {
         $this->findModel($id)->delete();
-        CountKampung::deleteAll(['kampung_id'=>$id]);
 
         return $this->redirect(['index']);
     }

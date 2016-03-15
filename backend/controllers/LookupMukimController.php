@@ -9,7 +9,6 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use common\models\LookupDistrict;
-use backend\models\CountMukim;
 use common\models\LookupBahagian;
 /**
  * LookupMukimController implements the CRUD actions for LookupMukim model.
@@ -63,23 +62,11 @@ class LookupMukimController extends Controller
     public function actionCreate()
     {
         $model = new LookupMukim();
-        $model_count = new CountMukim();
 
-        if ($model->load(Yii::$app->request->post()) ) {
-
-
-
-            if ($model->save()) {
-                $last_id = Yii::$app->db->getLastInsertID();
-                
-                $model_count->state_id =  $_POST['LookupMukim']['state_id'];
-                $model_count->district_id =  $_POST['LookupMukim']['district_id'];
-                //$model_count->bahagian_id =  $_POST['LookupMukim']['bahagian_id'];
-                $model_count->mukim_id = $last_id;
-                $model_count->save();
-            }
+        if ($model->load(Yii::$app->request->post()) && $model->save() ) {
             Yii::$app->getSession()->setFlash('berjaya', 'Maklumat Mukim <b>('.$model->mukim.')</b> Berjaya Di Simpan');
             return $this->redirect(['index']);
+            
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -97,18 +84,11 @@ class LookupMukimController extends Controller
     {
         $model = $this->findModel($id);
 
-        $model_count = CountMukim::find()->where(['mukim_id'=>$id])->one();
+        if ($model->load(Yii::$app->request->post()) && $model->save() ) {
 
-        if ($model->load(Yii::$app->request->post()) ) {
-
-            if ($model->save()) {
-
-                $model_count->state_id =  $_POST['LookupMukim']['state_id'];
-                $model_count->district_id =  $_POST['LookupMukim']['district_id'];
-                $model_count->save();
-            }
             Yii::$app->getSession()->setFlash('berjaya', 'Maklumat Mukim <b>('.$model->mukim.')</b> Berjaya Di Kemaskini');
             return $this->redirect(['index']);
+            
         } else {
             return $this->render('update', [
                 'model' => $model,
@@ -125,7 +105,6 @@ class LookupMukimController extends Controller
     public function actionDelete($id)
     {
         $this->findModel($id)->delete();
-        CountMukim::deleteAll(['mukim_id'=>$id]);
 
         return $this->redirect(['index']);
     }
