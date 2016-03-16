@@ -845,6 +845,95 @@ $('#state_demografic').change(function(){
         $("select#clustersarawak").prop('disabled', false);
         $("select#kampungsarawak").prop('disabled', false);
         $("select#bahagian").prop('disabled', false);
-    }  vñ  xñ  zñ                                        6ñ       €€ 
-€                     8ñ  :ñ  <ñ  >ñ  @ñ  Bñ                                            (ñ       €ˆ  ˜                    	EÇ ‰Ç 2ñ  4ñ  5È ıÆ Jñ  Lñ  Pñ                                                                                            ¼ñ                                 ¾ñ  Àñ  Âñ                        Vñ                                 Xñ                            ˜ñ       €€                       šñ  œñ   ñ  ¤ñ                    Tñ      €ˆ€                      ‰É Zñ  jñ  ÑÇ |ñ  €ñ  yÊ AÉ                               Šñ       €€€ ‚                     Œñ  ’ñ  –ñ  ÍÉ ¦ñ  °ñ  ¸ñ                                        Äñ                                Æñ  Èñ                        èò         €                        êò                                Ìñ                                 Îñ  Ğñ  Òñ                    Zò        ‚  "                     \ò  ^ò  `ò  bò  dò  fò  hò                                        (ó      €ˆ€ (                      	*ó  ,ó  .ó  0ó  :ó  >ó  Bó  Ñ jó                                                                                            ğñ      €€  ‚€@                   òñ  ôñ  öñ  úñ  üñ  şñ  
-ò  ò  ò   ò  "ò                                                                                        &ò        €€Š€                   	(ò  :ò  Jò  Lò  Nò  Pò  Rò  Vò  Xò                                                                                            ‚ò      €€€                       „ò  †ò  ˆò  Šò  Œò                                                ”ò        @                      –ò  ˜ò  šò  œò  ò  =Ï                                       Üò          €Š                     Şò  àò  âò  äò  æò                                                 ò      ô‘@=                      ¢ò  ¤ò  ¦ò  ªò  ®ò  °ò  ²ò  ´ò  ¶ò  ¸ò  Äò  Æò  Èò  Ìò  Îò  Ğò  Òò  Ôò                                                                                                                                                                                        Àó                                 Âó  Äó                            äó       €€€ €                     æó  îó  üó  ô  ô                                            Hó       €€€  €                    Jó  `ó  bó  dó  hó                                                |ó        ˆ                      ~ó  ‚ó  ˆó  Šó  ó  ó  ”ó                                    pó     @‘€€ ‚ƒ                    ró  tó  vó  xó  zó  uÑ ¼ó  aĞ Ò Ìó  Îó  ÅÒ Øó  Úó  Üó                                                                        Æó                                  Èó  Êó                        Ôó         €                        Öó                                Şó                                  àó                            ô       €                        ô  ô  ô                        ô                               ô   ô  "ô  $ô                Dô       €    €                     uÕ Jô                            ,ô                                 .ô  0ô  2ô                    õ      H0                          õ  õ  õ  õ  õ                                                *ô      "ˆ ˆ                    %Ô 4ô  6ô  8ô  :ô  <ô  >ô  @ô  Bô  İÓ Lô  Nô                                                                                Fô          €                       Hô                                Vô                                Xô  Zô                        ˆô                               5× ô  ô                        bô         €                        dô                            \ô      ‚¨ˆ€(Š€                    ^ô  `ô  IÖ fô  hô  jô  lô  nô  pô  rô  vô  xô  ‚ô  „ô  †ô                                                                        Šô                                 Œô                            Jõ           "€                     Lõ  Nõ  Põ                        ”ô                                 –ô  ˜ô  šô
+    }
+    else{
+        $(".other_state_demografic").show(500);
+        $(".sarawak_demografic").hide(500);
+        $(".johor_demografic").hide(500);
+
+        $("select#district_bahagian").prop('disabled', true);
+        $("select#subbasesarawak").prop('disabled', true);
+        $("select#clustersarawak").prop('disabled', true);
+        $("select#kampungsarawak").prop('disabled', true);
+        $("select#bahagian").prop('disabled', true);
+        $("select#johordistrict").prop('disabled', true);
+        $("select#mukim_johor").prop('disabled', true);
+        $("select#subbasejohor").prop('disabled', true);
+        $("select#clusterjohor").prop('disabled', true);
+        $("select#kampungjohor").prop('disabled', true);
+
+        $("select#district").prop('disabled', false);
+        $("select#subbase_other").prop('disabled', false);
+        $("select#cluster_other").prop('disabled', false);
+        $("select#kampung_other").prop('disabled', false);
+    }
+});
+/* end demographic by shahril */
+/* manager train create by shahril */
+$('#state_managertrain').change(function(){
+    if ($(this).val() == 22) {
+        $(".johor_managertrain").show(500);
+        $(".sarawak_managertrain").hide(500);
+        $(".other_state_managertrain").hide(500);
+
+        $("select#district_bahagian").prop('disabled', true);
+        $("select#subbasesarawak").prop('disabled', true);
+        $("select#clustersarawak").prop('disabled', true);
+        $("select#bahagian").prop('disabled', true);
+        $("select#kampungsarawak").prop('disabled', true);
+        $("select#district").prop('disabled', true);
+        $("select#subbase_other").prop('disabled', true);
+        $("select#cluster_other").prop('disabled', true);
+        $("select#kampung_other").prop('disabled', true);
+            
+        $("select#johordistrict").prop('disabled', false);
+        $("select#mukim_johor").prop('disabled', false);
+        $("select#subbasejohor").prop('disabled', false);
+        $("select#clusterjohor").prop('disabled', false);
+        $("select#kampungjohor").prop('disabled', false);
+    }
+    else if($(this).val() == 21) {
+        $(".sarawak_managertrain").show(500);
+        $(".johor_managertrain").hide(500);
+        $(".other_state_managertrain").hide(500);
+
+        $("select#johordistrict").prop('disabled', true);
+        $("select#mukim_johor").prop('disabled', true);
+        $("select#subbasejohor").prop('disabled', true);
+        $("select#clusterjohor").prop('disabled', true);
+        $("select#kampungjohor").prop('disabled', true);
+        $("select#district").prop('disabled', true);
+        $("select#subbase_other").prop('disabled', true);
+        $("select#cluster_other").prop('disabled', true);
+        $("select#kampung_other").prop('disabled', true);
+
+        $("select#district_bahagian").prop('disabled', false);
+        $("select#subbasesarawak").prop('disabled', false);
+        $("select#clustersarawak").prop('disabled', false);
+        $("select#kampungsarawak").prop('disabled', false);
+        $("select#bahagian").prop('disabled', false);
+    }
+    else{
+        $(".other_state_managertrain").show(500);
+        $(".sarawak_managertrain").hide(500);
+        $(".johor_managertrain").hide(500);
+
+        $("select#district_bahagian").prop('disabled', true);
+        $("select#subbasesarawak").prop('disabled', true);
+        $("select#clustersarawak").prop('disabled', true);
+        $("select#kampungsarawak").prop('disabled', true);
+        $("select#bahagian").prop('disabled', true);
+        $("select#johordistrict").prop('disabled', true);
+        $("select#mukim_johor").prop('disabled', true);
+        $("select#subbasejohor").prop('disabled', true);
+        $("select#clusterjohor").prop('disabled', true);
+        $("select#kampungjohor").prop('disabled', true);
+
+        $("select#district").prop('disabled', false);
+        $("select#subbase_other").prop('disabled', false);
+        $("select#cluster_other").prop('disabled', false);
+        $("select#kampung_other").prop('disabled', false);
+    }
+});
+/* end manager train by shahril */
+});
