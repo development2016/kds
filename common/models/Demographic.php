@@ -46,7 +46,7 @@ class Demographic extends \yii\db\ActiveRecord
             ['sub_base_id', 'required', 'message' => 'Sila Pilih Sub Base'],
             ['cluster_id', 'required', 'message' => 'Sila Pilih Cluster'],
             ['kampung_id', 'required', 'message' => 'Sila Pilih Kampung'],
-            [['bilangan_rumah', 'jenis_kampung_id', 'corak_penempatan_id', 'jenis_perumahan_id'], 'integer'],
+            [['bilangan_rumah', 'jenis_kampung_id', 'corak_penempatan_id', 'jenis_perumahan_id','bahagian_id','mukim_id'], 'integer'],
             [['nama_ketua_kampung', 'aktiviti_penduduk_kampung', 'koordinate'], 'string', 'max' => 225],
             [['no_tel'], 'string', 'max' => 45]
         ];
@@ -73,6 +73,7 @@ class Demographic extends \yii\db\ActiveRecord
             'corak_penempatan_id' => 'Corak Penempatan',
             'jenis_perumahan_id' => 'Jenis Perumahan',
             'koordinate' => 'Koordinate',
+            'bahagian_id' =>'Bahagian',
         ];
     }
 

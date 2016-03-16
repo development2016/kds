@@ -73,7 +73,7 @@ class Volunteer extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['state_id', 'district_id', 'mukim_id', 'sub_base_id', 'cluster_id', 'kampung_id', 'enter_by'], 'integer'],
+            [['state_id', 'district_id', 'mukim_id', 'sub_base_id', 'cluster_id', 'kampung_id', 'enter_by','bahagian_id'], 'integer'],
             [['date', 'day', 'time', 'jantina', 'tel_hp', 'tel_rumah', 'kerja_sukarelawan', 'persatuan', 'jawatan', 'tempoh', 'prog_kanak_kanak', 'prog_kemasyarakatan', 'prog_warga_emas', 'prog_oku', 'aktiviti_rekreasi', 'prog_kesihatan', 'prog_akademik', 'bahasa_melayu', 'bahasa_inggeris', 'bahasa_tamil', 'bahasa_cina', 'memiliki_kenderaan', 'bila_bila_masa', 'setiap_hari', 'cuti_am', 'fasilitator', 'fotografi', 'tenaga', 'date_enter'], 'string', 'max' => 45],
             [['nama', 'email'], 'string', 'max' => 225],
             [['no_kp', 'poskod'], 'string', 'max' => 15],
@@ -145,6 +145,7 @@ class Volunteer extends \yii\db\ActiveRecord
             'nota_tambahan' => 'Nota Tambahan',
             'date_enter' => 'Date Enter',
             'enter_by' => 'Enter By',
+            'bahagian_id' =>'Bahagian',
         ];
     }
 

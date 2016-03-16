@@ -150,7 +150,7 @@ class Pfn extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['cat_id', 'kampung_id', 'cluster_id', 'sub_base_id', 'district_id', 'state_id', 'enter_by','mukim_id','rating_kemudahan_asas','rating_kemudahan_ict','rating_mesra_oku','rating_bilik_latihan','rating_equip','rating_capaian','rating_keseluruhan_pfn'], 'integer'],
+            [['cat_id', 'kampung_id', 'cluster_id', 'sub_base_id', 'district_id', 'state_id', 'enter_by','mukim_id','rating_kemudahan_asas','rating_kemudahan_ict','rating_mesra_oku','rating_bilik_latihan','rating_equip','rating_capaian','rating_keseluruhan_pfn','bahagian_id'], 'integer'],
             [['pfn_code'], 'string', 'max' => 100],
             [['date', 'no_kp', 'no_kp_old', 'tarikh_daftar', 'tarikh_audit', 'no_kp2', 'no_kp_old2', 'date_enter','status_audit','status_rangkaian'], 'string', 'max' => 20],
             [['pfn_name', 'nama_pengurus', 'email', 'didaftarkan_oleh', 'diaudit_oleh', 'nama_pengurus2', 'email2', 'koordinate'], 'string', 'max' => 225],
@@ -296,6 +296,7 @@ class Pfn extends \yii\db\ActiveRecord
             'enter_by' => 'Enter By',
             'status_audit' => 'Status Audit',
             'status_rangkaian' => 'Status Rangkaian',
+            'bahagian_id' => 'Bahagian',
             
            
         ];

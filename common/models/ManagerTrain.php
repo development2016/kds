@@ -42,7 +42,7 @@ class ManagerTrain extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['cat_id', 'state_id', 'district_id', 'mukim_id', 'sub_base_id', 'cluster_id', 'kampung_id', 'enter_by'], 'integer'],
+            [['cat_id', 'state_id', 'district_id', 'mukim_id', 'sub_base_id', 'cluster_id', 'kampung_id', 'enter_by','bahagian_id'], 'integer'],
             [['rangkaian_fasiliti_awam', 'alamat', 'nama_pengurus'], 'string', 'max' => 225],
             [['location', 'poskod', 'ic', 'jantina', 'no_fon', 'date_enter'], 'string', 'max' => 50]
         ];
@@ -72,6 +72,7 @@ class ManagerTrain extends \yii\db\ActiveRecord
             'no_fon' => 'No Telefon',
             'date_enter' => 'Date Enter',
             'enter_by' => 'Enter By',
+            'bahagian_id' =>'Bahagian',
         ];
     }
 

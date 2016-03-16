@@ -27,6 +27,7 @@ use common\models\LookupBahagian;
 $state = ArrayHelper::map(LookupState::find()->where(['kawasan_perlaksanaan'=>'Ya'])->asArray()->all(), 'state_id', 'state');
 $district = ArrayHelper::map(LookupDistrict::find()->where(['state_id'=>$model->state_id])->asArray()->all(), 'district_id', 'district');
 $subbase = ArrayHelper::map(LookupSubBase::find()->where(['district_id'=>$model->district_id])->asArray()->all(),'sub_base_id','sub_base');
+$subbase1 = ArrayHelper::map(LookupSubBase::find()->where(['mukim_id'=>$model->mukim_id])->asArray()->all(),'sub_base_id','sub_base');
 $cluster = ArrayHelper::map(LookupCluster::find()->where(['sub_base_id'=>$model->sub_base_id])->asArray()->all(),'cluster_id','cluster');
 $kampung = ArrayHelper::map(LookupKampung::find()->where(['cluster_id'=>$model->cluster_id])->asArray()->all(),'kampung_id','kampung');
 $mukim = ArrayHelper::map(LookupMukim::find()->where(['district_id'=>$model->district_id])->asArray()->all(),'mukim_id','mukim');
@@ -265,7 +266,7 @@ $citizen = array('Warganegara'=>'Warganegara','Bukan Warganegara'=>'Bukan Wargan
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="form-group form-md-line-input">
-                                                    <?= Html::activeDropDownList($model, 'sub_base_id', $subbase, 
+                                                    <?= Html::activeDropDownList($model, 'sub_base_id', $subbase1, 
                                                         [
                                                         'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['people/listcluster','id'=>'']).'"+$(this).val(), function( data ) {$( "select#clusterjohor" ).html( data );});',
                                                             'prompt'=>'','id'=>'subbasejohor',   

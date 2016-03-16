@@ -15,6 +15,7 @@ use common\models\LookupSubBase;
 use common\models\LookupCluster;
 use common\models\LookupKampung;
 use common\models\LookupMukim;
+use common\models\LookupBahagian;
 use yii\helpers\Json;
 /**
  * VolunteerController implements the CRUD actions for Volunteer model.
@@ -184,9 +185,6 @@ class VolunteerController extends Controller
      
     }
 
-
-
-
     public function actionListsubbase($id)
     {
         $countPosts = LookupSubBase::find()
@@ -294,7 +292,89 @@ class VolunteerController extends Controller
         }
      
     }
+/* create by shahril .... drilldown*/
+    public function actionListbahagian($id)
+    {
+        $countPosts = LookupBahagian::find()
+        ->where(['state_id' => $id])
+        ->count();
+         
+        $posts = LookupBahagian::find() 
+        ->where(['state_id' => $id])
+        ->all();
+         
+        if($countPosts>0){
+            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            foreach($posts as $post){
+                echo "<option value='".$post->bahagian_id."'>".$post->bahagian."</option>";
+            }
+        } else {
+                echo "<option>-</option>";
+        }
+     
+    }
+    public function actionListmukim($id)
+    {
+        $countPosts = LookupMukim::find()
+        ->where(['district_id' => $id])
+        ->count();
+         
+        $posts = LookupMukim::find() 
+        ->where(['district_id' => $id])
+        ->all();
+         
+        if($countPosts>0){
+            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            foreach($posts as $post){
+                echo "<option value='".$post->mukim_id."'>".$post->mukim."</option>";
+            }
+        } else {
+                echo "<option>-</option>";
+        }
+     
+    }
+    public function actionListjohorsubbase($id)
+    {
+        $countPosts = LookupSubBase::find()
+        ->where(['mukim_id' => $id])
+        ->count();
+         
+        $posts = LookupSubBase::find() 
+        ->where(['mukim_id' => $id])
+        ->all();
+         
+        if($countPosts>0){
+            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            foreach($posts as $post){
+                echo "<option value='".$post->sub_base_id."'>".$post->sub_base."</option>";
+            }
+        } else {
+                echo "<option>-</option>";
+        }
+     
+    }
+    public function actionListdistrictbahagian($id)
+    {
+        $countPosts = LookupDistrict::find()
+        ->where(['bahagian_id' => $id])
+        ->count();
+         
+        $posts = LookupDistrict::find() 
+        ->where(['bahagian_id' => $id])
+        ->all();
+         
+        if($countPosts>0){
+            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            foreach($posts as $post){
+                echo "<option value='".$post->district_id."'>".$post->district."</option>";
+            }
+        } else {
+                echo "<option>-</option>";
+        }
+     
+    }
 
+/* END by shahril */
     public function actionJson($id)
     {
  

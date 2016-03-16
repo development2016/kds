@@ -58,7 +58,7 @@ class IssueConduit extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['age', 'religion', 'race', 'marital_status', 'kampung_id', 'cluster_id', 'sub_base_id', 'district_id', 'state_id', 'mukim_id', 'issue_category', 'enter_by','kategori_oku_id'], 'integer'],
+            [['age', 'religion', 'race', 'marital_status', 'kampung_id', 'cluster_id', 'sub_base_id', 'district_id', 'state_id', 'mukim_id', 'issue_category', 'enter_by','kategori_oku_id','bahagian_id'], 'integer'],
             //['no_kp', 'unique'],
             ['no_kp', 'required', 'message' => 'Sila Isi No Kad Pengenalan'],
             ['name', 'required', 'message' => 'Sila Isi Nama Pengadu'],
@@ -120,6 +120,7 @@ class IssueConduit extends \yii\db\ActiveRecord
             'enter_by' => 'Enter By',
             'kategori_oku' => '',
             'kategori_oku_id' => 'Kategori oku',
+            'bahagian_id' => 'Bahagian'
         ];
     }
 
