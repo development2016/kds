@@ -7,9 +7,9 @@ return [
             //'username' => 'root',
             //'password' => '',
             // develop by m.fuad
-            'dsn' => 'mysql:host=localhost;dbname=kdsv4',
-            'username' => 'root',
-            'password' => 'arel2004',
+            'dsn' => 'mysql:host=192.168.0.20;dbname=kdsv5',
+            'username' => 'pokok',
+            'password' => 'pokok',
             'charset' => 'utf8',
         ],
         'mailer' => [
