@@ -111,7 +111,7 @@ class IssueConduitController extends Controller
                 return $this->redirect(['index']);
             }
             else {
-                return $this->render('create', [
+                return $this->render('update', [
                     'model' => $model,
                 ]);
             }
