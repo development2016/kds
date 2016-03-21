@@ -23476,3 +23476,2106 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1458188549.559
     'REQUEST_TIME' => 1458188549
 ]
+2016-03-18 01:34:45 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/frontend/models/PeopleSearch.php:45
+Stack trace:
+#0 /var/www/html/kds/frontend/models/PeopleSearch.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 45, Array)
+#1 /var/www/html/kds/frontend/controllers/PeopleController.php(66): frontend\models\PeopleSearch->search(Array)
+#2 [internal function]: frontend\controllers\PeopleController->actionIndex()
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('people/index', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-03-18 01:34:45 [::1][-][-][info][application] $_GET = [
+    'r' => 'people/index'
+]
+
+$_COOKIE = [
+    '_identity' => '652cd789e822a4f7e30011b7fa192b7b5ea942bb90a30a378d826e307ac254c7a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/45.0.2454.101 Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_identity=652cd789e822a4f7e30011b7fa192b7b5ea942bb90a30a378d826e307ac254c7a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '56462'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=people%2Findex'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=people%2Findex'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1458264884.932
+    'REQUEST_TIME' => 1458264884
+]
+2016-03-18 01:36:28 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: user/create' in /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php:122
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('create', Array)
+#1 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/create', Array)
+#2 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-18 01:36:27 [::1][-][-][info][application] $_GET = [
+    'r' => 'user/create'
+]
+
+$_COOKIE = [
+    '_identity' => '652cd789e822a4f7e30011b7fa192b7b5ea942bb90a30a378d826e307ac254c7a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+    'PHPSESSID' => 'lo43nd0ph32i1sr0vqj7rh21p2'
+    '_csrf' => '793c9d315d6803fccb21d317f50b6bdb47faff0b0c106b0582629c053f918436a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bOCkeRNqjgxPhRrbkeoicNCG0oBQ--48\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/frontend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/45.0.2454.101 Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_identity=652cd789e822a4f7e30011b7fa192b7b5ea942bb90a30a378d826e307ac254c7a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D; PHPSESSID=lo43nd0ph32i1sr0vqj7rh21p2; _csrf=793c9d315d6803fccb21d317f50b6bdb47faff0b0c106b0582629c053f918436a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bOCkeRNqjgxPhRrbkeoicNCG0oBQ--48%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '56505'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fcreate'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=user%2Fcreate'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1458264987.992
+    'REQUEST_TIME' => 1458264987
+]
+2016-03-18 02:01:53 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: mukim' in /var/www/html/kds/frontend/views/user/_form.php:521
+Stack trace:
+#0 /var/www/html/kds/frontend/views/user/_form.php(521): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/k...', 521, Array)
+#1 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/k...')
+#2 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/k...', Array)
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/k...', Array, NULL)
+#4 /var/www/html/kds/frontend/views/user/signup.php(52): yii\base\View->render('_form', Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/k...')
+#6 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/k...', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/k...', Array, Object(frontend\controllers\UserController))
+#8 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('signup', Array, Object(frontend\controllers\UserController))
+#9 /var/www/html/kds/frontend/controllers/UserController.php(213): yii\base\Controller->render('signup', Array)
+#10 [internal function]: frontend\controllers\UserController->actionSignup()
+#11 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#12 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#13 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('signup', Array)
+#14 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/signup', Array)
+#15 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#17 {main}
+2016-03-18 02:01:53 [::1][-][-][info][application] $_GET = [
+    'r' => 'user/signup'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nl1skd9sp62jn7q2cenp2ojoe7'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+    '_csrf' => 'dafc30b9b10b252946c43d3ab4ad15fa7a019d75812afad1d69c03cab5e9d0b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bG-xjKhPtYVR7UpTsDmB_l27unDfFCkw\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/45.0.2454.101 Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=nl1skd9sp62jn7q2cenp2ojoe7; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D; _csrf=dafc30b9b10b252946c43d3ab4ad15fa7a019d75812afad1d69c03cab5e9d0b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bG-xjKhPtYVR7UpTsDmB_l27unDfFCkw%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '57215'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fsignup'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=user%2Fsignup'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1458266513.181
+    'REQUEST_TIME' => 1458266513
+]
+2016-03-18 02:43:48 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\User::sub_base_id' in /var/www/html/kds/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/db/BaseActiveRecord.php(246): yii\base\Component->__get('sub_base_id')
+#1 /var/www/html/kds/vendor/yiisoft/yii2/helpers/BaseHtml.php(1930): yii\db\BaseActiveRecord->__get('sub_base_id')
+#2 /var/www/html/kds/vendor/yiisoft/yii2/helpers/BaseHtml.php(1597): yii\helpers\BaseHtml::getAttributeValue(Object(frontend\models\User), 'sub_base_id')
+#3 /var/www/html/kds/vendor/yiisoft/yii2/helpers/BaseHtml.php(1443): yii\helpers\BaseHtml::activeListInput('dropDownList', Object(frontend\models\User), 'sub_base_id', Array, Array)
+#4 /var/www/html/kds/frontend/views/user/_form.php(547): yii\helpers\BaseHtml::activeDropDownList(Object(frontend\models\User), 'sub_base_id', Array, Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/k...')
+#6 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/k...', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/k...', Array, NULL)
+#8 /var/www/html/kds/frontend/views/user/signup.php(52): yii\base\View->render('_form', Array)
+#9 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/k...')
+#10 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/k...', Array)
+#11 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/k...', Array, Object(frontend\controllers\UserController))
+#12 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('signup', Array, Object(frontend\controllers\UserController))
+#13 /var/www/html/kds/frontend/controllers/UserController.php(213): yii\base\Controller->render('signup', Array)
+#14 [internal function]: frontend\controllers\UserController->actionSignup()
+#15 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#16 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#17 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('signup', Array)
+#18 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/signup', Array)
+#19 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#21 {main}
+2016-03-18 02:43:48 [::1][-][-][info][application] $_GET = [
+    'r' => 'user/signup'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nl1skd9sp62jn7q2cenp2ojoe7'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+    '_csrf' => 'dafc30b9b10b252946c43d3ab4ad15fa7a019d75812afad1d69c03cab5e9d0b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bG-xjKhPtYVR7UpTsDmB_l27unDfFCkw\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/45.0.2454.101 Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=nl1skd9sp62jn7q2cenp2ojoe7; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D; _csrf=dafc30b9b10b252946c43d3ab4ad15fa7a019d75812afad1d69c03cab5e9d0b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bG-xjKhPtYVR7UpTsDmB_l27unDfFCkw%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '57817'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fsignup'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=user%2Fsignup'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1458269028.414
+    'REQUEST_TIME' => 1458269028
+]
+2016-03-18 02:48:15 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: user/listbahagian' in /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php:122
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('listbahagian', Array)
+#1 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/listbahagi...', Array)
+#2 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-18 02:48:15 [::1][-][-][info][application] $_GET = [
+    'r' => 'user/listbahagian'
+    'id' => '21'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nl1skd9sp62jn7q2cenp2ojoe7'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+    '_csrf' => 'dafc30b9b10b252946c43d3ab4ad15fa7a019d75812afad1d69c03cab5e9d0b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bG-xjKhPtYVR7UpTsDmB_l27unDfFCkw\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'Q0d2S2UwTVkhAFszD3slCTceIBlSZT0NMAMbCTpcf242KTItI3MmLg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/45.0.2454.101 Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=user%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=nl1skd9sp62jn7q2cenp2ojoe7; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D; _csrf=dafc30b9b10b252946c43d3ab4ad15fa7a019d75812afad1d69c03cab5e9d0b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bG-xjKhPtYVR7UpTsDmB_l27unDfFCkw%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '57881'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Flistbahagian&id=21'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=user%2Flistbahagian&id=21'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1458269295.623
+    'REQUEST_TIME' => 1458269295
+]
+2016-03-18 02:49:57 [::1][1][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in /var/www/html/kds/vendor/yiisoft/yii2/filters/AccessControl.php:151
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/html/kds/vendor/yiisoft/yii2/base/ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/html/kds/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('listbahagian', Array)
+#8 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/listbahagi...', Array)
+#9 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2016-03-18 02:49:57 [::1][1][-][info][application] $_GET = [
+    'r' => 'user/listbahagian'
+    'id' => '21'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'nl1skd9sp62jn7q2cenp2ojoe7'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+    '_csrf' => 'dafc30b9b10b252946c43d3ab4ad15fa7a019d75812afad1d69c03cab5e9d0b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bG-xjKhPtYVR7UpTsDmB_l27unDfFCkw\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'd19yTE9GM2sVGF80JQ1bOwMGJB54E0M/BBsfDhAqAVwCMTYqCQVYHA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/45.0.2454.101 Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=user%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=nl1skd9sp62jn7q2cenp2ojoe7; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D; _csrf=dafc30b9b10b252946c43d3ab4ad15fa7a019d75812afad1d69c03cab5e9d0b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bG-xjKhPtYVR7UpTsDmB_l27unDfFCkw%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '57903'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Flistbahagian&id=21'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=user%2Flistbahagian&id=21'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1458269397.797
+    'REQUEST_TIME' => 1458269397
+]
+2016-03-18 02:50:40 [::1][1][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in /var/www/html/kds/vendor/yiisoft/yii2/filters/AccessControl.php:151
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/html/kds/vendor/yiisoft/yii2/base/ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/html/kds/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('listbahagian', Array)
+#8 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/listbahagi...', Array)
+#9 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2016-03-18 02:50:40 [::1][1][-][info][application] $_GET = [
+    'r' => 'user/listbahagian'
+    'id' => '21'
+]
+
+$_COOKIE = [
+    '_csrf' => 'dafc30b9b10b252946c43d3ab4ad15fa7a019d75812afad1d69c03cab5e9d0b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bG-xjKhPtYVR7UpTsDmB_l27unDfFCkw\";}'
+    'PHPSESSID' => 'm6k0pnjnq94qq0ja6m0gljh502'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'X2xVMVE1MHA9K3hJO35YICs1A2NmYEAkLCg4cw5ZAkcqAhFXF3ZbBw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/45.0.2454.101 Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=user%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=dafc30b9b10b252946c43d3ab4ad15fa7a019d75812afad1d69c03cab5e9d0b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bG-xjKhPtYVR7UpTsDmB_l27unDfFCkw%22%3B%7D; PHPSESSID=m6k0pnjnq94qq0ja6m0gljh502; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '57925'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Flistbahagian&id=21'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=user%2Flistbahagian&id=21'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1458269440.23
+    'REQUEST_TIME' => 1458269440
+]
+2016-03-18 02:53:39 [::1][1][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in /var/www/html/kds/vendor/yiisoft/yii2/filters/AccessControl.php:151
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/html/kds/vendor/yiisoft/yii2/base/ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/html/kds/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('listbahagian', Array)
+#8 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/listbahagi...', Array)
+#9 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2016-03-18 02:53:39 [::1][1][-][info][application] $_GET = [
+    'r' => 'user/listbahagian'
+    'id' => '21'
+]
+
+$_COOKIE = [
+    '_csrf' => 'dafc30b9b10b252946c43d3ab4ad15fa7a019d75812afad1d69c03cab5e9d0b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bG-xjKhPtYVR7UpTsDmB_l27unDfFCkw\";}'
+    'PHPSESSID' => 'm6k0pnjnq94qq0ja6m0gljh502'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'YmhrS3hYYzQAL0YzEhMLZBYxPRlPDRNgESwGCSc0UQMXBi8tPhsIQw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/45.0.2454.101 Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=user%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=dafc30b9b10b252946c43d3ab4ad15fa7a019d75812afad1d69c03cab5e9d0b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bG-xjKhPtYVR7UpTsDmB_l27unDfFCkw%22%3B%7D; PHPSESSID=m6k0pnjnq94qq0ja6m0gljh502; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '57978'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Flistbahagian&id=21'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=user%2Flistbahagian&id=21'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1458269619.097
+    'REQUEST_TIME' => 1458269619
+]
+2016-03-18 02:55:33 [::1][1][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in /var/www/html/kds/vendor/yiisoft/yii2/filters/AccessControl.php:151
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/html/kds/vendor/yiisoft/yii2/base/ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/html/kds/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('listbahagian', Array)
+#8 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/listbahagi...', Array)
+#9 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2016-03-18 02:55:33 [::1][1][-][info][application] $_GET = [
+    'r' => 'user/listbahagian'
+    'id' => '21'
+]
+
+$_COOKIE = [
+    '_csrf' => 'dafc30b9b10b252946c43d3ab4ad15fa7a019d75812afad1d69c03cab5e9d0b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bG-xjKhPtYVR7UpTsDmB_l27unDfFCkw\";}'
+    'PHPSESSID' => 'm6k0pnjnq94qq0ja6m0gljh502'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'd0hUSTE0NWEVD3kxW39dMQMRAhsGYUU1BAw5C25YB1YCJhAvd3deFg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/45.0.2454.101 Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=user%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=dafc30b9b10b252946c43d3ab4ad15fa7a019d75812afad1d69c03cab5e9d0b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bG-xjKhPtYVR7UpTsDmB_l27unDfFCkw%22%3B%7D; PHPSESSID=m6k0pnjnq94qq0ja6m0gljh502; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '58037'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Flistbahagian&id=21'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=user%2Flistbahagian&id=21'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1458269733.553
+    'REQUEST_TIME' => 1458269733
+]
+2016-03-18 02:57:38 [::1][1][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in /var/www/html/kds/vendor/yiisoft/yii2/filters/AccessControl.php:151
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/html/kds/vendor/yiisoft/yii2/base/ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/html/kds/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('listbahagian', Array)
+#8 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/listbahagi...', Array)
+#9 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2016-03-18 02:57:38 [::1][1][-][info][application] $_GET = [
+    'r' => 'user/listbahagian'
+    'id' => '21'
+]
+
+$_COOKIE = [
+    '_csrf' => 'dafc30b9b10b252946c43d3ab4ad15fa7a019d75812afad1d69c03cab5e9d0b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bG-xjKhPtYVR7UpTsDmB_l27unDfFCkw\";}'
+    'PHPSESSID' => 'm6k0pnjnq94qq0ja6m0gljh502'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'T1BMN3JyMXgtF2FPGDlZKDsJGmVFJ0EsPBQhdS0eA086PghRNDFaDw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/45.0.2454.101 Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=user%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=dafc30b9b10b252946c43d3ab4ad15fa7a019d75812afad1d69c03cab5e9d0b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bG-xjKhPtYVR7UpTsDmB_l27unDfFCkw%22%3B%7D; PHPSESSID=m6k0pnjnq94qq0ja6m0gljh502; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '58079'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Flistbahagian&id=21'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=user%2Flistbahagian&id=21'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1458269858.18
+    'REQUEST_TIME' => 1458269858
+]
+2016-03-18 03:00:31 [::1][1][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in /var/www/html/kds/vendor/yiisoft/yii2/filters/AccessControl.php:151
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/html/kds/vendor/yiisoft/yii2/base/ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/html/kds/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('listbahagian', Array)
+#8 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/listbahagi...', Array)
+#9 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2016-03-18 03:00:31 [::1][1][-][info][application] $_GET = [
+    'r' => 'user/listbahagian'
+    'id' => '21'
+]
+
+$_COOKIE = [
+    '_csrf' => 'dafc30b9b10b252946c43d3ab4ad15fa7a019d75812afad1d69c03cab5e9d0b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bG-xjKhPtYVR7UpTsDmB_l27unDfFCkw\";}'
+    'PHPSESSID' => 'm6k0pnjnq94qq0ja6m0gljh502'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'ajhWaUJXVWIIf3sRKBw9Mh5hADt1AiU2GXw7Kx07Z1UfVhIPBBQ.FQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/45.0.2454.101 Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=user%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=dafc30b9b10b252946c43d3ab4ad15fa7a019d75812afad1d69c03cab5e9d0b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bG-xjKhPtYVR7UpTsDmB_l27unDfFCkw%22%3B%7D; PHPSESSID=m6k0pnjnq94qq0ja6m0gljh502; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '58132'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Flistbahagian&id=21'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=user%2Flistbahagian&id=21'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1458270031.818
+    'REQUEST_TIME' => 1458270031
+]
+2016-03-18 03:02:36 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: user/listsubbase' in /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php:122
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('listsubbase', Array)
+#1 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/listsubbas...', Array)
+#2 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-18 03:02:36 [::1][-][-][info][application] $_GET = [
+    'r' => 'user/listsubbase'
+    'id' => '6'
+]
+
+$_COOKIE = [
+    '_csrf' => 'dafc30b9b10b252946c43d3ab4ad15fa7a019d75812afad1d69c03cab5e9d0b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bG-xjKhPtYVR7UpTsDmB_l27unDfFCkw\";}'
+    'PHPSESSID' => 'm6k0pnjnq94qq0ja6m0gljh502'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'YnpJdTFXRzEAPWQNWxwvYRYjHycGAjdlET4kN247dQYXFA0TdxQsRg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/45.0.2454.101 Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=user%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=dafc30b9b10b252946c43d3ab4ad15fa7a019d75812afad1d69c03cab5e9d0b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bG-xjKhPtYVR7UpTsDmB_l27unDfFCkw%22%3B%7D; PHPSESSID=m6k0pnjnq94qq0ja6m0gljh502; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '58171'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Flistsubbase&id=6'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=user%2Flistsubbase&id=6'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1458270156.45
+    'REQUEST_TIME' => 1458270156
+]
+2016-03-18 03:02:43 [::1][1][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in /var/www/html/kds/vendor/yiisoft/yii2/filters/AccessControl.php:151
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/html/kds/vendor/yiisoft/yii2/base/ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/html/kds/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('listbahagian', Array)
+#8 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/listbahagi...', Array)
+#9 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2016-03-18 03:02:43 [::1][1][-][info][application] $_GET = [
+    'r' => 'user/listbahagian'
+    'id' => '21'
+]
+
+$_COOKIE = [
+    '_csrf' => 'dafc30b9b10b252946c43d3ab4ad15fa7a019d75812afad1d69c03cab5e9d0b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bG-xjKhPtYVR7UpTsDmB_l27unDfFCkw\";}'
+    'PHPSESSID' => 'm6k0pnjnq94qq0ja6m0gljh502'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'YnpJdTFXRzEAPWQNWxwvYRYjHycGAjdlET4kN247dQYXFA0TdxQsRg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/45.0.2454.101 Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=user%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=dafc30b9b10b252946c43d3ab4ad15fa7a019d75812afad1d69c03cab5e9d0b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bG-xjKhPtYVR7UpTsDmB_l27unDfFCkw%22%3B%7D; PHPSESSID=m6k0pnjnq94qq0ja6m0gljh502; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '58173'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Flistbahagian&id=21'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=user%2Flistbahagian&id=21'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1458270163.439
+    'REQUEST_TIME' => 1458270163
+]
+2016-03-18 03:04:59 [::1][1][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in /var/www/html/kds/vendor/yiisoft/yii2/filters/AccessControl.php:151
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/html/kds/vendor/yiisoft/yii2/base/ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/html/kds/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('listbahagian', Array)
+#8 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/listbahagi...', Array)
+#9 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2016-03-18 03:04:59 [::1][1][-][info][application] $_GET = [
+    'r' => 'user/listbahagian'
+    'id' => '21'
+]
+
+$_COOKIE = [
+    '_csrf' => 'dafc30b9b10b252946c43d3ab4ad15fa7a019d75812afad1d69c03cab5e9d0b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bG-xjKhPtYVR7UpTsDmB_l27unDfFCkw\";}'
+    'PHPSESSID' => 'm6k0pnjnq94qq0ja6m0gljh502'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'YnpJdTFXRzEAPWQNWxwvYRYjHycGAjdlET4kN247dQYXFA0TdxQsRg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/45.0.2454.101 Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=user%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=dafc30b9b10b252946c43d3ab4ad15fa7a019d75812afad1d69c03cab5e9d0b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bG-xjKhPtYVR7UpTsDmB_l27unDfFCkw%22%3B%7D; PHPSESSID=m6k0pnjnq94qq0ja6m0gljh502; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '58207'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Flistbahagian&id=21'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=user%2Flistbahagian&id=21'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1458270299.546
+    'REQUEST_TIME' => 1458270299
+]
+2016-03-18 03:06:10 [::1][1][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in /var/www/html/kds/vendor/yiisoft/yii2/filters/AccessControl.php:151
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/html/kds/vendor/yiisoft/yii2/base/ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/html/kds/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('listbahagian', Array)
+#8 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/listbahagi...', Array)
+#9 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2016-03-18 03:06:10 [::1][1][-][info][application] $_GET = [
+    'r' => 'user/listbahagian'
+    'id' => '21'
+]
+
+$_COOKIE = [
+    '_csrf' => 'dafc30b9b10b252946c43d3ab4ad15fa7a019d75812afad1d69c03cab5e9d0b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bG-xjKhPtYVR7UpTsDmB_l27unDfFCkw\";}'
+    'PHPSESSID' => 'm6k0pnjnq94qq0ja6m0gljh502'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'UkZzQUgwZi0wAV45InsOfSYfJRN/ZRZ5IQIeAxdcVBonKDcnDnMNWg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/45.0.2454.101 Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=user%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=dafc30b9b10b252946c43d3ab4ad15fa7a019d75812afad1d69c03cab5e9d0b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bG-xjKhPtYVR7UpTsDmB_l27unDfFCkw%22%3B%7D; PHPSESSID=m6k0pnjnq94qq0ja6m0gljh502; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '58230'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Flistbahagian&id=21'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=user%2Flistbahagian&id=21'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1458270370.515
+    'REQUEST_TIME' => 1458270370
+]
+2016-03-18 03:09:29 [::1][1][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in /var/www/html/kds/vendor/yiisoft/yii2/filters/AccessControl.php:151
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/html/kds/vendor/yiisoft/yii2/base/ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/html/kds/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('listbahagian', Array)
+#8 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/listbahagi...', Array)
+#9 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2016-03-18 03:09:29 [::1][1][-][info][application] $_GET = [
+    'r' => 'user/listbahagian'
+    'id' => '21'
+]
+
+$_COOKIE = [
+    '_csrf' => 'dafc30b9b10b252946c43d3ab4ad15fa7a019d75812afad1d69c03cab5e9d0b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bG-xjKhPtYVR7UpTsDmB_l27unDfFCkw\";}'
+    'PHPSESSID' => 'm6k0pnjnq94qq0ja6m0gljh502'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'dXo4ZkFYTDEXPRUeKxMkYQEjbjR2DTxlBj5VJB40fgYAFHwABxsnRg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/45.0.2454.101 Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=user%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=dafc30b9b10b252946c43d3ab4ad15fa7a019d75812afad1d69c03cab5e9d0b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bG-xjKhPtYVR7UpTsDmB_l27unDfFCkw%22%3B%7D; PHPSESSID=m6k0pnjnq94qq0ja6m0gljh502; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '58316'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Flistbahagian&id=21'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=user%2Flistbahagian&id=21'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1458270569.044
+    'REQUEST_TIME' => 1458270569
+]
+2016-03-18 03:09:34 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: user/listdistrictbahagian' in /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php:122
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('listdistrictbah...', Array)
+#1 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/listdistri...', Array)
+#2 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-18 03:09:34 [::1][-][-][info][application] $_GET = [
+    'r' => 'user/listdistrictbahagian'
+    'id' => '3'
+]
+
+$_COOKIE = [
+    '_csrf' => 'dafc30b9b10b252946c43d3ab4ad15fa7a019d75812afad1d69c03cab5e9d0b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bG-xjKhPtYVR7UpTsDmB_l27unDfFCkw\";}'
+    'PHPSESSID' => 'm6k0pnjnq94qq0ja6m0gljh502'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'dXo4ZkFYTDEXPRUeKxMkYQEjbjR2DTxlBj5VJB40fgYAFHwABxsnRg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/45.0.2454.101 Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=user%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=dafc30b9b10b252946c43d3ab4ad15fa7a019d75812afad1d69c03cab5e9d0b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bG-xjKhPtYVR7UpTsDmB_l27unDfFCkw%22%3B%7D; PHPSESSID=m6k0pnjnq94qq0ja6m0gljh502; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '58323'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Flistdistrictbahagian&id=3'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=user%2Flistdistrictbahagian&id=3'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1458270574.947
+    'REQUEST_TIME' => 1458270574
+]
+2016-03-18 03:12:25 [::1][1][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in /var/www/html/kds/vendor/yiisoft/yii2/filters/AccessControl.php:151
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/html/kds/vendor/yiisoft/yii2/base/ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/html/kds/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('listbahagian', Array)
+#8 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/listbahagi...', Array)
+#9 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2016-03-18 03:12:25 [::1][1][-][info][application] $_GET = [
+    'r' => 'user/listbahagian'
+    'id' => '21'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'm6k0pnjnq94qq0ja6m0gljh502'
+    '_csrf' => '1a1197f9cd5baed73bcfb53e1216c700a481c0fc2780c42bad1e11b1f019e8d6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"PwWHrd6mgtFfgt2FixLi3kLLWMIFmAt1\";}'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'dlhiSk1oRVUmLzUCPwxzOBEsJCwqHHcTHyAuI34DCRkhFSsMICkxZA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/45.0.2454.101 Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=user%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=m6k0pnjnq94qq0ja6m0gljh502; _csrf=1a1197f9cd5baed73bcfb53e1216c700a481c0fc2780c42bad1e11b1f019e8d6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22PwWHrd6mgtFfgt2FixLi3kLLWMIFmAt1%22%3B%7D; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '58378'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Flistbahagian&id=21'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=user%2Flistbahagian&id=21'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1458270745.374
+    'REQUEST_TIME' => 1458270745
+]
+2016-03-18 03:13:00 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: user/listmukim' in /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php:122
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('listmukim', Array)
+#1 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/listmukim', Array)
+#2 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-18 03:13:00 [::1][-][-][info][application] $_GET = [
+    'r' => 'user/listmukim'
+    'id' => '74'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'm6k0pnjnq94qq0ja6m0gljh502'
+    '_csrf' => '1a1197f9cd5baed73bcfb53e1216c700a481c0fc2780c42bad1e11b1f019e8d6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"PwWHrd6mgtFfgt2FixLi3kLLWMIFmAt1\";}'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'dlhiSk1oRVUmLzUCPwxzOBEsJCwqHHcTHyAuI34DCRkhFSsMICkxZA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/45.0.2454.101 Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=user%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=m6k0pnjnq94qq0ja6m0gljh502; _csrf=1a1197f9cd5baed73bcfb53e1216c700a481c0fc2780c42bad1e11b1f019e8d6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22PwWHrd6mgtFfgt2FixLi3kLLWMIFmAt1%22%3B%7D; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '58392'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Flistmukim&id=74'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=user%2Flistmukim&id=74'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1458270780.769
+    'REQUEST_TIME' => 1458270780
+]
+2016-03-18 03:13:04 [::1][1][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in /var/www/html/kds/vendor/yiisoft/yii2/filters/AccessControl.php:151
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/html/kds/vendor/yiisoft/yii2/base/ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/html/kds/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('listbahagian', Array)
+#8 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/listbahagi...', Array)
+#9 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2016-03-18 03:13:04 [::1][1][-][info][application] $_GET = [
+    'r' => 'user/listbahagian'
+    'id' => '21'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'm6k0pnjnq94qq0ja6m0gljh502'
+    '_csrf' => '1a1197f9cd5baed73bcfb53e1216c700a481c0fc2780c42bad1e11b1f019e8d6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"PwWHrd6mgtFfgt2FixLi3kLLWMIFmAt1\";}'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'dlhiSk1oRVUmLzUCPwxzOBEsJCwqHHcTHyAuI34DCRkhFSsMICkxZA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/45.0.2454.101 Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=user%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=m6k0pnjnq94qq0ja6m0gljh502; _csrf=1a1197f9cd5baed73bcfb53e1216c700a481c0fc2780c42bad1e11b1f019e8d6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22PwWHrd6mgtFfgt2FixLi3kLLWMIFmAt1%22%3B%7D; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '58392'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Flistbahagian&id=21'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=user%2Flistbahagian&id=21'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1458270784.854
+    'REQUEST_TIME' => 1458270784
+]
+2016-03-18 03:16:31 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: user/listsubbase' in /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php:122
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('listsubbase', Array)
+#1 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/listsubbas...', Array)
+#2 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-18 03:16:31 [::1][-][-][info][application] $_GET = [
+    'r' => 'user/listsubbase'
+    'id' => '149'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'm6k0pnjnq94qq0ja6m0gljh502'
+    '_csrf' => '1a1197f9cd5baed73bcfb53e1216c700a481c0fc2780c42bad1e11b1f019e8d6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"PwWHrd6mgtFfgt2FixLi3kLLWMIFmAt1\";}'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'M1FSRzJXWFVjJgUPQDNuOFQlFCFVI2oTWikeLgE8FBlkHBsBXxYsZA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/45.0.2454.101 Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=user%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=m6k0pnjnq94qq0ja6m0gljh502; _csrf=1a1197f9cd5baed73bcfb53e1216c700a481c0fc2780c42bad1e11b1f019e8d6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22PwWHrd6mgtFfgt2FixLi3kLLWMIFmAt1%22%3B%7D; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '58442'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Flistsubbase&id=149'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=user%2Flistsubbase&id=149'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1458270991.064
+    'REQUEST_TIME' => 1458270991
+]
+2016-03-18 03:17:10 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: user/listsubbase' in /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php:122
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('listsubbase', Array)
+#1 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/listsubbas...', Array)
+#2 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-18 03:17:10 [::1][-][-][info][application] $_GET = [
+    'r' => 'user/listsubbase'
+    'id' => 'Sila Pilih'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'm6k0pnjnq94qq0ja6m0gljh502'
+    '_csrf' => '1a1197f9cd5baed73bcfb53e1216c700a481c0fc2780c42bad1e11b1f019e8d6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"PwWHrd6mgtFfgt2FixLi3kLLWMIFmAt1\";}'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'M1FSRzJXWFVjJgUPQDNuOFQlFCFVI2oTWikeLgE8FBlkHBsBXxYsZA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/45.0.2454.101 Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=user%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=m6k0pnjnq94qq0ja6m0gljh502; _csrf=1a1197f9cd5baed73bcfb53e1216c700a481c0fc2780c42bad1e11b1f019e8d6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22PwWHrd6mgtFfgt2FixLi3kLLWMIFmAt1%22%3B%7D; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '58454'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Flistsubbase&id=Sila%20Pilih'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=user%2Flistsubbase&id=Sila%20Pilih'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1458271030.442
+    'REQUEST_TIME' => 1458271030
+]
+2016-03-18 03:17:11 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: user/listsubbase' in /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php:122
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('listsubbase', Array)
+#1 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/listsubbas...', Array)
+#2 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-18 03:17:11 [::1][-][-][info][application] $_GET = [
+    'r' => 'user/listsubbase'
+    'id' => '149'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'm6k0pnjnq94qq0ja6m0gljh502'
+    '_csrf' => '1a1197f9cd5baed73bcfb53e1216c700a481c0fc2780c42bad1e11b1f019e8d6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"PwWHrd6mgtFfgt2FixLi3kLLWMIFmAt1\";}'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'M1FSRzJXWFVjJgUPQDNuOFQlFCFVI2oTWikeLgE8FBlkHBsBXxYsZA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/45.0.2454.101 Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=user%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=m6k0pnjnq94qq0ja6m0gljh502; _csrf=1a1197f9cd5baed73bcfb53e1216c700a481c0fc2780c42bad1e11b1f019e8d6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22PwWHrd6mgtFfgt2FixLi3kLLWMIFmAt1%22%3B%7D; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '58454'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Flistsubbase&id=149'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=user%2Flistsubbase&id=149'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1458271031.479
+    'REQUEST_TIME' => 1458271031
+]
+2016-03-18 03:17:18 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: user/listsubbase' in /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php:122
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('listsubbase', Array)
+#1 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/listsubbas...', Array)
+#2 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-18 03:17:18 [::1][-][-][info][application] $_GET = [
+    'r' => 'user/listsubbase'
+    'id' => '149'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'm6k0pnjnq94qq0ja6m0gljh502'
+    '_csrf' => '1a1197f9cd5baed73bcfb53e1216c700a481c0fc2780c42bad1e11b1f019e8d6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"PwWHrd6mgtFfgt2FixLi3kLLWMIFmAt1\";}'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'M1FSRzJXWFVjJgUPQDNuOFQlFCFVI2oTWikeLgE8FBlkHBsBXxYsZA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/45.0.2454.101 Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=user%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=m6k0pnjnq94qq0ja6m0gljh502; _csrf=1a1197f9cd5baed73bcfb53e1216c700a481c0fc2780c42bad1e11b1f019e8d6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22PwWHrd6mgtFfgt2FixLi3kLLWMIFmAt1%22%3B%7D; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '58454'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Flistsubbase&id=149'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=user%2Flistsubbase&id=149'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1458271038.318
+    'REQUEST_TIME' => 1458271038
+]
+2016-03-18 03:17:32 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: user/listcluster' in /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php:122
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('listcluster', Array)
+#1 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/listcluste...', Array)
+#2 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-18 03:17:32 [::1][-][-][info][application] $_GET = [
+    'r' => 'user/listcluster'
+    'id' => '155'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'm6k0pnjnq94qq0ja6m0gljh502'
+    '_csrf' => '1a1197f9cd5baed73bcfb53e1216c700a481c0fc2780c42bad1e11b1f019e8d6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"PwWHrd6mgtFfgt2FixLi3kLLWMIFmAt1\";}'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'T1laMDdtZnUfLg14RQlQGCgtHFZQGVQzJiEWWQQGKjkYFBN2WiwSRA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/45.0.2454.101 Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=user%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=m6k0pnjnq94qq0ja6m0gljh502; _csrf=1a1197f9cd5baed73bcfb53e1216c700a481c0fc2780c42bad1e11b1f019e8d6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22PwWHrd6mgtFfgt2FixLi3kLLWMIFmAt1%22%3B%7D; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '58457'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Flistcluster&id=155'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=user%2Flistcluster&id=155'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1458271052.167
+    'REQUEST_TIME' => 1458271052
+]
+2016-03-18 03:25:34 [::1][1][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in /var/www/html/kds/vendor/yiisoft/yii2/filters/AccessControl.php:151
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /var/www/html/kds/vendor/yiisoft/yii2/base/ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/html/kds/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('listmukim', Array)
+#8 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/listmukim', Array)
+#9 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2016-03-18 03:25:34 [::1][1][-][info][application] $_GET = [
+    'r' => 'user/listmukim'
+    'id' => '74'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'm6k0pnjnq94qq0ja6m0gljh502'
+    '_csrf' => '1a1197f9cd5baed73bcfb53e1216c700a481c0fc2780c42bad1e11b1f019e8d6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"PwWHrd6mgtFfgt2FixLi3kLLWMIFmAt1\";}'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'TURkbmxYQ3UdMzMmHjx1GCowIggLLHEzJDwoB18zDzkaCS0oARk3RA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/45.0.2454.101 Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=user%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=m6k0pnjnq94qq0ja6m0gljh502; _csrf=1a1197f9cd5baed73bcfb53e1216c700a481c0fc2780c42bad1e11b1f019e8d6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22PwWHrd6mgtFfgt2FixLi3kLLWMIFmAt1%22%3B%7D; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '58630'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Flistmukim&id=74'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=user%2Flistmukim&id=74'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1458271534.67
+    'REQUEST_TIME' => 1458271534
+]
+2016-03-18 03:28:00 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: user/listcluster' in /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php:122
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('listcluster', Array)
+#1 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/listcluste...', Array)
+#2 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-18 03:28:00 [::1][-][-][info][application] $_GET = [
+    'r' => 'user/listcluster'
+    'id' => '141'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'm6k0pnjnq94qq0ja6m0gljh502'
+    '_csrf' => '1a1197f9cd5baed73bcfb53e1216c700a481c0fc2780c42bad1e11b1f019e8d6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"PwWHrd6mgtFfgt2FixLi3kLLWMIFmAt1\";}'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'RUpHdmhua2QVPRA.GgpdCSI.ARAPGlkiLDILH1sFJygSBw4wBS8fVQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/45.0.2454.101 Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=user%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=m6k0pnjnq94qq0ja6m0gljh502; _csrf=1a1197f9cd5baed73bcfb53e1216c700a481c0fc2780c42bad1e11b1f019e8d6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22PwWHrd6mgtFfgt2FixLi3kLLWMIFmAt1%22%3B%7D; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '58681'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Flistcluster&id=141'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=user%2Flistcluster&id=141'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1458271680.118
+    'REQUEST_TIME' => 1458271680
+]
+2016-03-18 03:29:44 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: user/listsubbase' in /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php:122
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('listsubbase', Array)
+#1 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/listsubbas...', Array)
+#2 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-18 03:29:44 [::1][-][-][info][application] $_GET = [
+    'r' => 'user/listsubbase'
+    'id' => '23'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'm6k0pnjnq94qq0ja6m0gljh502'
+    '_csrf' => '1a1197f9cd5baed73bcfb53e1216c700a481c0fc2780c42bad1e11b1f019e8d6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"PwWHrd6mgtFfgt2FixLi3kLLWMIFmAt1\";}'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'Y2MyR3ZKalkzFGUPBC5cNAQXdCERPlgfCht.LkUhJhU0LnsBGwseaA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/45.0.2454.101 Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=user%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=m6k0pnjnq94qq0ja6m0gljh502; _csrf=1a1197f9cd5baed73bcfb53e1216c700a481c0fc2780c42bad1e11b1f019e8d6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22PwWHrd6mgtFfgt2FixLi3kLLWMIFmAt1%22%3B%7D; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '58718'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Flistsubbase&id=23'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=user%2Flistsubbase&id=23'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1458271784.876
+    'REQUEST_TIME' => 1458271784
+]
+2016-03-18 03:29:46 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: user/listsubbase' in /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php:122
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('listsubbase', Array)
+#1 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/listsubbas...', Array)
+#2 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-18 03:29:46 [::1][-][-][info][application] $_GET = [
+    'r' => 'user/listsubbase'
+    'id' => '17'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'm6k0pnjnq94qq0ja6m0gljh502'
+    '_csrf' => '1a1197f9cd5baed73bcfb53e1216c700a481c0fc2780c42bad1e11b1f019e8d6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"PwWHrd6mgtFfgt2FixLi3kLLWMIFmAt1\";}'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'Y2MyR3ZKalkzFGUPBC5cNAQXdCERPlgfCht.LkUhJhU0LnsBGwseaA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/45.0.2454.101 Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=user%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=m6k0pnjnq94qq0ja6m0gljh502; _csrf=1a1197f9cd5baed73bcfb53e1216c700a481c0fc2780c42bad1e11b1f019e8d6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22PwWHrd6mgtFfgt2FixLi3kLLWMIFmAt1%22%3B%7D; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '58718'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Flistsubbase&id=17'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=user%2Flistsubbase&id=17'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1458271786.442
+    'REQUEST_TIME' => 1458271786
+]
+2016-03-18 08:50:15 [::1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in /var/www/html/kds/vendor/yiisoft/yii2/web/Controller.php:110
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('listbahagian', Array)
+#2 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/listbahagi...', Array)
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#5 {main}
+2016-03-18 08:50:15 [::1][-][-][info][application] $_GET = [
+    'r' => 'user/listbahagian'
+    'id' => '21'
+]
+
+$_COOKIE = [
+    '_csrf' => '88ebe192bad8c8b616d6b2fbc95c9bbdb7cd4fabc418da46155ffe6ca028580aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c1pa0HI60OUE1YqUNmPFKjhampMi9ZZy\";}'
+    'PHPSESSID' => 'itv3fjjunekp4erv8sekb8ps36'
+    '_identity' => '652cd789e822a4f7e30011b7fa192b7b5ea942bb90a30a378d826e307ac254c7a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'Y3lkMDBaMGkPFwJTVhBjUCs2KgFDClQzMxUCfwAFWlg8KyVAdANVAA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/45.0.2454.101 Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=user%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=88ebe192bad8c8b616d6b2fbc95c9bbdb7cd4fabc418da46155ffe6ca028580aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c1pa0HI60OUE1YqUNmPFKjhampMi9ZZy%22%3B%7D; PHPSESSID=itv3fjjunekp4erv8sekb8ps36; _identity=652cd789e822a4f7e30011b7fa192b7b5ea942bb90a30a378d826e307ac254c7a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '9317'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Flistbahagian&id=21'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=user%2Flistbahagian&id=21'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1458291015.397
+    'REQUEST_TIME' => 1458291015
+]
+2016-03-18 09:40:11 [::1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in /var/www/html/kds/vendor/yiisoft/yii2/web/Controller.php:110
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('listdistrictare...', Array)
+#2 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/listdistri...', Array)
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#5 {main}
+2016-03-18 09:40:11 [::1][-][-][info][application] $_GET = [
+    'r' => 'user/listdistrictarea'
+    'id' => '27'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'itv3fjjunekp4erv8sekb8ps36'
+    '_csrf' => '97e86eb6e323e4fcdb814ff35d4768932f030650dddf69e2b695d56493b1ae45a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5gaNR4aLIcV9dyP6cD-S-cJ-eXAUGKWv\";}'
+    '_identity' => '652cd789e822a4f7e30011b7fa192b7b5ea942bb90a30a378d826e307ac254c7a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'VXVqSF9oLUcAMwMAMCF3LjgzRyBmEkcqJhwDLi4lXnMiJQQXbR1Lfg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/45.0.2454.101 Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=user%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=itv3fjjunekp4erv8sekb8ps36; _csrf=97e86eb6e323e4fcdb814ff35d4768932f030650dddf69e2b695d56493b1ae45a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225gaNR4aLIcV9dyP6cD-S-cJ-eXAUGKWv%22%3B%7D; _identity=652cd789e822a4f7e30011b7fa192b7b5ea942bb90a30a378d826e307ac254c7a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '10667'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Flistdistrictarea&id=27'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=user%2Flistdistrictarea&id=27'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1458294011.109
+    'REQUEST_TIME' => 1458294011
+]
+2016-03-18 09:40:20 [::1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in /var/www/html/kds/vendor/yiisoft/yii2/web/Controller.php:110
+Stack trace:
+#0 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('listdistrictare...', Array)
+#2 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/listdistri...', Array)
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#5 {main}
+2016-03-18 09:40:20 [::1][-][-][info][application] $_GET = [
+    'r' => 'user/listdistrictarea'
+    'id' => '26'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'itv3fjjunekp4erv8sekb8ps36'
+    '_csrf' => '97e86eb6e323e4fcdb814ff35d4768932f030650dddf69e2b695d56493b1ae45a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5gaNR4aLIcV9dyP6cD-S-cJ-eXAUGKWv\";}'
+    '_identity' => '652cd789e822a4f7e30011b7fa192b7b5ea942bb90a30a378d826e307ac254c7a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'VXVqSF9oLUcAMwMAMCF3LjgzRyBmEkcqJhwDLi4lXnMiJQQXbR1Lfg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/45.0.2454.101 Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php?r=user%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=itv3fjjunekp4erv8sekb8ps36; _csrf=97e86eb6e323e4fcdb814ff35d4768932f030650dddf69e2b695d56493b1ae45a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225gaNR4aLIcV9dyP6cD-S-cJ-eXAUGKWv%22%3B%7D; _identity=652cd789e822a4f7e30011b7fa192b7b5ea942bb90a30a378d826e307ac254c7a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '10670'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Flistdistrictarea&id=26'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=user%2Flistdistrictarea&id=26'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1458294020.484
+    'REQUEST_TIME' => 1458294020
+]
+2016-03-20 07:13:08 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/frontend/models/PeopleSearch.php:45
+Stack trace:
+#0 /var/www/html/kds/frontend/models/PeopleSearch.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 45, Array)
+#1 /var/www/html/kds/frontend/controllers/PeopleController.php(66): frontend\models\PeopleSearch->search(Array)
+#2 [internal function]: frontend\controllers\PeopleController->actionIndex()
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('people/index', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-03-20 07:13:07 [::1][-][-][info][application] $_GET = [
+    'r' => 'people/index'
+]
+
+$_COOKIE = [
+    '_identity' => '652cd789e822a4f7e30011b7fa192b7b5ea942bb90a30a378d826e307ac254c7a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/45.0.2454.101 Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_identity=652cd789e822a4f7e30011b7fa192b7b5ea942bb90a30a378d826e307ac254c7a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '26546'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=people%2Findex'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=people%2Findex'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1458457986.62
+    'REQUEST_TIME' => 1458457986
+]

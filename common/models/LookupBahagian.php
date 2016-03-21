@@ -38,7 +38,7 @@ class LookupBahagian extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'bahagian_id' => 'Bahagian ID',
+            'bahagian_id' => 'Bahagian',
             'bahagian' => 'Bahagian',
             'state_id' => 'State ID',
         ];

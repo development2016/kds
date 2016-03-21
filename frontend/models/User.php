@@ -78,7 +78,7 @@ class User extends \yii\db\ActiveRecord
             ['username', 'unique'],
             ['password_hash', 'required', 'message' => 'Sila Isi Kata Laluan'],
             ['username', 'required', 'message' => 'Sila Isi Nama Pengguna'],
-            [['role', 'negara_area_id', 'state_area_id', 'district_area_id', 'sub_base_area_id', 'cluster_area_id', 'kampung_area_id', 'status'], 'integer'],
+            [['role', 'negara_area_id', 'state_area_id', 'district_area_id', 'sub_base_area_id', 'cluster_area_id', 'kampung_area_id', 'status','bahagian_id','mukim_id'], 'integer'],
             [['username', 'nama', 'email', 'password_hash','updated_at','created_at'], 'string', 'max' => 255],
             [['address'], 'string', 'max' => 200],
             [['ic_no', 'mobile_no', 'home_no', 'no_tel_pej', 'ic_no_old'], 'string', 'max' => 15],
@@ -137,6 +137,8 @@ class User extends \yii\db\ActiveRecord
             'status' => 'Status',
             'created_at' => 'Created At',
             'updated_at' => 'Updated At',
+            'bahagian_id'=>'Bahagian',
+            'mukim_id'=>'Mukim',
         ];
     }
 

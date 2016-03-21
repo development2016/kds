@@ -73,7 +73,7 @@ class User extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['role', 'negara_area_id', 'state_area_id', 'district_area_id', 'sub_base_area_id', 'cluster_area_id', 'kampung_area_id', 'status'], 'integer'],
+            [['role', 'negara_area_id', 'state_area_id', 'district_area_id', 'sub_base_area_id', 'cluster_area_id', 'kampung_area_id', 'status','bahagian_id','mukim_id'], 'integer'],
             [['username', 'pendapatan', 'pekerjaan', 'jawatan', 'kampung_id', 'state_id', 'district_id', 'kewarganegaraan', 'status_perkahwinan', 'tempat_lahir', 'created_at', 'updated_at'], 'string', 'max' => 225],
             [['nama', 'email', 'password_hash'], 'string', 'max' => 255],
             [['address'], 'string', 'max' => 200],
@@ -132,6 +132,8 @@ class User extends \yii\db\ActiveRecord
             'status' => 'Status Akaun',
             'created_at' => 'Created At',
             'updated_at' => 'Updated At',
+            'bahagian_id'=>'Bahagian',
+            'mukim_id'=>'Mukim',
         ];
     }
 
