@@ -18,8 +18,8 @@ class UserMicroSearch extends User
     public function rules()
     {
         return [
-            [['id', 'role', 'negara_area_id', 'state_area_id', 'district_area_id', 'sub_base_area_id', 'cluster_area_id', 'kampung_area_id', 'status'], 'integer'],
-            [['username', 'nama', 'email', 'address', 'ic_no', 'mobile_no', 'home_no', 'no_tel_pej', 'pendapatan', 'pekerjaan', 'jawatan', 'mukim', 'kampung_id', 'state_id', 'district_id', 'kewarganegaraan', 'status_perkahwinan', 'bangsa', 'agama', 'jantina', 'bank', 'no_akaun', 'tarikh_lahir', 'tempat_lahir', 'ic_no_old', 'poskod', 'status_area', 'tarikh_daftar_kerja', 'auth_key', 'password_hash', 'created_at', 'updated_at'], 'safe'],
+            [['id', 'role', 'negara_area_id', 'state_area_id', 'district_area_id', 'sub_base_area_id', 'cluster_area_id', 'kampung_area_id', 'status','bahagian_id','mukim_id'], 'integer'],
+            [['username', 'nama', 'email', 'address', 'ic_no', 'mobile_no', 'home_no', 'no_tel_pej', 'pendapatan', 'pekerjaan', 'jawatan', 'mukim', 'kampung_id', 'state_id', 'district_id', 'kewarganegaraan', 'status_perkahwinan', 'bangsa', 'agama', 'jantina', 'bank', 'no_akaun', 'tarikh_lahir', 'tempat_lahir', 'ic_no_old', 'poskod', 'status_area', 'tarikh_daftar_kerja', 'auth_key', 'password_hash', 'created_at', 'updated_at','bahagian_id','mukim_id'], 'safe'],
         ];
     }
 
@@ -61,11 +61,15 @@ class UserMicroSearch extends User
             'role' => $this->role,
             'negara_area_id' => $this->negara_area_id,
             'state_area_id' => $this->state_area_id,
+            'bahagian_id'=>$this->bahagian_id,
             'district_area_id' => $this->district_area_id,
+            'mukim_id'=> $this->mukim_id,
             'sub_base_area_id' => $this->sub_base_area_id,
             'cluster_area_id' => $this->cluster_area_id,
             'kampung_area_id' => $this->kampung_area_id,
             'status' => $this->status,
+            
+            
         ]);
 
         $query->andFilterWhere(['like', 'username', $this->username])
@@ -100,7 +104,20 @@ class UserMicroSearch extends User
             ->andFilterWhere(['like', 'password_hash', $this->password_hash])
             ->andFilterWhere(['like', 'created_at', $this->created_at])
             ->andFilterWhere(['like', 'updated_at', $this->updated_at]);
-
+            /*->andFilterWhere(['or',['like','state_area_id',$this->state_area_id],
+                ['like','bahagian_id',$this->bahagian_id],
+                ['like','district_area_id',$this->district_area_id],
+                ['like','sub_base_area_id',$this->sub_base_area_id],
+                ['like','cluster_area_id',$this->cluster_area_id],
+                ['like','kampung_area_id',$this->kampung_area_id],
+                ['like','mukim_id',$this->mukim_id]]);
+            ->orFilterWhere(['like', 'state_area_id', $this->state_area_id])
+            ->orFilterWhere(['like', 'bahagian_id', $this->bahagian_id])
+            ->orFilterWhere(['like', 'district_area_id', $this->district_area_id])
+            ->orFilterWhere(['like', 'sub_base_area_id', $this->sub_base_area_id])
+            ->orFilterWhere(['like', 'cluster_area_id', $this->cluster_area_id])
+            ->orFilterWhere(['like', 'kampung_area_id', $this->kampung_area_id])
+            ->orFilterWhere(['like', 'mukim_id', $this->mukim_id]);*/
         return $dataProvider;
     }
 }

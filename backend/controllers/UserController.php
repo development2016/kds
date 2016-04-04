@@ -171,7 +171,7 @@ class UserController extends Controller
         ->all();
          
         if($countPosts>0){
-            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            echo "<option value=''>Sila Pilih</option>";
             foreach($posts as $post){
                 echo "<option value='".$post->state_id."'>".$post->state."</option>";
             }
@@ -192,7 +192,7 @@ class UserController extends Controller
         ->all();
          
         if($countPosts>0){
-            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            echo "<option value=''>Sila Pilih</option>";
             foreach($posts as $post){
                 echo "<option value='".$post->district_id."'>".$post->district."</option>";
             }
@@ -213,7 +213,7 @@ class UserController extends Controller
         ->all();
          
         if($countPosts>0){
-            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            echo "<option value=''>Sila Pilih</option>";
             foreach($posts as $post){
                 echo "<option value='".$post->kampung_id."'>".$post->kampung."</option>";
             }
@@ -236,7 +236,7 @@ class UserController extends Controller
         ->all();
          
         if($countPosts>0){
-            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            echo "<option value=''>Sila Pilih</option>";
             foreach($posts as $post){
                 echo "<option value='".$post->district_id."'>".$post->district."</option>";
             }
@@ -257,7 +257,7 @@ class UserController extends Controller
         ->all();
          
         if($countPosts>0){
-            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            echo "<option value=''>Sila Pilih</option>";
             foreach($posts as $post){
                 echo "<option value='".$post->sub_base_id."'>".$post->sub_base."</option>";
             }
@@ -277,7 +277,7 @@ class UserController extends Controller
         ->all();
          
         if($countPosts>0){
-            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            echo "<option value=''>Sila Pilih</option>";
             foreach($posts as $post){
                 echo "<option value='".$post->cluster_id."'>".$post->cluster."</option>";
             }
@@ -319,7 +319,7 @@ public function actionListbahagian($id)
         ->all();
          
         if($countPosts>0){
-            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            echo "<option value=''>Sila Pilih</option>";
             foreach($posts as $post){
                 echo "<option value='".$post->bahagian_id."'>".$post->bahagian."</option>";
             }
@@ -339,7 +339,7 @@ public function actionListbahagian($id)
         ->all();
          
         if($countPosts>0){
-            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            echo "<option value=''>Sila Pilih</option>";
             foreach($posts as $post){
                 echo "<option value='".$post->district_id."'>".$post->district."</option>";
             }
@@ -359,7 +359,7 @@ public function actionListbahagian($id)
         ->all();
          
         if($countPosts>0){
-            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            echo "<option value=''>Sila Pilih</option>";
             foreach($posts as $post){
                 echo "<option value='".$post->mukim_id."'>".$post->mukim."</option>";
             }

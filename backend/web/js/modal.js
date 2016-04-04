@@ -1336,4 +1336,136 @@ else if($('#state_mikroworker').val() > 22 || $('#state_mikroworker').val() < 21
 }
 /* end update mikroworker */
 /* end mikroworker by shahril*/
+/* searching mikroworker */
+$('#mikroworker_search').change(function(){
+    if ($(this).val() == 22) {
+        $(".johor_mikro").show(500);
+        $(".sarawak_mikro").hide(500);
+        $(".other_state_mikro").hide(500);
+
+        $("select#district_bahagian").prop('disabled', true);
+        $("select#subbasesarawak").prop('disabled', true);
+        $("select#clustersarawak").prop('disabled', true);
+        $("select#bahagian").prop('disabled', true);
+        $("select#kampungsarawak").prop('disabled', true);
+        $("select#district").prop('disabled', true);
+        $("select#subbase_other").prop('disabled', true);
+        $("select#cluster_other").prop('disabled', true);
+        $("select#kampung_other").prop('disabled', true);
+            
+        $("select#johordistrict").prop('disabled', false);
+        $("select#mukim_johor").prop('disabled', false);
+        $("select#subbasejohor").prop('disabled', false);
+        $("select#clusterjohor").prop('disabled', false);
+        $("select#kampungjohor").prop('disabled', false);
+    }
+    else if($(this).val() == 21) {
+        $(".sarawak_mikro").show(500);
+        $(".johor_mikro").hide(500);
+        $(".other_state_mikro").hide(500);
+
+        $("select#johordistrict").prop('disabled', true);
+        $("select#mukim_johor").prop('disabled', true);
+        $("select#subbasejohor").prop('disabled', true);
+        $("select#clusterjohor").prop('disabled', true);
+        $("select#kampungjohor").prop('disabled', true);
+        $("select#district").prop('disabled', true);
+        $("select#subbase_other").prop('disabled', true);
+        $("select#cluster_other").prop('disabled', true);
+        $("select#kampung_other").prop('disabled', true);
+
+        $("select#district_bahagian").prop('disabled', false);
+        $("select#subbasesarawak").prop('disabled', false);
+        $("select#clustersarawak").prop('disabled', false);
+        $("select#kampungsarawak").prop('disabled', false);
+        $("select#bahagian").prop('disabled', false);
+    }
+    else{
+        $(".other_state_mikro").show(500);
+        $(".sarawak_mikro").hide(500);
+        $(".johor_mikro").hide(500);
+
+        $("select#district_bahagian").prop('disabled', true);
+        $("select#subbasesarawak").prop('disabled', true);
+        $("select#clustersarawak").prop('disabled', true);
+        $("select#kampungsarawak").prop('disabled', true);
+        $("select#bahagian").prop('disabled', true);
+        $("select#johordistrict").prop('disabled', true);
+        $("select#mukim_johor").prop('disabled', true);
+        $("select#subbasejohor").prop('disabled', true);
+        $("select#clusterjohor").prop('disabled', true);
+        $("select#kampungjohor").prop('disabled', true);
+
+        $("select#district").prop('disabled', false);
+        $("select#subbase_other").prop('disabled', false);
+        $("select#cluster_other").prop('disabled', false);
+        $("select#kampung_other").prop('disabled', false);
+    }
+});
+/* end mikroworker */
+/* searching mikroworker */
+if ($('#mikroworker_search').val() == 22) {
+    $(".johor_mikro").show(500);
+        $(".sarawak_mikro").hide(500);
+        $(".other_state_mikro").hide(500);
+
+        $("select#district_bahagian").prop('disabled', true);
+        $("select#subbasesarawak").prop('disabled', true);
+        $("select#clustersarawak").prop('disabled', true);
+        $("select#bahagian").prop('disabled', true);
+        $("select#kampungsarawak").prop('disabled', true);
+        $("select#district").prop('disabled', true);
+        $("select#subbase_other").prop('disabled', true);
+        $("select#cluster_other").prop('disabled', true);
+        $("select#kampung_other").prop('disabled', true);
+            
+        $("select#johordistrict").prop('disabled', false);
+        $("select#mukim_johor").prop('disabled', false);
+        $("select#subbasejohor").prop('disabled', false);
+        $("select#clusterjohor").prop('disabled', false);
+        $("select#kampungjohor").prop('disabled', false);
+}
+else if($('#mikroworker_search').val() == 21){
+    $(".sarawak_mikro").show(500);
+        $(".johor_mikro").hide(500);
+        $(".other_state_mikro").hide(500);
+
+        $("select#johordistrict").prop('disabled', true);
+        $("select#mukim_johor").prop('disabled', true);
+        $("select#subbasejohor").prop('disabled', true);
+        $("select#clusterjohor").prop('disabled', true);
+        $("select#kampungjohor").prop('disabled', true);
+        $("select#district").prop('disabled', true);
+        $("select#subbase_other").prop('disabled', true);
+        $("select#cluster_other").prop('disabled', true);
+        $("select#kampung_other").prop('disabled', true);
+
+        $("select#district_bahagian").prop('disabled', false);
+        $("select#subbasesarawak").prop('disabled', false);
+        $("select#clustersarawak").prop('disabled', false);
+        $("select#kampungsarawak").prop('disabled', false);
+        $("select#bahagian").prop('disabled', false);
+}
+else if($('#mikroworker_search').val() > 22 || $('#mikroworker_search').val() < 21 ){
+    $(".other_state_mikro").show(500);
+        $(".sarawak_mikro").hide(500);
+        $(".johor_mikro").hide(500);
+
+        $("select#district_bahagian").prop('disabled', true);
+        $("select#subbasesarawak").prop('disabled', true);
+        $("select#clustersarawak").prop('disabled', true);
+        $("select#kampungsarawak").prop('disabled', true);
+        $("select#bahagian").prop('disabled', true);
+        $("select#johordistrict").prop('disabled', true);
+        $("select#mukim_johor").prop('disabled', true);
+        $("select#subbasejohor").prop('disabled', true);
+        $("select#clusterjohor").prop('disabled', true);
+        $("select#kampungjohor").prop('disabled', true);
+
+        $("select#district").prop('disabled', false);
+        $("select#subbase_other").prop('disabled', false);
+        $("select#cluster_other").prop('disabled', false);
+        $("select#kampung_other").prop('disabled', false);
+}
+/* end searching mikroworker */
 });
