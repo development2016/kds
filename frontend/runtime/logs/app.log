@@ -25817,3 +25817,194 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1459992773.19
     'REQUEST_TIME' => 1459992773
 ]
+2016-04-07 02:16:47 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/kds/frontend/models/PeopleSearch.php:45
+Stack trace:
+#0 /var/www/html/kds/frontend/models/PeopleSearch.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/k...', 45, Array)
+#1 /var/www/html/kds/frontend/controllers/PeopleController.php(66): frontend\models\PeopleSearch->search(Array)
+#2 [internal function]: frontend\controllers\PeopleController->actionIndex()
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#6 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('people/index', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-04-07 02:16:47 [::1][-][-][info][application] $_GET = [
+    'r' => 'people/index'
+]
+
+$_COOKIE = [
+    '_frontendUser' => '62700a8efafc61e839df5897786375bb5b6939edf1a4722362a9ec5d52277f6ca:2:{i:0;s:13:\"_frontendUser\";i:1;s:75:\"[30,\"$2y$13$dXJbvFf0KKNZzXXltFmVmuyx5tAMYsbedCDUyKW6LVlOfd9HT13RO\",2592000]\";}'
+    'PHPSESSID' => '0776e9qjlqq8653uv5ig7t8n44'
+    '_csrf' => '8cae58807761f3c9c67653337d521250b422a23f56b1c4ec6b876d1f17fd4976a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ENO9Wl7YvfHeP99CZft38s7VlMIyLHh-\";}'
+    '_identity' => '652cd789e822a4f7e30011b7fa192b7b5ea942bb90a30a378d826e307ac254c7a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/45.0.2454.101 Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_frontendUser=62700a8efafc61e839df5897786375bb5b6939edf1a4722362a9ec5d52277f6ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendUser%22%3Bi%3A1%3Bs%3A75%3A%22%5B30%2C%22%242y%2413%24dXJbvFf0KKNZzXXltFmVmuyx5tAMYsbedCDUyKW6LVlOfd9HT13RO%22%2C2592000%5D%22%3B%7D; PHPSESSID=0776e9qjlqq8653uv5ig7t8n44; _csrf=8cae58807761f3c9c67653337d521250b422a23f56b1c4ec6b876d1f17fd4976a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ENO9Wl7YvfHeP99CZft38s7VlMIyLHh-%22%3B%7D; _identity=652cd789e822a4f7e30011b7fa192b7b5ea942bb90a30a378d826e307ac254c7a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '35479'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=people%2Findex'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=people%2Findex'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1459995407.771
+    'REQUEST_TIME' => 1459995407
+]
+2016-04-07 02:31:54 [::1][1][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: mukim' in /var/www/html/kds/frontend/views/people/_searchProfil.php:194
+Stack trace:
+#0 /var/www/html/kds/frontend/views/people/_searchProfil.php(194): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/k...', 194, Array)
+#1 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/k...')
+#2 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/k...', Array)
+#3 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/k...', Array, NULL)
+#4 /var/www/html/kds/frontend/views/people/profil.php(67): yii\base\View->render('_searchProfil', Array)
+#5 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/k...')
+#6 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/k...', Array)
+#7 /var/www/html/kds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/k...', Array, Object(frontend\controllers\PeopleController))
+#8 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('profil', Array, Object(frontend\controllers\PeopleController))
+#9 /var/www/html/kds/frontend/controllers/PeopleController.php(60): yii\base\Controller->render('profil', Array)
+#10 [internal function]: frontend\controllers\PeopleController->actionProfil()
+#11 /var/www/html/kds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#12 /var/www/html/kds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#13 /var/www/html/kds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('profil', Array)
+#14 /var/www/html/kds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('people/profil', Array)
+#15 /var/www/html/kds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /var/www/html/kds/frontend/web/index.php(18): yii\base\Application->run()
+#17 {main}
+2016-04-07 02:31:54 [::1][1][-][info][application] $_GET = [
+    'r' => 'people/profil'
+]
+
+$_COOKIE = [
+    '_frontendUser' => '62700a8efafc61e839df5897786375bb5b6939edf1a4722362a9ec5d52277f6ca:2:{i:0;s:13:\"_frontendUser\";i:1;s:75:\"[30,\"$2y$13$dXJbvFf0KKNZzXXltFmVmuyx5tAMYsbedCDUyKW6LVlOfd9HT13RO\",2592000]\";}'
+    '_csrf' => '2abbdc580a25fe914208893bd2786f5b96bf5436c009f53fc900081d75ba6197a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e7vxsXSyTkvwtutgqtLtbE35y98B6Ggm\";}'
+    'PHPSESSID' => '8gvhse92qhk7hh5pmgm9logao4'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/frontend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/45.0.2454.101 Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_frontendUser=62700a8efafc61e839df5897786375bb5b6939edf1a4722362a9ec5d52277f6ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendUser%22%3Bi%3A1%3Bs%3A75%3A%22%5B30%2C%22%242y%2413%24dXJbvFf0KKNZzXXltFmVmuyx5tAMYsbedCDUyKW6LVlOfd9HT13RO%22%2C2592000%5D%22%3B%7D; _csrf=2abbdc580a25fe914208893bd2786f5b96bf5436c009f53fc900081d75ba6197a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e7vxsXSyTkvwtutgqtLtbE35y98B6Ggm%22%3B%7D; PHPSESSID=8gvhse92qhk7hh5pmgm9logao4; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '35815'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=people%2Fprofil'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=people%2Fprofil'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1459996314.819
+    'REQUEST_TIME' => 1459996314
+]
+2016-04-07 02:32:33 [::1][1][8gvhse92qhk7hh5pmgm9logao4][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'LookupSubBase' not found' in /var/www/html/kds/frontend/views/people/_searchProfil.php:35
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-04-07 02:32:33 [::1][1][8gvhse92qhk7hh5pmgm9logao4][info][application] $_GET = [
+    'r' => 'people/profil'
+]
+
+$_COOKIE = [
+    '_frontendUser' => '62700a8efafc61e839df5897786375bb5b6939edf1a4722362a9ec5d52277f6ca:2:{i:0;s:13:\"_frontendUser\";i:1;s:75:\"[30,\"$2y$13$dXJbvFf0KKNZzXXltFmVmuyx5tAMYsbedCDUyKW6LVlOfd9HT13RO\",2592000]\";}'
+    '_csrf' => '2abbdc580a25fe914208893bd2786f5b96bf5436c009f53fc900081d75ba6197a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e7vxsXSyTkvwtutgqtLtbE35y98B6Ggm\";}'
+    'PHPSESSID' => '8gvhse92qhk7hh5pmgm9logao4'
+    '_identity' => '51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"wq6FlOY1ZsioNc2FGU01PubMORGIuf5X\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/kds/frontend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/45.0.2454.101 Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/kds/frontend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_frontendUser=62700a8efafc61e839df5897786375bb5b6939edf1a4722362a9ec5d52277f6ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendUser%22%3Bi%3A1%3Bs%3A75%3A%22%5B30%2C%22%242y%2413%24dXJbvFf0KKNZzXXltFmVmuyx5tAMYsbedCDUyKW6LVlOfd9HT13RO%22%2C2592000%5D%22%3B%7D; _csrf=2abbdc580a25fe914208893bd2786f5b96bf5436c009f53fc900081d75ba6197a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e7vxsXSyTkvwtutgqtLtbE35y98B6Ggm%22%3B%7D; PHPSESSID=8gvhse92qhk7hh5pmgm9logao4; _identity=51f116a86ce82c57696aba2f1b5297c12de53765baa8a3f0251f73e044567ae4a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22wq6FlOY1ZsioNc2FGU01PubMORGIuf5X%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/kds/frontend/web/index.php'
+    'REMOTE_PORT' => '35828'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=people%2Fprofil'
+    'REQUEST_URI' => '/kds/frontend/web/index.php?r=people%2Fprofil'
+    'SCRIPT_NAME' => '/kds/frontend/web/index.php'
+    'PHP_SELF' => '/kds/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1459996353.645
+    'REQUEST_TIME' => 1459996353
+]
