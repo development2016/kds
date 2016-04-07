@@ -18,7 +18,7 @@ class ManagerTrainSearch extends ManagerTrain
     public function rules()
     {
         return [
-            [['id', 'cat_id', 'state_id', 'district_id', 'mukim_id', 'sub_base_id', 'cluster_id', 'kampung_id', 'enter_by'], 'integer'],
+            [['id', 'cat_id', 'state_id', 'district_id', 'mukim_id', 'sub_base_id', 'cluster_id', 'kampung_id', 'enter_by','bahagian_id'], 'integer'],
             [['rangkaian_fasiliti_awam', 'location', 'alamat', 'poskod', 'nama_pengurus', 'ic', 'jantina', 'no_fon', 'date_enter'], 'safe'],
         ];
     }
@@ -65,6 +65,7 @@ class ManagerTrainSearch extends ManagerTrain
             'cluster_id' => $this->cluster_id,
             'kampung_id' => $this->kampung_id,
             'enter_by' => $this->enter_by,
+            'bahagian_id'=>$this->bahagian_id,
         ]);
 
         $query->andFilterWhere(['like', 'rangkaian_fasiliti_awam', $this->rangkaian_fasiliti_awam])

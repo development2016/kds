@@ -75,7 +75,7 @@ $bahagian = ArrayHelper::map(LookupBahagian::find()->where(['state_id'=>$model->
                                 /*'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['people/listdistrict','id'=>'']).'"+$(this).val(), function( data ) {$( "select#district" ).html( data );});*',*/
 
                                 'class'=>'form-control state_drilldown']); ?>
-                            <label for="form_control_1"><?= Html::activeLabel($model,'state_area_id'); ?> <span class="required">*</span></label>
+                            <label for="form_control_1"><?= Html::activeLabel($model,'state_area_id'); ?></label>
                             <span class="help-block"><?= Html::error($model,'state_area_id'); ?></span>
                     </div>
                 </div>
@@ -87,7 +87,7 @@ $bahagian = ArrayHelper::map(LookupBahagian::find()->where(['state_id'=>$model->
                                     'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['user/listmukim','id'=>'']).'"+$(this).val(), function( data ) {$( "select#mukim_johor" ).html( data );});',
                                     'prompt'=>'','id'=>'johordistrict',
                                     'class'=>'form-control']); ?>
-                                    <label for="form_control_1"><?= Html::activeLabel($model,'district_area_id'); ?> <span class="required">*</span></label>
+                                    <label for="form_control_1"><?= Html::activeLabel($model,'district_area_id'); ?></label>
                                     <span class="help-block"><?= Html::error($model,'district_area_id'); ?></span>
                         </div>
                     </div>
@@ -132,7 +132,7 @@ $bahagian = ArrayHelper::map(LookupBahagian::find()->where(['state_id'=>$model->
                                     'prompt'=>'','id'=>'kampungjohor',
                                     'class'=>'form-control',
                                 ]); ?>
-                                    <label for="form_control_1"><?= Html::activeLabel($model,'kampung_area_id'); ?> <span class="required">*</span></label>
+                                    <label for="form_control_1"><?= Html::activeLabel($model,'kampung_area_id'); ?></label>
                                     <span class="help-block"><?= Html::error($model,'kampung_area_id'); ?></span>
                         </div>
                     </div>
@@ -190,7 +190,7 @@ $bahagian = ArrayHelper::map(LookupBahagian::find()->where(['state_id'=>$model->
                                     'prompt'=>'','id'=>'kampungsarawak',
                                     'class'=>'form-control',
                                 ]); ?>
-                                    <label for="form_control_1"><?= Html::activeLabel($model,'kampung_area_id'); ?> <span class="required">*</span></label>
+                                    <label for="form_control_1"><?= Html::activeLabel($model,'kampung_area_id'); ?></label>
                                     <span class="help-block"><?= Html::error($model,'kampung_area_id'); ?></span>
                         </div>
                     </div>
@@ -203,7 +203,7 @@ $bahagian = ArrayHelper::map(LookupBahagian::find()->where(['state_id'=>$model->
                                     'prompt'=>'','id'=>'district',
                                     'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['user/listsubbasearea','id'=>'']).'"+$(this).val(), function( data ) {$( "select#subbase_other" ).html( data );});',
                                     'class'=>'form-control']); ?>
-                                    <label for="form_control_1"><?= Html::activeLabel($model,'district_area_id'); ?> <span class="required">*</span></label>
+                                    <label for="form_control_1"><?= Html::activeLabel($model,'district_area_id'); ?></label>
                                     <span class="help-block"><?= Html::error($model,'district_area_id'); ?></span>
                         </div>
                     </div>
@@ -215,7 +215,7 @@ $bahagian = ArrayHelper::map(LookupBahagian::find()->where(['state_id'=>$model->
                                     'prompt'=>'','id'=>'subbase_other',
                                     'class'=>'form-control',
                                 ]); ?>
-                                    <label for="form_control_1"><?= Html::activeLabel($model,'sub_base_area_id'); ?> <span class="required">*</span></label>
+                                    <label for="form_control_1"><?= Html::activeLabel($model,'sub_base_area_id'); ?></label>
                                     <span class="help-block"><?= Html::error($model,'sub_base_area_id'); ?></span>
                         </div>
                     </div>
@@ -227,7 +227,7 @@ $bahagian = ArrayHelper::map(LookupBahagian::find()->where(['state_id'=>$model->
                                     'prompt'=>'','id'=>'cluster_other',
                                     'class'=>'form-control',
                                 ]); ?>
-                                    <label for="form_control_1"><?= Html::activeLabel($model,'cluster_area_id'); ?> <span class="required">*</span></label>
+                                    <label for="form_control_1"><?= Html::activeLabel($model,'cluster_area_id'); ?></label>
                                     <span class="help-block"><?= Html::error($model,'cluster_area_id'); ?></span>
                         </div>
                     </div>
@@ -238,7 +238,7 @@ $bahagian = ArrayHelper::map(LookupBahagian::find()->where(['state_id'=>$model->
                                     'prompt'=>'','id'=>'kampung_other',
                                     'class'=>'form-control',
                                 ]); ?>
-                                    <label for="form_control_1"><?= Html::activeLabel($model,'kampung_area_id'); ?> <span class="required">*</span></label>
+                                    <label for="form_control_1"><?= Html::activeLabel($model,'kampung_area_id'); ?></label>
                                     <span class="help-block"><?= Html::error($model,'kampung_area_id'); ?></span>
                         </div>
                     </div>

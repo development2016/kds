@@ -18,7 +18,7 @@ class PfnSearch extends Pfn
     public function rules()
     {
         return [
-            [['pfn_id', 'cat_id', 'kampung_id', 'cluster_id', 'sub_base_id', 'district_id', 'state_id', 'enter_by','mukim_id'], 'integer'],
+            [['pfn_id', 'cat_id', 'kampung_id', 'cluster_id', 'sub_base_id', 'district_id', 'state_id', 'enter_by','mukim_id','bahagian_id'], 'integer'],
             [['pfn_code', 'date', 'pfn_name', 'lokasi', 'alamat', 'poskod', 'nama_pengurus', 'no_kp', 'no_kp_old', 'jantina', 'mobile', 'no_tel', 'fax', 'email', 'elektrik', 'keadaan_elektrik', 'air', 'keadaan_air', 'meja', 'jumlah_meja', 'keadaan_meja', 'kerusi', 'jumlah_kerusi', 'keadaan_kerusi', 'papan_putih', 'keadaan_papan_putih', 'bilik_mesyuarat', 'keadaan_bilik_mesyuarat', 'keaktifan_bilik_mesyuarat', 'keluasan_bilik_mesyuarat', 'kawasan_lapang', 'keluasan_kawasan_lapang', 'tandas', 'keadaan_tandas', 'bilik_mandi', 'keadaan_bilik_mandi', 'ruang_solat', 'keadaan_ruang_solat', 'rating_kemudahan_asas', 'komputer', 'bilangan_komputer', 'keadaan_komputer', 'projektor', 'bilangan_projektor', 'keadaan_projektor', 'mesin_pencetak', 'bilangan_mesin_pencetak', 'keadaan_mesin_pencetak', 'mesin_faks', 'bilangan_mesin_faks', 'keadaan_mesin_faks', 'pa_system', 'keadaan_pa_system', 'unifi', 'streamyx', 'lain_internet', 'maxis', 'digi', 'celcom', 'p1wimax', 'yes4g', 'lain_broadband', 'rating_kemudahan_ict', 'kerusi_bilik_latihan', 'bil_kerusi_bilik_latihan', 'keadaan_kerusi_bilik_latihan', 'meja_bilik_latihan', 'bil_meja_bilik_latihan', 'keadaan_meja_bilik_latihan', 'keluasan_bilik_latihan', 'penghawa_dingin_bilik_latihan', 'bilangan_penghawa_dingin_bilik_latihan', 'keadaan_penghawa_dingin_bilik_latihan', 'papan_putih_bilik_latihan', 'bilangan_papan_putih_bilik_latihan', 'keadaan_papan_putih_bilik_latihan', 'rating_bilik_latihan', 'rating_equip', 'tempat_letak_kereta_oku', 'tandas_khas_oku', 'laluan_khas_oku', 'tangga_handrail_oku', 'papan_tanda_khas_oku', 'rating_mesra_oku', 'jarak_pfn_komuniti', 'tempat_letak_kenderaan_capaian', 'jarak_tempat_letak_kenderaan_capaian', 'kedai_runcit', 'jarak_kedai_runcit', 'kedai_makan', 'jarak_kedai_makan', 'stesen_minyak', 'jarak_stesen_minyak', 'hentian_bas', 'jarak_hentian_bas', 'isyarat_telekomunikasi', 'rating_capaian', 'ulasan_keadaan_fizikal', 'kerjasama_pengurus', 'rating_keseluruhan_pfn', 'tarikh_daftar', 'didaftarkan_oleh', 'tarikh_audit', 'diaudit_oleh', 'nota', 'nama_pengurus2', 'no_kp2', 'no_kp_old2', 'jantina2', 'mobile2', 'no_tel2', 'fax2', 'email2', 'koordinate', 'date_enter','status_audit','status_rangkaian'], 'safe'],
         ];
     }
@@ -94,6 +94,7 @@ class PfnSearch extends Pfn
             'mukim_id' => $this->mukim_id,
             'state_id' => $this->state_id,
             'enter_by' => $this->enter_by,
+            'bahagian_id'=>$this->bahagian_id,
         ]);
 
         $query->andFilterWhere(['like', 'pfn_code', $this->pfn_code])

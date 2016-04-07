@@ -939,6 +939,71 @@ $('#state_pfn').change(function(){
     }
 });
 /* end PFN by shahril */
+/* */
+if ($('#state_pfn').val() == 22) {
+    $(".johor_pfn").show(500);
+        $(".sarawak_pfn").hide(500);
+        $(".other_state_pfn").hide(500);
+
+        $("select#district_bahagian").prop('disabled', true);
+        $("select#subbasesarawak").prop('disabled', true);
+        $("select#clustersarawak").prop('disabled', true);
+        $("select#bahagian").prop('disabled', true);
+        $("select#kampungsarawak").prop('disabled', true);
+        $("select#district").prop('disabled', true);
+        $("select#subbase_other").prop('disabled', true);
+        $("select#cluster_other").prop('disabled', true);
+        $("select#kampung_other").prop('disabled', true);
+            
+        $("select#johordistrict").prop('disabled', false);
+        $("select#mukim_johor").prop('disabled', false);
+        $("select#subbasejohor").prop('disabled', false);
+        $("select#clusterjohor").prop('disabled', false);
+        $("select#kampungjohor").prop('disabled', false);
+}
+else if($('#state_pfn').val() == 21){
+    $(".sarawak_pfn").show(500);
+        $(".johor_pfn").hide(500);
+        $(".other_state_pfn").hide(500);
+
+        $("select#johordistrict").prop('disabled', true);
+        $("select#mukim_johor").prop('disabled', true);
+        $("select#subbasejohor").prop('disabled', true);
+        $("select#clusterjohor").prop('disabled', true);
+        $("select#kampungjohor").prop('disabled', true);
+        $("select#district").prop('disabled', true);
+        $("select#subbase_other").prop('disabled', true);
+        $("select#cluster_other").prop('disabled', true);
+        $("select#kampung_other").prop('disabled', true);
+
+        $("select#district_bahagian").prop('disabled', false);
+        $("select#subbasesarawak").prop('disabled', false);
+        $("select#clustersarawak").prop('disabled', false);
+        $("select#kampungsarawak").prop('disabled', false);
+        $("select#bahagian").prop('disabled', false);
+}
+else if($('#state_pfn').val() > 22 || $('#state_pfn').val() < 21 ){
+    $(".other_state_pfn").show(500);
+        $(".sarawak_pfn").hide(500);
+        $(".johor_pfn").hide(500);
+
+        $("select#district_bahagian").prop('disabled', true);
+        $("select#subbasesarawak").prop('disabled', true);
+        $("select#clustersarawak").prop('disabled', true);
+        $("select#kampungsarawak").prop('disabled', true);
+        $("select#bahagian").prop('disabled', true);
+        $("select#johordistrict").prop('disabled', true);
+        $("select#mukim_johor").prop('disabled', true);
+        $("select#subbasejohor").prop('disabled', true);
+        $("select#clusterjohor").prop('disabled', true);
+        $("select#kampungjohor").prop('disabled', true);
+
+        $("select#district").prop('disabled', false);
+        $("select#subbase_other").prop('disabled', false);
+        $("select#cluster_other").prop('disabled', false);
+        $("select#kampung_other").prop('disabled', false);
+}
+/* */
 /* demographic create by shahril */
 $('#state_demografic').change(function(){
     if ($(this).val() == 22) {

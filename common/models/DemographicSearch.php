@@ -18,7 +18,7 @@ class DemographicSearch extends Demographic
     public function rules()
     {
         return [
-            [['demographic_id', 'state_id', 'district_id', 'mukim_id', 'sub_base_id', 'cluster_id', 'kampung_id', 'bilangan_rumah', 'jenis_kampung_id', 'corak_penempatan_id', 'jenis_perumahan_id'], 'integer'],
+            [['demographic_id', 'state_id', 'district_id','bahagian_id', 'mukim_id', 'sub_base_id', 'cluster_id', 'kampung_id', 'bilangan_rumah', 'jenis_kampung_id', 'corak_penempatan_id', 'jenis_perumahan_id'], 'integer'],
             [['nama_ketua_kampung', 'no_tel', 'aktiviti_penduduk_kampung', 'koordinate'], 'safe'],
         ];
     }
@@ -94,6 +94,7 @@ class DemographicSearch extends Demographic
             'jenis_kampung_id' => $this->jenis_kampung_id,
             'corak_penempatan_id' => $this->corak_penempatan_id,
             'jenis_perumahan_id' => $this->jenis_perumahan_id,
+            'bahagian_id'=>$this->bahagian_id,
         ]);
 
         $query->andFilterWhere(['like', 'nama_ketua_kampung', $this->nama_ketua_kampung])

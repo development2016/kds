@@ -186,7 +186,7 @@ class IssueConduitController extends Controller
         ->all();
          
         if($countPosts>0){
-            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            echo "<option value=''>Sila Pilih</option>";
             foreach($posts as $post){
                 echo "<option value='".$post->district_id."'>".$post->district."</option>";
             }
@@ -208,7 +208,7 @@ class IssueConduitController extends Controller
         ->all();
          
         if($countPosts>0){
-            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            echo "<option value=''>Sila Pilih</option>";
             foreach($posts as $post){
                 echo "<option value='".$post->sub_base_id."'>".$post->sub_base."</option>";
             }
@@ -228,7 +228,7 @@ class IssueConduitController extends Controller
         ->all();
          
         if($countPosts>0){
-            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            echo "<option value=''>Sila Pilih</option>";
             foreach($posts as $post){
                 echo "<option value='".$post->cluster_id."'>".$post->cluster."</option>";
             }
@@ -249,7 +249,7 @@ class IssueConduitController extends Controller
         ->all();
          
         if($countPosts>0){
-            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            echo "<option value=''>Sila Pilih</option>";
             foreach($posts as $post){
                 echo "<option value='".$post->kampung_id."'>".$post->kampung."</option>";
             }
@@ -317,7 +317,7 @@ class IssueConduitController extends Controller
         ->all();
          
         if($countPosts>0){
-            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            echo "<option value=''>Sila Pilih</option>";
             foreach($posts as $post){
                 echo "<option value='".$post->bahagian_id."'>".$post->bahagian."</option>";
             }
@@ -337,7 +337,7 @@ class IssueConduitController extends Controller
         ->all();
          
         if($countPosts>0){
-            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            echo "<option value=''>Sila Pilih</option>";
             foreach($posts as $post){
                 echo "<option value='".$post->district_id."'>".$post->district."</option>";
             }
@@ -357,7 +357,7 @@ class IssueConduitController extends Controller
         ->all();
          
         if($countPosts>0){
-            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            echo "<option value=''>Sila Pilih</option>";
             foreach($posts as $post){
                 echo "<option value='".$post->mukim_id."'>".$post->mukim."</option>";
             }
@@ -377,7 +377,7 @@ class IssueConduitController extends Controller
         ->all();
          
         if($countPosts>0){
-            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            echo "<option value=''>Sila Pilih</option>";
             foreach($posts as $post){
                 echo "<option value='".$post->sub_base_id."'>".$post->sub_base."</option>";
             }

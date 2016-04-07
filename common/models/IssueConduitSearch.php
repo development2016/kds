@@ -18,7 +18,7 @@ class IssueConduitSearch extends IssueConduit
     public function rules()
     {
         return [
-            [['issue_id', 'age', 'religion', 'race', 'marital_status', 'kampung_id', 'cluster_id', 'sub_base_id', 'district_id', 'state_id', 'mukim_id', 'issue_category', 'enter_by','kategori_oku_id'], 'integer'],
+            [['issue_id', 'age', 'religion', 'race', 'marital_status', 'kampung_id', 'cluster_id', 'sub_base_id', 'district_id', 'state_id', 'mukim_id', 'issue_category','bahagian_id', 'enter_by','kategori_oku_id'], 'integer'],
             [['issue_code', 'area_code', 'date', 'day', 'time', 'name', 'no_kp', 'no_kp_old', 'jantina', 'address', 'postcode', 'no_tel', 'issue_report', 'report_by', 'witness_by', 'received_by', 'status', 'analisis_isu', 'cadangan', 'date_enter', 'kategori_oku'], 'safe'],
         ];
     }
@@ -101,6 +101,7 @@ class IssueConduitSearch extends IssueConduit
             'issue_category' => $this->issue_category,
             'enter_by' => $this->enter_by,
             'kategori_oku_id' => $this->kategori_oku_id,
+            'bahagian_id'=>$this->bahagian_id,
         ]);
 
         $query->andFilterWhere(['like', 'issue_code', $this->issue_code])
