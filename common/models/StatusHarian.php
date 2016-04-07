@@ -34,7 +34,7 @@ class StatusHarian extends \yii\db\ActiveRecord
     {
         return [
             [['item'], 'string', 'max' => 225],
-            [['pahang', 'kedah', 'perlis', 'terengganu', 'perak', 'johor', 'selangor'], 'string', 'max' => 50]
+            [['pahang', 'kedah', 'perlis', 'terengganu', 'perak', 'johor', 'selangor','sarawak'], 'string', 'max' => 50]
         ];
     }
 
@@ -53,6 +53,7 @@ class StatusHarian extends \yii\db\ActiveRecord
             'perak' => 'Perak',
             'johor' => 'Johor',
             'selangor' => 'Selangor',
+            'sarawak'=>'Sarawak',
         ];
     }
 }

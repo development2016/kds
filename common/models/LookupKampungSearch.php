@@ -59,21 +59,22 @@ class LookupKampungSearch extends LookupKampung
         $query->andFilterWhere([
             'state_id' => $this->state_id,
             'district_id' => $this->district_id,
-            'cluster_id' => $this->cluster_id,
-            'sub_base_id' => $this->sub_base_id,
-            
-            'kampung_id' => $this->kampung_id,
             'mukim_id' => $this->mukim_id,
+            'sub_base_id' => $this->sub_base_id,
+            'cluster_id' => $this->cluster_id,
+            'kampung_id' => $this->kampung_id,
+            
             //'kampcom_id' => $this->kampcom_id,
             'bahagian_id'=>$this->bahagian_id,
         ]);
 
-        $query->andFilterWhere(['like', 'kampung_id', $this->kampung])
+        /*$query->andFilterWhere(['like', 'state_id', $this->state_id])
+            ->andFilterWhere(['like', 'kampung_id', $this->kampung])
             ->andFilterWhere(['like', 'cluster_id', $this->cluster_id])
             ->andFilterWhere(['like', 'sub_base_id', $this->sub_base_id])
             ->andFilterWhere(['like', 'district_id', $this->district_id])
-            ->andFilterWhere(['like', 'state_id', $this->state_id])
-            ->andFilterWhere(['like', 'mukim_id', $this->mukim_id]);
+            
+            ->andFilterWhere(['like', 'mukim_id', $this->mukim_id]);*/
 
         return $dataProvider;
     }

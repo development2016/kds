@@ -33,7 +33,7 @@ class Status extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['pahang', 'kedah', 'perlis', 'terengganu', 'perak', 'johor', 'selangor'], 'string', 'max'=> 50],
+            [['pahang', 'kedah', 'perlis', 'terengganu', 'perak', 'johor', 'selangor','sarawak'], 'string', 'max'=> 50],
             [['item'], 'string', 'max' => 225]
         ];
     }
@@ -53,6 +53,7 @@ class Status extends \yii\db\ActiveRecord
             'perak' => 'Perak',
             'johor' => 'Johor',
             'selangor' => 'Selangor',
+            'sarawak' =>'Sarawak',
         ];
     }
 }

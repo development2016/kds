@@ -388,6 +388,25 @@ class LookupKampungController extends Controller
      
     }
 
-
+    public function actionListjohorsubbase($id)
+    {
+        $countPosts = LookupSubBase::find()
+        ->where(['mukim_id' => $id])
+        ->count();
+         
+        $posts = LookupSubBase::find() 
+        ->where(['mukim_id' => $id])
+        ->all();
+         
+        if($countPosts>0){
+            echo "<option value=''>Sila Pilih</option>";
+            foreach($posts as $post){
+                echo "<option value='".$post->sub_base_id."'>".$post->sub_base."</option>";
+            }
+        } else {
+                echo "<option>-</option>";
+        }
+     
+    }
     
 }

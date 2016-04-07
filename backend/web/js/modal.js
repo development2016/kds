@@ -545,7 +545,7 @@ if ($('#state_kg').val() == 22) {
         $("select#subbasesarawak").prop('disabled', true);
         $("select#clustersarawak").prop('disabled', true);
         $("select#bahagian").prop('disabled', true);
-        $("select#kampungsarawak").prop('disabled', true);
+        //$("select#kampungsarawak").prop('disabled', true);
         $("select#district").prop('disabled', true);
         $("select#subbase_other").prop('disabled', true);
         $("select#cluster_other").prop('disabled', true);
@@ -592,7 +592,7 @@ else if($('#state_kg').val() > 22 || $('#state_kg').val() < 21 ){
     $("select#subbasesarawak").prop('disabled', true);
     $("select#clustersarawak").prop('disabled', true);
     $("select#bahagian").prop('disabled', true);
-    $("select#kampungsarawak").prop('disabled', true);
+    //$("select#kampungsarawak").prop('disabled', true);
 
     $("select#district").prop('disabled', false);
     $("select#subbase_other").prop('disabled', false);
@@ -612,10 +612,10 @@ $('#search_kg').change(function(){
             $("select#subbase_other").prop('disabled', true);
             $("select#johordistrict").prop('disabled', true);
             $("select#cluster_other").prop('disabled', true);
-            $("select#kampung_other").prop('disabled', true);
+            $("select#kampungother").prop('disabled', true);
             $("select#mukim_johor").prop('disabled', true);
-            $("select#subbasejohor").prop('disabled', true);
-            $("select#clusterjohor").prop('disabled', true);
+            $("select#subbase_johor").prop('disabled', true);
+            $("select#cluster_johor").prop('disabled', true);
             $("select#kampungjohor").prop('disabled', true);
 
             $("select#district_bahagian").prop('disabled', false);
@@ -638,7 +638,7 @@ $('#search_kg').change(function(){
             $("select#district").prop('disabled', true);
             $("select#subbase_other").prop('disabled', true);
             $("select#cluster_other").prop('disabled', true);
-            $("select#kampung_other").prop('disabled', true);
+            $("select#kampungother").prop('disabled', true);
                 
             $("select#johordistrict").prop('disabled', false);
             $("select#mukim_johor").prop('disabled', false);
@@ -650,7 +650,7 @@ $('#search_kg').change(function(){
             $(".lainState").show(500);
             $(".bahagian_sarawak").hide(500);
             $(".johor").hide(500);
-            
+
             $("select#johordistrict").prop('disabled', true);
             $("select#mukim_johor").prop('disabled', true);
             $("select#subbasejohor").prop('disabled', true);
@@ -682,7 +682,7 @@ if ($('#search_kg').val() == 22) {
         $("select#district").prop('disabled', true);
         $("select#subbase_other").prop('disabled', true);
         $("select#cluster_other").prop('disabled', true);
-        $("select#kampung_other").prop('disabled', true);
+        $("select#kampungother").prop('disabled', true);
             
         $("select#johordistrict").prop('disabled', false);
         $("select#mukim_johor").prop('disabled', false);
@@ -699,10 +699,10 @@ else if($('#search_kg').val() == 21){
     $("select#subbase_other").prop('disabled', true);
     $("select#johordistrict").prop('disabled', true);
     $("select#cluster_other").prop('disabled', true);
-    $("select#kampung_other").prop('disabled', true);
+    $("select#kampungother").prop('disabled', true);
     $("select#mukim_johor").prop('disabled', true);
-    $("select#subbasejohor").prop('disabled', true);
-    $("select#clusterjohor").prop('disabled', true);
+    $("select#subbase_johor").prop('disabled', true);
+    $("select#cluster_johor").prop('disabled', true);
     $("select#kampungjohor").prop('disabled', true);
 
     $("select#district_bahagian").prop('disabled', false);
