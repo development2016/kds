@@ -154,7 +154,7 @@ class LookupKampungController extends Controller
         ->all();
          
         if($countPosts>0){
-            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            echo "<option value=''>Sila Pilih</option>";
             foreach($posts as $post){
                 echo "<option value='".$post->district_id."'>".$post->district."</option>";
             }
@@ -175,7 +175,7 @@ class LookupKampungController extends Controller
         ->all();
          
         if($countPosts>0){
-            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            echo "<option value=''>Sila Pilih</option>";
             foreach($posts as $post){
                 echo "<option value='".$post->mukim_id."'>".$post->mukim."</option>";
             }
@@ -195,7 +195,7 @@ class LookupKampungController extends Controller
         ->all();
          
         if($countPosts>0){
-            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            echo "<option value=''>Sila Pilih</option>";
             foreach($posts as $post){
                 echo "<option value='".$post->sub_base_id."'>".$post->sub_base."</option>";
             }
@@ -215,7 +215,7 @@ class LookupKampungController extends Controller
         ->all();
          
         if($countPosts>0){
-            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            echo "<option value=''>Sila Pilih</option>";
             foreach($posts as $post){
                 echo "<option value='".$post->sub_base_id."'>".$post->sub_base."</option>";
             }
@@ -235,7 +235,7 @@ class LookupKampungController extends Controller
         ->all();
          
         if($countPosts>0){
-            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            echo "<option value=''>Sila Pilih</option>";
             foreach($posts as $post){
                 echo "<option value='".$post->cluster_id."'>".$post->cluster."</option>";
             }
@@ -256,7 +256,7 @@ class LookupKampungController extends Controller
         ->all();
          
         if($countPosts>0){
-            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            echo "<option value=''>Sila Pilih</option>";
             foreach($posts as $post){
                 echo "<option value='".$post->bahagian_id."'>".$post->bahagian."</option>";
             }
@@ -276,7 +276,7 @@ class LookupKampungController extends Controller
         ->all();
          
         if($countPosts>0){
-            echo "<option value='Sila Pilih'>Sila Pilih</option>";
+            echo "<option value=''>Sila Pilih</option>";
             foreach($posts as $post){
                 echo "<option value='".$post->district_id."'>".$post->district."</option>";
             }
@@ -361,6 +361,26 @@ class LookupKampungController extends Controller
             echo "<option value=''>Sila Pilih</option>";
             foreach($posts as $post){
                 echo "<option value='".$post->cluster_id."'>".$post->cluster."</option>";
+            }
+        } else {
+                echo "<option>-</option>";
+        }
+     
+    }
+    public function actionListkampung($id)
+    {
+        $countPosts = LookupKampung::find()
+        ->where(['cluster_id' => $id])
+        ->count();
+         
+        $posts = LookupKampung::find() 
+        ->where(['cluster_id' => $id])
+        ->all();
+         
+        if($countPosts>0){
+            echo "<option value=''>Sila Pilih</option>";
+            foreach($posts as $post){
+                echo "<option value='".$post->kampung_id."'>".$post->kampung."</option>";
             }
         } else {
                 echo "<option>-</option>";

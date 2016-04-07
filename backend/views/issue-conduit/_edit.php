@@ -399,7 +399,7 @@ $kategoriOku = ArrayHelper::map(LookupKategoriOku::find()->asArray()->all(), 'id
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group form-md-line-input">
-                                        <?= Html::activeDropDownList($model, 'sub_base_id', $subbase1, 
+                                        <?= Html::activeDropDownList($model, 'sub_base_id', $subbase, 
                                             [
                                                 'onchange'=>'$.post( "'.Yii::$app->urlManager->createUrl(['issue-conduit/listcluster','id'=>'']).'"+$(this).val(), function( data ) {$( "select#clusterjohor" ).html( data );});',
                                                 'prompt'=>'','id'=>'subbasejohor',   
@@ -656,6 +656,7 @@ $kategoriOku = ArrayHelper::map(LookupKategoriOku::find()->asArray()->all(), 'id
                                      [
                                         'Telah Selesai' => 'Telah Selesai',
                                         'Menafikan' => 'Menafikan',
+                                        'Aktif'=>'Aktif'
     
                                      ], 
 

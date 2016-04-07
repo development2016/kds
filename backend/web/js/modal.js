@@ -601,6 +601,139 @@ else if($('#state_kg').val() > 22 || $('#state_kg').val() < 21 ){
 
 }
 /* end lookup kampung update */ 
+/* searching lookup_kampung */
+$('#search_kg').change(function(){
+        if ($(this).val() == 21) {
+            $(".bahagian_sarawak").show(500);
+            $(".lainState").hide(500);
+            $(".johor").hide(500);
+            
+            $("select#district").prop('disabled', true);
+            $("select#subbase_other").prop('disabled', true);
+            $("select#johordistrict").prop('disabled', true);
+            $("select#cluster_other").prop('disabled', true);
+            $("select#kampung_other").prop('disabled', true);
+            $("select#mukim_johor").prop('disabled', true);
+            $("select#subbasejohor").prop('disabled', true);
+            $("select#clusterjohor").prop('disabled', true);
+            $("select#kampungjohor").prop('disabled', true);
+
+            $("select#district_bahagian").prop('disabled', false);
+            $("select#subbasesarawak").prop('disabled', false);
+            $("select#clustersarawak").prop('disabled', false);
+            $("select#bahagian").prop('disabled', false);
+            $("select#kampungsarawak").prop('disabled', false);
+
+        }
+        else if($(this).val() == 22){
+            $(".johor").show(500);
+            $(".bahagian_sarawak").hide(500);
+            $(".lainState").hide(500);
+
+            $("select#district_bahagian").prop('disabled', true);
+            $("select#subbasesarawak").prop('disabled', true);
+            $("select#clustersarawak").prop('disabled', true);
+            $("select#bahagian").prop('disabled', true);
+            $("select#kampungsarawak").prop('disabled', true);
+            $("select#district").prop('disabled', true);
+            $("select#subbase_other").prop('disabled', true);
+            $("select#cluster_other").prop('disabled', true);
+            $("select#kampung_other").prop('disabled', true);
+                
+            $("select#johordistrict").prop('disabled', false);
+            $("select#mukim_johor").prop('disabled', false);
+            $("select#subbase_johor").prop('disabled', false);
+            $("select#cluster_johor").prop('disabled', false);
+            $("select#kampungjohor").prop('disabled', false);
+        }
+         else {
+            $(".lainState").show(500);
+            $(".bahagian_sarawak").hide(500);
+            $(".johor").hide(500);
+            
+            $("select#johordistrict").prop('disabled', true);
+            $("select#mukim_johor").prop('disabled', true);
+            $("select#subbasejohor").prop('disabled', true);
+            $("select#clusterjohor").prop('disabled', true);
+            $("select#kampungjohor").prop('disabled', true);
+            $("select#district_bahagian").prop('disabled', true);
+            $("select#subbasesarawak").prop('disabled', true);
+            $("select#clustersarawak").prop('disabled', true);
+            $("select#bahagian").prop('disabled', true);
+            $("select#kampungsarawak").prop('disabled', true);
+
+            $("select#district").prop('disabled', false);
+            $("select#subbase_other").prop('disabled', false);
+            $("select#cluster_other").prop('disabled', false);
+            $("select#kampungother").prop('disabled', false);
+        };
+    });
+
+if ($('#search_kg').val() == 22) {
+        $(".johor").show(500);
+        $(".bahagian_sarawak").hide(500);
+        $(".lainState").hide(500);
+
+        $("select#district_bahagian").prop('disabled', true);
+        $("select#subbasesarawak").prop('disabled', true);
+        $("select#clustersarawak").prop('disabled', true);
+        $("select#bahagian").prop('disabled', true);
+        $("select#kampungsarawak").prop('disabled', true);
+        $("select#district").prop('disabled', true);
+        $("select#subbase_other").prop('disabled', true);
+        $("select#cluster_other").prop('disabled', true);
+        $("select#kampung_other").prop('disabled', true);
+            
+        $("select#johordistrict").prop('disabled', false);
+        $("select#mukim_johor").prop('disabled', false);
+        $("select#subbase_johor").prop('disabled', false);
+        $("select#cluster_johor").prop('disabled', false);
+        $("select#kampungjohor").prop('disabled', false);
+}
+else if($('#search_kg').val() == 21){
+    $(".johor").hide(500);
+    $(".lainState").hide(500);
+    $(".bahagian_sarawak").show(500);    
+
+    $("select#district").prop('disabled', true);
+    $("select#subbase_other").prop('disabled', true);
+    $("select#johordistrict").prop('disabled', true);
+    $("select#cluster_other").prop('disabled', true);
+    $("select#kampung_other").prop('disabled', true);
+    $("select#mukim_johor").prop('disabled', true);
+    $("select#subbasejohor").prop('disabled', true);
+    $("select#clusterjohor").prop('disabled', true);
+    $("select#kampungjohor").prop('disabled', true);
+
+    $("select#district_bahagian").prop('disabled', false);
+    $("select#subbasesarawak").prop('disabled', false);
+    $("select#clustersarawak").prop('disabled', false);
+    $("select#bahagian").prop('disabled', false);
+    $("select#kampungsarawak").prop('disabled', false);
+}
+else if($('#search_kg').val() > 22 || $('#search_kg').val() < 21 ){
+    $(".lainState").show(500);
+    $(".johor").hide(500);
+    $(".bahagian_sarawak").hide(500);
+
+    $("select#johordistrict").prop('disabled', true);
+    $("select#mukim_johor").prop('disabled', true);
+    $("select#subbasejohor").prop('disabled', true);
+    $("select#clusterjohor").prop('disabled', true);
+    $("select#kampungjohor").prop('disabled', true);
+    $("select#district_bahagian").prop('disabled', true);
+    $("select#subbasesarawak").prop('disabled', true);
+    $("select#clustersarawak").prop('disabled', true);
+    $("select#bahagian").prop('disabled', true);
+    $("select#kampungsarawak").prop('disabled', true);
+
+    $("select#district").prop('disabled', false);
+    $("select#subbase_other").prop('disabled', false);
+    $("select#cluster_other").prop('disabled', false);
+    $("select#kampungother").prop('disabled', false);
+
+}
+/* end searching lookup_kampung */
 /* volunteer :: create by shahril */
 $('#state_volunteer').change(function(){
     if ($(this).val() == 22) {

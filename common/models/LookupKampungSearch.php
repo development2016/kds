@@ -18,7 +18,7 @@ class LookupKampungSearch extends LookupKampung
     public function rules()
     {
         return [
-            [['kampung_id', 'cluster_id', 'sub_base_id', 'district_id', 'state_id', 'kampcom_id','mukim_id'], 'integer'],
+            [['kampung_id', 'cluster_id', 'sub_base_id', 'district_id', 'state_id', 'kampcom_id','mukim_id','bahagian_id'], 'integer'],
             [['kampung'], 'safe'],
         ];
     }
@@ -57,16 +57,23 @@ class LookupKampungSearch extends LookupKampung
         }
 
         $query->andFilterWhere([
-            'kampung_id' => $this->kampung_id,
+            'state_id' => $this->state_id,
+            'district_id' => $this->district_id,
             'cluster_id' => $this->cluster_id,
             'sub_base_id' => $this->sub_base_id,
-            'district_id' => $this->district_id,
-            'state_id' => $this->state_id,
+            
+            'kampung_id' => $this->kampung_id,
             'mukim_id' => $this->mukim_id,
-            'kampcom_id' => $this->kampcom_id,
+            //'kampcom_id' => $this->kampcom_id,
+            'bahagian_id'=>$this->bahagian_id,
         ]);
 
-        $query->andFilterWhere(['like', 'kampung', $this->kampung]);
+        $query->andFilterWhere(['like', 'kampung_id', $this->kampung])
+            ->andFilterWhere(['like', 'cluster_id', $this->cluster_id])
+            ->andFilterWhere(['like', 'sub_base_id', $this->sub_base_id])
+            ->andFilterWhere(['like', 'district_id', $this->district_id])
+            ->andFilterWhere(['like', 'state_id', $this->state_id])
+            ->andFilterWhere(['like', 'mukim_id', $this->mukim_id]);
 
         return $dataProvider;
     }

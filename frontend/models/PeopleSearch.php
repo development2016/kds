@@ -19,7 +19,7 @@ class PeopleSearch extends People
     {
         return [
             [['people_id', 'race', 'religion', 'marital_status', 'no_of_children', 'income', 'spending', 'enter_by', 'verified_by'], 'integer'],
-            [['name', 'ic_no', 'address', 'postcode', 'dob', 'gender', 'name_nick', 'ic_no_old', 'current_address','mukim_id', 'state_id', 'district_id', 'sub_base_id', 'cluster_id', 'kampung_id', 'birth_place', 'citizen', 'profession_status', 'profession', 'job_position', 'job_else', 'mobile_no', 'home_no', 'email', 'penghulu', 'local_champion', 'volunteer', 'micro_worker', 'image', 'enter_date', 'data_status', 'verified_date', 'flag', 'mukim', 'tarikh_soal_selidik', 'nota', 'ruang_cadangan'], 'safe'],
+            [['bahagian_id','name', 'ic_no', 'address', 'postcode', 'dob', 'gender', 'name_nick', 'ic_no_old', 'current_address','mukim_id', 'state_id', 'district_id', 'sub_base_id', 'cluster_id', 'kampung_id', 'birth_place', 'citizen', 'profession_status', 'profession', 'job_position', 'job_else', 'mobile_no', 'home_no', 'email', 'penghulu', 'local_champion', 'volunteer', 'micro_worker', 'image', 'enter_date', 'data_status', 'verified_date', 'flag', 'mukim', 'tarikh_soal_selidik', 'nota', 'ruang_cadangan'], 'safe'],
         ];
     }
 
@@ -70,6 +70,14 @@ class PeopleSearch extends People
             'enter_by' => $this->enter_by,
             'verified_date' => $this->verified_date,
             'verified_by' => $this->verified_by,
+            'state_id' => $this->state_id,
+            'bahagian_id'=>$this->bahagian_id,
+            'district_id'=>$this->district_id,
+            'mukim_id'=>$this->mukim_id,
+            'cluster_id'=>$this->cluster_id,
+            'sub_base_id'=>$this->sub_base_id,
+            'cluster_id'=>$this->cluster_id,
+            'kampung_id'=>$this->kampung_id,
         ]);
 
         $query->andFilterWhere(['like', 'name', $this->name])
@@ -81,12 +89,7 @@ class PeopleSearch extends People
             ->andFilterWhere(['like', 'name_nick', $this->name_nick])
             ->andFilterWhere(['like', 'ic_no_old', $this->ic_no_old])
             ->andFilterWhere(['like', 'current_address', $this->current_address])
-            ->andFilterWhere(['like', 'state_id', $this->state_id])
-            ->andFilterWhere(['like', 'district_id', $this->district_id])
-            ->andFilterWhere(['like', 'sub_base_id', $this->sub_base_id])
-            ->andFilterWhere(['like', 'cluster_id', $this->cluster_id])
-            ->andFilterWhere(['like', 'kampung_id', $this->kampung_id])
-            ->andFilterWhere(['like', 'mukim_id', $this->mukim_id])
+            
             ->andFilterWhere(['like', 'birth_place', $this->birth_place])
             ->andFilterWhere(['like', 'citizen', $this->citizen])
             ->andFilterWhere(['like', 'profession_status', $this->profession_status])
